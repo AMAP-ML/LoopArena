@@ -1,0 +1,14 @@
+{
+  "evaluator_plan_sha256": "sha256:97e855a8fbcfb092d1e0e69d2e02d19a66a03249606a0915bf7679110c47cb3a",
+  "problem_id": "scbench:eve_industry",
+  "schema_version": "looparena.scbench.stratified_type2_case_provenance.v1",
+  "selection_manifest_sha256": "sha256:4d44f83d8df55de1382fc249ef23dc1b96b7d4a36bb7857c20431ba269a49ef3",
+  "selection_seed": 20260812,
+  "source_checkpoint_start": 2,
+  "source_checkpoint_target": 3,
+  "source_type3_case_id": "case203",
+  "stage": "early",
+  "task_sha256": "sha256:bf3657452540caf6f61ca68c9bf034e8ca777baa3704d17deb09277f729e65ce",
+  "workspace_archive_sha256": "sha256:5d567388db4468e34bead3aa5c9e619a0d922ae29f91edf82562d40814f0abd1",
+  "workspace_policy": "sanitized official predecessor reference workspace; private evaluator, tests, target solution, and test caches excluded"
+}

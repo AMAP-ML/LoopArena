@@ -1,0 +1,19 @@
+{
+  "adapter_kind": "beyondswe_harbor",
+  "checkpoint_context_policy": "single_episode",
+  "checkpoint_failure_policy": "stop_after_task",
+  "official_parent_commit": "afa2122a8a30cf06c3c8c4ae3ed613884a223364",
+  "official_task_id": "beyondswe:aklajnert_pytest-subprocess_pr180",
+  "official_workdir": "/workspace/pytest-subprocess",
+  "schema_version": "looparena.type3_task_sequence.v2",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/task.json",
+      "step_id": "task",
+      "task_ref": "tasks/task.md"
+    }
+  ],
+  "target_step": "task",
+  "task_scope": "official_full_task",
+  "workspace_origin": "pinned_source_image_parent_commit"
+}

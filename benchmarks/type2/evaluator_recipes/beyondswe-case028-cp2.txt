@@ -1,0 +1,4 @@
+pyramid/tests/test_config/test_factories.py::TestFactoriesMixin::test_set_execution_policy
+pyramid/tests/test_config/test_factories.py::TestFactoriesMixin::test_set_execution_policy_to_None
+pyramid/tests/test_integration.py::SubrequestAppTest::test_one
+pyramid/tests/test_router.py::TestRouter::test_custom_execution_policy

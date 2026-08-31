@@ -1,0 +1,3 @@
+## Resolve Azure credential precedence
+
+Ensure `AzureOpenAI` authenticates with Azure credentials when both `OPENAI_API_KEY` and `AZURE_OPENAI_API_KEY` are present, so requests to the Azure endpoint do not use the standard OpenAI credential.

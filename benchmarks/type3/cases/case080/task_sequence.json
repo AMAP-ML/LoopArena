@@ -1,0 +1,19 @@
+{
+  "adapter_kind": "beyondswe_harbor",
+  "checkpoint_context_policy": "single_episode",
+  "checkpoint_failure_policy": "stop_after_task",
+  "official_parent_commit": "943fc924ef5864d04ec4b8eb6c94761763976ae6",
+  "official_task_id": "beyondswe:pylons_pyramid_pr3328",
+  "official_workdir": "/workspace/pyramid",
+  "schema_version": "looparena.type3_task_sequence.v2",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/task.json",
+      "step_id": "task",
+      "task_ref": "tasks/task.md"
+    }
+  ],
+  "target_step": "task",
+  "task_scope": "official_full_task",
+  "workspace_origin": "pinned_source_image_parent_commit"
+}

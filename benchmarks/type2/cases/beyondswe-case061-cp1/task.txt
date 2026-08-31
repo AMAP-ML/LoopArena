@@ -1,0 +1,7 @@
+# Align Django support and CI configuration
+
+Update the configured Django support surfaces so they include only versions currently receiving upstream updates:
+
+- Remove unsupported Django versions, including Django 2.2, 3.0, and 3.1, from the test matrix, package classifiers, and CI jobs.
+- Run coverage checks in a supported Django environment instead of `django22`.
+- Keep the advertised support, test matrix, CI jobs, and coverage environment consistent.

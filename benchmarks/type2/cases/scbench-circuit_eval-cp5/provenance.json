@@ -1,0 +1,14 @@
+{
+  "evaluator_plan_sha256": "sha256:0df6db26cfdf8469d73028cbcd40f6afcdf340e9297cb07a7bb63b203e264983",
+  "problem_id": "scbench:circuit_eval",
+  "schema_version": "looparena.scbench.stratified_type2_case_provenance.v1",
+  "selection_manifest_sha256": "sha256:de76bd6a2cda5aeb69eccc8c23fa9397b3f6bfc551b65598b9be81dcf4f6c0e2",
+  "selection_seed": 20260812,
+  "source_checkpoint_start": 4,
+  "source_checkpoint_target": 5,
+  "source_type3_case_id": "case012",
+  "stage": "middle",
+  "task_sha256": "sha256:51e681336d4c55ef79d8e0d0395f224bcd412d90aa9e43edae92a22b259f9b0a",
+  "workspace_archive_sha256": "sha256:91216487fb098d193386d370188b9bc361183ee4d0d3abd0f7a4224ea8e1937c",
+  "workspace_policy": "sanitized official predecessor reference workspace; private evaluator, tests, target solution, and test caches excluded"
+}

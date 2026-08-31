@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="LoopArena benchmarks models as runtime Controllers for Loop Engineering on long-horizon coding tasks."
+    />
+    <meta name="theme-color" content="#07111f" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="LoopArena: Benchmarking Models as Runtime Controllers for Loop Engineering"
+    />
+    <meta
+      property="og:description"
+      content="An execution-grounded benchmark for the models that guide separate coding agents through long-running tasks."
+    />
+    <meta property="og:url" content="https://amap-ml.github.io/LoopArena/" />
+    <meta
+      property="og:image"
+      content="https://amap-ml.github.io/LoopArena/assets/looparena-hero.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://amap-ml.github.io/LoopArena/" />
+    <title>LoopArena: Benchmarking Models as Runtime Controllers for Loop Engineering</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22><rect width=%2264%22 height=%2264%22 rx=%2216%22 fill=%22%2307111f%22/><text x=%2232%22 y=%2244%22 text-anchor=%22middle%22 font-size=%2244%22 fill=%22%2382dcff%22>↻</text></svg>"
+    />
+    <link rel="preload" as="image" href="assets/looparena-hero.jpg" />
+    <link rel="stylesheet" href="site.css" />
+    <noscript>
+      <style>
+        @media (max-width: 960px) {
+          .site-header {
+            position: relative;
+            border-color: rgba(142, 177, 214, 0.2);
+            background: #07111f;
+          }
+          .nav-shell {
+            height: auto;
+            min-height: 76px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 14px;
+            padding-block: 14px;
+          }
+          .nav-toggle { display: none; }
+          .site-nav {
+            position: static;
+            display: flex;
+            width: 100%;
+            flex-flow: row wrap;
+            gap: 10px 22px;
+            padding: 0;
+            border: 0;
+            background: transparent;
+            box-shadow: none;
+          }
+          .site-nav a { padding: 4px 0; }
+          .site-nav .nav-cta {
+            margin: 0;
+            padding: 4px 12px;
+          }
+          .hero-content { padding-top: 0; }
+        }
+      </style>
+    </noscript>
+    <script src="site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <div class="nav-shell">
+        <a class="brand" href="#top" aria-label="LoopArena home">
+          <span class="brand-mark" aria-hidden="true">↻</span>
+          <span>LoopArena</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+          <a href="#results">Leaderboard</a>
+          <a href="#benchmark">Benchmark</a>
+          <a href="#quickstart">Quickstart</a>
+          <a class="nav-cta" href="https://github.com/AMAP-ML/LoopArena">GitHub</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="top" class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-art"
+          src="assets/looparena-hero.jpg"
+          alt="A coding workstation connected to Worker, Controller, evidence, and evaluator stations in a runtime loop"
+        />
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-content shell">
+          <p class="eyebrow"><span class="pulse-dot"></span> Runtime control for long-horizon coding agents</p>
+          <h1 id="hero-title" aria-label="LoopArena: Models as runtime Controllers for Loop Engineering">
+            <span class="hero-title-name">LoopArena:</span>
+            <span class="hero-title-tagline">Models as runtime Controllers <br />for <span class="hero-title-accent">Loop Engineering</span></span>
+          </h1>
+          <p class="hero-copy">
+            Loop Engineering organizes long-running coding work around loops that monitor progress,
+            assign work, run checks, and decide what an agent should do next. LoopArena evaluates
+            the model in that loop—the <strong>Controller</strong>—while a separate Worker and the
+            execution setup stay fixed.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#results">View Controller ranking <span>↓</span></a>
+            <a class="button button-secondary" href="#quickstart">Run LoopArena <span>→</span></a>
+          </div>
+          <div class="hero-links" aria-label="Project links">
+            <a href="https://arxiv.org/abs/2608.28281">Paper</a>
+            <a href="https://github.com/AMAP-ML/LoopArena/blob/HEAD/docs/protocol.md">Protocol</a>
+            <a href="https://github.com/AMAP-ML/LoopArena">Code</a>
+            <a href="https://github.com/AMAP-ML/LoopArena/tree/HEAD/results/0.1.0">Results data</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="results" class="section section-results" aria-labelledby="results-title">
+        <div class="shell">
+          <div class="results-heading">
+            <h2 id="results-title">Leaderboard</h2>
+            <p>All models are evaluated as Controllers with the same Worker and execution setup.</p>
+          </div>
+
+          <div class="leaderboard-panel">
+            <div class="leaderboard-toolbar">
+              <div class="setting-tabs" role="group" aria-label="Leaderboard setting">
+                <button type="button" aria-pressed="false" data-setting="type1">Type I</button>
+                <button type="button" aria-pressed="false" data-setting="type2">Type II</button>
+                <button type="button" aria-pressed="true" data-setting="type3">Type III</button>
+              </div>
+              <span class="release-version">v0.1.0</span>
+              <noscript><span class="noscript-note">Type III is shown below; download the data for all settings.</span></noscript>
+            </div>
+            <div class="table-scroll" role="region" tabindex="0" aria-label="Scrollable leaderboard table">
+              <table>
+                <caption class="sr-only" data-table-caption>Type III leaderboard</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Rank</th>
+                    <th scope="col">Model</th>
+                    <th scope="col" data-score-heading>Strict Success Rate ↑</th>
+                    <th scope="col" data-cost-heading>Mean cost / run ↓</th>
+                  </tr>
+                </thead>
+                <tbody data-leaderboard-body>
+                  <tr>
+                    <td>1</td>
+                    <td class="method-cell">GPT-5.5</td>
+                    <td class="score-cell"><strong>24.69%</strong></td>
+                    <td>$18.84</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td class="method-cell">Qwen3.7-Plus</td>
+                    <td class="score-cell"><strong>23.46%</strong></td>
+                    <td>$6.89</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td class="method-cell">Claude Opus 4.8</td>
+                    <td class="score-cell"><strong>20.99%</strong></td>
+                    <td>$16.82</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td class="method-cell">DeepSeek-V4-Flash-0731</td>
+                    <td class="score-cell"><strong>19.75%</strong></td>
+                    <td>$10.24</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td class="method-cell">GLM 5.2</td>
+                    <td class="score-cell"><strong>16.05%</strong></td>
+                    <td>$4.86</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="sr-only" role="status" aria-live="polite" data-leaderboard-status></p>
+            <div class="leaderboard-note">
+              <p data-results-note>Higher scores and lower costs are better. Reference policies are not ranked.</p>
+              <a href="data/results.json" download>Download table data (.json)</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section section-problem">
+        <div class="shell split-heading">
+          <div>
+            <p class="section-kicker">The missing layer</p>
+            <h2>Coding skill is not the whole loop.</h2>
+          </div>
+          <p>
+            Most existing coding benchmarks score the final repository state, combining two
+            abilities: doing the coding work and controlling how that work unfolds. LoopArena
+            isolates the second. Every evaluated Controller directs the same Worker with the same
+            tools, budgets, task state, and evaluator.
+          </p>
+        </div>
+        <div class="shell failure-grid">
+          <article class="failure-card">
+            <span class="card-index">01</span>
+            <h3>Track progress</h3>
+            <p>Recognize what is complete, what remains, and which evidence actually supports it.</p>
+          </article>
+          <article class="failure-card">
+            <span class="card-index">02</span>
+            <h3>Direct the next step</h3>
+            <p>Turn the current state into a concrete next assignment instead of generic advice.</p>
+          </article>
+          <article class="failure-card">
+            <span class="card-index">03</span>
+            <h3>Demand verification</h3>
+            <p>Catch missing checks, incomplete paths, and claims of completion that outrun evidence.</p>
+          </article>
+          <article class="failure-card">
+            <span class="card-index">04</span>
+            <h3>Stop at the right time</h3>
+            <p>Avoid both premature termination and expensive work after the task is already complete.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-harness" aria-labelledby="harness-title">
+        <div class="shell">
+          <div class="center-heading">
+            <p class="section-kicker">One controlled comparison</p>
+            <h2 id="harness-title">Put the model in the loop.</h2>
+            <p>
+              The Worker edits code. A temporary Reporter summarizes evidence. The Controller reads
+              a structured Evidence Packet and returns the next Loop Contract—or decides to stop.
+            </p>
+          </div>
+          <figure class="harness-frame">
+            <img
+              src="assets/looparena-harness.png"
+              loading="lazy"
+              alt="LoopArena harness showing the Controller-guided outer loop and no-control reference sharing the same Worker and task evaluator"
+            />
+            <figcaption>
+              The Controller has no coding tools and can affect the task only through instructions
+              to the Worker. Reference policies are reported for context, not ranked as Controllers.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="benchmark" class="section section-benchmark" aria-labelledby="benchmark-title">
+        <div class="shell">
+          <div class="split-heading">
+            <div>
+              <p class="section-kicker">Execution-calibrated ladder</p>
+              <h2 id="benchmark-title">Three views of runtime loop control.</h2>
+            </div>
+            <p>
+              Evaluation scope and runtime cost increase from Type I to Type III. The lower-cost
+              settings are grounded in execution, while full tasks remain the long-horizon anchor.
+            </p>
+          </div>
+
+          <div class="ladder" role="list">
+            <article class="ladder-card ladder-one" role="listitem">
+              <div class="ladder-topline"><span>Type I</span><em>lowest run cost</em></div>
+              <h3>Contract selection</h3>
+              <p>
+                Choose the best next Loop Contract from four candidates at a frozen control point.
+                LoopArena incurs the candidate-execution cost in advance during benchmark
+                construction, so a new Controller is evaluated through low-cost multiple-choice
+                questions with no Worker execution.
+              </p>
+              <dl>
+                <div><dt>Scope</dt><dd>one decision</dd></div>
+                <div><dt>Size</dt><dd>90 questions</dd></div>
+                <div><dt>Metric</dt><dd>Contract Accuracy</dd></div>
+              </dl>
+            </article>
+            <article class="ladder-card ladder-two" role="listitem">
+              <div class="ladder-topline"><span>Type II</span><em>condensed execution</em></div>
+              <h3>Condensed coding task</h3>
+              <p>
+                Start from a standardized workspace for one selected task slice and retain adaptive
+                Controller–Worker interaction through implementation and verification. Each Type II
+                task is paired with the Type III full task from which it is derived.
+              </p>
+              <dl>
+                <div><dt>Scope</dt><dd>task slice</dd></div>
+                <div><dt>Size</dt><dd>27 tasks × 3</dd></div>
+                <div><dt>Metric</dt><dd>Strict Success Rate</dd></div>
+              </dl>
+            </article>
+            <article class="ladder-card ladder-three" role="listitem">
+              <div class="ladder-topline"><span>Type III</span><em>full-run anchor</em></div>
+              <h3>Full coding task</h3>
+              <p>
+                Guide the Worker from the original task state through the complete long-horizon
+                coding task. Source-native evaluators score the terminal repository state.
+              </p>
+              <dl>
+                <div><dt>Scope</dt><dd>complete task</dd></div>
+                <div><dt>Size</dt><dd>27 tasks × 3</dd></div>
+                <div><dt>Metric</dt><dd>Strict Success Rate</dd></div>
+              </dl>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="quickstart" class="section section-quickstart" aria-labelledby="quickstart-title">
+        <div class="shell quickstart-layout">
+          <div class="quickstart-copy">
+            <p class="section-kicker">Start with one decision</p>
+            <h2 id="quickstart-title">A first result in three steps.</h2>
+            <p>
+              Type I needs no Docker and makes one model call in this smoke test. It is the fastest
+              way to verify installation, endpoint configuration, and output accounting.
+            </p>
+            <ol class="step-list">
+              <li><span>1</span><div><strong>Install</strong><small>Python 3.10+ and the gateway extra</small></div></li>
+              <li><span>2</span><div><strong>Check without calling a model</strong><small>Run the zero-call preflight</small></div></li>
+              <li><span>3</span><div><strong>Evaluate</strong><small>Write one auditable JSONL result</small></div></li>
+            </ol>
+            <a class="text-link" href="https://github.com/AMAP-ML/LoopArena#quick-start">Open the complete guide →</a>
+          </div>
+          <div class="terminal-card" aria-label="Type I quickstart commands">
+            <div class="terminal-bar"><span></span><span></span><span></span><em>terminal</em></div>
+            <pre><code><span class="prompt">$</span> git clone https://github.com/AMAP-ML/LoopArena.git
+<span class="prompt">$</span> cd LoopArena
+<span class="prompt">$</span> python -m pip install -e <span class="string">'.[gateway]'</span>
+
+<span class="comment"># Use any OpenAI-compatible endpoint.</span>
+<span class="prompt">$</span> export OPENAI_API_KEY=<span class="variable">YOUR_API_KEY</span>
+<span class="prompt">$</span> export OPENAI_BASE_URL=<span class="variable">YOUR_BASE_URL</span>
+
+<span class="comment"># Validate configuration with zero model calls.</span>
+<span class="prompt">$</span> looparena-type1-run \
+    --data benchmarks/type1/questions.jsonl \
+    --model <span class="variable">MODEL_ID</span> \
+    --preflight-only
+
+<span class="comment"># Run one execution-validated control question.</span>
+<span class="prompt">$</span> looparena-type1-run \
+    --data benchmarks/type1/questions.jsonl \
+    --model <span class="variable">MODEL_ID</span> \
+    --output results/type1-smoke.jsonl \
+    --limit 1 --concurrency 1</code></pre>
+            <button class="copy-button" type="button" data-copy-quickstart aria-live="polite">Copy commands</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section team-section">
+        <div class="shell team-callout">
+          <div>
+            <p class="section-kicker">Built by DreamX Team</p>
+            <h2>Measure the model that decides what happens next.</h2>
+          </div>
+          <div class="team-actions">
+            <a class="button button-primary" href="https://github.com/AMAP-ML/LoopArena">View on GitHub</a>
+            <a class="button button-secondary" href="https://arxiv.org/abs/2608.28281">Read the paper</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="shell footer-grid">
+        <div><strong><span aria-hidden="true">↻</span> LoopArena</strong><p>Models as runtime Controllers for Loop Engineering.</p></div>
+        <div class="footer-links">
+          <a href="https://arxiv.org/abs/2608.28281">Paper</a>
+          <a href="https://github.com/AMAP-ML/LoopArena">GitHub</a>
+          <a href="https://github.com/AMAP-ML/LoopArena/blob/HEAD/docs/protocol.md">Protocol</a>
+          <a href="https://github.com/AMAP-ML/LoopArena/blob/HEAD/LICENSE">License</a>
+        </div>
+        <p class="footer-credit">DreamX Team · Apache-2.0</p>
+      </div>
+    </footer>
+  </body>
+</html>

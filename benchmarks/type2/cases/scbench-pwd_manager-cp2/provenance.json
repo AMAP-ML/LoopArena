@@ -1,0 +1,14 @@
+{
+  "evaluator_plan_sha256": "sha256:dc4cc0b7a6c51ff59b356b22e983dca30513c06e9741cf3a9b0709e512f75dc2",
+  "problem_id": "scbench:pwd_manager",
+  "schema_version": "looparena.scbench.stratified_type2_case_provenance.v1",
+  "selection_manifest_sha256": "sha256:4d44f83d8df55de1382fc249ef23dc1b96b7d4a36bb7857c20431ba269a49ef3",
+  "selection_seed": 20260812,
+  "source_checkpoint_start": 1,
+  "source_checkpoint_target": 2,
+  "source_type3_case_id": "case206",
+  "stage": "early",
+  "task_sha256": "sha256:37577c4093e74b07683357808698fd77dc33f62535a306d95a3cd1a7e2a5dbf2",
+  "workspace_archive_sha256": "sha256:0a0ea22851d31380c87f4573667d7806d6c2c04db514967f244b3bf3db7fc889",
+  "workspace_policy": "sanitized official predecessor reference workspace; private evaluator, tests, target solution, and test caches excluded"
+}

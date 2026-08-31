@@ -1,0 +1,25 @@
+{
+  "adapter_config": {
+    "checkpoint": "checkpoint_4",
+    "docker_executable": "docker",
+    "env_config": "/opt/looparena/evaluator_assets/scbench/runner/configs/environments/docker-python3.12-uv.yaml",
+    "private_bundle_path": "/opt/looparena/evaluator_assets/scbench/problems/execution_server",
+    "problem_name": "execution_server",
+    "problems_root": "/opt/looparena/evaluator_assets/scbench/problems",
+    "runner_root": "/opt/looparena/evaluator_assets/scbench/runner",
+    "tests_expected": 149,
+    "uv_executable": "uv"
+  },
+  "adapter_kind": "scbench",
+  "adapter_version": "official-eval-snapshot-v1",
+  "network": "bridge",
+  "pass_policy": "all-cases",
+  "runtime_identity": {
+    "evaluation_image_id": "sha256:7c3aec6938f9fb6cc8056b69b4d299b20939859b0588ce32ebbb9126ee41d092",
+    "evaluation_image_platform": "linux/amd64",
+    "evaluation_image_reference": "slop-code:python3.12"
+  },
+  "schema_version": "looparena.terminal_evaluator_plan.v1",
+  "source_revision": "13de1a7a6b8b3dc5cc532a0c322a0997afa5bec7",
+  "timeout_sec": 3600
+}

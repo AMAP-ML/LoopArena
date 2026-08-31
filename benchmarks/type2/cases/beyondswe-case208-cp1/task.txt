@@ -1,0 +1,5 @@
+# Make the Markdown `CustomDirectiveSkipParser` pass strict type verification
+
+Refactor the public type `sybil_extras.parsers.markdown.custom_directive_skip.CustomDirectiveSkipParser` so that `pyright --verifytypes sybil_extras` succeeds.
+
+Maintain the parser's existing functionality, including the existing MyST and reST behavior, while resolving the strict type-verification errors.

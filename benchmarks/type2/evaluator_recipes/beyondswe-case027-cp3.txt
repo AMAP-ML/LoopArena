@@ -1,0 +1,8 @@
+tests/util/test_rabbitmq.py::test_api_health_checks
+tests/util/test_rabbitmq.py::test_api_health_checks_failures
+tests/util/test_rabbitmq.py::test_api_queues
+tests/util/test_rabbitmq.py::test_api_queue_delete
+tests/util/test_rabbitmq.py::test_api_nodes
+tests/util/test_rabbitmq.py::test_api_exchanges[]
+tests/util/test_rabbitmq.py::test_api_exchanges[foo]
+tests/util/test_rabbitmq.py::test_api_connections

@@ -1,0 +1,1 @@
+Correct `FakeProcess.wait()` timeout accounting so that once a process has finished, every subsequent `wait()` call immediately returns its exit code instead of raising `subprocess.TimeoutExpired`, regardless of the supplied timeout.

@@ -1,0 +1,10 @@
+{
+  "adapter_kind": "beyondswe_harbor",
+  "case_id": "case027",
+  "episode_origin": "official_problem_start",
+  "harness_start_mode": "bootstrap_contract_start",
+  "official_task_id": "beyondswe:diamondlightsource_python-zocalo_pr140",
+  "schema_version": "looparena.type3_case.v2",
+  "task_scope": "official_full_task",
+  "task_sequence_ref": "task_sequence.json"
+}

@@ -1,0 +1,14 @@
+{
+  "evaluator_plan_sha256": "sha256:59559bd99ea5e554a6999c7830d4570d5cbcf9f2ff222635d65585fbbea9ced3",
+  "problem_id": "scbench:meshctl",
+  "schema_version": "looparena.scbench.stratified_type2_case_provenance.v1",
+  "selection_manifest_sha256": "sha256:4d44f83d8df55de1382fc249ef23dc1b96b7d4a36bb7857c20431ba269a49ef3",
+  "selection_seed": 20260812,
+  "source_checkpoint_start": 4,
+  "source_checkpoint_target": 5,
+  "source_type3_case_id": "case001",
+  "stage": "middle",
+  "task_sha256": "sha256:d46d1804c5e22b7c072167e042f484c0513a85a4530af1b2986f732d458eec4d",
+  "workspace_archive_sha256": "sha256:986099994a330ff7a976ebc1680bdeae9740bf7c3b1c5408df50cc18d0fae079",
+  "workspace_policy": "sanitized official predecessor reference workspace; private evaluator, tests, target solution, and test caches excluded"
+}

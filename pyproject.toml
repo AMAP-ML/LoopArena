@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "looparena"
+version = "0.1.0"
+description = "LoopArena benchmark and controlled coding-agent harness"
+readme = "README.md"
+authors = [{ name = "DreamX Team" }]
+license = "Apache-2.0"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+requires-python = ">=3.10"
+dependencies = [
+  "PyYAML>=6.0",
+  "tomli>=2.0; python_version < '3.11'",
+]
+
+[project.optional-dependencies]
+gateway = ["openai>=1.0"]
+scbench = ["uv==0.11.15"]
+test = ["pytest>=8"]
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.16"]
+
+[project.scripts]
+looparena-assets = "looparena.commands.assets:main"
+looparena-type1-run = "looparena.commands.type1_run:main"
+looparena-type2-panel = "looparena.commands.type2_panel:main"
+looparena-type2-run = "looparena.commands.type2_run:main"
+looparena-type2-summarize = "looparena.commands.type2_summarize:main"
+looparena-type3-run = "looparena.commands.type3_run:main"
+looparena-type3-panel = "looparena.commands.type3_panel:main"
+looparena-type3-summarize = "looparena.commands.type3_summarize:main"
+looparena-results-summarize = "looparena.commands.results_summarize:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

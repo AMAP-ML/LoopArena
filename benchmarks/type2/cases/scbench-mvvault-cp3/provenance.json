@@ -1,0 +1,14 @@
+{
+  "evaluator_plan_sha256": "sha256:c1cc1634fb61db27d122edf491807400e75025b14ec9a218fac03d05e554e3da",
+  "problem_id": "scbench:mvvault",
+  "schema_version": "looparena.scbench.stratified_type2_case_provenance.v1",
+  "selection_manifest_sha256": "sha256:de76bd6a2cda5aeb69eccc8c23fa9397b3f6bfc551b65598b9be81dcf4f6c0e2",
+  "selection_seed": 20260812,
+  "source_checkpoint_start": 2,
+  "source_checkpoint_target": 3,
+  "source_type3_case_id": "case003",
+  "stage": "early",
+  "task_sha256": "sha256:6183dabd4d4b7c2a7fcabc4b328c749d74f8ba959c24d1c2db4540f2784f3143",
+  "workspace_archive_sha256": "sha256:b35ae07d8cd23fe7238c6d213f86c207dc680dbc39e55df1fc0bb3d879f226d3",
+  "workspace_policy": "sanitized official predecessor reference workspace; private evaluator, tests, target solution, and test caches excluded"
+}

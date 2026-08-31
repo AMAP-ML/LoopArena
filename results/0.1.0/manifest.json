@@ -1,0 +1,288 @@
+{
+  "expected_cases": {
+    "type2": [
+      "beyondswe-case019-cp2",
+      "beyondswe-case023-cp1",
+      "beyondswe-case025-cp1",
+      "beyondswe-case027-cp3",
+      "beyondswe-case028-cp2",
+      "beyondswe-case029-cp1",
+      "beyondswe-case033-cp2",
+      "beyondswe-case035-cp4",
+      "beyondswe-case037-cp1",
+      "beyondswe-case039-cp1",
+      "beyondswe-case061-cp1",
+      "beyondswe-case066-cp1",
+      "beyondswe-case080-cp1",
+      "beyondswe-case089-cp1",
+      "beyondswe-case102-cp1",
+      "beyondswe-case208-cp1",
+      "scbench-cfgpipe-cp4",
+      "scbench-circuit_eval-cp5",
+      "scbench-datagate-cp6",
+      "scbench-dynamic_config_service_api-cp4",
+      "scbench-eve_industry-cp3",
+      "scbench-execution_server-cp2",
+      "scbench-file_backup-cp4",
+      "scbench-file_query_tool-cp5",
+      "scbench-meshctl-cp5",
+      "scbench-mvvault-cp3",
+      "scbench-pwd_manager-cp2"
+    ],
+    "type3": [
+      "Datagate",
+      "case001",
+      "case003",
+      "case004",
+      "case005",
+      "case008",
+      "case012",
+      "case016",
+      "case019",
+      "case023",
+      "case025",
+      "case027",
+      "case028",
+      "case029",
+      "case033",
+      "case035",
+      "case037",
+      "case039",
+      "case061",
+      "case066",
+      "case080",
+      "case089",
+      "case102",
+      "case203",
+      "case204",
+      "case206",
+      "case208"
+    ]
+  },
+  "findings": {
+    "mean_type2_cost_reduction_percent": 64.4
+  },
+  "headline_policy": "core-cases",
+  "methods": [
+    {
+      "method": "No control",
+      "model_id": "none",
+      "role": "reference"
+    },
+    {
+      "method": "Fixed control",
+      "model_id": "non-adaptive-fixed",
+      "role": "reference"
+    },
+    {
+      "method": "Qwen3.7-Plus",
+      "model_id": "qwen3.7-plus",
+      "role": "controller"
+    },
+    {
+      "method": "DeepSeek-V4-Flash-0731",
+      "model_id": "deepseek-v4-flash-0731",
+      "role": "controller"
+    },
+    {
+      "method": "GLM 5.2",
+      "model_id": "glm-5.2",
+      "role": "controller"
+    },
+    {
+      "method": "GPT-5.5",
+      "model_id": "gpt-5.5-0424-global",
+      "role": "controller"
+    },
+    {
+      "method": "Claude Opus 4.8",
+      "model_id": "claude-opus-4-8",
+      "role": "controller"
+    }
+  ],
+  "provenance": {
+    "description": "Sanitized canonical outcomes from the validated LoopArena v0.1.0 result release.",
+    "omitted_private_fields": [
+      "artifact paths",
+      "provider endpoints",
+      "raw trajectories",
+      "attempt-local metadata"
+    ]
+  },
+  "published_statistics": {
+    "type2": {
+      "Claude Opus 4.8": {
+        "ci95": [
+          30.86,
+          65.43
+        ],
+        "mean_cost_usd_per_run": 5.874172
+      },
+      "DeepSeek-V4-Flash-0731": {
+        "ci95": [
+          28.4,
+          62.96
+        ],
+        "mean_cost_usd_per_run": 2.103646
+      },
+      "Fixed control": {
+        "ci95": [
+          29.63,
+          64.2
+        ],
+        "mean_cost_usd_per_run": 1.080446
+      },
+      "GLM 5.2": {
+        "ci95": [
+          20.99,
+          54.32
+        ],
+        "mean_cost_usd_per_run": 1.633273
+      },
+      "GPT-5.5": {
+        "ci95": [
+          34.57,
+          70.37
+        ],
+        "mean_cost_usd_per_run": 4.998017
+      },
+      "No control": {
+        "ci95": [
+          23.46,
+          55.56
+        ],
+        "mean_cost_usd_per_run": 1.0386
+      },
+      "Qwen3.7-Plus": {
+        "ci95": [
+          30.86,
+          65.43
+        ],
+        "mean_cost_usd_per_run": 4.29599
+      }
+    },
+    "type3": {
+      "Claude Opus 4.8": {
+        "ci95": [
+          7.41,
+          35.8
+        ],
+        "mean_cost_usd_per_run": 16.819174
+      },
+      "DeepSeek-V4-Flash-0731": {
+        "ci95": [
+          6.17,
+          34.57
+        ],
+        "mean_cost_usd_per_run": 10.238488
+      },
+      "Fixed control": {
+        "ci95": [
+          6.17,
+          33.33
+        ],
+        "mean_cost_usd_per_run": 5.5758
+      },
+      "GLM 5.2": {
+        "ci95": [
+          3.7,
+          29.63
+        ],
+        "mean_cost_usd_per_run": 4.861524
+      },
+      "GPT-5.5": {
+        "ci95": [
+          9.88,
+          40.74
+        ],
+        "mean_cost_usd_per_run": 18.836461
+      },
+      "No control": {
+        "ci95": [
+          4.94,
+          33.33
+        ],
+        "mean_cost_usd_per_run": 2.011667
+      },
+      "Qwen3.7-Plus": {
+        "ci95": [
+          9.88,
+          38.27
+        ],
+        "mean_cost_usd_per_run": 6.891516
+      }
+    }
+  },
+  "release": "0.1.0",
+  "repeat_ids": [
+    0,
+    1,
+    2
+  ],
+  "schema_version": "looparena.public_results_manifest.v1",
+  "type1": [
+    {
+      "correct": 65,
+      "cost_usd": 0.698511,
+      "invalid_rate": 0.0,
+      "method": "Qwen3.7-Plus",
+      "model_id": "qwen3.7-plus",
+      "questions": 90,
+      "role": "controller",
+      "score": 72.22
+    },
+    {
+      "correct": 70,
+      "cost_usd": 0.312345,
+      "invalid_rate": 0.0,
+      "method": "DeepSeek-V4-Flash-0731",
+      "model_id": "deepseek-v4-flash-0731",
+      "questions": 90,
+      "role": "controller",
+      "score": 77.78
+    },
+    {
+      "correct": 67,
+      "cost_usd": 3.023687,
+      "invalid_rate": 0.0,
+      "method": "GLM 5.2",
+      "model_id": "glm-5.2",
+      "questions": 90,
+      "role": "controller",
+      "score": 74.44
+    },
+    {
+      "correct": 79,
+      "cost_usd": 9.42648,
+      "invalid_rate": 0.0,
+      "method": "GPT-5.5",
+      "model_id": "gpt-5.5-0424-global",
+      "questions": 90,
+      "role": "controller",
+      "score": 87.78
+    },
+    {
+      "correct": 69,
+      "cost_usd": 13.67971,
+      "invalid_rate": 0.0,
+      "method": "Claude Opus 4.8",
+      "model_id": "claude-opus-4-8",
+      "questions": 90,
+      "role": "controller",
+      "score": 76.67
+    }
+  ],
+  "uncertainty": {
+    "algorithm": "Within each source, resample parent tasks with replacement. For each sampled task and method, resample three repeat IDs with replacement; reuse that method-specific repeat draw across Type II and Type III. Reuse the task draw across all methods and settings.",
+    "draws": 10000,
+    "interval": "95% percentile bootstrap interval",
+    "repeat_count": 3,
+    "rng": "numpy.random.Generator(PCG64)",
+    "seed": 20260822,
+    "sources": {
+      "BeyondSWE": 16,
+      "SCBench": 11
+    }
+  },
+  "validated_on": "2026-08-28"
+}

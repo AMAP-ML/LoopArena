@@ -1,0 +1,16 @@
+{
+  "cohort_dir": "benchmarks/type3",
+  "assets_root": "~/.cache/looparena/assets",
+  "cases": "all",
+  "seeds": [0],
+  "arm": "controlled",
+  "worker_model": "WORKER_MODEL_ID",
+  "controller": {
+    "provider": "model",
+    "model": "CONTROLLER_MODEL_ID"
+  },
+  "execution": {
+    "concurrency": 2,
+    "scbench_runtime_profile": "canonical-amd64"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "cohort_dir": "benchmarks/type2",
+  "cases": "all",
+  "seeds": [0],
+  "worker": {
+    "model": "WORKER_MODEL_ID"
+  },
+  "gateway_profiles": [
+    {
+      "id": "openai-compatible",
+      "api_key_env": "OPENAI_API_KEY",
+      "base_url_env": "OPENAI_BASE_URL"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "no-control",
+      "arm": "no-control"
+    },
+    {
+      "id": "controlled",
+      "arm": "controlled",
+      "controller": {
+        "model": "CONTROLLER_MODEL_ID"
+      }
+    }
+  ],
+  "execution": {
+    "concurrency": 2,
+    "continue_on_preflight_failure": false
+  },
+  "baseline_condition_id": "no-control"
+}

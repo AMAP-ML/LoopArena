@@ -1,0 +1,12 @@
+## Task
+
+Add native support for Python `enum.Enum` objects through a public `colander.Enum` schema type.
+
+Requirements:
+
+- Its constructor accepts a mandatory `enum_cls`, which must be an `enum.Enum` subclass.
+- It accepts an optional `attr` argument, defaulting to `name`, that selects the member attribute used as the serialized value.
+- The selected serialized values must be unique.
+- It accepts an optional `typ` argument containing a Colander `SchemaType` for the serialized representation.
+- It supports serialization and deserialization between enum members and their serialized values.
+- Invalid serialized inputs raise `colander.Invalid`.

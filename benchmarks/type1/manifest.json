@@ -1,0 +1,14 @@
+{
+  "schema_version": "looparena.type1_panel.v1",
+  "release_status": "released",
+  "items": 90,
+  "data_file": "questions.jsonl",
+  "task_format": "complete_contract_multiple_choice",
+  "answer_format": "Answer: X",
+  "evaluation": {
+    "requests_per_item": 1,
+    "qwen_temperature": 0,
+    "gpt_claude_temperature": null,
+    "exact_match": true
+  }
+}

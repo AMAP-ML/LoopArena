@@ -1,0 +1,21 @@
+{
+  "evaluator_plan": {
+    "bytes": 807,
+    "sha256": "ce15290520892248d427798ff73538db3da98821a58e9777260d55f9a47d4358"
+  },
+  "schema_version": "looparena.beyondswe.type2_case_provenance.v1",
+  "selection_algorithm": "python_random_mt19937_randrange_in_ordered_case_roster_v1",
+  "selection_seed": 0,
+  "source_case_id": "case028",
+  "source_checkpoint_id": "checkpoint_002",
+  "source_checkpoint_index": 2,
+  "task": {
+    "bytes": 470,
+    "sha256": "9359f90d8b082cd9f7870ca9c5176d6817b0b16fddd98b5554a05b743dea0e4f"
+  },
+  "workspace": {
+    "bytes": 2637824,
+    "sha256": "0a929331c9b51555783f4c9900bafe55414fefcd3f4ce3d26fb291c28411cb33"
+  },
+  "workspace_policy": "frozen predecessor model-visible snapshot excluding .git; private evaluator assets and target transition are excluded"
+}

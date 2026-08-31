@@ -1,0 +1,14 @@
+{
+  "evaluator_plan_sha256": "sha256:d903797ada5f7b6d8279524cc6ee9ddcb27fbc81029481402727fc970553ebd6",
+  "problem_id": "scbench:cfgpipe",
+  "schema_version": "looparena.scbench.stratified_type2_case_provenance.v1",
+  "selection_manifest_sha256": "sha256:4d44f83d8df55de1382fc249ef23dc1b96b7d4a36bb7857c20431ba269a49ef3",
+  "selection_seed": 20260812,
+  "source_checkpoint_start": 3,
+  "source_checkpoint_target": 4,
+  "source_type3_case_id": "case008",
+  "stage": "middle",
+  "task_sha256": "sha256:71bc5f2edc5d9b4ca0337d842b4a31f8c30a9506a498bae16c567a46a078f62a",
+  "workspace_archive_sha256": "sha256:00a96e57a224b5e52128e63386d0c0f1a23b226a0d7481deb87c77552c744edb",
+  "workspace_policy": "sanitized official predecessor reference workspace; private evaluator, tests, target solution, and test caches excluded"
+}

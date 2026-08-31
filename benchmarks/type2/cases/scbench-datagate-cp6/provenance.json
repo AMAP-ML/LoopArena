@@ -1,0 +1,14 @@
+{
+  "evaluator_plan_sha256": "sha256:baf08ab122c997e2d8378fd61b79e1a0148ea9bc2055a3611ac295296b18ab63",
+  "problem_id": "scbench:datagate",
+  "schema_version": "looparena.scbench.stratified_type2_case_provenance.v1",
+  "selection_manifest_sha256": "sha256:de76bd6a2cda5aeb69eccc8c23fa9397b3f6bfc551b65598b9be81dcf4f6c0e2",
+  "selection_seed": 20260812,
+  "source_checkpoint_start": 5,
+  "source_checkpoint_target": 6,
+  "source_type3_case_id": "Datagate",
+  "stage": "late",
+  "task_sha256": "sha256:dadf8cd73fc06ad69d68288e6e92283d7316b98ae453407ed1a1231f530d2ab6",
+  "workspace_archive_sha256": "sha256:3fc455e682489aa29793c85f25b94c03fba4d6284e6f1319c4b2c9c2ccbb5f81",
+  "workspace_policy": "sanitized official predecessor reference workspace; private evaluator, tests, target solution, and test caches excluded"
+}

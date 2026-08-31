@@ -1,0 +1,3 @@
+## Restore SciPy 1.14+ eigenvalue compatibility
+
+Ensure `lambda_max` and related eigenvalue-based atoms work with SciPy 1.14+. The provided reproduction using a 3×3 identity-matrix parameter should evaluate successfully and report the maximum eigenvalue instead of raising a `TypeError`, while retaining existing numerical results.
