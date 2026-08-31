@@ -388,18 +388,38 @@ img {
 .hero-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 10px;
   margin-top: 24px;
-  color: var(--muted);
-  font-size: 0.85rem;
-  font-weight: 650;
+  font-size: 0.82rem;
+  font-weight: 750;
 }
 
-.hero-links a {
+.hero-links .resource-link {
+  display: inline-flex;
+  min-height: 38px;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 13px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
   color: var(--muted-strong);
-  text-decoration: underline;
-  text-decoration-color: rgba(191, 208, 226, 0.32);
-  text-underline-offset: 4px;
+  background: rgba(8, 20, 35, 0.68);
+  text-decoration: none;
+  transition: color 150ms ease, border-color 150ms ease, background 150ms ease, transform 150ms ease;
+}
+
+.hero-links .resource-link-primary {
+  border-color: rgba(130, 220, 255, 0.42);
+  color: #eef9ff;
+  background: rgba(24, 185, 255, 0.11);
+}
+
+.hero-links .resource-link:hover,
+.hero-links .resource-link:focus-visible {
+  border-color: var(--blue-light);
+  color: white;
+  background: rgba(24, 185, 255, 0.16);
+  transform: translateY(-2px);
 }
 
 @keyframes hero-art-drift {

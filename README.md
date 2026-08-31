@@ -6,8 +6,12 @@
 <p align="center"><strong>DreamX Team</strong></p>
 
 <p align="center">
-  <a href="https://arxiv.org/abs/2608.28281"><strong>Paper</strong></a> ·
-  <a href="https://amap-ml.github.io/LoopArena/"><strong>Website</strong></a> ·
+  <a href="https://arxiv.org/abs/2608.28281"><strong>📄 arXiv Paper</strong></a> ·
+  <a href="https://huggingface.co/papers/2608.28281"><strong>🤗 Hugging Face Paper</strong></a> ·
+  <a href="https://amap-ml.github.io/LoopArena/"><strong>🌐 Project Website</strong></a>
+</p>
+
+<p align="center">
   <a href="docs/protocol.md"><strong>Protocol</strong></a> ·
   <a href="#benchmark"><strong>Benchmark</strong></a> ·
   <a href="#quick-start"><strong>Quick start</strong></a>
