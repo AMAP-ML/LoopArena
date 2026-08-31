@@ -7,17 +7,17 @@ runtime, and terminal evaluator. Type II and Type III also report shared
 no-control and fixed-control reference policies; these provide context for the
 Controller results and are excluded from the Controller-model ranking.
 
-## Arms
+## Execution policies
 
-In the **no-control** arm, the Worker receives one instruction to complete the
-task and runs until it finishes or exhausts its budget.
+Under the **no-control reference policy**, the Worker receives one instruction
+to complete the task and runs until it finishes or exhausts its budget.
 
-In the **fixed-control** arm, the Worker repeatedly receives the same task-level
-goal at loop handoffs. No model Controller reviews the run or adapts the
-instruction; the policy stops after the Worker explicitly reports that the goal
-is complete.
+Under the **fixed-control reference policy**, the Worker repeatedly receives
+the same task-level goal at loop handoffs. No model Controller reviews the run
+or adapts the instruction; the policy stops after the Worker explicitly reports
+that the goal is complete.
 
-In the **controlled** arm:
+Under a **Controller-model policy**:
 
 1. the Worker receives a bounded assignment;
 2. when that assignment ends, a fresh Reporter reads the observable Worker
@@ -30,8 +30,10 @@ In the **controlled** arm:
 6. an `advance` or `verify` instruction continues the same Worker conversation,
    while `stop` ends the episode.
 
-No-control has no Reporter, Controller, packet compilation, or periodic
-interruption.
+No control has no Reporter, Controller, packet compilation, or periodic
+interruption. The CLI retains `--arm controlled|no-control` as an
+implementation-level execution-mode flag. Fixed control uses the controlled
+execution mode with the deterministic fixed-control policy.
 
 ## Information boundary
 
@@ -61,15 +63,15 @@ into a different decision.
 
 ## Budgets
 
-The main Worker has 600 model turns in either arm. Each Reporter call has at
-most 50 turns. A controlled run has at most 128 control cycles and 24 hours of
-Controller-channel wall time. Dataset runners may impose a shorter overall
-wall-time limit when the source task requires one.
+The main Worker has 600 model turns under every execution policy. Each Reporter
+call has at most 50 turns. A Controller-model run has at most 128 control cycles
+and 24 hours of Controller-channel wall time. Dataset runners may impose a
+shorter overall wall-time limit when the source task requires one.
 
 One Worker response may make at most one tool call. Tool output and model input
-are bounded by the same deterministic context policy in both arms. Context
-compaction changes representation only when a provider input would exceed the
-declared capacity; the run records when it occurs.
+are bounded by the same deterministic context policy under every execution
+policy. Context compaction changes representation only when a provider input
+would exceed the declared capacity; the run records when it occurs.
 
 ## Evaluation
 
@@ -95,5 +97,5 @@ by the models; `run_manifest.json` adds the terminal evaluation result.
 
 Provider-interrupted runs may resume only from the last durable model boundary.
 Completed model work is not replayed. The resume record binds the task,
-workspace, arm, seed, model configuration, and previous progress needed to
-continue the same experiment.
+workspace, execution policy, seed, model configuration, and previous progress
+needed to continue the same experiment.

@@ -873,6 +873,18 @@ tbody tr:hover td {
   font-weight: 750;
 }
 
+.quickstart-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 22px;
+}
+
+.text-link-muted {
+  color: var(--muted-strong);
+  font-weight: 650;
+}
+
 .terminal-card {
   overflow: hidden;
   border: 1px solid var(--line-strong);
