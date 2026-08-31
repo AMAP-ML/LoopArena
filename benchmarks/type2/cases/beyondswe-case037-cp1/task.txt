@@ -1,0 +1,3 @@
+## Task
+
+Prevent false-positive `TC002` diagnostics for SQLAlchemy 2.0 declarative annotations. When `sqlalchemy.orm.Mapped` is imported and used in annotations such as `Mapped[int]`, the linter must not classify it as an import that should be moved into a type-checking block, because it must remain available at runtime.

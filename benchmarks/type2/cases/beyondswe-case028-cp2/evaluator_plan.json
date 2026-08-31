@@ -1,0 +1,21 @@
+{
+  "adapter_config": {
+    "docker_executable": "docker",
+    "task_dir": "/opt/looparena/evaluator_assets/type2/beyondswe/case028/checkpoint_002"
+  },
+  "adapter_kind": "beyondswe_harbor",
+  "adapter_version": "harbor-verifier-v1",
+  "evaluator_revision": "beyondswe-scbench-style-20260814-case028-checkpoint_002",
+  "network": "host",
+  "pass_policy": "reward-equals-one",
+  "runtime_identity": {
+    "image_id": "sha256:ec03f002d3131129fc9e720207330812ed1eb701b3d24b42be0f6048994e1dba",
+    "image_reference": "aweaiteam/beyondswe:pylons_pyramid_pr2964",
+    "platform": "linux/amd64",
+    "workdir": "/workspace/pyramid"
+  },
+  "schema_version": "looparena.terminal_evaluator_plan.v1",
+  "solve_network": "host",
+  "source_revision": "7d2ced21b4c85f646d5ba8786875d7fbbe08ed49",
+  "timeout_sec": 1200
+}

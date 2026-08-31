@@ -1,0 +1,13 @@
+diff --git a/tests/conftest.py b/tests/conftest.py
+index a941f98..4b43422 100644
+--- a/tests/conftest.py
++++ b/tests/conftest.py
+@@ -41,6 +41,8 @@ def _get_error(example: str, *, error_code_filter: Optional[str] = None, **kwarg
+         mock_options.type_checking_fastapi_enabled = False
+         mock_options.type_checking_fastapi_dependency_support_enabled = False
+         mock_options.type_checking_pydantic_enabled_baseclass_passlist = []
++        mock_options.type_checking_sqlalchemy_enabled = False
++        mock_options.type_checking_sqlalchemy_mapped_dotted_names = []
+         mock_options.type_checking_injector_enabled = False
+         mock_options.type_checking_strict = False
+         # kwarg overrides

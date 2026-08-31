@@ -1,0 +1,31 @@
+name: tests
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: uv sync --extra gateway --extra scbench
+      - run: uv run ruff format --check src tests tools
+      - run: uv run ruff check --select F,E9 src tests tools
+      - run: uv run pytest
+      - run: uv build
+      - run: uv run looparena-assets --help
+      - run: uv run looparena-type1-run --help
+      - run: uv run looparena-type2-panel --help
+      - run: uv run looparena-type2-run --help
+      - run: uv run looparena-type2-summarize --help
+      - run: uv run looparena-type3-run --help
+      - run: uv run looparena-type3-panel --help
+      - run: uv run looparena-type3-summarize --help
+      - run: uv run looparena-results-summarize results/0.1.0 --json-out /tmp/looparena-summary.json

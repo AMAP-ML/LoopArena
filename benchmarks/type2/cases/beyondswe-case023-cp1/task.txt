@@ -1,0 +1,1 @@
+Add Organization VPC support to `aiven-client`, including the CLI commands and API interactions needed to manage organization VPCs. The CLI command structure, arguments, and behavior should align with the documented Organization VPC workflows. For example, `avn organization vpc list --organization-id my-org` should be recognized instead of reporting `vpc` as an unknown command.

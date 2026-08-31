@@ -1,0 +1,485 @@
+{
+  "canonical_key_set_complete": true,
+  "findings": {
+    "best_type3_ssr_percent": 24.69,
+    "mean_type2_cost_reduction_percent": 64.4,
+    "type2_type3_spearman_rho": 0.974679
+  },
+  "headline_policy": "core-cases",
+  "records": 1134,
+  "release": "0.1.0",
+  "schema_version": "looparena.public_results_summary.v1",
+  "settings": {
+    "type2": {
+      "cost_label": "Mean cost / run",
+      "label": "Type II",
+      "metric": "Strict Success Rate",
+      "rows": [
+        {
+          "ci95": [
+            23.46,
+            55.56
+          ],
+          "cost_usd": 1.0386,
+          "method": "No control",
+          "model_id": "none",
+          "role": "reference",
+          "runs": 81,
+          "score": 39.51,
+          "source_split": {
+            "BeyondSWE": {
+              "runs": 48,
+              "successes": 12
+            },
+            "SCBench": {
+              "runs": 33,
+              "successes": 20
+            }
+          },
+          "successes": 32,
+          "successes_by_repeat": {
+            "0": 8,
+            "1": 12,
+            "2": 12
+          }
+        },
+        {
+          "ci95": [
+            29.63,
+            64.2
+          ],
+          "cost_usd": 1.080446,
+          "method": "Fixed control",
+          "model_id": "non-adaptive-fixed",
+          "role": "reference",
+          "runs": 81,
+          "score": 46.91,
+          "source_split": {
+            "BeyondSWE": {
+              "runs": 48,
+              "successes": 15
+            },
+            "SCBench": {
+              "runs": 33,
+              "successes": 23
+            }
+          },
+          "successes": 38,
+          "successes_by_repeat": {
+            "0": 11,
+            "1": 14,
+            "2": 13
+          }
+        },
+        {
+          "ci95": [
+            30.86,
+            65.43
+          ],
+          "cost_usd": 4.29599,
+          "method": "Qwen3.7-Plus",
+          "model_id": "qwen3.7-plus",
+          "role": "controller",
+          "runs": 81,
+          "score": 48.15,
+          "source_split": {
+            "BeyondSWE": {
+              "runs": 48,
+              "successes": 18
+            },
+            "SCBench": {
+              "runs": 33,
+              "successes": 21
+            }
+          },
+          "successes": 39,
+          "successes_by_repeat": {
+            "0": 11,
+            "1": 13,
+            "2": 15
+          }
+        },
+        {
+          "ci95": [
+            28.4,
+            62.96
+          ],
+          "cost_usd": 2.103646,
+          "method": "DeepSeek-V4-Flash-0731",
+          "model_id": "deepseek-v4-flash-0731",
+          "role": "controller",
+          "runs": 81,
+          "score": 45.68,
+          "source_split": {
+            "BeyondSWE": {
+              "runs": 48,
+              "successes": 17
+            },
+            "SCBench": {
+              "runs": 33,
+              "successes": 20
+            }
+          },
+          "successes": 37,
+          "successes_by_repeat": {
+            "0": 13,
+            "1": 12,
+            "2": 12
+          }
+        },
+        {
+          "ci95": [
+            20.99,
+            54.32
+          ],
+          "cost_usd": 1.633273,
+          "method": "GLM 5.2",
+          "model_id": "glm-5.2",
+          "role": "controller",
+          "runs": 81,
+          "score": 37.04,
+          "source_split": {
+            "BeyondSWE": {
+              "runs": 48,
+              "successes": 22
+            },
+            "SCBench": {
+              "runs": 33,
+              "successes": 8
+            }
+          },
+          "successes": 30,
+          "successes_by_repeat": {
+            "0": 13,
+            "1": 9,
+            "2": 8
+          }
+        },
+        {
+          "ci95": [
+            34.57,
+            70.37
+          ],
+          "cost_usd": 4.998017,
+          "method": "GPT-5.5",
+          "model_id": "gpt-5.5-0424-global",
+          "role": "controller",
+          "runs": 81,
+          "score": 51.85,
+          "source_split": {
+            "BeyondSWE": {
+              "runs": 48,
+              "successes": 18
+            },
+            "SCBench": {
+              "runs": 33,
+              "successes": 24
+            }
+          },
+          "successes": 42,
+          "successes_by_repeat": {
+            "0": 14,
+            "1": 15,
+            "2": 13
+          }
+        },
+        {
+          "ci95": [
+            30.86,
+            65.43
+          ],
+          "cost_usd": 5.874172,
+          "method": "Claude Opus 4.8",
+          "model_id": "claude-opus-4-8",
+          "role": "controller",
+          "runs": 81,
+          "score": 48.15,
+          "source_split": {
+            "BeyondSWE": {
+              "runs": 48,
+              "successes": 17
+            },
+            "SCBench": {
+              "runs": 33,
+              "successes": 22
+            }
+          },
+          "successes": 39,
+          "successes_by_repeat": {
+            "0": 12,
+            "1": 14,
+            "2": 13
+          }
+        }
+      ]
+    },
+    "type3": {
+      "cost_label": "Mean cost / run",
+      "label": "Type III",
+      "metric": "Strict Success Rate",
+      "rows": [
+        {
+          "ci95": [
+            4.94,
+            33.33
+          ],
+          "cost_usd": 2.011667,
+          "method": "No control",
+          "model_id": "none",
+          "role": "reference",
+          "runs": 81,
+          "score": 18.52,
+          "source_split": {
+            "BeyondSWE": {
+              "runs": 48,
+              "successes": 10
+            },
+            "SCBench": {
+              "runs": 33,
+              "successes": 5
+            }
+          },
+          "successes": 15,
+          "successes_by_repeat": {
+            "0": 6,
+            "1": 4,
+            "2": 5
+          }
+        },
+        {
+          "ci95": [
+            6.17,
+            33.33
+          ],
+          "cost_usd": 5.5758,
+          "method": "Fixed control",
+          "model_id": "non-adaptive-fixed",
+          "role": "reference",
+          "runs": 81,
+          "score": 18.52,
+          "source_split": {
+            "BeyondSWE": {
+              "runs": 48,
+              "successes": 12
+            },
+            "SCBench": {
+              "runs": 33,
+              "successes": 3
+            }
+          },
+          "successes": 15,
+          "successes_by_repeat": {
+            "0": 6,
+            "1": 4,
+            "2": 5
+          }
+        },
+        {
+          "ci95": [
+            9.88,
+            38.27
+          ],
+          "cost_usd": 6.891516,
+          "method": "Qwen3.7-Plus",
+          "model_id": "qwen3.7-plus",
+          "role": "controller",
+          "runs": 81,
+          "score": 23.46,
+          "source_split": {
+            "BeyondSWE": {
+              "runs": 48,
+              "successes": 14
+            },
+            "SCBench": {
+              "runs": 33,
+              "successes": 5
+            }
+          },
+          "successes": 19,
+          "successes_by_repeat": {
+            "0": 7,
+            "1": 7,
+            "2": 5
+          }
+        },
+        {
+          "ci95": [
+            6.17,
+            34.57
+          ],
+          "cost_usd": 10.238488,
+          "method": "DeepSeek-V4-Flash-0731",
+          "model_id": "deepseek-v4-flash-0731",
+          "role": "controller",
+          "runs": 81,
+          "score": 19.75,
+          "source_split": {
+            "BeyondSWE": {
+              "runs": 48,
+              "successes": 13
+            },
+            "SCBench": {
+              "runs": 33,
+              "successes": 3
+            }
+          },
+          "successes": 16,
+          "successes_by_repeat": {
+            "0": 4,
+            "1": 5,
+            "2": 7
+          }
+        },
+        {
+          "ci95": [
+            3.7,
+            29.63
+          ],
+          "cost_usd": 4.861524,
+          "method": "GLM 5.2",
+          "model_id": "glm-5.2",
+          "role": "controller",
+          "runs": 81,
+          "score": 16.05,
+          "source_split": {
+            "BeyondSWE": {
+              "runs": 48,
+              "successes": 13
+            },
+            "SCBench": {
+              "runs": 33,
+              "successes": 0
+            }
+          },
+          "successes": 13,
+          "successes_by_repeat": {
+            "0": 5,
+            "1": 4,
+            "2": 4
+          }
+        },
+        {
+          "ci95": [
+            9.88,
+            40.74
+          ],
+          "cost_usd": 18.836461,
+          "method": "GPT-5.5",
+          "model_id": "gpt-5.5-0424-global",
+          "role": "controller",
+          "runs": 81,
+          "score": 24.69,
+          "source_split": {
+            "BeyondSWE": {
+              "runs": 48,
+              "successes": 14
+            },
+            "SCBench": {
+              "runs": 33,
+              "successes": 6
+            }
+          },
+          "successes": 20,
+          "successes_by_repeat": {
+            "0": 6,
+            "1": 6,
+            "2": 8
+          }
+        },
+        {
+          "ci95": [
+            7.41,
+            35.8
+          ],
+          "cost_usd": 16.819174,
+          "method": "Claude Opus 4.8",
+          "model_id": "claude-opus-4-8",
+          "role": "controller",
+          "runs": 81,
+          "score": 20.99,
+          "source_split": {
+            "BeyondSWE": {
+              "runs": 48,
+              "successes": 14
+            },
+            "SCBench": {
+              "runs": 33,
+              "successes": 3
+            }
+          },
+          "successes": 17,
+          "successes_by_repeat": {
+            "0": 6,
+            "1": 6,
+            "2": 5
+          }
+        }
+      ]
+    }
+  },
+  "type1": [
+    {
+      "correct": 65,
+      "cost_usd": 0.698511,
+      "invalid_rate": 0.0,
+      "method": "Qwen3.7-Plus",
+      "model_id": "qwen3.7-plus",
+      "questions": 90,
+      "role": "controller",
+      "score": 72.22
+    },
+    {
+      "correct": 70,
+      "cost_usd": 0.312345,
+      "invalid_rate": 0.0,
+      "method": "DeepSeek-V4-Flash-0731",
+      "model_id": "deepseek-v4-flash-0731",
+      "questions": 90,
+      "role": "controller",
+      "score": 77.78
+    },
+    {
+      "correct": 67,
+      "cost_usd": 3.023687,
+      "invalid_rate": 0.0,
+      "method": "GLM 5.2",
+      "model_id": "glm-5.2",
+      "questions": 90,
+      "role": "controller",
+      "score": 74.44
+    },
+    {
+      "correct": 79,
+      "cost_usd": 9.42648,
+      "invalid_rate": 0.0,
+      "method": "GPT-5.5",
+      "model_id": "gpt-5.5-0424-global",
+      "questions": 90,
+      "role": "controller",
+      "score": 87.78
+    },
+    {
+      "correct": 69,
+      "cost_usd": 13.67971,
+      "invalid_rate": 0.0,
+      "method": "Claude Opus 4.8",
+      "model_id": "claude-opus-4-8",
+      "questions": 90,
+      "role": "controller",
+      "score": 76.67
+    }
+  ],
+  "uncertainty": {
+    "algorithm": "Within each source, resample parent tasks with replacement. For each sampled task and method, resample three repeat IDs with replacement; reuse that method-specific repeat draw across Type II and Type III. Reuse the task draw across all methods and settings.",
+    "draws": 10000,
+    "interval": "95% percentile bootstrap interval",
+    "repeat_count": 3,
+    "rng": "numpy.random.Generator(PCG64)",
+    "seed": 20260822,
+    "sources": {
+      "BeyondSWE": 16,
+      "SCBench": 11
+    }
+  },
+  "validated_on": "2026-08-28"
+}

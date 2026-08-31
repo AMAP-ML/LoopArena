@@ -1,0 +1,10 @@
+{
+  "adapter_kind": "scbench",
+  "case_id": "case004",
+  "episode_origin": "official_problem_start",
+  "harness_start_mode": "bootstrap_contract_start",
+  "official_task_id": "scbench:file_backup",
+  "schema_version": "looparena.type3_case.v2",
+  "task_scope": "official_full_problem",
+  "task_sequence_ref": "task_sequence.json"
+}

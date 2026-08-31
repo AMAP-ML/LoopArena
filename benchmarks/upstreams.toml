@@ -1,0 +1,11 @@
+[beyondswe]
+repository = "https://huggingface.co/datasets/AweAI-Team/BeyondSWE-harbor"
+revision = "7d2ced21b4c85f646d5ba8786875d7fbbe08ed49"
+image_platform = "linux/amd64"
+
+[scbench]
+runner_repository = "https://github.com/SprocketLab/slop-code-bench.git"
+runner_revision = "13de1a7a6b8b3dc5cc532a0c322a0997afa5bec7"
+problems_repository = "https://github.com/gabeorlanski/scb-problems.git"
+problems_revision = "4d38d300059667d57e43c31969bc455f5c338b52"
+image_platform = "linux/amd64"

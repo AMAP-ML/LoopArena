@@ -1,0 +1,10 @@
+## CSRF storage policies
+
+Provide `ICSRFStoragePolicy` and register the default `LegacySessionCSRFStoragePolicy`, `SessionCSRFStoragePolicy`, and `CookieCSRFStoragePolicy` policies.
+
+For `CookieCSRFStoragePolicy`:
+
+- Return an existing CSRF token from the request cookie.
+- Apply a configured cookie domain to the response’s `Set-Cookie` header.
+
+Preserve the previously completed storage-policy architecture and behavior.

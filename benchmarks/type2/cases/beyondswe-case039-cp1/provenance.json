@@ -1,0 +1,21 @@
+{
+  "evaluator_plan": {
+    "bytes": 732,
+    "sha256": "2abd4e7c5f001718174e27cdcbde5fe3cba45bbb56257fcda91b7d29c22e5298"
+  },
+  "schema_version": "looparena.beyondswe.type2_case_provenance.v1",
+  "selection_algorithm": "python_random_mt19937_randrange_in_ordered_case_roster_v1",
+  "selection_seed": 0,
+  "source_case_id": "case039",
+  "source_checkpoint_id": "checkpoint_001",
+  "source_checkpoint_index": 1,
+  "task": {
+    "bytes": 4600,
+    "sha256": "c04661fbd4b44ea872bfd71bda42ad0a420e1a73fa47df80dbe27523d98776d0"
+  },
+  "workspace": {
+    "bytes": 7179716,
+    "sha256": "af4dfa25b267ee1fee688a450291b138e2fcb6e830eb1af7c015f5f665646c78"
+  },
+  "workspace_policy": "pinned official parent snapshot excluding .git; vendor/llhttp populated at the gitlink commit from the pinned official source image"
+}

@@ -1,0 +1,3 @@
+## Task
+
+Ensure that `cvxpy.reshape` expressions evaluate correctly with NumPy 2.1.0. Accessing `.value` on a reshape expression, such as reshaping a four-element variable to `(2, 2)`, must return the reshaped array without raising a `TypeError`.

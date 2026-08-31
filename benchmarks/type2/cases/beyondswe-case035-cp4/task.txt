@@ -1,0 +1,1 @@
+Extend `HarrisSheet` so `current_density(position)` returns the sheet’s calculated current density. The complete public reproduction workflow must output the magnetic field, current density, and plasma pressure at the requested position. Preserve all previously completed behavior.

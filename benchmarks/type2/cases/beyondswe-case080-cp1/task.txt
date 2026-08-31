@@ -1,0 +1,1 @@
+When `config.add_notfound_view(append_slash=True)` redirects a request to the slash-appended URL, use HTTP status 307 so a client can replay a `POST` with its original method and body.

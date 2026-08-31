@@ -1,0 +1,212 @@
+{
+  "cases": [
+    {
+      "adapter_kind": "scbench",
+      "case_id": "Datagate",
+      "native_task_steps": 7,
+      "official_task_id": "scbench:datagate",
+      "target_step": "checkpoint_7"
+    },
+    {
+      "adapter_kind": "scbench",
+      "case_id": "case001",
+      "native_task_steps": 8,
+      "official_task_id": "scbench:meshctl",
+      "target_step": "checkpoint_8"
+    },
+    {
+      "adapter_kind": "scbench",
+      "case_id": "case003",
+      "native_task_steps": 6,
+      "official_task_id": "scbench:mvvault",
+      "target_step": "checkpoint_6"
+    },
+    {
+      "adapter_kind": "scbench",
+      "case_id": "case004",
+      "native_task_steps": 4,
+      "official_task_id": "scbench:file_backup",
+      "target_step": "checkpoint_4"
+    },
+    {
+      "adapter_kind": "scbench",
+      "case_id": "case005",
+      "native_task_steps": 4,
+      "official_task_id": "scbench:dynamic_config_service_api",
+      "target_step": "checkpoint_4"
+    },
+    {
+      "adapter_kind": "scbench",
+      "case_id": "case008",
+      "native_task_steps": 6,
+      "official_task_id": "scbench:cfgpipe",
+      "target_step": "checkpoint_6"
+    },
+    {
+      "adapter_kind": "scbench",
+      "case_id": "case012",
+      "native_task_steps": 8,
+      "official_task_id": "scbench:circuit_eval",
+      "target_step": "checkpoint_8"
+    },
+    {
+      "adapter_kind": "scbench",
+      "case_id": "case016",
+      "native_task_steps": 6,
+      "official_task_id": "scbench:execution_server",
+      "target_step": "checkpoint_6"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "case019",
+      "native_task_steps": 1,
+      "official_task_id": "beyondswe:aboutcode-org_commoncode_pr44",
+      "target_step": "task"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "case023",
+      "native_task_steps": 1,
+      "official_task_id": "beyondswe:aiven_aiven-client_pr399",
+      "target_step": "task"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "case025",
+      "native_task_steps": 1,
+      "official_task_id": "beyondswe:pylons_colander_pr305",
+      "target_step": "task"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "case027",
+      "native_task_steps": 1,
+      "official_task_id": "beyondswe:diamondlightsource_python-zocalo_pr140",
+      "target_step": "task"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "case028",
+      "native_task_steps": 1,
+      "official_task_id": "beyondswe:pylons_pyramid_pr2964",
+      "target_step": "task"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "case029",
+      "native_task_steps": 1,
+      "official_task_id": "beyondswe:cvxpy_cvxpy_pr2542",
+      "target_step": "task"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "case033",
+      "native_task_steps": 1,
+      "official_task_id": "beyondswe:pylons_pyramid_pr3019",
+      "target_step": "task"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "case035",
+      "native_task_steps": 1,
+      "official_task_id": "beyondswe:plasmapy_plasmapy_pr2068",
+      "target_step": "task"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "case037",
+      "native_task_steps": 1,
+      "official_task_id": "beyondswe:snok_flake8-type-checking_pr179",
+      "target_step": "task"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "case039",
+      "native_task_steps": 1,
+      "official_task_id": "beyondswe:aio-libs_aiohttp_pr7944",
+      "target_step": "task"
+    },
+    {
+      "adapter_kind": "scbench",
+      "case_id": "case203",
+      "native_task_steps": 6,
+      "official_task_id": "scbench:eve_industry",
+      "target_step": "checkpoint_6"
+    },
+    {
+      "adapter_kind": "scbench",
+      "case_id": "case204",
+      "native_task_steps": 5,
+      "official_task_id": "scbench:file_query_tool",
+      "target_step": "checkpoint_5"
+    },
+    {
+      "adapter_kind": "scbench",
+      "case_id": "case206",
+      "native_task_steps": 5,
+      "official_task_id": "scbench:pwd_manager",
+      "target_step": "checkpoint_5"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "case208",
+      "native_task_steps": 1,
+      "official_task_id": "beyondswe:adamtheturtle_sybil-extras_pr219",
+      "target_step": "task"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "case061",
+      "native_task_steps": 1,
+      "official_task_id": "beyondswe:openedx_edx-drf-extensions_pr230",
+      "target_step": "task"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "case066",
+      "native_task_steps": 1,
+      "official_task_id": "beyondswe:sinaptik-ai_pandas-ai_pr761",
+      "target_step": "task"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "case080",
+      "native_task_steps": 1,
+      "official_task_id": "beyondswe:pylons_pyramid_pr3328",
+      "target_step": "task"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "case089",
+      "native_task_steps": 1,
+      "official_task_id": "beyondswe:aklajnert_pytest-subprocess_pr180",
+      "target_step": "task"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "case102",
+      "native_task_steps": 1,
+      "official_task_id": "beyondswe:cvxpy_cvxpy_pr2508",
+      "target_step": "task"
+    }
+  ],
+  "cohort_id": "type3",
+  "compatibility_aliases": {
+    "case011": "case003",
+    "case015": "case005",
+    "case115": "case004",
+    "case201": "case001"
+  },
+  "counts": {
+    "beyondswe_harbor": 16,
+    "compatibility_aliases": 4,
+    "native_task_steps": 81,
+    "scbench": 11,
+    "total": 27
+  },
+  "episode_origin": "official_problem_start",
+  "harness_start_mode": "bootstrap_contract_start",
+  "release_status": "released",
+  "schema_version": "looparena.type3_case_index.v3",
+  "task_scope": "official_complete_tasks"
+}

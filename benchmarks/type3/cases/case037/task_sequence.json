@@ -1,0 +1,19 @@
+{
+  "adapter_kind": "beyondswe_harbor",
+  "checkpoint_context_policy": "single_episode",
+  "checkpoint_failure_policy": "stop_after_task",
+  "official_parent_commit": "9855cdae692608d50a25e51f7e57579438769f28",
+  "official_task_id": "beyondswe:snok_flake8-type-checking_pr179",
+  "official_workdir": "/workspace/flake8-type-checking",
+  "schema_version": "looparena.type3_task_sequence.v2",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/task.json",
+      "step_id": "task",
+      "task_ref": "tasks/task.md"
+    }
+  ],
+  "target_step": "task",
+  "task_scope": "official_full_task",
+  "workspace_origin": "pinned_source_image_parent_commit"
+}

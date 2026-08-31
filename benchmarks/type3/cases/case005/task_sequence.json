@@ -1,0 +1,39 @@
+{
+  "adapter_kind": "scbench",
+  "aggregate_pass_policy": "all_official_checkpoints_pass",
+  "checkpoint_context_policy": "reset_model_context_preserve_workspace",
+  "checkpoint_coverage_policy": "all_official_checkpoints",
+  "checkpoint_failure_policy": "continue_after_valid_task_failure_stop_on_infrastructure_invalid",
+  "official_checkpoint_count": 4,
+  "official_task_id": "scbench:dynamic_config_service_api",
+  "schema_version": "looparena.type3_task_sequence.v2",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/checkpoint_1.json",
+      "step_id": "checkpoint_1",
+      "task_ref": "tasks/checkpoint_1.md",
+      "tests_expected": 47
+    },
+    {
+      "evaluator_plan_ref": "evaluator_plans/checkpoint_2.json",
+      "step_id": "checkpoint_2",
+      "task_ref": "tasks/checkpoint_2.md",
+      "tests_expected": 93
+    },
+    {
+      "evaluator_plan_ref": "evaluator_plans/checkpoint_3.json",
+      "step_id": "checkpoint_3",
+      "task_ref": "tasks/checkpoint_3.md",
+      "tests_expected": 76
+    },
+    {
+      "evaluator_plan_ref": "evaluator_plans/checkpoint_4.json",
+      "step_id": "checkpoint_4",
+      "task_ref": "tasks/checkpoint_4.md",
+      "tests_expected": 81
+    }
+  ],
+  "target_step": "checkpoint_4",
+  "task_scope": "official_full_problem",
+  "workspace_origin": "empty_workspace_plus_declared_public_static_assets"
+}

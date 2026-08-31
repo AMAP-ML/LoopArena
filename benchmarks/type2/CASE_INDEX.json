@@ -1,0 +1,256 @@
+{
+  "schema_version": "looparena.type2_case_index.v1",
+  "cohort_id": "type2_single_checkpoint_27",
+  "start_mode": "bootstrap_contract_start",
+  "counts": {
+    "total": 27,
+    "unique_official_tasks": 27,
+    "scbench": 11,
+    "beyondswe_harbor": 16
+  },
+  "cases": [
+    {
+      "case_id": "scbench-cfgpipe-cp4",
+      "official_task_id": "scbench:cfgpipe",
+      "selection_stage": "middle",
+      "source_checkpoint_start": 3,
+      "source_checkpoint_target": 4,
+      "source_type3_case_id": "case008",
+      "adapter_kind": "scbench"
+    },
+    {
+      "case_id": "scbench-dynamic_config_service_api-cp4",
+      "official_task_id": "scbench:dynamic_config_service_api",
+      "selection_stage": "late",
+      "source_checkpoint_start": 3,
+      "source_checkpoint_target": 4,
+      "source_type3_case_id": "case005",
+      "adapter_kind": "scbench"
+    },
+    {
+      "case_id": "scbench-eve_industry-cp3",
+      "official_task_id": "scbench:eve_industry",
+      "selection_stage": "early",
+      "source_checkpoint_start": 2,
+      "source_checkpoint_target": 3,
+      "source_type3_case_id": "case203",
+      "adapter_kind": "scbench"
+    },
+    {
+      "case_id": "scbench-execution_server-cp2",
+      "official_task_id": "scbench:execution_server",
+      "selection_stage": "early",
+      "source_checkpoint_start": 1,
+      "source_checkpoint_target": 2,
+      "source_type3_case_id": "case016",
+      "adapter_kind": "scbench"
+    },
+    {
+      "case_id": "scbench-file_backup-cp4",
+      "official_task_id": "scbench:file_backup",
+      "selection_stage": "late",
+      "source_checkpoint_start": 3,
+      "source_checkpoint_target": 4,
+      "source_type3_case_id": "case004",
+      "adapter_kind": "scbench"
+    },
+    {
+      "case_id": "scbench-file_query_tool-cp5",
+      "official_task_id": "scbench:file_query_tool",
+      "selection_stage": "late",
+      "source_checkpoint_start": 4,
+      "source_checkpoint_target": 5,
+      "source_type3_case_id": "case204",
+      "adapter_kind": "scbench"
+    },
+    {
+      "case_id": "scbench-meshctl-cp5",
+      "official_task_id": "scbench:meshctl",
+      "selection_stage": "middle",
+      "source_checkpoint_start": 4,
+      "source_checkpoint_target": 5,
+      "source_type3_case_id": "case001",
+      "adapter_kind": "scbench"
+    },
+    {
+      "case_id": "scbench-pwd_manager-cp2",
+      "official_task_id": "scbench:pwd_manager",
+      "selection_stage": "early",
+      "source_checkpoint_start": 1,
+      "source_checkpoint_target": 2,
+      "source_type3_case_id": "case206",
+      "adapter_kind": "scbench"
+    },
+    {
+      "case_id": "scbench-circuit_eval-cp5",
+      "official_task_id": "scbench:circuit_eval",
+      "selection_stage": "middle",
+      "source_checkpoint_start": 4,
+      "source_checkpoint_target": 5,
+      "source_type3_case_id": "case012",
+      "adapter_kind": "scbench"
+    },
+    {
+      "case_id": "scbench-datagate-cp6",
+      "official_task_id": "scbench:datagate",
+      "selection_stage": "late",
+      "source_checkpoint_start": 5,
+      "source_checkpoint_target": 6,
+      "source_type3_case_id": "Datagate",
+      "adapter_kind": "scbench"
+    },
+    {
+      "case_id": "scbench-mvvault-cp3",
+      "official_task_id": "scbench:mvvault",
+      "selection_stage": "early",
+      "source_checkpoint_start": 2,
+      "source_checkpoint_target": 3,
+      "source_type3_case_id": "case003",
+      "adapter_kind": "scbench"
+    },
+    {
+      "case_id": "beyondswe-case019-cp2",
+      "official_task_id": "beyondswe:aboutcode-org_commoncode_pr44",
+      "selection_stage": "uniform-within-case",
+      "source_checkpoint_start": 1,
+      "source_checkpoint_target": 2,
+      "source_type3_case_id": "case019",
+      "adapter_kind": "beyondswe_harbor"
+    },
+    {
+      "case_id": "beyondswe-case023-cp1",
+      "official_task_id": "beyondswe:aiven_aiven-client_pr399",
+      "selection_stage": "uniform-within-case",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 1,
+      "source_type3_case_id": "case023",
+      "adapter_kind": "beyondswe_harbor"
+    },
+    {
+      "case_id": "beyondswe-case025-cp1",
+      "official_task_id": "beyondswe:pylons_colander_pr305",
+      "selection_stage": "uniform-within-case",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 1,
+      "source_type3_case_id": "case025",
+      "adapter_kind": "beyondswe_harbor"
+    },
+    {
+      "case_id": "beyondswe-case027-cp3",
+      "official_task_id": "beyondswe:diamondlightsource_python-zocalo_pr140",
+      "selection_stage": "uniform-within-case",
+      "source_checkpoint_start": 2,
+      "source_checkpoint_target": 3,
+      "source_type3_case_id": "case027",
+      "adapter_kind": "beyondswe_harbor"
+    },
+    {
+      "case_id": "beyondswe-case028-cp2",
+      "official_task_id": "beyondswe:pylons_pyramid_pr2964",
+      "selection_stage": "uniform-within-case",
+      "source_checkpoint_start": 1,
+      "source_checkpoint_target": 2,
+      "source_type3_case_id": "case028",
+      "adapter_kind": "beyondswe_harbor"
+    },
+    {
+      "case_id": "beyondswe-case029-cp1",
+      "official_task_id": "beyondswe:cvxpy_cvxpy_pr2542",
+      "selection_stage": "uniform-within-case",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 1,
+      "source_type3_case_id": "case029",
+      "adapter_kind": "beyondswe_harbor"
+    },
+    {
+      "case_id": "beyondswe-case033-cp2",
+      "official_task_id": "beyondswe:pylons_pyramid_pr3019",
+      "selection_stage": "uniform-within-case",
+      "source_checkpoint_start": 1,
+      "source_checkpoint_target": 2,
+      "source_type3_case_id": "case033",
+      "adapter_kind": "beyondswe_harbor"
+    },
+    {
+      "case_id": "beyondswe-case035-cp4",
+      "official_task_id": "beyondswe:plasmapy_plasmapy_pr2068",
+      "selection_stage": "uniform-within-case",
+      "source_checkpoint_start": 3,
+      "source_checkpoint_target": 4,
+      "source_type3_case_id": "case035",
+      "adapter_kind": "beyondswe_harbor"
+    },
+    {
+      "case_id": "beyondswe-case037-cp1",
+      "official_task_id": "beyondswe:snok_flake8-type-checking_pr179",
+      "selection_stage": "uniform-within-case",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 1,
+      "source_type3_case_id": "case037",
+      "adapter_kind": "beyondswe_harbor"
+    },
+    {
+      "case_id": "beyondswe-case061-cp1",
+      "official_task_id": "beyondswe:openedx_edx-drf-extensions_pr230",
+      "selection_stage": "uniform-within-case",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 1,
+      "source_type3_case_id": "case061",
+      "adapter_kind": "beyondswe_harbor"
+    },
+    {
+      "case_id": "beyondswe-case066-cp1",
+      "official_task_id": "beyondswe:sinaptik-ai_pandas-ai_pr761",
+      "selection_stage": "uniform-within-case",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 1,
+      "source_type3_case_id": "case066",
+      "adapter_kind": "beyondswe_harbor"
+    },
+    {
+      "case_id": "beyondswe-case080-cp1",
+      "official_task_id": "beyondswe:pylons_pyramid_pr3328",
+      "selection_stage": "uniform-within-case",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 1,
+      "source_type3_case_id": "case080",
+      "adapter_kind": "beyondswe_harbor"
+    },
+    {
+      "case_id": "beyondswe-case089-cp1",
+      "official_task_id": "beyondswe:aklajnert_pytest-subprocess_pr180",
+      "selection_stage": "uniform-within-case",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 1,
+      "source_type3_case_id": "case089",
+      "adapter_kind": "beyondswe_harbor"
+    },
+    {
+      "case_id": "beyondswe-case102-cp1",
+      "official_task_id": "beyondswe:cvxpy_cvxpy_pr2508",
+      "selection_stage": "uniform-within-case",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 1,
+      "source_type3_case_id": "case102",
+      "adapter_kind": "beyondswe_harbor"
+    },
+    {
+      "case_id": "beyondswe-case208-cp1",
+      "official_task_id": "beyondswe:adamtheturtle_sybil-extras_pr219",
+      "selection_stage": "uniform-within-case",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 1,
+      "source_type3_case_id": "case208",
+      "adapter_kind": "beyondswe_harbor"
+    },
+    {
+      "case_id": "beyondswe-case039-cp1",
+      "official_task_id": "beyondswe:aio-libs_aiohttp_pr7944",
+      "selection_stage": "uniform-within-singleton-case",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 1,
+      "source_type3_case_id": "case039",
+      "adapter_kind": "beyondswe_harbor"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "adapter_config": {
+    "docker_executable": "docker",
+    "task_dir": "/opt/looparena/evaluator_assets/beyondswe/tasks/plasmapy_plasmapy_pr2068/task"
+  },
+  "adapter_kind": "beyondswe_harbor",
+  "adapter_version": "harbor-verifier-v1",
+  "network": "host",
+  "pass_policy": "reward-equals-one",
+  "runtime_identity": {
+    "image_id": "sha256:e32e561402f279a23ce70fa9d49bf560e3f7e548b1e814914563bcfbcf650f9f",
+    "image_reference": "aweaiteam/beyondswe:plasmapy_plasmapy_pr2068",
+    "platform": "linux/amd64",
+    "workdir": "/workspace/plasmapy"
+  },
+  "schema_version": "looparena.terminal_evaluator_plan.v1",
+  "solve_network": "host",
+  "source_revision": "7d2ced21b4c85f646d5ba8786875d7fbbe08ed49",
+  "timeout_sec": 1200
+}

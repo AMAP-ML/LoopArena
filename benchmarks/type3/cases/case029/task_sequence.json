@@ -1,0 +1,19 @@
+{
+  "adapter_kind": "beyondswe_harbor",
+  "checkpoint_context_policy": "single_episode",
+  "checkpoint_failure_policy": "stop_after_task",
+  "official_parent_commit": "315bd3fd5e42add0596f8c0d94a7ad7a41ba05de",
+  "official_task_id": "beyondswe:cvxpy_cvxpy_pr2542",
+  "official_workdir": "/workspace/cvxpy",
+  "schema_version": "looparena.type3_task_sequence.v2",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/task.json",
+      "step_id": "task",
+      "task_ref": "tasks/task.md"
+    }
+  ],
+  "target_step": "task",
+  "task_scope": "official_full_task",
+  "workspace_origin": "pinned_source_image_parent_commit"
+}

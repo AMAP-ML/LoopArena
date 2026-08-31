@@ -1,0 +1,1 @@
+Extend `RabbitMQAPI` with queue deletion through its public `queue_delete` operation. Preserve all previously completed behavior, including existing health, monitoring, and listing operations.

@@ -1,0 +1,20 @@
+{
+  "adapter_config": {
+    "docker_executable": "docker",
+    "task_dir": "/opt/looparena/evaluator_assets/beyondswe/tasks/openedx_edx-drf-extensions_pr230/task"
+  },
+  "adapter_kind": "beyondswe_harbor",
+  "adapter_version": "harbor-verifier-v1",
+  "network": "host",
+  "pass_policy": "reward-equals-one",
+  "runtime_identity": {
+    "image_id": "sha256:aa3cf8f9bbe27d5bd328c8eee1e79f3269afce39f06fe74cd952b305ee65d95f",
+    "image_reference": "aweaiteam/beyondswe:openedx_edx-drf-extensions_pr230",
+    "platform": "linux/amd64",
+    "workdir": "/workspace/edx-drf-extensions"
+  },
+  "schema_version": "looparena.terminal_evaluator_plan.v1",
+  "solve_network": "host",
+  "source_revision": "7d2ced21b4c85f646d5ba8786875d7fbbe08ed49",
+  "timeout_sec": 1200
+}
