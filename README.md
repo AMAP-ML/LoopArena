@@ -142,7 +142,7 @@ The example uses Alibaba Cloud Model Studio's public OpenAI-compatible endpoint.
 You may replace it with another compatible service. `OPENAI_BASE_URL` may be
 omitted when using the default OpenAI endpoint.
 
-### 3. Run one Type I question
+### 3. Run one Type I smoke test
 
 Type I is the fastest way to evaluate a Controller. The smoke test below makes
 one model call and does not run the Worker or use Docker:
@@ -217,9 +217,12 @@ looparena-type3-run \
 Add `--preflight-only` to validate the case, upstream assets, Docker runtime,
 and evaluator identity before making a model call.
 
-Use `--arm no-control` for the no-control reference. Provider credentials and
-OpenAI-compatible endpoint settings are supplied through environment variables;
-no credentials are stored in this repository.
+The CLI's `--arm` option is an execution-mode flag rather than the name of a
+paper setting. `--arm controlled` runs a Controller-model policy; fixed control
+uses the same execution mode with the deterministic fixed-control policy. Use
+`--arm no-control` for the no-control reference policy. Provider credentials
+and OpenAI-compatible endpoint settings are supplied through environment
+variables; no credentials are stored in this repository.
 
 Type II and Type III default both model roles to `qwen3.7-plus`. The
 `--worker-model` and `--controller-model` flags can replace either role with the
