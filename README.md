@@ -265,6 +265,27 @@ docs/index.html      Dependency-free project website for GitHub Pages
 results/0.1.0/       Public canonical outcomes and aggregate result release
 ```
 
+<a id="citation"></a>
+
+## 📚 Citation
+
+If you find LoopArena useful in your research, please consider citing our paper:
+
+```bibtex
+@misc{wang2026looparenabenchmarkingmodelsruntime,
+      title={LoopArena: Benchmarking Models as Runtime Controllers for Loop Engineering},
+      author={Yi Wang and Haopeng Zhang and Chengxiang Huang and Rui Dai and Kaikui Liu and Piotr Koniusz and Xiangxiang Chu},
+      year={2026},
+      eprint={2608.28281},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2608.28281},
+}
+```
+
+Machine-readable citation metadata are available in
+[`CITATION.cff`](CITATION.cff).
+
 LoopArena's own code and documentation are licensed under
 [Apache-2.0](LICENSE). Third-party benchmark material and frozen source
 snapshots retain their source terms; see
