@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use LoopArena, please cite the paper below."
+title: "LoopArena"
+type: software
+version: "0.1.0"
+authors:
+  - name: "DreamX Team"
+repository-code: "https://github.com/AMAP-ML/LoopArena"
+url: "https://amap-ml.github.io/LoopArena/"
+license: Apache-2.0
+
+preferred-citation:
+  type: generic
+  title: "LoopArena: Benchmarking Models as Runtime Controllers for Loop Engineering"
+  authors:
+    - family-names: "Wang"
+      given-names: "Yi"
+    - family-names: "Zhang"
+      given-names: "Haopeng"
+    - family-names: "Huang"
+      given-names: "Chengxiang"
+    - family-names: "Dai"
+      given-names: "Rui"
+    - family-names: "Liu"
+      given-names: "Kaikui"
+    - family-names: "Koniusz"
+      given-names: "Piotr"
+    - family-names: "Chu"
+      given-names: "Xiangxiang"
+  year: 2026
+  identifiers:
+    - type: url
+      value: "https://arxiv.org/abs/2608.28281"
+      description: "arXiv:2608.28281 [cs.AI]"
+  url: "https://arxiv.org/abs/2608.28281"
