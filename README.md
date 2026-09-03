@@ -8,6 +8,7 @@
 <p align="center">
   <a href="https://arxiv.org/abs/2608.28281"><strong>📄 arXiv Paper</strong></a> ·
   <a href="https://huggingface.co/papers/2608.28281"><strong>🤗 Hugging Face Paper</strong></a> ·
+  <a href="https://www.modelscope.cn/papers/2608.28281"><strong>🔵 ModelScope Paper</strong></a> ·
   <a href="https://amap-ml.github.io/LoopArena/"><strong>🌐 Project Website</strong></a>
 </p>
 
