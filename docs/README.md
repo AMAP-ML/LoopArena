@@ -16,8 +16,9 @@ block the local JSON request used by the leaderboard under the `file:` scheme.
 `data/results.json` contains public, aggregate v0.1.0 results only. It must not
 contain private paths, credentials, provider endpoints, or raw trajectories.
 The project paper is available on
-[arXiv](https://arxiv.org/abs/2608.28281) and
-[Hugging Face Papers](https://huggingface.co/papers/2608.28281).
+[arXiv](https://arxiv.org/abs/2608.28281),
+[Hugging Face Papers](https://huggingface.co/papers/2608.28281), and
+[ModelScope Papers](https://www.modelscope.cn/papers/2608.28281).
 
 No deployment workflow is enabled in this release candidate. After the public
 repository is ready, GitHub Pages can publish the `docs/` directory from the
