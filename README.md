@@ -273,9 +273,10 @@ results/0.1.0/       Public canonical outcomes and aggregate result release
 If you find LoopArena useful in your research, please consider citing our paper:
 
 ```bibtex
-@misc{wang2026looparenabenchmarkingmodelsruntime,
+@article{wang2026looparenabenchmarkingmodelsruntime,
       title={LoopArena: Benchmarking Models as Runtime Controllers for Loop Engineering},
       author={Yi Wang and Haopeng Zhang and Chengxiang Huang and Rui Dai and Kaikui Liu and Piotr Koniusz and Xiangxiang Chu},
+      journal={arXiv preprint arXiv:2608.28281},
       year={2026},
       eprint={2608.28281},
       archivePrefix={arXiv},

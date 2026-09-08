@@ -10,7 +10,8 @@ url: "https://amap-ml.github.io/LoopArena/"
 license: Apache-2.0
 
 preferred-citation:
-  type: generic
+  type: article
+  journal: "arXiv preprint arXiv:2608.28281"
   title: "LoopArena: Benchmarking Models as Runtime Controllers for Loop Engineering"
   authors:
     - family-names: "Wang"
