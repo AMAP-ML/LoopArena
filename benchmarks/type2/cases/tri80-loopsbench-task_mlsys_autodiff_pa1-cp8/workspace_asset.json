@@ -1,0 +1,6 @@
+{
+  "recipe": "workspace_recipe.json",
+  "recipe_sha256": "5b1ecf622e739a5a96650a8acca09afb7d981f447ba19b9ba58105f5b8685a24",
+  "relative_path_under_assets_root": "type2/workspaces/tri80-loopsbench-task_mlsys_autodiff_pa1-cp8/workspace.tar.gz",
+  "workspace_tree_sha256": "8c803cd9de734af6858fcb765f55dee6d81283dcd15c580b4d7528ff5ce27754"
+}

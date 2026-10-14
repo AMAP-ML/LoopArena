@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import argparse
 import concurrent.futures
 import fcntl
@@ -128,16 +129,18 @@ def load_plan(path: Path) -> Plan:
     if unknown:
         raise ValueError("unknown Type III cases: " + ", ".join(unknown))
 
-    seeds = tuple(raw.get("seeds") or [0])
+    seeds_raw = raw.get("seeds", [0])
     if (
-        not seeds
-        or len(seeds) != len(set(seeds))
+        not isinstance(seeds_raw, list)
+        or not seeds_raw
         or any(
             not isinstance(seed, int) or isinstance(seed, bool) or seed < 0
-            for seed in seeds
+            for seed in seeds_raw
         )
+        or len(seeds_raw) != len(set(seeds_raw))
     ):
-        raise ValueError("seeds must be unique nonnegative integers")
+        raise ValueError("seeds must be a nonempty list of unique nonnegative integers")
+    seeds = tuple(seeds_raw)
     arm = str(raw.get("arm") or "")
     if arm not in {"controlled", "no-control"}:
         raise ValueError("arm must be controlled or no-control")
@@ -160,7 +163,18 @@ def load_plan(path: Path) -> Plan:
         else:
             raise ValueError("controller.provider is invalid")
 
-    execution = raw.get("execution") or {}
+    execution = raw.get("execution", {})
+    if not isinstance(execution, dict):
+        raise ValueError("execution must be an object")
+    _check_keys(execution, {
+        "concurrency", "scbench_runtime_profile", "worker_wall_time_sec",
+        "reporter_wall_time_sec", "gateway_timeout_sec", "tool_timeout_sec",
+    }, "execution")
+    for field in ("worker_wall_time_sec", "reporter_wall_time_sec", "gateway_timeout_sec", "tool_timeout_sec"):
+        if field in execution and (type(execution[field]) is not int or execution[field] <= 0):
+            raise ValueError(f"execution.{field} must be a positive integer")
+    if execution.get("scbench_runtime_profile", "canonical-amd64") != "canonical-amd64":
+        raise ValueError("execution.scbench_runtime_profile must be canonical-amd64")
     concurrency = execution.get("concurrency", 1)
     if (
         not isinstance(concurrency, int)
@@ -204,14 +218,92 @@ def run_dir(panel_root: Path, job: Job) -> Path:
     return panel_root / "results" / job.case_id / f"seed{job.seed}"
 
 
-def classify(path: Path) -> str:
+def classify(path: Path, *, plan: Plan | None = None, job: Job | None = None) -> str:
     manifest_path = path / "run_manifest.json"
     if not manifest_path.is_file():
         return "pending" if not path.exists() else "infrastructure_invalid"
     manifest = _read(manifest_path)
+    if plan is not None:
+        from looparena.runtime.non_adaptive_fixed_controller import POLICY_ID
+
+        if (
+            job is None
+            or manifest.get("case_id") != job.case_id
+            or manifest.get("seed") != job.seed
+            or manifest.get("arm") != plan.arm
+        ):
+            return "infrastructure_invalid"
+        config = manifest.get("configuration") or {}
+        provider = (
+            str(plan.controller.get("provider") or "model")
+            if plan.arm == "controlled"
+            else None
+        )
+        model = (
+            (
+                POLICY_ID
+                if provider == "non-adaptive-fixed"
+                else plan.controller.get("model")
+            )
+            if plan.arm == "controlled"
+            else None
+        )
+        expected_config = {
+            "worker_model": plan.worker_model,
+            "controller_provider": provider,
+            "controller_model": model,
+            **{k: v for k, v in plan.execution.items() if k != "concurrency"},
+        }
+        if config != expected_config:
+            return "infrastructure_invalid"
     if (
         manifest.get("status") == "completed" and manifest.get("task_passed") is True
     ) or (manifest.get("status") == "failed" and manifest.get("task_passed") is False):
+        from looparena.commands.type3_run import final_step_state, load_case
+
+        case_id = str(manifest.get("case_id") or "")
+        if not case_id or Path(case_id).name != case_id:
+            return "infrastructure_invalid"
+        try:
+            _, sequence = load_case(
+                (plan.cohort if plan is not None else ROOT / "benchmarks/type3")
+                / "cases"
+                / case_id
+            )
+            steps = manifest.get("steps") or []
+            if [s["step_id"] for s in steps] != [
+                s["step_id"] for s in sequence["steps"]
+            ]:
+                return "infrastructure_invalid"
+            outcomes = []
+            for record, expected in zip(steps, sequence["steps"]):
+                child_dir = path / "checkpoints" / expected["step_id"]
+                child = _read(child_dir / "run_manifest.json")
+                if plan is not None:
+                    from looparena.commands.type3_run import require_child_identity
+
+                    require_child_identity(
+                        child,
+                        arm=plan.arm,
+                        seed=job.seed,
+                        worker_model=plan.worker_model,
+                        controller_provider=provider,
+                        controller_model=model,
+                    )
+                if child.get("task_sha256") != expected["task_sha256"]:
+                    return "infrastructure_invalid"
+                state, passed = final_step_state(child, run_dir=child_dir)
+                if (
+                    state not in {"passed", "failed"}
+                    or record.get("task_passed") != passed
+                    or record.get("status") != state
+                ):
+                    return "infrastructure_invalid"
+                outcomes.append(passed)
+            if manifest.get("task_passed") != all(outcomes):
+                return "infrastructure_invalid"
+        except (OSError, ValueError, KeyError, TypeError):
+            return "infrastructure_invalid"
         return "valid"
     steps = manifest.get("steps") or []
     if manifest.get("status") == "running" and steps and (path / "workspace").is_dir():
@@ -267,7 +359,7 @@ def build_command(
     else:
         output = run_dir(panel_root, job)
         command.extend(["--out-dir", str(output)])
-        if classify(output) == "resumable":
+        if classify(output, plan=plan, job=job) == "resumable":
             command.append("--resume-existing")
     if plan.arm == "controlled":
         provider = str(plan.controller.get("provider") or "model")
@@ -296,7 +388,11 @@ def snapshot(
     active = active or set()
     records = []
     for job in jobs(plan):
-        state = "running" if job.key in active else classify(run_dir(panel_root, job))
+        state = (
+            "running"
+            if job.key in active
+            else classify(run_dir(panel_root, job), plan=plan, job=job)
+        )
         records.append({"case_id": job.case_id, "seed": job.seed, "state": state})
     return {
         "updated_at": _now(),
@@ -314,6 +410,31 @@ def snapshot(
     }
 
 
+def freeze_plan(plan: Plan, path: Path) -> None:
+    public = plan.public()
+
+    def semantic(value):
+        result = {
+            k: v for k, v in value.items() if k not in {"source_plan", "plan_sha256"}
+        }
+        result["execution"] = {
+            k: v for k, v in result["execution"].items() if k != "concurrency"
+        }
+        return result
+
+    value = semantic(public)
+    if path.exists():
+        if semantic(_read(path)) != value:
+            raise ValueError(
+                "panel output already belongs to a different experiment plan"
+            )
+        return
+    public["plan_sha256"] = hashlib.sha256(
+        json.dumps(value, sort_keys=True, separators=(",", ":")).encode()
+    ).hexdigest()
+    _write(path, public)
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--plan", type=Path, required=True)
@@ -328,7 +449,7 @@ def main(argv: list[str] | None = None) -> int:
         fcntl.flock(lock.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
     except BlockingIOError as exc:
         raise SystemExit(f"active Type III panel writer: {panel_root}") from exc
-    _write(panel_root / "resolved_plan.json", plan.public())
+    freeze_plan(plan, panel_root / "resolved_plan.json")
 
     if args.preflight_only:
         for case_id in plan.case_ids:
@@ -356,7 +477,8 @@ def main(argv: list[str] | None = None) -> int:
     runnable = [
         job
         for job in jobs(plan)
-        if classify(run_dir(panel_root, job)) in {"pending", "resumable"}
+        if classify(run_dir(panel_root, job), plan=plan, job=job)
+        in {"pending", "resumable"}
     ]
     active: set[str] = set()
     state_lock = threading.Lock()
@@ -368,7 +490,7 @@ def main(argv: list[str] | None = None) -> int:
         code, error = _run(build_command(plan, panel_root, job, preflight=False))
         with state_lock:
             active.remove(job.key)
-            if code and classify(run_dir(panel_root, job)) not in {
+            if code and classify(run_dir(panel_root, job), plan=plan, job=job) not in {
                 "valid",
                 "resumable",
             }:

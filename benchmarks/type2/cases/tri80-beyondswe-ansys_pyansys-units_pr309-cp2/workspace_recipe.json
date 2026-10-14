@@ -1,0 +1,953 @@
+{
+  "case_id": "tri80-beyondswe-ansys_pyansys-units_pr309-cp2",
+  "files": [
+    {
+      "bytes": 233,
+      "kind": "file",
+      "mode": 420,
+      "path": ".flake8",
+      "sha256": "81fc79d38198fcafa7ed9aa7f3b650f05ef08e2a37961c175660eed982dfd43c",
+      "source": {
+        "kind": "upstream",
+        "path": ".flake8"
+      }
+    },
+    {
+      "bytes": 59,
+      "kind": "file",
+      "mode": 420,
+      "path": ".gitattributes",
+      "sha256": "efd62abb625087b7106efd9f1693c2c1ff256f13b55053304dd6d696a0c6f7aa",
+      "source": {
+        "kind": "upstream",
+        "path": ".gitattributes"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": ".github"
+    },
+    {
+      "bytes": 306,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/CODEOWNERS",
+      "sha256": "03c96fd4de7a0d01f4589ba38019c72b81c05e6f6b0f690ebc3220e45552b30a",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/CODEOWNERS"
+      }
+    },
+    {
+      "bytes": 488,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/dependabot.yml",
+      "sha256": "452d1292ffb56a8e743ecebac27106eac70b04f02fea680b6e9fda1d499aa00a",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/dependabot.yml"
+      }
+    },
+    {
+      "bytes": 240,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/labeler.yml",
+      "sha256": "743258acc09a95f97eb71ebb630ce16f47430122ae721f079353f6f786c62ce6",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/labeler.yml"
+      }
+    },
+    {
+      "bytes": 667,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/labels.yml",
+      "sha256": "ae22860dfa5b101511bb2343b4527c3a4176e4a8bfa41c7578c749cb9c75be1a",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/labels.yml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": ".github/workflows"
+    },
+    {
+      "bytes": 4145,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/workflows/ci_cd.yml",
+      "sha256": "d42900ea282ff8c918b094f191e233712cd5cc21afe1daa71a0ff314b5420639",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/workflows/ci_cd.yml"
+      }
+    },
+    {
+      "bytes": 2786,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/workflows/label.yml",
+      "sha256": "e712ad8aa0159b3ffcd2a9969d6a69cbb95a6508d10d4e1e5d65e60cf08644e3",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/workflows/label.yml"
+      }
+    },
+    {
+      "bytes": 3078,
+      "kind": "file",
+      "mode": 420,
+      "path": ".gitignore",
+      "sha256": "3b074beabda7a8592167c9d3111efe8b2ac90993bea1918f614d0cb1473335f9",
+      "source": {
+        "kind": "upstream",
+        "path": ".gitignore"
+      }
+    },
+    {
+      "bytes": 1266,
+      "kind": "file",
+      "mode": 420,
+      "path": ".pre-commit-config.yaml",
+      "sha256": "7b962cb1a63f715516b1460a656b621657026175f1c61a515cd5dac507732525",
+      "source": {
+        "kind": "upstream",
+        "path": ".pre-commit-config.yaml"
+      }
+    },
+    {
+      "bytes": 347,
+      "kind": "file",
+      "mode": 420,
+      "path": "AUTHORS",
+      "sha256": "eb65925e9fb665bcba36789f87a94b41bcbe907a76376a31d45155f12c341d21",
+      "source": {
+        "kind": "upstream",
+        "path": "AUTHORS"
+      }
+    },
+    {
+      "bytes": 2688,
+      "kind": "file",
+      "mode": 420,
+      "path": "CODE_OF_CONDUCT.md",
+      "sha256": "002a72400c65e60e40e1386a959d72e55e4ca6f77281ac312564a199631a5202",
+      "source": {
+        "kind": "upstream",
+        "path": "CODE_OF_CONDUCT.md"
+      }
+    },
+    {
+      "bytes": 828,
+      "kind": "file",
+      "mode": 420,
+      "path": "CONTRIBUTING.md",
+      "sha256": "4853dc2c2dc01983589e857383e10ccd4588db8702d9402d158859e0e51764ce",
+      "source": {
+        "kind": "upstream",
+        "path": "CONTRIBUTING.md"
+      }
+    },
+    {
+      "bytes": 364,
+      "kind": "file",
+      "mode": 420,
+      "path": "CONTRIBUTORS.md",
+      "sha256": "d4fc6814d84e2f4c4eb2fbdab12a8cdca39f277dcba9734ff80dc712f53a2436",
+      "source": {
+        "kind": "upstream",
+        "path": "CONTRIBUTORS.md"
+      }
+    },
+    {
+      "bytes": 1098,
+      "kind": "file",
+      "mode": 420,
+      "path": "LICENSE",
+      "sha256": "846ed803296a495a136c1d8980fec4bb2fdfd96651c7ccf027fc78c8cb6d0d38",
+      "source": {
+        "kind": "upstream",
+        "path": "LICENSE"
+      }
+    },
+    {
+      "bytes": 7415,
+      "kind": "file",
+      "mode": 420,
+      "path": "README.rst",
+      "sha256": "f1698b94fa9675ecf1d7c20bb84feb05c0a40e7576fabc7daea32cb7c4b21e9a",
+      "source": {
+        "kind": "upstream",
+        "path": "README.rst"
+      }
+    },
+    {
+      "bytes": 439,
+      "kind": "file",
+      "mode": 420,
+      "path": "codecov.yml",
+      "sha256": "5147e9e35eec415ec89ef06b9b7a054db156827fd15499719feaebd1cc116e09",
+      "source": {
+        "kind": "upstream",
+        "path": "codecov.yml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "doc"
+    },
+    {
+      "bytes": 816,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/.vale.ini",
+      "sha256": "9adb56ff3545140e2a0d541649f678941fbb91f7d6a411faa03e9ac3499373d1",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/.vale.ini"
+      }
+    },
+    {
+      "bytes": 1093,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/Makefile",
+      "sha256": "53d5e8623ad67f7fae9c1ec033ee59a6e73251c5beb65e41d21f825a43b410db",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/Makefile"
+      }
+    },
+    {
+      "bytes": 1115,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/make.bat",
+      "sha256": "299b31b17c4df9e2259c407c50526be6c104ebe0afd15c315b3f35973de0fc54",
+      "source": {
+        "blob": "299b31b17c4df9e2259c407c50526be6c104ebe0afd15c315b3f35973de0fc54",
+        "kind": "overlay"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "doc/source"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "doc/source/_static"
+    },
+    {
+      "bytes": 346157,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/_static/PyAnsys_overview.png",
+      "sha256": "ee829c842f87ee63c0c23f4563e635522eb2843492d82a074e6aa5184414eec6",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/_static/PyAnsys_overview.png"
+      }
+    },
+    {
+      "bytes": 63,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/_static/README.md",
+      "sha256": "c5bf61fcbc77c236716b7a5b88cd11194e968f3952c0ceb27fa430ac01d37396",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/_static/README.md"
+      }
+    },
+    {
+      "bytes": 10701,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/_static/basic_usage.png",
+      "sha256": "ecda63da98db5a0ce02c1c6703db025f7b6cb591078e1997918004947765dea1",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/_static/basic_usage.png"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "doc/source/_templates"
+    },
+    {
+      "bytes": 50,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/_templates/README.md",
+      "sha256": "ff2e2984dc11745fbc4c2e898475e1d0c704b42003f1dc5d63455d119ea2ffb5",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/_templates/README.md"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "doc/source/api"
+    },
+    {
+      "bytes": 475,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/api/config.rst",
+      "sha256": "e37894f0f379ffd2cb454688dfd201ad8e21a43fdae573c63b142feede2ca03a",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/api/config.rst"
+      }
+    },
+    {
+      "bytes": 264,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/api/dimensions.rst",
+      "sha256": "a6eba87f3dd3ed80b123f3ddbd81965ee8a265aa86d05316370c6ad5b6c387e1",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/api/dimensions.rst"
+      }
+    },
+    {
+      "bytes": 246,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/api/index.rst",
+      "sha256": "6f37e912e71da46dc58e2be1880396293721f368f34266ab1211ae07f6a92ff0",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/api/index.rst"
+      }
+    },
+    {
+      "bytes": 886,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/api/quantity.rst",
+      "sha256": "5da6d9982674e6a5afc5cf3bc17cad13e2d3f9fb54310eac54534a5be48c582f",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/api/quantity.rst"
+      }
+    },
+    {
+      "bytes": 413,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/api/systems.rst",
+      "sha256": "1ed92601404e0bb01fd78b9950faf3cadc3c5966d2d8be6e9c0b65aac019cade",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/api/systems.rst"
+      }
+    },
+    {
+      "bytes": 540,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/api/unit.rst",
+      "sha256": "aa12c176caa5ef2d543b2cffbdb91a7dabe472aab0c06e88cdf69bde37ea1517",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/api/unit.rst"
+      }
+    },
+    {
+      "bytes": 286,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/api/unit_registry.rst",
+      "sha256": "ed2799fd8ee43fa2d253e7411b29b3fa1025305409cbd8cb3a6812ceb3ce05db",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/api/unit_registry.rst"
+      }
+    },
+    {
+      "bytes": 4086,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/conf.py",
+      "sha256": "2934c7058ef85ea1e884cc92dee8a02b590cfbbc37f2fa0ca7e8b4bab5d22401",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/conf.py"
+      }
+    },
+    {
+      "bytes": 1864,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/contributing.rst",
+      "sha256": "d80ccee3d6028814fe3a3e8d22ff1034fe5b867de31c093e7b7b3bc2f840be39",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/contributing.rst"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "doc/source/getting_started"
+    },
+    {
+      "bytes": 1938,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/getting_started/faq.rst",
+      "sha256": "cba13fc41cbafdd04cf2c60ae4a3c9b9e57247c1c72cd85738aad7a6b7bc69e6",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/getting_started/faq.rst"
+      }
+    },
+    {
+      "bytes": 3279,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/getting_started/index.rst",
+      "sha256": "ece391fc0a8d47342b3f15f8443e8da34fed738f008f9dd3efc9d1a2c0870717",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/getting_started/index.rst"
+      }
+    },
+    {
+      "bytes": 590,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/getting_started/installation.rst",
+      "sha256": "2240d2edd8019db786cba75f416fa7b64e45501a6c8d872734ad509d5c3be051",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/getting_started/installation.rst"
+      }
+    },
+    {
+      "bytes": 1819,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/index.rst",
+      "sha256": "9a601924ba898bb7bbc650bcb2cd16d239e31177b59b7fb4bd9a7553def5ddab",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/index.rst"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "doc/source/user_guide"
+    },
+    {
+      "bytes": 263,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/user_guide/index.rst",
+      "sha256": "315f439cd35d1dbe28cba6b9e13a8ac4a2d6d28fe1dee3b81f7ae39e51c1dd54",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/user_guide/index.rst"
+      }
+    },
+    {
+      "bytes": 2271,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/user_guide/quantity.rst",
+      "sha256": "d5ae5c21e4968de5c4a63fa414860ea68ef5a205aa4b19119a01db2da94b888a",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/user_guide/quantity.rst"
+      }
+    },
+    {
+      "bytes": 1085,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/user_guide/strings.rst",
+      "sha256": "ad5a7dba6e597b5203dc077fe34017a2b0c56ee46d91e562e83ad4877d5e570c",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/user_guide/strings.rst"
+      }
+    },
+    {
+      "bytes": 1461,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/user_guide/temperature.rst",
+      "sha256": "1f1229e41412a641ee1cad7c40d8404605f13ebaa48ef40e6025d06b976cd673",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/user_guide/temperature.rst"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "doc/styles"
+    },
+    {
+      "bytes": 99,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/styles/.gitignore",
+      "sha256": "f0e3e3338bfb52d049ed8e208bd3db4699109f378a2921288e97655bd4d79284",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/styles/.gitignore"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "doc/styles/config"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "doc/styles/config/vocabularies"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "doc/styles/config/vocabularies/ANSYS"
+    },
+    {
+      "bytes": 82,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/styles/config/vocabularies/ANSYS/accept.txt",
+      "sha256": "85fc4a1fb7b3755c74813340e60bf4b9b14e666f7ea3ee04f49bc7b3d7a9edf8",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/styles/config/vocabularies/ANSYS/accept.txt"
+      }
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/styles/config/vocabularies/ANSYS/reject.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/styles/config/vocabularies/ANSYS/reject.txt"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "examples"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "examples/00-pyunits"
+    },
+    {
+      "bytes": 283,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/00-pyunits/README.txt",
+      "sha256": "9145def321a9a1a308000593112d6e671d68d2122bf13f415169e09d15aa37c7",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/00-pyunits/README.txt"
+      }
+    },
+    {
+      "bytes": 7693,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/00-pyunits/basic_usage.py",
+      "sha256": "d348cb2bbdbf761c7d9a6594c74f84b27da2a43681f3bb50648b3278d5b2206c",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/00-pyunits/basic_usage.py"
+      }
+    },
+    {
+      "bytes": 329,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/README.txt",
+      "sha256": "38ca5522a6338c02c9a9e1cd8cc7eb8a65627492842f7120e4f9e1186180a182",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/README.txt"
+      }
+    },
+    {
+      "bytes": 2279,
+      "kind": "file",
+      "mode": 420,
+      "path": "pyproject.toml",
+      "sha256": "0f435a4659962c0d1df41f5b2dc5afe016e724a63cb41f6849e5aa5d072707ff",
+      "source": {
+        "kind": "upstream",
+        "path": "pyproject.toml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "src"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "src/ansys"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "src/ansys/units"
+    },
+    {
+      "bytes": 2216,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/ansys/units/__init__.py",
+      "sha256": "74fbda600df52a68fddf63c110279a8c8ea6cdc84590564f14a6737c0e0e6332",
+      "source": {
+        "kind": "upstream",
+        "path": "src/ansys/units/__init__.py"
+      }
+    },
+    {
+      "bytes": 1987,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/ansys/units/_constants.py",
+      "sha256": "68986228c3532be66e4a6e78f0760aee596e425e672ccb3f53b85f3ace502025",
+      "source": {
+        "kind": "upstream",
+        "path": "src/ansys/units/_constants.py"
+      }
+    },
+    {
+      "bytes": 1548,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/ansys/units/_version.py",
+      "sha256": "c29593a2967a1be460e47bbd164ebbc02a5a9ab8faf4aa228c528737be7a6d0d",
+      "source": {
+        "kind": "upstream",
+        "path": "src/ansys/units/_version.py"
+      }
+    },
+    {
+      "bytes": 1753,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/ansys/units/base_dimensions.py",
+      "sha256": "9494a0ea1357a45fb22ad547e048abdd67ef33ba89daaf941a30c4a915f7fb61",
+      "source": {
+        "kind": "upstream",
+        "path": "src/ansys/units/base_dimensions.py"
+      }
+    },
+    {
+      "bytes": 5231,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/ansys/units/cfg.yaml",
+      "sha256": "82c07487a79fee83f26827b4255574c9792fddbc9fdab761501cde349a95204e",
+      "source": {
+        "kind": "upstream",
+        "path": "src/ansys/units/cfg.yaml"
+      }
+    },
+    {
+      "bytes": 4404,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/ansys/units/dimensions.py",
+      "sha256": "c0662e0d98ceaed1ca5b46e52fb5fcb71294a68f89ada30a7086094eb0031fa7",
+      "source": {
+        "kind": "upstream",
+        "path": "src/ansys/units/dimensions.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "src/ansys/units/docs"
+    },
+    {
+      "bytes": 10,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/ansys/units/docs/.gitignore",
+      "sha256": "7b3ed02bc73dc06b7db906cf97aa91dec2b2eb21f2d92bc5caa761df5bbc168f",
+      "source": {
+        "kind": "upstream",
+        "path": "src/ansys/units/docs/.gitignore"
+      }
+    },
+    {
+      "bytes": 16611,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/ansys/units/quantity.py",
+      "sha256": "f7f1a92148b652842fcc0b5e926dbf114a250b82e1c688f45b2fab9531abc578",
+      "source": {
+        "kind": "upstream",
+        "path": "src/ansys/units/quantity.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "src/ansys/units/quantity_tables"
+    },
+    {
+      "bytes": 2011,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/ansys/units/quantity_tables/bt_table.yaml",
+      "sha256": "ba423ff2906c0e26e87b85fce589df933263a545364034d798192944b7281979",
+      "source": {
+        "kind": "upstream",
+        "path": "src/ansys/units/quantity_tables/bt_table.yaml"
+      }
+    },
+    {
+      "bytes": 1937,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/ansys/units/quantity_tables/cgs_table.yaml",
+      "sha256": "d8fa2aa1fcc30c594f16d1c121ca308337f64292f3cad6bd734a1f5ab3ed0281",
+      "source": {
+        "kind": "upstream",
+        "path": "src/ansys/units/quantity_tables/cgs_table.yaml"
+      }
+    },
+    {
+      "bytes": 1805,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/ansys/units/quantity_tables/si_table.yaml",
+      "sha256": "d759233200dc00cbc152c4e4d3b9026596f55d9f6178a8e9d0833d0b12bb9641",
+      "source": {
+        "kind": "upstream",
+        "path": "src/ansys/units/quantity_tables/si_table.yaml"
+      }
+    },
+    {
+      "bytes": 7419,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/ansys/units/systems.py",
+      "sha256": "9f0b1c19f32b5d95716bd41c63b6293725e594c10dc32628914f797910a37891",
+      "source": {
+        "kind": "upstream",
+        "path": "src/ansys/units/systems.py"
+      }
+    },
+    {
+      "bytes": 20258,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/ansys/units/unit.py",
+      "sha256": "b5d93d5cb4a924bc948e4554e5e595aeca541ad9e21d34d8e3645808d2cce73a",
+      "source": {
+        "kind": "upstream",
+        "path": "src/ansys/units/unit.py"
+      }
+    },
+    {
+      "bytes": 3313,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/ansys/units/unit_registry.py",
+      "sha256": "ba48cd571df66730504040e5191a5c14f727bdfe4c1cae4b47cdf33f40b4bffe",
+      "source": {
+        "kind": "upstream",
+        "path": "src/ansys/units/unit_registry.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/lib_compare"
+    },
+    {
+      "bytes": 7443,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/lib_compare/test_angle_units.py",
+      "sha256": "0782ddd2c56f88daa8676c35b24fc6eb21a77e8a09151d0fe5ec29aac654de50",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/lib_compare/test_angle_units.py"
+      }
+    },
+    {
+      "bytes": 4958,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/lib_compare/test_temperature_units.py",
+      "sha256": "10373731117fc1643e64265c3eddb216053077547fdf79c7ba6c8815884c353e",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/lib_compare/test_temperature_units.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/lib_compare/util"
+    },
+    {
+      "bytes": 1424,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/lib_compare/util/__init__.py",
+      "sha256": "303b639ba8321599d3c2bdad985ae2a62ae0dbab6b3dbce69a05f4631dcecdd1",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/lib_compare/util/__init__.py"
+      }
+    },
+    {
+      "bytes": 1277,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/lib_compare/util/pint.py",
+      "sha256": "6ce5530b1c642dcb3b2419a4b2bdbd4ff56be33160d551e5039dd061c4583ac8",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/lib_compare/util/pint.py"
+      }
+    },
+    {
+      "bytes": 1623,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/lib_compare/util/pyunit.py",
+      "sha256": "d3a09ddb2cc2b380850b7c55b89648e86a5bef82c445ddef88c0d59c6f44dfe3",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/lib_compare/util/pyunit.py"
+      }
+    },
+    {
+      "bytes": 1818,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_cfg.py",
+      "sha256": "97f529efa2f68c0db52f256d947118fbcdbc59e7bc5283d87df0d946129f0779",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_cfg.py"
+      }
+    },
+    {
+      "bytes": 4394,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_dimensions.py",
+      "sha256": "a0eea49f274c9aa2e946b7e42878c0d430aec958564c5e77f5620709a86af9ca",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_dimensions.py"
+      }
+    },
+    {
+      "bytes": 1250,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_metadata.py",
+      "sha256": "aae41005be2b07d0c4b8208bcbfc30f3f98e00c3d4d5a700e6369405324de47e",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_metadata.py"
+      }
+    },
+    {
+      "bytes": 18485,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_quantity.py",
+      "sha256": "0af0129090240e02d54a5f348a11e450874156f7cac893d61ca08efbeac79b04",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_quantity.py"
+      }
+    },
+    {
+      "bytes": 5681,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_systems.py",
+      "sha256": "160e46fdff0763e3f30d0394f49ff419ac5e46e01983293aa2bfe2813c9176ed",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_systems.py"
+      }
+    },
+    {
+      "bytes": 6272,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_unit.py",
+      "sha256": "50bddc7ad62d348fd85cbb28d9dc14934313abc590fd9639c476d33fa4810784",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_unit.py"
+      }
+    },
+    {
+      "bytes": 3125,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_unit_registry.py",
+      "sha256": "5ce767910938d5bfbde711e05e28bf4524002a4a1c9458a3fde81ce27c32142e",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_unit_registry.py"
+      }
+    },
+    {
+      "bytes": 980,
+      "kind": "file",
+      "mode": 420,
+      "path": "tox.ini",
+      "sha256": "ef7d94a7d80691058658065ecf43df0f641679b4d24971c794c4da03261b14d4",
+      "source": {
+        "kind": "upstream",
+        "path": "tox.ini"
+      }
+    }
+  ],
+  "overlay_sha256": "d8366efe5724ca945afc69cb7d0d8ed7e300c9dfa7176ce708f5d50310091482",
+  "upstream": {
+    "kind": "beyondswe",
+    "repository": "https://github.com/ansys/pyansys-units",
+    "revision": "6780b642bb16442584968215ead84eda13e1fc20",
+    "source_root_key": "tri80-beyondswe-ansys_pyansys-units_pr309-cp2"
+  },
+  "workspace_tree_sha256": "de6211190cad1728b1690461104cbb3329bf0a2c7f2ee3bd5189b93f78ea531c"
+}

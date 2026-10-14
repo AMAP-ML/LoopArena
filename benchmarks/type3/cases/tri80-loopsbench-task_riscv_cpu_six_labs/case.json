@@ -1,0 +1,10 @@
+{
+  "adapter_kind": "loopsbench",
+  "case_id": "tri80-loopsbench-task_riscv_cpu_six_labs",
+  "episode_origin": "official_problem_start",
+  "harness_start_mode": "bootstrap_contract_start",
+  "official_task_id": "loopsbench:task_riscv_cpu_six_labs",
+  "task_scope": "official_full_task",
+  "task_sequence_ref": "task_sequence.json",
+  "task_sequence_sha256": "ac7122b39401e2b81898750ab44cbebb231f994785acb2c587abc4daa2700dba"
+}

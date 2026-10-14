@@ -1,0 +1,6 @@
+{
+  "recipe": "workspace_recipe.json",
+  "recipe_sha256": "be86d8ddd2b5969a4e63869665a5152bdbef7f37a0c81f9a78c5331d781f85cd",
+  "relative_path_under_assets_root": "type2/workspaces/tri80-beyondswe-snok_flake8-type-checking_pr179-cp1/workspace.tar.gz",
+  "workspace_tree_sha256": "ec3b38fae4ed1a3dfc01fca2f5eaf9fcea121c7e427ad2e59488f345e69df0ee"
+}

@@ -1,0 +1,18 @@
+# Make angular quantity dimensions configurable via environment variable
+
+## Background
+In the `pyansys-units` repository (`/workspace/pyansys-units`), angular quantities (e.g., quantities expressed in `degree` or `radian`) currently have their dimensional treatment fixed in code. [Issue #307](https://github.com/ansys/pyansys-units/issues/307) requests a way to opt into treating angular quantities as fundamental dimensions so that dimensional-analysis workflows can use them, without breaking existing behavior.
+
+## Task
+Implement a configuration mechanism, driven by the environment variable specified in Issue #307, that controls how angular quantities are dimensioned:
+
+1. **Default behavior (backward compatible):** When the environment variable is not set, angular quantities such as `degree` and `radian` must remain dimensionless (their `dimensions` are empty), and they must continue to support scalar arithmetic exactly as they do today.
+2. **Configured behavior:** When the environment variable named in Issue #307 is set, the angular dimensions listed in that issue must be registered as fundamental dimensions, so that angular quantities expose those dimensions instead of being dimensionless.
+
+## Acceptance criteria
+- With the environment variable unset, `Quantity(1.0, "degree").dimensions` and `Quantity(1.0, "radian").dimensions` are empty, and existing scalar arithmetic on these quantities keeps working unchanged.
+- With the environment variable set, creating angular quantities reflects the fundamental angular dimensions listed in Issue #307.
+- The mechanism reads the configuration from the environment; no other public API behavior changes.
+
+## Verification
+Adapt the demonstration script from the public problem statement: create a `Quantity` in `degree` with and without the environment variable set and confirm the dimensions differ as described above.

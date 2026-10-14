@@ -1,0 +1,10 @@
+{
+  "adapter_kind": "loopsbench",
+  "case_id": "tri80-loopsbench-task_afl_fuzzing",
+  "episode_origin": "official_problem_start",
+  "harness_start_mode": "bootstrap_contract_start",
+  "official_task_id": "loopsbench:task_afl_fuzzing",
+  "task_scope": "official_full_task",
+  "task_sequence_ref": "task_sequence.json",
+  "task_sequence_sha256": "5d1c64e8a79398dcfaf62d6054377aedbc4067412ce298a33946468d7ff5002b"
+}

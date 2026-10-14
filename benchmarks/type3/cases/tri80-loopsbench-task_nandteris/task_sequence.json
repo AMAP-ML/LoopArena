@@ -1,0 +1,19 @@
+{
+  "adapter_kind": "loopsbench",
+  "checkpoint_context_policy": "single_episode",
+  "checkpoint_failure_policy": "stop_after_task",
+  "official_task_id": "loopsbench:task_nandteris",
+  "release_content_hash": "84ae4156df6a132416109e2cf27bb72bcbde1e764dea40f3abab5e4ade942020",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/task.json",
+      "evaluator_plan_sha256": "062e79f000a7b1bbf71bcc6350f81ae584ce49761e6d0de7350e0f772ed5a28c",
+      "step_id": "task",
+      "task_ref": "tasks/task.md",
+      "task_sha256": "ce63594233681dcf2240ec6733a05581539189d04402a0e4f3e3c00e2ca2e4cf"
+    }
+  ],
+  "target_step": "task",
+  "task_scope": "official_full_task",
+  "workspace_origin": "pinned_loopsbench_release_source_base"
+}

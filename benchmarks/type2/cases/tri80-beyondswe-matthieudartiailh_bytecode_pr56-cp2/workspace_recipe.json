@@ -1,0 +1,435 @@
+{
+  "case_id": "tri80-beyondswe-matthieudartiailh_bytecode_pr56-cp2",
+  "files": [
+    {
+      "bytes": 144,
+      "kind": "file",
+      "mode": 420,
+      "path": ".gitignore",
+      "sha256": "c7de00dee43ed5c84895189a0955e81192936c65e8b09b823dc7f5a59b9b53e5",
+      "source": {
+        "kind": "upstream",
+        "path": ".gitignore"
+      }
+    },
+    {
+      "bytes": 415,
+      "kind": "file",
+      "mode": 420,
+      "path": ".travis.yml",
+      "sha256": "e778a5baa29db8410f2a76f6e504eb8c3c8d6f4e1d6104b4077896efa3783352",
+      "source": {
+        "kind": "upstream",
+        "path": ".travis.yml"
+      }
+    },
+    {
+      "bytes": 1074,
+      "kind": "file",
+      "mode": 420,
+      "path": "COPYING",
+      "sha256": "6da5a49be4ded8b2d44702bb4cbd333a431256354253f7b3bce6c7068dbdf139",
+      "source": {
+        "kind": "upstream",
+        "path": "COPYING"
+      }
+    },
+    {
+      "bytes": 136,
+      "kind": "file",
+      "mode": 420,
+      "path": "MANIFEST.in",
+      "sha256": "a086f1fce98a81957e623f7864ee32b5caabd3d3beaf44473becec5d1cdb7b2d",
+      "source": {
+        "kind": "upstream",
+        "path": "MANIFEST.in"
+      }
+    },
+    {
+      "bytes": 1436,
+      "kind": "file",
+      "mode": 420,
+      "path": "README.rst",
+      "sha256": "48644598a80ee9d4630beb8f26d8e98d7896ff5b389b3b376ffd90e2608ddf4a",
+      "source": {
+        "kind": "upstream",
+        "path": "README.rst"
+      }
+    },
+    {
+      "bytes": 1557,
+      "kind": "file",
+      "mode": 420,
+      "path": "TODO.rst",
+      "sha256": "a238d5c9a2a63e29ca3757ea541d30aac2ef0b576f0cddc38107d0a53145ca9b",
+      "source": {
+        "kind": "upstream",
+        "path": "TODO.rst"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "bytecode"
+    },
+    {
+      "bytes": 3892,
+      "kind": "file",
+      "mode": 420,
+      "path": "bytecode/__init__.py",
+      "sha256": "d12f104882ef02b53fd621479363cab7a9570bc649ab90b184417900a96e8b57",
+      "source": {
+        "kind": "upstream",
+        "path": "bytecode/__init__.py"
+      }
+    },
+    {
+      "bytes": 6742,
+      "kind": "file",
+      "mode": 420,
+      "path": "bytecode/bytecode.py",
+      "sha256": "ebcdc43d438347414d04624ee89bb67d70e94689c47305053cd25d066ea8f628",
+      "source": {
+        "kind": "upstream",
+        "path": "bytecode/bytecode.py"
+      }
+    },
+    {
+      "bytes": 11336,
+      "kind": "file",
+      "mode": 420,
+      "path": "bytecode/cfg.py",
+      "sha256": "ba25f2f3862fe1264e50052d5693d23c767b12aeff3e63fe5a91c0bb94fe5b36",
+      "source": {
+        "kind": "upstream",
+        "path": "bytecode/cfg.py"
+      }
+    },
+    {
+      "bytes": 20200,
+      "kind": "file",
+      "mode": 420,
+      "path": "bytecode/concrete.py",
+      "sha256": "a19ff69d11f37bd7d3d14b4a124cf97708c21db25acd3c75641188414e7d7412",
+      "source": {
+        "kind": "upstream",
+        "path": "bytecode/concrete.py"
+      }
+    },
+    {
+      "bytes": 3445,
+      "kind": "file",
+      "mode": 420,
+      "path": "bytecode/flags.py",
+      "sha256": "b8f890c8a1beee1f9c4912ce4eb742869c3392e4fdac4da80e783d0dfb16fc4a",
+      "source": {
+        "kind": "upstream",
+        "path": "bytecode/flags.py"
+      }
+    },
+    {
+      "bytes": 9269,
+      "kind": "file",
+      "mode": 420,
+      "path": "bytecode/instr.py",
+      "sha256": "47d40e81efbf125a02bc17035156748e81a454ecb035bec86032aa831cf3cff7",
+      "source": {
+        "kind": "upstream",
+        "path": "bytecode/instr.py"
+      }
+    },
+    {
+      "bytes": 15748,
+      "kind": "file",
+      "mode": 420,
+      "path": "bytecode/peephole_opt.py",
+      "sha256": "d343950e242f38b4d1a70cacbaa4474260c0bf3e1a2c98ce2be852c8cdab2747",
+      "source": {
+        "kind": "upstream",
+        "path": "bytecode/peephole_opt.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "bytecode/tests"
+    },
+    {
+      "bytes": 4930,
+      "kind": "file",
+      "mode": 420,
+      "path": "bytecode/tests/__init__.py",
+      "sha256": "5dfe3dcc025e8ae3d0f59fdb4f652acfa44aa1fceccd0d27778849f7eaf861f3",
+      "source": {
+        "kind": "upstream",
+        "path": "bytecode/tests/__init__.py"
+      }
+    },
+    {
+      "bytes": 7239,
+      "kind": "file",
+      "mode": 420,
+      "path": "bytecode/tests/test_bytecode.py",
+      "sha256": "987a2dfb5fde98a9312de902095b1c9e5758f0cc7acadfe265ed2be419cc1dc8",
+      "source": {
+        "kind": "upstream",
+        "path": "bytecode/tests/test_bytecode.py"
+      }
+    },
+    {
+      "bytes": 27882,
+      "kind": "file",
+      "mode": 420,
+      "path": "bytecode/tests/test_cfg.py",
+      "sha256": "62ce954d2bf782246113e059811d92328b417a1f45033e8a396d3096ba042095",
+      "source": {
+        "kind": "upstream",
+        "path": "bytecode/tests/test_cfg.py"
+      }
+    },
+    {
+      "bytes": 1482,
+      "kind": "file",
+      "mode": 420,
+      "path": "bytecode/tests/test_code.py",
+      "sha256": "6cfa1fcc9f0c42742d6b45f72947f759544700e4100fbe4f5d84b92b4cf02590",
+      "source": {
+        "kind": "upstream",
+        "path": "bytecode/tests/test_code.py"
+      }
+    },
+    {
+      "bytes": 37166,
+      "kind": "file",
+      "mode": 420,
+      "path": "bytecode/tests/test_concrete.py",
+      "sha256": "3a538a8e8e3c14b9ae869c27ecb990d6b26aa9b08fa6069935c329a07ec9012c",
+      "source": {
+        "kind": "upstream",
+        "path": "bytecode/tests/test_concrete.py"
+      }
+    },
+    {
+      "bytes": 2702,
+      "kind": "file",
+      "mode": 420,
+      "path": "bytecode/tests/test_flags.py",
+      "sha256": "3d4b72d42d5e216d5df8063591a493f4b56b81a196652b5105c01af6fbfe7cfc",
+      "source": {
+        "kind": "upstream",
+        "path": "bytecode/tests/test_flags.py"
+      }
+    },
+    {
+      "bytes": 9281,
+      "kind": "file",
+      "mode": 420,
+      "path": "bytecode/tests/test_instr.py",
+      "sha256": "1552d8cf6e6b732df59f35ec3dbf23793dcb38ad3e956b6f894a55bef87d062a",
+      "source": {
+        "kind": "upstream",
+        "path": "bytecode/tests/test_instr.py"
+      }
+    },
+    {
+      "bytes": 6942,
+      "kind": "file",
+      "mode": 420,
+      "path": "bytecode/tests/test_misc.py",
+      "sha256": "81c2267a663b8d3b52ee9040d313f404a6863b5281f5b002c1acb0b2598b0bec",
+      "source": {
+        "kind": "upstream",
+        "path": "bytecode/tests/test_misc.py"
+      }
+    },
+    {
+      "bytes": 33875,
+      "kind": "file",
+      "mode": 420,
+      "path": "bytecode/tests/test_peephole_opt.py",
+      "sha256": "564480a2f1313a7c890db621994456095797596a5d95f07c77f445c06086c2b0",
+      "source": {
+        "kind": "upstream",
+        "path": "bytecode/tests/test_peephole_opt.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "doc"
+    },
+    {
+      "bytes": 6769,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/Makefile",
+      "sha256": "dc70c3d5ab3db149de48783b2404d9fbfe961b3183361eb589aa77616e2e3c97",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/Makefile"
+      }
+    },
+    {
+      "bytes": 19684,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/api.rst",
+      "sha256": "9ca314ac4c0fcc508d47369c5cd38bd6a80c5cbef853bf76b801d329edcab5d2",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/api.rst"
+      }
+    },
+    {
+      "bytes": 4287,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/byteplay_codetransformer.rst",
+      "sha256": "58bd98f0cfc6d69f30f1df4998ceee90dacba307cec2978a39eaa3377cd7bd68",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/byteplay_codetransformer.rst"
+      }
+    },
+    {
+      "bytes": 7071,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/cfg.rst",
+      "sha256": "436eb7f048d4f4093028250b070af5a115a935f4282b2584ecec59b6943c530d",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/cfg.rst"
+      }
+    },
+    {
+      "bytes": 6953,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/changelog.rst",
+      "sha256": "034a3107d8434d13c9cf84e1b9f25b77fae04f4265bdb99ad1429e14d613430e",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/changelog.rst"
+      }
+    },
+    {
+      "bytes": 8182,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/conf.py",
+      "sha256": "f8b7f31947d190189d6b1f5d969d94b4cb3af6aa2eca0bad728bc4ed4ded41f4",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/conf.py"
+      }
+    },
+    {
+      "bytes": 946,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/index.rst",
+      "sha256": "c319c51f7989fa0bbce0e3d20f34a3e6c98c29e3dc13b915d96a5adf69a134b1",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/index.rst"
+      }
+    },
+    {
+      "bytes": 6704,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/make.bat",
+      "sha256": "157dd42fd0ffba567f0b4b0eea35da20b3dd8c033148a8290653ee688d6f6b72",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/make.bat"
+      }
+    },
+    {
+      "bytes": 4121,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/peephole.rst",
+      "sha256": "d90f312476bebc160d5cda17d855c5c207bc5f11ec605013ee393c73b249efb6",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/peephole.rst"
+      }
+    },
+    {
+      "bytes": 11,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/requirements.txt",
+      "sha256": "590562b4e440f35cbfe515427d613430d0d312f7e342493643b1da97e0033461",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/requirements.txt"
+      }
+    },
+    {
+      "bytes": 1154,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/todo.rst",
+      "sha256": "9ed54ae86af97a865d32577ebd438a3e48895bb4fbd33de2059d91eadc402b9e",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/todo.rst"
+      }
+    },
+    {
+      "bytes": 5685,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/usage.rst",
+      "sha256": "7de0c4b0c74c8be306495d1770bddd180528cd4b3b46badc1704175c8b31a517",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/usage.rst"
+      }
+    },
+    {
+      "bytes": 142,
+      "kind": "file",
+      "mode": 420,
+      "path": "readthedocs.yaml",
+      "sha256": "9c65c311a304793c8e84d8009213cc8dac8ccb000247466c0ae4ce923fcf9fcc",
+      "source": {
+        "kind": "upstream",
+        "path": "readthedocs.yaml"
+      }
+    },
+    {
+      "bytes": 1889,
+      "kind": "file",
+      "mode": 420,
+      "path": "setup.py",
+      "sha256": "064be9fefb1d54a950ebbef6bd2ac723242ec2ceb1ff1a7d6dd9e5ba586a22be",
+      "source": {
+        "kind": "upstream",
+        "path": "setup.py"
+      }
+    },
+    {
+      "bytes": 502,
+      "kind": "file",
+      "mode": 420,
+      "path": "tox.ini",
+      "sha256": "12c6eaec4561683ed0385c02ff35d702b293c5efe840433caf3dd101d121b3f6",
+      "source": {
+        "kind": "upstream",
+        "path": "tox.ini"
+      }
+    }
+  ],
+  "overlay_sha256": "272adeccafe73e7009d51f2ec2be9871db5e0eb14239f483ea429be26c3c6402",
+  "upstream": {
+    "kind": "beyondswe",
+    "repository": "https://github.com/matthieudartiailh/bytecode",
+    "revision": "54d9ad7b43951a63a4bbcef95961c1eb1779ef00",
+    "source_root_key": "tri80-beyondswe-matthieudartiailh_bytecode_pr56-cp2"
+  },
+  "workspace_tree_sha256": "57c84c86d6d0ecee21d5942a939ce779e0f0aef535c16128bdc061721fcf20e2"
+}

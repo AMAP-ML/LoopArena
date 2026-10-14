@@ -1,256 +1,653 @@
 {
-  "schema_version": "looparena.type2_case_index.v1",
-  "cohort_id": "type2_single_checkpoint_27",
-  "start_mode": "bootstrap_contract_start",
-  "counts": {
-    "total": 27,
-    "unique_official_tasks": 27,
-    "scbench": 11,
-    "beyondswe_harbor": 16
-  },
   "cases": [
     {
-      "case_id": "scbench-cfgpipe-cp4",
-      "official_task_id": "scbench:cfgpipe",
-      "selection_stage": "middle",
-      "source_checkpoint_start": 3,
-      "source_checkpoint_target": 4,
-      "source_type3_case_id": "case008",
-      "adapter_kind": "scbench"
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "tri80-beyondswe-aio-libs_aiohttp_pr7944-cp1",
+      "official_task_id": "beyondswe:aio-libs_aiohttp_pr7944",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 1,
+      "source_type3_case_id": "tri80-beyondswe-aio-libs_aiohttp_pr7944"
     },
     {
-      "case_id": "scbench-dynamic_config_service_api-cp4",
-      "official_task_id": "scbench:dynamic_config_service_api",
-      "selection_stage": "late",
-      "source_checkpoint_start": 3,
-      "source_checkpoint_target": 4,
-      "source_type3_case_id": "case005",
-      "adapter_kind": "scbench"
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "tri80-beyondswe-aio-libs_aiohttp_pr7954-cp1",
+      "official_task_id": "beyondswe:aio-libs_aiohttp_pr7954",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 1,
+      "source_type3_case_id": "tri80-beyondswe-aio-libs_aiohttp_pr7954"
     },
     {
-      "case_id": "scbench-eve_industry-cp3",
-      "official_task_id": "scbench:eve_industry",
-      "selection_stage": "early",
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "tri80-beyondswe-ansys_pyansys-units_pr309-cp2",
+      "official_task_id": "beyondswe:ansys_pyansys-units_pr309",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 1,
+      "source_type3_case_id": "tri80-beyondswe-ansys_pyansys-units_pr309"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "tri80-beyondswe-aiven_aiven-client_pr399-cp1",
+      "official_task_id": "beyondswe:aiven_aiven-client_pr399",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 1,
+      "source_type3_case_id": "tri80-beyondswe-aiven_aiven-client_pr399"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "tri80-beyondswe-pylons_colander_pr305-cp1",
+      "official_task_id": "beyondswe:pylons_colander_pr305",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 1,
+      "source_type3_case_id": "tri80-beyondswe-pylons_colander_pr305"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "tri80-beyondswe-diamondlightsource_python-zocalo_pr140-cp3",
+      "official_task_id": "beyondswe:diamondlightsource_python-zocalo_pr140",
       "source_checkpoint_start": 2,
       "source_checkpoint_target": 3,
-      "source_type3_case_id": "case203",
-      "adapter_kind": "scbench"
+      "source_type3_case_id": "tri80-beyondswe-diamondlightsource_python-zocalo_pr140"
     },
     {
-      "case_id": "scbench-execution_server-cp2",
-      "official_task_id": "scbench:execution_server",
-      "selection_stage": "early",
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "tri80-beyondswe-pylons_pyramid_pr2964-cp2",
+      "official_task_id": "beyondswe:pylons_pyramid_pr2964",
       "source_checkpoint_start": 1,
       "source_checkpoint_target": 2,
-      "source_type3_case_id": "case016",
-      "adapter_kind": "scbench"
+      "source_type3_case_id": "tri80-beyondswe-pylons_pyramid_pr2964"
     },
     {
-      "case_id": "scbench-file_backup-cp4",
-      "official_task_id": "scbench:file_backup",
-      "selection_stage": "late",
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "tri80-beyondswe-cvxpy_cvxpy_pr2542-cp1",
+      "official_task_id": "beyondswe:cvxpy_cvxpy_pr2542",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 1,
+      "source_type3_case_id": "tri80-beyondswe-cvxpy_cvxpy_pr2542"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "tri80-beyondswe-pylons_pyramid_pr3019-cp2",
+      "official_task_id": "beyondswe:pylons_pyramid_pr3019",
+      "source_checkpoint_start": 1,
+      "source_checkpoint_target": 2,
+      "source_type3_case_id": "tri80-beyondswe-pylons_pyramid_pr3019"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "tri80-beyondswe-snok_flake8-type-checking_pr179-cp1",
+      "official_task_id": "beyondswe:snok_flake8-type-checking_pr179",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 1,
+      "source_type3_case_id": "tri80-beyondswe-snok_flake8-type-checking_pr179"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "tri80-beyondswe-pylons_pyramid_pr3328-cp1",
+      "official_task_id": "beyondswe:pylons_pyramid_pr3328",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 1,
+      "source_type3_case_id": "tri80-beyondswe-pylons_pyramid_pr3328"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "tri80-beyondswe-aklajnert_pytest-subprocess_pr180-cp1",
+      "official_task_id": "beyondswe:aklajnert_pytest-subprocess_pr180",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 1,
+      "source_type3_case_id": "tri80-beyondswe-aklajnert_pytest-subprocess_pr180"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "tri80-beyondswe-cornices_cornice_pr477-cp3",
+      "official_task_id": "beyondswe:cornices_cornice_pr477",
+      "source_checkpoint_start": 1,
+      "source_checkpoint_target": 2,
+      "source_type3_case_id": "tri80-beyondswe-cornices_cornice_pr477"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "tri80-beyondswe-cvxpy_cvxpy_pr2411-cp1",
+      "official_task_id": "beyondswe:cvxpy_cvxpy_pr2411",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 1,
+      "source_type3_case_id": "tri80-beyondswe-cvxpy_cvxpy_pr2411"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "tri80-beyondswe-encode_django-rest-framework_pr9514-cp3",
+      "official_task_id": "beyondswe:encode_django-rest-framework_pr9514",
+      "source_checkpoint_start": 1,
+      "source_checkpoint_target": 2,
+      "source_type3_case_id": "tri80-beyondswe-encode_django-rest-framework_pr9514"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "tri80-beyondswe-fastapi-users_fastapi-users_pr1249-cp1",
+      "official_task_id": "beyondswe:fastapi-users_fastapi-users_pr1249",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 1,
+      "source_type3_case_id": "tri80-beyondswe-fastapi-users_fastapi-users_pr1249"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "tri80-beyondswe-hackingmaterials_matminer_pr925-cp2",
+      "official_task_id": "beyondswe:hackingmaterials_matminer_pr925",
+      "source_checkpoint_start": 1,
+      "source_checkpoint_target": 2,
+      "source_type3_case_id": "tri80-beyondswe-hackingmaterials_matminer_pr925"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "tri80-beyondswe-iamconsortium_units_pr45-cp2",
+      "official_task_id": "beyondswe:iamconsortium_units_pr45",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 1,
+      "source_type3_case_id": "tri80-beyondswe-iamconsortium_units_pr45"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "tri80-beyondswe-matthieudartiailh_bytecode_pr56-cp2",
+      "official_task_id": "beyondswe:matthieudartiailh_bytecode_pr56",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 1,
+      "source_type3_case_id": "tri80-beyondswe-matthieudartiailh_bytecode_pr56"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "tri80-beyondswe-neuralensemble_python-neo_pr1554-cp2",
+      "official_task_id": "beyondswe:neuralensemble_python-neo_pr1554",
+      "source_checkpoint_start": 1,
+      "source_checkpoint_target": 2,
+      "source_type3_case_id": "tri80-beyondswe-neuralensemble_python-neo_pr1554"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "tri80-beyondswe-obspy_obspy_pr2949-cp2",
+      "official_task_id": "beyondswe:obspy_obspy_pr2949",
+      "source_checkpoint_start": 1,
+      "source_checkpoint_target": 2,
+      "source_type3_case_id": "tri80-beyondswe-obspy_obspy_pr2949"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "tri80-beyondswe-obspy_obspy_pr2962-cp2",
+      "official_task_id": "beyondswe:obspy_obspy_pr2962",
+      "source_checkpoint_start": 1,
+      "source_checkpoint_target": 2,
+      "source_type3_case_id": "tri80-beyondswe-obspy_obspy_pr2962"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "tri80-beyondswe-pylons_pyramid_pr1471-cp1",
+      "official_task_id": "beyondswe:pylons_pyramid_pr1471",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 1,
+      "source_type3_case_id": "tri80-beyondswe-pylons_pyramid_pr1471"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "tri80-beyondswe-pylons_pyramid_pr2413-cp3",
+      "official_task_id": "beyondswe:pylons_pyramid_pr2413",
+      "source_checkpoint_start": 1,
+      "source_checkpoint_target": 2,
+      "source_type3_case_id": "tri80-beyondswe-pylons_pyramid_pr2413"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "tri80-beyondswe-pylons_pyramid_pr2500-cp2",
+      "official_task_id": "beyondswe:pylons_pyramid_pr2500",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 1,
+      "source_type3_case_id": "tri80-beyondswe-pylons_pyramid_pr2500"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "tri80-beyondswe-pylons_pyramid_pr2985-cp7",
+      "official_task_id": "beyondswe:pylons_pyramid_pr2985",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 7,
+      "source_type3_case_id": "tri80-beyondswe-pylons_pyramid_pr2985"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "tri80-beyondswe-pylons_pyramid_pr3319-cp3",
+      "official_task_id": "beyondswe:pylons_pyramid_pr3319",
+      "source_checkpoint_start": 1,
+      "source_checkpoint_target": 2,
+      "source_type3_case_id": "tri80-beyondswe-pylons_pyramid_pr3319"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "tri80-beyondswe-python-control_python-control_pr913-cp2",
+      "official_task_id": "beyondswe:python-control_python-control_pr913",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 2,
+      "source_type3_case_id": "tri80-beyondswe-python-control_python-control_pr913"
+    },
+    {
+      "adapter_kind": "beyondswe_harbor",
+      "case_id": "tri80-beyondswe-shapely_shapely_pr1174-cp4",
+      "official_task_id": "beyondswe:shapely_shapely_pr1174",
+      "source_checkpoint_start": 2,
+      "source_checkpoint_target": 3,
+      "source_type3_case_id": "tri80-beyondswe-shapely_shapely_pr1174"
+    },
+    {
+      "adapter_kind": "loopsbench",
+      "case_id": "tri80-loopsbench-task_afl_fuzzing-cp2",
+      "official_task_id": "loopsbench:task_afl_fuzzing",
+      "source_checkpoint_start": 1,
+      "source_checkpoint_target": 2,
+      "source_type3_case_id": "tri80-loopsbench-task_afl_fuzzing"
+    },
+    {
+      "adapter_kind": "loopsbench",
+      "case_id": "tri80-loopsbench-task_alloy_formal_modeling-cp4",
+      "official_task_id": "loopsbench:task_alloy_formal_modeling",
       "source_checkpoint_start": 3,
       "source_checkpoint_target": 4,
-      "source_type3_case_id": "case004",
-      "adapter_kind": "scbench"
+      "source_type3_case_id": "tri80-loopsbench-task_alloy_formal_modeling"
     },
     {
-      "case_id": "scbench-file_query_tool-cp5",
-      "official_task_id": "scbench:file_query_tool",
-      "selection_stage": "late",
-      "source_checkpoint_start": 4,
-      "source_checkpoint_target": 5,
-      "source_type3_case_id": "case204",
-      "adapter_kind": "scbench"
+      "adapter_kind": "loopsbench",
+      "case_id": "tri80-loopsbench-task_angr_concolic_execution-cp1",
+      "official_task_id": "loopsbench:task_angr_concolic_execution",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 1,
+      "source_type3_case_id": "tri80-loopsbench-task_angr_concolic_execution"
     },
     {
-      "case_id": "scbench-meshctl-cp5",
-      "official_task_id": "scbench:meshctl",
-      "selection_stage": "middle",
-      "source_checkpoint_start": 4,
-      "source_checkpoint_target": 5,
-      "source_type3_case_id": "case001",
-      "adapter_kind": "scbench"
-    },
-    {
-      "case_id": "scbench-pwd_manager-cp2",
-      "official_task_id": "scbench:pwd_manager",
-      "selection_stage": "early",
+      "adapter_kind": "loopsbench",
+      "case_id": "tri80-loopsbench-task_boogie_dafny-cp2",
+      "official_task_id": "loopsbench:task_boogie_dafny",
       "source_checkpoint_start": 1,
       "source_checkpoint_target": 2,
-      "source_type3_case_id": "case206",
-      "adapter_kind": "scbench"
+      "source_type3_case_id": "tri80-loopsbench-task_boogie_dafny"
     },
     {
-      "case_id": "scbench-circuit_eval-cp5",
-      "official_task_id": "scbench:circuit_eval",
-      "selection_stage": "middle",
+      "adapter_kind": "loopsbench",
+      "case_id": "tri80-loopsbench-task_cpachecker-cp2",
+      "official_task_id": "loopsbench:task_cpachecker",
+      "source_checkpoint_start": 1,
+      "source_checkpoint_target": 2,
+      "source_type3_case_id": "tri80-loopsbench-task_cpachecker"
+    },
+    {
+      "adapter_kind": "loopsbench",
+      "case_id": "tri80-loopsbench-task_cvc_smt_solver-cp2",
+      "official_task_id": "loopsbench:task_cvc_smt_solver",
+      "source_checkpoint_start": 1,
+      "source_checkpoint_target": 2,
+      "source_type3_case_id": "tri80-loopsbench-task_cvc_smt_solver"
+    },
+    {
+      "adapter_kind": "loopsbench",
+      "case_id": "tri80-loopsbench-task_doop_souffle_static_analysis-cp1",
+      "official_task_id": "loopsbench:task_doop_souffle_static_analysis",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 1,
+      "source_type3_case_id": "tri80-loopsbench-task_doop_souffle_static_analysis"
+    },
+    {
+      "adapter_kind": "loopsbench",
+      "case_id": "tri80-loopsbench-task_evosuite_test_generation-cp3",
+      "official_task_id": "loopsbench:task_evosuite_test_generation",
+      "source_checkpoint_start": 2,
+      "source_checkpoint_target": 3,
+      "source_type3_case_id": "tri80-loopsbench-task_evosuite_test_generation"
+    },
+    {
+      "adapter_kind": "loopsbench",
+      "case_id": "tri80-loopsbench-task_frama_c-cp3",
+      "official_task_id": "loopsbench:task_frama_c",
+      "source_checkpoint_start": 2,
+      "source_checkpoint_target": 3,
+      "source_type3_case_id": "tri80-loopsbench-task_frama_c"
+    },
+    {
+      "adapter_kind": "loopsbench",
+      "case_id": "tri80-loopsbench-task_gem5_architecture_simulation-cp1",
+      "official_task_id": "loopsbench:task_gem5_architecture_simulation",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 1,
+      "source_type3_case_id": "tri80-loopsbench-task_gem5_architecture_simulation"
+    },
+    {
+      "adapter_kind": "loopsbench",
+      "case_id": "tri80-loopsbench-task_graph_processing-cp2",
+      "official_task_id": "loopsbench:task_graph_processing",
+      "source_checkpoint_start": 1,
+      "source_checkpoint_target": 2,
+      "source_type3_case_id": "tri80-loopsbench-task_graph_processing"
+    },
+    {
+      "adapter_kind": "loopsbench",
+      "case_id": "tri80-loopsbench-task_jpf_symbolic_execution-cp2",
+      "official_task_id": "loopsbench:task_jpf_symbolic_execution",
+      "source_checkpoint_start": 1,
+      "source_checkpoint_target": 2,
+      "source_type3_case_id": "tri80-loopsbench-task_jpf_symbolic_execution"
+    },
+    {
+      "adapter_kind": "loopsbench",
+      "case_id": "tri80-loopsbench-task_mininet_network_simulation-cp1",
+      "official_task_id": "loopsbench:task_mininet_network_simulation",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 1,
+      "source_type3_case_id": "tri80-loopsbench-task_mininet_network_simulation"
+    },
+    {
+      "adapter_kind": "loopsbench",
+      "case_id": "tri80-loopsbench-task_mlir_circuit_ir-cp1",
+      "official_task_id": "loopsbench:task_mlir_circuit_ir",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 1,
+      "source_type3_case_id": "tri80-loopsbench-task_mlir_circuit_ir"
+    },
+    {
+      "adapter_kind": "loopsbench",
+      "case_id": "tri80-loopsbench-task_mlp_numpy_coursework-cp3",
+      "official_task_id": "loopsbench:task_mlp_numpy_coursework",
+      "source_checkpoint_start": 2,
+      "source_checkpoint_target": 3,
+      "source_type3_case_id": "tri80-loopsbench-task_mlp_numpy_coursework"
+    },
+    {
+      "adapter_kind": "loopsbench",
+      "case_id": "tri80-loopsbench-task_mlsys_autodiff_pa1-cp8",
+      "official_task_id": "loopsbench:task_mlsys_autodiff_pa1",
+      "source_checkpoint_start": 7,
+      "source_checkpoint_target": 8,
+      "source_type3_case_id": "tri80-loopsbench-task_mlsys_autodiff_pa1"
+    },
+    {
+      "adapter_kind": "loopsbench",
+      "case_id": "tri80-loopsbench-task_monogame_math2d_medium-cp5",
+      "official_task_id": "loopsbench:task_monogame_math2d_medium",
       "source_checkpoint_start": 4,
       "source_checkpoint_target": 5,
-      "source_type3_case_id": "case012",
-      "adapter_kind": "scbench"
+      "source_type3_case_id": "tri80-loopsbench-task_monogame_math2d_medium"
     },
     {
-      "case_id": "scbench-datagate-cp6",
+      "adapter_kind": "loopsbench",
+      "case_id": "tri80-loopsbench-task_monogame_transform3d_medium-cp4",
+      "official_task_id": "loopsbench:task_monogame_transform3d_medium",
+      "source_checkpoint_start": 3,
+      "source_checkpoint_target": 4,
+      "source_type3_case_id": "tri80-loopsbench-task_monogame_transform3d_medium"
+    },
+    {
+      "adapter_kind": "loopsbench",
+      "case_id": "tri80-loopsbench-task_nandteris-cp3",
+      "official_task_id": "loopsbench:task_nandteris",
+      "source_checkpoint_start": 2,
+      "source_checkpoint_target": 3,
+      "source_type3_case_id": "tri80-loopsbench-task_nandteris"
+    },
+    {
+      "adapter_kind": "loopsbench",
+      "case_id": "tri80-loopsbench-task_ns3_network_simulation-cp2",
+      "official_task_id": "loopsbench:task_ns3_network_simulation",
+      "source_checkpoint_start": 1,
+      "source_checkpoint_target": 2,
+      "source_type3_case_id": "tri80-loopsbench-task_ns3_network_simulation"
+    },
+    {
+      "adapter_kind": "loopsbench",
+      "case_id": "tri80-loopsbench-task_perses_program_reduction-cp1",
+      "official_task_id": "loopsbench:task_perses_program_reduction",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 1,
+      "source_type3_case_id": "tri80-loopsbench-task_perses_program_reduction"
+    },
+    {
+      "adapter_kind": "loopsbench",
+      "case_id": "tri80-loopsbench-task_raylib_shapes2d_medium-cp3",
+      "official_task_id": "loopsbench:task_raylib_shapes2d_medium",
+      "source_checkpoint_start": 2,
+      "source_checkpoint_target": 3,
+      "source_type3_case_id": "tri80-loopsbench-task_raylib_shapes2d_medium"
+    },
+    {
+      "adapter_kind": "loopsbench",
+      "case_id": "tri80-loopsbench-task_raylib_textures_hard-cp1",
+      "official_task_id": "loopsbench:task_raylib_textures_hard",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 1,
+      "source_type3_case_id": "tri80-loopsbench-task_raylib_textures_hard"
+    },
+    {
+      "adapter_kind": "loopsbench",
+      "case_id": "tri80-loopsbench-task_riscv_cpu_six_labs-cp1",
+      "official_task_id": "loopsbench:task_riscv_cpu_six_labs",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 1,
+      "source_type3_case_id": "tri80-loopsbench-task_riscv_cpu_six_labs"
+    },
+    {
+      "adapter_kind": "loopsbench",
+      "case_id": "tri80-loopsbench-task_riscv_cpu_verilog_three-cp2",
+      "official_task_id": "loopsbench:task_riscv_cpu_verilog_three",
+      "source_checkpoint_start": 1,
+      "source_checkpoint_target": 2,
+      "source_type3_case_id": "tri80-loopsbench-task_riscv_cpu_verilog_three"
+    },
+    {
+      "adapter_kind": "loopsbench",
+      "case_id": "tri80-loopsbench-task_sklearn_ml_toolchain-cp2",
+      "official_task_id": "loopsbench:task_sklearn_ml_toolchain",
+      "source_checkpoint_start": 1,
+      "source_checkpoint_target": 2,
+      "source_type3_case_id": "tri80-loopsbench-task_sklearn_ml_toolchain"
+    },
+    {
+      "adapter_kind": "loopsbench",
+      "case_id": "tri80-loopsbench-task_soot_taint_analysis-cp2",
+      "official_task_id": "loopsbench:task_soot_taint_analysis",
+      "source_checkpoint_start": 1,
+      "source_checkpoint_target": 2,
+      "source_type3_case_id": "tri80-loopsbench-task_soot_taint_analysis"
+    },
+    {
+      "adapter_kind": "loopsbench",
+      "case_id": "tri80-loopsbench-task_sql_engine_myjql-cp3",
+      "official_task_id": "loopsbench:task_sql_engine_myjql",
+      "source_checkpoint_start": 2,
+      "source_checkpoint_target": 3,
+      "source_type3_case_id": "tri80-loopsbench-task_sql_engine_myjql"
+    },
+    {
+      "adapter_kind": "loopsbench",
+      "case_id": "tri80-loopsbench-task_stream_mining-cp3",
+      "official_task_id": "loopsbench:task_stream_mining",
+      "source_checkpoint_start": 2,
+      "source_checkpoint_target": 3,
+      "source_type3_case_id": "tri80-loopsbench-task_stream_mining"
+    },
+    {
+      "adapter_kind": "loopsbench",
+      "case_id": "tri80-loopsbench-task_z3_fixedpoint_verification-cp1",
+      "official_task_id": "loopsbench:task_z3_fixedpoint_verification",
+      "source_checkpoint_start": 0,
+      "source_checkpoint_target": 1,
+      "source_type3_case_id": "tri80-loopsbench-task_z3_fixedpoint_verification"
+    },
+    {
+      "adapter_kind": "scbench",
+      "case_id": "tri80-scbench-cfgpipe-cp4",
+      "official_task_id": "scbench:cfgpipe",
+      "source_checkpoint_start": 3,
+      "source_checkpoint_target": 4,
+      "source_type3_case_id": "tri80-scbench-cfgpipe"
+    },
+    {
+      "adapter_kind": "scbench",
+      "case_id": "tri80-scbench-circuit_eval-cp5",
+      "official_task_id": "scbench:circuit_eval",
+      "source_checkpoint_start": 4,
+      "source_checkpoint_target": 5,
+      "source_type3_case_id": "tri80-scbench-circuit_eval"
+    },
+    {
+      "adapter_kind": "scbench",
+      "case_id": "tri80-scbench-datagate-cp6",
       "official_task_id": "scbench:datagate",
-      "selection_stage": "late",
       "source_checkpoint_start": 5,
       "source_checkpoint_target": 6,
-      "source_type3_case_id": "Datagate",
-      "adapter_kind": "scbench"
+      "source_type3_case_id": "tri80-scbench-datagate"
     },
     {
-      "case_id": "scbench-mvvault-cp3",
-      "official_task_id": "scbench:mvvault",
-      "selection_stage": "early",
-      "source_checkpoint_start": 2,
-      "source_checkpoint_target": 3,
-      "source_type3_case_id": "case003",
-      "adapter_kind": "scbench"
-    },
-    {
-      "case_id": "beyondswe-case019-cp2",
-      "official_task_id": "beyondswe:aboutcode-org_commoncode_pr44",
-      "selection_stage": "uniform-within-case",
-      "source_checkpoint_start": 1,
-      "source_checkpoint_target": 2,
-      "source_type3_case_id": "case019",
-      "adapter_kind": "beyondswe_harbor"
-    },
-    {
-      "case_id": "beyondswe-case023-cp1",
-      "official_task_id": "beyondswe:aiven_aiven-client_pr399",
-      "selection_stage": "uniform-within-case",
-      "source_checkpoint_start": 0,
-      "source_checkpoint_target": 1,
-      "source_type3_case_id": "case023",
-      "adapter_kind": "beyondswe_harbor"
-    },
-    {
-      "case_id": "beyondswe-case025-cp1",
-      "official_task_id": "beyondswe:pylons_colander_pr305",
-      "selection_stage": "uniform-within-case",
-      "source_checkpoint_start": 0,
-      "source_checkpoint_target": 1,
-      "source_type3_case_id": "case025",
-      "adapter_kind": "beyondswe_harbor"
-    },
-    {
-      "case_id": "beyondswe-case027-cp3",
-      "official_task_id": "beyondswe:diamondlightsource_python-zocalo_pr140",
-      "selection_stage": "uniform-within-case",
-      "source_checkpoint_start": 2,
-      "source_checkpoint_target": 3,
-      "source_type3_case_id": "case027",
-      "adapter_kind": "beyondswe_harbor"
-    },
-    {
-      "case_id": "beyondswe-case028-cp2",
-      "official_task_id": "beyondswe:pylons_pyramid_pr2964",
-      "selection_stage": "uniform-within-case",
-      "source_checkpoint_start": 1,
-      "source_checkpoint_target": 2,
-      "source_type3_case_id": "case028",
-      "adapter_kind": "beyondswe_harbor"
-    },
-    {
-      "case_id": "beyondswe-case029-cp1",
-      "official_task_id": "beyondswe:cvxpy_cvxpy_pr2542",
-      "selection_stage": "uniform-within-case",
-      "source_checkpoint_start": 0,
-      "source_checkpoint_target": 1,
-      "source_type3_case_id": "case029",
-      "adapter_kind": "beyondswe_harbor"
-    },
-    {
-      "case_id": "beyondswe-case033-cp2",
-      "official_task_id": "beyondswe:pylons_pyramid_pr3019",
-      "selection_stage": "uniform-within-case",
-      "source_checkpoint_start": 1,
-      "source_checkpoint_target": 2,
-      "source_type3_case_id": "case033",
-      "adapter_kind": "beyondswe_harbor"
-    },
-    {
-      "case_id": "beyondswe-case035-cp4",
-      "official_task_id": "beyondswe:plasmapy_plasmapy_pr2068",
-      "selection_stage": "uniform-within-case",
+      "adapter_kind": "scbench",
+      "case_id": "tri80-scbench-dynamic_config_service_api-cp4",
+      "official_task_id": "scbench:dynamic_config_service_api",
       "source_checkpoint_start": 3,
       "source_checkpoint_target": 4,
-      "source_type3_case_id": "case035",
-      "adapter_kind": "beyondswe_harbor"
+      "source_type3_case_id": "tri80-scbench-dynamic_config_service_api"
     },
     {
-      "case_id": "beyondswe-case037-cp1",
-      "official_task_id": "beyondswe:snok_flake8-type-checking_pr179",
-      "selection_stage": "uniform-within-case",
-      "source_checkpoint_start": 0,
-      "source_checkpoint_target": 1,
-      "source_type3_case_id": "case037",
-      "adapter_kind": "beyondswe_harbor"
+      "adapter_kind": "scbench",
+      "case_id": "tri80-scbench-eve_industry-cp3",
+      "official_task_id": "scbench:eve_industry",
+      "source_checkpoint_start": 2,
+      "source_checkpoint_target": 3,
+      "source_type3_case_id": "tri80-scbench-eve_industry"
     },
     {
-      "case_id": "beyondswe-case061-cp1",
-      "official_task_id": "beyondswe:openedx_edx-drf-extensions_pr230",
-      "selection_stage": "uniform-within-case",
-      "source_checkpoint_start": 0,
-      "source_checkpoint_target": 1,
-      "source_type3_case_id": "case061",
-      "adapter_kind": "beyondswe_harbor"
+      "adapter_kind": "scbench",
+      "case_id": "tri80-scbench-execution_server-cp2",
+      "official_task_id": "scbench:execution_server",
+      "source_checkpoint_start": 1,
+      "source_checkpoint_target": 2,
+      "source_type3_case_id": "tri80-scbench-execution_server"
     },
     {
-      "case_id": "beyondswe-case066-cp1",
-      "official_task_id": "beyondswe:sinaptik-ai_pandas-ai_pr761",
-      "selection_stage": "uniform-within-case",
-      "source_checkpoint_start": 0,
-      "source_checkpoint_target": 1,
-      "source_type3_case_id": "case066",
-      "adapter_kind": "beyondswe_harbor"
+      "adapter_kind": "scbench",
+      "case_id": "tri80-scbench-file_backup-cp4",
+      "official_task_id": "scbench:file_backup",
+      "source_checkpoint_start": 3,
+      "source_checkpoint_target": 4,
+      "source_type3_case_id": "tri80-scbench-file_backup"
     },
     {
-      "case_id": "beyondswe-case080-cp1",
-      "official_task_id": "beyondswe:pylons_pyramid_pr3328",
-      "selection_stage": "uniform-within-case",
-      "source_checkpoint_start": 0,
-      "source_checkpoint_target": 1,
-      "source_type3_case_id": "case080",
-      "adapter_kind": "beyondswe_harbor"
+      "adapter_kind": "scbench",
+      "case_id": "tri80-scbench-file_query_tool-cp5",
+      "official_task_id": "scbench:file_query_tool",
+      "source_checkpoint_start": 4,
+      "source_checkpoint_target": 5,
+      "source_type3_case_id": "tri80-scbench-file_query_tool"
     },
     {
-      "case_id": "beyondswe-case089-cp1",
-      "official_task_id": "beyondswe:aklajnert_pytest-subprocess_pr180",
-      "selection_stage": "uniform-within-case",
-      "source_checkpoint_start": 0,
-      "source_checkpoint_target": 1,
-      "source_type3_case_id": "case089",
-      "adapter_kind": "beyondswe_harbor"
+      "adapter_kind": "scbench",
+      "case_id": "tri80-scbench-forge-cp5",
+      "official_task_id": "scbench:forge",
+      "source_checkpoint_start": 4,
+      "source_checkpoint_target": 5,
+      "source_type3_case_id": "tri80-scbench-forge"
     },
     {
-      "case_id": "beyondswe-case102-cp1",
-      "official_task_id": "beyondswe:cvxpy_cvxpy_pr2508",
-      "selection_stage": "uniform-within-case",
-      "source_checkpoint_start": 0,
-      "source_checkpoint_target": 1,
-      "source_type3_case_id": "case102",
-      "adapter_kind": "beyondswe_harbor"
+      "adapter_kind": "scbench",
+      "case_id": "tri80-scbench-l2m-cp4",
+      "official_task_id": "scbench:l2m",
+      "source_checkpoint_start": 3,
+      "source_checkpoint_target": 4,
+      "source_type3_case_id": "tri80-scbench-l2m"
     },
     {
-      "case_id": "beyondswe-case208-cp1",
-      "official_task_id": "beyondswe:adamtheturtle_sybil-extras_pr219",
-      "selection_stage": "uniform-within-case",
-      "source_checkpoint_start": 0,
-      "source_checkpoint_target": 1,
-      "source_type3_case_id": "case208",
-      "adapter_kind": "beyondswe_harbor"
+      "adapter_kind": "scbench",
+      "case_id": "tri80-scbench-meshctl-cp5",
+      "official_task_id": "scbench:meshctl",
+      "source_checkpoint_start": 4,
+      "source_checkpoint_target": 5,
+      "source_type3_case_id": "tri80-scbench-meshctl"
     },
     {
-      "case_id": "beyondswe-case039-cp1",
-      "official_task_id": "beyondswe:aio-libs_aiohttp_pr7944",
-      "selection_stage": "uniform-within-singleton-case",
-      "source_checkpoint_start": 0,
-      "source_checkpoint_target": 1,
-      "source_type3_case_id": "case039",
-      "adapter_kind": "beyondswe_harbor"
+      "adapter_kind": "scbench",
+      "case_id": "tri80-scbench-migrate_configs-cp2",
+      "official_task_id": "scbench:migrate_configs",
+      "source_checkpoint_start": 1,
+      "source_checkpoint_target": 2,
+      "source_type3_case_id": "tri80-scbench-migrate_configs"
+    },
+    {
+      "adapter_kind": "scbench",
+      "case_id": "tri80-scbench-mocked_http-cp6",
+      "official_task_id": "scbench:mocked_http",
+      "source_checkpoint_start": 3,
+      "source_checkpoint_target": 6,
+      "source_type3_case_id": "tri80-scbench-mocked_http"
+    },
+    {
+      "adapter_kind": "scbench",
+      "case_id": "tri80-scbench-mvvault-cp3",
+      "official_task_id": "scbench:mvvault",
+      "source_checkpoint_start": 2,
+      "source_checkpoint_target": 3,
+      "source_type3_case_id": "tri80-scbench-mvvault"
+    },
+    {
+      "adapter_kind": "scbench",
+      "case_id": "tri80-scbench-pwd_manager-cp2",
+      "official_task_id": "scbench:pwd_manager",
+      "source_checkpoint_start": 1,
+      "source_checkpoint_target": 2,
+      "source_type3_case_id": "tri80-scbench-pwd_manager"
+    },
+    {
+      "adapter_kind": "scbench",
+      "case_id": "tri80-scbench-recli-cp3",
+      "official_task_id": "scbench:recli",
+      "source_checkpoint_start": 2,
+      "source_checkpoint_target": 3,
+      "source_type3_case_id": "tri80-scbench-recli"
+    },
+    {
+      "adapter_kind": "scbench",
+      "case_id": "tri80-scbench-sheeteval-cp7",
+      "official_task_id": "scbench:sheeteval",
+      "source_checkpoint_start": 6,
+      "source_checkpoint_target": 7,
+      "source_type3_case_id": "tri80-scbench-sheeteval"
+    },
+    {
+      "adapter_kind": "scbench",
+      "case_id": "tri80-scbench-sith-cp2",
+      "official_task_id": "scbench:sith",
+      "source_checkpoint_start": 1,
+      "source_checkpoint_target": 2,
+      "source_type3_case_id": "tri80-scbench-sith"
+    },
+    {
+      "adapter_kind": "scbench",
+      "case_id": "tri80-scbench-test_translator-cp4",
+      "official_task_id": "scbench:test_translator",
+      "source_checkpoint_start": 3,
+      "source_checkpoint_target": 4,
+      "source_type3_case_id": "tri80-scbench-test_translator"
+    },
+    {
+      "adapter_kind": "scbench",
+      "case_id": "tri80-scbench-textdrop-cp5",
+      "official_task_id": "scbench:textdrop",
+      "source_checkpoint_start": 4,
+      "source_checkpoint_target": 5,
+      "source_type3_case_id": "tri80-scbench-textdrop"
+    },
+    {
+      "adapter_kind": "scbench",
+      "case_id": "tri80-scbench-trajectory_api-cp3",
+      "official_task_id": "scbench:trajectory_api",
+      "source_checkpoint_start": 2,
+      "source_checkpoint_target": 3,
+      "source_type3_case_id": "tri80-scbench-trajectory_api"
     }
-  ]
+  ],
+  "counts": {
+    "beyondswe_harbor": 29,
+    "loopsbench": 30,
+    "parent_tasks": 80,
+    "scbench": 21,
+    "total": 80,
+    "unique_official_tasks": 80
+  },
+  "start_mode": "bootstrap_contract_start"
 }

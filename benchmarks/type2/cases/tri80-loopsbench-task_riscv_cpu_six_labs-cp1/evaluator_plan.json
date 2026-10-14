@@ -1,0 +1,32 @@
+{
+  "adapter_config": {
+    "docker_executable": "docker",
+    "expected_test_count": 1,
+    "expected_unit_ids": [
+      "lab1",
+      "lab2",
+      "lab3",
+      "lab4",
+      "lab5",
+      "lab6"
+    ],
+    "result_protocol": "task_runner_pytest",
+    "runtime_assets_dir": "/opt/looparena/evaluator_assets/evaluator_runtime",
+    "task_dir": "/opt/looparena/evaluator_assets/tasks/task_riscv_cpu_six_labs"
+  },
+  "adapter_kind": "loopsbench",
+  "adapter_version": "source-run-tests-v1",
+  "evaluator_revision": "5880b64491e2cac2f83d497153ed173b8a995b8b",
+  "network": "bridge",
+  "pass_policy": "all-source-unit-tests-pass",
+  "runtime_identity": {
+    "image_id": "sha256:209c2508b55f04de8292354413fd77b0bb8678bc102b9eaa24dd4f6d72590525",
+    "image_reference": "looparena-loopsbench-84ae415/task_riscv_cpu_six_labs:frozen",
+    "platform": "linux/amd64",
+    "task_tree_sha256": "469b0201ce0ee2d53714d27a8fab758e700f5e5174ea5911c78cc3658e0e2e12",
+    "workdir": "/workspace"
+  },
+  "solve_network": "bridge",
+  "source_revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+  "timeout_sec": 600
+}

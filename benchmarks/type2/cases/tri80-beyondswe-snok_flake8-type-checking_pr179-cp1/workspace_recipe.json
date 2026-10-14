@@ -1,0 +1,484 @@
+{
+  "case_id": "tri80-beyondswe-snok_flake8-type-checking_pr179-cp1",
+  "files": [
+    {
+      "bytes": 279,
+      "kind": "file",
+      "mode": 420,
+      "path": ".codecov.yml",
+      "sha256": "803c5e82300a1d3b6ebf212d5d99992c0df2dfc282ce8b60f54f0da074f9c2d0",
+      "source": {
+        "kind": "upstream",
+        "path": ".codecov.yml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": ".github"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": ".github/workflows"
+    },
+    {
+      "bytes": 545,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/workflows/publish.yml",
+      "sha256": "e9ff6a0489968e8287625dca09e981b4e0161b83b071e329c37519343241518b",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/workflows/publish.yml"
+      }
+    },
+    {
+      "bytes": 2229,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/workflows/testing.yml",
+      "sha256": "3f2caba26e8df7555aff4538e4edd569b2adcaec6983da309702f354e45400f5",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/workflows/testing.yml"
+      }
+    },
+    {
+      "bytes": 1859,
+      "kind": "file",
+      "mode": 420,
+      "path": ".gitignore",
+      "sha256": "0e3187a03821eb98da7272f3a59d169802320975d1e55cd013f5f2d60777af34",
+      "source": {
+        "kind": "upstream",
+        "path": ".gitignore"
+      }
+    },
+    {
+      "bytes": 1469,
+      "kind": "file",
+      "mode": 420,
+      "path": ".pre-commit-config.yaml",
+      "sha256": "41be8ce34d0a53c6eb191060db283639a9cf2ee62bc289cb1bdbb39c689e0648",
+      "source": {
+        "kind": "upstream",
+        "path": ".pre-commit-config.yaml"
+      }
+    },
+    {
+      "bytes": 1520,
+      "kind": "file",
+      "mode": 420,
+      "path": "LICENSE",
+      "sha256": "d0ff424a8a226ef1473e88412a6439f71425df9d1fe6e34fa2c8b72f6454ea37",
+      "source": {
+        "kind": "upstream",
+        "path": "LICENSE"
+      }
+    },
+    {
+      "bytes": 13467,
+      "kind": "file",
+      "mode": 420,
+      "path": "README.md",
+      "sha256": "0dde733ea800899cf8898ecb25cd07125dfb557ea2e7bfab414270a7f30c0519",
+      "source": {
+        "kind": "upstream",
+        "path": "README.md"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "flake8_type_checking"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "flake8_type_checking/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/__init__.py"
+      }
+    },
+    {
+      "bytes": 71712,
+      "kind": "file",
+      "mode": 420,
+      "path": "flake8_type_checking/checker.py",
+      "sha256": "91cf47991a4319a6377f337d9de045154beddbfb9ad272a4e074a1b71affc737",
+      "source": {
+        "kind": "upstream",
+        "path": "flake8_type_checking/checker.py"
+      }
+    },
+    {
+      "bytes": 1826,
+      "kind": "file",
+      "mode": 420,
+      "path": "flake8_type_checking/constants.py",
+      "sha256": "0aff7607fb6c6c654842078cef81b6fb011fbdcb56f3cb42ebf5d1f29391f596",
+      "source": {
+        "kind": "upstream",
+        "path": "flake8_type_checking/constants.py"
+      }
+    },
+    {
+      "bytes": 5551,
+      "kind": "file",
+      "mode": 420,
+      "path": "flake8_type_checking/plugin.py",
+      "sha256": "1384fbd0180f3aef38bd191c95be5b1c92e5394d2e99d05760d7e1929eddb6da",
+      "source": {
+        "kind": "upstream",
+        "path": "flake8_type_checking/plugin.py"
+      }
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "flake8_type_checking/py.typed",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/__init__.py"
+      }
+    },
+    {
+      "bytes": 789,
+      "kind": "file",
+      "mode": 420,
+      "path": "flake8_type_checking/types.py",
+      "sha256": "ebff503eae4e04c28cf6435595974e17438c80154e91e4f9c8eb47f775f04f0a",
+      "source": {
+        "kind": "upstream",
+        "path": "flake8_type_checking/types.py"
+      }
+    },
+    {
+      "bytes": 41622,
+      "kind": "file",
+      "mode": 420,
+      "path": "poetry.lock",
+      "sha256": "5bac6b1106b1f7cabe3a7ea0bdd2cc87a75aa544574d181738d7edeabb7987cc",
+      "source": {
+        "kind": "upstream",
+        "path": "poetry.lock"
+      }
+    },
+    {
+      "bytes": 2009,
+      "kind": "file",
+      "mode": 420,
+      "path": "pyproject.toml",
+      "sha256": "2a457f19ee85918c374da56a9f7d9708dfc12d9045a1eca2c8f35fcd1b6af148",
+      "source": {
+        "kind": "upstream",
+        "path": "pyproject.toml"
+      }
+    },
+    {
+      "bytes": 987,
+      "kind": "file",
+      "mode": 420,
+      "path": "setup.cfg",
+      "sha256": "19df952c966d98564b8fab46d67e6a61f86b6953d4837773a377e4e3f5d48554",
+      "source": {
+        "kind": "upstream",
+        "path": "setup.cfg"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/__init__.py"
+      }
+    },
+    {
+      "bytes": 1901,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/conftest.py",
+      "sha256": "0075f5d1e055b0400872a512159073af31b6a65b24192004a24f55dea3617e2c",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/conftest.py"
+      }
+    },
+    {
+      "bytes": 7487,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_attrs.py",
+      "sha256": "b65546c6f13985cb9ea33743a62069d0b53f75ea4be59d01318d14412ff2aa3b",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_attrs.py"
+      }
+    },
+    {
+      "bytes": 10422,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_errors.py",
+      "sha256": "0f82b2ff9187e98a5fc2bb59a07f304ba775cd13719a1367b51164efba941787",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_errors.py"
+      }
+    },
+    {
+      "bytes": 2507,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_exempt_modules.py",
+      "sha256": "d5644ae837a57348683c9fd2be4a122b8ed2f43d30599c9cf21ae8eeb18c8561",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_exempt_modules.py"
+      }
+    },
+    {
+      "bytes": 3022,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_fastapi_decorators.py",
+      "sha256": "58e981d67bf307b03933a579fd6d906edbe643105093241ae8475189f15bac41",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_fastapi_decorators.py"
+      }
+    },
+    {
+      "bytes": 1268,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_fastapi_dependencies.py",
+      "sha256": "5cf37d26af8221841b54b7c3226d55357f3f233edff35225386063b5540daf3d",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_fastapi_dependencies.py"
+      }
+    },
+    {
+      "bytes": 2897,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_import_visitors.py",
+      "sha256": "96860aa957028d29618eabc2f72e21804917d24760f1cdb41ab256e1c157f827",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_import_visitors.py"
+      }
+    },
+    {
+      "bytes": 5439,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_injector.py",
+      "sha256": "9cdc4ef891e64f193feef5154d92593bc428d26a8be03eb4a3b20d44a314b2a4",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_injector.py"
+      }
+    },
+    {
+      "bytes": 1279,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_name_extraction.py",
+      "sha256": "96bf7098341cdfac7a65fca84c60219bb7b2424ccfaee5efe8a038b1fadefd3f",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_name_extraction.py"
+      }
+    },
+    {
+      "bytes": 2773,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_name_visitor.py",
+      "sha256": "2bb92282da9c0676b355f0c17684814ab17731c73122eb322059a452b530a776",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_name_visitor.py"
+      }
+    },
+    {
+      "bytes": 4822,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_pydantic.py",
+      "sha256": "21e5ac842df662a68ced5a69b2926c1fc7b758c6b43efccb13a6b176193dfc58",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_pydantic.py"
+      }
+    },
+    {
+      "bytes": 2993,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_should_warn.py",
+      "sha256": "e656809028b69ca402dc07badc54465989589cb6e07e69ec7a015766a5de6da4",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_should_warn.py"
+      }
+    },
+    {
+      "bytes": 632,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_strict.py",
+      "sha256": "13fd7dff5b40e71ccc01d5fb762d33d4f78aa694e524405d360914d3c2b4f7df",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_strict.py"
+      }
+    },
+    {
+      "bytes": 7935,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_tc001_to_tc003.py",
+      "sha256": "6632876f1d46206d220643c0f2a8f20e71d790c7162c359aa0549cbe22bc7080",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_tc001_to_tc003.py"
+      }
+    },
+    {
+      "bytes": 5470,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_tc004.py",
+      "sha256": "e205f64685e199eca2c12fe51aff8e42833f000d36f6dd7036e08074e4a83dec",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_tc004.py"
+      }
+    },
+    {
+      "bytes": 1500,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_tc005.py",
+      "sha256": "4b970067748cff93ff02cdfd162cdf6a1ff3dfe65dc8cc3ab1de076a52d410ee",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_tc005.py"
+      }
+    },
+    {
+      "bytes": 2576,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_tc006.py",
+      "sha256": "ff5b730bd6780323b710c4b54ba246202dff820809a67b4e4aec4342ec24a547",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_tc006.py"
+      }
+    },
+    {
+      "bytes": 1981,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_tc007.py",
+      "sha256": "fb39ef7978fc2307e88f4877089b21f2832bddda391755348bb24ae587eede21",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_tc007.py"
+      }
+    },
+    {
+      "bytes": 3065,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_tc008.py",
+      "sha256": "a0498d69e282d11d2d10b67a71f7e58c4589b03d97a1882a24b4bab2931f1400",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_tc008.py"
+      }
+    },
+    {
+      "bytes": 4121,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_tc009.py",
+      "sha256": "65c3c139659af061748c1fb1b680493e32bd3939bdfbba6a09ca9b38e2c9dd92",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_tc009.py"
+      }
+    },
+    {
+      "bytes": 2812,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_tc100.py",
+      "sha256": "74b247733e9a546b9057aea91bbccf43516f85445a88293e845e5b26a2fe052f",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_tc100.py"
+      }
+    },
+    {
+      "bytes": 4290,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_tc101.py",
+      "sha256": "56b1fee571356768de19ce949a79babfbaa1a284ea150207a025a55c15f387e3",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_tc101.py"
+      }
+    },
+    {
+      "bytes": 4681,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_tc200.py",
+      "sha256": "2e83d41eb25aa63057b6520e5bb0a4d414f0a9e47f3582f9b658f0bdd173394a",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_tc200.py"
+      }
+    },
+    {
+      "bytes": 4871,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_tc201.py",
+      "sha256": "c36ccc060cbae82df52ac0fe4f6ef94c65b58dee6fcc0d9bb9a9e2543869daa1",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_tc201.py"
+      }
+    }
+  ],
+  "overlay_sha256": "272adeccafe73e7009d51f2ec2be9871db5e0eb14239f483ea429be26c3c6402",
+  "upstream": {
+    "kind": "beyondswe",
+    "repository": "https://github.com/snok/flake8-type-checking",
+    "revision": "9855cdae692608d50a25e51f7e57579438769f28",
+    "source_root_key": "tri80-beyondswe-snok_flake8-type-checking_pr179-cp1"
+  },
+  "workspace_tree_sha256": "ec3b38fae4ed1a3dfc01fca2f5eaf9fcea121c7e427ad2e59488f345e69df0ee"
+}

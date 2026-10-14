@@ -1,0 +1,29 @@
+{
+  "adapter_config": {
+    "docker_executable": "docker",
+    "expected_test_count": 9,
+    "expected_unit_ids": [
+      "boogie",
+      "dafny",
+      "ironfleet"
+    ],
+    "result_protocol": "source_run_tests",
+    "runtime_assets_dir": "/opt/looparena/evaluator_assets/evaluator_runtime",
+    "task_dir": "/opt/looparena/evaluator_assets/tasks/task_boogie_dafny"
+  },
+  "adapter_kind": "loopsbench",
+  "adapter_version": "source-run-tests-v1",
+  "evaluator_revision": "5880b64491e2cac2f83d497153ed173b8a995b8b",
+  "network": "bridge",
+  "pass_policy": "all-source-unit-tests-pass",
+  "runtime_identity": {
+    "image_id": "sha256:5679d7abcdf1a74461e60623751d89d2da5f1ba8aec46425411d97cc4b89b55c",
+    "image_reference": "looparena-loopsbench-84ae415/task_boogie_dafny:frozen",
+    "platform": "linux/amd64",
+    "task_tree_sha256": "27258f1dddcbf2c1aacc45e0ed598e6d87756f60ea969af5c4116f3bf744dbd0",
+    "workdir": "/workspace"
+  },
+  "solve_network": "bridge",
+  "source_revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+  "timeout_sec": 600
+}

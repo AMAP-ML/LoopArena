@@ -1,0 +1,365 @@
+{
+  "case_id": "tri80-loopsbench-task_mininet_network_simulation-cp1",
+  "files": [
+    {
+      "bytes": 3185,
+      "kind": "file",
+      "mode": 420,
+      "path": "module_dag.yaml",
+      "sha256": "70ea629d2b1e3fda0e23251da8db23e72c66b7b3fdd3837c10c5d444802114b9",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mininet_network_simulation/module_dag.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "netsim"
+    },
+    {
+      "bytes": 105,
+      "kind": "file",
+      "mode": 420,
+      "path": "netsim/__init__.py",
+      "sha256": "381adaf80767adac6c7e16ebd005827a540fe24a7976280f2f57d72af364cba0",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mininet_network_simulation/base/netsim/__init__.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "netsim/experiments"
+    },
+    {
+      "bytes": 242,
+      "kind": "file",
+      "mode": 420,
+      "path": "netsim/experiments/__init__.py",
+      "sha256": "1db4836f7d9ef38ab22c39a5c340928a1f4c3ac225b1d217971046182f918326",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mininet_network_simulation/base/netsim/experiments/__init__.py"
+      }
+    },
+    {
+      "bytes": 2420,
+      "kind": "file",
+      "mode": 420,
+      "path": "netsim/graph.py",
+      "sha256": "1188f76d0105623aef0ddf966db31b653bf7d6ac553f4b71dd9495ed09a1c82f",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mininet_network_simulation/base/netsim/graph.py"
+      }
+    },
+    {
+      "bytes": 757,
+      "kind": "file",
+      "mode": 420,
+      "path": "netsim/packet.py",
+      "sha256": "edd2f262fcec00abe89c8c26212b04765299137de2b10837a4fe5d12c5a33e67",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mininet_network_simulation/base/netsim/packet.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "netsim/targets"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "netsim/targets/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mininet_network_simulation/base/netsim/targets/__init__.py"
+      }
+    },
+    {
+      "bytes": 2031,
+      "kind": "file",
+      "mode": 420,
+      "path": "netsim/targets/configs.py",
+      "sha256": "824cd6f425c7c41c3aba17be0aacefab90a8888a920b24c6ddb7b087d0a4052f",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mininet_network_simulation/base/netsim/targets/configs.py"
+      }
+    },
+    {
+      "bytes": 1494,
+      "kind": "file",
+      "mode": 420,
+      "path": "netsim/utils.py",
+      "sha256": "0047502fb1ca95705192e5a2379f575cb499abfe91ed24fa785ca3d34c58f585",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mininet_network_simulation/base/netsim/utils.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "netsim/wifi"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "netsim/wifi/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mininet_network_simulation/base/netsim/targets/__init__.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "requirements"
+    },
+    {
+      "bytes": 6,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements.txt",
+      "sha256": "e09f656c130b9c08b2c5ab7187c891295e449ed77febea2a6ceee9cc98ccb0fc",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mininet_network_simulation/base/requirements.txt"
+      }
+    },
+    {
+      "bytes": 3711,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/containernet.yaml",
+      "sha256": "9133d22f2f6b7cb5e6dc62ac986269a6c282ed6594a8bc36ae62d4284fa47352",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mininet_network_simulation/requirements/containernet.yaml"
+      }
+    },
+    {
+      "bytes": 4291,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/mininet.yaml",
+      "sha256": "b6361d3a8189bbd9e5685b97373728f573dc905d120f669cd5732a971072723e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mininet_network_simulation/requirements/mininet.yaml"
+      }
+    },
+    {
+      "bytes": 4144,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/mininet_wifi.yaml",
+      "sha256": "6597993d5aaa5cece0ceabffca9748e00c67c2838b3bed47e6d012b6e047b4bb",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mininet_network_simulation/requirements/mininet_wifi.yaml"
+      }
+    },
+    {
+      "bytes": 5517,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/p4_switch.yaml",
+      "sha256": "91e18b2ec3b2b9430d8be777d8fbdd5da1820685221bf797dc8432613807c46d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mininet_network_simulation/requirements/p4_switch.yaml"
+      }
+    },
+    {
+      "bytes": 5682,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/sdn_controller.yaml",
+      "sha256": "b9e547f9cf23fd90b607788b32f54e1b9ef10bb06198f5ccec6e5d21b380550a",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mininet_network_simulation/requirements/sdn_controller.yaml"
+      }
+    },
+    {
+      "bytes": 954,
+      "kind": "file",
+      "mode": 493,
+      "path": "run-tests.sh",
+      "sha256": "3d21e3fd297125a7b8e90882a6909089e2b69dea362aa855934a46cd52da22d7",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mininet_network_simulation/run-tests.sh"
+      }
+    },
+    {
+      "bytes": 72,
+      "kind": "file",
+      "mode": 493,
+      "path": "run.sh",
+      "sha256": "2eb2b413963eb1462a8e690d4aee7b70b438ee271a7343526ca0dbec51d4a0ce",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mininet_network_simulation/base/run.sh"
+      }
+    },
+    {
+      "bytes": 1576,
+      "kind": "file",
+      "mode": 420,
+      "path": "task.yaml",
+      "sha256": "f9dc754a722976459d634f35bd9c270c78683558edb11fae3d036f5ef1b70198",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mininet_network_simulation/task.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/containernet"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/containernet/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mininet_network_simulation/base/netsim/targets/__init__.py"
+      }
+    },
+    {
+      "bytes": 2065,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/containernet/test_outputs.py",
+      "sha256": "80b87916520147cbe558e1bc0cec3fa6752a0e7e5e4eb82f2d5421e80db87420",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mininet_network_simulation/tests/containernet/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/mininet"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/mininet/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mininet_network_simulation/base/netsim/targets/__init__.py"
+      }
+    },
+    {
+      "bytes": 2038,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/mininet/test_outputs.py",
+      "sha256": "fb566302bdd35d85aab9eeb62a3f279044a3739a4b840d9dc834694284bd6977",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mininet_network_simulation/tests/mininet/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/mininet_wifi"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/mininet_wifi/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mininet_network_simulation/base/netsim/targets/__init__.py"
+      }
+    },
+    {
+      "bytes": 2018,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/mininet_wifi/test_outputs.py",
+      "sha256": "6db5b530a946e9330984fb4cb25719c5695472a04c3516a566e6372516c3a6ef",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mininet_network_simulation/tests/mininet_wifi/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/p4_switch"
+    },
+    {
+      "bytes": 449,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/p4_switch/test_p4_outputs.py",
+      "sha256": "23af70dc38dc59efa2fe8f053993fc19ceafbbd33de0b7f616b6639f2ee54f8d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mininet_network_simulation/tests/p4_switch/test_p4_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/sdn_controller"
+    },
+    {
+      "bytes": 420,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/sdn_controller/test_sdn_outputs.py",
+      "sha256": "ef2731225a254726db31f6d6d4ccb79353b2c56eb7589c2607728e6964491af4",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mininet_network_simulation/tests/sdn_controller/test_sdn_outputs.py"
+      }
+    },
+    {
+      "bytes": 1075,
+      "kind": "file",
+      "mode": 420,
+      "path": "unit_dag.json",
+      "sha256": "86a91b09ed03f82e80bbe0db1486a7ba20371786304ee96bcf4d6f8a5818162a",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mininet_network_simulation/unit_dag.json"
+      }
+    }
+  ],
+  "overlay_sha256": "272adeccafe73e7009d51f2ec2be9871db5e0eb14239f483ea429be26c3c6402",
+  "upstream": {
+    "kind": "loopsbench",
+    "revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+    "source_root_key": "loopsbench",
+    "task": "task_mininet_network_simulation"
+  },
+  "workspace_tree_sha256": "3ea485805598b3f8a1966f65103f730fed2d9374a99865cd8edf074b0aeeee98"
+}

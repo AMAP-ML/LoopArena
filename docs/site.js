@@ -144,6 +144,7 @@ function wireMotion() {
   if (prefersReducedMotion || !("IntersectionObserver" in window)) return;
 
   const groups = [
+    $$(".section-news .news-layout > div, .section-news .news-item"),
     $$(".section-results .results-heading, .section-results .leaderboard-panel"),
     $$(".section-problem .split-heading, .section-problem .failure-card"),
     $$(".section-harness .center-heading, .section-harness .harness-frame"),

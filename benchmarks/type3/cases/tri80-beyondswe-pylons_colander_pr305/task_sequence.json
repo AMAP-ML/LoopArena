@@ -1,0 +1,20 @@
+{
+  "adapter_kind": "beyondswe_harbor",
+  "checkpoint_context_policy": "single_episode",
+  "checkpoint_failure_policy": "stop_after_task",
+  "official_parent_commit": "4ce765912c3caccfe749d9cb45dbd8e3f1fe3f02",
+  "official_task_id": "beyondswe:pylons_colander_pr305",
+  "official_workdir": "/workspace/colander",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/task.json",
+      "evaluator_plan_sha256": "518dd6d17ca65fc68460425427dcb49baaf0fb794e8e1e837afdc18d917c8265",
+      "step_id": "task",
+      "task_ref": "tasks/task.md",
+      "task_sha256": "18f07e9c8447ace159c2f485b2319f46fce40a411217edfb2e5c1257ff113474"
+    }
+  ],
+  "target_step": "task",
+  "task_scope": "official_full_task",
+  "workspace_origin": "pinned_source_image_parent_commit"
+}

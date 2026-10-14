@@ -1,0 +1,6 @@
+{
+  "recipe": "workspace_recipe.json",
+  "recipe_sha256": "92d82d9ac698e77dcde8c7d8dc54fdd13f4d54146a56c24409d9d39ee4197c63",
+  "relative_path_under_assets_root": "type2/workspaces/tri80-loopsbench-task_alloy_formal_modeling-cp4/workspace.tar.gz",
+  "workspace_tree_sha256": "226b099cd4c18d997cbe79a65e95008aa1fa37963a3f0db19e1ea11edc45d539"
+}

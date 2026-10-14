@@ -1,0 +1,33 @@
+{
+  "case_id": "tri80-scbench-mvvault-cp3",
+  "files": [
+    {
+      "bytes": 14650,
+      "kind": "file",
+      "mode": 420,
+      "path": "mvault.py",
+      "sha256": "bfb1e2152c1c636103b811f815347ef8ab77c3b4728a9323bd5d8edae3b20004",
+      "source": {
+        "blob": "bfb1e2152c1c636103b811f815347ef8ab77c3b4728a9323bd5d8edae3b20004",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 170,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements.txt",
+      "sha256": "3574bd19edceeb9bf41e900d6b3e488f64e6b3832766a231c6ff831661b6fa48",
+      "source": {
+        "blob": "3574bd19edceeb9bf41e900d6b3e488f64e6b3832766a231c6ff831661b6fa48",
+        "kind": "overlay"
+      }
+    }
+  ],
+  "overlay_sha256": "4e1ecaf102ef87e8dc639b8fa88757d5602c56cec136f6afad88069749e58284",
+  "upstream": {
+    "kind": "scbench",
+    "source_root_key": null
+  },
+  "workspace_tree_sha256": "3972b8ee6c82b61de3b3a66bb9374640770e661c26e394d7d5c1d7fa8247e98d"
+}

@@ -1,0 +1,346 @@
+{
+  "case_id": "tri80-beyondswe-iamconsortium_units_pr45-cp2",
+  "files": [
+    {
+      "bytes": 42,
+      "kind": "file",
+      "mode": 420,
+      "path": ".flake8",
+      "sha256": "1d853392a11e519bffbf3b61e92738db2fd10613ec8ca4d13bc50ae6b9b80d53",
+      "source": {
+        "kind": "upstream",
+        "path": ".flake8"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": ".github"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": ".github/workflows"
+    },
+    {
+      "bytes": 239,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/workflows/lint.yaml",
+      "sha256": "eaa37c4641e2989e3cf92b10dc45ad27080d97691b7ebba2c91fdeea6b02eba3",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/workflows/lint.yaml"
+      }
+    },
+    {
+      "bytes": 344,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/workflows/publish.yaml",
+      "sha256": "e6f95518292cacdfb0bf1f9cacf70a65c7e7ffde6af9e18a451bc0882d3eeb09",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/workflows/publish.yaml"
+      }
+    },
+    {
+      "bytes": 997,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/workflows/test.yaml",
+      "sha256": "36ae8b6db6a925e7e1b81a2412c0e6b73248a63cff20804b45fe586454421ea1",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/workflows/test.yaml"
+      }
+    },
+    {
+      "bytes": 115,
+      "kind": "file",
+      "mode": 420,
+      "path": ".gitignore",
+      "sha256": "9b4aef47298e661bf2b2d29dd18b67c3646c9da549dec464f521c7b706e16980",
+      "source": {
+        "kind": "upstream",
+        "path": ".gitignore"
+      }
+    },
+    {
+      "bytes": 186,
+      "kind": "file",
+      "mode": 420,
+      "path": "AUTHORS",
+      "sha256": "9eaacd11efd17f561026de8bad6130044bf7be6da0ae280522c5108fbecfe06b",
+      "source": {
+        "kind": "upstream",
+        "path": "AUTHORS"
+      }
+    },
+    {
+      "bytes": 2975,
+      "kind": "file",
+      "mode": 420,
+      "path": "DEVELOPING.rst",
+      "sha256": "d7a57aad3c2bcaee760d5987e21a054147f80932d41e03591dd74773ded055e6",
+      "source": {
+        "kind": "upstream",
+        "path": "DEVELOPING.rst"
+      }
+    },
+    {
+      "bytes": 35149,
+      "kind": "file",
+      "mode": 420,
+      "path": "LICENSE",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "source": {
+        "kind": "upstream",
+        "path": "LICENSE"
+      }
+    },
+    {
+      "bytes": 7258,
+      "kind": "file",
+      "mode": 420,
+      "path": "README.rst",
+      "sha256": "43ec686b8952c7ccb4e43ecd35bd3a2fa623997e393dbe85a6fe49b8bbd92236",
+      "source": {
+        "kind": "upstream",
+        "path": "README.rst"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "iam_units"
+    },
+    {
+      "bytes": 5775,
+      "kind": "file",
+      "mode": 420,
+      "path": "iam_units/__init__.py",
+      "sha256": "3d732f51bf891adeb930d60ce88bde8b240e32c202e34a30393a8000f36bf612",
+      "source": {
+        "kind": "upstream",
+        "path": "iam_units/__init__.py"
+      }
+    },
+    {
+      "bytes": 2091,
+      "kind": "file",
+      "mode": 420,
+      "path": "iam_units/currency.py",
+      "sha256": "473182edfdce86d62307b86a963167e9f83149137c7619d71f56d42491f8b01b",
+      "source": {
+        "kind": "upstream",
+        "path": "iam_units/currency.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "iam_units/data"
+    },
+    {
+      "bytes": 2481,
+      "kind": "file",
+      "mode": 420,
+      "path": "iam_units/data/definitions.txt",
+      "sha256": "1d5550dc6f6a0461f1b235d25805f01171205edea623275f0582e1c272453e2b",
+      "source": {
+        "kind": "upstream",
+        "path": "iam_units/data/definitions.txt"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "iam_units/data/emissions"
+    },
+    {
+      "bytes": 1841,
+      "kind": "file",
+      "mode": 420,
+      "path": "iam_units/data/emissions/AR4GWP100.txt",
+      "sha256": "ac15f73d6146230fe7f1fedcc4f10cb8f633f96ae349b6a5f894e8025564d3bd",
+      "source": {
+        "kind": "upstream",
+        "path": "iam_units/data/emissions/AR4GWP100.txt"
+      }
+    },
+    {
+      "bytes": 2357,
+      "kind": "file",
+      "mode": 420,
+      "path": "iam_units/data/emissions/AR5CCFGWP100.txt",
+      "sha256": "de4134034de20a3ecc2eaab466cc583bbc08c8826732481d058f49e7fa5069e2",
+      "source": {
+        "kind": "upstream",
+        "path": "iam_units/data/emissions/AR5CCFGWP100.txt"
+      }
+    },
+    {
+      "bytes": 2473,
+      "kind": "file",
+      "mode": 420,
+      "path": "iam_units/data/emissions/AR5GWP100.txt",
+      "sha256": "c0464be21836f41f6d5843fd2daefec4a18131d865b3037bc4d643743680649f",
+      "source": {
+        "kind": "upstream",
+        "path": "iam_units/data/emissions/AR5GWP100.txt"
+      }
+    },
+    {
+      "bytes": 2466,
+      "kind": "file",
+      "mode": 420,
+      "path": "iam_units/data/emissions/AR6GTP100.txt",
+      "sha256": "ee0d9ffa8eb2a1a199645ba488f2d978fa9ebd20b1c6b29757f50446920c0fee",
+      "source": {
+        "kind": "upstream",
+        "path": "iam_units/data/emissions/AR6GTP100.txt"
+      }
+    },
+    {
+      "bytes": 2484,
+      "kind": "file",
+      "mode": 420,
+      "path": "iam_units/data/emissions/AR6GWP100.txt",
+      "sha256": "3c6b0834f2bdd674ade5830400f2485bb0082084945400001b470abb79da4c8e",
+      "source": {
+        "kind": "upstream",
+        "path": "iam_units/data/emissions/AR6GWP100.txt"
+      }
+    },
+    {
+      "bytes": 2503,
+      "kind": "file",
+      "mode": 420,
+      "path": "iam_units/data/emissions/AR6GWP20.txt",
+      "sha256": "c250177d3bd831d610c292c215c95e080e8902bd8cd5269d5ca204f643aa48bf",
+      "source": {
+        "kind": "upstream",
+        "path": "iam_units/data/emissions/AR6GWP20.txt"
+      }
+    },
+    {
+      "bytes": 2468,
+      "kind": "file",
+      "mode": 420,
+      "path": "iam_units/data/emissions/AR6GWP500.txt",
+      "sha256": "900bc788dd8d89ae83611b4b7b5c5197c20ae7b54251f5445c953ad2e0e63776",
+      "source": {
+        "kind": "upstream",
+        "path": "iam_units/data/emissions/AR6GWP500.txt"
+      }
+    },
+    {
+      "bytes": 1305,
+      "kind": "file",
+      "mode": 420,
+      "path": "iam_units/data/emissions/SARGWP100.txt",
+      "sha256": "bd82ed6afbcda8af88fc9fae65306173011be81e95e1b4fda492a933f93b7131",
+      "source": {
+        "kind": "upstream",
+        "path": "iam_units/data/emissions/SARGWP100.txt"
+      }
+    },
+    {
+      "bytes": 502,
+      "kind": "file",
+      "mode": 420,
+      "path": "iam_units/data/emissions/emissions.txt",
+      "sha256": "c75cc85fb9029aa56f0016b1d24672374e66653351a95bf92ae5a061a4685139",
+      "source": {
+        "kind": "upstream",
+        "path": "iam_units/data/emissions/emissions.txt"
+      }
+    },
+    {
+      "bytes": 333,
+      "kind": "file",
+      "mode": 420,
+      "path": "iam_units/data/emissions/metrics.txt",
+      "sha256": "2effac17c84e5525e539702ef9f489b63df55cef2a6f9359ff3e9f7d41aeec19",
+      "source": {
+        "kind": "upstream",
+        "path": "iam_units/data/emissions/metrics.txt"
+      }
+    },
+    {
+      "bytes": 1625,
+      "kind": "file",
+      "mode": 420,
+      "path": "iam_units/data/emissions/species.txt",
+      "sha256": "0b4849140cab5a50f057bc395fe1fcbbde2b7cf101917bf428ce703511e44f14",
+      "source": {
+        "kind": "upstream",
+        "path": "iam_units/data/emissions/species.txt"
+      }
+    },
+    {
+      "bytes": 2135,
+      "kind": "file",
+      "mode": 420,
+      "path": "iam_units/emissions.py",
+      "sha256": "5edf175a0b3a9b8c61abac6a3c7afcf565abaff1d7363ab13aa7e9a92cce5fa1",
+      "source": {
+        "kind": "upstream",
+        "path": "iam_units/emissions.py"
+      }
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "iam_units/py.typed",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "iam_units/py.typed"
+      }
+    },
+    {
+      "bytes": 6102,
+      "kind": "file",
+      "mode": 420,
+      "path": "iam_units/test_all.py",
+      "sha256": "aa4c2c0b6e4f9704e5278f2b430e14430b71677f6fabd336a1b6814eda029683",
+      "source": {
+        "kind": "upstream",
+        "path": "iam_units/test_all.py"
+      }
+    },
+    {
+      "bytes": 5209,
+      "kind": "file",
+      "mode": 420,
+      "path": "iam_units/update.py",
+      "sha256": "1d3017c8dc04a5c6fb202d0ead0ebc3d85f412ce4aca4a0a828f3c924b42c02d",
+      "source": {
+        "kind": "upstream",
+        "path": "iam_units/update.py"
+      }
+    },
+    {
+      "bytes": 1299,
+      "kind": "file",
+      "mode": 420,
+      "path": "pyproject.toml",
+      "sha256": "5e1d04403fc58ee14a6cd0c77fe6ab749a6e57e6897b326e02eccde83eb59804",
+      "source": {
+        "kind": "upstream",
+        "path": "pyproject.toml"
+      }
+    }
+  ],
+  "overlay_sha256": "272adeccafe73e7009d51f2ec2be9871db5e0eb14239f483ea429be26c3c6402",
+  "upstream": {
+    "kind": "beyondswe",
+    "repository": "https://github.com/iamconsortium/units",
+    "revision": "02d9bc573b55a7eac00ef6410d0ffda2e0a1ba55",
+    "source_root_key": "tri80-beyondswe-iamconsortium_units_pr45-cp2"
+  },
+  "workspace_tree_sha256": "a84b8bb92a7cdb9d392cd7e059406747f125bd4041f986580b92249266c0a6b4"
+}

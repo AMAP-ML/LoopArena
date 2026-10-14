@@ -1,0 +1,18 @@
+# Eliminate deprecated NumPy usage in moment tensor math and coordinate basis conversions
+
+## Background
+
+The public issue report notes that on NumPy >= 1.20, ObsPy emits deprecation warnings related to NumPy compatibility, including the use of `np.matrix` objects and deprecated type aliases (such as `np.float`, `np.int`, `np.complex`, and `np.bool`). On NumPy >= 1.24 these deprecated type aliases are removed entirely and raise `AttributeError` (e.g. `AttributeError: module 'numpy' has no attribute 'complex'`).
+
+## Task
+
+Update the moment tensor mathematics and coordinate basis conversion code paths so that they run cleanly on modern NumPy versions (1.20 and newer, including 1.24+). Specifically:
+
+- Moment tensor computations (e.g. decomposition, eigenvalue/eigenvector analysis, rotation and basis-vector calculations) and conversions between coordinate bases must execute successfully without raising `AttributeError`.
+- These code paths must no longer rely on deprecated NumPy constructs such as `np.matrix`/`np.asmatrix` or removed type aliases like `np.float`, `np.int`, `np.complex`, and `np.bool`, and must not emit NumPy deprecation warnings related to such usage.
+- Numerical results must remain unchanged: tensor values, eigenvalues/eigenvectors, rotation angles, and transformed coordinates must agree with the previous behavior within normal floating-point tolerance.
+
+## Preserve existing behavior
+
+- Waveform format plugins must continue to import and read data correctly on recent NumPy versions; do not regress that already-restored compatibility.
+- All other existing functionality must continue to work as before on modern NumPy versions, consistent with the expectation in the issue report that the code executes successfully without `AttributeError` or NumPy-compatibility deprecation warnings.

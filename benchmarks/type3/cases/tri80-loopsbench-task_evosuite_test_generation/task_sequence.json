@@ -1,0 +1,19 @@
+{
+  "adapter_kind": "loopsbench",
+  "checkpoint_context_policy": "single_episode",
+  "checkpoint_failure_policy": "stop_after_task",
+  "official_task_id": "loopsbench:task_evosuite_test_generation",
+  "release_content_hash": "84ae4156df6a132416109e2cf27bb72bcbde1e764dea40f3abab5e4ade942020",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/task.json",
+      "evaluator_plan_sha256": "43df7f8474af7ab322a2c2ae675166bf13d26f2e4ace0e750754661353ef18eb",
+      "step_id": "task",
+      "task_ref": "tasks/task.md",
+      "task_sha256": "b4a0274aa42508cc7698b1a11cc260286e60f962a0e68dd97428785255dc2ca2"
+    }
+  ],
+  "target_step": "task",
+  "task_scope": "official_full_task",
+  "workspace_origin": "pinned_loopsbench_release_source_base"
+}

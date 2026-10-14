@@ -380,7 +380,7 @@ def run_main_worker_until_boundary(
                 tools,
                 seed=seed + absolute_turn - 1,
                 deadline=deadline,
-                max_tokens=8192,
+                max_tokens=None,
             )
         except Exception as exc:
             provider_error = _redact_error_text(exc)[:500]
@@ -409,18 +409,10 @@ def run_main_worker_until_boundary(
                 history,
                 calls,
             )
-            continuation = {
-                "role": "user",
-                "content": (
-                    "Your previous response reached the provider output limit "
-                    "and is incomplete. No tool call from that response was "
-                    "executed. Continue the same assignment from where it "
-                    "stopped, using shorter steps if needed."
-                ),
-            }
-            history.append(continuation)
-            save_safe_progress()
-            continue
+            status = "provider_failure"
+            termination_reason = "main_worker_output_truncated"
+            provider_error = "provider returned finish_reason=length"
+            break
         if not calls:
             if content:
                 if arm == "controlled":
@@ -526,8 +518,7 @@ def run_main_worker_until_boundary(
             save_safe_progress()
             continue
         if name == "final_report":
-            # Accept the legacy completion spelling if a model emits it
-            # unexpectedly; current tasks end with an ordinary response.
+            # Accept source tasks that request an explicit completion tool.
             final_answer = str(
                 args.get("summary") or content or "Work slice complete."
             ).strip()

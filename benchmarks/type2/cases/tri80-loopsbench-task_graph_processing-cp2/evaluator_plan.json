@@ -1,0 +1,29 @@
+{
+  "adapter_config": {
+    "docker_executable": "docker",
+    "expected_test_count": 14,
+    "expected_unit_ids": [
+      "graphx",
+      "graphframes",
+      "graphscope"
+    ],
+    "result_protocol": "source_run_tests",
+    "runtime_assets_dir": "/opt/looparena/evaluator_assets/evaluator_runtime",
+    "task_dir": "/opt/looparena/evaluator_assets/tasks/task_graph_processing"
+  },
+  "adapter_kind": "loopsbench",
+  "adapter_version": "source-run-tests-v1",
+  "evaluator_revision": "5880b64491e2cac2f83d497153ed173b8a995b8b",
+  "network": "bridge",
+  "pass_policy": "all-source-unit-tests-pass",
+  "runtime_identity": {
+    "image_id": "sha256:7af1523157c0e7c63dc4aa27b7c5db9e029946428b65af4b1ab09fc858badaee",
+    "image_reference": "looparena-loopsbench-84ae415/task_graph_processing:frozen",
+    "platform": "linux/amd64",
+    "task_tree_sha256": "fdc57ae6c3bdd5f24b7594b75a9f798e20beb306d7e4fb3681eb2a68cf42fc7b",
+    "workdir": "/workspace"
+  },
+  "solve_network": "bridge",
+  "source_revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+  "timeout_sec": 600
+}

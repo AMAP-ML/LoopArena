@@ -9,3 +9,16 @@ runner_revision = "13de1a7a6b8b3dc5cc532a0c322a0997afa5bec7"
 problems_repository = "https://github.com/gabeorlanski/scb-problems.git"
 problems_revision = "4d38d300059667d57e43c31969bc455f5c338b52"
 image_platform = "linux/amd64"
+# Upstream _get_base_image_hash for configs/environments/docker-python3.12-uv.yaml
+# at runner_revision; written by its builder as io.slop-code.base-image-hash.
+base_image_recipe_hash = "e5f25071eb68"
+
+[loopsbench]
+repository = "https://github.com/microsoft/Loopsbench"
+harness_revision = "5880b64491e2cac2f83d497153ed173b8a995b8b"
+dataset = "https://huggingface.co/datasets/LoopsBench/LoopsBench"
+dataset_revision = "4104e5d5163617f5625e5bf0c23e607dd2019ccb"
+archive_url = "https://huggingface.co/datasets/LoopsBench/LoopsBench/resolve/4104e5d5163617f5625e5bf0c23e607dd2019ccb/loopsbench-tasks-84ae415.tar.zst"
+archive_sha256 = "96774b4f1cb3c96107220384024bf97247f05123408f33f7c1c02c7e479dc619"
+archive_size_bytes = 1483463023
+image_platform = "linux/amd64"

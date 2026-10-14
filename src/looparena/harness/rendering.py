@@ -151,15 +151,11 @@ For `advance` or `verify`, return only one JSON object:
 
 Every decision, including `stop`, must include a concise `rationale` grounded
 in the reports, quoted evidence, and relevant decision history. For `stop`,
-use null or empty values for fields that would otherwise describe another
-coding-agent assignment:
+return only:
 
 {
   "action": "stop",
-  "rationale": "Why the reports and quoted evidence support completion of the entire overall repository task.",
-  "worker_instruction": null,
-  "protected_invariants": [],
-  "verification_acceptance_condition": ""
+  "rationale": "Why the reports and quoted evidence support completion of the entire overall repository task."
 }
 
 The surrounding program ends the coding process immediately when `action` is
@@ -192,9 +188,7 @@ def controller_decision_policy_prompt() -> str:
 WORKER_SYSTEM_PROMPT = prompts.WORKER_SYSTEM_PROMPT
 REPORTER_SYSTEM_PROMPT = prompts.REPORTER_SYSTEM_PROMPT
 
-# Emergency renderer ceilings, deliberately above the controller's 8K-token
-# response budget. They prevent pathological host-memory growth without
-# shortening any controller response that the configured API call can produce.
+# Emergency field limits bound pathological host-memory growth.
 WORKER_TEXT_FIELD_LIMIT = 65_536
 WORKER_STATE_ITEMS_PER_CATEGORY = 256
 
@@ -293,25 +287,6 @@ def _worker_contract_text(
         flags=re.IGNORECASE,
     )
     return value
-
-
-def _card_line(card: dict) -> str:
-    provenance = str(card.get("source_path_or_event", "unspecified"))
-    source_label = {
-        "main_worker_actions": "Worker action",
-        "main_worker_checks": "Worker check",
-        "reporter_observations": "Repository observation",
-    }.get(str(card.get("source_type") or ""), card.get("card_type", "card").title())
-    return (
-        f"{source_label} {card.get('label')} "
-        f"[source={provenance}]: {str(card.get('text', ''))}"
-    )
-
-
-def _card_lines(cards: object) -> list[str]:
-    if not isinstance(cards, list):
-        return []
-    return [_card_line(card) for card in cards if isinstance(card, dict)]
 
 
 def _worker_card_lines(cards: object) -> list[str]:
@@ -595,126 +570,12 @@ def render_controller_packet(
 ) -> str:
     """Render the newest factual report as one controller user message."""
     require_packet_capacity(packet)
-    if "round_report" in packet:
-        return _render_controller_round_report(
-            packet,
-            first_turn=first_turn,
-            evidence_segment_max_characters=evidence_segment_max_characters,
-            evidence_compaction_audit=evidence_compaction_audit,
-        )
-    lines = [
-        "# Information available for the next decision",
-        "",
-        "## Overall repository task",
-        "",
-        "<overall_repository_task>",
-        require_task_text(packet.get("task", "")),
-        "</overall_repository_task>",
-        "",
-        "## Current reported state",
-        "",
-        str(packet.get("current_state", "")),
-        "",
-        "## Current reported objective",
-        "",
-        "This is a progress summary, not a replacement for the overall task.",
-        str(packet.get("current_objective") or packet.get("task", "")),
-        "",
-        "## Prior work summary",
-        "",
-    ]
-    work_log = (
-        packet.get("work_log") if isinstance(packet.get("work_log"), list) else []
+    return _render_controller_round_report(
+        packet,
+        first_turn=first_turn,
+        evidence_segment_max_characters=evidence_segment_max_characters,
+        evidence_compaction_audit=evidence_compaction_audit,
     )
-    lines.extend(f"- {str(row)}" for row in work_log)
-    controller_state = (
-        packet.get("controller_state")
-        if isinstance(packet.get("controller_state"), dict)
-        else {}
-    )
-    for title, field in (
-        ("Material requirements still open", "open_requirements"),
-        ("Requirements supported by evidence", "verified_requirements"),
-        ("Important unsupported or stale claims", "stale_or_unsupported_claims"),
-        ("Relevant failed or unfinished attempts", "failed_or_incomplete_attempts"),
-        ("Known blockers", "blockers"),
-    ):
-        _add_packet_list(lines, title, controller_state.get(field))
-    _add_packet_list(
-        lines, "Overall acceptance criteria", packet.get("acceptance_criteria")
-    )
-    previous_control = (
-        packet.get("previous_control_context")
-        if isinstance(packet.get("previous_control_context"), dict)
-        else {}
-    )
-    if previous_control:
-        lines.extend(["", "## Previous assignment", ""])
-        if previous_control.get("control_decision"):
-            lines.append("- Action: " + str(previous_control["control_decision"]))
-        if previous_control.get("control_completion_condition"):
-            lines.append(
-                "- Finish condition: "
-                + str(previous_control["control_completion_condition"])
-            )
-        if previous_control.get("verification_acceptance_condition"):
-            lines.append(
-                "- Evidence requested: "
-                + str(previous_control["verification_acceptance_condition"])
-            )
-    _add_packet_list(
-        lines, "Important unanswered questions", packet.get("remaining_uncertainty")
-    )
-    _add_packet_list(lines, "Reported blockers", packet.get("reported_blockers"))
-    _add_packet_list(
-        lines,
-        "Behavior and constraints to preserve",
-        packet.get("protected_invariants"),
-    )
-    lines.extend(
-        [
-            "",
-            "## Reported facts",
-            "",
-            "Each label may be cited in the output. Treat the text as a report supported by its source.",
-        ]
-    )
-    lines.extend(_card_lines(packet.get("fact_cards")))
-    lines.extend(
-        [
-            "",
-            "## Reported relevant repository areas",
-            "",
-            "Each label may be cited in target_scope_refs or evidence_refs.",
-        ]
-    )
-    lines.extend(_card_lines(packet.get("scope_cards")))
-    _add_packet_list(
-        lines, "Coding-agent tool capabilities", packet.get("worker_tool_policy")
-    )
-    _add_packet_list(lines, "Allowed actions", packet.get("allowed_control_decisions"))
-    lines.extend(
-        [
-            "",
-            "## Remaining budget",
-            "",
-            _clip(_model_visible_budget(packet.get("budget") or {}), 1200),
-        ]
-    )
-    lines.extend(
-        [
-            "",
-            "## Decision requested",
-            "",
-            "Base the decision only on the information above. Assign an outcome and "
-            "evidence to obtain; do not prescribe code or tool calls.",
-            "",
-            *_controller_response_format_reminder(),
-        ]
-    )
-    rendered = "\n".join(lines)
-    require_rendered_packet_prompt_capacity(rendered)
-    return rendered
 
 
 def _model_visible_budget(budget: object) -> str:

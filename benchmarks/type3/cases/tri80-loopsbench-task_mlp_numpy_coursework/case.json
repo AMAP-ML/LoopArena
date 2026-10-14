@@ -1,0 +1,10 @@
+{
+  "adapter_kind": "loopsbench",
+  "case_id": "tri80-loopsbench-task_mlp_numpy_coursework",
+  "episode_origin": "official_problem_start",
+  "harness_start_mode": "bootstrap_contract_start",
+  "official_task_id": "loopsbench:task_mlp_numpy_coursework",
+  "task_scope": "official_full_task",
+  "task_sequence_ref": "task_sequence.json",
+  "task_sequence_sha256": "7f10fc319885db5d803fcaa20b7b3ec47b447e516315192de77a6d9b572b9dd3"
+}

@@ -1,0 +1,20 @@
+{
+  "adapter_kind": "beyondswe_harbor",
+  "checkpoint_context_policy": "single_episode",
+  "checkpoint_failure_policy": "stop_after_task",
+  "official_parent_commit": "0760eba8fd5a0d8f0424c329ce92e9fb8d003f11",
+  "official_task_id": "beyondswe:pylons_pyramid_pr3319",
+  "official_workdir": "/workspace/pyramid",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/task.json",
+      "evaluator_plan_sha256": "972c271ff746a7515a317f56836d00485f01fffcc05d9a0dd2ccf2595ae1aa07",
+      "step_id": "task",
+      "task_ref": "tasks/task.md",
+      "task_sha256": "60dbf940cc4843e4a59d9fdef6378adb2965629d83ea1fb0ba91be2d34950fe3"
+    }
+  ],
+  "target_step": "task",
+  "task_scope": "official_full_task",
+  "workspace_origin": "pinned_source_image_parent_commit"
+}

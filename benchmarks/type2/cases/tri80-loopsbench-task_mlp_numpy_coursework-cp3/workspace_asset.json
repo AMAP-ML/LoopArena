@@ -1,0 +1,6 @@
+{
+  "recipe": "workspace_recipe.json",
+  "recipe_sha256": "dae1d8c6fe03d7fa82feb15fdfc4e747327cf366a23fc1467df363754a72d7ee",
+  "relative_path_under_assets_root": "type2/workspaces/tri80-loopsbench-task_mlp_numpy_coursework-cp3/workspace.tar.gz",
+  "workspace_tree_sha256": "6d826f610b9135b2ba1d0219651fcb38b86e81509f0b274e772e8176cb515adc"
+}

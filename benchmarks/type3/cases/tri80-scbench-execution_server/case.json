@@ -1,0 +1,10 @@
+{
+  "adapter_kind": "scbench",
+  "case_id": "tri80-scbench-execution_server",
+  "episode_origin": "official_problem_start",
+  "harness_start_mode": "bootstrap_contract_start",
+  "official_task_id": "scbench:execution_server",
+  "task_scope": "official_full_problem",
+  "task_sequence_ref": "task_sequence.json",
+  "task_sequence_sha256": "3467335de2e746600334ddc121a194c10c75869ff8e6ab76c05f2fa28773caae"
+}

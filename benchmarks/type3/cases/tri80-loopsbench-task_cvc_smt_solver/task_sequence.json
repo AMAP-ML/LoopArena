@@ -1,0 +1,19 @@
+{
+  "adapter_kind": "loopsbench",
+  "checkpoint_context_policy": "single_episode",
+  "checkpoint_failure_policy": "stop_after_task",
+  "official_task_id": "loopsbench:task_cvc_smt_solver",
+  "release_content_hash": "84ae4156df6a132416109e2cf27bb72bcbde1e764dea40f3abab5e4ade942020",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/task.json",
+      "evaluator_plan_sha256": "a5fb1f5724fe01ec2ae179e45eb0575137b616e20852a26a0bddfc90113eca1b",
+      "step_id": "task",
+      "task_ref": "tasks/task.md",
+      "task_sha256": "bf919b84fe2cdc4c29da68c1f02d15a54ef0c2c545dc6ab52b9c6c0e540bdcce"
+    }
+  ],
+  "target_step": "task",
+  "task_scope": "official_full_task",
+  "workspace_origin": "pinned_loopsbench_release_source_base"
+}

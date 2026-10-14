@@ -1,0 +1,19 @@
+{
+  "adapter_kind": "loopsbench",
+  "checkpoint_context_policy": "single_episode",
+  "checkpoint_failure_policy": "stop_after_task",
+  "official_task_id": "loopsbench:task_stream_mining",
+  "release_content_hash": "84ae4156df6a132416109e2cf27bb72bcbde1e764dea40f3abab5e4ade942020",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/task.json",
+      "evaluator_plan_sha256": "f7abed55eea44d445949aec924b607e4e81044b5bd921d5b65e811f1896639df",
+      "step_id": "task",
+      "task_ref": "tasks/task.md",
+      "task_sha256": "161fb2e5980374ba3f5aa6b0bed664a4c84ebfca6eb4c97af16b5303c4094a76"
+    }
+  ],
+  "target_step": "task",
+  "task_scope": "official_full_task",
+  "workspace_origin": "pinned_loopsbench_release_source_base"
+}

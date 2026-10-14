@@ -1,0 +1,19 @@
+{
+  "adapter_config": {
+    "docker_executable": "docker",
+    "task_dir": "/opt/looparena/evaluator_assets/beyondswe_type2/tri80-beyondswe-cornices_cornice_pr477-cp3/task"
+  },
+  "adapter_kind": "beyondswe_harbor",
+  "adapter_version": "harbor-verifier-v1",
+  "network": "host",
+  "pass_policy": "reward-equals-one",
+  "runtime_identity": {
+    "image_id": "sha256:e8ae07ff559def8a782dfdac1e79817965cd8dc12a19f8fbb6ddd853be692b00",
+    "image_reference": "aweaiteam/beyondswe:cornices_cornice_pr477",
+    "platform": "linux/amd64",
+    "workdir": "/workspace/cornice"
+  },
+  "solve_network": "host",
+  "source_revision": "7d2ced21b4c85f646d5ba8786875d7fbbe08ed49",
+  "timeout_sec": 1200
+}

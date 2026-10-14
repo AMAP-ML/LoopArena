@@ -1,0 +1,11 @@
+## Wire the `require_csrf` view option and global default into view derivation
+
+A CSRF validation stage now exists in the default view pipeline, positioned directly after the security stage. Preserve that stage and its position exactly as-is.
+
+Building on it, make the pipeline actually enforce CSRF policy when views are derived:
+
+- Honor a per-view `require_csrf` option passed to `config.add_view`. When enabled for a view, requests to that view must be checked for a valid CSRF token, and unsafe requests lacking a valid token must be rejected with a `400 Bad Request` (raising the appropriate CSRF failure exception) rather than succeeding or producing a misleading `404`.
+- Add a global configuration setting that enables this protection application-wide by default, so views are protected even without an explicit per-view option. The per-view option must be able to override the global default (e.g., to opt a specific view out).
+- Respect standard HTTP method semantics: only unsafe methods (e.g., POST, PUT, DELETE) require CSRF validation, while safe methods such as GET must not be blocked.
+
+With these behaviors in place, the reproduction script from the issue description — a POST without a token to a view registered with `require_csrf=True` — should return `400 Bad Request` instead of `200 OK`.

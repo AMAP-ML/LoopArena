@@ -1,0 +1,6 @@
+{
+  "recipe": "workspace_recipe.json",
+  "recipe_sha256": "1a2504cb59b5431df52861d61c2b44718d1eefda881ff9a884b413ff12f795da",
+  "relative_path_under_assets_root": "type2/workspaces/tri80-scbench-forge-cp5/workspace.tar.gz",
+  "workspace_tree_sha256": "8c6a3e19ee10551d1ee9fede44a8fc6eec2c317ac0a1fb281044e2474338117a"
+}

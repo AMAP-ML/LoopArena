@@ -1,0 +1,5 @@
+# Update the inventory SC3ML schema registry
+
+Complete SC3ML 0.11/0.12 inventory support by updating the inventory reader's
+supported schema-version registry. Remove obsolete 0.5 and include 0.10,
+0.11, and 0.12 while preserving the predecessor's conversion behavior.

@@ -1,0 +1,6 @@
+{
+  "recipe": "workspace_recipe.json",
+  "recipe_sha256": "161098b460e6e2ca950dbfd1f9d0898f3f95a16582fa27c0b7e2f8d648426096",
+  "relative_path_under_assets_root": "type2/workspaces/tri80-scbench-datagate-cp6/workspace.tar.gz",
+  "workspace_tree_sha256": "c63a6b28d75eb87fbec83a989a2bb39b3848b2d236ad82bad4b1836b7c2c0ce9"
+}

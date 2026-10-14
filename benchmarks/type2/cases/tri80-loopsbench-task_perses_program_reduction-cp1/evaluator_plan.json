@@ -1,0 +1,31 @@
+{
+  "adapter_config": {
+    "docker_executable": "docker",
+    "expected_test_count": 45,
+    "expected_unit_ids": [
+      "perses",
+      "vulcan_1minimality",
+      "ppr",
+      "sivand_perses",
+      "lpr"
+    ],
+    "result_protocol": "source_run_tests",
+    "runtime_assets_dir": "/opt/looparena/evaluator_assets/evaluator_runtime",
+    "task_dir": "/opt/looparena/evaluator_assets/tasks/task_perses_program_reduction"
+  },
+  "adapter_kind": "loopsbench",
+  "adapter_version": "source-run-tests-v1",
+  "evaluator_revision": "5880b64491e2cac2f83d497153ed173b8a995b8b",
+  "network": "bridge",
+  "pass_policy": "all-source-unit-tests-pass",
+  "runtime_identity": {
+    "image_id": "sha256:c4215362b7ae8a5df0b82aa4f974fee3819e65b569d3cc0e0c14ff45ad014a52",
+    "image_reference": "looparena-loopsbench-84ae415/task_perses_program_reduction:frozen",
+    "platform": "linux/amd64",
+    "task_tree_sha256": "907ceb30d80efc45da9474bbf3b6dc1ffe8da6d65a6ba4cfabcecd291a1df9cd",
+    "workdir": "/workspace"
+  },
+  "solve_network": "bridge",
+  "source_revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+  "timeout_sec": 600
+}

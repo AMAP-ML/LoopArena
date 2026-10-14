@@ -1,0 +1,104 @@
+{
+  "case_id": "tri80-scbench-circuit_eval-cp5",
+  "files": [
+    {
+      "bytes": 28979,
+      "kind": "file",
+      "mode": 420,
+      "path": "circopt.py",
+      "sha256": "d94cc6f45b2f2502b780801500522ac4347b0e9e67bc5a4f4ae6c2999f06bdd2",
+      "source": {
+        "blob": "d94cc6f45b2f2502b780801500522ac4347b0e9e67bc5a4f4ae6c2999f06bdd2",
+        "kind": "overlay"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "circuit"
+    },
+    {
+      "bytes": 1870,
+      "kind": "file",
+      "mode": 420,
+      "path": "circuit/__init__.py",
+      "sha256": "fa58e315f3a830722c5e3eb9c3bc1a07c06245e316f948194622d1d7ea899877",
+      "source": {
+        "blob": "fa58e315f3a830722c5e3eb9c3bc1a07c06245e316f948194622d1d7ea899877",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 2747,
+      "kind": "file",
+      "mode": 420,
+      "path": "circuit/ast.py",
+      "sha256": "c97986e4060b3f3a1fbf00cade44bb5d2f9a89fd2edbf63e98f09b4b061b194a",
+      "source": {
+        "blob": "c97986e4060b3f3a1fbf00cade44bb5d2f9a89fd2edbf63e98f09b4b061b194a",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 4520,
+      "kind": "file",
+      "mode": 420,
+      "path": "circuit/errors.py",
+      "sha256": "672a48632510afdcd09d1f732974d2cfe7efaafe748bafcf13508d02aea4e256",
+      "source": {
+        "blob": "672a48632510afdcd09d1f732974d2cfe7efaafe748bafcf13508d02aea4e256",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 17354,
+      "kind": "file",
+      "mode": 420,
+      "path": "circuit/evaluator.py",
+      "sha256": "8b3a73add51f6ea9236c256d5db3dac9af375ab8e026ac3fe4b353333f5f0ac0",
+      "source": {
+        "blob": "8b3a73add51f6ea9236c256d5db3dac9af375ab8e026ac3fe4b353333f5f0ac0",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 21587,
+      "kind": "file",
+      "mode": 420,
+      "path": "circuit/parser.py",
+      "sha256": "7c60df05916bba713f852cf3dff309258c36802d0e65d03ec2baa5654881da4c",
+      "source": {
+        "blob": "7c60df05916bba713f852cf3dff309258c36802d0e65d03ec2baa5654881da4c",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 12105,
+      "kind": "file",
+      "mode": 420,
+      "path": "circuit/validator.py",
+      "sha256": "b83a21a0430ac034b59a3a130e144b17a0ed2e8cc85872cf8e0aad751aa0c3d2",
+      "source": {
+        "blob": "b83a21a0430ac034b59a3a130e144b17a0ed2e8cc85872cf8e0aad751aa0c3d2",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 252,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements.txt",
+      "sha256": "63309d9b05d776ea9d97a6e26718ec1768f82132454b6c56083b956438d8e8af",
+      "source": {
+        "blob": "63309d9b05d776ea9d97a6e26718ec1768f82132454b6c56083b956438d8e8af",
+        "kind": "overlay"
+      }
+    }
+  ],
+  "overlay_sha256": "a42f51da1196a5ea928220fe1fd4977642b869400069f6f9b548c7d35da26df8",
+  "upstream": {
+    "kind": "scbench",
+    "source_root_key": null
+  },
+  "workspace_tree_sha256": "a9d882bc22cbad4958bc9652d8f5bd908e36787403cd564416a4e701103abeed"
+}

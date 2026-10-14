@@ -1,0 +1,44 @@
+{
+  "case_id": "tri80-scbench-meshctl-cp5",
+  "files": [
+    {
+      "bytes": 63174,
+      "kind": "file",
+      "mode": 493,
+      "path": "meshctl",
+      "sha256": "877e0a8ab73365566f1f0e6f6c44d89eaa1aa205ef080fe67c6432e6bbd875c4",
+      "source": {
+        "blob": "877e0a8ab73365566f1f0e6f6c44d89eaa1aa205ef080fe67c6432e6bbd875c4",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 62123,
+      "kind": "file",
+      "mode": 493,
+      "path": "meshctl.py",
+      "sha256": "d187d21734afe15dd69a2fe4a5b7ecdba7e81679f0b417b871ee4370b66732f5",
+      "source": {
+        "blob": "d187d21734afe15dd69a2fe4a5b7ecdba7e81679f0b417b871ee4370b66732f5",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 176,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements.txt",
+      "sha256": "d883b21f00731da72d74cb357097bddb609d1a1a91924a37bb615f527bbb6636",
+      "source": {
+        "blob": "d883b21f00731da72d74cb357097bddb609d1a1a91924a37bb615f527bbb6636",
+        "kind": "overlay"
+      }
+    }
+  ],
+  "overlay_sha256": "e82e5c7ca3ea6ed3c68c9e22f32cdeaa070084a75af771c625678f48b1483917",
+  "upstream": {
+    "kind": "scbench",
+    "source_root_key": null
+  },
+  "workspace_tree_sha256": "429499c86a891e3f596aae0b8e4454faba182b8f34f58e512cc023c0a21e9ac9"
+}

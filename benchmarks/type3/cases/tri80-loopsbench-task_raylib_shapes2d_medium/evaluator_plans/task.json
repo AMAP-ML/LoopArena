@@ -1,0 +1,36 @@
+{
+  "adapter_config": {
+    "docker_executable": "docker",
+    "expected_test_count": 5,
+    "expected_unit_ids": [
+      "rcore_bugfixes",
+      "rshapes_draw_lines",
+      "rshapes_draw_shapes",
+      "rshapes_spline_queries",
+      "rshapes_collision_core",
+      "rshapes_spline_rendering",
+      "rshapes_collision_line_queries",
+      "rtextures_image_generation",
+      "rtextures_image_drawing",
+      "replay_runner"
+    ],
+    "result_protocol": "source_run_tests_task_level",
+    "runtime_assets_dir": "/opt/looparena/evaluator_assets/evaluator_runtime",
+    "task_dir": "/opt/looparena/evaluator_assets/tasks/task_raylib_shapes2d_medium"
+  },
+  "adapter_kind": "loopsbench",
+  "adapter_version": "source-run-tests-v1",
+  "evaluator_revision": "5880b64491e2cac2f83d497153ed173b8a995b8b",
+  "network": "bridge",
+  "pass_policy": "all-source-unit-tests-pass",
+  "runtime_identity": {
+    "image_id": "sha256:3e8d59960a4ef2aa727cc2d93ffb6f31eb48928b7f3ad309bd650b3001ad93cf",
+    "image_reference": "looparena-loopsbench-84ae415/task_raylib_shapes2d_medium:frozen",
+    "platform": "linux/amd64",
+    "task_tree_sha256": "c9a52e2182a974887d78576a4149bf72a5bdffd0cafbe2aa3c513d8345e70e05",
+    "workdir": "/workspace"
+  },
+  "solve_network": "bridge",
+  "source_revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+  "timeout_sec": 1500
+}

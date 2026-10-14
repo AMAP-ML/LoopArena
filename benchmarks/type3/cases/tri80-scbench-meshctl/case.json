@@ -1,0 +1,10 @@
+{
+  "adapter_kind": "scbench",
+  "case_id": "tri80-scbench-meshctl",
+  "episode_origin": "official_problem_start",
+  "harness_start_mode": "bootstrap_contract_start",
+  "official_task_id": "scbench:meshctl",
+  "task_scope": "official_full_problem",
+  "task_sequence_ref": "task_sequence.json",
+  "task_sequence_sha256": "383f3df208f50caf72096798e81fd021614b285d215f9b7efff08f748f39ee1b"
+}

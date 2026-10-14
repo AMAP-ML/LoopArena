@@ -1,0 +1,19 @@
+{
+  "adapter_kind": "loopsbench",
+  "checkpoint_context_policy": "single_episode",
+  "checkpoint_failure_policy": "stop_after_task",
+  "official_task_id": "loopsbench:task_raylib_textures_hard",
+  "release_content_hash": "84ae4156df6a132416109e2cf27bb72bcbde1e764dea40f3abab5e4ade942020",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/task.json",
+      "evaluator_plan_sha256": "198fbdfbc9dcf9c9d46d7d7c4720ec953fde5f1ca2cad0ccced47476d87f10ef",
+      "step_id": "task",
+      "task_ref": "tasks/task.md",
+      "task_sha256": "c54ce80f6d99dd313f6a6e2026817a718257fc622979eaa4191e54edf7d1c8f8"
+    }
+  ],
+  "target_step": "task",
+  "task_scope": "official_full_task",
+  "workspace_origin": "pinned_loopsbench_release_source_base"
+}

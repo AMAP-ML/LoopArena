@@ -1,0 +1,88 @@
+{
+  "case_id": "tri80-scbench-eve_industry-cp3",
+  "files": [
+    {
+      "bytes": 4195,
+      "kind": "file",
+      "mode": 420,
+      "path": "formatters.py",
+      "sha256": "3cc5c792e9d938f959b0109740e33dbec7c48fde55594c1cc3837845b25be841",
+      "source": {
+        "blob": "3cc5c792e9d938f959b0109740e33dbec7c48fde55594c1cc3837845b25be841",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 2863,
+      "kind": "file",
+      "mode": 420,
+      "path": "industry.py",
+      "sha256": "136bae3c04954d32aec0c4e1e58f7cce03d7c0f0ae1587c995c50c35b50f600a",
+      "source": {
+        "blob": "136bae3c04954d32aec0c4e1e58f7cce03d7c0f0ae1587c995c50c35b50f600a",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 13468,
+      "kind": "file",
+      "mode": 420,
+      "path": "invention_service.py",
+      "sha256": "2f88e3b4ba6191a9eacfba8eb39c1669815764d865862a01773232c542be7130",
+      "source": {
+        "blob": "2f88e3b4ba6191a9eacfba8eb39c1669815764d865862a01773232c542be7130",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 3115,
+      "kind": "file",
+      "mode": 420,
+      "path": "models.py",
+      "sha256": "ea4bb67a2ca4065c7c06972d1b2b865ccc1449d6df2538672db71ed998335312",
+      "source": {
+        "blob": "ea4bb67a2ca4065c7c06972d1b2b865ccc1449d6df2538672db71ed998335312",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 10922,
+      "kind": "file",
+      "mode": 420,
+      "path": "recipe_service.py",
+      "sha256": "b29001495b6e08cd00ca2e70b43645ff75e13a3fec9b2cd4d649858da544a790",
+      "source": {
+        "blob": "b29001495b6e08cd00ca2e70b43645ff75e13a3fec9b2cd4d649858da544a790",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 209,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements.txt",
+      "sha256": "125b2fd98165e7ef3ecbea04d51f3c4e9e36146dee2743fc317b75b2dc42eb69",
+      "source": {
+        "blob": "125b2fd98165e7ef3ecbea04d51f3c4e9e36146dee2743fc317b75b2dc42eb69",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 9086,
+      "kind": "file",
+      "mode": 420,
+      "path": "sde_loader.py",
+      "sha256": "499199646416a15e5a6fe9e4dea4b9d3566da270bf7cf2b1e4a6aa59809d7269",
+      "source": {
+        "blob": "499199646416a15e5a6fe9e4dea4b9d3566da270bf7cf2b1e4a6aa59809d7269",
+        "kind": "overlay"
+      }
+    }
+  ],
+  "overlay_sha256": "4c2e541199a244c6fd257e76eb2c193f62e6c0457c19d8a0a8bca49d5f5c9744",
+  "upstream": {
+    "kind": "scbench",
+    "source_root_key": null
+  },
+  "workspace_tree_sha256": "b86e0db7b02133fd8cd74b74d25e6f8877cd667ebd7f10457e1f78e4d3ebed2f"
+}

@@ -1,0 +1,10 @@
+{
+  "adapter_kind": "beyondswe_harbor",
+  "case_id": "tri80-beyondswe-neuralensemble_python-neo_pr1554",
+  "episode_origin": "official_problem_start",
+  "harness_start_mode": "bootstrap_contract_start",
+  "official_task_id": "beyondswe:neuralensemble_python-neo_pr1554",
+  "task_scope": "official_full_task",
+  "task_sequence_ref": "task_sequence.json",
+  "task_sequence_sha256": "bab73ba827a01a6f4fc9a96d4a15a3a9485cf5bc3bafae98c5446d2c83a8c4c4"
+}

@@ -1,0 +1,22 @@
+{
+  "case_id": "tri80-scbench-cfgpipe-cp4",
+  "files": [
+    {
+      "bytes": 12637,
+      "kind": "file",
+      "mode": 493,
+      "path": "cfgpipe.py",
+      "sha256": "4b8a3ef643d744502e12dc05b4ac156e183d5ace3e07c1fbc3568a7feb7bf59a",
+      "source": {
+        "blob": "4b8a3ef643d744502e12dc05b4ac156e183d5ace3e07c1fbc3568a7feb7bf59a",
+        "kind": "overlay"
+      }
+    }
+  ],
+  "overlay_sha256": "23661506113ad74246075fa918bae7de524984e15a2ee741a523b7a889b3bf0e",
+  "upstream": {
+    "kind": "scbench",
+    "source_root_key": null
+  },
+  "workspace_tree_sha256": "1165b3db685705dc544a9fc1e2afb73495f885d2ddcb59da8fbe2369ff716ded"
+}

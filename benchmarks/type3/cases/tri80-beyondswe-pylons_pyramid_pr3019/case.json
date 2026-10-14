@@ -1,0 +1,10 @@
+{
+  "adapter_kind": "beyondswe_harbor",
+  "case_id": "tri80-beyondswe-pylons_pyramid_pr3019",
+  "episode_origin": "official_problem_start",
+  "harness_start_mode": "bootstrap_contract_start",
+  "official_task_id": "beyondswe:pylons_pyramid_pr3019",
+  "task_scope": "official_full_task",
+  "task_sequence_ref": "task_sequence.json",
+  "task_sequence_sha256": "d9ce94c59217bf8abd52d6162028ddd06c22ced9233d635123c368b0fae78850"
+}

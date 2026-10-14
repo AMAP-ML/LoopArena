@@ -1,0 +1,19 @@
+{
+  "adapter_config": {
+    "docker_executable": "docker",
+    "task_dir": "/opt/looparena/evaluator_assets/beyondswe_type3/tri80-beyondswe-python-control_python-control_pr913/task"
+  },
+  "adapter_kind": "beyondswe_harbor",
+  "adapter_version": "harbor-verifier-v1",
+  "network": "host",
+  "pass_policy": "reward-equals-one",
+  "runtime_identity": {
+    "image_id": "sha256:e9572998a1e7c7f24d223dbf3a6a9761d8c00eea7ea057119e2ccfae3fe3dd49",
+    "image_reference": "aweaiteam/beyondswe:python-control_python-control_pr913",
+    "platform": "linux/amd64",
+    "workdir": "/workspace/python-control"
+  },
+  "solve_network": "host",
+  "source_revision": "7d2ced21b4c85f646d5ba8786875d7fbbe08ed49",
+  "timeout_sec": 1200
+}

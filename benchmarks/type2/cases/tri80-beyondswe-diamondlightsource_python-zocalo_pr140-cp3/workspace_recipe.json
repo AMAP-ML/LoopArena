@@ -1,0 +1,908 @@
+{
+  "case_id": "tri80-beyondswe-diamondlightsource_python-zocalo_pr140-cp3",
+  "files": [
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": ".azure-pipelines"
+    },
+    {
+      "bytes": 4269,
+      "kind": "file",
+      "mode": 420,
+      "path": ".azure-pipelines.yml",
+      "sha256": "cc2ca69274d52b9013f55c2b1b869265d140f3a8e424bb40765bc6deb9a84e17",
+      "source": {
+        "kind": "upstream",
+        "path": ".azure-pipelines.yml"
+      }
+    },
+    {
+      "bytes": 1257,
+      "kind": "file",
+      "mode": 420,
+      "path": ".azure-pipelines/ci.yml",
+      "sha256": "94d351b796fe0ec49ffee3ad63aefb36342e2e74457c2eaeaf194d1bb6044eda",
+      "source": {
+        "kind": "upstream",
+        "path": ".azure-pipelines/ci.yml"
+      }
+    },
+    {
+      "bytes": 1199,
+      "kind": "file",
+      "mode": 420,
+      "path": ".azure-pipelines/flake8-validation.py",
+      "sha256": "d3fe8735a3e87b2ba67c7373ba0982969713444013af9ebcef9370f75bd281a3",
+      "source": {
+        "kind": "upstream",
+        "path": ".azure-pipelines/flake8-validation.py"
+      }
+    },
+    {
+      "bytes": 946,
+      "kind": "file",
+      "mode": 420,
+      "path": ".azure-pipelines/syntax-validation.py",
+      "sha256": "486904fedb64e0377a93e5b64231e9509407ef8f7194885e6957143d1861423f",
+      "source": {
+        "kind": "upstream",
+        "path": ".azure-pipelines/syntax-validation.py"
+      }
+    },
+    {
+      "bytes": 399,
+      "kind": "file",
+      "mode": 420,
+      "path": ".bumpversion.cfg",
+      "sha256": "9a8e2a922eba8a0699db39ef1d78f04eeb38569379fa5a1b09941df9af2fa947",
+      "source": {
+        "kind": "upstream",
+        "path": ".bumpversion.cfg"
+      }
+    },
+    {
+      "bytes": 237,
+      "kind": "file",
+      "mode": 420,
+      "path": ".codecov.yml",
+      "sha256": "980930059d5b22c137480379bb62ed3ac3bf17538d306cd853d5bde774c80621",
+      "source": {
+        "kind": "upstream",
+        "path": ".codecov.yml"
+      }
+    },
+    {
+      "bytes": 292,
+      "kind": "file",
+      "mode": 420,
+      "path": ".editorconfig",
+      "sha256": "63aaea058f29e695c16242ce6786415a423c89afef0c71bfc1887168347c1a51",
+      "source": {
+        "kind": "upstream",
+        "path": ".editorconfig"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": ".github"
+    },
+    {
+      "bytes": 317,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/ISSUE_TEMPLATE.md",
+      "sha256": "275d8243d71580b0ca00485d50c7e4cafe3db3eeb8b1a80c422044b28686c55d",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/ISSUE_TEMPLATE.md"
+      }
+    },
+    {
+      "bytes": 719,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/renovate.json",
+      "sha256": "1644476fd32abffc9c995da18a367768392b903c70dfe9d3fbdecb4cf3767627",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/renovate.json"
+      }
+    },
+    {
+      "bytes": 1220,
+      "kind": "file",
+      "mode": 420,
+      "path": ".gitignore",
+      "sha256": "a25fae6749e44baf825aea3006580752dae95ecc58d1762ab128bcac66658c04",
+      "source": {
+        "kind": "upstream",
+        "path": ".gitignore"
+      }
+    },
+    {
+      "bytes": 296,
+      "kind": "file",
+      "mode": 420,
+      "path": ".mypy.ini",
+      "sha256": "867b9b6d68e301363a998f8da3b1721bdeff1fda9e5f286f92168f9ad6fdba31",
+      "source": {
+        "kind": "upstream",
+        "path": ".mypy.ini"
+      }
+    },
+    {
+      "bytes": 800,
+      "kind": "file",
+      "mode": 420,
+      "path": ".pre-commit-config.yaml",
+      "sha256": "8edc073238339203698c55716415492dbf54c0871af8dcf24ae516d8b3c840fc",
+      "source": {
+        "kind": "upstream",
+        "path": ".pre-commit-config.yaml"
+      }
+    },
+    {
+      "bytes": 88,
+      "kind": "file",
+      "mode": 420,
+      "path": "AUTHORS.rst",
+      "sha256": "939ed60b391508890340909db7ab5af9d5acc19b050a9ab84177476f8c32a369",
+      "source": {
+        "kind": "upstream",
+        "path": "AUTHORS.rst"
+      }
+    },
+    {
+      "bytes": 3483,
+      "kind": "file",
+      "mode": 420,
+      "path": "CONTRIBUTING.rst",
+      "sha256": "d46eb04020f06d0b46ba3c4bb052712c7024625f7f1b9706db23588e2eab17a2",
+      "source": {
+        "kind": "upstream",
+        "path": "CONTRIBUTING.rst"
+      }
+    },
+    {
+      "bytes": 3294,
+      "kind": "file",
+      "mode": 420,
+      "path": "HISTORY.rst",
+      "sha256": "04df4357dec82a51693e6dda8b53ca90c9bdbe885b678861a19bb334c6c11b47",
+      "source": {
+        "kind": "upstream",
+        "path": "HISTORY.rst"
+      }
+    },
+    {
+      "bytes": 1481,
+      "kind": "file",
+      "mode": 420,
+      "path": "LICENSE",
+      "sha256": "6a208501a5cdb77355e90cbe55464e4483acfa2e46f7f2e68e06ea48a88dd532",
+      "source": {
+        "kind": "upstream",
+        "path": "LICENSE"
+      }
+    },
+    {
+      "bytes": 262,
+      "kind": "file",
+      "mode": 420,
+      "path": "MANIFEST.in",
+      "sha256": "f49a286942273813ab4b385460c8d6ae2478468a055cc03538fb6fa83d4d7083",
+      "source": {
+        "kind": "upstream",
+        "path": "MANIFEST.in"
+      }
+    },
+    {
+      "bytes": 11149,
+      "kind": "file",
+      "mode": 420,
+      "path": "README.rst",
+      "sha256": "ed516e424daf2251bfed839a319ac7bf2f81989836a1f787f8388b952adb303a",
+      "source": {
+        "kind": "upstream",
+        "path": "README.rst"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "contrib"
+    },
+    {
+      "bytes": 4289,
+      "kind": "file",
+      "mode": 420,
+      "path": "contrib/site-configuration.yml",
+      "sha256": "e4437389ee1163954b551b22dcad2f67bbe649f8679de1286475235916f2192c",
+      "source": {
+        "kind": "upstream",
+        "path": "contrib/site-configuration.yml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "docs"
+    },
+    {
+      "bytes": 607,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/Makefile",
+      "sha256": "239fa814a736e5b7b035b3998952ada9f63dfb75ed5c0e54e6421a088032bac1",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/Makefile"
+      }
+    },
+    {
+      "bytes": 28,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/authors.rst",
+      "sha256": "0ba8e9a403475ae12773cfce9fc7a32bce591e9801a1adde71927982f51d901b",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/authors.rst"
+      }
+    },
+    {
+      "bytes": 4833,
+      "kind": "file",
+      "mode": 493,
+      "path": "docs/conf.py",
+      "sha256": "ff95d3bdb30be24f46f22e07cb98931d4094a76f426c86e134a722f8670c78ce",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/conf.py"
+      }
+    },
+    {
+      "bytes": 33,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/contributing.rst",
+      "sha256": "87d5c7434971ff248a817426c2a84940b3c3ed51251ddcaed6bb8a7d85afad80",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/contributing.rst"
+      }
+    },
+    {
+      "bytes": 6271,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/getting_started.rst",
+      "sha256": "f741bb2239480fe5e27424c7da19ff4ef10f283717884e039c245c5415d372be",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/getting_started.rst"
+      }
+    },
+    {
+      "bytes": 28,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/history.rst",
+      "sha256": "e86b4ac9b9c576e8f15da90c71bd0b1dcac5b16c2a461f0927fc613bf431a9d8",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/history.rst"
+      }
+    },
+    {
+      "bytes": 329,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/index.rst",
+      "sha256": "60f4b68ecd4b711bf10ecf30f50fdc09fd61ff81f8866b32566b9adafb9ab97e",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/index.rst"
+      }
+    },
+    {
+      "bytes": 1174,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/installation.rst",
+      "sha256": "3a3cb9d06f77056d485d9bc1d659d472fd8ab61942beff6fe45061bd3ddaa083",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/installation.rst"
+      }
+    },
+    {
+      "bytes": 768,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/make.bat",
+      "sha256": "d1ec4613d41d6ceb9bcb2f64d83b188b2bed9782ca987c990d6f9779e97c138e",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/make.bat"
+      }
+    },
+    {
+      "bytes": 27,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/readme.rst",
+      "sha256": "087bcb5ee8cba1da1fa14d6e312f7bcdb88b38413041aca1eff5fc1084e3a93f",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/readme.rst"
+      }
+    },
+    {
+      "bytes": 5303,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/siteconfig.rst",
+      "sha256": "b161740c59af76594f59b1a48de4009957838d70347e199021f4a52a4b9ad774",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/siteconfig.rst"
+      }
+    },
+    {
+      "bytes": 1095,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/workflows.rst",
+      "sha256": "4ee600bec801a1485c76d8c32a580393673fd19b762164d7c5e62f91b1a7466b",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/workflows.rst"
+      }
+    },
+    {
+      "bytes": 110339,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/zocalo_graphic.jpg",
+      "sha256": "5ba3d11e31896cd1b3a9e7ee07fbf40006798b27c34590fb875c8c0c321bde21",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/zocalo_graphic.jpg"
+      }
+    },
+    {
+      "bytes": 66503,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/zocalo_queues.jpg",
+      "sha256": "e9518be1985514effad38f6265aebff74257c93abbf583da86a5a2bec74e4095",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/zocalo_queues.jpg"
+      }
+    },
+    {
+      "bytes": 130,
+      "kind": "file",
+      "mode": 420,
+      "path": "pyproject.toml",
+      "sha256": "8959eaba95645c0a1f343209829c3f3ba0bdb82dd6b9f92d9297231c9216c073",
+      "source": {
+        "kind": "upstream",
+        "path": "pyproject.toml"
+      }
+    },
+    {
+      "bytes": 125,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements_dev.txt",
+      "sha256": "85657810b42ecb6561fb55a9d437dc77f18e169ad61970a64130dd1c60161b93",
+      "source": {
+        "kind": "upstream",
+        "path": "requirements_dev.txt"
+      }
+    },
+    {
+      "bytes": 38,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements_doc.txt",
+      "sha256": "df8760b2ea6b82d3197441c952b0cb7d05f15c70d60fafa8b10b069d11913aa8",
+      "source": {
+        "kind": "upstream",
+        "path": "requirements_doc.txt"
+      }
+    },
+    {
+      "bytes": 2937,
+      "kind": "file",
+      "mode": 420,
+      "path": "setup.cfg",
+      "sha256": "2195fae28b46366d2a3aea1bcd4990b27cd41e2ac83f5e618462b1f733205693",
+      "source": {
+        "kind": "upstream",
+        "path": "setup.cfg"
+      }
+    },
+    {
+      "bytes": 700,
+      "kind": "file",
+      "mode": 420,
+      "path": "setup.py",
+      "sha256": "5de89ad57ae19b3b86f2bf729eff5e422d68a64a8f79e589d565c408b488c945",
+      "source": {
+        "kind": "upstream",
+        "path": "setup.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "src"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "src/zocalo"
+    },
+    {
+      "bytes": 2213,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/zocalo/__init__.py",
+      "sha256": "e34ca94ce689d57a480cb6c6df7c0931c233f8c3b2f451f0b6f6a24c6f3c5606",
+      "source": {
+        "kind": "upstream",
+        "path": "src/zocalo/__init__.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "src/zocalo/cli"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/zocalo/cli/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "src/zocalo/util/__init__.py"
+      }
+    },
+    {
+      "bytes": 2779,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/zocalo/cli/dlq_check.py",
+      "sha256": "75f0785c94f3d27091ab457fffc3ec5569210046b8474ecdc2e4731ddfa7e9ff",
+      "source": {
+        "blob": "75f0785c94f3d27091ab457fffc3ec5569210046b8474ecdc2e4731ddfa7e9ff",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 4195,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/zocalo/cli/dlq_purge.py",
+      "sha256": "56e9c85d7ce915e5755f0b045fa242410443b5256c59c21b6e901adc5d3846c0",
+      "source": {
+        "kind": "upstream",
+        "path": "src/zocalo/cli/dlq_purge.py"
+      }
+    },
+    {
+      "bytes": 5481,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/zocalo/cli/dlq_reinject.py",
+      "sha256": "0c3c837c89cb7ef2d22045dcdff58cea197c14caba8ed99b4092375158264bc8",
+      "source": {
+        "kind": "upstream",
+        "path": "src/zocalo/cli/dlq_reinject.py"
+      }
+    },
+    {
+      "bytes": 7211,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/zocalo/cli/go.py",
+      "sha256": "0f29a5d431523a912a04cb7cf195102ab69fef2667d53653b02d026bbb747c08",
+      "source": {
+        "kind": "upstream",
+        "path": "src/zocalo/cli/go.py"
+      }
+    },
+    {
+      "bytes": 4166,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/zocalo/cli/queue_drain.py",
+      "sha256": "99c9ce0315882f84bfeb74dc540757ca85f444e58abb93e882528cb9b97a9a2b",
+      "source": {
+        "kind": "upstream",
+        "path": "src/zocalo/cli/queue_drain.py"
+      }
+    },
+    {
+      "bytes": 2107,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/zocalo/cli/shutdown.py",
+      "sha256": "4d8cf45bcc6cdea450290119b3ac0c57565b954f8c323abb1cb03c6b476b67b2",
+      "source": {
+        "kind": "upstream",
+        "path": "src/zocalo/cli/shutdown.py"
+      }
+    },
+    {
+      "bytes": 5143,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/zocalo/cli/wrap.py",
+      "sha256": "4443bd9fe86e31ce084afb5b70467792d261dc6a80c9c3cc5f46af5971685468",
+      "source": {
+        "kind": "upstream",
+        "path": "src/zocalo/cli/wrap.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "src/zocalo/configuration"
+    },
+    {
+      "bytes": 16663,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/zocalo/configuration/__init__.py",
+      "sha256": "4af29da135803095a858d07507e19906424712ffd9a5c8b4b581293e34472cbd",
+      "source": {
+        "kind": "upstream",
+        "path": "src/zocalo/configuration/__init__.py"
+      }
+    },
+    {
+      "bytes": 1146,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/zocalo/configuration/argparse.py",
+      "sha256": "fcf7df1ccf55142b4f07a0e11596ab100993de77a8c9661f6ad3e85ab16af153",
+      "source": {
+        "kind": "upstream",
+        "path": "src/zocalo/configuration/argparse.py"
+      }
+    },
+    {
+      "bytes": 1824,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/zocalo/configuration/plugin_graylog.py",
+      "sha256": "5d77573ff46c71b7987e594089a52010e19a73a0e60555cf85355c293ef2cd86",
+      "source": {
+        "kind": "upstream",
+        "path": "src/zocalo/configuration/plugin_graylog.py"
+      }
+    },
+    {
+      "bytes": 421,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/zocalo/configuration/plugin_jmx.py",
+      "sha256": "32152fba5670dda17b506fb4f3a5a7da84187a9b49fac50f5773caca8184b380",
+      "source": {
+        "kind": "upstream",
+        "path": "src/zocalo/configuration/plugin_jmx.py"
+      }
+    },
+    {
+      "bytes": 421,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/zocalo/configuration/plugin_rabbitmqapi.py",
+      "sha256": "d32f686bcca211d3314da45ec49a016c00f5b7d95c9f9e398910a9c842cbfd89",
+      "source": {
+        "kind": "upstream",
+        "path": "src/zocalo/configuration/plugin_rabbitmqapi.py"
+      }
+    },
+    {
+      "bytes": 188,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/zocalo/configuration/plugin_storage.py",
+      "sha256": "e47b7920ee52d4e2f6dbb25311f1fc04c569af774e71600ba01ddd8312c5e192",
+      "source": {
+        "kind": "upstream",
+        "path": "src/zocalo/configuration/plugin_storage.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "src/zocalo/service"
+    },
+    {
+      "bytes": 4439,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/zocalo/service/__init__.py",
+      "sha256": "9fa3b2047d6aac28e1113649a989977e87bbb8c69cb0fb150d77c8742edd6fc1",
+      "source": {
+        "kind": "upstream",
+        "path": "src/zocalo/service/__init__.py"
+      }
+    },
+    {
+      "bytes": 10138,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/zocalo/service/schlockmeister.py",
+      "sha256": "8e2aefac65c62e1f8d96533bca41d08c1bc4605126b247c92d9b82b1ca8a337f",
+      "source": {
+        "kind": "upstream",
+        "path": "src/zocalo/service/schlockmeister.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "src/zocalo/util"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/zocalo/util/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "src/zocalo/util/__init__.py"
+      }
+    },
+    {
+      "bytes": 3386,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/zocalo/util/jmxstats.py",
+      "sha256": "30f4f6f57e3a92d79b678eb72ed163d39b3d26f96b4254856198a238c20746ad",
+      "source": {
+        "kind": "upstream",
+        "path": "src/zocalo/util/jmxstats.py"
+      }
+    },
+    {
+      "bytes": 26566,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/zocalo/util/rabbitmq.py",
+      "sha256": "8197cda417606d75878123fa020088ddd8073dcdf4ec5abf9b0e12fb627ac4ba",
+      "source": {
+        "blob": "8197cda417606d75878123fa020088ddd8073dcdf4ec5abf9b0e12fb627ac4ba",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 2820,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/zocalo/util/symlink.py",
+      "sha256": "0ea4875f2d497396e48ddc9c2ac1dbd038517bbefb1907f68bc6327d709724a0",
+      "source": {
+        "kind": "upstream",
+        "path": "src/zocalo/util/symlink.py"
+      }
+    },
+    {
+      "bytes": 3571,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/zocalo/wrapper.py",
+      "sha256": "d6dcda5ac4e2d40a7d14f5fdea5d8dd46cbc7a3cc01ac660df875ab672a7d014",
+      "source": {
+        "kind": "upstream",
+        "path": "src/zocalo/wrapper.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/cli"
+    },
+    {
+      "bytes": 1374,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/cli/test_dlq_check.py",
+      "sha256": "97c7e247da5e17d0d3de88da68b13e14816d2b826beab6e42eeb4c7fbbe2ec71",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/cli/test_dlq_check.py"
+      }
+    },
+    {
+      "bytes": 2697,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/cli/test_dlq_purge.py",
+      "sha256": "ef15eceec1d2d2f5ff5aa777b832c98f1950c96f779ac17bcc797af06a01e63a",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/cli/test_dlq_purge.py"
+      }
+    },
+    {
+      "bytes": 3143,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/cli/test_dlq_reinject.py",
+      "sha256": "ec4e5116a7b24cee33bf8d267ed2b78c6fd401d6561a450572529fe3d79c76fe",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/cli/test_dlq_reinject.py"
+      }
+    },
+    {
+      "bytes": 110,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/cli/test_go.py",
+      "sha256": "2347ee60abd834f3a37e8a9fcf983fff472232a93e5ce35e0686e000a4b36fb3",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/cli/test_go.py"
+      }
+    },
+    {
+      "bytes": 1542,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/cli/test_queue_drain.py",
+      "sha256": "55ea57ce9bcbd82c7c51fbdea598f55ba5f6901f211b8aaf7ea30771c6e2c122",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/cli/test_queue_drain.py"
+      }
+    },
+    {
+      "bytes": 1515,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/cli/test_shutdown.py",
+      "sha256": "6975e067eae21589474f7c89771550f6a9627b1da533d5f0266810018c7f927f",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/cli/test_shutdown.py"
+      }
+    },
+    {
+      "bytes": 114,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/cli/test_wrap.py",
+      "sha256": "c76c1079f062a6fe02bf732bf63078721820b5985befd37eb0270ef136b853ed",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/cli/test_wrap.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/configuration"
+    },
+    {
+      "bytes": 11365,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/configuration/test_configuration.py",
+      "sha256": "7c38a9de7cdc43098fb41f9dfa83695ef1987bc6b3a7aaa55cbc57c72ef8b6e2",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/configuration/test_configuration.py"
+      }
+    },
+    {
+      "bytes": 1383,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/configuration/test_plugin_graylog.py",
+      "sha256": "1429c9eb0a7271cafb1db8440a3214a0e7cc128116e54f2335112526b3cb0688",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/configuration/test_plugin_graylog.py"
+      }
+    },
+    {
+      "bytes": 917,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/configuration/test_plugin_jmx.py",
+      "sha256": "ce1d43354292b10985c761a90eba15fbb5128bef4f8880a9179836e57ab23079",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/configuration/test_plugin_jmx.py"
+      }
+    },
+    {
+      "bytes": 1372,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/configuration/test_plugin_storage.py",
+      "sha256": "e26e5d72304cc1141f5d791d43cfdeef8bc0339343312dc0e6cb17e7e40243ae",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/configuration/test_plugin_storage.py"
+      }
+    },
+    {
+      "bytes": 1801,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_graylog.py",
+      "sha256": "f7dae86dd19a9a13657ba96ff3513f2e17d9eef31044a56c6e4a6315dfe2dc2d",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_graylog.py"
+      }
+    },
+    {
+      "bytes": 568,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_zocalo.py",
+      "sha256": "abac262a6fb33d2c3692fed954e6ed64758ffc1858028cc3a3106e6ae2a2e306",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_zocalo.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/util"
+    },
+    {
+      "bytes": 466,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/util/test_rabbitmq.py",
+      "sha256": "b4591078ec0359f632bb8eb20fa1d14cd6d836ea66c51345ea3003076221fa7f",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/util/test_rabbitmq.py"
+      }
+    },
+    {
+      "bytes": 1817,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/util/test_symlink.py",
+      "sha256": "c8bd4ea6666c4e546d2f98bcac00b772fa82fd3da303aa1bdfb9b390b3fb973e",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/util/test_symlink.py"
+      }
+    }
+  ],
+  "overlay_sha256": "9ec52abec2a119d3f430a6d1a59a96e6d4ce09f9089a4f33b04462dd62cf3ce4",
+  "upstream": {
+    "kind": "beyondswe",
+    "repository": "https://github.com/diamondlightsource/python-zocalo",
+    "revision": "5f070ee16656dd5eec1de86897d42ee895f8f12a",
+    "source_root_key": "tri80-beyondswe-diamondlightsource_python-zocalo_pr140-cp3"
+  },
+  "workspace_tree_sha256": "7117f9aa757e52be5e461ce69a8d0f00cd5d05204da8d515b73b8fdfbc44ee72"
+}

@@ -1,0 +1,20 @@
+{
+  "adapter_kind": "beyondswe_harbor",
+  "checkpoint_context_policy": "single_episode",
+  "checkpoint_failure_policy": "stop_after_task",
+  "official_parent_commit": "de6b3b5be4e565ba8884aebd4be17a02f03c2079",
+  "official_task_id": "beyondswe:neuralensemble_python-neo_pr1554",
+  "official_workdir": "/workspace/python-neo",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/task.json",
+      "evaluator_plan_sha256": "4c361b3293acef1462f4a8c02986e034454a16964ee4aaa054fb07277a9777f1",
+      "step_id": "task",
+      "task_ref": "tasks/task.md",
+      "task_sha256": "52ec792574d62aa19a165be18a22b588921e697b4b6a6ab1ac3057353e85f685"
+    }
+  ],
+  "target_step": "task",
+  "task_scope": "official_full_task",
+  "workspace_origin": "pinned_source_image_parent_commit"
+}

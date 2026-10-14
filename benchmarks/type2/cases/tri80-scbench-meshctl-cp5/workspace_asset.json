@@ -1,0 +1,6 @@
+{
+  "recipe": "workspace_recipe.json",
+  "recipe_sha256": "21f5f67ce6f5e910b42ec298f4d007c7463c4fefdfe82c46b0ffc70325ff732f",
+  "relative_path_under_assets_root": "type2/workspaces/tri80-scbench-meshctl-cp5/workspace.tar.gz",
+  "workspace_tree_sha256": "429499c86a891e3f596aae0b8e4454faba182b8f34f58e512cc023c0a21e9ac9"
+}

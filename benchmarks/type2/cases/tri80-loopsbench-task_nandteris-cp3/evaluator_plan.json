@@ -1,0 +1,32 @@
+{
+  "adapter_config": {
+    "docker_executable": "docker",
+    "expected_test_count": 1,
+    "expected_unit_ids": [
+      "boolean_logic",
+      "machine_language",
+      "boolean_arithmetic",
+      "sequential_logic_small",
+      "sequential_logic_large",
+      "computer_architecture"
+    ],
+    "result_protocol": "task_runner_pytest",
+    "runtime_assets_dir": "/opt/looparena/evaluator_assets/evaluator_runtime",
+    "task_dir": "/opt/looparena/evaluator_assets/tasks/task_nandteris"
+  },
+  "adapter_kind": "loopsbench",
+  "adapter_version": "source-run-tests-v1",
+  "evaluator_revision": "5880b64491e2cac2f83d497153ed173b8a995b8b",
+  "network": "bridge",
+  "pass_policy": "all-source-unit-tests-pass",
+  "runtime_identity": {
+    "image_id": "sha256:07166cf6255db0bc78b8a65ec6f84070c6c3aba74817befaf5c437b4f5645a75",
+    "image_reference": "looparena-loopsbench-84ae415/task_nandteris:frozen",
+    "platform": "linux/amd64",
+    "task_tree_sha256": "5f82175ecf89fcb4862048e1e99d31f8f599a14eb396adb7c6ac5dc00ece994b",
+    "workdir": "/workspace"
+  },
+  "solve_network": "bridge",
+  "source_revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+  "timeout_sec": 2100
+}

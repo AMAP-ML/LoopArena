@@ -1,0 +1,20 @@
+{
+  "adapter_kind": "beyondswe_harbor",
+  "checkpoint_context_policy": "single_episode",
+  "checkpoint_failure_policy": "stop_after_task",
+  "official_parent_commit": "afa2122a8a30cf06c3c8c4ae3ed613884a223364",
+  "official_task_id": "beyondswe:aklajnert_pytest-subprocess_pr180",
+  "official_workdir": "/workspace/pytest-subprocess",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/task.json",
+      "evaluator_plan_sha256": "032f4ae5cde0f451ff4d002a80ddbb5a34c600e28bacec81887b9437e6a33157",
+      "step_id": "task",
+      "task_ref": "tasks/task.md",
+      "task_sha256": "57561c50002bef6fe0a6e635fea6a5fcf6218ed45fce76662a24425f199f46db"
+    }
+  ],
+  "target_step": "task",
+  "task_scope": "official_full_task",
+  "workspace_origin": "pinned_source_image_parent_commit"
+}

@@ -1,0 +1,20 @@
+{
+  "adapter_kind": "beyondswe_harbor",
+  "checkpoint_context_policy": "single_episode",
+  "checkpoint_failure_policy": "stop_after_task",
+  "official_parent_commit": "02d9bc573b55a7eac00ef6410d0ffda2e0a1ba55",
+  "official_task_id": "beyondswe:iamconsortium_units_pr45",
+  "official_workdir": "/workspace/units",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/task.json",
+      "evaluator_plan_sha256": "470f37a810102eb4bd12a0e2cdfc6f6ddd64ff75bd2f8e85b6e942d10a4cca18",
+      "step_id": "task",
+      "task_ref": "tasks/task.md",
+      "task_sha256": "77e04c2eb240a7c84bd178a480148d979ef9b542376000994b62e5a05ed985eb"
+    }
+  ],
+  "target_step": "task",
+  "task_scope": "official_full_task",
+  "workspace_origin": "pinned_source_image_parent_commit"
+}

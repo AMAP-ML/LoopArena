@@ -5,22 +5,6 @@ from __future__ import annotations
 CONTROL_DECISIONS = ("advance", "verify", "stop")
 
 
-def card_label_sets(packet: dict) -> dict[str, set[str]]:
-    """Return the model-visible fact and scope labels in a Core packet."""
-    return {
-        "fact": {
-            str(card.get("label"))
-            for card in packet.get("fact_cards") or []
-            if isinstance(card, dict) and card.get("label")
-        },
-        "scope": {
-            str(card.get("label"))
-            for card in packet.get("scope_cards") or []
-            if isinstance(card, dict) and card.get("label")
-        },
-    }
-
-
 def card_lookup(packet: dict) -> dict[str, dict]:
     """Return a flat label -> card mapping for renderer expansion."""
     out: dict[str, dict] = {}

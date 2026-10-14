@@ -1,0 +1,394 @@
+{
+  "case_id": "tri80-loopsbench-task_doop_souffle_static_analysis-cp1",
+  "files": [
+    {
+      "bytes": 222,
+      "kind": "file",
+      "mode": 420,
+      "path": "Makefile",
+      "sha256": "fc2ab7a76001b9556ae6387794834dc4039be783e86c2bf71bfc773108538b65",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_doop_souffle_static_analysis/base/Makefile"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "facts"
+    },
+    {
+      "bytes": 51,
+      "kind": "file",
+      "mode": 420,
+      "path": "facts/ActualParam.facts",
+      "sha256": "5d584b07d8a5e48da4068676b602b5fdf3f3a74fc00c87c85a1b68a2ea84732c",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_doop_souffle_static_analysis/base/facts/ActualParam.facts"
+      }
+    },
+    {
+      "bytes": 89,
+      "kind": "file",
+      "mode": 420,
+      "path": "facts/Assign.facts",
+      "sha256": "b48ea9f547dec8d72cbacd468e6ab32603cc37b04e68504d9ada3b5ce9ba4adc",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_doop_souffle_static_analysis/base/facts/Assign.facts"
+      }
+    },
+    {
+      "bytes": 99,
+      "kind": "file",
+      "mode": 420,
+      "path": "facts/AssignHeapAllocation.facts",
+      "sha256": "bf1e2af81bf88d9984cca39089627a63d4b3f4e1acbfc1e6d99778e914ea280e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_doop_souffle_static_analysis/base/facts/AssignHeapAllocation.facts"
+      }
+    },
+    {
+      "bytes": 39,
+      "kind": "file",
+      "mode": 420,
+      "path": "facts/AssignReturnValue.facts",
+      "sha256": "73005b203ba52bbbc2599ad6ea7b2cc7ebf2669fd64c9645bf5cad85982a0da2",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_doop_souffle_static_analysis/base/facts/AssignReturnValue.facts"
+      }
+    },
+    {
+      "bytes": 47,
+      "kind": "file",
+      "mode": 420,
+      "path": "facts/DirectSuperclass.facts",
+      "sha256": "a1ff8119c7abfedb4032598dc3953e260c3bbfaacdedd3a8dab5fd0dab54011a",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_doop_souffle_static_analysis/base/facts/DirectSuperclass.facts"
+      }
+    },
+    {
+      "bytes": 79,
+      "kind": "file",
+      "mode": 420,
+      "path": "facts/FormalParam.facts",
+      "sha256": "de74fc270ecbfe08bf67da1fdcfda043b69112a324bce55b08cc0521cfdd7c11",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_doop_souffle_static_analysis/base/facts/FormalParam.facts"
+      }
+    },
+    {
+      "bytes": 26,
+      "kind": "file",
+      "mode": 420,
+      "path": "facts/HeapAllocationType.facts",
+      "sha256": "0fabff3e0cb4f502f1b17c32317d02847f574fbed51e1230fb7bc9f4a27b5e1e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_doop_souffle_static_analysis/base/facts/HeapAllocationType.facts"
+      }
+    },
+    {
+      "bytes": 71,
+      "kind": "file",
+      "mode": 420,
+      "path": "facts/LoadInstanceField.facts",
+      "sha256": "427d038bf3a9125e616bab9a1840b718f29b477c157078a49f37845eefc870c8",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_doop_souffle_static_analysis/base/facts/LoadInstanceField.facts"
+      }
+    },
+    {
+      "bytes": 20,
+      "kind": "file",
+      "mode": 420,
+      "path": "facts/MainMethod.facts",
+      "sha256": "5b6fff037e5c2c05f56a735fe3968a810a85c0fdf859a65675d4332cba505fe7",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_doop_souffle_static_analysis/base/facts/MainMethod.facts"
+      }
+    },
+    {
+      "bytes": 146,
+      "kind": "file",
+      "mode": 420,
+      "path": "facts/MethodLookup.facts",
+      "sha256": "61f58bef86dce55223b7cbe63a763b29505558b8784f733d8105d0a1eec30ecd",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_doop_souffle_static_analysis/base/facts/MethodLookup.facts"
+      }
+    },
+    {
+      "bytes": 73,
+      "kind": "file",
+      "mode": 420,
+      "path": "facts/ReturnVar.facts",
+      "sha256": "09f2111291f9db08162922c1304c6b589fe6e4684d650c5ececccc94f41b0dc6",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_doop_souffle_static_analysis/base/facts/ReturnVar.facts"
+      }
+    },
+    {
+      "bytes": 106,
+      "kind": "file",
+      "mode": 420,
+      "path": "facts/StaticMethodInvocation.facts",
+      "sha256": "89a9ef5004308834a3d17cd40347142ae52b1cde9eca01e48f9e70a88da3cdde",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_doop_souffle_static_analysis/base/facts/StaticMethodInvocation.facts"
+      }
+    },
+    {
+      "bytes": 76,
+      "kind": "file",
+      "mode": 420,
+      "path": "facts/StoreInstanceField.facts",
+      "sha256": "624033a15a1ab16567826ebee933965b9c1d90a4183208dc8667c9da061b8bd7",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_doop_souffle_static_analysis/base/facts/StoreInstanceField.facts"
+      }
+    },
+    {
+      "bytes": 144,
+      "kind": "file",
+      "mode": 420,
+      "path": "facts/ThisVar.facts",
+      "sha256": "c29f2ecf56c963531e69f4e5a6b273b090291bf914939055f986c3725f1828c6",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_doop_souffle_static_analysis/base/facts/ThisVar.facts"
+      }
+    },
+    {
+      "bytes": 195,
+      "kind": "file",
+      "mode": 420,
+      "path": "facts/VirtualMethodInvocation.facts",
+      "sha256": "2478c9bc5a8e210e698b63f7d238722eef39e2d4d55a7720d0cfdbf97a3c3e68",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_doop_souffle_static_analysis/base/facts/VirtualMethodInvocation.facts"
+      }
+    },
+    {
+      "bytes": 3133,
+      "kind": "file",
+      "mode": 420,
+      "path": "module_dag.yaml",
+      "sha256": "c05a51cbbc1029a139c9de0245f2ab1ad991fd106ff293f6638cb56e77832308",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_doop_souffle_static_analysis/module_dag.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "requirements"
+    },
+    {
+      "bytes": 2956,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/doop.yaml",
+      "sha256": "630e92744a4740d91d6261bd0f97c4c4f58f47dbd2a14e0de1f7f566c8f146d7",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_doop_souffle_static_analysis/requirements/doop.yaml"
+      }
+    },
+    {
+      "bytes": 2637,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/doop_on_souffle.yaml",
+      "sha256": "a2e0b95e85d9c4588d02ef4d640114bf630c7956b59895096230df3134758bf2",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_doop_souffle_static_analysis/requirements/doop_on_souffle.yaml"
+      }
+    },
+    {
+      "bytes": 3905,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/field_sensitive.yaml",
+      "sha256": "2666f1cc6a6c5a8d9e2fca14730311dfdea61eb04723f40f950ddebaea66a70e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_doop_souffle_static_analysis/requirements/field_sensitive.yaml"
+      }
+    },
+    {
+      "bytes": 3559,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/kcfa.yaml",
+      "sha256": "fd2b77b217013a096a775a85a0781a00044728bd37211f6296e001278e76ccef",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_doop_souffle_static_analysis/requirements/kcfa.yaml"
+      }
+    },
+    {
+      "bytes": 2170,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/souffle.yaml",
+      "sha256": "368eb99eff4d2278ad79ed57bd3037f9a1634a432990e9831047436607920c99",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_doop_souffle_static_analysis/requirements/souffle.yaml"
+      }
+    },
+    {
+      "bytes": 814,
+      "kind": "file",
+      "mode": 493,
+      "path": "run-tests.sh",
+      "sha256": "afad3d2b9e101d15a037e426541259c77a299c3f989396b15c2b4c8eae68f4ff",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_doop_souffle_static_analysis/run-tests.sh"
+      }
+    },
+    {
+      "bytes": 2000,
+      "kind": "file",
+      "mode": 420,
+      "path": "task.yaml",
+      "sha256": "736fa0d0a1d801b6bf83358d45a5ceb12d62624545c617b5debd56d79ec02ecf",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_doop_souffle_static_analysis/task.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/doop"
+    },
+    {
+      "bytes": 1839,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/doop/test_outputs.py",
+      "sha256": "b6d00a1a96d1437c957ab0c30dcea2d912adc87c861bc9b6b59dd0bf6edaa292",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_doop_souffle_static_analysis/tests/doop/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/doop_on_souffle"
+    },
+    {
+      "bytes": 2313,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/doop_on_souffle/test_outputs.py",
+      "sha256": "4a727ac2ebe1defcfe7a83645d98adadb51231d2469486dc2585a4c1989c6c0e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_doop_souffle_static_analysis/tests/doop_on_souffle/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/field_sensitive"
+    },
+    {
+      "bytes": 2082,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/field_sensitive/test_outputs.py",
+      "sha256": "afe72f73b4d282fc4d9b576d9c9b621636b14582eedba94354f2a763f2c9b37f",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_doop_souffle_static_analysis/tests/field_sensitive/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/kcfa"
+    },
+    {
+      "bytes": 2194,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/kcfa/test_outputs.py",
+      "sha256": "1587419da621b96b7cd5e54d02f24b0d159b33d946b1388dbae40fd6ae429dec",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_doop_souffle_static_analysis/tests/kcfa/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/souffle"
+    },
+    {
+      "bytes": 2058,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/souffle/test_outputs.py",
+      "sha256": "1f20597ce70803e82e906554fb750a8357f60cf331c9de45c94e3d756dac8bac",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_doop_souffle_static_analysis/tests/souffle/test_outputs.py"
+      }
+    },
+    {
+      "bytes": 2548,
+      "kind": "file",
+      "mode": 420,
+      "path": "types.dl",
+      "sha256": "67a9c24da316bc30f6a18a3cfcaff2ea24ebd725d2099036b3b916abbbf90bd0",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_doop_souffle_static_analysis/base/types.dl"
+      }
+    },
+    {
+      "bytes": 896,
+      "kind": "file",
+      "mode": 420,
+      "path": "unit_dag.json",
+      "sha256": "06d1ced362d5cc15abba9502d167aa1cb40dbcbcf0e1200ec1195fc5f53ec181",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_doop_souffle_static_analysis/unit_dag.json"
+      }
+    }
+  ],
+  "overlay_sha256": "272adeccafe73e7009d51f2ec2be9871db5e0eb14239f483ea429be26c3c6402",
+  "upstream": {
+    "kind": "loopsbench",
+    "revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+    "source_root_key": "loopsbench",
+    "task": "task_doop_souffle_static_analysis"
+  },
+  "workspace_tree_sha256": "463a92c52fcafedc3778e06c4df9bfd680c56083588bf923529cb0068c5c22a7"
+}

@@ -1,0 +1,19 @@
+{
+  "adapter_config": {
+    "docker_executable": "docker",
+    "task_dir": "/opt/looparena/evaluator_assets/beyondswe_type2/tri80-beyondswe-pylons_pyramid_pr2985-cp7/task"
+  },
+  "adapter_kind": "beyondswe_harbor",
+  "adapter_version": "harbor-verifier-v1",
+  "network": "host",
+  "pass_policy": "reward-equals-one",
+  "runtime_identity": {
+    "image_id": "sha256:d25c5196bf01ce9eee41447d7803d6265db3142949e760d2926ddeab578f5cae",
+    "image_reference": "aweaiteam/beyondswe:pylons_pyramid_pr2985",
+    "platform": "linux/amd64",
+    "workdir": "/workspace/pyramid"
+  },
+  "solve_network": "host",
+  "source_revision": "7d2ced21b4c85f646d5ba8786875d7fbbe08ed49",
+  "timeout_sec": 1200
+}

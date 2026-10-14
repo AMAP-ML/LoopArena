@@ -1,0 +1,10 @@
+{
+  "adapter_kind": "loopsbench",
+  "case_id": "tri80-loopsbench-task_sklearn_ml_toolchain",
+  "episode_origin": "official_problem_start",
+  "harness_start_mode": "bootstrap_contract_start",
+  "official_task_id": "loopsbench:task_sklearn_ml_toolchain",
+  "task_scope": "official_full_task",
+  "task_sequence_ref": "task_sequence.json",
+  "task_sequence_sha256": "b0b2a7b442d15fbe211d4b043646ce08fdc8ce6d7719220fa94b4cc8cec478d6"
+}

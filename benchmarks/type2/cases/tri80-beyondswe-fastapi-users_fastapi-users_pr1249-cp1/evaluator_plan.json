@@ -1,0 +1,19 @@
+{
+  "adapter_config": {
+    "docker_executable": "docker",
+    "task_dir": "/opt/looparena/evaluator_assets/beyondswe_type2/tri80-beyondswe-fastapi-users_fastapi-users_pr1249-cp1/task"
+  },
+  "adapter_kind": "beyondswe_harbor",
+  "adapter_version": "harbor-verifier-v1",
+  "network": "host",
+  "pass_policy": "reward-equals-one",
+  "runtime_identity": {
+    "image_id": "sha256:439497b68b87da26cf119e2c67a87de6927d3b392e4b15f35a3286cf046b2dec",
+    "image_reference": "aweaiteam/beyondswe:fastapi-users_fastapi-users_pr1249",
+    "platform": "linux/amd64",
+    "workdir": "/workspace/fastapi-users"
+  },
+  "solve_network": "host",
+  "source_revision": "7d2ced21b4c85f646d5ba8786875d7fbbe08ed49",
+  "timeout_sec": 1200
+}

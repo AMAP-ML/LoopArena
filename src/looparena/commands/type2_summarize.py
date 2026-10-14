@@ -43,12 +43,16 @@ def _reported_token_total(usage: object) -> int | None:
         return None
     request_count = _int(usage.get("request_count"))
     reported_count = _int(usage.get("usage_reported_request_count"))
-    if request_count is None or reported_count is None:
+    if (
+        request_count is None
+        or reported_count is None
+        or request_count < 0
+        or reported_count < 0
+        or reported_count != request_count
+    ):
         return None
     if request_count == 0:
-        return 0 if reported_count == 0 else None
-    if reported_count != request_count:
-        return None
+        return 0
     total = _int(usage.get("total_tokens"))
     return total if total is not None and total >= 0 else None
 
@@ -58,13 +62,14 @@ def _manifest_usage(attempt: Path) -> dict[str, Any]:
     accounting = manifest.get("compute_accounting") or {}
     main = accounting.get("main_worker") or {}
     controlled = accounting.get("controlled_only") or {}
-    token_groups = [
-        main.get("tokens") or {},
-        controlled.get("reporter_tokens") or {},
-        controlled.get("controller_tokens") or {},
-    ]
+    token_groups = [main.get("tokens") or {}]
+    if manifest.get("arm") == "controlled":
+        token_groups.extend([
+            controlled.get("reporter_tokens") or {},
+            controlled.get("controller_tokens") or {},
+        ])
     reported_tokens = [_reported_token_total(group) for group in token_groups]
-    expected_components = 3 if manifest.get("arm") == "controlled" else 1
+    expected_components = len(token_groups)
     reported_components = sum(value is not None for value in reported_tokens)
     total_tokens = (
         sum(int(value) for value in reported_tokens if value is not None)
@@ -113,7 +118,6 @@ def collect_records(panel_root: Path, plan: PanelPlan) -> list[dict[str, Any]]:
         valid = latest_valid(root, plan, job)
         row: dict[str, Any] = {
             "case_id": job.case_id,
-            "selection_stage": plan.selection_stage.get(job.case_id, "unstratified"),
             "condition_id": job.condition_id,
             "arm": plan.condition(job.condition_id).arm,
             "seed": job.seed,
@@ -204,7 +208,6 @@ def summarize(panel_root: Path) -> dict[str, Any]:
     plan = load_resolved_plan(panel_root / "resolved_plan.json")
     records = collect_records(panel_root, plan)
     condition_summaries: dict[str, dict[str, Any]] = {}
-    selection_stages = sorted(set(plan.selection_stage.values()))
     for condition in plan.conditions:
         rows = [row for row in records if row["condition_id"] == condition.condition_id]
         summary = _group_summary(rows)
@@ -218,12 +221,6 @@ def summarize(panel_root: Path) -> dict[str, Any]:
             if condition.arm == "controlled"
             else None
         )
-        summary["by_selection_stage"] = {
-            stage: _group_summary(
-                [row for row in rows if row["selection_stage"] == stage]
-            )
-            for stage in selection_stages
-        }
         condition_summaries[condition.condition_id] = summary
 
     by_slot: dict[tuple[str, int], dict[str, dict[str, Any]]] = {}
@@ -298,9 +295,6 @@ def summarize(panel_root: Path) -> dict[str, Any]:
             case_matrix.append(
                 {
                     "case_id": case_id,
-                    "selection_stage": plan.selection_stage.get(
-                        case_id, "unstratified"
-                    ),
                     "seed": seed,
                     "conditions": {
                         condition_id: {
@@ -388,7 +382,7 @@ def write_csv(path: Path, summary: dict[str, Any]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8", newline="") as stream:
         writer = csv.writer(stream)
-        writer.writerow(["case_id", "selection_stage", "seed", *condition_ids])
+        writer.writerow(["case_id", "seed", *condition_ids])
         for row in summary["case_matrix"]:
             values = []
             for condition_id in condition_ids:
@@ -401,7 +395,7 @@ def write_csv(path: Path, summary: dict[str, Any]) -> None:
                     else condition["state"]
                 )
             writer.writerow(
-                [row["case_id"], row["selection_stage"], row["seed"], *values]
+                [row["case_id"], row["seed"], *values]
             )
 
 

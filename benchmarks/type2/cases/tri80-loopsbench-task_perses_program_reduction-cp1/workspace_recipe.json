@@ -1,0 +1,474 @@
+{
+  "case_id": "tri80-loopsbench-task_perses_program_reduction-cp1",
+  "files": [
+    {
+      "bytes": 3836,
+      "kind": "file",
+      "mode": 420,
+      "path": "module_dag.yaml",
+      "sha256": "43b691b0d84cb7205ae65bbe111058ddb7fc627162cad1f12eb7645a630b853b",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_perses_program_reduction/module_dag.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "reduction"
+    },
+    {
+      "bytes": 671,
+      "kind": "file",
+      "mode": 420,
+      "path": "reduction/__init__.py",
+      "sha256": "663b12b47bd44c8844106a31cbd93b70774e326f837bc7d5df044dcde0d65c7b",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_perses_program_reduction/base/reduction/__init__.py"
+      }
+    },
+    {
+      "bytes": 1108,
+      "kind": "file",
+      "mode": 420,
+      "path": "reduction/config.py",
+      "sha256": "7ccfa094496272aa3171a9d8d0d91a565c7269570364bda1d2b1952ff2a24a42",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_perses_program_reduction/base/reduction/config.py"
+      }
+    },
+    {
+      "bytes": 5621,
+      "kind": "file",
+      "mode": 420,
+      "path": "reduction/dd.py",
+      "sha256": "aa1754b3cb1aedff5125aadd1911f4a142227b7e0f51d51e634bd6532c6295ca",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_perses_program_reduction/base/reduction/dd.py"
+      }
+    },
+    {
+      "bytes": 4578,
+      "kind": "file",
+      "mode": 420,
+      "path": "reduction/driver.py",
+      "sha256": "b637aa4e11c6273fbb3cac12ff5ce35e858a71daae29d6ba351586d0c6eda27e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_perses_program_reduction/base/reduction/driver.py"
+      }
+    },
+    {
+      "bytes": 11308,
+      "kind": "file",
+      "mode": 420,
+      "path": "reduction/grammar.py",
+      "sha256": "62faf4fe8611149ac070999ba0e03d53f80712b1035796e9adc55cf89b242056",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_perses_program_reduction/base/reduction/grammar.py"
+      }
+    },
+    {
+      "bytes": 11626,
+      "kind": "file",
+      "mode": 420,
+      "path": "reduction/parser.py",
+      "sha256": "70f7183cc94d479571744f88a0ae3fb4b3ac367748cf19da7a55b4a4cf429850",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_perses_program_reduction/base/reduction/parser.py"
+      }
+    },
+    {
+      "bytes": 2547,
+      "kind": "file",
+      "mode": 420,
+      "path": "reduction/property_test.py",
+      "sha256": "77fe7ffa50b2f3ad0f14b3ed54fef9edf9bc4cfdd9e72d9aa42b54443cea6e59",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_perses_program_reduction/base/reduction/property_test.py"
+      }
+    },
+    {
+      "bytes": 1087,
+      "kind": "file",
+      "mode": 420,
+      "path": "reduction/reducer.py",
+      "sha256": "a3fca70867f7d44e1552aaed5d533410cfa92af936122fa8eef5c40995907c7d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_perses_program_reduction/base/reduction/reducer.py"
+      }
+    },
+    {
+      "bytes": 6796,
+      "kind": "file",
+      "mode": 420,
+      "path": "reduction/token.py",
+      "sha256": "65d73b7263c61309f80e7f748a11cd5ec0784f11f5c1858c4f499522aea28874",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_perses_program_reduction/base/reduction/token.py"
+      }
+    },
+    {
+      "bytes": 5723,
+      "kind": "file",
+      "mode": 420,
+      "path": "reduction/tree.py",
+      "sha256": "956706b8981979ed26b5bacafd4d3c1aa0b67a9882d79296d75e3c8bae53682e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_perses_program_reduction/base/reduction/tree.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "requirements"
+    },
+    {
+      "bytes": 1965,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/lpr.yaml",
+      "sha256": "69a443d4191bb71730b9a55f73168e89708913a801b2b149111a5067763d2f66",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_perses_program_reduction/requirements/lpr.yaml"
+      }
+    },
+    {
+      "bytes": 1843,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/perses.yaml",
+      "sha256": "cb4694770270c6332a0b62336e6aa603e1804486d738f6128529cbfcae0f87cd",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_perses_program_reduction/requirements/perses.yaml"
+      }
+    },
+    {
+      "bytes": 2408,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/ppr.yaml",
+      "sha256": "08943a7d8fa651cb1eb11913bd95fca65d93df21d99b0a92984a247ecc499303",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_perses_program_reduction/requirements/ppr.yaml"
+      }
+    },
+    {
+      "bytes": 3149,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/sivand_perses.yaml",
+      "sha256": "7ac07e86cd3a362e77938df5a77d8abaebdd80cb5b83cefea0346f8fb1866a15",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_perses_program_reduction/requirements/sivand_perses.yaml"
+      }
+    },
+    {
+      "bytes": 1716,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/vulcan_1minimality.yaml",
+      "sha256": "76291228be8eb8af59c152818a4d9df82552b9785e4e86ebf126346f1f18cccf",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_perses_program_reduction/requirements/vulcan_1minimality.yaml"
+      }
+    },
+    {
+      "bytes": 619,
+      "kind": "file",
+      "mode": 493,
+      "path": "run-tests.sh",
+      "sha256": "b34815b94ac1110cdd158d48e313a541debce15a4c98e3423cc5d42466d6d93c",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_perses_program_reduction/run-tests.sh"
+      }
+    },
+    {
+      "bytes": 102,
+      "kind": "file",
+      "mode": 493,
+      "path": "run.sh",
+      "sha256": "560fe4f6d1c09a27239974cebe37ddf95be3de6ceef244b65271ed4ce6d5672a",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_perses_program_reduction/base/run.sh"
+      }
+    },
+    {
+      "bytes": 2531,
+      "kind": "file",
+      "mode": 420,
+      "path": "task.yaml",
+      "sha256": "cf75c5edb4a641c92d1ec908fb396a2beb88d5cfe1565b37656bad3b9a3bb42f",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_perses_program_reduction/task.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "test_subjects"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "test_subjects/bug1"
+    },
+    {
+      "bytes": 482,
+      "kind": "file",
+      "mode": 420,
+      "path": "test_subjects/bug1/program.py",
+      "sha256": "c8aa3943c222ddb68d55b54840e98f868d434c198c5a1d70ef6ab2cf78c9afc4",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_perses_program_reduction/base/test_subjects/bug1/program.py"
+      }
+    },
+    {
+      "bytes": 57,
+      "kind": "file",
+      "mode": 493,
+      "path": "test_subjects/bug1/test.sh",
+      "sha256": "4026dc24a5cdcbe09e657b9da344c6990d399aba38f547542846d7c9e880ddd7",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_perses_program_reduction/base/test_subjects/bug1/test.sh"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "test_subjects/bug2"
+    },
+    {
+      "bytes": 752,
+      "kind": "file",
+      "mode": 420,
+      "path": "test_subjects/bug2/program.py",
+      "sha256": "006b42a1e24070f6db785e69f17fcd096704d4e87b8617475e97df223116dcef",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_perses_program_reduction/base/test_subjects/bug2/program.py"
+      }
+    },
+    {
+      "bytes": 60,
+      "kind": "file",
+      "mode": 493,
+      "path": "test_subjects/bug2/test.sh",
+      "sha256": "6a7319fd3193735cbf48ecb567259d642c5d62d1f475dc671f4e825d2929345b",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_perses_program_reduction/base/test_subjects/bug2/test.sh"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "test_subjects/bug3"
+    },
+    {
+      "bytes": 825,
+      "kind": "file",
+      "mode": 420,
+      "path": "test_subjects/bug3/program.py",
+      "sha256": "ba9e09e0d53fc7049ac2fd348261bd5b48c3fd1a06913611bbc7fc5a688c6efd",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_perses_program_reduction/base/test_subjects/bug3/program.py"
+      }
+    },
+    {
+      "bytes": 53,
+      "kind": "file",
+      "mode": 493,
+      "path": "test_subjects/bug3/test.sh",
+      "sha256": "29c4a2af2d3a008197844ac5a5e682258e6e11b6c98c3c0f61aa2be4fab9d61c",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_perses_program_reduction/base/test_subjects/bug3/test.sh"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "test_subjects/ppr_bug1"
+    },
+    {
+      "bytes": 288,
+      "kind": "file",
+      "mode": 420,
+      "path": "test_subjects/ppr_bug1/seed.py",
+      "sha256": "de092f81068466c9b0820d948e9a6e28742bf3480d99a56d2a5b4b2706c42406",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_perses_program_reduction/base/test_subjects/ppr_bug1/seed.py"
+      }
+    },
+    {
+      "bytes": 94,
+      "kind": "file",
+      "mode": 493,
+      "path": "test_subjects/ppr_bug1/test_seed.sh",
+      "sha256": "52c8348dfe145ec9df8c50569ccbbb6227eaf2cf6c0a3c3ed2de0b47a6616184",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_perses_program_reduction/base/test_subjects/ppr_bug1/test_seed.sh"
+      }
+    },
+    {
+      "bytes": 99,
+      "kind": "file",
+      "mode": 493,
+      "path": "test_subjects/ppr_bug1/test_variant.sh",
+      "sha256": "10201e408b011fc73c43b3c8f26802f66c33dafc35924adb417a8d310deb8d38",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_perses_program_reduction/base/test_subjects/ppr_bug1/test_variant.sh"
+      }
+    },
+    {
+      "bytes": 396,
+      "kind": "file",
+      "mode": 420,
+      "path": "test_subjects/ppr_bug1/variant.py",
+      "sha256": "69bdd1b393bcf5f815fa5cbea213a410b2cb7adc1c908da21ee0d3907c2cbeb5",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_perses_program_reduction/base/test_subjects/ppr_bug1/variant.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/lpr"
+    },
+    {
+      "bytes": 3245,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/lpr/test_outputs.py",
+      "sha256": "56d860dc63d7cbd495bc83e43dfae44387154b8c4776546f37cba95ffc4e888e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_perses_program_reduction/tests/lpr/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/perses"
+    },
+    {
+      "bytes": 4048,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/perses/test_outputs.py",
+      "sha256": "780fc76b182a157450616d2835ae2eb339439d161bf7cac84d7999233c5332da",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_perses_program_reduction/tests/perses/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/ppr"
+    },
+    {
+      "bytes": 2733,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/ppr/test_outputs.py",
+      "sha256": "ff208fbaa6fbaadd62e67216b3f73cf586fc63e0118f404d981009aaac5599d8",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_perses_program_reduction/tests/ppr/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/sivand_perses"
+    },
+    {
+      "bytes": 6013,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/sivand_perses/test_outputs.py",
+      "sha256": "a49db55b12ca34448fdb6ee1e13fa02f022240dae8906833005de0966c4674f9",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_perses_program_reduction/tests/sivand_perses/test_outputs.py"
+      }
+    },
+    {
+      "bytes": 526,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/sivand_perses/test_sivand_outputs.py",
+      "sha256": "3a4bb663edbef3e2633b8717913fc2f2b31fb32283fac2b95a5dc6952ad59b50",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_perses_program_reduction/tests/sivand_perses/test_sivand_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/vulcan_1minimality"
+    },
+    {
+      "bytes": 3016,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/vulcan_1minimality/test_outputs.py",
+      "sha256": "8df13b0a5750fa1f55c8b3519da2f9b1e7d1a22e98685a2e1245dcec2de987b8",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_perses_program_reduction/tests/vulcan_1minimality/test_outputs.py"
+      }
+    },
+    {
+      "bytes": 1760,
+      "kind": "file",
+      "mode": 420,
+      "path": "unit_dag.json",
+      "sha256": "f724edd5f03b07f2ece8e728344fbe44ff51d10fe31e5395734b53a58585c6b6",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_perses_program_reduction/unit_dag.json"
+      }
+    }
+  ],
+  "overlay_sha256": "272adeccafe73e7009d51f2ec2be9871db5e0eb14239f483ea429be26c3c6402",
+  "upstream": {
+    "kind": "loopsbench",
+    "revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+    "source_root_key": "loopsbench",
+    "task": "task_perses_program_reduction"
+  },
+  "workspace_tree_sha256": "684f7f88313d8778e5c08fe8b336d60d5214a9a8a6c87ea84a52a581817b8188"
+}

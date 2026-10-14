@@ -1,0 +1,20 @@
+{
+  "adapter_kind": "beyondswe_harbor",
+  "checkpoint_context_policy": "single_episode",
+  "checkpoint_failure_policy": "stop_after_task",
+  "official_parent_commit": "54d9ad7b43951a63a4bbcef95961c1eb1779ef00",
+  "official_task_id": "beyondswe:matthieudartiailh_bytecode_pr56",
+  "official_workdir": "/workspace/bytecode",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/task.json",
+      "evaluator_plan_sha256": "acf80f746242e92bbe1822522c85748b0b314fcf5143acf01c7716836db73eb4",
+      "step_id": "task",
+      "task_ref": "tasks/task.md",
+      "task_sha256": "d5cc52d67616b0a0c7df76a80723c937f8bc2179936dc7a41f3a2a5da21a46ad"
+    }
+  ],
+  "target_step": "task",
+  "task_scope": "official_full_task",
+  "workspace_origin": "pinned_source_image_parent_commit"
+}

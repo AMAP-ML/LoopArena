@@ -1,0 +1,10 @@
+{
+  "adapter_kind": "beyondswe_harbor",
+  "case_id": "tri80-beyondswe-hackingmaterials_matminer_pr925",
+  "episode_origin": "official_problem_start",
+  "harness_start_mode": "bootstrap_contract_start",
+  "official_task_id": "beyondswe:hackingmaterials_matminer_pr925",
+  "task_scope": "official_full_task",
+  "task_sequence_ref": "task_sequence.json",
+  "task_sequence_sha256": "abd0e2f521a45f60c58cad002f7c2d3b8c8ddcabce23c53a69cd35b39568a00b"
+}

@@ -518,6 +518,13 @@ class ContinuousHarnessSession:
             "controller_wall_time_sec": round(controller_processing_wall_time, 6),
             "controller_elapsed_wall_time_sec": round(controller_wall_time, 6),
         }
+        if self._control_channel_wall_time_used_sec >= self.max_control_channel_wall_time_sec:
+            self.status = "control_channel_budget_exhausted"
+            self.termination_reason = "control_channel_wall_time_exhausted"
+            event["action"] = ""
+            event["contract_applied"] = False
+            self.control_events.append(event)
+            return False
         if result.validation_errors:
             self._controller_conversation = [
                 *copy.deepcopy(result.messages),
@@ -532,6 +539,9 @@ class ContinuousHarnessSession:
             elif result.failure_kind == "controller_context_preflight_exhausted":
                 self.status = "controller_context_preflight_exhausted"
                 self.termination_reason = "controller_context_preflight_exhausted"
+            elif result.failure_kind == controller_api.CONTROLLER_OUTPUT_LIMIT_EXHAUSTED:
+                self.status = controller_api.CONTROLLER_OUTPUT_LIMIT_EXHAUSTED
+                self.termination_reason = controller_api.CONTROLLER_OUTPUT_LIMIT_EXHAUSTED
             else:
                 self.status = "invalid_contract"
                 self.termination_reason = "invalid_contract"
@@ -570,8 +580,8 @@ class ContinuousHarnessSession:
         runtime_budget = None
         if self.fixed_control:
             # The fixed policy never reads Reporter output, and Reporter output is
-            # never shown to the Worker. Supply the live count directly to
-            # preserve the Worker-visible budget.
+            # never shown to the Worker. Skip that call while preserving the
+            # Worker-visible budget through the live count.
             runtime_budget = R.resolve_worker_budget(packet)
             runtime_budget["remaining_inner_react_turns"] = max(
                 0,
@@ -794,8 +804,8 @@ class ContinuousHarnessSession:
             cycle_index = 0
             next_action = "call_worker"
         if self.fixed_control and next_action == "call_reporter":
-            # Resume older fixed-control attempts from the same safe boundary
-            # without invoking the Reporter or changing the Worker conversation.
+            # Resume fixed control from the same safe boundary without invoking
+            # the Reporter or changing the Worker conversation.
             next_action = "call_controller"
             self._pending_reporter_state = None
         while self.status == "running":

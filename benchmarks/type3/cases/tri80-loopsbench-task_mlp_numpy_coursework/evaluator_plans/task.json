@@ -1,0 +1,33 @@
+{
+  "adapter_config": {
+    "docker_executable": "docker",
+    "expected_test_count": 1,
+    "expected_unit_ids": [
+      "errors",
+      "layers_batch_conv",
+      "layers_core",
+      "learning_rules",
+      "models",
+      "selu",
+      "optimisers"
+    ],
+    "result_protocol": "task_runner_pytest",
+    "runtime_assets_dir": "/opt/looparena/evaluator_assets/evaluator_runtime",
+    "task_dir": "/opt/looparena/evaluator_assets/tasks/task_mlp_numpy_coursework"
+  },
+  "adapter_kind": "loopsbench",
+  "adapter_version": "source-run-tests-v1",
+  "evaluator_revision": "5880b64491e2cac2f83d497153ed173b8a995b8b",
+  "network": "bridge",
+  "pass_policy": "all-source-unit-tests-pass",
+  "runtime_identity": {
+    "image_id": "sha256:29d0df4fa126c7014914c60d79a69746100b669767d60596d69202fb6b2cc341",
+    "image_reference": "looparena-loopsbench-84ae415/task_mlp_numpy_coursework:frozen",
+    "platform": "linux/amd64",
+    "task_tree_sha256": "8ffd6bdd11dd0496f7aa8e9fa8e74cf218d5e3d6393d84866ab823b2b61af70b",
+    "workdir": "/workspace"
+  },
+  "solve_network": "bridge",
+  "source_revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+  "timeout_sec": 600
+}

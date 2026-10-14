@@ -1,0 +1,1000 @@
+{
+  "case_id": "tri80-loopsbench-task_mlp_numpy_coursework-cp3",
+  "files": [
+    {
+      "bytes": 729,
+      "kind": "file",
+      "mode": 420,
+      "path": ".gitignore",
+      "sha256": "0a5c89c0ca7d5e9671b822f3e02b5e44caaab520538a41027ff6fc3aaef2a1fe",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/.gitignore"
+      }
+    },
+    {
+      "bytes": 1527,
+      "kind": "file",
+      "mode": 420,
+      "path": "LICENSE",
+      "sha256": "3178495468b0bbb8bed0f1fdc1773c388258d9d6af397a292cda92b0eb22ea1d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/LICENSE"
+      }
+    },
+    {
+      "bytes": 1872,
+      "kind": "file",
+      "mode": 420,
+      "path": "README.md",
+      "sha256": "fafe9be313bdc46f59bb4f27ebfd887a52a117baca17803526924d852c25a732",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/README.md"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "data"
+    },
+    {
+      "bytes": 232740,
+      "kind": "file",
+      "mode": 420,
+      "path": "data/HadSSP_daily_qc.txt",
+      "sha256": "e6a7f5182fb4a6cd14b286ac1961c7a49b518f020987484c5293b213deab0c08",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/data/HadSSP_daily_qc.txt"
+      }
+    },
+    {
+      "bytes": 350007,
+      "kind": "file",
+      "mode": 420,
+      "path": "data/ccpp_data.npz",
+      "sha256": "8d0fe3cb2042c727f3c0cc3c32596800782a3e776a772f4cfb43574599831f8b",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/data/ccpp_data.npz"
+      }
+    },
+    {
+      "bytes": 12403376,
+      "kind": "file",
+      "mode": 420,
+      "path": "data/emnist-test.npz",
+      "sha256": "cdf2def19bff71f6087d2fbdcf0cb88fc0d8ed8b9c042bb394e11b0b2fb93afc",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/data/emnist-test.npz"
+      }
+    },
+    {
+      "bytes": 78500392,
+      "kind": "file",
+      "mode": 420,
+      "path": "data/emnist-train.npz",
+      "sha256": "7b9cf7d4eb5d8b301919123069aceb5051c8ea1705ec818fd451a7aadb7962e7",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/data/emnist-train.npz"
+      }
+    },
+    {
+      "bytes": 12403376,
+      "kind": "file",
+      "mode": 420,
+      "path": "data/emnist-valid.npz",
+      "sha256": "5bf81a73e461296197c6a8dc20e5e9a0e774561a0424b3c9486017071c044a96",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/data/emnist-valid.npz"
+      }
+    },
+    {
+      "bytes": 2016807,
+      "kind": "file",
+      "mode": 420,
+      "path": "data/mnist-test.npz",
+      "sha256": "d803059d12a596fbb787ca4fb8e6d83d60e5360814ef117c9f2348e0fa86e428",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/data/mnist-test.npz"
+      }
+    },
+    {
+      "bytes": 2030592,
+      "kind": "file",
+      "mode": 420,
+      "path": "data/mnist-valid.npz",
+      "sha256": "1bc45a60ed7819dfb6e8fc4642d2c067fa107c72ff06e382ad6cd672c0776b7d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/data/mnist-valid.npz"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "mlp"
+    },
+    {
+      "bytes": 216,
+      "kind": "file",
+      "mode": 420,
+      "path": "mlp/__init__.py",
+      "sha256": "ffaa25fce03406369dc624009e439fe05e42330f3f79d79ad1b25a303de7e816",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/mlp/__init__.py"
+      }
+    },
+    {
+      "bytes": 18832,
+      "kind": "file",
+      "mode": 420,
+      "path": "mlp/data_providers.py",
+      "sha256": "cbac68192a61b73adc7f300e2c025225e30f7fe4a01fc94d94035e47f33508f5",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/mlp/data_providers.py"
+      }
+    },
+    {
+      "bytes": 5999,
+      "kind": "file",
+      "mode": 420,
+      "path": "mlp/errors.py",
+      "sha256": "8664b59ded158239d4927f42851afa1428923a7ae9ab97a8e707c91d3a0f49af",
+      "source": {
+        "blob": "8664b59ded158239d4927f42851afa1428923a7ae9ab97a8e707c91d3a0f49af",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 5023,
+      "kind": "file",
+      "mode": 420,
+      "path": "mlp/initialisers.py",
+      "sha256": "728670c56ec5feb46a052db1e410d910f9945715b999a7cb3d29511ada9bd4c8",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/mlp/initialisers.py"
+      }
+    },
+    {
+      "bytes": 42344,
+      "kind": "file",
+      "mode": 420,
+      "path": "mlp/layers.py",
+      "sha256": "2aa35ee19d92f4999b2ab18a90815b052bc46e4a0990d768732b331f43ceabfc",
+      "source": {
+        "blob": "2aa35ee19d92f4999b2ab18a90815b052bc46e4a0990d768732b331f43ceabfc",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 9646,
+      "kind": "file",
+      "mode": 420,
+      "path": "mlp/learning_rules.py",
+      "sha256": "f4c9b10417c0cfd530d54d4d1f8d611d42854e9e385702baac3f637ff44cb4b2",
+      "source": {
+        "blob": "f4c9b10417c0cfd530d54d4d1f8d611d42854e9e385702baac3f637ff44cb4b2",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 5767,
+      "kind": "file",
+      "mode": 420,
+      "path": "mlp/models.py",
+      "sha256": "2f9cb7a4e732d6f3f4a20c479ba29d0b09b70276892f3e9d70e4c9aca5a2cb7e",
+      "source": {
+        "blob": "2f9cb7a4e732d6f3f4a20c479ba29d0b09b70276892f3e9d70e4c9aca5a2cb7e",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 3306,
+      "kind": "file",
+      "mode": 420,
+      "path": "mlp/optimisers.py",
+      "sha256": "a3071920600a58bb55bf3547172b912fe2ca65f11f6a25207a4c9e3f8db2c29d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/mlp/optimisers.py"
+      }
+    },
+    {
+      "bytes": 1120,
+      "kind": "file",
+      "mode": 420,
+      "path": "mlp/schedulers.py",
+      "sha256": "d40886b5deda1a8d36edd491c0c210277cc2bbcabc878279cc8ce2bb0514bed7",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/mlp/schedulers.py"
+      }
+    },
+    {
+      "bytes": 5636,
+      "kind": "file",
+      "mode": 420,
+      "path": "module_dag.yaml",
+      "sha256": "0c54ebc7b86a37575d95ceea94223407c27e5c96190bf1ddf68a6bbb472ebbe2",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/module_dag.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "notebooks"
+    },
+    {
+      "bytes": 264712,
+      "kind": "file",
+      "mode": 420,
+      "path": "notebooks/01_Introduction.ipynb",
+      "sha256": "6c4fecb8517428d8c633c60e5e77d659b0c3ba8ac0635e03f69dc31c5af5fecc",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/notebooks/01_Introduction.ipynb"
+      }
+    },
+    {
+      "bytes": 543799,
+      "kind": "file",
+      "mode": 420,
+      "path": "notebooks/02_Single_layer_models.ipynb",
+      "sha256": "c20fc7f58143d2d410eb4f67a3bacf4bfbb50790fb481bdfd2d04c9ae5ad54f7",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/notebooks/02_Single_layer_models.ipynb"
+      }
+    },
+    {
+      "bytes": 1191026,
+      "kind": "file",
+      "mode": 420,
+      "path": "notebooks/03_Multiple_layer_models.ipynb",
+      "sha256": "1c98360950da7a044d680fc9c26d94936cd45ca72f5b24cd118cb063e3df4c73",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/notebooks/03_Multiple_layer_models.ipynb"
+      }
+    },
+    {
+      "bytes": 371019,
+      "kind": "file",
+      "mode": 420,
+      "path": "notebooks/04_Generalisation_and_overfitting.ipynb",
+      "sha256": "9f66fd7b28de8ed9e3fd542e6467c3eac0cefe5efab25ba41dc000d930fc35c6",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/notebooks/04_Generalisation_and_overfitting.ipynb"
+      }
+    },
+    {
+      "bytes": 967868,
+      "kind": "file",
+      "mode": 420,
+      "path": "notebooks/05_Non-linearities_and_regularisation.ipynb",
+      "sha256": "6341e2207c6ac9b2b112ad85390cc5222cc62b2c2d73b0e60a3d1f2cfa715d44",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/notebooks/05_Non-linearities_and_regularisation.ipynb"
+      }
+    },
+    {
+      "bytes": 210524,
+      "kind": "file",
+      "mode": 420,
+      "path": "notebooks/06_Dropout_and_maxout.ipynb",
+      "sha256": "6f4f32afd1c82ee268caeb7e5083b2f09d5686961ee80fcef1724934fc8efb4f",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/notebooks/06_Dropout_and_maxout.ipynb"
+      }
+    },
+    {
+      "bytes": 17627,
+      "kind": "file",
+      "mode": 420,
+      "path": "notebooks/07_Autoencoders.ipynb",
+      "sha256": "69cbd6242b35d5df4325b70d2e9b93fef1aebad16dbe5666d89568d5aa94984d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/notebooks/07_Autoencoders.ipynb"
+      }
+    },
+    {
+      "bytes": 6514,
+      "kind": "file",
+      "mode": 420,
+      "path": "notebooks/BatchNormalizationLayer_tests.ipynb",
+      "sha256": "54eb272c56454fe9ae18a222a47ff9c6eca35cf6de1e5afc2b478e6f4189174d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/notebooks/BatchNormalizationLayer_tests.ipynb"
+      }
+    },
+    {
+      "bytes": 14535,
+      "kind": "file",
+      "mode": 420,
+      "path": "notebooks/ConvolutionalLayer_tests.ipynb",
+      "sha256": "5626ae00f6912097ac8de0e46f938c1a4bd3ead124a2a7802798f1db3b6ad860",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/notebooks/ConvolutionalLayer_tests.ipynb"
+      }
+    },
+    {
+      "bytes": 6241,
+      "kind": "file",
+      "mode": 420,
+      "path": "notebooks/Coursework_2.ipynb",
+      "sha256": "eae00b82adb42a682ee62c70843d4dba2df9b593bdf34e721383c234b64f27d6",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/notebooks/Coursework_2.ipynb"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "notebooks/res"
+    },
+    {
+      "bytes": 204246,
+      "kind": "file",
+      "mode": 420,
+      "path": "notebooks/res/code_scheme.svg",
+      "sha256": "a61602a347414aff9d7533c31b0357e793840cdda7187c97d2f2ff5e34fbc23a",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/notebooks/res/code_scheme.svg"
+      }
+    },
+    {
+      "bytes": 7112,
+      "kind": "file",
+      "mode": 420,
+      "path": "notebooks/res/fprop-bprop-block-diagram.png",
+      "sha256": "f7614e6075233b8ed2d0afb0109bfc51710f05ea453385e06427f9d14f4380bd",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/notebooks/res/fprop-bprop-block-diagram.png"
+      }
+    },
+    {
+      "bytes": 2268,
+      "kind": "file",
+      "mode": 420,
+      "path": "notebooks/res/fprop-bprop-block-diagram.tex",
+      "sha256": "e870b665a79ab559ed04ab75ebc2eddd3e9a0d959831b56cec73b1a9e5d95913",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/notebooks/res/fprop-bprop-block-diagram.tex"
+      }
+    },
+    {
+      "bytes": 21919,
+      "kind": "file",
+      "mode": 420,
+      "path": "notebooks/res/jupyter-dashboard.png",
+      "sha256": "d5ea37bbe7d6fe16d1f286a97dd10e5e87923434b645ff093d30bac8aab29d34",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/notebooks/res/jupyter-dashboard.png"
+      }
+    },
+    {
+      "bytes": 29642,
+      "kind": "file",
+      "mode": 420,
+      "path": "notebooks/res/jupyter-notebook-interface.png",
+      "sha256": "4795472551c6d4317f543cf533bb996443d66d68f561eef6046083b8136fecc7",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/notebooks/res/jupyter-notebook-interface.png"
+      }
+    },
+    {
+      "bytes": 70872,
+      "kind": "file",
+      "mode": 420,
+      "path": "notebooks/res/singleLayerNetBP-1.png",
+      "sha256": "820197d35f0a83a8805f492032196e7cd2a696b077514abe247f95209a2e4977",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/notebooks/res/singleLayerNetBP-1.png"
+      }
+    },
+    {
+      "bytes": 63208,
+      "kind": "file",
+      "mode": 420,
+      "path": "notebooks/res/singleLayerNetPredict.png",
+      "sha256": "af88b49003bc4acfe9f3cd05e98d17f1dcf51490c7a55bde49cf09ab4a7da007",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/notebooks/res/singleLayerNetPredict.png"
+      }
+    },
+    {
+      "bytes": 62483,
+      "kind": "file",
+      "mode": 420,
+      "path": "notebooks/res/singleLayerNetWts-1.png",
+      "sha256": "3d42bcac6e91d247d934673d9c8bc1d9a06599af16ee952712bf1dc02c9f231e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/notebooks/res/singleLayerNetWts-1.png"
+      }
+    },
+    {
+      "bytes": 75201,
+      "kind": "file",
+      "mode": 420,
+      "path": "notebooks/res/singleLayerNetWtsEqns-1.png",
+      "sha256": "4b21a84763ba49a7e3cdc6cfa2f34390436e55b4da8f4e7139cb439d6eeeefba",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/notebooks/res/singleLayerNetWtsEqns-1.png"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "notes"
+    },
+    {
+      "bytes": 26016,
+      "kind": "file",
+      "mode": 420,
+      "path": "notes/environment-set-up.md",
+      "sha256": "e0293f0aedf43fcffec0f64f98f1f20b7f1881587564712566c4218ce2628e32",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/notes/environment-set-up.md"
+      }
+    },
+    {
+      "bytes": 2284,
+      "kind": "file",
+      "mode": 420,
+      "path": "notes/getting-started-in-a-lab.md",
+      "sha256": "d03c7e54ee3c78a0b129613aa766fbc33c8e02664563e693361dc20caa2a447a",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/notes/getting-started-in-a-lab.md"
+      }
+    },
+    {
+      "bytes": 2543,
+      "kind": "file",
+      "mode": 420,
+      "path": "notes/quota-issue.md",
+      "sha256": "933ab6f5fcda8f705d7d42895c7a0ed20d4a3dccf5548efd659756cee5bee152",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/notes/quota-issue.md"
+      }
+    },
+    {
+      "bytes": 6737,
+      "kind": "file",
+      "mode": 420,
+      "path": "notes/running-notebooks-remotely.md",
+      "sha256": "9dffa4062621e1fa2a9cbe365095e5dd96b1cd1f4e74d7a726c219c21ce81d73",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/notes/running-notebooks-remotely.md"
+      }
+    },
+    {
+      "bytes": 114,
+      "kind": "file",
+      "mode": 420,
+      "path": "open.sh",
+      "sha256": "2d5c13047fffad88754f34aac9fc5d460879f705f74c666e6a7f0d5e59b9b562",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/open.sh"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "report"
+    },
+    {
+      "bytes": 2302,
+      "kind": "file",
+      "mode": 420,
+      "path": "report/algorithm.sty",
+      "sha256": "ab166def454ffae005796a1fbe46f52932a07476d64ea82f3c837a70a3ec71c2",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/report/algorithm.sty"
+      }
+    },
+    {
+      "bytes": 7615,
+      "kind": "file",
+      "mode": 420,
+      "path": "report/algorithmic.sty",
+      "sha256": "cefd7a1195973a8404b12f201ead97af3e6983dac32d5b54efb976f54cda31d5",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/report/algorithmic.sty"
+      }
+    },
+    {
+      "bytes": 2125,
+      "kind": "file",
+      "mode": 420,
+      "path": "report/example-refs.bib",
+      "sha256": "949b00b3feb8e15b6c7df80280499653375e67972656e5e43ac1fe96d7a7a47f",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/report/example-refs.bib"
+      }
+    },
+    {
+      "bytes": 21006,
+      "kind": "file",
+      "mode": 420,
+      "path": "report/fancyhdr.sty",
+      "sha256": "b2fe599152ac8018b4fb9fd15d23a2a4333edc43b6289200afa3199b13048f54",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/report/fancyhdr.sty"
+      }
+    },
+    {
+      "bytes": 27012,
+      "kind": "file",
+      "mode": 420,
+      "path": "report/icml2017.bst",
+      "sha256": "d80028529827c77993697c04f6b486786b8fb2486d68b37c840a388c7a57f574",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/report/icml2017.bst"
+      }
+    },
+    {
+      "bytes": 10843,
+      "kind": "file",
+      "mode": 420,
+      "path": "report/mlp-cw1-template.tex",
+      "sha256": "14951ae84b3f4039141b3061ba68f71a3b4c2ce5aae6dd66abe9bf90c38ba005",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/report/mlp-cw1-template.tex"
+      }
+    },
+    {
+      "bytes": 11496,
+      "kind": "file",
+      "mode": 420,
+      "path": "report/mlp-cw2-template.tex",
+      "sha256": "774d940cbfee560a3580a42e423112e710777bf703ee8ed012d78df2fa2004a0",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/report/mlp-cw2-template.tex"
+      }
+    },
+    {
+      "bytes": 24079,
+      "kind": "file",
+      "mode": 420,
+      "path": "report/mlp2017.sty",
+      "sha256": "bd03f033bd2197bde46c69936d4c7b8d1ef9088624506ad48b56c69fd93ae006",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/report/mlp2017.sty"
+      }
+    },
+    {
+      "bytes": 45154,
+      "kind": "file",
+      "mode": 420,
+      "path": "report/natbib.sty",
+      "sha256": "88bc70c0e48461934cab5b2accef06b74a8b3ac45ad03ccd3f2a6b7e0d6d530d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/report/natbib.sty"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "requirements"
+    },
+    {
+      "bytes": 1061,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/errors.yaml",
+      "sha256": "eb12a71d8cbc29fa49e32865a4117fc4ef6f67ca046f6a46fab17470bf6ff642",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/requirements/errors.yaml"
+      }
+    },
+    {
+      "bytes": 1718,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/layers_batch_conv.yaml",
+      "sha256": "da490d98aaf678a6dcca571a0c1a11e0dd27c4f596bacbd2db8f8a77e0c2422a",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/requirements/layers_batch_conv.yaml"
+      }
+    },
+    {
+      "bytes": 2423,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/layers_core.yaml",
+      "sha256": "47d3146573889c1113dba0010a6e5b1aa048bd087455d8e50e01c6fbb255c709",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/requirements/layers_core.yaml"
+      }
+    },
+    {
+      "bytes": 2630,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/learning_rules.yaml",
+      "sha256": "fbad8d81943c245769cbe834af2a027a0f61230324310200e2b5daf5bbb8ac11",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/requirements/learning_rules.yaml"
+      }
+    },
+    {
+      "bytes": 1943,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/models.yaml",
+      "sha256": "0492f0dbb0454aff2c1b41b0385f5dd178fad7a23e5c5c9570b787c1c95d4c73",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/requirements/models.yaml"
+      }
+    },
+    {
+      "bytes": 1068,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/optimisers.yaml",
+      "sha256": "348184b1d5a64319f7c4a5b396bdd11ddf6b05fc3b2f81dd23cc6d6a235f8820",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/requirements/optimisers.yaml"
+      }
+    },
+    {
+      "bytes": 870,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/selu.yaml",
+      "sha256": "e5e999c5d41159edce9d335b6b5f05cbe081355dbc508f5b81df2dee3a9bb04a",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/requirements/selu.yaml"
+      }
+    },
+    {
+      "bytes": 858,
+      "kind": "file",
+      "mode": 420,
+      "path": "run-tests.sh",
+      "sha256": "7f0adadd3a634662a3fbca08ca0cc2e1bb5e6e94c949b95fbd11d63f254d894b",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/run-tests.sh"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "scripts"
+    },
+    {
+      "bytes": 1533,
+      "kind": "file",
+      "mode": 420,
+      "path": "scripts/generate_batchnorm_test.py",
+      "sha256": "831c4c0d1f15878685b61f3cedc365bda8291797079033362ddfaecef685d804",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/scripts/generate_batchnorm_test.py"
+      }
+    },
+    {
+      "bytes": 2662,
+      "kind": "file",
+      "mode": 420,
+      "path": "scripts/generate_conv_test.py",
+      "sha256": "f40c085053fa4f5eef8e5722a935ffb4d55252c79f11cc0662bf60e731d83ded",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/scripts/generate_conv_test.py"
+      }
+    },
+    {
+      "bytes": 3342,
+      "kind": "file",
+      "mode": 420,
+      "path": "scripts/secure-notebook-server.sh",
+      "sha256": "2a5ffb8592860b03ef0fb305411df2f62a2849d170441eb9c3b783e5fdbc26f5",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/scripts/secure-notebook-server.sh"
+      }
+    },
+    {
+      "bytes": 415,
+      "kind": "file",
+      "mode": 420,
+      "path": "setup.py",
+      "sha256": "7a1f5f1232a5f4adbb1313ced690c747b98466325eea0a1a6f844da50f41f332",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/setup.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "spec"
+    },
+    {
+      "bytes": 25274,
+      "kind": "file",
+      "mode": 420,
+      "path": "spec/coursework1.tex",
+      "sha256": "ca87983c7b274b28d24b1582f6152930839e91aec37a845725dfe687772ea7f9",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/spec/coursework1.tex"
+      }
+    },
+    {
+      "bytes": 21923,
+      "kind": "file",
+      "mode": 420,
+      "path": "spec/coursework2.tex",
+      "sha256": "445f0c35604be1769e5f63c58d7045c2fcd7d17796bb980473361bc0c588080e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/spec/coursework2.tex"
+      }
+    },
+    {
+      "bytes": 946,
+      "kind": "file",
+      "mode": 420,
+      "path": "spec/cw1-references.bib",
+      "sha256": "04fcfa6e6a5ebe5dc99f779f8ef01be1ebba09f9b3fd2f02400e20403a10b968",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/spec/cw1-references.bib"
+      }
+    },
+    {
+      "bytes": 2096,
+      "kind": "file",
+      "mode": 420,
+      "path": "spec/cw2-references.bib",
+      "sha256": "815f6979db939a94b4066651e7a76902a7952587a77f29905d4f0f564116653a",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/base/spec/cw2-references.bib"
+      }
+    },
+    {
+      "bytes": 13241,
+      "kind": "file",
+      "mode": 420,
+      "path": "task.yaml",
+      "sha256": "92fe4a27a769477a15b0a0f7a0e35f42806c8a49e7e2518f5a8bb51b4c828b82",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/task.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/errors"
+    },
+    {
+      "bytes": 4281,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/errors/test_errors_expanded.py",
+      "sha256": "d918fc845a5093148963f2d783be8e0cbbbba0184a8a5cadaa853f0a1d324295",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/tests/errors/test_errors_expanded.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/layers_batch_conv"
+    },
+    {
+      "bytes": 15618,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/layers_batch_conv/test_layers_batch_conv_outputs.py",
+      "sha256": "486fe19d7f7cc1d3846d1f62ee4c2907973adfac4056439df7de05a7e21e912c",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/tests/layers_batch_conv/test_layers_batch_conv_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/layers_core"
+    },
+    {
+      "bytes": 13654,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/layers_core/test_layers_core_expanded.py",
+      "sha256": "15f31fb35990eed384eaf3b7df18fdb14758a70da649d8d8e5dc49a656de49ff",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/tests/layers_core/test_layers_core_expanded.py"
+      }
+    },
+    {
+      "bytes": 3408,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/layers_core/test_layers_core_outputs.py",
+      "sha256": "82001eac2d4142ed7bf6975dff4ee9e7695aeb3b945f89e7286591b3e75891b6",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/tests/layers_core/test_layers_core_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/learning_rules"
+    },
+    {
+      "bytes": 4227,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/learning_rules/test_learning_rules_expanded.py",
+      "sha256": "0554c9c206c26291050df48fe447d467cfb04b23541b12c774f8e47952e623b4",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/tests/learning_rules/test_learning_rules_expanded.py"
+      }
+    },
+    {
+      "bytes": 5057,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/learning_rules/test_learning_rules_outputs.py",
+      "sha256": "838aee7aa9b71e0d984629fec0193ac34031b745aa8f5181ec1f0d2bba0a83ca",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/tests/learning_rules/test_learning_rules_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/models"
+    },
+    {
+      "bytes": 3888,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/models/test_models_expanded.py",
+      "sha256": "e2d364d8581156dc9449e3699789dc88af61026b1e0784197abf4b1dd6c23ca1",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/tests/models/test_models_expanded.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/optimisers"
+    },
+    {
+      "bytes": 6175,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/optimisers/test_optimisers_expanded.py",
+      "sha256": "ef5742b7df8630d984a74f0d2b7d21945f7336dfc50cc965620f332d39a0d24b",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/tests/optimisers/test_optimisers_expanded.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/selu"
+    },
+    {
+      "bytes": 1566,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/selu/test_selu_outputs.py",
+      "sha256": "1c9f7ad7a1336e31664acb61c05301e46e65f91bd60f09123555622d728c6612",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/tests/selu/test_selu_outputs.py"
+      }
+    },
+    {
+      "bytes": 1002,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_task_runner.py",
+      "sha256": "9560ba38d547c55ce495cb501dad877c32cf8176534df733ec575d4b5f890840",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/tests/test_task_runner.py"
+      }
+    },
+    {
+      "bytes": 5719,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_unit_runner.py",
+      "sha256": "24f7b81a90861315f06763d0d3ce8601459ebdbdc0ba66ca204e137abb3c320f",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/tests/test_unit_runner.py"
+      }
+    },
+    {
+      "bytes": 2230,
+      "kind": "file",
+      "mode": 420,
+      "path": "unit_dag.json",
+      "sha256": "66df34b82235e7373db000fe7fa0ed60c55cd87ed18a2293a0761faa6033bca6",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlp_numpy_coursework/unit_dag.json"
+      }
+    }
+  ],
+  "overlay_sha256": "fbe4cfebaa85bf3fcc340773e5981772e1cd7013a2bbe522dd72a9f6010a02b8",
+  "upstream": {
+    "kind": "loopsbench",
+    "revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+    "source_root_key": "loopsbench",
+    "task": "task_mlp_numpy_coursework"
+  },
+  "workspace_tree_sha256": "6d826f610b9135b2ba1d0219651fcb38b86e81509f0b274e772e8176cb515adc"
+}

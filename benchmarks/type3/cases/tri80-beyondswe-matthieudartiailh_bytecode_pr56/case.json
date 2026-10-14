@@ -1,0 +1,10 @@
+{
+  "adapter_kind": "beyondswe_harbor",
+  "case_id": "tri80-beyondswe-matthieudartiailh_bytecode_pr56",
+  "episode_origin": "official_problem_start",
+  "harness_start_mode": "bootstrap_contract_start",
+  "official_task_id": "beyondswe:matthieudartiailh_bytecode_pr56",
+  "task_scope": "official_full_task",
+  "task_sequence_ref": "task_sequence.json",
+  "task_sequence_sha256": "55da5f956b447c164c6bc61cbbcea83d3cdd2676d655617f97bcbdd23874c83b"
+}

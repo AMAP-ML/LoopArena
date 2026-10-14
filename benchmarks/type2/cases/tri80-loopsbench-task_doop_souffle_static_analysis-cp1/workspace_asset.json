@@ -1,0 +1,6 @@
+{
+  "recipe": "workspace_recipe.json",
+  "recipe_sha256": "90e3a5d395065706f2d663f289afdfb3f0560993dc0f1b2a95d6fb487930f69c",
+  "relative_path_under_assets_root": "type2/workspaces/tri80-loopsbench-task_doop_souffle_static_analysis-cp1/workspace.tar.gz",
+  "workspace_tree_sha256": "463a92c52fcafedc3778e06c4df9bfd680c56083588bf923529cb0068c5c22a7"
+}

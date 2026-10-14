@@ -1,0 +1,14 @@
+#!/bin/bash
+for arg in "$@"; do
+  if [[ "$arg" == https://astral.sh/uv/*/install.sh ]]; then
+    runtime_bin=$(dirname "$(readlink -f "$0")")
+    cat <<EOF
+#!/bin/bash
+set -e
+mkdir -p "$HOME/.local/bin"
+printf 'export PATH=$runtime_bin:\$PATH\n' >"$HOME/.local/bin/env"
+EOF
+    exit 0
+  fi
+done
+exec /usr/bin/curl "$@"

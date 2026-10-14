@@ -1,0 +1,10 @@
+{
+  "adapter_kind": "scbench",
+  "case_id": "tri80-scbench-dynamic_config_service_api",
+  "episode_origin": "official_problem_start",
+  "harness_start_mode": "bootstrap_contract_start",
+  "official_task_id": "scbench:dynamic_config_service_api",
+  "task_scope": "official_full_problem",
+  "task_sequence_ref": "task_sequence.json",
+  "task_sequence_sha256": "a1448a43b8e869caea07e9377efbff1b98c777f3f14402b255462e0301c5cc5d"
+}

@@ -1,0 +1,6 @@
+{
+  "recipe": "workspace_recipe.json",
+  "recipe_sha256": "54335074cd020943fce975fe19d28e98672fa7abfcbdc92cfc06f347dc93f682",
+  "relative_path_under_assets_root": "type2/workspaces/tri80-loopsbench-task_z3_fixedpoint_verification-cp1/workspace.tar.gz",
+  "workspace_tree_sha256": "6edf856a03998a8ee189d1f7ea31260f69c28f32d02d6fc6e5906dcd03f0a916"
+}

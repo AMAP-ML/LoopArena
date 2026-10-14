@@ -7,10 +7,12 @@ from __future__ import annotations
 import json
 import shutil
 import subprocess
-from pathlib import Path
+from pathlib import Path, PurePosixPath
+
 from typing import Any
 
 import yaml
+from looparena.paths import repository_root
 
 try:
     import tomllib
@@ -19,9 +21,12 @@ except ModuleNotFoundError:  # Python 3.10 compatibility.
 
 PORTABLE_ASSETS_ROOT = "/opt/looparena/evaluator_assets"
 
-from looparena.evaluators.base import (
+from looparena.evaluators.base import (  # noqa: E402
     beyondswe_evaluator_network,
     beyondswe_solve_network,
+)
+from looparena.evaluators.loopsbench import (
+    task_tree_sha256 as _loopsbench_task_tree_sha256,
 )
 
 
@@ -33,12 +38,14 @@ def localize_evaluator_plan(
     """Resolve the stored portable evaluator-assets root for one local run."""
 
     localized = json.loads(json.dumps(plan))
+    assets_root = assets_root.resolve()
     config = localized.get("adapter_config") or {}
-    fields = (
-        ("runner_root", "problems_root", "env_config", "private_bundle_path")
-        if localized.get("adapter_kind") == "scbench"
-        else ("task_dir",)
-    )
+    if localized.get("adapter_kind") == "scbench":
+        fields = ("runner_root", "problems_root", "env_config", "private_bundle_path")
+    elif localized.get("adapter_kind") == "loopsbench":
+        fields = ("task_dir", "runtime_assets_dir")
+    else:
+        fields = ("task_dir",)
     for field in fields:
         raw = config.get(field)
         if not raw:
@@ -47,9 +54,11 @@ def localize_evaluator_plan(
         if value == PORTABLE_ASSETS_ROOT:
             config[field] = str(assets_root)
         elif value.startswith(PORTABLE_ASSETS_ROOT + "/"):
-            config[field] = str(
-                assets_root / value.removeprefix(PORTABLE_ASSETS_ROOT + "/")
-            )
+            relative = PurePosixPath(value.removeprefix(PORTABLE_ASSETS_ROOT + "/"))
+            if relative.is_absolute() or ".." in relative.parts:
+                raise ValueError(f"unsafe_evaluator_path:{field}:{value}")
+            candidate = assets_root / Path(*relative.parts)
+            config[field] = str(candidate)
         else:
             raise ValueError(f"nonportable_evaluator_path:{field}:{value}")
     return localized
@@ -68,7 +77,10 @@ def _solve_runtime(
         # SCBench resumes checkpoints in the public, runner-built base image.
         # ``image_*`` identifies only the raw Dockerfile base; using it drops
         # Git, Node, compilers, and the rest of the official agent environment.
-        # Start the immutable local image object resolved during preflight.
+        # Start the immutable image selected by the case.  The human-readable
+        # tag is still used while loading the archived image, but another
+        # process must not be able to retag the solve between that step and
+        # ``docker run``.
         image = runtime.get("evaluation_image_id") or runtime.get(
             "evaluation_image_reference"
         )
@@ -88,7 +100,7 @@ def _solve_runtime(
             ),
         ]
         network = plan.get("network")
-    else:
+    elif adapter_kind == "beyondswe_harbor":
         image = runtime.get("image_id") or runtime.get("image_reference")
         mount_point = str(runtime.get("workdir") or "/work")
         setup_commands = []
@@ -119,6 +131,24 @@ def _solve_runtime(
         plan["solve_network"] = solve_network
         plan["network"] = evaluator_network
         network = solve_network
+    elif adapter_kind == "loopsbench":
+        image = runtime.get("image_id") or runtime.get("image_reference")
+        mount_point = str(runtime.get("workdir") or "/workspace")
+        # LoopsBench release images run the solve as root, while the sealed
+        # workspace snapshot is copied by the invoking host account. Python
+        # and build tools otherwise leave root-owned cache/output files whose
+        # source-derived 0600/0640 modes are unreadable on the host. Keep the
+        # frozen workspace snapshot exact and normalize only read/traverse bits at
+        # the end of every model-issued login shell. The per-user run root is
+        # private, and no repository path or content is omitted or rewritten.
+        setup_commands = []
+        network = plan.get("solve_network") or plan.get("network")
+        if mount_point != "/workspace":
+            raise ValueError("LoopsBench runtime workdir must be /workspace")
+        if plan.get("network") != network:
+            raise ValueError("LoopsBench solve and evaluator networks differ")
+    else:
+        raise ValueError(f"unsupported_evaluator_adapter:{adapter_kind}")
     if not isinstance(image, str) or not image:
         raise ValueError("evaluator_plan_has_no_solve_image")
     if network not in {"none", "bridge", "host"}:
@@ -211,13 +241,17 @@ def _source_solve_limits(
     return cpus, memory_mb
 
 
-def _local_image_id(
-    *, docker_executable: str, reference: str, platform: str
+def _matching_local_image_id(
+    *,
+    docker_executable: str,
+    reference: str,
+    platform: str,
+    accepted_ids: set[str],
 ) -> str | None:
-    """Return the local image id when its platform matches the benchmark."""
+    """Resolve one archived image across Docker image-store implementations."""
 
     proc = subprocess.run(
-        [docker_executable, "image", "inspect", "--platform", platform, reference],
+        [docker_executable, "image", "inspect", reference],
         capture_output=True,
         text=True,
         check=False,
@@ -230,9 +264,21 @@ def _local_image_id(
         actual_platform = f"{image['Os']}/{image['Architecture']}"
     except (IndexError, KeyError, TypeError, json.JSONDecodeError):
         return None
-    if actual_platform != platform:
+    if actual_id not in accepted_ids or actual_platform != platform:
         return None
     return actual_id
+
+
+def _accepted_image_ids(profile: dict[str, Any], primary_id: object) -> set[str]:
+    return {
+        value
+        for value in (
+            primary_id,
+            profile.get("oci_manifest_digest"),
+            profile.get("oci_config_digest"),
+        )
+        if isinstance(value, str) and value
+    }
 
 
 def _scbench_runtime_profile(
@@ -244,9 +290,13 @@ def _scbench_runtime_profile(
     if profile_name != "canonical-amd64":
         raise ValueError("only the official linux/amd64 SCBench runtime is supported")
     runtime = plan.get("runtime_identity") or {}
+    upstream = tomllib.loads(
+        (repository_root() / "benchmarks/upstreams.toml").read_text()
+    )["scbench"]
     return {
         "reference": runtime.get("evaluation_image_reference"),
         "platform": runtime.get("evaluation_image_platform") or "linux/amd64",
+        "recipe_hash": upstream["base_image_recipe_hash"],
     }
 
 
@@ -267,11 +317,13 @@ def _ensure_scbench_image(
         docker_executable=docker_executable,
         reference=reference,
         platform=platform,
+        recipe_hash=profile["recipe_hash"],
     )
     if image_id is None:
         raise FileNotFoundError(
-            "missing official SCBench linux/amd64 runtime image; build it from "
-            "the pinned SCBench runner following its upstream instructions"
+            "missing or mismatched SCBench runtime image (platform or build recipe); "
+            "rebuild it with the pinned runner's `slop-code docker build-base "
+            "configs/environments/docker-python3.12-uv.yaml --force-build`"
         )
     return image_id
 
@@ -291,43 +343,117 @@ def _harbor_image_profile(
     }
 
 
-def _ensure_harbor_image(
+def _loopsbench_image_profile(
+    plan: dict[str, Any],
+    case_dir: Path,
+) -> dict[str, Any]:
+    manifest = _read_json(case_dir.parent.parent / "LOOPSBENCH_IMAGE_ASSETS.json")
+    profile = (manifest.get("cases") or {}).get(case_dir.name)
+    if not isinstance(profile, dict):
+        raise ValueError(f"missing LoopsBench image profile for {case_dir.name}")
+    runtime = plan.get("runtime_identity") or {}
+    config = plan.get("adapter_config") or {}
+    task_id = str(profile.get("task_id") or "")
+    task_tree_sha256 = str(profile.get("task_tree_sha256") or "")
+    if (
+        not task_id
+        or len(task_tree_sha256) != 64
+        or not str(profile.get("image_id") or "")
+        or not str(profile.get("image_reference") or "")
+        or Path(str(config.get("task_dir") or "")).name != task_id
+        or profile.get("image_id") != runtime.get("image_id")
+        or profile.get("image_reference") != runtime.get("image_reference")
+        or profile.get("platform") != runtime.get("platform")
+        or profile.get("platform") != "linux/amd64"
+        or profile.get("task_tree_sha256") != runtime.get("task_tree_sha256")
+    ):
+        raise ValueError(f"LoopsBench image profile does not match {case_dir.name}")
+    return profile
+
+
+def _ensure_loopsbench_image(
     plan: dict[str, Any],
     assets_root: Path,
     profile: dict[str, Any],
 ) -> str:
-    """Resolve and verify one official public BeyondSWE source image."""
+    """Require the exact frozen LoopsBench image, restoring its archive if present."""
 
+    runtime = plan.get("runtime_identity") or {}
+    config = plan.get("adapter_config") or {}
+    docker = str(config.get("docker_executable") or "docker")
+    reference = str(runtime.get("image_reference") or "")
+    expected_id = str(runtime.get("image_id") or "")
+    accepted = _accepted_image_ids(profile, expected_id)
+    matched = _matching_local_image_id(
+        docker_executable=docker,
+        reference=reference,
+        platform="linux/amd64",
+        accepted_ids=accepted,
+    )
+    if matched is not None:
+        return matched
+    raw_relative = profile.get("archive_relative_path_under_assets_root")
+    if isinstance(raw_relative, str) and raw_relative:
+        relative = Path(raw_relative)
+        if relative.is_absolute() or ".." in relative.parts:
+            raise ValueError("unsafe_loopsbench_image_archive_path")
+        archive = (assets_root / relative).resolve()
+        archive.relative_to(assets_root.resolve())
+        if archive.is_file():
+            loaded = subprocess.run(
+                [docker, "load", "--input", str(archive)],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            if loaded.returncode == 0:
+                matched = _matching_local_image_id(
+                    docker_executable=docker,
+                    reference=reference,
+                    platform="linux/amd64",
+                    accepted_ids=accepted,
+                )
+                if matched is not None:
+                    return matched
+    from looparena.commands.submission_runtime import prepared_image
+
+    rebuilt = prepared_image(assets_root, profile, docker=docker)
+    if rebuilt is not None:
+        runtime["reference_image_id"] = expected_id
+        runtime["reference_image_reference"] = reference
+        runtime["image_reference"] = rebuilt["image_reference"]
+        runtime["runtime_origin"] = "upstream-source-build"
+        runtime["source_build_receipt"] = rebuilt
+        return str(rebuilt["image_id"])
+    raise RuntimeError(
+        "LoopsBench image is absent; run looparena-prepare --only loopsbench "
+        "--loopsbench-source PATH --assets-root PATH --loopsbench-runtime all "
+        f"or load the pinned image {expected_id}"
+    )
+
+
+def _ensure_harbor_image(plan: dict[str, Any], assets_root: Path, profile: dict[str, Any]) -> str:
+    """Resolve a pinned BeyondSWE image by tag or immutable object ID."""
     del assets_root
-    docker_executable = str(
-        (plan.get("adapter_config") or {}).get("docker_executable") or "docker"
-    )
-    image_id = _local_image_id(
-        docker_executable=docker_executable,
-        reference=str(profile["image_reference"]),
-        platform=str(profile["platform"]),
-    )
-    if image_id is None:
-        raise RuntimeError(
-            "missing official BeyondSWE linux/amd64 source image; pull it "
-            "following the pinned upstream task instructions"
+    docker = str((plan.get("adapter_config") or {}).get("docker_executable") or "docker")
+    runtime = plan.get("runtime_identity") or {}
+    accepted = _accepted_image_ids(profile, runtime.get("image_id"))
+    platform = str(runtime.get("platform") or profile.get("platform") or "")
+    for reference in [str(profile["image_reference"]), *sorted(accepted)]:
+        matched = _matching_local_image_id(
+            docker_executable=docker, reference=reference,
+            platform=platform, accepted_ids=accepted,
         )
-    expected_image_id = str((plan.get("runtime_identity") or {}).get("image_id") or "")
-    if not expected_image_id:
-        raise ValueError("BeyondSWE plan has no pinned image id")
-    if image_id != expected_image_id:
-        raise RuntimeError(
-            "BeyondSWE image identity mismatch for "
-            f"{profile['image_reference']}: expected {expected_image_id}, "
-            f"found {image_id}; pull or load the pinned linux/amd64 image"
-        )
-    return image_id
+        if matched is not None:
+            return matched
+    raise RuntimeError("Missing pinned BeyondSWE linux/amd64 image; obtain it from the upstream task instructions")
 
 
 def _require_evaluator_assets(plan: dict[str, Any]) -> None:
     """Fail before model inference when required private assets are absent."""
 
     config = plan.get("adapter_config") or {}
+    runtime = plan.get("runtime_identity") or {}
     kind = plan.get("adapter_kind")
     required: list[tuple[str, Path | None, str]]
     if kind == "scbench":
@@ -372,6 +498,40 @@ def _require_evaluator_assets(plan: dict[str, Any]) -> None:
                 "file",
             ),
         ]
+    elif kind == "loopsbench":
+        task_dir = Path(str(config["task_dir"])) if config.get("task_dir") else None
+        runtime_assets = (
+            Path(str(config["runtime_assets_dir"]))
+            if config.get("runtime_assets_dir")
+            else None
+        )
+        from looparena.commands.submission_runtime import verify_dependencies
+
+        if runtime_assets is None:
+            raise FileNotFoundError("missing LoopsBench runtime assets")
+        verify_dependencies(repository_root(), runtime_assets)
+        required = [
+            ("task_dir", task_dir, "directory"),
+            ("task_config", task_dir / "task.yaml" if task_dir else None, "file"),
+            ("unit_dag", task_dir / "unit_dag.json" if task_dir else None, "file"),
+            (
+                "test_entrypoint",
+                task_dir / "run-tests.sh" if task_dir else None,
+                "file",
+            ),
+            ("tests", task_dir / "tests" if task_dir else None, "directory"),
+            ("runtime_assets", runtime_assets, "directory"),
+            (
+                "runtime_uv",
+                runtime_assets / "bin" / "uv" if runtime_assets else None,
+                "file",
+            ),
+            (
+                "runtime_wheelhouse",
+                runtime_assets / "wheelhouse" if runtime_assets else None,
+                "directory",
+            ),
+        ]
     else:
         raise ValueError(f"unsupported_evaluator_adapter:{kind}")
 
@@ -385,7 +545,15 @@ def _require_evaluator_assets(plan: dict[str, Any]) -> None:
     ]
     if missing:
         raise FileNotFoundError("missing evaluator assets: " + ", ".join(missing))
+    if kind == "loopsbench" and _loopsbench_task_tree_sha256(task_dir) != (
+        runtime.get("task_tree_sha256")
+    ):
+        raise ValueError("LoopsBench task tree does not match the frozen digest")
     if kind == "scbench":
+        from looparena.commands.submission_assets import _validate_scbench_sources
+        _validate_scbench_sources(
+            root=repository_root(), runner=Path(str(config["runner_root"])), source_root=problems_root
+        )
         uv_executable = str(config.get("uv_executable") or "uv")
         if shutil.which(uv_executable) is None:
             raise FileNotFoundError(
@@ -393,3 +561,31 @@ def _require_evaluator_assets(plan: dict[str, Any]) -> None:
                 f"{uv_executable}; install with "
                 "`python3 -m pip install -e '.[gateway,scbench]'`"
             )
+
+
+def _local_image_id(
+    *, docker_executable: str, reference: str, platform: str, recipe_hash: str
+) -> str | None:
+    """Resolve a SCBench image matching the platform and upstream recipe label."""
+
+    proc = subprocess.run(
+        [docker_executable, "image", "inspect", "--platform", platform, reference],
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    if proc.returncode != 0:
+        return None
+    try:
+        image = json.loads(proc.stdout)[0]
+        actual_id = str(image["Id"])
+        actual_platform = f"{image['Os']}/{image['Architecture']}"
+    except (IndexError, KeyError, TypeError, json.JSONDecodeError):
+        return None
+    labels = (image.get("Config") or {}).get("Labels") or {}
+    if (
+        actual_platform != platform
+        or labels.get("io.slop-code.base-image-hash") != recipe_hash
+    ):
+        return None
+    return actual_id

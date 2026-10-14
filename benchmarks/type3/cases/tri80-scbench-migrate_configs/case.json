@@ -1,0 +1,10 @@
+{
+  "adapter_kind": "scbench",
+  "case_id": "tri80-scbench-migrate_configs",
+  "episode_origin": "official_problem_start",
+  "harness_start_mode": "bootstrap_contract_start",
+  "official_task_id": "scbench:migrate_configs",
+  "task_scope": "official_full_problem",
+  "task_sequence_ref": "task_sequence.json",
+  "task_sequence_sha256": "6b4bfbf8cb6b301190ef56cba5dc61e55ea2c7e4029c21c1675e411279032913"
+}

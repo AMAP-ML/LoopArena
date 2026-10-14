@@ -1,0 +1,20 @@
+{
+  "adapter_kind": "beyondswe_harbor",
+  "checkpoint_context_policy": "single_episode",
+  "checkpoint_failure_policy": "stop_after_task",
+  "official_parent_commit": "af58051f40dc41b3ad228cbdd4e8c1c71c3a51b6",
+  "official_task_id": "beyondswe:aiven_aiven-client_pr399",
+  "official_workdir": "/workspace/aiven-client",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/task.json",
+      "evaluator_plan_sha256": "f0bda3a89e1d47afeb8ee36cade145457b27e2f8e8d92c6f94140e64bb6120d7",
+      "step_id": "task",
+      "task_ref": "tasks/task.md",
+      "task_sha256": "019819b3f4f1f5cdebf417b9a29a2d0dc680e539ecc9f4259c0dfd003fd76e8a"
+    }
+  ],
+  "target_step": "task",
+  "task_scope": "official_full_task",
+  "workspace_origin": "pinned_source_image_parent_commit"
+}

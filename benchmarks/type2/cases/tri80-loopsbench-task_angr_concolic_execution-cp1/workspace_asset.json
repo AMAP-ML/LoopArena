@@ -1,0 +1,6 @@
+{
+  "recipe": "workspace_recipe.json",
+  "recipe_sha256": "d5c01c5e92e40aaac0053851748a349a0580af703f30c9407ac45cf9f58261ee",
+  "relative_path_under_assets_root": "type2/workspaces/tri80-loopsbench-task_angr_concolic_execution-cp1/workspace.tar.gz",
+  "workspace_tree_sha256": "c1c90a84dafaa1ffa0578266d55967e5be910135c683f382535cf7651b8c9b92"
+}

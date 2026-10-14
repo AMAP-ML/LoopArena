@@ -1,0 +1,33 @@
+{
+  "case_id": "tri80-scbench-textdrop-cp5",
+  "files": [
+    {
+      "bytes": 170,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements.txt",
+      "sha256": "3574bd19edceeb9bf41e900d6b3e488f64e6b3832766a231c6ff831661b6fa48",
+      "source": {
+        "blob": "3574bd19edceeb9bf41e900d6b3e488f64e6b3832766a231c6ff831661b6fa48",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 33620,
+      "kind": "file",
+      "mode": 420,
+      "path": "textdrop.py",
+      "sha256": "c8ac4f1b391e0383b5a0a428bac1894d024fabca166067b44426463b2cd2480c",
+      "source": {
+        "blob": "c8ac4f1b391e0383b5a0a428bac1894d024fabca166067b44426463b2cd2480c",
+        "kind": "overlay"
+      }
+    }
+  ],
+  "overlay_sha256": "6d521524b0d2ca7d93d39ab5632bd4a31b1a77fd9a76f6676b1db7a66f0a5d7a",
+  "upstream": {
+    "kind": "scbench",
+    "source_root_key": null
+  },
+  "workspace_tree_sha256": "f524ae7dbcbb9cd3a0ae45327c04bbfd9d94716f1f2c0d68dd91f4e75a4e8d68"
+}

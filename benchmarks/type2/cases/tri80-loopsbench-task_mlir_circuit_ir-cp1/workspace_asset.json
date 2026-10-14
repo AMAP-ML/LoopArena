@@ -1,0 +1,6 @@
+{
+  "recipe": "workspace_recipe.json",
+  "recipe_sha256": "03e141e23e45eeab18b5e31b8212fc884ed76d618978a8ae378e54c11f38314a",
+  "relative_path_under_assets_root": "type2/workspaces/tri80-loopsbench-task_mlir_circuit_ir-cp1/workspace.tar.gz",
+  "workspace_tree_sha256": "f2f6652ff74051b3345408c582acf02c7159374d778da4a8c46ba3e6cd946f41"
+}

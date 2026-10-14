@@ -48,6 +48,8 @@ def provider_family(model: str) -> str:
     normalized = str(model or "").strip().lower().rsplit("/", 1)[-1]
     if normalized.startswith("gpt-"):
         return "gpt"
+    if re.match(r"o[1-9]\d*(?:-|$)", normalized):
+        return "o"
     if normalized.startswith("claude-"):
         return "claude"
     return ""
@@ -59,7 +61,6 @@ def default_worker_base_url() -> str:
     return os.environ.get("OPENAI_BASE_URL") or "https://api.openai.com/v1"
 
 
-DEFAULT_WORKER_MODEL = os.environ.get("LOOPARENA_WORKER_MODEL", "qwen3.7-plus")
 DEFAULT_WORKER_BASE_URL = default_worker_base_url()
 # This is only a local memory-safety guard. It is deliberately much larger
 # than ordinary LoopArena histories so the harness does not invent an
@@ -67,22 +68,14 @@ DEFAULT_WORKER_BASE_URL = default_worker_base_url()
 # window is reached.
 DEFAULT_CONTEXT_CAPACITY_UTF8_BYTES = 64 * 1024 * 1024
 # A transient gateway failure is retried at the same model-call boundary.  The
-# caller's conversation and workspace therefore remain untouched.  When the
-# scheduler supplies a second authorized credential, each credential gets the
-# same three attempts before the call is reported as a provider failure.
+# caller's conversation and workspace therefore remain untouched.
 WORKER_GATEWAY_ATTEMPT_LIMIT = 3
-EXPLICIT_FALLBACK_API_KEY_ENV = "LOOPARENA_GATEWAY_FALLBACK_API_KEY"
-EXPLICIT_FALLBACK_PROFILE_ENV = "LOOPARENA_GATEWAY_FALLBACK_PROFILE_ID"
 
 
 def _redact(text: str) -> str:
-    for env_name in (
-        EXPLICIT_FALLBACK_API_KEY_ENV,
-        "DASHSCOPE_API_KEY",
-        "QWEN_API_KEY",
-        "OPENAI_API_KEY",
-        "ANTHROPIC_API_KEY",
-    ):
+    for env_name in os.environ:
+        if not env_name.endswith("_API_KEY"):
+            continue
         value = os.environ.get(env_name)
         if value:
             text = text.replace(value, "[REDACTED]")
@@ -274,19 +267,14 @@ def _read_chat_completion_stream(response: Any) -> dict[str, Any]:
 
 
 # --------------------------------------------------------------------------- #
-# Worker: Qwen via OpenAI-compatible gateway
+# OpenAI-compatible model client
 # --------------------------------------------------------------------------- #
 
 
 @dataclass
 class WorkerClient:
-    model: str = field(
-        default_factory=lambda: os.environ.get(
-            "LOOPARENA_WORKER_MODEL", DEFAULT_WORKER_MODEL
-        )
-    )
+    model: str
     api_key_env: str = DEFAULT_API_KEY_ENV
-    allow_api_key_fallback: bool = True
     base_url: str = field(default_factory=default_worker_base_url)
     timeout_sec: float = 120
     transport: str = "auto"  # auto | openai | http
@@ -304,31 +292,17 @@ class WorkerClient:
         )
     )
 
+    def __post_init__(self) -> None:
+        if not isinstance(self.model, str) or not self.model.strip():
+            raise ValueError("model must be explicitly configured")
+        if not isinstance(self.api_key_env, str) or not self.api_key_env.strip():
+            raise ValueError("api_key_env must name a credential environment variable")
+
     def _credentials(self) -> list[tuple[str, str, str]]:
-        env_names = [self.api_key_env]
-        if self.allow_api_key_fallback:
-            env_names.extend(
-                [
-                    EXPLICIT_FALLBACK_API_KEY_ENV,
-                    "DASHSCOPE_API_KEY",
-                    "QWEN_API_KEY",
-                ]
-            )
-        credentials: list[tuple[str, str, str]] = []
-        seen: set[str] = set()
-        for env_name in dict.fromkeys(env_names):
-            key = os.environ.get(env_name)
-            if not key or key in seen:
-                continue
-            seen.add(key)
-            if env_name == self.api_key_env:
-                profile_id = self.credential_profile_id or "primary"
-            elif env_name == EXPLICIT_FALLBACK_API_KEY_ENV:
-                profile_id = os.environ.get(EXPLICIT_FALLBACK_PROFILE_ENV) or "fallback"
-            else:
-                profile_id = env_name.lower()
-            credentials.append((key, env_name, profile_id))
-        return credentials
+        key = os.environ.get(self.api_key_env)
+        if not key:
+            return []
+        return [(key, self.api_key_env, self.credential_profile_id or "primary")]
 
     def _api_key(self) -> tuple[str, str]:
         credentials = self._credentials()
@@ -344,8 +318,7 @@ class WorkerClient:
             env_name = self.api_key_env
         if not key:
             raise RuntimeError(
-                f"missing {env_name} (set OPENAI_API_KEY, DASHSCOPE_API_KEY, "
-                "or QWEN_API_KEY in .env or the environment)"
+                f"missing API key in {env_name}"
             )
         from openai import OpenAI  # optional dep; installed in this env
 
@@ -363,14 +336,20 @@ class WorkerClient:
         *,
         seed: int | None,
         temperature: float | None,
-        max_tokens: int,
+        max_tokens: int | None,
         extra_body: dict | None,
     ) -> dict:
         payload: dict[str, Any] = {
             "model": self.model,
             "messages": messages,
-            "max_tokens": max_tokens,
         }
+        if max_tokens is not None:
+            limit_field = (
+                "max_completion_tokens"
+                if provider_family(self.model) == "o"
+                else "max_tokens"
+            )
+            payload[limit_field] = max_tokens
         if temperature is not None:
             payload["temperature"] = temperature
         if seed is not None:
@@ -391,7 +370,7 @@ class WorkerClient:
                 separators=(",", ":"),
             ).encode("utf-8")
         )
-        reserved_output_bytes = max(0, int(max_tokens)) * 4
+        reserved_output_bytes = max(0, int(max_tokens or 0)) * 4
         if input_bytes + reserved_output_bytes > self.context_capacity_utf8_bytes:
             raise RuntimeError(
                 "context_capacity_exhausted:"
@@ -412,7 +391,7 @@ class WorkerClient:
     ) -> dict:
         context_audit = payload.pop("_looparena_context_audit", {})
         client = self._openai_client(api_key)
-        extra_keys = {"enable_thinking"}
+        extra_keys = {"enable_thinking", "max_completion_tokens"}
         extra_body = {k: payload.pop(k) for k in list(payload) if k in extra_keys}
         if extra_body:
             payload["extra_body"] = extra_body
@@ -463,8 +442,7 @@ class WorkerClient:
             key, env_name = api_key, self.api_key_env
         if not key:
             raise RuntimeError(
-                f"missing {env_name} (set OPENAI_API_KEY, DASHSCOPE_API_KEY, "
-                "or QWEN_API_KEY in .env or the environment)"
+                f"missing API key in {env_name}"
             )
         url = self.base_url.rstrip("/") + "/chat/completions"
         req = urllib.request.Request(
@@ -523,9 +501,8 @@ class WorkerClient:
     ) -> dict:
         """Read one OpenAI-compatible chat completion as an SSE stream.
 
-        The gateway's public ingress closes connections that are silent for 90
-        seconds.  Streaming keeps long tool-call responses active without
-        changing the model request or exposing partial output to the harness.
+        Streaming keeps long responses active without exposing partial output
+        to the harness.
         """
 
         context_audit = payload.pop("_looparena_context_audit", {})
@@ -535,8 +512,7 @@ class WorkerClient:
             key, env_name = api_key, self.api_key_env
         if not key:
             raise RuntimeError(
-                f"missing {env_name} (set OPENAI_API_KEY, DASHSCOPE_API_KEY, "
-                "or QWEN_API_KEY in .env or the environment)"
+                f"missing API key in {env_name}"
             )
         payload["stream"] = True
         payload["stream_options"] = {"include_usage": True}
@@ -588,15 +564,15 @@ class WorkerClient:
         *,
         seed: int | None = 0,
         temperature: float | None = 0.7,
-        max_tokens: int = 8192,
+        max_tokens: int | None = 8192,
         extra_body: dict | None = None,
         deadline_monotonic: float | None = None,
     ) -> dict:
         """One chat turn. Returns the assistant message as a plain dict with
         ``content`` and ``tool_calls`` (OpenAI tool-calling shape)."""
-        if provider_family(self.model) in {"gpt", "claude"}:
-            # Common GPT and Claude endpoints use provider-default sampling and
-            # may reject Qwen-style seed or temperature parameters.
+        if provider_family(self.model) in {"gpt", "o", "claude"}:
+            # OpenAI reasoning and Claude endpoints use provider-default sampling and
+            # may reject explicit seed or temperature parameters.
             seed = None
             temperature = None
         payload = self._payload(
@@ -610,7 +586,7 @@ class WorkerClient:
         credentials = self._credentials()
         if not credentials:
             raise RuntimeError(
-                f"missing {self.api_key_env} (set OPENAI_API_KEY in the environment)"
+                f"missing API key in {self.api_key_env}"
             )
         total_attempts = 0
         credential_audit: list[dict[str, Any]] = []

@@ -1,0 +1,186 @@
+{
+  "case_id": "tri80-scbench-dynamic_config_service_api-cp4",
+  "files": [
+    {
+      "bytes": 42821,
+      "kind": "file",
+      "mode": 420,
+      "path": "config_server.py",
+      "sha256": "c4a6246b40a90d52bfd73fc1735f6e9cb5252b36a332cd0166862204b2a9b3ce",
+      "source": {
+        "blob": "c4a6246b40a90d52bfd73fc1735f6e9cb5252b36a332cd0166862204b2a9b3ce",
+        "kind": "overlay"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "config_service"
+    },
+    {
+      "bytes": 172,
+      "kind": "file",
+      "mode": 420,
+      "path": "config_service/__init__.py",
+      "sha256": "5f89314006843d398757ed47c44ca428210b9b62c58e9f9feb82ab99c43a33d6",
+      "source": {
+        "blob": "5f89314006843d398757ed47c44ca428210b9b62c58e9f9feb82ab99c43a33d6",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 3146,
+      "kind": "file",
+      "mode": 420,
+      "path": "config_service/errors.py",
+      "sha256": "6346261630f45c61bc3cc42deea85479cc8ceb98711c9a35699f18ae1678f9bc",
+      "source": {
+        "blob": "6346261630f45c61bc3cc42deea85479cc8ceb98711c9a35699f18ae1678f9bc",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 2747,
+      "kind": "file",
+      "mode": 420,
+      "path": "config_service/models.py",
+      "sha256": "f929b7bca7d36a283cde5ed9490d08d916f5e51dee8c7832c42de9114a4a38e7",
+      "source": {
+        "blob": "f929b7bca7d36a283cde5ed9490d08d916f5e51dee8c7832c42de9114a4a38e7",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 13531,
+      "kind": "file",
+      "mode": 420,
+      "path": "config_service/raw_parsing.py",
+      "sha256": "3294ff77a3b5c2becaaed8158bca8bf50744d1f6df74587fc202eaf99520acaa",
+      "source": {
+        "blob": "3294ff77a3b5c2becaaed8158bca8bf50744d1f6df74587fc202eaf99520acaa",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 5907,
+      "kind": "file",
+      "mode": 420,
+      "path": "config_service/schema_registry.py",
+      "sha256": "0b8ffff0f7338ffbc04ec6dc9529b91b0866b096a828d1d7fef0a04d8b26e600",
+      "source": {
+        "blob": "0b8ffff0f7338ffbc04ec6dc9529b91b0866b096a828d1d7fef0a04d8b26e600",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 39846,
+      "kind": "file",
+      "mode": 420,
+      "path": "config_service/store.py",
+      "sha256": "399e0d2947a790a7b5a31251c827b639fb96b39722398475e02177274002da03",
+      "source": {
+        "blob": "399e0d2947a790a7b5a31251c827b639fb96b39722398475e02177274002da03",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 3819,
+      "kind": "file",
+      "mode": 420,
+      "path": "config_service/utils.py",
+      "sha256": "d6e4bda31d4c10e54ed69586874cf427335f2e4350c46cd8e4ba0245f29496f8",
+      "source": {
+        "blob": "d6e4bda31d4c10e54ed69586874cf427335f2e4350c46cd8e4ba0245f29496f8",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 1589,
+      "kind": "file",
+      "mode": 420,
+      "path": "config_service/validators.py",
+      "sha256": "fedb56f585813bd95ab17e8a434c1838a544e5636ff6d9e4267f1a8b2d019be6",
+      "source": {
+        "blob": "fedb56f585813bd95ab17e8a434c1838a544e5636ff6d9e4267f1a8b2d019be6",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 202,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements.txt",
+      "sha256": "4670bd0955aa33f37f1c6b55075842bcf4ac53c4e334483b9e00de69f9509a55",
+      "source": {
+        "blob": "4670bd0955aa33f37f1c6b55075842bcf4ac53c4e334483b9e00de69f9509a55",
+        "kind": "overlay"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests"
+    },
+    {
+      "bytes": 172,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/__init__.py",
+      "sha256": "5f89314006843d398757ed47c44ca428210b9b62c58e9f9feb82ab99c43a33d6",
+      "source": {
+        "blob": "5f89314006843d398757ed47c44ca428210b9b62c58e9f9feb82ab99c43a33d6",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 2763,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_raw_parsing.py",
+      "sha256": "ec46e06f754b79a19cc78a3892cb26deff9af8c98fa55b5e222ed4ad9300883e",
+      "source": {
+        "blob": "ec46e06f754b79a19cc78a3892cb26deff9af8c98fa55b5e222ed4ad9300883e",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 1881,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_schema_registry.py",
+      "sha256": "9e6cde580f4052a866862c4232cdc17b011e7e9ab14b9248cc5fc070ba3536f1",
+      "source": {
+        "blob": "9e6cde580f4052a866862c4232cdc17b011e7e9ab14b9248cc5fc070ba3536f1",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 9455,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_server.py",
+      "sha256": "63f740025a1d62b246e47f3853014e657a994d407a68b5862dfaa89b636fda4d",
+      "source": {
+        "blob": "63f740025a1d62b246e47f3853014e657a994d407a68b5862dfaa89b636fda4d",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 7161,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_store.py",
+      "sha256": "5b905c85cd6bc599f92566269da3ec191786c089be8e8b3a6fc85410770fe23b",
+      "source": {
+        "blob": "5b905c85cd6bc599f92566269da3ec191786c089be8e8b3a6fc85410770fe23b",
+        "kind": "overlay"
+      }
+    }
+  ],
+  "overlay_sha256": "f13acd0ea7878b0c673e0060d0cd0e83c1e2327a1084f76bfc97436f9efc83ef",
+  "upstream": {
+    "kind": "scbench",
+    "source_root_key": null
+  },
+  "workspace_tree_sha256": "77b524bfba1508429683a52d44d309cbcec50b991aac2d9f73c7fe9c65dec135"
+}

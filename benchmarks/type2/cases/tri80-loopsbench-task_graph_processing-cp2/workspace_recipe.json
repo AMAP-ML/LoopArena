@@ -1,0 +1,349 @@
+{
+  "case_id": "tri80-loopsbench-task_graph_processing-cp2",
+  "files": [
+    {
+      "bytes": 13,
+      "kind": "file",
+      "mode": 420,
+      "path": ".gitignore",
+      "sha256": "32dae3052f331ee34d628ef535709b301259a45df7c7522c4d35dcf49873f00b",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_graph_processing/base/.gitignore"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "data"
+    },
+    {
+      "bytes": 320,
+      "kind": "file",
+      "mode": 420,
+      "path": "data/ecommerce_graph.txt",
+      "sha256": "123c36b6a49b6787577f6b9814f4720a5fd0664e5e7cc30d70a6bfc083cd05ac",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_graph_processing/base/data/ecommerce_graph.txt"
+      }
+    },
+    {
+      "bytes": 367,
+      "kind": "file",
+      "mode": 420,
+      "path": "data/social_network.txt",
+      "sha256": "5214cddd8e00b5b94f57ba84caf0a162aa173fbea7ff58027e2074341f8b96ae",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_graph_processing/base/data/social_network.txt"
+      }
+    },
+    {
+      "bytes": 155,
+      "kind": "file",
+      "mode": 420,
+      "path": "data/web_graph.txt",
+      "sha256": "fe81c4b226fd345872dbb6c5c4ae808aa523f651f28903ec9387110535cdde20",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_graph_processing/base/data/web_graph.txt"
+      }
+    },
+    {
+      "bytes": 157,
+      "kind": "file",
+      "mode": 420,
+      "path": "data/weighted_graph.txt",
+      "sha256": "2348e1eb4d156013aae030628ada579a71cb036be69cf0e9e314374168f1ee45",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_graph_processing/base/data/weighted_graph.txt"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "experiments"
+    },
+    {
+      "bytes": 4172,
+      "kind": "file",
+      "mode": 420,
+      "path": "experiments/graphx_exp.py",
+      "sha256": "ebfd759da49b2506504b255c9a93e3ded8a921eda7f1eebd82dee18828a45423",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_graph_processing/gold_patches/graphx.diff",
+        "patch_sha256": "1a40e11d618f8d01304e697a11f7f39e7c9ec18715d5aabd02cd144e096f86b9",
+        "path": "experiments/graphx_exp.py"
+      }
+    },
+    {
+      "bytes": 3188,
+      "kind": "file",
+      "mode": 420,
+      "path": "graph.py",
+      "sha256": "e2767ceb32e6cbf1aff65f2bac4dbccbea53fe66adc48d21064af9d0122dc08b",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_graph_processing/base/graph.py"
+      }
+    },
+    {
+      "bytes": 1790,
+      "kind": "file",
+      "mode": 420,
+      "path": "module_dag.yaml",
+      "sha256": "c6dee77d7f4429ff22ee50f79117fa696cfeeee14c828365a10fd409a82fddc5",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_graph_processing/module_dag.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "requirements"
+    },
+    {
+      "bytes": 2755,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/graphframes.yaml",
+      "sha256": "9f2f3e616a9f7057065c6571e2e73c4c1a8c6ebb62e3833384a2d693c38fbc56",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_graph_processing/requirements/graphframes.yaml"
+      }
+    },
+    {
+      "bytes": 3253,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/graphscope.yaml",
+      "sha256": "836fe173e7539be56c5b8236f8098eaac8a57a75a941c171d1601b784a03b23b",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_graph_processing/requirements/graphscope.yaml"
+      }
+    },
+    {
+      "bytes": 2944,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/graphx.yaml",
+      "sha256": "737cafd185da3e558263717d14ad1c4e502cdc421274df431cb28a532b7e4602",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_graph_processing/requirements/graphx.yaml"
+      }
+    },
+    {
+      "bytes": 528,
+      "kind": "file",
+      "mode": 493,
+      "path": "run-tests.sh",
+      "sha256": "821cb338b3eab207111cd373bf7d727768e8471a5318e77791288acf77b665d2",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_graph_processing/run-tests.sh"
+      }
+    },
+    {
+      "bytes": 681,
+      "kind": "file",
+      "mode": 493,
+      "path": "run.sh",
+      "sha256": "891c43f9b3918ca3980714cc05af6b67141d164374e42a9946516de4bdb9b781",
+      "source": {
+        "blob": "891c43f9b3918ca3980714cc05af6b67141d164374e42a9946516de4bdb9b781",
+        "kind": "overlay"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "src"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "src/graphx"
+    },
+    {
+      "bytes": 551,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/graphx/__init__.py",
+      "sha256": "8f1dad03d02cfadce1dbb6903b35ed4f58d7d39e9f907d06adf408194b894869",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_graph_processing/gold_patches/graphx.diff",
+        "patch_sha256": "1a40e11d618f8d01304e697a11f7f39e7c9ec18715d5aabd02cd144e096f86b9",
+        "path": "src/graphx/__init__.py"
+      }
+    },
+    {
+      "bytes": 8375,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/graphx/aggregation.py",
+      "sha256": "46b4f9ed34763b08ce8811ed2616ed48bed176aaa9bf7a3a1fd83265ed9e713a",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_graph_processing/gold_patches/graphx.diff",
+        "patch_sha256": "1a40e11d618f8d01304e697a11f7f39e7c9ec18715d5aabd02cd144e096f86b9",
+        "path": "src/graphx/aggregation.py"
+      }
+    },
+    {
+      "bytes": 10815,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/graphx/algorithms.py",
+      "sha256": "5abdbf81e88986d4dcde5d063febe7cc5e1e8eb1de7f3fcd544f74a310465507",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_graph_processing/gold_patches/graphx.diff",
+        "patch_sha256": "1a40e11d618f8d01304e697a11f7f39e7c9ec18715d5aabd02cd144e096f86b9",
+        "path": "src/graphx/algorithms.py"
+      }
+    },
+    {
+      "bytes": 12824,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/graphx/graph.py",
+      "sha256": "9f8b7e6cbe169144b0a2263c59ce2698fb91660b20ed97cd6457d410dc064031",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_graph_processing/gold_patches/graphx.diff",
+        "patch_sha256": "1a40e11d618f8d01304e697a11f7f39e7c9ec18715d5aabd02cd144e096f86b9",
+        "path": "src/graphx/graph.py"
+      }
+    },
+    {
+      "bytes": 6992,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/graphx/partition.py",
+      "sha256": "6f56916e3c044e5cdca3b6b9f95cc8b8d45a0123c5ad1035194e853a95872c1b",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_graph_processing/gold_patches/graphx.diff",
+        "patch_sha256": "1a40e11d618f8d01304e697a11f7f39e7c9ec18715d5aabd02cd144e096f86b9",
+        "path": "src/graphx/partition.py"
+      }
+    },
+    {
+      "bytes": 8722,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/graphx/pregel.py",
+      "sha256": "afc8bd31f9c9582b2b3cf5a57c5f87712ce41ed1c702ac74c5bee65f37f1139a",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_graph_processing/gold_patches/graphx.diff",
+        "patch_sha256": "1a40e11d618f8d01304e697a11f7f39e7c9ec18715d5aabd02cd144e096f86b9",
+        "path": "src/graphx/pregel.py"
+      }
+    },
+    {
+      "bytes": 5994,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/graphx/serialization.py",
+      "sha256": "4a27c2c1fb15623a27bc0d2ca976850209e64c5b3bc148e29041ac5e83245215",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_graph_processing/gold_patches/graphx.diff",
+        "patch_sha256": "1a40e11d618f8d01304e697a11f7f39e7c9ec18715d5aabd02cd144e096f86b9",
+        "path": "src/graphx/serialization.py"
+      }
+    },
+    {
+      "bytes": 1340,
+      "kind": "file",
+      "mode": 420,
+      "path": "task.yaml",
+      "sha256": "bf77d065b9d93186c9d4b113915ee9938d65c1106c74c42e5a87955c90243d1a",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_graph_processing/task.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/graphframes"
+    },
+    {
+      "bytes": 1804,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/graphframes/test_outputs.py",
+      "sha256": "d3e606cfe04a3f405988dbe60647ece96ea169da28dc4a8d49e34b4f7e7b1abb",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_graph_processing/tests/graphframes/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/graphscope"
+    },
+    {
+      "bytes": 1862,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/graphscope/test_outputs.py",
+      "sha256": "90dbad80daeeee7ede383b1c347158c590cbbfda8727bcdaa8b1d6dd0f165c6d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_graph_processing/tests/graphscope/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/graphx"
+    },
+    {
+      "bytes": 1840,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/graphx/test_outputs.py",
+      "sha256": "3e4118c6ae499a6801c52522556e5ad2b28479d8f260e4d1875119e67843c139",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_graph_processing/tests/graphx/test_outputs.py"
+      }
+    },
+    {
+      "bytes": 517,
+      "kind": "file",
+      "mode": 420,
+      "path": "unit_dag.json",
+      "sha256": "96b899a10a1f956f0ba50c73dc596dcdfc924ba5cdc2c3a116d2361e0c10d204",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_graph_processing/unit_dag.json"
+      }
+    }
+  ],
+  "overlay_sha256": "6a57d97b05ede2d6a5421d086bd6cf5c460302fd9fa38f69f0cb888f2af1ee10",
+  "upstream": {
+    "kind": "loopsbench",
+    "revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+    "source_root_key": "loopsbench",
+    "task": "task_graph_processing"
+  },
+  "workspace_tree_sha256": "1f6a82cb8aff071f6434fe9ceb475e9b782a2e19776839dd1e857750863c7251"
+}

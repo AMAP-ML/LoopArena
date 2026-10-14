@@ -1,0 +1,19 @@
+{
+  "adapter_kind": "loopsbench",
+  "checkpoint_context_policy": "single_episode",
+  "checkpoint_failure_policy": "stop_after_task",
+  "official_task_id": "loopsbench:task_soot_taint_analysis",
+  "release_content_hash": "84ae4156df6a132416109e2cf27bb72bcbde1e764dea40f3abab5e4ade942020",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/task.json",
+      "evaluator_plan_sha256": "b9749ea1e91b9db6a7c4a04c5b14e3ea38ad8a40eb95abd5e113f68b6af6f71e",
+      "step_id": "task",
+      "task_ref": "tasks/task.md",
+      "task_sha256": "d4c8b27e9b877ab12ce963541b7058f2bed355005565213e93b2f5477da8d2af"
+    }
+  ],
+  "target_step": "task",
+  "task_scope": "official_full_task",
+  "workspace_origin": "pinned_loopsbench_release_source_base"
+}

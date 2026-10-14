@@ -1,0 +1,19 @@
+{
+  "adapter_kind": "loopsbench",
+  "checkpoint_context_policy": "single_episode",
+  "checkpoint_failure_policy": "stop_after_task",
+  "official_task_id": "loopsbench:task_doop_souffle_static_analysis",
+  "release_content_hash": "84ae4156df6a132416109e2cf27bb72bcbde1e764dea40f3abab5e4ade942020",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/task.json",
+      "evaluator_plan_sha256": "4c5de887624233b304547bfa54a26b9367f7639d72e04040ccf6115f359835b5",
+      "step_id": "task",
+      "task_ref": "tasks/task.md",
+      "task_sha256": "a0b1dd2bbdb1d59720535462195dda56245431ccffb76d3dc915e4571b0e3962"
+    }
+  ],
+  "target_step": "task",
+  "task_scope": "official_full_task",
+  "workspace_origin": "pinned_loopsbench_release_source_base"
+}

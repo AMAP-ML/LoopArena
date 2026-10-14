@@ -17,6 +17,7 @@ and evaluates there before teardown.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import shutil
@@ -42,7 +43,7 @@ from looparena.harness.continuous_session import (
     ContinuousHarnessSession,
 )
 from looparena.harness.evaluator_protocol import (
-    classify_infrastructure_validity,
+    classify_manifest_infrastructure_validity,
     derive_task_outcome,
     validate_evaluator_plan,
 )
@@ -69,7 +70,6 @@ from looparena.runtime.non_adaptive_fixed_controller import (
 from looparena.runtime.source_identity import capture_harness_identity
 
 DEFAULT_GATEWAY = _llm.default_worker_base_url()
-DEFAULT_MODEL = "qwen3.7-plus"
 
 
 class _RunSignalInterruption(BaseException):
@@ -248,9 +248,6 @@ def _recovery_runtime_identity(
         ),
         "retry_policy": {
             "gateway_attempt_limit_per_credential": _llm.WORKER_GATEWAY_ATTEMPT_LIMIT,
-            "explicit_fallback_credential_enabled": bool(
-                os.environ.get(_llm.EXPLICIT_FALLBACK_API_KEY_ENV)
-            ),
             "controller_outer_attempt_limit": (
                 int(getattr(controller, "max_retries", 0))
                 if controller is not None
@@ -283,7 +280,6 @@ def build_start_context(
         "current_state": "The repository is restored at the declared starting state.",
         "current_objective": require_task_text(task),
         "acceptance_criteria": [],
-        "acceptance_criteria_provenance": [],
         "controller_state": {},
         "remaining_uncertainty": [],
         "reported_blockers": [],
@@ -309,6 +305,7 @@ def run_episode(
     *,
     arm: str,
     task: str,
+    task_sha256: str | None = None,
     workspace: Path,
     out_dir: Path,
     worker: Any,
@@ -354,7 +351,7 @@ def run_episode(
         if first_message.get("role") != "system":
             raise ValueError("serialized context must start with a system message")
         # The system prompt is runtime policy, not sample evidence. Upgrade only
-        # that message at load time and preserve the historical conversation tail.
+        # that message at load time and preserve the existing conversation tail.
         serialized_messages[0] = {
             "role": "system",
             "content": R.WORKER_SYSTEM_PROMPT,
@@ -383,12 +380,14 @@ def run_episode(
     if serialized_messages is not None:
         conversation.messages = json.loads(json.dumps(serialized_messages))
 
+    task_sha256 = task_sha256 or hashlib.sha256(task.encode("utf-8")).hexdigest()
     checkpoint_path = out_dir / "recovery_checkpoint.json"
     checkpoint_static = {
         "arm": arm,
         "sample_id": sample_id,
         "seed": seed,
         "start_mode": start_mode,
+        "task_sha256": task_sha256,
         "runtime_identity": _recovery_runtime_identity(
             worker=worker,
             main_sandbox=main_sandbox,
@@ -399,10 +398,20 @@ def run_episode(
         "initial_prefix_message_count": initial_prefix_message_count,
     }
     if recovery_checkpoint is not None:
-        for key in ("arm", "sample_id", "seed", "start_mode"):
+        for key in ("arm", "sample_id", "seed", "start_mode", "task_sha256"):
             expected = checkpoint_static[key]
             if recovery_checkpoint.get(key) != expected:
                 raise ValueError(f"recovery checkpoint identity mismatch: {key}")
+        previous_runtime = json.loads(json.dumps(recovery_checkpoint.get("runtime_identity")))
+        current_runtime = json.loads(json.dumps(checkpoint_static["runtime_identity"]))
+        # Credential rotation is operational; models, images and budgets must match.
+        for identity in (previous_runtime, current_runtime):
+            if isinstance(identity, dict):
+                for role in ("worker", "controller"):
+                    if isinstance(identity.get(role), dict):
+                        identity[role].pop("credential_profile_id", None)
+        if previous_runtime != current_runtime:
+            raise ValueError("recovery checkpoint runtime identity mismatch")
         if recovery_checkpoint.get("safe_to_resume") is not True:
             raise ValueError("recovery checkpoint is not at a safe worker boundary")
         recovery_cycle = recovery_checkpoint.get("cycle_index")
@@ -578,15 +587,13 @@ def run_episode(
     )
     worker_uses_provider_sampling = _llm.provider_family(
         str(getattr(worker, "model", ""))
-    ) in {"gpt", "claude"}
+    ) in {"gpt", "o", "claude"}
     manifest = {
         "arm": arm,
+        "task_sha256": task_sha256,
         "status": result.status,
         "termination_reason": result.termination_reason,
         "terminal_action": result.terminal_action,
-        "infrastructure_validity": classify_infrastructure_validity(
-            result.status, result.termination_reason
-        ),
         "sample_id": sample_id,
         "start_mode": start_mode,
         "seed": seed,
@@ -595,6 +602,8 @@ def run_episode(
         "main_worker_turns": result.main_worker_turns,
         "main_worker_repo_tool_calls": result.main_worker_repo_tool_calls,
         "main_worker_wall_time_elapsed_sec": result.main_worker_wall_time_sec,
+        "main_worker_wall_time_current_window_sec": result.main_worker_wall_time_sec,
+        "main_worker_wall_time_window_index": 1,
         "reporter_turn_limit_per_call": 0 if fixed_control else REPORTER_TURN_LIMIT,
         "control_cycle_limit": CONTROL_CYCLE_LIMIT,
         "control_channel_budget_policy": {
@@ -665,7 +674,7 @@ def run_episode(
                 0 if fixed_control else REPORTER_TURN_LIMIT
             ),
             "control_cycles": CONTROL_CYCLE_LIMIT,
-            "main_worker_max_output_tokens_per_request": 8192,
+            "main_worker_max_output_tokens_per_request": None,
             "reporter_max_output_tokens_per_request": None if fixed_control else 8192,
             "controller_max_output_tokens_per_request": (
                 None
@@ -679,7 +688,7 @@ def run_episode(
                     "provider_default" if worker_uses_provider_sampling else "explicit"
                 ),
                 "temperature": None if worker_uses_provider_sampling else 0.7,
-                "max_output_tokens": 8192,
+                "max_output_tokens": None,
                 "thinking_mode": "provider_default",
                 "context_capacity_utf8_bytes": int(
                     getattr(
@@ -862,6 +871,7 @@ def run_episode(
         )
     if solve_runtime_setup is not None:
         manifest["artifacts"]["solve_runtime_setup"] = "solve_runtime_setup.json"
+    manifest["infrastructure_validity"] = classify_manifest_infrastructure_validity(manifest)
     manifest["evaluation_state"] = "awaiting_evaluation"
     manifest["artifacts"]["solve_manifest"] = "solve_manifest.json"
     _write_json(out_dir / "solve_manifest.json", manifest)
@@ -898,14 +908,15 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--out-dir", type=Path, required=True)
     parser.add_argument("--sample-id", required=True)
     parser.add_argument("--seed", type=int, default=0)
-    parser.add_argument("--worker-model", default=DEFAULT_MODEL)
-    parser.add_argument("--controller-model", default=DEFAULT_MODEL)
+    parser.add_argument("--worker-model", help="Model ID accepted by the configured endpoint.")
+    parser.add_argument("--controller-model", help="Model ID accepted by the configured endpoint.")
     parser.add_argument(
         "--controller-provider",
         choices=("model", "non-adaptive-fixed"),
         default="model",
         help="Use the tested model or the deterministic fixed-goal ablation.",
     )
+    parser.add_argument("--api-key-env", default=_llm.DEFAULT_API_KEY_ENV)
     parser.add_argument("--base-url", default=DEFAULT_GATEWAY)
     parser.add_argument("--credential-profile-id", default="default-gateway")
     parser.add_argument("--controller-base-url")
@@ -966,6 +977,11 @@ def build_parser() -> argparse.ArgumentParser:
         default=900,
         help="Per-command timeout for source-runtime restoration.",
     )
+    parser.add_argument(
+        "--normalize-solve-workspace-permissions-after-stop",
+        action="store_true",
+        help="After model access ends, allow host snapshot reads of source-created files.",
+    )
     parser.add_argument("--worker-wall-time-sec", type=int, default=7200)
     parser.add_argument("--reporter-wall-time-sec", type=int, default=900)
     parser.add_argument("--gateway-timeout-sec", type=int, default=300)
@@ -991,10 +1007,16 @@ def build_parser() -> argparse.ArgumentParser:
 def main(argv: list[str] | None = None) -> int:
     parser = build_parser()
     args = parser.parse_args(argv)
+    if not args.worker_model or not args.worker_model.strip():
+        parser.error("--worker-model is required for model execution")
+    if args.arm == "controlled" and args.controller_provider == "model":
+        if not args.controller_model or not args.controller_model.strip():
+            parser.error("--controller-model is required for a model Controller")
     if args.controller_provider == "non-adaptive-fixed":
         if args.arm != "controlled":
             parser.error("non-adaptive fixed control is controlled-only")
-    task = require_task_text(args.task_file.read_text(encoding="utf-8"))
+    task_bytes = args.task_file.read_bytes()
+    task = require_task_text(task_bytes.decode("utf-8"))
     workspace = args.workspace.resolve()
     out_dir = args.out_dir.resolve()
     runtime_dir = (
@@ -1061,6 +1083,7 @@ def main(argv: list[str] | None = None) -> int:
             parser.error(f"invalid recovery checkpoint: {exc}")
     worker = _llm.WorkerClient(
         model=args.worker_model,
+        api_key_env=args.api_key_env,
         base_url=args.base_url,
         timeout_sec=args.gateway_timeout_sec,
         transport="http",
@@ -1158,6 +1181,7 @@ def main(argv: list[str] | None = None) -> int:
             result_manifest = run_episode(
                 arm=args.arm,
                 task=task,
+                task_sha256=hashlib.sha256(task_bytes).hexdigest(),
                 workspace=workspace,
                 out_dir=out_dir,
                 worker=worker,
@@ -1179,6 +1203,17 @@ def main(argv: list[str] | None = None) -> int:
                 recovery_checkpoint=recovery_checkpoint,
                 harness_identity=harness_identity,
             )
+            if args.normalize_solve_workspace_permissions_after_stop:
+                # Model access has ended. Read/traverse bits permit the host to
+                # seal source-generated root-owned files without changing content.
+                import shlex
+
+                main_sandbox.command_deadline_monotonic = None
+                rc, output = main_sandbox.exec(
+                    "chmod -R a+rX -- " + shlex.quote(args.mount_point), timeout_sec=120
+                )
+                if rc:
+                    raise RuntimeError("cannot make solve snapshot readable: " + output)
             if (
                 isinstance(evaluator_plan, dict)
                 and evaluator_plan.get("adapter_kind") == "beyondswe_harbor"

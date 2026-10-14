@@ -1,0 +1,37 @@
+# Silence DeprecationWarning when converting empty geometry coordinates to NumPy arrays on NumPy 1.21+
+
+## Background
+On NumPy 1.21 and later, interactions between Shapely geometries and NumPy arrays have started emitting a `DeprecationWarning`, such as:
+
+```text
+DeprecationWarning: An exception was ignored while fetching the attribute __array_interface__ from object
+```
+
+Work has already been done so that assigning non-empty geometries (for example, a `Polygon` or multi-part geometries) to a NumPy object array proceeds silently. However, converting the coordinates of an *empty* geometry to a NumPy array still triggers the warning.
+
+## Current Behavior
+With NumPy >= 1.21, obtaining the coordinate array of an empty geometry emits a `DeprecationWarning`.
+
+**Reproduction:**
+```python
+import warnings
+import numpy as np
+from shapely.geometry import Polygon
+
+p = Polygon()  # empty geometry
+
+with warnings.catch_warnings():
+    warnings.simplefilter("error")
+    np.asarray(p.exterior.coords)  # raises DeprecationWarning on NumPy 1.21+
+```
+
+## Expected Behavior
+Converting an empty geometry's coordinates to a NumPy array (e.g., via `np.asarray` on a coordinate sequence) must proceed silently without emitting a `DeprecationWarning` on NumPy 1.21+.
+
+## Requirements
+- Coordinate access on empty geometries must not raise or emit a `DeprecationWarning` when converted to a NumPy array under NumPy >= 1.21.
+- The resulting array should have the same shape and dtype semantics as before for empty coordinate sequences.
+- Preserve the already-completed behaviors: assigning a polygon geometry to a NumPy object array remains silent on NumPy 1.21+, and assigning multi-part geometries to a NumPy object array remains silent on NumPy 1.21+.
+- Do not regress normal (non-empty) coordinate conversion behavior.
+
+The repository is at `/workspace/shapely`.

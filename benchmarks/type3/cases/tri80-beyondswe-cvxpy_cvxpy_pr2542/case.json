@@ -1,0 +1,10 @@
+{
+  "adapter_kind": "beyondswe_harbor",
+  "case_id": "tri80-beyondswe-cvxpy_cvxpy_pr2542",
+  "episode_origin": "official_problem_start",
+  "harness_start_mode": "bootstrap_contract_start",
+  "official_task_id": "beyondswe:cvxpy_cvxpy_pr2542",
+  "task_scope": "official_full_task",
+  "task_sequence_ref": "task_sequence.json",
+  "task_sequence_sha256": "dd89a9b9f7314594d0e3b3cce7f204f8b7498bfa3b6c5db558f6b8bfd6976a88"
+}

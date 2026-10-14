@@ -499,7 +499,7 @@ class Sandbox:
             self.network,
         ]
         attempt_owner_id = os.environ.get(ATTEMPT_OWNER_ENV, "").strip()
-        if attempt_owner_id is not None:
+        if attempt_owner_id:
             command.extend(["--label", f"{ATTEMPT_OWNER_LABEL}={attempt_owner_id}"])
         if self.memory_mb is not None:
             command.extend(["--memory", f"{self.memory_mb}m"])

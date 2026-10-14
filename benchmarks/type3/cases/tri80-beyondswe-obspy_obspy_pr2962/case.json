@@ -1,0 +1,10 @@
+{
+  "adapter_kind": "beyondswe_harbor",
+  "case_id": "tri80-beyondswe-obspy_obspy_pr2962",
+  "episode_origin": "official_problem_start",
+  "harness_start_mode": "bootstrap_contract_start",
+  "official_task_id": "beyondswe:obspy_obspy_pr2962",
+  "task_scope": "official_full_task",
+  "task_sequence_ref": "task_sequence.json",
+  "task_sequence_sha256": "28c81fdb6c82c16b410ddfbcdbba186a33c6773c3b5bfb4a08971fd52200b2f9"
+}

@@ -1,0 +1,30 @@
+{
+  "adapter_config": {
+    "docker_executable": "docker",
+    "expected_test_count": 27,
+    "expected_unit_ids": [
+      "alloy",
+      "kodkod",
+      "pardinus",
+      "electrum"
+    ],
+    "result_protocol": "source_run_tests",
+    "runtime_assets_dir": "/opt/looparena/evaluator_assets/evaluator_runtime",
+    "task_dir": "/opt/looparena/evaluator_assets/tasks/task_alloy_formal_modeling"
+  },
+  "adapter_kind": "loopsbench",
+  "adapter_version": "source-run-tests-v1",
+  "evaluator_revision": "5880b64491e2cac2f83d497153ed173b8a995b8b",
+  "network": "bridge",
+  "pass_policy": "all-source-unit-tests-pass",
+  "runtime_identity": {
+    "image_id": "sha256:0591fc77b03fb7e7cb6ffc8947fa37ca8cbea89970d7e58401ac7983fe1e18ca",
+    "image_reference": "looparena-loopsbench-84ae415/task_alloy_formal_modeling:frozen",
+    "platform": "linux/amd64",
+    "task_tree_sha256": "daa04a0dc26fd9f67e5bc5a130ce6dd10effc8d510274af0b6541670e513c38b",
+    "workdir": "/workspace"
+  },
+  "solve_network": "bridge",
+  "source_revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+  "timeout_sec": 600
+}

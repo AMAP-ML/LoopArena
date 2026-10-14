@@ -1,0 +1,10 @@
+{
+  "adapter_kind": "loopsbench",
+  "case_id": "tri80-loopsbench-task_stream_mining",
+  "episode_origin": "official_problem_start",
+  "harness_start_mode": "bootstrap_contract_start",
+  "official_task_id": "loopsbench:task_stream_mining",
+  "task_scope": "official_full_task",
+  "task_sequence_ref": "task_sequence.json",
+  "task_sequence_sha256": "84465c0f4d310939039cff9eebda4913057ab7089c7f95273f60fcf0c18feb30"
+}

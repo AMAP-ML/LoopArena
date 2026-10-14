@@ -1,0 +1,3480 @@
+{
+  "case_id": "tri80-loopsbench-task_nandteris-cp3",
+  "files": [
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": ".github"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": ".github/workflows"
+    },
+    {
+      "bytes": 441,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/workflows/release.yml",
+      "sha256": "235660d9fc6f3fda748c2d0637e696ff5c488c97c059a20149879ce68ef5d690",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/.github/workflows/release.yml"
+      }
+    },
+    {
+      "bytes": 30,
+      "kind": "file",
+      "mode": 420,
+      "path": ".gitignore",
+      "sha256": "5eae796d887fff27084fde609e117ca4217d127ae5102afdafe0bdf96bdf5143",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/.gitignore"
+      }
+    },
+    {
+      "bytes": 1398,
+      "kind": "file",
+      "mode": 420,
+      "path": "LICENSE",
+      "sha256": "079ca6b25052b2dd07dfeeddddbc7375a9d8e8cda04be44f9017957caf0882d9",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/LICENSE"
+      }
+    },
+    {
+      "bytes": 250,
+      "kind": "file",
+      "mode": 420,
+      "path": "README.md",
+      "sha256": "b854635bfe7d9233ca6ee02c6769c4640297a1142be770aab6932884f79f3179",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/README.md"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "demo"
+    },
+    {
+      "bytes": 135,
+      "kind": "file",
+      "mode": 420,
+      "path": "demo/Xor.cmp",
+      "sha256": "004bf69fe7a6ad78eb760362b088d3fa3445cc6edd28767a3a69e75dec526709",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/demo/Xor.cmp"
+      }
+    },
+    {
+      "bytes": 800,
+      "kind": "file",
+      "mode": 420,
+      "path": "demo/Xor.hdl",
+      "sha256": "f4df5f187329e26c8d62e9ae26ba8c656220762eafd32fadb1dd3cb4c572fbb0",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/demo/Xor.hdl"
+      }
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "demo/Xor.out",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/demo/Xor.out"
+      }
+    },
+    {
+      "bytes": 426,
+      "kind": "file",
+      "mode": 420,
+      "path": "demo/Xor.tst",
+      "sha256": "7b5be363da929e2aafd01a63b551a9f3c050510f8b65921f29d702d64c70b61e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/demo/Xor.tst"
+      }
+    },
+    {
+      "bytes": 5607,
+      "kind": "file",
+      "mode": 420,
+      "path": "module_dag.yaml",
+      "sha256": "5dc5a22702e846290fcf5eb0b5e6affae6356c77f8f7115019794f3885a809bf",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/module_dag.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/00"
+    },
+    {
+      "bytes": 262,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/00/file.txt",
+      "sha256": "d443533cc5fcd8f1c508106b952ed04aba900dfed4edce711159322ab1716cc7",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/00/file.txt"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/01"
+    },
+    {
+      "bytes": 135,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/And.cmp",
+      "sha256": "a624cca5f8973cee970e4a2274744a6089af66b8a7099c9b56dbddf35db07f1d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/01/And.cmp"
+      }
+    },
+    {
+      "bytes": 147,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/And.hdl",
+      "sha256": "5ffc9f6c95ec3fb17994e01c772b3fb2d4c884b3ea47595297373aa3d4cc7bad",
+      "source": {
+        "blob": "5ffc9f6c95ec3fb17994e01c772b3fb2d4c884b3ea47595297373aa3d4cc7bad",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 426,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/And.tst",
+      "sha256": "6c8b515358aa3bc693a58ca06bc79e9e64a1374ab53d7acd9718cee5f5a017ad",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/01/And.tst"
+      }
+    },
+    {
+      "bytes": 420,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/And16.cmp",
+      "sha256": "8f46fdc31bb339e5c9da9a6e1fcf34ca086514c2fc9f1ca1644ac5d4d3a52d10",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/01/And16.cmp"
+      }
+    },
+    {
+      "bytes": 710,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/And16.hdl",
+      "sha256": "bf028380aeced424168638a9eb1eb7b1339368bb547ba102654d1fc8d032d55d",
+      "source": {
+        "blob": "bf028380aeced424168638a9eb1eb7b1339368bb547ba102654d1fc8d032d55d",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 715,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/And16.tst",
+      "sha256": "0717b12bdd4349e2c901d005cafc177b5ebe55265b83782679bd34b521efd3fa",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/01/And16.tst"
+      }
+    },
+    {
+      "bytes": 175,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/DMux.cmp",
+      "sha256": "e43255d7425f8729b0693bfa0af0455f84a2dcaeede6c2417370bfb8e6edf1cf",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/01/DMux.cmp"
+      }
+    },
+    {
+      "bytes": 180,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/DMux.hdl",
+      "sha256": "13aa04b5143af371592c85bcca928c49dbef51dd0a4fa8aea272e44eee8a947d",
+      "source": {
+        "blob": "13aa04b5143af371592c85bcca928c49dbef51dd0a4fa8aea272e44eee8a947d",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 430,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/DMux.tst",
+      "sha256": "bfe2ac27f84d4ea5f9018353241401c65eb9d41b23bd2ae753d42c1d664b5bae",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/01/DMux.tst"
+      }
+    },
+    {
+      "bytes": 360,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/DMux4Way.cmp",
+      "sha256": "d8e6dbc9ca7d707f93985096bc268f06a305960a8f5bfc782cdabecbd6f61099",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/01/DMux4Way.cmp"
+      }
+    },
+    {
+      "bytes": 226,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/DMux4Way.hdl",
+      "sha256": "e8e3feda8a44c0207fc9047de4568cd3cf45b6e69a47db74917bb8428bf75f5b",
+      "source": {
+        "blob": "e8e3feda8a44c0207fc9047de4568cd3cf45b6e69a47db74917bb8428bf75f5b",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 608,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/DMux4Way.tst",
+      "sha256": "e0d60164885485bcc6565de70e456e0d64dd59f7a6a7941fcca15c66951d2e8d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/01/DMux4Way.tst"
+      }
+    },
+    {
+      "bytes": 1105,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/DMux8Way.cmp",
+      "sha256": "c857818403563617e449f968bf1e7c32ea7cbee85f31934d3d3ad7228f618ef3",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/01/DMux8Way.cmp"
+      }
+    },
+    {
+      "bytes": 280,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/DMux8Way.hdl",
+      "sha256": "6e17812af55439bb0afadac95f8995e9663e4c4c4ac40d6829dfa6b5ad0816bb",
+      "source": {
+        "blob": "6e17812af55439bb0afadac95f8995e9663e4c4c4ac40d6829dfa6b5ad0816bb",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 924,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/DMux8Way.tst",
+      "sha256": "f502352ab1acf51cc06a70f392cb05404bd794283e738c2b17792a0dfaddf700",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/01/DMux8Way.tst"
+      }
+    },
+    {
+      "bytes": 315,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/Mux.cmp",
+      "sha256": "861619cf14e825c450a22c364799b1c35c3d53f4d351eb0db5dfefffbe2103a0",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/01/Mux.cmp"
+      }
+    },
+    {
+      "bytes": 234,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/Mux.hdl",
+      "sha256": "09fec6a03b9051f0dc5681181c25bec9b83ce0a34acccc1ea037cb53dfcc41bf",
+      "source": {
+        "blob": "09fec6a03b9051f0dc5681181c25bec9b83ce0a34acccc1ea037cb53dfcc41bf",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 605,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/Mux.tst",
+      "sha256": "50dd659cabad7a2787ce08c5c1690acc512b2eee255c89736abb0e8e20e51a6e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/01/Mux.tst"
+      }
+    },
+    {
+      "bytes": 594,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/Mux16.cmp",
+      "sha256": "b02db999dc6bf84797a34b563416f4419c48b306a01a39999fb8855846326291",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/01/Mux16.cmp"
+      }
+    },
+    {
+      "bytes": 859,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/Mux16.hdl",
+      "sha256": "13fd01fe36999fcdf15d587e2942a42509874907b8ee6e48c5c2b8569ce0ea16",
+      "source": {
+        "blob": "13fd01fe36999fcdf15d587e2942a42509874907b8ee6e48c5c2b8569ce0ea16",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 716,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/Mux16.tst",
+      "sha256": "e0ff2ad4308f56acdf12389280418db4b108112aedc9aaaaa475a3916227cb0f",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/01/Mux16.tst"
+      }
+    },
+    {
+      "bytes": 945,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/Mux4Way16.cmp",
+      "sha256": "57c9e1932b85301a76f4a73100fcb23a762f10260783144ff77812a82f928637",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/01/Mux4Way16.cmp"
+      }
+    },
+    {
+      "bytes": 268,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/Mux4Way16.hdl",
+      "sha256": "d98549e420c05320f17ccc168717ef1060dc01bcaebafceef4e34d1723288178",
+      "source": {
+        "blob": "d98549e420c05320f17ccc168717ef1060dc01bcaebafceef4e34d1723288178",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 720,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/Mux4Way16.tst",
+      "sha256": "093939622ecbb66bc90dc0ab8ac99c2530a0972205e930ffd7ca56fd4c4b1628",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/01/Mux4Way16.tst"
+      }
+    },
+    {
+      "bytes": 3094,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/Mux8Way16.cmp",
+      "sha256": "b201591a917368177fbda6b0386775ed0cab3db09691cf42c24a905a95f7aa84",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/01/Mux8Way16.cmp"
+      }
+    },
+    {
+      "bytes": 352,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/Mux8Way16.hdl",
+      "sha256": "431a59b79aadb75797d62215cfbc93fff7becd0d40650a23ecd3ba6d7b74767e",
+      "source": {
+        "blob": "431a59b79aadb75797d62215cfbc93fff7becd0d40650a23ecd3ba6d7b74767e",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 1148,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/Mux8Way16.tst",
+      "sha256": "5b4d22dd121bcb0873349c20f04d87b229b9e98da925c416de0cd67caee3f72f",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/01/Mux8Way16.tst"
+      }
+    },
+    {
+      "bytes": 57,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/Not.cmp",
+      "sha256": "97c6108adca0a1a4ac9dbe840dedef141ce76c65baecc33919b6fe799be20d97",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/01/Not.cmp"
+      }
+    },
+    {
+      "bytes": 113,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/Not.hdl",
+      "sha256": "a9836478aad540c9884774337e07893e8b81861a0fffa88a6f2401205e96f6bd",
+      "source": {
+        "blob": "a9836478aad540c9884774337e07893e8b81861a0fffa88a6f2401205e96f6bd",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 324,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/Not.tst",
+      "sha256": "e13d70438d93fb32ede918fafc9ed1a68b31263db9e6370bb0d7af2cac3beb80",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/01/Not.tst"
+      }
+    },
+    {
+      "bytes": 246,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/Not16.cmp",
+      "sha256": "f1e0e338dc99159595aaad395189cb93f9ff7260d2e25e3ff2cc9720ad7bbe1b",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/01/Not16.cmp"
+      }
+    },
+    {
+      "bytes": 602,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/Not16.hdl",
+      "sha256": "1c7b38a05637696d8090ebddc102ab30625b3e5b4cf5d6943b1c42efcc8c358b",
+      "source": {
+        "blob": "1c7b38a05637696d8090ebddc102ab30625b3e5b4cf5d6943b1c42efcc8c358b",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 504,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/Not16.tst",
+      "sha256": "0a34a66ba73a0d1b88221540b7e95a3d3d1e4c75711adf4d32e2f6933332d834",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/01/Not16.tst"
+      }
+    },
+    {
+      "bytes": 135,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/Or.cmp",
+      "sha256": "13446ee4e278019960e22cbdf722316e5f0c0b9105adf40acfc839a411987ba6",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/01/Or.cmp"
+      }
+    },
+    {
+      "bytes": 167,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/Or.hdl",
+      "sha256": "da5fd0009d75c4d578385333f8c6805743deba22fdf0f7f8ffc11cb637657a70",
+      "source": {
+        "blob": "da5fd0009d75c4d578385333f8c6805743deba22fdf0f7f8ffc11cb637657a70",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 422,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/Or.tst",
+      "sha256": "662be9291fe08d153f54ecb36dafce5bfd2b2d6eb3573afff80c99353adb6126",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/01/Or.tst"
+      }
+    },
+    {
+      "bytes": 420,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/Or16.cmp",
+      "sha256": "4b0849f318242e20a9094ca9c8da9c265d6f4273b7428f9a41c29a5af0510a29",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/01/Or16.cmp"
+      }
+    },
+    {
+      "bytes": 692,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/Or16.hdl",
+      "sha256": "696f447c184df51f9e402d0c29da2b9ef661e13b3d3d8dc7edfe8825a82dd0cd",
+      "source": {
+        "blob": "696f447c184df51f9e402d0c29da2b9ef661e13b3d3d8dc7edfe8825a82dd0cd",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 711,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/Or16.tst",
+      "sha256": "c1b69553706c89daac42583da8977a95e731750c33391bf6d6e9ab24c1e811d5",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/01/Or16.tst"
+      }
+    },
+    {
+      "bytes": 132,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/Or8Way.cmp",
+      "sha256": "6b7551c5edd506f98e402b308352f3fc7f6f89fc61b443bc801706b1a1062c32",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/01/Or8Way.cmp"
+      }
+    },
+    {
+      "bytes": 344,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/Or8Way.hdl",
+      "sha256": "63e467f820e469407a9ea6669c9461e94092f021d757314346cad5c1f2f68c3c",
+      "source": {
+        "blob": "63e467f820e469407a9ea6669c9461e94092f021d757314346cad5c1f2f68c3c",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 466,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/Or8Way.tst",
+      "sha256": "6cb4050a9a0bd3d018183b5a6a69cc465f1bb577ac56d547e18b76a2795dfa1d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/01/Or8Way.tst"
+      }
+    },
+    {
+      "bytes": 135,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/Xor.cmp",
+      "sha256": "004bf69fe7a6ad78eb760362b088d3fa3445cc6edd28767a3a69e75dec526709",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/demo/Xor.cmp"
+      }
+    },
+    {
+      "bytes": 225,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/Xor.hdl",
+      "sha256": "2576b1e6191e75dbe480eb5f3357c01c54495128db54e79c041760e5a0600641",
+      "source": {
+        "blob": "2576b1e6191e75dbe480eb5f3357c01c54495128db54e79c041760e5a0600641",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 426,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/01/Xor.tst",
+      "sha256": "7b5be363da929e2aafd01a63b551a9f3c050510f8b65921f29d702d64c70b61e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/demo/Xor.tst"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/02"
+    },
+    {
+      "bytes": 3108,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/02/ALU-nostat.cmp",
+      "sha256": "0852db2961cec5c190ee78038a29a5f9deb99390b01b567388bfdca5d7d4ecfc",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/02/ALU-nostat.cmp"
+      }
+    },
+    {
+      "bytes": 4107,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/02/ALU-nostat.tst",
+      "sha256": "23b8fa385bc2169c804a39eb79c3097072284959791c606da47ab1f5cf7705f1",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/02/ALU-nostat.tst"
+      }
+    },
+    {
+      "bytes": 3404,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/02/ALU.cmp",
+      "sha256": "b1a5b74e3d7360706de24b722a0534c08fc3dc5a2416a485048dde356f39dfdd",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/02/ALU.cmp"
+      }
+    },
+    {
+      "bytes": 1183,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/02/ALU.hdl",
+      "sha256": "409b099237d4cd7aa4b1263c95531475685fa00950b3656d257087ceebe48c15",
+      "source": {
+        "blob": "409b099237d4cd7aa4b1263c95531475685fa00950b3656d257087ceebe48c15",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 4146,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/02/ALU.tst",
+      "sha256": "93546661469e9bbf08bbe1e8671ba9852c45b0e9ed870d796fa7c7365c1b2424",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/02/ALU.tst"
+      }
+    },
+    {
+      "bytes": 420,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/02/Add16.cmp",
+      "sha256": "302df8a100e4fd6b1aa2b7e0421d9c8d303e0df9cd38501729833663194a4411",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/02/Add16.cmp"
+      }
+    },
+    {
+      "bytes": 1067,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/02/Add16.hdl",
+      "sha256": "c066f1b331f90334cb35f4476b7a893409cbe48920f3ad50c476a57e336d72fa",
+      "source": {
+        "blob": "c066f1b331f90334cb35f4476b7a893409cbe48920f3ad50c476a57e336d72fa",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 717,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/02/Add16.tst",
+      "sha256": "b8354fc9369250bc67ea744a7353704c2386c5270c7d4fe12de5a136b99641ec",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/02/Add16.tst"
+      }
+    },
+    {
+      "bytes": 387,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/02/FullAdder.cmp",
+      "sha256": "34d2c43e346969d95d86ebfeffd8dc098cb09510fb9d2e2bac920a1b3dbb9449",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/02/FullAdder.cmp"
+      }
+    },
+    {
+      "bytes": 245,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/02/FullAdder.hdl",
+      "sha256": "7d26cdd3a8b99fa565840775e3096b4bd1b0624dd959611247740d2cb57e53e7",
+      "source": {
+        "blob": "7d26cdd3a8b99fa565840775e3096b4bd1b0624dd959611247740d2cb57e53e7",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 604,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/02/FullAdder.tst",
+      "sha256": "bd0c0e1b770de8da55c210b99e67cb181da59085097ab797f8a06473780da6fd",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/02/FullAdder.tst"
+      }
+    },
+    {
+      "bytes": 175,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/02/HalfAdder.cmp",
+      "sha256": "bd1699087c297e2f9017c54f2b9685425ed1ab9730188e5d00001eacf03ba6f3",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/02/HalfAdder.cmp"
+      }
+    },
+    {
+      "bytes": 161,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/02/HalfAdder.hdl",
+      "sha256": "71bab1a92dd476e07dc206cf2186d19cacd4f4cbba4f45a587885aeca90ce94f",
+      "source": {
+        "blob": "71bab1a92dd476e07dc206cf2186d19cacd4f4cbba4f45a587885aeca90ce94f",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 463,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/02/HalfAdder.tst",
+      "sha256": "0738a1c424bdb9ad34869775212b25d87cc607bede8ba4f541806403feb33402",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/02/HalfAdder.tst"
+      }
+    },
+    {
+      "bytes": 205,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/02/Inc16.cmp",
+      "sha256": "d4ddadd091c600d8e68123144a5c64fc5c89af48f7838876dc95fc336150149e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/02/Inc16.cmp"
+      }
+    },
+    {
+      "bytes": 147,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/02/Inc16.hdl",
+      "sha256": "b25d01755bd5b41cfa9e1854394764d919e487a300c5d506aa1102aadde5de0d",
+      "source": {
+        "blob": "b25d01755bd5b41cfa9e1854394764d919e487a300c5d506aa1102aadde5de0d",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 506,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/02/Inc16.tst",
+      "sha256": "11f733c9585ec3163894b5563fa4e68438edd8c3b3d70000186f4f59e7d0622c",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/02/Inc16.tst"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/03"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/03/a"
+    },
+    {
+      "bytes": 6020,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/03/a/Bit.cmp",
+      "sha256": "b55e50ca09ccb4fe773b39a1d0ca0ed8c60be480120db373b1c27854b06538c1",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/03/a/Bit.cmp"
+      }
+    },
+    {
+      "bytes": 113,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/03/a/Bit.hdl",
+      "sha256": "51366ff59796eb533ae9ecd1e8cb98c033da1edf70f396d257d85dda10900f7e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/03/a/Bit.hdl"
+      }
+    },
+    {
+      "bytes": 6712,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/03/a/Bit.tst",
+      "sha256": "82f358fa399f0dec7c1f51ae7d138d7e537ea4c4d67febedaa3eca69b4e70da4",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/03/a/Bit.tst"
+      }
+    },
+    {
+      "bytes": 1426,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/03/a/PC.cmp",
+      "sha256": "64807445a457683513b816f27523b2e427382022d45782b378f907e7cdc1f105",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/03/a/PC.cmp"
+      }
+    },
+    {
+      "bytes": 131,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/03/a/PC.hdl",
+      "sha256": "66b9d74200f86b0d3b3e0a6edb428e558a6fc3bd0d797492cfdeea75fdde4429",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/03/a/PC.hdl"
+      }
+    },
+    {
+      "bytes": 1195,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/03/a/PC.tst",
+      "sha256": "b8bbe00f5554b99fa0d811cdf48628c467bb284d60167ee3e9fe113d8333ff7c",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/03/a/PC.tst"
+      }
+    },
+    {
+      "bytes": 13440,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/03/a/RAM64.cmp",
+      "sha256": "a14467c12b16baf4ec53962d0e7e64fb2c3ca8567bbed8a447088f09a6be05db",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/03/a/RAM64.cmp"
+      }
+    },
+    {
+      "bytes": 137,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/03/a/RAM64.hdl",
+      "sha256": "50d3e55092fe0c0e7ff107689d5925e47ed0f6f109cdd5f2f10da42d8eead7a5",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/03/a/RAM64.hdl"
+      }
+    },
+    {
+      "bytes": 12489,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/03/a/RAM64.tst",
+      "sha256": "3b6c46f66efc923682297749e1956bdd58bee029615fcfecea16446033223ee8",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/03/a/RAM64.tst"
+      }
+    },
+    {
+      "bytes": 7266,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/03/a/RAM8.cmp",
+      "sha256": "8fe4f276498a4558711ce433e46ed69db58eb95c157fcc104911f5b2f56818fd",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/03/a/RAM8.cmp"
+      }
+    },
+    {
+      "bytes": 135,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/03/a/RAM8.hdl",
+      "sha256": "9c51609589b014311d1b001c61ca293a232fc23272776bba6f105b533ea6ce54",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/03/a/RAM8.hdl"
+      }
+    },
+    {
+      "bytes": 5975,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/03/a/RAM8.tst",
+      "sha256": "90dda5163110a0d243fcd53ea323cca54e7343540716c492d62b64187a425481",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/03/a/RAM8.tst"
+      }
+    },
+    {
+      "bytes": 5066,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/03/a/Register.cmp",
+      "sha256": "667b4ce393b9bd239653feb55b067fe0363a42b792d1bd317ad0354509a73d9f",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/03/a/Register.cmp"
+      }
+    },
+    {
+      "bytes": 131,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/03/a/Register.hdl",
+      "sha256": "8e6315a5715619eef008e521c8af4facefeb7ac95814f3aa03caea53e8cb969e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/03/a/Register.hdl"
+      }
+    },
+    {
+      "bytes": 4972,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/03/a/Register.tst",
+      "sha256": "67105d4c0502290e8a00b20227ce23279d119583a9bf14574fcee3f5b1991267",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/03/a/Register.tst"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/03/b"
+    },
+    {
+      "bytes": 14080,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/03/b/RAM16K.cmp",
+      "sha256": "7af37df35df3de41aff72f962ac77248e084d0dd7794279821feed3f3bea56ca",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/03/b/RAM16K.cmp"
+      }
+    },
+    {
+      "bytes": 101,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/03/b/RAM16K.hdl",
+      "sha256": "e7e7e058a17fa0965ba5d05cd3d08cc23e3e15bbb9728523f51c189ec1cb47f1",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/03/b/RAM16K.hdl"
+      }
+    },
+    {
+      "bytes": 14303,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/03/b/RAM16K.tst",
+      "sha256": "647a4786cdcb6dfaf98091d404f3b37128ed41176f65ffc9d27ba92781da3d91",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/03/b/RAM16K.tst"
+      }
+    },
+    {
+      "bytes": 13760,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/03/b/RAM4K.cmp",
+      "sha256": "1e0383a6c3a727dda2461d0e6746abc32fb1d3ac08168ce15be499c405b88469",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/03/b/RAM4K.cmp"
+      }
+    },
+    {
+      "bytes": 100,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/03/b/RAM4K.hdl",
+      "sha256": "9a7ccca1c146bed4506c312ff2d28e70757d71e4bc3904201629350d4039d171",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/03/b/RAM4K.hdl"
+      }
+    },
+    {
+      "bytes": 13845,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/03/b/RAM4K.tst",
+      "sha256": "89296420c8f6002655d9dd99121a033fd241a18771f77f4f2710cd205b40cbe1",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/03/b/RAM4K.tst"
+      }
+    },
+    {
+      "bytes": 13440,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/03/b/RAM512.cmp",
+      "sha256": "0dcd57773e023533f053eb3f3ae69125374543ce323454067ac70e69810cff61",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/03/b/RAM512.cmp"
+      }
+    },
+    {
+      "bytes": 139,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/03/b/RAM512.hdl",
+      "sha256": "686be3f8ee32c3275e33aa056a116f16c8ee46325db723cb1d275648c84a53f1",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/03/b/RAM512.hdl"
+      }
+    },
+    {
+      "bytes": 13174,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/03/b/RAM512.tst",
+      "sha256": "0a178d41696326450669c745d11a694b7bdddee643523247445d2ad73e7b6949",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/03/b/RAM512.tst"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/04"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/04/fill"
+    },
+    {
+      "bytes": 1305,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/04/fill/Fill.asm",
+      "sha256": "2f16df1b7c263ff784d188a51b7738d536600f108400999f39e5f680a6786d6a",
+      "source": {
+        "blob": "2f16df1b7c263ff784d188a51b7738d536600f108400999f39e5f680a6786d6a",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 355,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/04/fill/Fill.tst",
+      "sha256": "905d67ad91b5f3d2c5217cbf2fdf229fb511c8a1758dfc2b419cf47beecb0e1e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/04/fill/Fill.tst"
+      }
+    },
+    {
+      "bytes": 404,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/04/fill/FillAutomatic.cmp",
+      "sha256": "7b07dd584cce8a131e4a1daa62b86cd71ef265d801e5ee589061007841fb9533",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/04/fill/FillAutomatic.cmp"
+      }
+    },
+    {
+      "bytes": 1468,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/04/fill/FillAutomatic.tst",
+      "sha256": "fbfc150dea8fb2ae205b21d0e724d57f4ac54ebde9bf18f0111443baae383419",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/04/fill/FillAutomatic.tst"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/04/mult"
+    },
+    {
+      "bytes": 727,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/04/mult/Mult.asm",
+      "sha256": "124370cd6293ebe2049a3146d90cae6e831c09a057632a2bf5577d01f7f3fc25",
+      "source": {
+        "blob": "124370cd6293ebe2049a3146d90cae6e831c09a057632a2bf5577d01f7f3fc25",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 250,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/04/mult/Mult.cmp",
+      "sha256": "4f8d1f917fb0d58a185c70486587c8c01ce01d86a4b265667eabba4c5cde0b50",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/04/mult/Mult.cmp"
+      }
+    },
+    {
+      "bytes": 1876,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/04/mult/Mult.tst",
+      "sha256": "2878e176ede501bb137e174e0fe4fda637a8592674057681880d05bd30cddf5f",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/04/mult/Mult.tst"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/05"
+    },
+    {
+      "bytes": 108,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/05/Add.hack",
+      "sha256": "5fa539f315a8507490b48d955076302628a16a20f1c13481a844033db89ed933",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/05/Add.hack"
+      }
+    },
+    {
+      "bytes": 6138,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/05/CPU-external.cmp",
+      "sha256": "2f03319536cb0c3ab760dd3d1fbdbdafe97850414d65281678f01968d9e70b68",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/05/CPU-external.cmp"
+      }
+    },
+    {
+      "bytes": 3909,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/05/CPU-external.tst",
+      "sha256": "9117b374739a8f9e614e6f9961f71e67553803e82304b84bb8b2b944082a4fc9",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/05/CPU-external.tst"
+      }
+    },
+    {
+      "bytes": 7275,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/05/CPU.cmp",
+      "sha256": "080245d2d4bdac85c3f963d8904c9d653188963d9d57c7089b68cab160b10e34",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/05/CPU.cmp"
+      }
+    },
+    {
+      "bytes": 2103,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/05/CPU.hdl",
+      "sha256": "10cdfd2947694b2d0a1900ca87781eaed99b211e38c27deaf569be0a4c41ca8f",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/05/CPU.hdl"
+      }
+    },
+    {
+      "bytes": 4061,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/05/CPU.tst",
+      "sha256": "01a5a379f95237ab6f57101f5367199a9db550a28199597623376f6a9096ed62",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/05/CPU.tst"
+      }
+    },
+    {
+      "bytes": 774,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/05/Computer.hdl",
+      "sha256": "00e27bfb01a5ea5552552c16f1fa64470fd98747f3dd886d514ded963923d3d4",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/05/Computer.hdl"
+      }
+    },
+    {
+      "bytes": 690,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/05/ComputerAdd-external.cmp",
+      "sha256": "381c6bb7d6c75b50c1e87723ecf328a255d4bc9f018beda0b6a5b8033835e66d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/05/ComputerAdd-external.cmp"
+      }
+    },
+    {
+      "bytes": 819,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/05/ComputerAdd-external.tst",
+      "sha256": "d2e998bcbb6d67fc80f2f9a45f08f4ca237c630db1644fc8702caa5f11a5c41a",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/05/ComputerAdd-external.tst"
+      }
+    },
+    {
+      "bytes": 1065,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/05/ComputerAdd.cmp",
+      "sha256": "87d059a2f1a1beecf1c8658b2dfd7f9921189af7cbcaeb98013a58970d4278ce",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/05/ComputerAdd.cmp"
+      }
+    },
+    {
+      "bytes": 844,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/05/ComputerAdd.tst",
+      "sha256": "5dad3aa6fda0926621dce4b84593ce35e02276ef54414a72920f9fa320a10b7f",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/05/ComputerAdd.tst"
+      }
+    },
+    {
+      "bytes": 1288,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/05/ComputerMax-external.cmp",
+      "sha256": "577e7185b864d8490fe63cd7369151fa2466df44ffb8acdb3d881fcd0405803c",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/05/ComputerMax-external.cmp"
+      }
+    },
+    {
+      "bytes": 952,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/05/ComputerMax-external.tst",
+      "sha256": "ada8aa04eea67a779fb9961e625c7af0ce4717a22b809e560a8ddc2f662d2e3a",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/05/ComputerMax-external.tst"
+      }
+    },
+    {
+      "bytes": 1988,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/05/ComputerMax.cmp",
+      "sha256": "0849486883c365106674854b0806bfed0368963b84d9208c36bb8e6c3986a0c9",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/05/ComputerMax.cmp"
+      }
+    },
+    {
+      "bytes": 977,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/05/ComputerMax.tst",
+      "sha256": "34a1a47783c39391f7e8368991859a3ebff2c41d015875b080720096d6a9aa30",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/05/ComputerMax.tst"
+      }
+    },
+    {
+      "bytes": 650,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/05/ComputerRect-external.cmp",
+      "sha256": "d8d3131e7623fe64496f8a9f5b73b91f6521345496b3e944c682f13114f01599",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/05/ComputerRect-external.cmp"
+      }
+    },
+    {
+      "bytes": 855,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/05/ComputerRect-external.tst",
+      "sha256": "c5cba67bb8895717eba81b53623bb5fec2b47c4b036bf77f2cec7838cf509a7e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/05/ComputerRect-external.tst"
+      }
+    },
+    {
+      "bytes": 4225,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/05/ComputerRect.cmp",
+      "sha256": "f223a6faef44f8c3209f6481de251fb431da65f21d3d620836d682d1b12dfab9",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/05/ComputerRect.cmp"
+      }
+    },
+    {
+      "bytes": 930,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/05/ComputerRect.tst",
+      "sha256": "9794f48350774ebb7c38e5ad3420a57b1c4ccc2cda3fdc19f64c1540f73b9f87",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/05/ComputerRect.tst"
+      }
+    },
+    {
+      "bytes": 288,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/05/Max.hack",
+      "sha256": "187069c62bcba01e4dd6bd0c831c8b96d6c29c8b36562226265c164cd73f99be",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/05/Max.hack"
+      }
+    },
+    {
+      "bytes": 3060,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/05/Memory.cmp",
+      "sha256": "ad6ea081bab9eef168f3623c6200efd7d12202696aa074b9a5f1a60e94c8588c",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/05/Memory.cmp"
+      }
+    },
+    {
+      "bytes": 1282,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/05/Memory.hdl",
+      "sha256": "6d855f704aa671ffe39c8d0688f1f466d1f3ff8f296048cbe27ea39ab8f67dce",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/05/Memory.hdl"
+      }
+    },
+    {
+      "bytes": 4837,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/05/Memory.tst",
+      "sha256": "c1ca4a6250a02a7716f65a577d6e6ace6457c0db117853eebab4d9df03871be0",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/05/Memory.tst"
+      }
+    },
+    {
+      "bytes": 450,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/05/Rect.hack",
+      "sha256": "54cf3828ba3cbbb2a85e3fba4009b2f4b5011109bd1065ecfb18c86993c487a4",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/05/Rect.hack"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/06"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/06/add"
+    },
+    {
+      "bytes": 255,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/06/add/Add.asm",
+      "sha256": "7c821ba9f565ff6d87d6acfcbde8cae77930dcac4f3669408e165b26a9fc3b6d",
+      "source": {
+        "blob": "7c821ba9f565ff6d87d6acfcbde8cae77930dcac4f3669408e165b26a9fc3b6d",
+        "kind": "overlay"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/06/max"
+    },
+    {
+      "bytes": 776,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/06/max/Max.asm",
+      "sha256": "9194a98319b32b0c2797aae82568acc04363ab99b6a1b9e3e7f520975e5d6ff2",
+      "source": {
+        "blob": "9194a98319b32b0c2797aae82568acc04363ab99b6a1b9e3e7f520975e5d6ff2",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 311,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/06/max/MaxL.asm",
+      "sha256": "7011e4bdf7a9a4887c24321ebcd250917ee52bb622b8af226f81acec22e09694",
+      "source": {
+        "blob": "7011e4bdf7a9a4887c24321ebcd250917ee52bb622b8af226f81acec22e09694",
+        "kind": "overlay"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/06/pong"
+    },
+    {
+      "bytes": 199789,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/06/pong/Pong.asm",
+      "sha256": "8362061d76d062261d549dd889060507ae4156b3a322f3805e6302a7e9b340bc",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/06/pong/Pong.asm"
+      }
+    },
+    {
+      "bytes": 155652,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/06/pong/PongL.asm",
+      "sha256": "c225514edfc724262790dccfb7218c0e92ccc49df5a1bd2f0f4eba2aac05d13e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/06/pong/PongL.asm"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/06/rect"
+    },
+    {
+      "bytes": 592,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/06/rect/Rect.asm",
+      "sha256": "496360901ed6ef0345c35b2724e66c95bb2935dd6573abb9145f1b165057803a",
+      "source": {
+        "blob": "496360901ed6ef0345c35b2724e66c95bb2935dd6573abb9145f1b165057803a",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 370,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/06/rect/RectL.asm",
+      "sha256": "f796160e6dfc61166bfcbaf5ed1798d94dcdddce9a909a87c9488b86dd93474a",
+      "source": {
+        "blob": "f796160e6dfc61166bfcbaf5ed1798d94dcdddce9a909a87c9488b86dd93474a",
+        "kind": "overlay"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/07"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/07/MemoryAccess"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/07/MemoryAccess/BasicTest"
+    },
+    {
+      "bytes": 150,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/07/MemoryAccess/BasicTest/BasicTest.cmp",
+      "sha256": "fe5e52f4aee5ca1cd7c5dde20c140b70d10b3af5198d55e30062c44c0e1dcad8",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/07/MemoryAccess/BasicTest/BasicTest.cmp"
+      }
+    },
+    {
+      "bytes": 883,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/07/MemoryAccess/BasicTest/BasicTest.tst",
+      "sha256": "116f000448f34cbc2932111b31ae3312b6b5da4f726d12c8851724f0ae768ab5",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/07/MemoryAccess/BasicTest/BasicTest.tst"
+      }
+    },
+    {
+      "bytes": 599,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/07/MemoryAccess/BasicTest/BasicTest.vm",
+      "sha256": "a079d93a7b5e9ddfe449e749177fadbdcb447f17a72634ef42d6bb3ce2fa36ab",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/07/MemoryAccess/BasicTest/BasicTest.vm"
+      }
+    },
+    {
+      "bytes": 881,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/07/MemoryAccess/BasicTest/BasicTestVME.tst",
+      "sha256": "e162829644a7e5701f92f1fb44d3f7d33beaee1b5dc30f744eb0f2f76f8f5d68",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/07/MemoryAccess/BasicTest/BasicTestVME.tst"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/07/MemoryAccess/PointerTest"
+    },
+    {
+      "bytes": 96,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/07/MemoryAccess/PointerTest/PointerTest.cmp",
+      "sha256": "89f8323fef666728619f4ca1af48abe856cba3d6954090bf35d382a26003d602",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/07/MemoryAccess/PointerTest/PointerTest.cmp"
+      }
+    },
+    {
+      "bytes": 635,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/07/MemoryAccess/PointerTest/PointerTest.tst",
+      "sha256": "b17a630eb5b4a6dc814896f1c0b37955243b6e7892599b31972dfca8969713ea",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/07/MemoryAccess/PointerTest/PointerTest.tst"
+      }
+    },
+    {
+      "bytes": 492,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/07/MemoryAccess/PointerTest/PointerTest.vm",
+      "sha256": "bda7c773e230a3b98192a400ac4867eabeac357feed124b4511b4c71ec933977",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/07/MemoryAccess/PointerTest/PointerTest.vm"
+      }
+    },
+    {
+      "bytes": 629,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/07/MemoryAccess/PointerTest/PointerTestVME.tst",
+      "sha256": "df6066d0503a98ab6d78e3d1633b2989c0e764117a9e6c525df5bb9cc11541d3",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/07/MemoryAccess/PointerTest/PointerTestVME.tst"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/07/MemoryAccess/StaticTest"
+    },
+    {
+      "bytes": 24,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/07/MemoryAccess/StaticTest/StaticTest.cmp",
+      "sha256": "e1c1b5fbeba0e212da46a74f3d55f21c959ff7a4d18a9ae6da24fac8a4b817be",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/07/MemoryAccess/StaticTest/StaticTest.cmp"
+      }
+    },
+    {
+      "bytes": 489,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/07/MemoryAccess/StaticTest/StaticTest.tst",
+      "sha256": "234bc6f19154d0dc1a54d8c14ca8945f857f426f2d11b9458c565426a0fcb973",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/07/MemoryAccess/StaticTest/StaticTest.tst"
+      }
+    },
+    {
+      "bytes": 418,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/07/MemoryAccess/StaticTest/StaticTest.vm",
+      "sha256": "33c4209afa010a0d4d69d1ace5c31b95999ecf25042a8f0d5f40bc64bff20866",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/07/MemoryAccess/StaticTest/StaticTest.vm"
+      }
+    },
+    {
+      "bytes": 471,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/07/MemoryAccess/StaticTest/StaticTestVME.tst",
+      "sha256": "b024d4e964fd09f56331d78e84e661150a10e7b2fb40c9e00128333db23cb786",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/07/MemoryAccess/StaticTest/StaticTestVME.tst"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/07/StackArithmetic"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/07/StackArithmetic/SimpleAdd"
+    },
+    {
+      "bytes": 50,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/07/StackArithmetic/SimpleAdd/SimpleAdd.cmp",
+      "sha256": "14318baa70c03067c1f8ba257cc73a63f602267033bd51b286fa6ca58967d924",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/07/StackArithmetic/SimpleAdd/SimpleAdd.cmp"
+      }
+    },
+    {
+      "bytes": 518,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/07/StackArithmetic/SimpleAdd/SimpleAdd.tst",
+      "sha256": "e1b9f4abc2a2c791015f2e5e08924d62c4690f18e4c992043622799e9ff324d7",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/07/StackArithmetic/SimpleAdd/SimpleAdd.tst"
+      }
+    },
+    {
+      "bytes": 278,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/07/StackArithmetic/SimpleAdd/SimpleAdd.vm",
+      "sha256": "3de4556c65d8a41853ee82751187da218f26c0d90bedd3f2d15c24d64c0ab527",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/07/StackArithmetic/SimpleAdd/SimpleAdd.vm"
+      }
+    },
+    {
+      "bytes": 509,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/07/StackArithmetic/SimpleAdd/SimpleAddVME.tst",
+      "sha256": "d4010495df62684b39ef5775344efea747653485f6b51f1c3b9a3a5391295dce",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/07/StackArithmetic/SimpleAdd/SimpleAddVME.tst"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/07/StackArithmetic/StackTest"
+    },
+    {
+      "bytes": 254,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/07/StackArithmetic/StackTest/StackTest.cmp",
+      "sha256": "ca2aba27bc5315114d33a9ee45a645f51df372804c333d34b1be03c85cebef07",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/07/StackArithmetic/StackTest/StackTest.cmp"
+      }
+    },
+    {
+      "bytes": 731,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/07/StackArithmetic/StackTest/StackTest.tst",
+      "sha256": "7b1dea599b5abbe650f7caa7d13f47ac0e477b78cf1c7b42d39ef452a3614109",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/07/StackArithmetic/StackTest/StackTest.tst"
+      }
+    },
+    {
+      "bytes": 788,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/07/StackArithmetic/StackTest/StackTest.vm",
+      "sha256": "b57e659cd9a85237dde3b702573de8de40901e98aae1cd7c487abd736b1ae543",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/07/StackArithmetic/StackTest/StackTest.vm"
+      }
+    },
+    {
+      "bytes": 732,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/07/StackArithmetic/StackTest/StackTestVME.tst",
+      "sha256": "6f324919ff76f24cc93471ec760fcaed0900cc700703a57b2b26dde0ecdc0343",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/07/StackArithmetic/StackTest/StackTestVME.tst"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/08"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/08/FunctionCalls"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/08/FunctionCalls/FibonacciElement"
+    },
+    {
+      "bytes": 42,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/08/FunctionCalls/FibonacciElement/FibonacciElement.cmp",
+      "sha256": "261c46c7fb48ab600883c5a30ce54145d1c7b1de81b189d8720b1c59efd7acbe",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/08/FunctionCalls/FibonacciElement/FibonacciElement.cmp"
+      }
+    },
+    {
+      "bytes": 555,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/08/FunctionCalls/FibonacciElement/FibonacciElement.tst",
+      "sha256": "6576bd13f4ae009a95e43db760262d5f87edf668c63c372cc006d3dcf6012e96",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/08/FunctionCalls/FibonacciElement/FibonacciElement.tst"
+      }
+    },
+    {
+      "bytes": 449,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/08/FunctionCalls/FibonacciElement/FibonacciElementVME.tst",
+      "sha256": "5b38f94ca17c31748bf293e844966162659ede486c04145d8a8721e8bd2d4cd7",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/08/FunctionCalls/FibonacciElement/FibonacciElementVME.tst"
+      }
+    },
+    {
+      "bytes": 956,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/08/FunctionCalls/FibonacciElement/Main.vm",
+      "sha256": "50839f04879f97213fca4710d1b3aa8b4df06de7cb21976051ffd5758edc5f21",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/08/FunctionCalls/FibonacciElement/Main.vm"
+      }
+    },
+    {
+      "bytes": 616,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/08/FunctionCalls/FibonacciElement/Sys.vm",
+      "sha256": "46eea266915ac133105cd4059b98178dd6964d425d0d1376af9e9e9936ec3054",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/08/FunctionCalls/FibonacciElement/Sys.vm"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/08/FunctionCalls/NestedCall"
+    },
+    {
+      "bytes": 132,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/08/FunctionCalls/NestedCall/NestedCall.cmp",
+      "sha256": "2755cd1371e974da45b7045359c43b38e4416057c858484e67a4917a4d698a96",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/08/FunctionCalls/NestedCall/NestedCall.cmp"
+      }
+    },
+    {
+      "bytes": 10089,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/08/FunctionCalls/NestedCall/NestedCall.html",
+      "sha256": "e4d28b5ac99e2e3b3a8e55bb8e835aee0cff5d49817da114f42ea3bf950e8c17",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/08/FunctionCalls/NestedCall/NestedCall.html"
+      }
+    },
+    {
+      "bytes": 1313,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/08/FunctionCalls/NestedCall/NestedCall.tst",
+      "sha256": "fb6da9bc4e15efdd560bffd822ba94b67261832f622b6a5fea21907d9b6b8330",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/08/FunctionCalls/NestedCall/NestedCall.tst"
+      }
+    },
+    {
+      "bytes": 19301,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/08/FunctionCalls/NestedCall/NestedCallStack.html",
+      "sha256": "ea469e4c90c63eb0bde90741f4215943796eafd58c332ce8489d8f19933d1398",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/08/FunctionCalls/NestedCall/NestedCallStack.html"
+      }
+    },
+    {
+      "bytes": 1381,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/08/FunctionCalls/NestedCall/NestedCallVME.tst",
+      "sha256": "78c198a37116e6053e94620323ef1876d3d7c31e36114ae2e7520d7c50f60274",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/08/FunctionCalls/NestedCall/NestedCallVME.tst"
+      }
+    },
+    {
+      "bytes": 1210,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/08/FunctionCalls/NestedCall/Sys.vm",
+      "sha256": "d1b9c8da7c473bc321e4639d2c4371dd16c974c764240c353d125030a2ef7a01",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/08/FunctionCalls/NestedCall/Sys.vm"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/08/FunctionCalls/SimpleFunction"
+    },
+    {
+      "bytes": 114,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/08/FunctionCalls/SimpleFunction/SimpleFunction.cmp",
+      "sha256": "579a687cdd3424faa7113a6b11d37bff9a53fd5273ff2fe2ed391afd77638094",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/08/FunctionCalls/SimpleFunction/SimpleFunction.cmp"
+      }
+    },
+    {
+      "bytes": 686,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/08/FunctionCalls/SimpleFunction/SimpleFunction.tst",
+      "sha256": "17dd128e6a362785adeb6975c0cbdb24ded5beb19047ce9d2274d08587ea45c1",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/08/FunctionCalls/SimpleFunction/SimpleFunction.tst"
+      }
+    },
+    {
+      "bytes": 392,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/08/FunctionCalls/SimpleFunction/SimpleFunction.vm",
+      "sha256": "53d477d826d9ba8d716a51a1a0e0ecfb66b90b3921de53806a46f13b294989a7",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/08/FunctionCalls/SimpleFunction/SimpleFunction.vm"
+      }
+    },
+    {
+      "bytes": 696,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/08/FunctionCalls/SimpleFunction/SimpleFunctionVME.tst",
+      "sha256": "ec030e2e8d268354a94ef5132231970360d436b3c1762f1f7ad5fcae8c2870fb",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/08/FunctionCalls/SimpleFunction/SimpleFunctionVME.tst"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/08/FunctionCalls/StaticsTest"
+    },
+    {
+      "bytes": 476,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/08/FunctionCalls/StaticsTest/Class1.vm",
+      "sha256": "1a14b0a9ed6b70ed629213b0a9987803090028b33c967c97d64977ba2bce0257",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/08/FunctionCalls/StaticsTest/Class1.vm"
+      }
+    },
+    {
+      "bytes": 476,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/08/FunctionCalls/StaticsTest/Class2.vm",
+      "sha256": "e9692c838bd5f59b2059506d7b45ed04d2cbe0e85761fb9d46243e775c4428e1",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/08/FunctionCalls/StaticsTest/Class2.vm"
+      }
+    },
+    {
+      "bytes": 60,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/08/FunctionCalls/StaticsTest/StaticsTest.cmp",
+      "sha256": "52e4aa6a6678ee5154af29e8a5ab0395b2b87efd9a0828f12f529daf651d9bb0",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/08/FunctionCalls/StaticsTest/StaticsTest.cmp"
+      }
+    },
+    {
+      "bytes": 412,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/08/FunctionCalls/StaticsTest/StaticsTest.tst",
+      "sha256": "ad31250ab57325e807c1f5150b09d8f6987df23a56480f2e4bdb49feddbb7500",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/08/FunctionCalls/StaticsTest/StaticsTest.tst"
+      }
+    },
+    {
+      "bytes": 446,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/08/FunctionCalls/StaticsTest/StaticsTestVME.tst",
+      "sha256": "53281f77dd2c5a4131e983123a3a0e9521622dc9e07da74d4feaf9eb39886749",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/08/FunctionCalls/StaticsTest/StaticsTestVME.tst"
+      }
+    },
+    {
+      "bytes": 586,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/08/FunctionCalls/StaticsTest/Sys.vm",
+      "sha256": "dae3d697e3ea31fc857549e28cdff0c45c62e55ad73aefa4dc94c7400071dba3",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/08/FunctionCalls/StaticsTest/Sys.vm"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/08/ProgramFlow"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/08/ProgramFlow/BasicLoop"
+    },
+    {
+      "bytes": 42,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/08/ProgramFlow/BasicLoop/BasicLoop.cmp",
+      "sha256": "9b8a1c4e6ba72070b33ba022226cb5e7368a4916c7a8264d57d89ad48021e5c3",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/08/ProgramFlow/BasicLoop/BasicLoop.cmp"
+      }
+    },
+    {
+      "bytes": 434,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/08/ProgramFlow/BasicLoop/BasicLoop.tst",
+      "sha256": "23aed06597de04f0f0e279c598d27635b848aebc82f9a1b6f0c92c81e70617e5",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/08/ProgramFlow/BasicLoop/BasicLoop.tst"
+      }
+    },
+    {
+      "bytes": 702,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/08/ProgramFlow/BasicLoop/BasicLoop.vm",
+      "sha256": "3ac42eda2c3e8cd0a814c4a37da5b0deee6aff6ca3744238dcc17baa88422a7e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/08/ProgramFlow/BasicLoop/BasicLoop.vm"
+      }
+    },
+    {
+      "bytes": 433,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/08/ProgramFlow/BasicLoop/BasicLoopVME.tst",
+      "sha256": "900080481f777ad18b659105c5432b5de8bc73e41b369f89c07230722340bc90",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/08/ProgramFlow/BasicLoop/BasicLoopVME.tst"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/08/ProgramFlow/FibonacciSeries"
+    },
+    {
+      "bytes": 126,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/08/ProgramFlow/FibonacciSeries/FibonacciSeries.cmp",
+      "sha256": "4f45d4dbbbd45781759dba82ed3e0c56c4cb3f4e4d55dca8b4f87b0950cd9dac",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/08/ProgramFlow/FibonacciSeries/FibonacciSeries.cmp"
+      }
+    },
+    {
+      "bytes": 571,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/08/ProgramFlow/FibonacciSeries/FibonacciSeries.tst",
+      "sha256": "9c003d70a2c695ea7fb75b3f319561470d715ec947f34124cc7fccf3f91cffd2",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/08/ProgramFlow/FibonacciSeries/FibonacciSeries.tst"
+      }
+    },
+    {
+      "bytes": 1283,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/08/ProgramFlow/FibonacciSeries/FibonacciSeries.vm",
+      "sha256": "a54c138703668976b413297ce844d66259744c1bcf8e62c2f4f96354d26d76c5",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/08/ProgramFlow/FibonacciSeries/FibonacciSeries.vm"
+      }
+    },
+    {
+      "bytes": 572,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/08/ProgramFlow/FibonacciSeries/FibonacciSeriesVME.tst",
+      "sha256": "d8ce42219bd8328bf2f69fa1e4bdfaee750d2c08dac2bc90c3f0e2d5571deb64",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/08/ProgramFlow/FibonacciSeries/FibonacciSeriesVME.tst"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/09"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/09/Average"
+    },
+    {
+      "bytes": 729,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/09/Average/Main.jack",
+      "sha256": "d2224a1598ef5a207ccf4a8cb44a1fcd4e1d9a436fc54c207accb0df4cccca3c",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/09/Average/Main.jack"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/09/BitmapEditor"
+    },
+    {
+      "bytes": 7558,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/09/BitmapEditor/BitmapEditor.html",
+      "sha256": "fd8035b95e6825b8b9bd00b781c4ae4e54b4f94741aeadac7f9c4b27adef7091",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/09/BitmapEditor/BitmapEditor.html"
+      }
+    },
+    {
+      "bytes": 338,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/09/BitmapEditor/BitmapEditor.iml",
+      "sha256": "a54c44edafcfee5db1ad79d7aaa7ff2f7b047a65fa07d2af1ad94aab6d93cd2f",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/09/BitmapEditor/BitmapEditor.iml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/09/Fraction"
+    },
+    {
+      "bytes": 2136,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/09/Fraction/Fraction.jack",
+      "sha256": "366f075633e8e125136a5f4807279f955dba8a54cb51ce8a6bac3cd82942b7b3",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/09/Fraction/Fraction.jack"
+      }
+    },
+    {
+      "bytes": 473,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/09/Fraction/Main.jack",
+      "sha256": "93b1b8604b3588d142b873eba541cf7cbd372201caf004c5b65fb93d79a49acc",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/09/Fraction/Main.jack"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/09/HelloWorld"
+    },
+    {
+      "bytes": 415,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/09/HelloWorld/Main.jack",
+      "sha256": "0b81fb692e0e624a25f4f23dafd9425866d7f702cde76a26c38e92d62a2384e5",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/09/HelloWorld/Main.jack"
+      }
+    },
+    {
+      "bytes": 108857,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/09/Jack OS API.pdf",
+      "sha256": "73d31613fffb4cd03393c3e1b2a6ea82d3d1ef6caae9a2c45ee722a0179c5742",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/09/Jack OS API.pdf"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/09/List"
+    },
+    {
+      "bytes": 1422,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/09/List/List.jack",
+      "sha256": "b077cfbc47aa9a1915ee58fde3385877342ac332c97f12f0a4b01e9580b5d26f",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/09/List/List.jack"
+      }
+    },
+    {
+      "bytes": 515,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/09/List/Main.jack",
+      "sha256": "d13518e2343004de8be56d9e8a20683303075a2ba4be7cb05cba9bda86e2fe97",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/09/List/Main.jack"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/09/Square"
+    },
+    {
+      "bytes": 438,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/09/Square/Main.jack",
+      "sha256": "b8a0d0be41eb2339cd45861b0055ac66f9442d52f5320028fbf9886b5f19b9ff",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/09/Square/Main.jack"
+      }
+    },
+    {
+      "bytes": 2876,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/09/Square/Square.jack",
+      "sha256": "d4028208ca48ef6ff69113ee4f404ed52d7258a3e29bea33c849ccdd1f727cb8",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/09/Square/Square.jack"
+      }
+    },
+    {
+      "bytes": 2803,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/09/Square/SquareGame.jack",
+      "sha256": "c6d7a58ee232fc2be116e015302fa9c22626741ae08c87b71789d1ae422e2252",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/09/Square/SquareGame.jack"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/10"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/10/ArrayTest"
+    },
+    {
+      "bytes": 859,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/10/ArrayTest/Main.jack",
+      "sha256": "338ab968d3471dae3ec597ccd2947e445581663b2676d5e6ebc4e5609f4f62e6",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/10/ArrayTest/Main.jack"
+      }
+    },
+    {
+      "bytes": 9117,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/10/ArrayTest/Main.xml",
+      "sha256": "793d2ba2c87953c07842c4d6ad0e932aa281d49945a7e0c557a2cdd7a1b1ce30",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/10/ArrayTest/Main.xml"
+      }
+    },
+    {
+      "bytes": 3851,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/10/ArrayTest/MainT.xml",
+      "sha256": "2c49f3ae3ecf275809026e4a08dd764bd72da97d63d97cb6f7e2b39bfe9866ed",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/10/ArrayTest/MainT.xml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/10/ExpressionLessSquare"
+    },
+    {
+      "bytes": 846,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/10/ExpressionLessSquare/Main.jack",
+      "sha256": "4303964f43b10e812e84d15719a5c5bb47e30d815082dcf06a07f16ae8aa2954",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/10/ExpressionLessSquare/Main.jack"
+      }
+    },
+    {
+      "bytes": 3245,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/10/ExpressionLessSquare/Main.xml",
+      "sha256": "43ff43e9d901bc92487cc73aca96656081aacd728362405302dfc21c64c683bb",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/10/ExpressionLessSquare/Main.xml"
+      }
+    },
+    {
+      "bytes": 1638,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/10/ExpressionLessSquare/MainT.xml",
+      "sha256": "0f73e742ab746b704b19b3c1d6d39ac83345cd4b9e8c201253583aec6941da9a",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/10/ExpressionLessSquare/MainT.xml"
+      }
+    },
+    {
+      "bytes": 2049,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/10/ExpressionLessSquare/Square.jack",
+      "sha256": "f4d9f1dd6573f95b49340f1d4a265a7b2a6d9e690dfa0a5005527dcc9466b738",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/10/ExpressionLessSquare/Square.jack"
+      }
+    },
+    {
+      "bytes": 30616,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/10/ExpressionLessSquare/Square.xml",
+      "sha256": "5e2f7402439cec614cdd3f79fad6ee640b94682fdc928463c34c3865e08348e9",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/10/ExpressionLessSquare/Square.xml"
+      }
+    },
+    {
+      "bytes": 1529,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/10/ExpressionLessSquare/SquareGame.jack",
+      "sha256": "b9dec5547ff8d2d89eb3b15a2cc158851f4930fbf75a1bb97e8051bb04178793",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/10/ExpressionLessSquare/SquareGame.jack"
+      }
+    },
+    {
+      "bytes": 17608,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/10/ExpressionLessSquare/SquareGame.xml",
+      "sha256": "14624725a4fc32e773ba621c4100ebf908e4fc9a5aa4444805c03dcd63bd1373",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/10/ExpressionLessSquare/SquareGame.xml"
+      }
+    },
+    {
+      "bytes": 7000,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/10/ExpressionLessSquare/SquareGameT.xml",
+      "sha256": "15b205d8e26c16d2ec720f8eeb8d3704df5c31250d05827e089ba102d559df09",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/10/ExpressionLessSquare/SquareGameT.xml"
+      }
+    },
+    {
+      "bytes": 11755,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/10/ExpressionLessSquare/SquareT.xml",
+      "sha256": "3a1c072976d21512a3fc0488f68877a5e74fb123fc92dd973b5a86cc2f946c80",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/10/ExpressionLessSquare/SquareT.xml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/10/Square"
+    },
+    {
+      "bytes": 1178,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/10/Square/Main.jack",
+      "sha256": "63d4a3e09f230362cb6011b6bd2d0e98482236227a2952047f540123b40c33af",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/10/Square/Main.jack"
+      }
+    },
+    {
+      "bytes": 7649,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/10/Square/Main.xml",
+      "sha256": "43ff155d8f4190b84fa3a6d11ce96b470ac83045de2a8524fbaa929ed8c84200",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/10/Square/Main.xml"
+      }
+    },
+    {
+      "bytes": 3278,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/10/Square/MainT.xml",
+      "sha256": "06d62d055622afd7c0742035e967387a735f060eebd8c22dec076cf4c00ebf8e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/10/Square/MainT.xml"
+      }
+    },
+    {
+      "bytes": 2921,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/10/Square/Square.jack",
+      "sha256": "2006bf80fd97152e6c4ee7c265e3bd721cecc257c584bd1b091236f7edc918ed",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/10/Square/Square.jack"
+      }
+    },
+    {
+      "bytes": 39285,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/10/Square/Square.xml",
+      "sha256": "380b1cb0e36ad461b555ba2b629b468555e81876762dc9c3860a04888f17252d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/10/Square/Square.xml"
+      }
+    },
+    {
+      "bytes": 2854,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/10/Square/SquareGame.jack",
+      "sha256": "68044c8ba1543d3a9c7eac67d476b6415086776345e61d58bdb3b3bc56990023",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/10/Square/SquareGame.jack"
+      }
+    },
+    {
+      "bytes": 21236,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/10/Square/SquareGame.xml",
+      "sha256": "7a6b158d10e8bd70241469c4ecb104ae9c66d96cf2a0545965cb3fe91bda722d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/10/Square/SquareGame.xml"
+      }
+    },
+    {
+      "bytes": 8388,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/10/Square/SquareGameT.xml",
+      "sha256": "561d4fa65b78cfb474173613fa410add4c1d6c16d2dc13075ae5aa668cb53228",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/10/Square/SquareGameT.xml"
+      }
+    },
+    {
+      "bytes": 14874,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/10/Square/SquareT.xml",
+      "sha256": "1e793360c645d1a83f962571b9421babfec61aafe621278a7f13c542fa96617e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/10/Square/SquareT.xml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/11"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/11/Average"
+    },
+    {
+      "bytes": 764,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/11/Average/Main.jack",
+      "sha256": "cbac034dc7d64b389f2d73afe49d8e300b6f8f12e6f8cdab8fadbbda277e95aa",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/11/Average/Main.jack"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/11/ComplexArrays"
+    },
+    {
+      "bytes": 2151,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/11/ComplexArrays/Main.jack",
+      "sha256": "252f76cad9201cc6f06dacda60eb422c39154d7d1691fe1f1aea02e0fb124406",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/11/ComplexArrays/Main.jack"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/11/ConvertToBin"
+    },
+    {
+      "bytes": 2617,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/11/ConvertToBin/Main.jack",
+      "sha256": "892f08757805276e052b8c991a4811e50aa1b0279a1db4f06296ca82902391d1",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/11/ConvertToBin/Main.jack"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/11/Pong"
+    },
+    {
+      "bytes": 5922,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/11/Pong/Ball.jack",
+      "sha256": "6d7c00acd105d856ab140f2c105ff12537c67d1dde9e7b7ae9abb8474488fd35",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/11/Pong/Ball.jack"
+      }
+    },
+    {
+      "bytes": 3066,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/11/Pong/Bat.jack",
+      "sha256": "c4d1d4df8c8270ee8d560e4c23ffb086c715e170bedae5c71e217736ab4b40bb",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/11/Pong/Bat.jack"
+      }
+    },
+    {
+      "bytes": 517,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/11/Pong/Main.jack",
+      "sha256": "82ba2ac9b5c95133eb6f5f19c01f0c16c02065ad902066fa5229054469740cd9",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/11/Pong/Main.jack"
+      }
+    },
+    {
+      "bytes": 4331,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/11/Pong/PongGame.jack",
+      "sha256": "b91d6a8734bf74be314cbe743be8873866bbf5cf78141065f57fd74d7d26ea39",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/11/Pong/PongGame.jack"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/11/Seven"
+    },
+    {
+      "bytes": 397,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/11/Seven/Main.jack",
+      "sha256": "caa20f9e401edac04835948907f9a538b06b60f36efee94d0a50e390fc603988",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/11/Seven/Main.jack"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/11/Square"
+    },
+    {
+      "bytes": 483,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/11/Square/Main.jack",
+      "sha256": "c399be6de802172544b8b3a83dafde6a7c281a09fe49aa17ca8381d9cd6e9c49",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/11/Square/Main.jack"
+      }
+    },
+    {
+      "bytes": 2921,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/11/Square/Square.jack",
+      "sha256": "15211456dd786025ef547f6d52b8ef12a7f3f6210bdd2efacfb50ffa989bd03f",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/11/Square/Square.jack"
+      }
+    },
+    {
+      "bytes": 2854,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/11/Square/SquareGame.jack",
+      "sha256": "2280060917b82f8c8661c0a2aaa7e2c61c427461a667972b722948c1e00db3cc",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/11/Square/SquareGame.jack"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/12"
+    },
+    {
+      "bytes": 695,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/12/Array.jack",
+      "sha256": "14199fcada89ec4e8a5280d1c2f994a8924432c9e0bb916bc8e23adcbb268212",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/12/Array.jack"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/12/ArrayTest"
+    },
+    {
+      "bytes": 86,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/12/ArrayTest/ArrayTest.cmp",
+      "sha256": "e2043e5e25625b69873b3f0d3ce2a76a32a287e505f2b400377eae971a5c9d9c",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/12/ArrayTest/ArrayTest.cmp"
+      }
+    },
+    {
+      "bytes": 378,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/12/ArrayTest/ArrayTest.tst",
+      "sha256": "1ea2c99ce106a88b774e4c4c35d0ac141d9550749a87e71e988eb6f7377c5d46",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/12/ArrayTest/ArrayTest.tst"
+      }
+    },
+    {
+      "bytes": 1126,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/12/ArrayTest/Main.jack",
+      "sha256": "344ca9adfd6f98d3d4974071e25aef272532e6d132c8862d10091901130e28e5",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/12/ArrayTest/Main.jack"
+      }
+    },
+    {
+      "bytes": 1901,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/12/Keyboard.jack",
+      "sha256": "afd8b6f38c96e3b61c8de79cd9777b0b716c933f3e6455a7fd3e01ee285b2a83",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/12/Keyboard.jack"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/12/KeyboardTest"
+    },
+    {
+      "bytes": 12048,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/12/KeyboardTest/KeyboardTestOutput.gif",
+      "sha256": "d4953b9e3bd807790884ee7b9b718d938f40ebf21f3b7848d4c90fcee8769802",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/12/KeyboardTest/KeyboardTestOutput.gif"
+      }
+    },
+    {
+      "bytes": 2855,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/12/KeyboardTest/Main.jack",
+      "sha256": "648755db199da67aeda6f8f18dfb0a3596e4c98d1060709e7c15fa866006889d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/12/KeyboardTest/Main.jack"
+      }
+    },
+    {
+      "bytes": 1447,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/12/Math.jack",
+      "sha256": "f320231033852bb2f47a2ece7f44ebe9926c57d1f618a626109154e4a8a5fe0c",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/12/Math.jack"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/12/MathTest"
+    },
+    {
+      "bytes": 1286,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/12/MathTest/Main.jack",
+      "sha256": "79da9e2b7b811a023e87d9df8bf85f5f132419c45d031e334c93e9c6ac183f62",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/12/MathTest/Main.jack"
+      }
+    },
+    {
+      "bytes": 286,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/12/MathTest/MathTest.cmp",
+      "sha256": "0e904edfafdcefa7b9f9447b30ed7cf0f0a03fe61a7a94b390e29df81b1bb02d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/12/MathTest/MathTest.cmp"
+      }
+    },
+    {
+      "bytes": 544,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/12/MathTest/MathTest.tst",
+      "sha256": "d699742796957326fac2907fa3c5d431fb0a0211a51a81fd1566d071db6ab443",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/12/MathTest/MathTest.tst"
+      }
+    },
+    {
+      "bytes": 1061,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/12/Memory.jack",
+      "sha256": "31f81e27ab11fe8e92c329f503d6c3fcffd9ae66f71772206b06d298bb28ac6f",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/12/Memory.jack"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/12/MemoryTest"
+    },
+    {
+      "bytes": 1640,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/12/MemoryTest/Main.jack",
+      "sha256": "8232e6c451f9c7480174fc594486b804e75d519693f7a071115e2865d7bfb88c",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/12/MemoryTest/Main.jack"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/12/MemoryTest/MemoryDiag"
+    },
+    {
+      "bytes": 5981,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/12/MemoryTest/MemoryDiag/Main.jack",
+      "sha256": "8d92ff5d81b36ebc92a17609c0ffa67584ee3fc576517da2eb927f3fc0415c49",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/12/MemoryTest/MemoryDiag/Main.jack"
+      }
+    },
+    {
+      "bytes": 186,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/12/MemoryTest/MemoryDiag/MemoryDiag.cmp",
+      "sha256": "91a22eaa99cf794114b2f761aff5a06199f082a5ecc13a78e44006e559d0db22",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/12/MemoryTest/MemoryDiag/MemoryDiag.cmp"
+      }
+    },
+    {
+      "bytes": 580,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/12/MemoryTest/MemoryDiag/MemoryDiag.tst",
+      "sha256": "8f98151dfc6e69b3bf4b64d91415d7cf21e03df98a83bdac5dfcd5e286a8197a",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/12/MemoryTest/MemoryDiag/MemoryDiag.tst"
+      }
+    },
+    {
+      "bytes": 3312,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/12/MemoryTest/MemoryDiag/README.html",
+      "sha256": "7c8f931e6f2d13e5c29f206455f357c1e3124f99788bf1bc413e3cf4e59685ca",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/12/MemoryTest/MemoryDiag/README.html"
+      }
+    },
+    {
+      "bytes": 126,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/12/MemoryTest/MemoryTest.cmp",
+      "sha256": "df24b6ea57e6dba75d82364896c5a43354b03abe99f54b8abb01fbc8b579afde",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/12/MemoryTest/MemoryTest.cmp"
+      }
+    },
+    {
+      "bytes": 416,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/12/MemoryTest/MemoryTest.tst",
+      "sha256": "44fd6e22001283829260d8c7bbc5937d9e542715fa43cb046497474df00fb1ac",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/12/MemoryTest/MemoryTest.tst"
+      }
+    },
+    {
+      "bytes": 349,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/12/MemoryTest/README.txt",
+      "sha256": "cfb8deb50d8183e9ba5bb570d8b5e85be0b1a54bd4566351c4211aa244b381bf",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/12/MemoryTest/README.txt"
+      }
+    },
+    {
+      "bytes": 9944,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/12/Output.jack",
+      "sha256": "847399dfb94b23797fb5b12647ded6ce9f12b0d45291fb50bc973401080b6ffd",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/12/Output.jack"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/12/OutputTest"
+    },
+    {
+      "bytes": 1292,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/12/OutputTest/Main.jack",
+      "sha256": "0d38f3d1594d0eeba95ade37e54aea2499371b30ec87b89063e7751f52baecb3",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/12/OutputTest/Main.jack"
+      }
+    },
+    {
+      "bytes": 6184,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/12/OutputTest/OutputTestOutput.gif",
+      "sha256": "9effda54fde9126a72c6733b96786a2688d073f0b93461e9ba0ddec63064e981",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/12/OutputTest/OutputTestOutput.gif"
+      }
+    },
+    {
+      "bytes": 1450,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/12/Screen.jack",
+      "sha256": "ec9176908b5b506c55837051de634156b79e5deed6345bc87da26124364ee027",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/12/Screen.jack"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/12/ScreenTest"
+    },
+    {
+      "bytes": 1384,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/12/ScreenTest/Main.jack",
+      "sha256": "a93671c8f8a1d82f003f0dee9442dc5c6acb518a52c7448e9efe699f5ffc6f35",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/12/ScreenTest/Main.jack"
+      }
+    },
+    {
+      "bytes": 4563,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/12/ScreenTest/ScreenTestOutput.gif",
+      "sha256": "63d6f40f4bb24dff57dbbc2454c9f938afadba61e5755091636158b9bd54df26",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/12/ScreenTest/ScreenTestOutput.gif"
+      }
+    },
+    {
+      "bytes": 1841,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/12/String.jack",
+      "sha256": "ae58964f69515db209814cdbb56d7ec6dfcdfffd70aa91c96693948d1168d7e7",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/12/String.jack"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/12/StringTest"
+    },
+    {
+      "bytes": 2946,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/12/StringTest/Main.jack",
+      "sha256": "21a4c102e825fac73cb17bb4216c15e5187fb4fb4ba3bf0105c8996eebbb1174",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/12/StringTest/Main.jack"
+      }
+    },
+    {
+      "bytes": 8126,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/12/StringTest/StringTestOutput.gif",
+      "sha256": "683e8bfb53c1df58bebfddf9ee7b35df4a837e5ed007836d136aab8f560cd595",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/12/StringTest/StringTestOutput.gif"
+      }
+    },
+    {
+      "bytes": 728,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/12/Sys.jack",
+      "sha256": "24c67a2cf33732e45d8f92fe06ec270d95403bd3aedf823145821898458c351e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/12/Sys.jack"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/12/SysTest"
+    },
+    {
+      "bytes": 881,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/12/SysTest/Main.jack",
+      "sha256": "d52bd8d47edc322df8d588437bcef5667435d3faadd94343ce85079d2766891d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/12/SysTest/Main.jack"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "projects/13"
+    },
+    {
+      "bytes": 184,
+      "kind": "file",
+      "mode": 420,
+      "path": "projects/13/more fun to go.txt",
+      "sha256": "ae3f6a3a076007d0a60460d4615346d2e69bf622cc462799e95888c2ce8dbb90",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/base/projects/13/more fun to go.txt"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "requirements"
+    },
+    {
+      "bytes": 1047,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/boolean_arithmetic.yaml",
+      "sha256": "9fd2d3fe2bee3dd114cc31b2c527e1c0d232cd6d08986b7c0240f9f63301c47a",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/requirements/boolean_arithmetic.yaml"
+      }
+    },
+    {
+      "bytes": 1079,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/boolean_logic.yaml",
+      "sha256": "e629c6d39ec9a78894fbcbfde076dc9e546b691b74334501d60f8f3869f33ccd",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/requirements/boolean_logic.yaml"
+      }
+    },
+    {
+      "bytes": 1191,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/computer_architecture.yaml",
+      "sha256": "bc25260ae85995e1041940a812d485500b1c1076e16d3eb7bad065b090e077a3",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/requirements/computer_architecture.yaml"
+      }
+    },
+    {
+      "bytes": 1286,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/machine_language.yaml",
+      "sha256": "1a6967a1a628112057eb1f3d4a5ce6b7b3be5cfcd1a3a8cc64a388e3eaa30755",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/requirements/machine_language.yaml"
+      }
+    },
+    {
+      "bytes": 1052,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/sequential_logic_large.yaml",
+      "sha256": "80183f52818ff9dd107074b5c81aa08c60e001dfe2fc99a6dccd84a08373a074",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/requirements/sequential_logic_large.yaml"
+      }
+    },
+    {
+      "bytes": 1069,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/sequential_logic_small.yaml",
+      "sha256": "63b880a597c8d533cf7204e2349685976f2ae2a2d043b16d888f9dd057d9adce",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/requirements/sequential_logic_small.yaml"
+      }
+    },
+    {
+      "bytes": 687,
+      "kind": "file",
+      "mode": 420,
+      "path": "run-tests.sh",
+      "sha256": "f90a6f3bc2aa8ba78d007b0a6bc96a2d98e5088ccab83a1a3401fabd2cb3841e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/run-tests.sh"
+      }
+    },
+    {
+      "bytes": 3750,
+      "kind": "file",
+      "mode": 420,
+      "path": "task.yaml",
+      "sha256": "231c3dd9253482850f01ad438033bce200057fd48344f7bc73b95a1ed9122845",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/task.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/boolean_arithmetic"
+    },
+    {
+      "bytes": 16908,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/boolean_arithmetic/test_outputs.py",
+      "sha256": "a4994ca516f6cc8b26530dc7a8b341b5217a2748104f08f933ec319cc405ab24",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/tests/boolean_arithmetic/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/boolean_logic"
+    },
+    {
+      "bytes": 17717,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/boolean_logic/test_outputs.py",
+      "sha256": "e996dd32d0c31fa9ffa44484036c105dec3d2db70a0a98ae71c8a3299fd6db2f",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/tests/boolean_logic/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/computer_architecture"
+    },
+    {
+      "bytes": 22324,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/computer_architecture/test_expanded.py",
+      "sha256": "faf526e7cf30ecf744461dd6690f7f1a29fcfaa4a6b7439e0c8bca5bd8fc4c7a",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/tests/computer_architecture/test_expanded.py"
+      }
+    },
+    {
+      "bytes": 16416,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/computer_architecture/test_outputs.py",
+      "sha256": "882f4ef637570fbf1f78d1a6824ec87faa12e6358e3727fac5b1213edbdf7a45",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/tests/computer_architecture/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/machine_language"
+    },
+    {
+      "bytes": 19596,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/machine_language/test_expanded.py",
+      "sha256": "a592682dcef1e04a72cbe4145e759e29abf2c24ae98355b7d047bfe501d9ca08",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/tests/machine_language/test_expanded.py"
+      }
+    },
+    {
+      "bytes": 16416,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/machine_language/test_outputs.py",
+      "sha256": "882f4ef637570fbf1f78d1a6824ec87faa12e6358e3727fac5b1213edbdf7a45",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/tests/computer_architecture/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/sequential_logic_large"
+    },
+    {
+      "bytes": 16546,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/sequential_logic_large/test_expanded.py",
+      "sha256": "e710ebfa97d772a4b7a0a5f6bd4945a8d93ce2a9bf9538499391b84de0d86376",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/tests/sequential_logic_large/test_expanded.py"
+      }
+    },
+    {
+      "bytes": 16991,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/sequential_logic_large/test_outputs.py",
+      "sha256": "3ded98cef8ee6b765f9f4537fca48dbbce3706797a9711d2afaf7097f54b01ee",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/tests/sequential_logic_large/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/sequential_logic_small"
+    },
+    {
+      "bytes": 20367,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/sequential_logic_small/test_expanded.py",
+      "sha256": "3910a744e5dad89dbff08486e26b31db469f59da8d6e26e5575a5a6a8e1dd60b",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/tests/sequential_logic_small/test_expanded.py"
+      }
+    },
+    {
+      "bytes": 16905,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/sequential_logic_small/test_outputs.py",
+      "sha256": "838124b4b35e161eadc2b6cd053a95e2aec3cbde10c9072d41bc839cabfb3a0b",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/tests/sequential_logic_small/test_outputs.py"
+      }
+    },
+    {
+      "bytes": 31000,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_expanded.py",
+      "sha256": "7e5b0df7b8ad8a35ad3d3ef15565f4485689f55d67a83f9b48351d0815511ee4",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/tests/test_expanded.py"
+      }
+    },
+    {
+      "bytes": 19536,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_outputs.py",
+      "sha256": "22d93969ce554f9244f7fcffbaa4e4ee551db34a41cf954c8e8dcfaa19577af6",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/tests/test_outputs.py"
+      }
+    },
+    {
+      "bytes": 1007,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_task_runner.py",
+      "sha256": "8414ec63fb3773a4e5e0dfde75635aa6b2306f6ea59edef86fea3a9cce685f69",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/tests/test_task_runner.py"
+      }
+    },
+    {
+      "bytes": 5731,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_unit_runner.py",
+      "sha256": "3ad15b8aef1d6f8dba20083d1b08ce0b20013fbd307325f5372af8fcd6a0e7bb",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/tests/test_unit_runner.py"
+      }
+    },
+    {
+      "bytes": 2339,
+      "kind": "file",
+      "mode": 420,
+      "path": "unit_dag.json",
+      "sha256": "ee4c40f279650712f359272a4e7f3da9ade6db705084fcb30add764cb07c733a",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_nandteris/unit_dag.json"
+      }
+    }
+  ],
+  "overlay_sha256": "46814a043a4fc26a5e7c11ffc15c07798deae15b2592d7c5a0c0a354c5524d10",
+  "upstream": {
+    "kind": "loopsbench",
+    "revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+    "source_root_key": "loopsbench",
+    "task": "task_nandteris"
+  },
+  "workspace_tree_sha256": "6eca431c4ab8927a15c721f46c73b55a03f53c1562b893f1072ac6ed07671fcf"
+}

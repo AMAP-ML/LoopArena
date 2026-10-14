@@ -1,0 +1,622 @@
+{
+  "case_id": "tri80-loopsbench-task_alloy_formal_modeling-cp4",
+  "files": [
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "alloy"
+    },
+    {
+      "bytes": 235,
+      "kind": "file",
+      "mode": 420,
+      "path": "alloy/__init__.py",
+      "sha256": "6bb43989f3d24a69f02a8e9093b938535a1ffba9f0044eb81cd6afba2df761f7",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_alloy_formal_modeling/gold_patches/alloy.diff",
+        "patch_sha256": "9a37861f64a2b55b89f8ba7ce70454587d942ea94d0a6091e0b27a4e05497a04",
+        "path": "alloy/__init__.py"
+      }
+    },
+    {
+      "bytes": 8523,
+      "kind": "file",
+      "mode": 420,
+      "path": "alloy/constraint_generator.py",
+      "sha256": "1da3bed9240f5cf4d578f8cadf673d98731be3ebcbcf0d57193e4254cd48ccc0",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_alloy_formal_modeling/gold_patches/alloy.diff",
+        "patch_sha256": "9a37861f64a2b55b89f8ba7ce70454587d942ea94d0a6091e0b27a4e05497a04",
+        "path": "alloy/constraint_generator.py"
+      }
+    },
+    {
+      "bytes": 9986,
+      "kind": "file",
+      "mode": 420,
+      "path": "alloy/evaluator.py",
+      "sha256": "2715d25a035f0050186febf9f2c372e2c32b28f6c14abc142e44bc2a5b0b6d9d",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_alloy_formal_modeling/gold_patches/alloy.diff",
+        "patch_sha256": "9a37861f64a2b55b89f8ba7ce70454587d942ea94d0a6091e0b27a4e05497a04",
+        "path": "alloy/evaluator.py"
+      }
+    },
+    {
+      "bytes": 2513,
+      "kind": "file",
+      "mode": 420,
+      "path": "alloy/experiments.py",
+      "sha256": "18b63f40114f12eada178399f0b442841c1bfc99c5404992ff92c907e9e6b1a3",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_alloy_formal_modeling/gold_patches/alloy.diff",
+        "patch_sha256": "9a37861f64a2b55b89f8ba7ce70454587d942ea94d0a6091e0b27a4e05497a04",
+        "path": "alloy/experiments.py"
+      }
+    },
+    {
+      "bytes": 6678,
+      "kind": "file",
+      "mode": 420,
+      "path": "alloy/model.py",
+      "sha256": "f3c05cea4b4a76a8eeff243ae581c7c1fe2e95a6ea88c36e034fc536514ffdc6",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_alloy_formal_modeling/gold_patches/alloy.diff",
+        "patch_sha256": "9a37861f64a2b55b89f8ba7ce70454587d942ea94d0a6091e0b27a4e05497a04",
+        "path": "alloy/model.py"
+      }
+    },
+    {
+      "bytes": 12894,
+      "kind": "file",
+      "mode": 420,
+      "path": "alloy/parser.py",
+      "sha256": "5fa342df5aa8aa57bec088a034c5a07c6054599f39cafa6bda6981b453e33ada",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_alloy_formal_modeling/gold_patches/alloy.diff",
+        "patch_sha256": "9a37861f64a2b55b89f8ba7ce70454587d942ea94d0a6091e0b27a4e05497a04",
+        "path": "alloy/parser.py"
+      }
+    },
+    {
+      "bytes": 6876,
+      "kind": "file",
+      "mode": 420,
+      "path": "alloy/scope_resolver.py",
+      "sha256": "07563d5991e938f31ba37d28759fd8010591e0cf6b766608d4479f65535e2f2b",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_alloy_formal_modeling/gold_patches/alloy.diff",
+        "patch_sha256": "9a37861f64a2b55b89f8ba7ce70454587d942ea94d0a6091e0b27a4e05497a04",
+        "path": "alloy/scope_resolver.py"
+      }
+    },
+    {
+      "bytes": 7549,
+      "kind": "file",
+      "mode": 420,
+      "path": "alloy/typechecker.py",
+      "sha256": "21e423874d2c843a5fe7cc6849cb23015252e443cccba333e3cf5d0c762564db",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_alloy_formal_modeling/gold_patches/alloy.diff",
+        "patch_sha256": "9a37861f64a2b55b89f8ba7ce70454587d942ea94d0a6091e0b27a4e05497a04",
+        "path": "alloy/typechecker.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "benchmarks"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_alloy_formal_modeling/base/benchmarks/__init__.py"
+      }
+    },
+    {
+      "bytes": 557,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/leader_election.py",
+      "sha256": "04e2d4771b32ec6211a8ed68f66a983c4688fa77f74664530dc4b6e6cdee4b85",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_alloy_formal_modeling/base/benchmarks/leader_election.py"
+      }
+    },
+    {
+      "bytes": 562,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/pigeonhole.py",
+      "sha256": "2e65f25ac0e502fe96a93dea617ab567eb66b5cb57181a74d8e354015fe026cd",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_alloy_formal_modeling/base/benchmarks/pigeonhole.py"
+      }
+    },
+    {
+      "bytes": 457,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/sudoku.py",
+      "sha256": "368aea1dfd86b008a49eecdf1b7bc2bc69cd3ad974f0837414cb42dad75f73a1",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_alloy_formal_modeling/base/benchmarks/sudoku.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "framework"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "framework/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_alloy_formal_modeling/base/benchmarks/__init__.py"
+      }
+    },
+    {
+      "bytes": 3365,
+      "kind": "file",
+      "mode": 420,
+      "path": "framework/ast.py",
+      "sha256": "8e3df3ffcf78d4761a7e99216898d422b8650a9704957502a863c5af8731023e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_alloy_formal_modeling/base/framework/ast.py"
+      }
+    },
+    {
+      "bytes": 1962,
+      "kind": "file",
+      "mode": 420,
+      "path": "framework/formula_builder.py",
+      "sha256": "1aaa82ff196a7c32c9fbf4a051030030bddd877163ef60e49009a3972eaaf403",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_alloy_formal_modeling/base/framework/formula_builder.py"
+      }
+    },
+    {
+      "bytes": 4141,
+      "kind": "file",
+      "mode": 420,
+      "path": "framework/relations.py",
+      "sha256": "8bf7dc5855f83eb3f633481f1ac8c99a81a83315ff382709ee5d9c8db3290f20",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_alloy_formal_modeling/base/framework/relations.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "kodkod"
+    },
+    {
+      "bytes": 347,
+      "kind": "file",
+      "mode": 420,
+      "path": "kodkod/__init__.py",
+      "sha256": "eeab4df6ff92cba030295868243a58dc16bf7b6ac2e352773655b3bbb9c529ac",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_alloy_formal_modeling/gold_patches/kodkod.diff",
+        "patch_sha256": "5ec566794cd26082eb83ef80c9dd82982fa8d14b0cbc24eb0f47657291e53be7",
+        "path": "kodkod/__init__.py"
+      }
+    },
+    {
+      "bytes": 5118,
+      "kind": "file",
+      "mode": 420,
+      "path": "kodkod/bounds_manager.py",
+      "sha256": "3c53ce29d175b60df709c99c38c609b14e3d28c6428fba8fa700686564150053",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_alloy_formal_modeling/gold_patches/kodkod.diff",
+        "patch_sha256": "5ec566794cd26082eb83ef80c9dd82982fa8d14b0cbc24eb0f47657291e53be7",
+        "path": "kodkod/bounds_manager.py"
+      }
+    },
+    {
+      "bytes": 5981,
+      "kind": "file",
+      "mode": 420,
+      "path": "kodkod/experiments.py",
+      "sha256": "36ef4357ec4610e119e71c6e084b1550dfc2c44a1a3a0cbde01ee76c4c25a48a",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_alloy_formal_modeling/gold_patches/kodkod.diff",
+        "patch_sha256": "5ec566794cd26082eb83ef80c9dd82982fa8d14b0cbc24eb0f47657291e53be7",
+        "path": "kodkod/experiments.py"
+      }
+    },
+    {
+      "bytes": 9364,
+      "kind": "file",
+      "mode": 420,
+      "path": "kodkod/formula_encoder.py",
+      "sha256": "33014a19baf71a81a1e457ca3e29648d38e29d2e4cceb1fc435d9508c4fff474",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_alloy_formal_modeling/gold_patches/kodkod.diff",
+        "patch_sha256": "5ec566794cd26082eb83ef80c9dd82982fa8d14b0cbc24eb0f47657291e53be7",
+        "path": "kodkod/formula_encoder.py"
+      }
+    },
+    {
+      "bytes": 6438,
+      "kind": "file",
+      "mode": 420,
+      "path": "kodkod/incremental.py",
+      "sha256": "3886d80b8001318e4b31de5f07e622188b80a0ea9bc371be5186adad36ad2b1d",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_alloy_formal_modeling/gold_patches/kodkod.diff",
+        "patch_sha256": "5ec566794cd26082eb83ef80c9dd82982fa8d14b0cbc24eb0f47657291e53be7",
+        "path": "kodkod/incremental.py"
+      }
+    },
+    {
+      "bytes": 3856,
+      "kind": "file",
+      "mode": 420,
+      "path": "kodkod/solver.py",
+      "sha256": "ec4061753745e1fc00aa18cbc719639a27a7bc4313c7c72bba227beb571e839d",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_alloy_formal_modeling/gold_patches/kodkod.diff",
+        "patch_sha256": "5ec566794cd26082eb83ef80c9dd82982fa8d14b0cbc24eb0f47657291e53be7",
+        "path": "kodkod/solver.py"
+      }
+    },
+    {
+      "bytes": 6672,
+      "kind": "file",
+      "mode": 420,
+      "path": "kodkod/symmetry.py",
+      "sha256": "d545ce46c7a4cbcad16b53322720977722b69b1d12babe8a937bf91637ec5b5e",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_alloy_formal_modeling/gold_patches/kodkod.diff",
+        "patch_sha256": "5ec566794cd26082eb83ef80c9dd82982fa8d14b0cbc24eb0f47657291e53be7",
+        "path": "kodkod/symmetry.py"
+      }
+    },
+    {
+      "bytes": 12782,
+      "kind": "file",
+      "mode": 420,
+      "path": "kodkod/translator.py",
+      "sha256": "02d31fcc200b4f98495dd4b9b818192b5b776d5a768d32a6798cd5985533eb90",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_alloy_formal_modeling/gold_patches/kodkod.diff",
+        "patch_sha256": "5ec566794cd26082eb83ef80c9dd82982fa8d14b0cbc24eb0f47657291e53be7",
+        "path": "kodkod/translator.py"
+      }
+    },
+    {
+      "bytes": 3630,
+      "kind": "file",
+      "mode": 420,
+      "path": "module_dag.yaml",
+      "sha256": "c905184cb8c68b711e9a7eae5c96968ababee5999a4cba3e30dc086f2b220bdf",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_alloy_formal_modeling/module_dag.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "pardinus"
+    },
+    {
+      "bytes": 279,
+      "kind": "file",
+      "mode": 420,
+      "path": "pardinus/__init__.py",
+      "sha256": "061bfbfd08d3add9004bd3d10fd4339111832289ac7763d958e039b0ebd20a60",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_alloy_formal_modeling/gold_patches/pardinus.diff",
+        "patch_sha256": "0428152bac15365998f629f487f58e453d61bb5e0ac1e2a246b2a1e022f7a1ee",
+        "path": "pardinus/__init__.py"
+      }
+    },
+    {
+      "bytes": 17483,
+      "kind": "file",
+      "mode": 420,
+      "path": "pardinus/bounded_solver.py",
+      "sha256": "20a0df33fa5190c580047b22fb4c1ac532522cce103fe0e5b58b9c8a7f123798",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_alloy_formal_modeling/gold_patches/pardinus.diff",
+        "patch_sha256": "0428152bac15365998f629f487f58e453d61bb5e0ac1e2a246b2a1e022f7a1ee",
+        "path": "pardinus/bounded_solver.py"
+      }
+    },
+    {
+      "bytes": 6681,
+      "kind": "file",
+      "mode": 420,
+      "path": "pardinus/decomposed_solver.py",
+      "sha256": "bf747efd953d2ca03c0ba65729022003d690f455dd9693178054c3582aa58843",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_alloy_formal_modeling/gold_patches/pardinus.diff",
+        "patch_sha256": "0428152bac15365998f629f487f58e453d61bb5e0ac1e2a246b2a1e022f7a1ee",
+        "path": "pardinus/decomposed_solver.py"
+      }
+    },
+    {
+      "bytes": 1377,
+      "kind": "file",
+      "mode": 420,
+      "path": "pardinus/experiments.py",
+      "sha256": "3ad34b78c407f2955f33732ff397969acd766e11ed2f17bbb22a74fef59d2472",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_alloy_formal_modeling/gold_patches/pardinus.diff",
+        "patch_sha256": "0428152bac15365998f629f487f58e453d61bb5e0ac1e2a246b2a1e022f7a1ee",
+        "path": "pardinus/experiments.py"
+      }
+    },
+    {
+      "bytes": 8198,
+      "kind": "file",
+      "mode": 420,
+      "path": "pardinus/lasso_encoder.py",
+      "sha256": "5353ea8bd7803943a9725c294701cbdff75675f3cc226f729c6cbddce4f2fb14",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_alloy_formal_modeling/gold_patches/pardinus.diff",
+        "patch_sha256": "0428152bac15365998f629f487f58e453d61bb5e0ac1e2a246b2a1e022f7a1ee",
+        "path": "pardinus/lasso_encoder.py"
+      }
+    },
+    {
+      "bytes": 6400,
+      "kind": "file",
+      "mode": 420,
+      "path": "pardinus/temporal_ast.py",
+      "sha256": "d97cbd1a61e6543d477de40b594439c68a4bb9068063edb6c4a29571109d5e74",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_alloy_formal_modeling/gold_patches/pardinus.diff",
+        "patch_sha256": "0428152bac15365998f629f487f58e453d61bb5e0ac1e2a246b2a1e022f7a1ee",
+        "path": "pardinus/temporal_ast.py"
+      }
+    },
+    {
+      "bytes": 7007,
+      "kind": "file",
+      "mode": 420,
+      "path": "pardinus/temporal_operators.py",
+      "sha256": "7282a6981d6aa23ba8e945f37979b11f4e0583a1c15a9c9ef5060ba2c1bc7567",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_alloy_formal_modeling/gold_patches/pardinus.diff",
+        "patch_sha256": "0428152bac15365998f629f487f58e453d61bb5e0ac1e2a246b2a1e022f7a1ee",
+        "path": "pardinus/temporal_operators.py"
+      }
+    },
+    {
+      "bytes": 4701,
+      "kind": "file",
+      "mode": 420,
+      "path": "pardinus/trace_extractor.py",
+      "sha256": "d0d27ea48ca587ee73b036e8ba359af35a5cd59cdc82aa7a48d3f7305ab2c4ad",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_alloy_formal_modeling/gold_patches/pardinus.diff",
+        "patch_sha256": "0428152bac15365998f629f487f58e453d61bb5e0ac1e2a246b2a1e022f7a1ee",
+        "path": "pardinus/trace_extractor.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "requirements"
+    },
+    {
+      "bytes": 34,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements.txt",
+      "sha256": "ae4cc374edc336bcdc9aebdb54ed94129991bfb1152e4881d55403b4e51af8f1",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_alloy_formal_modeling/base/requirements.txt"
+      }
+    },
+    {
+      "bytes": 5735,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/alloy.yaml",
+      "sha256": "33a396f7831199ec9f906c43dcee594727938ea9904977fa9d812b58fa2962c2",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_alloy_formal_modeling/requirements/alloy.yaml"
+      }
+    },
+    {
+      "bytes": 6217,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/electrum.yaml",
+      "sha256": "b438141be5e772f242400af70e4b1ebeb24879e8fac81dd66e109b83324c5bf8",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_alloy_formal_modeling/requirements/electrum.yaml"
+      }
+    },
+    {
+      "bytes": 5332,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/kodkod.yaml",
+      "sha256": "1b31b748aab261c7d28c8cf9bf45c89bd7e08245cb32954d0169111c0673a15d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_alloy_formal_modeling/requirements/kodkod.yaml"
+      }
+    },
+    {
+      "bytes": 5851,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/pardinus.yaml",
+      "sha256": "281beb85f0916be983be3c6b0627321bcc57c60fc97e156b196281eb6e7ee057",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_alloy_formal_modeling/requirements/pardinus.yaml"
+      }
+    },
+    {
+      "bytes": 653,
+      "kind": "file",
+      "mode": 493,
+      "path": "run-tests.sh",
+      "sha256": "8e14baf3d0e56e66f19b7bb011bb9641887f62eb00b4c85293894a3345236e67",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_alloy_formal_modeling/run-tests.sh"
+      }
+    },
+    {
+      "bytes": 558,
+      "kind": "file",
+      "mode": 493,
+      "path": "run.sh",
+      "sha256": "fc8b80226658061e42cb323312a1864ed010c40553192bd2507cdd97593aa91b",
+      "source": {
+        "blob": "fc8b80226658061e42cb323312a1864ed010c40553192bd2507cdd97593aa91b",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 2189,
+      "kind": "file",
+      "mode": 420,
+      "path": "task.yaml",
+      "sha256": "a529349f16f1526743cd46689b443679a184c9e9ade62c5d53de9bff9790e477",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_alloy_formal_modeling/task.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/alloy"
+    },
+    {
+      "bytes": 2145,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/alloy/test_outputs.py",
+      "sha256": "3ab5a5dd37a2bceea02fc4a3a37f920373cb15335af189ea719b5d16805dd74a",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_alloy_formal_modeling/tests/alloy/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/electrum"
+    },
+    {
+      "bytes": 2055,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/electrum/test_outputs.py",
+      "sha256": "adf18229249ff32d064227392ec9e80321dfdbf092c01b36875222adf2174725",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_alloy_formal_modeling/tests/electrum/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/kodkod"
+    },
+    {
+      "bytes": 2105,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/kodkod/test_outputs.py",
+      "sha256": "ac7812558b90dde5bb87dfb205c68765f12ecdfd283c1013c8f54ebc7efa9393",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_alloy_formal_modeling/tests/kodkod/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/pardinus"
+    },
+    {
+      "bytes": 2074,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/pardinus/test_outputs.py",
+      "sha256": "5cccfd94b0f57be92c270c45b454ab04ecbdcefacb77e1e030561a3265e61f8e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_alloy_formal_modeling/tests/pardinus/test_outputs.py"
+      }
+    },
+    {
+      "bytes": 902,
+      "kind": "file",
+      "mode": 420,
+      "path": "unit_dag.json",
+      "sha256": "7796dc6ef4b07c31bac149f09d9714aaa14e646c17971b4aaab67fac2bd34b40",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_alloy_formal_modeling/unit_dag.json"
+      }
+    }
+  ],
+  "overlay_sha256": "ce2a4d93da3a887ed759bedf34698ec8a5be55ae1ee9fda31abc2d64b63ae413",
+  "upstream": {
+    "kind": "loopsbench",
+    "revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+    "source_root_key": "loopsbench",
+    "task": "task_alloy_formal_modeling"
+  },
+  "workspace_tree_sha256": "226b099cd4c18d997cbe79a65e95008aa1fa37963a3f0db19e1ea11edc45d539"
+}

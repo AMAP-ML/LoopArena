@@ -1,0 +1,6 @@
+{
+  "recipe": "workspace_recipe.json",
+  "recipe_sha256": "3cc33514f785ec41dd17693326e4a5fcd9e8d6f563b4ca91c2e78346c50eade1",
+  "relative_path_under_assets_root": "type2/workspaces/tri80-beyondswe-aklajnert_pytest-subprocess_pr180-cp1/workspace.tar.gz",
+  "workspace_tree_sha256": "075f6f6117bacf87851dabe6c2d1b32e318a08dbc7cff00b8ea4e9a13f46b2fb"
+}

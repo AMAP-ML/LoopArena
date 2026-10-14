@@ -1,0 +1,17 @@
+## Extend Django 5.1 LoginRequiredMiddleware compatibility to DRF ViewSets
+
+The project uses Django 5.1's `django.contrib.auth.middleware.LoginRequiredMiddleware` in `MIDDLEWARE` to enforce global authentication for standard Django views. Support has already been added so that DRF class-based views (`APIView` subclasses) and function-based views created with the `@api_view` decorator bypass this global login enforcement, letting DRF's own authentication and permission handling decide the response.
+
+However, DRF `ViewSet` endpoints are still being intercepted by the middleware:
+
+* Router-registered ViewSet list endpoints (and other actions) configured with `AllowAny` permissions redirect to the HTML login page (HTTP 302) instead of returning HTTP 200.
+* Unauthenticated requests to protected ViewSet actions, including custom `@action` endpoints, return HTTP 302 instead of the expected HTTP 401 Unauthorized JSON response.
+
+## Task
+
+Ensure that DRF ViewSets — including router-registered list endpoints and extra `@action` endpoints — are exempted from the global `LoginRequiredMiddleware` so that DRF permissions determine the response (HTTP 200 for public endpoints, HTTP 401 for unauthenticated requests to protected endpoints).
+
+## Requirements
+
+* The `LoginRequiredMiddleware` must remain enabled globally and continue to protect standard (non-DRF) Django views.
+* Preserve the existing exemption behavior for DRF class-based views (`APIView` subclasses) and function-based views created with the `@api_view` decorator; these must continue to bypass global login enforcement and return the correct HTTP status codes.

@@ -1,0 +1,185 @@
+{
+  "case_id": "tri80-scbench-execution_server-cp2",
+  "files": [
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "api"
+    },
+    {
+      "bytes": 172,
+      "kind": "file",
+      "mode": 420,
+      "path": "api/__init__.py",
+      "sha256": "5f89314006843d398757ed47c44ca428210b9b62c58e9f9feb82ab99c43a33d6",
+      "source": {
+        "blob": "5f89314006843d398757ed47c44ca428210b9b62c58e9f9feb82ab99c43a33d6",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 2822,
+      "kind": "file",
+      "mode": 420,
+      "path": "api/models.py",
+      "sha256": "39a327a27bc4f287b27a021fc5d40eac5b4d73560424b13773c2a1b97466d314",
+      "source": {
+        "blob": "39a327a27bc4f287b27a021fc5d40eac5b4d73560424b13773c2a1b97466d314",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 4001,
+      "kind": "file",
+      "mode": 420,
+      "path": "api/routes.py",
+      "sha256": "e07ba9baa5100ddbcbc9bbd12c119c246f5d6862028c84d72fc604617b7d9098",
+      "source": {
+        "blob": "e07ba9baa5100ddbcbc9bbd12c119c246f5d6862028c84d72fc604617b7d9098",
+        "kind": "overlay"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "execution"
+    },
+    {
+      "bytes": 172,
+      "kind": "file",
+      "mode": 420,
+      "path": "execution/__init__.py",
+      "sha256": "5f89314006843d398757ed47c44ca428210b9b62c58e9f9feb82ab99c43a33d6",
+      "source": {
+        "blob": "5f89314006843d398757ed47c44ca428210b9b62c58e9f9feb82ab99c43a33d6",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 1879,
+      "kind": "file",
+      "mode": 420,
+      "path": "execution/executor.py",
+      "sha256": "258c7c451e616c4c9e2f21071c392059358bca03119d9b56a0011500db70fef8",
+      "source": {
+        "blob": "258c7c451e616c4c9e2f21071c392059358bca03119d9b56a0011500db70fef8",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 1499,
+      "kind": "file",
+      "mode": 420,
+      "path": "execution/file_handler.py",
+      "sha256": "a42e58d37dc9823701633dc27d1d68fd1084200736118356c80d428ae85fbf6f",
+      "source": {
+        "blob": "a42e58d37dc9823701633dc27d1d68fd1084200736118356c80d428ae85fbf6f",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 816,
+      "kind": "file",
+      "mode": 420,
+      "path": "execution_server.py",
+      "sha256": "e91fc098bf2aff82099b93d414501cca8aca5526969e6bc99221466cd8279c67",
+      "source": {
+        "blob": "e91fc098bf2aff82099b93d414501cca8aca5526969e6bc99221466cd8279c67",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 323,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements.txt",
+      "sha256": "6a0f01fe7757aa4777a13c6286f1f7f5dc9b0f2477ce0290048de26b2c13871b",
+      "source": {
+        "blob": "6a0f01fe7757aa4777a13c6286f1f7f5dc9b0f2477ce0290048de26b2c13871b",
+        "kind": "overlay"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "storage"
+    },
+    {
+      "bytes": 172,
+      "kind": "file",
+      "mode": 420,
+      "path": "storage/__init__.py",
+      "sha256": "5f89314006843d398757ed47c44ca428210b9b62c58e9f9feb82ab99c43a33d6",
+      "source": {
+        "blob": "5f89314006843d398757ed47c44ca428210b9b62c58e9f9feb82ab99c43a33d6",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 3613,
+      "kind": "file",
+      "mode": 420,
+      "path": "storage/environments.py",
+      "sha256": "51bae5b22130f73016a685c0050098fec39007a9988be5cd3be3ebd5af2f9c9f",
+      "source": {
+        "blob": "51bae5b22130f73016a685c0050098fec39007a9988be5cd3be3ebd5af2f9c9f",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 2104,
+      "kind": "file",
+      "mode": 420,
+      "path": "storage/stats.py",
+      "sha256": "be9291de01126758dec8fab260c126a569b5cf91aa2175a7adc5a06497b289c3",
+      "source": {
+        "blob": "be9291de01126758dec8fab260c126a569b5cf91aa2175a7adc5a06497b289c3",
+        "kind": "overlay"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests"
+    },
+    {
+      "bytes": 172,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/__init__.py",
+      "sha256": "5f89314006843d398757ed47c44ca428210b9b62c58e9f9feb82ab99c43a33d6",
+      "source": {
+        "blob": "5f89314006843d398757ed47c44ca428210b9b62c58e9f9feb82ab99c43a33d6",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 3693,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_api.py",
+      "sha256": "8dab04927cf43c4dda8dcfa8576292b5f9eb26ceb3fa7d019a4f0392af5768de",
+      "source": {
+        "blob": "8dab04927cf43c4dda8dcfa8576292b5f9eb26ceb3fa7d019a4f0392af5768de",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 1087,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_executor.py",
+      "sha256": "3249eba2450cd622126dfaf3deb39a922905c7f9b1ee999bab1964e0417d02d6",
+      "source": {
+        "blob": "3249eba2450cd622126dfaf3deb39a922905c7f9b1ee999bab1964e0417d02d6",
+        "kind": "overlay"
+      }
+    }
+  ],
+  "overlay_sha256": "3549d5824be62c304cf23bc5ee47d1d26382384092c7dc8c2b3e50f056f70101",
+  "upstream": {
+    "kind": "scbench",
+    "source_root_key": null
+  },
+  "workspace_tree_sha256": "a5388134095b3f2929b6025391c726aefad09f62fe268d2ec0a09d3359eaf8be"
+}

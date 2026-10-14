@@ -1,0 +1,10 @@
+{
+  "adapter_kind": "scbench",
+  "case_id": "tri80-scbench-trajectory_api",
+  "episode_origin": "official_problem_start",
+  "harness_start_mode": "bootstrap_contract_start",
+  "official_task_id": "scbench:trajectory_api",
+  "task_scope": "official_full_problem",
+  "task_sequence_ref": "task_sequence.json",
+  "task_sequence_sha256": "82654337725fb57f4291d6d000d1e311af4600cfdd89ce6b8f2c641738612ff3"
+}

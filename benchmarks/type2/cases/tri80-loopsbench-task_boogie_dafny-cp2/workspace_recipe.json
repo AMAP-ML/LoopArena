@@ -1,0 +1,394 @@
+{
+  "case_id": "tri80-loopsbench-task_boogie_dafny-cp2",
+  "files": [
+    {
+      "bytes": 102855,
+      "kind": "file",
+      "mode": 420,
+      "path": "boogie_verifier.py",
+      "sha256": "c65768e53889fc25f2b5378da5a87c26b6a64b279db27384161dc930f19d03a9",
+      "source": {
+        "blob": "c65768e53889fc25f2b5378da5a87c26b6a64b279db27384161dc930f19d03a9",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 698,
+      "kind": "file",
+      "mode": 420,
+      "path": "dafny_translator.py",
+      "sha256": "170fab35515b807885bd4081305932ff6aa2742c9a9b03d383b460d04bd2d8ca",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_boogie_dafny/base/dafny_translator.py"
+      }
+    },
+    {
+      "bytes": 871,
+      "kind": "file",
+      "mode": 420,
+      "path": "ironfleet_lock.py",
+      "sha256": "e8ee4616ea46b7e4e2198a0b65dfb266fd7ac78d635b026486ed7b47aaf69a56",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_boogie_dafny/base/ironfleet_lock.py"
+      }
+    },
+    {
+      "bytes": 3607,
+      "kind": "file",
+      "mode": 420,
+      "path": "module_dag.yaml",
+      "sha256": "b913446050976b50cf16b95c1eb3b446e1c887dace128d4a3a1e32fe3bb07dc7",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_boogie_dafny/module_dag.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "requirements"
+    },
+    {
+      "bytes": 20,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements.txt",
+      "sha256": "0ee5d77933f2a0662c16710275a5428911d5c4cd42e7e73d08d35325cef45821",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_boogie_dafny/base/requirements.txt"
+      }
+    },
+    {
+      "bytes": 5226,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/boogie.yaml",
+      "sha256": "72226b2fff7bd15e66408027f47cb577ad3aceb67b523efec4fe0ea77d067197",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_boogie_dafny/requirements/boogie.yaml"
+      }
+    },
+    {
+      "bytes": 6078,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/dafny.yaml",
+      "sha256": "3257854d42b84542e6c199ec1a1e306859be3b275963cf6c01f750b4c750f4b3",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_boogie_dafny/requirements/dafny.yaml"
+      }
+    },
+    {
+      "bytes": 5163,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/ironfleet.yaml",
+      "sha256": "4fc1de17fa80ff99e634aa4340a6a24a42506455b73aa564614a203f865a94cb",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_boogie_dafny/requirements/ironfleet.yaml"
+      }
+    },
+    {
+      "bytes": 541,
+      "kind": "file",
+      "mode": 493,
+      "path": "run-tests.sh",
+      "sha256": "35cbc2b09d377b57f7fbb0575ef73fcfcab7dfdfc5d4b8322547cc0ca0150820",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_boogie_dafny/run-tests.sh"
+      }
+    },
+    {
+      "bytes": 311,
+      "kind": "file",
+      "mode": 493,
+      "path": "run.sh",
+      "sha256": "ba89886ba29683d3033b8531d2d49349478a87d400005f2ef62f0fdb6c67662d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_boogie_dafny/base/run.sh"
+      }
+    },
+    {
+      "bytes": 2030,
+      "kind": "file",
+      "mode": 420,
+      "path": "task.yaml",
+      "sha256": "4bdfa4944018106a8c999d25eddc5bd2230ade74bc820611e06bbed2791fd11e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_boogie_dafny/task.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "test_programs"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "test_programs/boogie"
+    },
+    {
+      "bytes": 242,
+      "kind": "file",
+      "mode": 420,
+      "path": "test_programs/boogie/01_increment.bpl",
+      "sha256": "d18fdc89860671fb504079ee5967b84c2808bfd4f510bc43dcefdda0af8b375b",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_boogie_dafny/base/test_programs/boogie/01_increment.bpl"
+      }
+    },
+    {
+      "bytes": 276,
+      "kind": "file",
+      "mode": 420,
+      "path": "test_programs/boogie/02_swap.bpl",
+      "sha256": "c91d94658c1b3e96e817f607c1174fb8caff616078d99585cffc96fc59c0c4d5",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_boogie_dafny/base/test_programs/boogie/02_swap.bpl"
+      }
+    },
+    {
+      "bytes": 347,
+      "kind": "file",
+      "mode": 420,
+      "path": "test_programs/boogie/03_max.bpl",
+      "sha256": "6c718b7d913ac480c13871ca41fc721a10ff5f5f604dca07ecb068aa9bef48f3",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_boogie_dafny/base/test_programs/boogie/03_max.bpl"
+      }
+    },
+    {
+      "bytes": 302,
+      "kind": "file",
+      "mode": 420,
+      "path": "test_programs/boogie/04_abs.bpl",
+      "sha256": "9d6597ce551066663cf22dc2a547363df49162c6f4c0a139522f5bb6224dd2a3",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_boogie_dafny/base/test_programs/boogie/04_abs.bpl"
+      }
+    },
+    {
+      "bytes": 521,
+      "kind": "file",
+      "mode": 420,
+      "path": "test_programs/boogie/05_loop_sum_buggy.bpl",
+      "sha256": "aa520d6b39e7fa57deccbb170a20e9a32837c2be4fdaf46af90fd9a3e29eff23",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_boogie_dafny/base/test_programs/boogie/05_loop_sum_buggy.bpl"
+      }
+    },
+    {
+      "bytes": 481,
+      "kind": "file",
+      "mode": 420,
+      "path": "test_programs/boogie/06_loop_sum_correct.bpl",
+      "sha256": "5b0625f3df447c4a43a3accf2c44d3ffd7a7a7a66d73df98e5e820d9a7edf1e1",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_boogie_dafny/base/test_programs/boogie/06_loop_sum_correct.bpl"
+      }
+    },
+    {
+      "bytes": 516,
+      "kind": "file",
+      "mode": 420,
+      "path": "test_programs/boogie/07_divide.bpl",
+      "sha256": "3a736a83bc37f53154d52db665fd9e56b9f5c6bcc93d7950701c1fc4cb160ea3",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_boogie_dafny/base/test_programs/boogie/07_divide.bpl"
+      }
+    },
+    {
+      "bytes": 468,
+      "kind": "file",
+      "mode": 420,
+      "path": "test_programs/boogie/08_clamp.bpl",
+      "sha256": "5eec5d2584768ec6f44d0a808b754c806255397a67f2950b7b6e3c593171edc2",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_boogie_dafny/base/test_programs/boogie/08_clamp.bpl"
+      }
+    },
+    {
+      "bytes": 349,
+      "kind": "file",
+      "mode": 420,
+      "path": "test_programs/boogie/09_array_set.bpl",
+      "sha256": "88ca99955cdb5d39c2da40590c3a78b3d3b2105025ec60294b23f2ffc5b77d95",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_boogie_dafny/base/test_programs/boogie/09_array_set.bpl"
+      }
+    },
+    {
+      "bytes": 213,
+      "kind": "file",
+      "mode": 420,
+      "path": "test_programs/boogie/10_double_buggy.bpl",
+      "sha256": "8d275ccb0dc1210cdb40612f4ac4a6c9e17e111cb75e1cba822b3d14eb76526f",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_boogie_dafny/base/test_programs/boogie/10_double_buggy.bpl"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "test_programs/dafny"
+    },
+    {
+      "bytes": 224,
+      "kind": "file",
+      "mode": 420,
+      "path": "test_programs/dafny/01_isqrt.dfy",
+      "sha256": "6c4130712befb8ecb68c7dd06153d8de93690c3eb62ca1fde32a34a28dd9cd4b",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_boogie_dafny/base/test_programs/dafny/01_isqrt.dfy"
+      }
+    },
+    {
+      "bytes": 419,
+      "kind": "file",
+      "mode": 420,
+      "path": "test_programs/dafny/02_fibonacci.dfy",
+      "sha256": "16317ae074623263d6943d07ee5499eed3426e85acd3c2f2309ba91397ce9cfa",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_boogie_dafny/base/test_programs/dafny/02_fibonacci.dfy"
+      }
+    },
+    {
+      "bytes": 653,
+      "kind": "file",
+      "mode": 420,
+      "path": "test_programs/dafny/03_binary_search.dfy",
+      "sha256": "1b0bb6b14ae98751467709f5652a0bcec0b661177718e1f2ce85ffe74f6babfd",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_boogie_dafny/base/test_programs/dafny/03_binary_search.dfy"
+      }
+    },
+    {
+      "bytes": 221,
+      "kind": "file",
+      "mode": 420,
+      "path": "test_programs/dafny/04_multiply.dfy",
+      "sha256": "5317bdd442317dad29b79589645308fd855915d83e95527740f6dd383177a458",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_boogie_dafny/base/test_programs/dafny/04_multiply.dfy"
+      }
+    },
+    {
+      "bytes": 481,
+      "kind": "file",
+      "mode": 420,
+      "path": "test_programs/dafny/05_power.dfy",
+      "sha256": "c6ffd39c59cbf4e7e1455de8b44354312f139de9f655ac9729e069ad332977eb",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_boogie_dafny/base/test_programs/dafny/05_power.dfy"
+      }
+    },
+    {
+      "bytes": 287,
+      "kind": "file",
+      "mode": 420,
+      "path": "test_programs/dafny/06_sum_array_buggy.dfy",
+      "sha256": "7c5bde6524de63ba80bb64d1d3011aa1b33b88d6e1f045c4b9fe72a3a8cc2e82",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_boogie_dafny/base/test_programs/dafny/06_sum_array_buggy.dfy"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/boogie"
+    },
+    {
+      "bytes": 1885,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/boogie/test_outputs.py",
+      "sha256": "fa30fcbc916a12380d07a211b81d4b217d43bd6812f9f5b05fff8c851d51df47",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_boogie_dafny/tests/boogie/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/dafny"
+    },
+    {
+      "bytes": 1882,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/dafny/test_outputs.py",
+      "sha256": "6020de6548a48421ed18b1ae418ee8f378cc978b69a55503e65b8cb2406abc1d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_boogie_dafny/tests/dafny/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/ironfleet"
+    },
+    {
+      "bytes": 1890,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/ironfleet/test_outputs.py",
+      "sha256": "20d4661440c2c7889b85d2fa3f4cb381fb8d61558d969b2c620edd835dd3aaaa",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_boogie_dafny/tests/ironfleet/test_outputs.py"
+      }
+    },
+    {
+      "bytes": 548,
+      "kind": "file",
+      "mode": 420,
+      "path": "unit_dag.json",
+      "sha256": "de57c21b51b235dfd440d809d8d46c76c2e9328d64625ef22a5511d339526669",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_boogie_dafny/unit_dag.json"
+      }
+    }
+  ],
+  "overlay_sha256": "10a6cfc3192f77b82394b3dad101546120b3616d79c606744ed61fa09ca14787",
+  "upstream": {
+    "kind": "loopsbench",
+    "revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+    "source_root_key": "loopsbench",
+    "task": "task_boogie_dafny"
+  },
+  "workspace_tree_sha256": "698f5536964e5986122a2c126355daf60098ad801e663137ae587a4813bcf205"
+}

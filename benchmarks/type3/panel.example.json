@@ -1,6 +1,6 @@
 {
   "cohort_dir": "benchmarks/type3",
-  "assets_root": "~/.cache/looparena/assets",
+  "assets_root": "assets",
   "cases": "all",
   "seeds": [0],
   "arm": "controlled",

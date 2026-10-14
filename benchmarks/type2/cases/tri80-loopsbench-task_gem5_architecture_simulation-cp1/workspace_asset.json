@@ -1,0 +1,6 @@
+{
+  "recipe": "workspace_recipe.json",
+  "recipe_sha256": "f939f6a7ee6a76e8040dc15c0d27ede1028e113d107ddb593d576ff1f7dc1d68",
+  "relative_path_under_assets_root": "type2/workspaces/tri80-loopsbench-task_gem5_architecture_simulation-cp1/workspace.tar.gz",
+  "workspace_tree_sha256": "ce39c9f3967069ce178dbfab09b80642d05fb62adbb314d287ca0bba69e80ac6"
+}

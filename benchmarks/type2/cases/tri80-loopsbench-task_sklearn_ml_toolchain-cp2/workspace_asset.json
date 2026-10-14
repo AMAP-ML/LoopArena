@@ -1,0 +1,6 @@
+{
+  "recipe": "workspace_recipe.json",
+  "recipe_sha256": "be5b4ba506cdc02ca89dd4763cdcd804e603b5dcfbdfacd1a29ab8d6b3f740ef",
+  "relative_path_under_assets_root": "type2/workspaces/tri80-loopsbench-task_sklearn_ml_toolchain-cp2/workspace.tar.gz",
+  "workspace_tree_sha256": "a748813cdeeaf1f2427d7ac3adc01d53792633308a290476a713fcd0d83746b0"
+}

@@ -1,0 +1,22 @@
+{
+  "case_id": "tri80-scbench-pwd_manager-cp2",
+  "files": [
+    {
+      "bytes": 12695,
+      "kind": "file",
+      "mode": 420,
+      "path": "pwd_manager.py",
+      "sha256": "1f3cea409e391b00973f52d60fae50f4d13968a4b966920c0e902bfc1f8fc2da",
+      "source": {
+        "blob": "1f3cea409e391b00973f52d60fae50f4d13968a4b966920c0e902bfc1f8fc2da",
+        "kind": "overlay"
+      }
+    }
+  ],
+  "overlay_sha256": "4b096431aeb489ae2996fc493dce4775a4e4d26f4c635928dbda91e572f835a0",
+  "upstream": {
+    "kind": "scbench",
+    "source_root_key": null
+  },
+  "workspace_tree_sha256": "dcc24010b6266cca4f3477b213218761cad984680dc98883c78beb3c700091ed"
+}

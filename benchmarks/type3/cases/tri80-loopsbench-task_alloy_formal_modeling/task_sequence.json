@@ -1,0 +1,19 @@
+{
+  "adapter_kind": "loopsbench",
+  "checkpoint_context_policy": "single_episode",
+  "checkpoint_failure_policy": "stop_after_task",
+  "official_task_id": "loopsbench:task_alloy_formal_modeling",
+  "release_content_hash": "84ae4156df6a132416109e2cf27bb72bcbde1e764dea40f3abab5e4ade942020",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/task.json",
+      "evaluator_plan_sha256": "86fc8350ee6590ef43738c62e3f933d521f477be763d6e64766ca90ac6245037",
+      "step_id": "task",
+      "task_ref": "tasks/task.md",
+      "task_sha256": "6db8dafaf996375ad16b0d9cdb625f9c37bb689ce968a96781d4cd903459e975"
+    }
+  ],
+  "target_step": "task",
+  "task_scope": "official_full_task",
+  "workspace_origin": "pinned_loopsbench_release_source_base"
+}

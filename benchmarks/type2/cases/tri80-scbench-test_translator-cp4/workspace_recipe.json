@@ -1,0 +1,393 @@
+{
+  "case_id": "tri80-scbench-test_translator-cp4",
+  "files": [
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "babel_code_goat"
+    },
+    {
+      "bytes": 1426,
+      "kind": "file",
+      "mode": 420,
+      "path": "babel_code_goat.py",
+      "sha256": "236c756e7ab67ecd86229fd6cd2f8cd91242d435d7b1e72d38280fc134d949d9",
+      "source": {
+        "blob": "236c756e7ab67ecd86229fd6cd2f8cd91242d435d7b1e72d38280fc134d949d9",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 675,
+      "kind": "file",
+      "mode": 420,
+      "path": "babel_code_goat/__init__.py",
+      "sha256": "71bc9aff35ddfac4cd1ecdbaeb7d688a0ae5d198d0ce943350a3763a83aa7eb2",
+      "source": {
+        "blob": "71bc9aff35ddfac4cd1ecdbaeb7d688a0ae5d198d0ce943350a3763a83aa7eb2",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 293,
+      "kind": "file",
+      "mode": 420,
+      "path": "babel_code_goat/__main__.py",
+      "sha256": "429378d1f46bccf2562b3aa7b35748ec548b7e37cb73c5a709fbbbccf9713f5b",
+      "source": {
+        "blob": "429378d1f46bccf2562b3aa7b35748ec548b7e37cb73c5a709fbbbccf9713f5b",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 1425,
+      "kind": "file",
+      "mode": 420,
+      "path": "babel_code_goat/babel_code_goat.py",
+      "sha256": "d283445f2244e168a8064b2621791d7511289bcf9d55801ea7cefd728438aabd",
+      "source": {
+        "blob": "d283445f2244e168a8064b2621791d7511289bcf9d55801ea7cefd728438aabd",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 5843,
+      "kind": "file",
+      "mode": 420,
+      "path": "babel_code_goat/cli.py",
+      "sha256": "2e6a6f3364e2b67e06a4a132529197d0a45644da66ba5a1d4a155207eb2dcb2d",
+      "source": {
+        "blob": "2e6a6f3364e2b67e06a4a132529197d0a45644da66ba5a1d4a155207eb2dcb2d",
+        "kind": "overlay"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "babel_code_goat/commands"
+    },
+    {
+      "bytes": 366,
+      "kind": "file",
+      "mode": 420,
+      "path": "babel_code_goat/commands/__init__.py",
+      "sha256": "de920acb3255b85bd5e460d1a973b725b62884d4b3e2d7e4ed6966f2728157d9",
+      "source": {
+        "blob": "de920acb3255b85bd5e460d1a973b725b62884d4b3e2d7e4ed6966f2728157d9",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 12990,
+      "kind": "file",
+      "mode": 420,
+      "path": "babel_code_goat/commands/generate.py",
+      "sha256": "c137b8349f30153d25b1de9b743dad2f092ac4bd3e01f72da2b2178c79e0e65f",
+      "source": {
+        "blob": "c137b8349f30153d25b1de9b743dad2f092ac4bd3e01f72da2b2178c79e0e65f",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 13741,
+      "kind": "file",
+      "mode": 420,
+      "path": "babel_code_goat/commands/profile.py",
+      "sha256": "b56a8ea4f36474a0063e9b63bcbd2f681b9c8d547dfb21cced33594b7ab45476",
+      "source": {
+        "blob": "b56a8ea4f36474a0063e9b63bcbd2f681b9c8d547dfb21cced33594b7ab45476",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 12136,
+      "kind": "file",
+      "mode": 420,
+      "path": "babel_code_goat/commands/test.py",
+      "sha256": "15e172acee91350dbf4cd9263e995893e598e0f7ee83612e690fe6ab1ed7ffa9",
+      "source": {
+        "blob": "15e172acee91350dbf4cd9263e995893e598e0f7ee83612e690fe6ab1ed7ffa9",
+        "kind": "overlay"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "babel_code_goat/formatters"
+    },
+    {
+      "bytes": 1873,
+      "kind": "file",
+      "mode": 420,
+      "path": "babel_code_goat/formatters/__init__.py",
+      "sha256": "ea3074aacd139447c28a12379837bac80908387c9c37b6bf0cc777125d48360b",
+      "source": {
+        "blob": "ea3074aacd139447c28a12379837bac80908387c9c37b6bf0cc777125d48360b",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 3477,
+      "kind": "file",
+      "mode": 420,
+      "path": "babel_code_goat/formatters/base.py",
+      "sha256": "957cea3084ca9e230c3fd3e16ec47ea295f8b18eb3986535339af5f80227600a",
+      "source": {
+        "blob": "957cea3084ca9e230c3fd3e16ec47ea295f8b18eb3986535339af5f80227600a",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 3706,
+      "kind": "file",
+      "mode": 420,
+      "path": "babel_code_goat/formatters/cpp.py",
+      "sha256": "46af3fcccf656bd32d5835a477957d4d18f6316cef6a5736d95567746445fe5b",
+      "source": {
+        "blob": "46af3fcccf656bd32d5835a477957d4d18f6316cef6a5736d95567746445fe5b",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 5056,
+      "kind": "file",
+      "mode": 420,
+      "path": "babel_code_goat/formatters/javascript.py",
+      "sha256": "41f668e17e53a0b08b3e44e081b77cdc6659032dec51d303651e1fe4563b1837",
+      "source": {
+        "blob": "41f668e17e53a0b08b3e44e081b77cdc6659032dec51d303651e1fe4563b1837",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 4217,
+      "kind": "file",
+      "mode": 420,
+      "path": "babel_code_goat/formatters/python.py",
+      "sha256": "3ec80d0f1d05054bcc57152da96a38cd165fcf17f02c008a774ea1be576107f9",
+      "source": {
+        "blob": "3ec80d0f1d05054bcc57152da96a38cd165fcf17f02c008a774ea1be576107f9",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 3810,
+      "kind": "file",
+      "mode": 420,
+      "path": "babel_code_goat/formatters/rust.py",
+      "sha256": "80e7608106862ef16d2b3952c2bb8f37f54100f36910743eba6273d7d15ed1ac",
+      "source": {
+        "blob": "80e7608106862ef16d2b3952c2bb8f37f54100f36910743eba6273d7d15ed1ac",
+        "kind": "overlay"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "babel_code_goat/generators"
+    },
+    {
+      "bytes": 1898,
+      "kind": "file",
+      "mode": 420,
+      "path": "babel_code_goat/generators/__init__.py",
+      "sha256": "cb3334d21f8a04e7d0df9ec7e392db51093c78c5fefdf7acbe7566e7e573a413",
+      "source": {
+        "blob": "cb3334d21f8a04e7d0df9ec7e392db51093c78c5fefdf7acbe7566e7e573a413",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 31181,
+      "kind": "file",
+      "mode": 420,
+      "path": "babel_code_goat/generators/base.py",
+      "sha256": "0c8ef04d95e8ee1443c20a6d2ed9c4c1df696eba0a11dc33d61f2a6cfe5922b0",
+      "source": {
+        "blob": "0c8ef04d95e8ee1443c20a6d2ed9c4c1df696eba0a11dc33d61f2a6cfe5922b0",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 19453,
+      "kind": "file",
+      "mode": 420,
+      "path": "babel_code_goat/generators/cpp.py",
+      "sha256": "96a6443fd76da1107f4a18a0fa13b40d2b4a64fc70bd5fdc52e085c9a42a05d5",
+      "source": {
+        "blob": "96a6443fd76da1107f4a18a0fa13b40d2b4a64fc70bd5fdc52e085c9a42a05d5",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 16911,
+      "kind": "file",
+      "mode": 420,
+      "path": "babel_code_goat/generators/javascript.py",
+      "sha256": "d827389330068542ce49c44d26c252ff082d29f3b31172350f5a48d0be83a2bf",
+      "source": {
+        "blob": "d827389330068542ce49c44d26c252ff082d29f3b31172350f5a48d0be83a2bf",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 11386,
+      "kind": "file",
+      "mode": 420,
+      "path": "babel_code_goat/generators/python.py",
+      "sha256": "f3cae1d5204bfbfaef651550e73158be9191bb5eb313a19f038e9aec96c5806c",
+      "source": {
+        "blob": "f3cae1d5204bfbfaef651550e73158be9191bb5eb313a19f038e9aec96c5806c",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 24859,
+      "kind": "file",
+      "mode": 420,
+      "path": "babel_code_goat/generators/rust.py",
+      "sha256": "210ed62b61dca73f4eba034114fb71e4039c1e5c97bfe66db034d78c9ac1c0c1",
+      "source": {
+        "blob": "210ed62b61dca73f4eba034114fb71e4039c1e5c97bfe66db034d78c9ac1c0c1",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 134061,
+      "kind": "file",
+      "mode": 420,
+      "path": "babel_code_goat/generators/templates.py",
+      "sha256": "407a4c6387b6b4c231f93beaca74c018a0ff0322e05d4ceb8679748099e6ac5f",
+      "source": {
+        "blob": "407a4c6387b6b4c231f93beaca74c018a0ff0322e05d4ceb8679748099e6ac5f",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 6242,
+      "kind": "file",
+      "mode": 420,
+      "path": "babel_code_goat/generators/typescript.py",
+      "sha256": "cbcfd1f156d75fef8ad16ba60c759bff5a780ae7ee7368e1ebfa7a856cee281d",
+      "source": {
+        "blob": "cbcfd1f156d75fef8ad16ba60c759bff5a780ae7ee7368e1ebfa7a856cee281d",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 5496,
+      "kind": "file",
+      "mode": 420,
+      "path": "babel_code_goat/models.py",
+      "sha256": "98afa52670f3f3119309626126be3cc63dab041a0910ab9c1558051511369603",
+      "source": {
+        "blob": "98afa52670f3f3119309626126be3cc63dab041a0910ab9c1558051511369603",
+        "kind": "overlay"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "babel_code_goat/parsers"
+    },
+    {
+      "bytes": 3070,
+      "kind": "file",
+      "mode": 420,
+      "path": "babel_code_goat/parsers/__init__.py",
+      "sha256": "e1b5d494f3d676297b44e8d3a692d7d5cb65c09aea1ea20ab9c32681abf2b742",
+      "source": {
+        "blob": "e1b5d494f3d676297b44e8d3a692d7d5cb65c09aea1ea20ab9c32681abf2b742",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 1645,
+      "kind": "file",
+      "mode": 420,
+      "path": "babel_code_goat/parsers/base.py",
+      "sha256": "383fada78618a8e740e1a386161c10481848a5aca23f55b5b2005c151284a071",
+      "source": {
+        "blob": "383fada78618a8e740e1a386161c10481848a5aca23f55b5b2005c151284a071",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 102068,
+      "kind": "file",
+      "mode": 420,
+      "path": "babel_code_goat/parsers/python_parser.py",
+      "sha256": "e8a47ce7b3f8d3f08a4e49b242e577358ba712ad8fbb95f5eb06f67b31d9c40f",
+      "source": {
+        "blob": "e8a47ce7b3f8d3f08a4e49b242e577358ba712ad8fbb95f5eb06f67b31d9c40f",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 216,
+      "kind": "file",
+      "mode": 420,
+      "path": "babel_code_goat/requirements.txt",
+      "sha256": "65068aaa336e8006b9894f5cda70a1eed3d1f20bb33292d0298035085a77b6d2",
+      "source": {
+        "blob": "65068aaa336e8006b9894f5cda70a1eed3d1f20bb33292d0298035085a77b6d2",
+        "kind": "overlay"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "babel_code_goat/runners"
+    },
+    {
+      "bytes": 1711,
+      "kind": "file",
+      "mode": 420,
+      "path": "babel_code_goat/runners/__init__.py",
+      "sha256": "0aa6fa4835085fbf29ac9fce3ce63d72be4eaaa60b45a313597927a33629ac98",
+      "source": {
+        "blob": "0aa6fa4835085fbf29ac9fce3ce63d72be4eaaa60b45a313597927a33629ac98",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 2201,
+      "kind": "file",
+      "mode": 420,
+      "path": "babel_code_goat/runners/base.py",
+      "sha256": "10881d9e988324c0889c1f5bd10d00104c9d85bd7370db5b113b26c9720da73d",
+      "source": {
+        "blob": "10881d9e988324c0889c1f5bd10d00104c9d85bd7370db5b113b26c9720da73d",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 17148,
+      "kind": "file",
+      "mode": 420,
+      "path": "babel_code_goat/runners/subprocess_runner.py",
+      "sha256": "aa7a1eb89c7d54ec487bad74ac2ce20e14ddf202d7a6bf87184acae2d1c5b9e7",
+      "source": {
+        "blob": "aa7a1eb89c7d54ec487bad74ac2ce20e14ddf202d7a6bf87184acae2d1c5b9e7",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 216,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements.txt",
+      "sha256": "65068aaa336e8006b9894f5cda70a1eed3d1f20bb33292d0298035085a77b6d2",
+      "source": {
+        "blob": "65068aaa336e8006b9894f5cda70a1eed3d1f20bb33292d0298035085a77b6d2",
+        "kind": "overlay"
+      }
+    }
+  ],
+  "overlay_sha256": "e0f36ab2b9fe789025ce9e5e908b3b3eff664527c8a30879f114531d14ed3286",
+  "upstream": {
+    "kind": "scbench",
+    "source_root_key": null
+  },
+  "workspace_tree_sha256": "232f9b590c5569b89389bb5818ea7beba05727bc3b11ea52937774520b73fc1a"
+}

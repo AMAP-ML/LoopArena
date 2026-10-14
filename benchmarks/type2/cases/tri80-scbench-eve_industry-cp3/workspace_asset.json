@@ -1,0 +1,6 @@
+{
+  "recipe": "workspace_recipe.json",
+  "recipe_sha256": "eb4b12a7fdbe6ae2baa6a502ee7d125470661cd03b6d5edfde2a363c24ca8692",
+  "relative_path_under_assets_root": "type2/workspaces/tri80-scbench-eve_industry-cp3/workspace.tar.gz",
+  "workspace_tree_sha256": "b86e0db7b02133fd8cd74b74d25e6f8877cd667ebd7f10457e1f78e4d3ebed2f"
+}

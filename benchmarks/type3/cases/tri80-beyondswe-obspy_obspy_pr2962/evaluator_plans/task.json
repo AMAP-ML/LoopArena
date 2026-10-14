@@ -1,0 +1,20 @@
+{
+  "adapter_config": {
+    "docker_executable": "docker",
+    "task_dir": "/opt/looparena/evaluator_assets/beyondswe_type3/tri80-beyondswe-obspy_obspy_pr2962/task"
+  },
+  "adapter_kind": "beyondswe_harbor",
+  "adapter_version": "harbor-verifier-v1",
+  "evaluator_revision": "sha256:37283ce2eca4d787758556c0d073b554cc188f08ad2e957346898cf679561772",
+  "network": "host",
+  "pass_policy": "reward-equals-one",
+  "runtime_identity": {
+    "image_id": "sha256:f40bab05936c79bac4daf40072bb2095e9cce2166713ecf326441abf72fde364",
+    "image_reference": "aweaiteam/beyondswe:obspy_obspy_pr2962",
+    "platform": "linux/amd64",
+    "workdir": "/workspace/obspy"
+  },
+  "solve_network": "host",
+  "source_revision": "7d2ced21b4c85f646d5ba8786875d7fbbe08ed49",
+  "timeout_sec": 1200
+}

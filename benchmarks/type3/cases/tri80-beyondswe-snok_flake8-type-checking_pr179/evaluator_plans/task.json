@@ -1,0 +1,19 @@
+{
+  "adapter_config": {
+    "docker_executable": "docker",
+    "task_dir": "/opt/looparena/evaluator_assets/beyondswe_type3/tri80-beyondswe-snok_flake8-type-checking_pr179/task"
+  },
+  "adapter_kind": "beyondswe_harbor",
+  "adapter_version": "harbor-verifier-v1",
+  "network": "host",
+  "pass_policy": "reward-equals-one",
+  "runtime_identity": {
+    "image_id": "sha256:5f60a43f8bbaa5861a8f146e62b2ac9a48b8c78fde4acece494fa8bde3f7bf66",
+    "image_reference": "aweaiteam/beyondswe:snok_flake8-type-checking_pr179",
+    "platform": "linux/amd64",
+    "workdir": "/workspace/flake8-type-checking"
+  },
+  "solve_network": "host",
+  "source_revision": "7d2ced21b4c85f646d5ba8786875d7fbbe08ed49",
+  "timeout_sec": 1200
+}

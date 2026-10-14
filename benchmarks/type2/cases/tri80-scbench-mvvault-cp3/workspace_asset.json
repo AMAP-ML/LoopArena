@@ -1,0 +1,6 @@
+{
+  "recipe": "workspace_recipe.json",
+  "recipe_sha256": "e0b7449083914a4097c0c6f85a94fd05aa9fe19d931f7a4f82042618200428f3",
+  "relative_path_under_assets_root": "type2/workspaces/tri80-scbench-mvvault-cp3/workspace.tar.gz",
+  "workspace_tree_sha256": "3972b8ee6c82b61de3b3a66bb9374640770e661c26e394d7d5c1d7fa8247e98d"
+}

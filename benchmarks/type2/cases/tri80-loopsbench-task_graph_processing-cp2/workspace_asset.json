@@ -1,0 +1,6 @@
+{
+  "recipe": "workspace_recipe.json",
+  "recipe_sha256": "b35275e5801f13abc79f1e3006811df76b5a0bbfe5be7f8de0b4c557d23d3e5d",
+  "relative_path_under_assets_root": "type2/workspaces/tri80-loopsbench-task_graph_processing-cp2/workspace.tar.gz",
+  "workspace_tree_sha256": "1f6a82cb8aff071f6434fe9ceb475e9b782a2e19776839dd1e857750863c7251"
+}

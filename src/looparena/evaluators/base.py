@@ -3,8 +3,8 @@
 from __future__ import annotations
 
 import json
-import math
 import os
+import math
 import platform
 import signal
 import subprocess
@@ -118,9 +118,7 @@ def beyondswe_evaluator_network(
         if "network_mode" in verifier_environment:
             policy = verifier_environment.get("network_mode")
         elif "allow_internet" in verifier_environment:
-            policy = (
-                "public" if verifier_environment.get("allow_internet") else "no-network"
-            )
+            policy = "public" if verifier_environment.get("allow_internet") else "no-network"
         else:
             policy = "public"
     elif "network_mode" in environment:
@@ -147,14 +145,8 @@ def run_argv(
     cwd: Path,
     timeout_sec: int,
     env: dict[str, str] | None = None,
+    child_umask: int | None = None,
 ) -> tuple[int, str, str, float, bool]:
-    environment = {**os.environ, **(env or {})}
-    # Terminal evaluators run only after model access has ended. Do not expose
-    # model-provider credentials to source benchmark code executed on the host.
-    for name in list(environment):
-        upper_name = name.upper()
-        if upper_name.endswith(("_API_KEY", "_TOKEN", "_SECRET")):
-            environment.pop(name, None)
     started = time.monotonic()
     proc = subprocess.Popen(
         argv,
@@ -163,7 +155,8 @@ def run_argv(
         stderr=subprocess.PIPE,
         text=True,
         start_new_session=True,
-        env=environment,
+        env={**os.environ, **(env or {})},
+        umask=-1 if child_umask is None else child_umask,
     )
     try:
         stdout, stderr = proc.communicate(timeout=timeout_sec)
@@ -202,7 +195,9 @@ def base_receipt(
     details: dict[str, Any] | None = None,
     solve_sandbox_stopped_before_evaluator: bool = True,
 ) -> dict[str, Any]:
+    identity = evaluator_identity(plan)
     return {
+
         "adapter_kind": plan.get("adapter_kind"),
         "adapter_version": plan.get("adapter_version"),
         "source_revision": plan.get("source_revision"),
@@ -210,19 +205,11 @@ def base_receipt(
         "infrastructure_failure": infrastructure_failure,
         "task_passed": task_passed,
         "passed": task_passed,
-        "evaluator_identity": evaluator_identity(plan),
+        "evaluator_identity": identity,
         "tests_expected": tests_expected,
         "tests_collected": tests_collected,
         "tests_executed": tests_executed,
-        "pass_policy": (
-            "reward-equals-one"
-            if plan.get("adapter_kind") == "beyondswe_harbor"
-            else (
-                plan.get("pass_policy")
-                or (plan.get("adapter_config") or {}).get("pass_policy")
-                or "all-cases"
-            )
-        ),
+        "pass_policy": identity["pass_policy"],
         "wall_time_sec": round(wall_time_sec, 6),
         "return_code": return_code,
         "details": details or {},
@@ -271,6 +258,18 @@ def evaluate_with_plan(
                 output_dir,
                 plan,
                 solve_sandbox=solve_sandbox,
+            )
+        elif adapter_kind == "loopsbench":
+            if solve_sandbox is not None:
+                raise ValueError(
+                    "LoopsBench evaluation requires a sealed workspace"
+                )
+            from .loopsbench import evaluate_loopsbench
+
+            receipt = evaluate_loopsbench(
+                workspace,
+                output_dir,
+                plan,
             )
         else:  # pragma: no cover - plan validation closes this branch
             raise ValueError(f"unsupported evaluator adapter: {adapter_kind}")

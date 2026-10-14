@@ -1,0 +1,407 @@
+{
+  "case_id": "tri80-loopsbench-task_cpachecker-cp2",
+  "files": [
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "benchmarks"
+    },
+    {
+      "bytes": 441,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/bmc_safe.c",
+      "sha256": "19a62939b06b75e8145f36c0c9cb44b6fdfe444d0611df666b4c53979b81cacb",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_cpachecker/base/benchmarks/bmc_safe.c"
+      }
+    },
+    {
+      "bytes": 442,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/bmc_unsafe.c",
+      "sha256": "1c3ee855013e619971b9894a6f0172cb9f21f7a5447c18b5e5c0216471563301",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_cpachecker/base/benchmarks/bmc_unsafe.c"
+      }
+    },
+    {
+      "bytes": 502,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/induction_safe.c",
+      "sha256": "ab1ee20bf335bdfc3bf3b248d3b0e83da4eb3f54e5c969b05f66c1ed264aa035",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_cpachecker/base/benchmarks/induction_safe.c"
+      }
+    },
+    {
+      "bytes": 508,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/induction_unsafe.c",
+      "sha256": "cb937927be796e3d582ead6066548bb4571d8e1b4b650cdb848e43878339411b",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_cpachecker/base/benchmarks/induction_unsafe.c"
+      }
+    },
+    {
+      "bytes": 477,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/loop_safe.c",
+      "sha256": "d7848efe6c4c135e4599b1f424d5f0d10614768a78de9a3262dcbfe04bf33a6a",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_cpachecker/base/benchmarks/loop_safe.c"
+      }
+    },
+    {
+      "bytes": 479,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/loop_unsafe.c",
+      "sha256": "617445894193d744a1bb49fdbbf30cf9db3a55a2baefa8d79968f5a69943e391",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_cpachecker/base/benchmarks/loop_unsafe.c"
+      }
+    },
+    {
+      "bytes": 612,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/nondet_safe.c",
+      "sha256": "9637dc7ca328ea18af9dc0756821c76d8ca4ee1ff798941a19e139bfc8926fb4",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_cpachecker/base/benchmarks/nondet_safe.c"
+      }
+    },
+    {
+      "bytes": 572,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/nondet_unsafe.c",
+      "sha256": "e1e3388c160228bdb931cbfcb8a52b58f6eda24c2519b413bad01e01faf5ef10",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_cpachecker/base/benchmarks/nondet_unsafe.c"
+      }
+    },
+    {
+      "bytes": 579,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/predicate_safe.c",
+      "sha256": "690ecb51bea0e57151a7e358239e30ba8d86b2438fa7401b53f7b7780155eccb",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_cpachecker/base/benchmarks/predicate_safe.c"
+      }
+    },
+    {
+      "bytes": 475,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/predicate_unsafe.c",
+      "sha256": "10cbc0c1801f21fe04bd53159457ef2326a24ff1014f2c9a1b6cbfcccaa4cbca",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_cpachecker/base/benchmarks/predicate_unsafe.c"
+      }
+    },
+    {
+      "bytes": 439,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/simple_safe.c",
+      "sha256": "fe8cf4d8f367e2b45d672874874aeded1388e3b947a9e23223e990c353f72236",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_cpachecker/base/benchmarks/simple_safe.c"
+      }
+    },
+    {
+      "bytes": 442,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/simple_unsafe.c",
+      "sha256": "65bd86d0ddbb1b421063cf861b7ee4508bc79d080f4beafb736f9fe0908a8280",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_cpachecker/base/benchmarks/simple_unsafe.c"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "cpachecker"
+    },
+    {
+      "bytes": 76,
+      "kind": "file",
+      "mode": 420,
+      "path": "cpachecker/__init__.py",
+      "sha256": "0a0471191af0cda67ea26bf005a1ff6b22a2697394f328b40c2fbcb5211e065c",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_cpachecker/base/cpachecker/__init__.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "cpachecker/analyses"
+    },
+    {
+      "bytes": 47,
+      "kind": "file",
+      "mode": 420,
+      "path": "cpachecker/analyses/__init__.py",
+      "sha256": "4dbce7be39afbcb39284a0e96326e2e36f0bd6a5faf73d5ecdb5be3a7a7b9fe3",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_cpachecker/base/cpachecker/analyses/__init__.py"
+      }
+    },
+    {
+      "bytes": 583,
+      "kind": "file",
+      "mode": 420,
+      "path": "cpachecker/analyses/value_analysis.py",
+      "sha256": "561d3f2de1172d188306fb3dbfc7d2761729143b055d0d25cd4e364786846678",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_cpachecker/gold_patches/cpachecker_v0.diff",
+        "patch_sha256": "464fd3336586e3e8eae73a2b989ec95a2f9b89a73bbde40b650cc4da44b18371",
+        "path": "cpachecker/analyses/value_analysis.py"
+      }
+    },
+    {
+      "bytes": 1584,
+      "kind": "file",
+      "mode": 420,
+      "path": "cpachecker/cfa.py",
+      "sha256": "de902643b7fa56059b4748a3695fb4b6646a69a420c386f7689d9076c6ff242d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_cpachecker/base/cpachecker/cfa.py"
+      }
+    },
+    {
+      "bytes": 3061,
+      "kind": "file",
+      "mode": 420,
+      "path": "cpachecker/cpa_interface.py",
+      "sha256": "1f0205d67646e9989efaea04131f42f9c9bfccad8f9f222c1c83e7efb18ca214",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_cpachecker/base/cpachecker/cpa_interface.py"
+      }
+    },
+    {
+      "bytes": 1852,
+      "kind": "file",
+      "mode": 420,
+      "path": "cpachecker/expression.py",
+      "sha256": "bbb3ac03608928d66eececdefd29c35fcdb041cc4776e6ba4f4c2b6c2b267128",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_cpachecker/base/cpachecker/expression.py"
+      }
+    },
+    {
+      "bytes": 17359,
+      "kind": "file",
+      "mode": 420,
+      "path": "cpachecker/parser.py",
+      "sha256": "f2e94841cf88bfd17318adc1aac3c9bc2eabc8538ec1ec1fe4a214fe41a79581",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_cpachecker/base/cpachecker/parser.py"
+      }
+    },
+    {
+      "bytes": 553,
+      "kind": "file",
+      "mode": 420,
+      "path": "cpachecker/result.py",
+      "sha256": "8cbb196df1f15d54b4b880d10039e860ce63c706c5a629962d51bebe9233d686",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_cpachecker/base/cpachecker/result.py"
+      }
+    },
+    {
+      "bytes": 2858,
+      "kind": "file",
+      "mode": 420,
+      "path": "cpachecker_main.py",
+      "sha256": "65e69c8c1dc3199fdf2e1301347e8045ba3b857c7d1348974aae0212f216114d",
+      "source": {
+        "blob": "65e69c8c1dc3199fdf2e1301347e8045ba3b857c7d1348974aae0212f216114d",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 2121,
+      "kind": "file",
+      "mode": 420,
+      "path": "module_dag.yaml",
+      "sha256": "8fb302e97c769379b18aadd45d529a8a3804b977e76e5fd05a5b4e6a74fdf193",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_cpachecker/module_dag.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "requirements"
+    },
+    {
+      "bytes": 3495,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/cpachecker_v0.yaml",
+      "sha256": "cc6938318f3b77cc04d2a7314bba3b79263dc5af41ca28798cb7f8c2239b3a8b",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_cpachecker/requirements/cpachecker_v0.yaml"
+      }
+    },
+    {
+      "bytes": 3284,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/cpachecker_v1.yaml",
+      "sha256": "9336267c2bd5c5272151327d3325baa05ae4b7eb98d35f7a1981252f59028459",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_cpachecker/requirements/cpachecker_v1.yaml"
+      }
+    },
+    {
+      "bytes": 3331,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/cpachecker_v3.yaml",
+      "sha256": "4dc490a77ecec18991b1b5d3d265bfcb5668688cfb5c3493911649f52c603cc9",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_cpachecker/requirements/cpachecker_v3.yaml"
+      }
+    },
+    {
+      "bytes": 540,
+      "kind": "file",
+      "mode": 493,
+      "path": "run-tests.sh",
+      "sha256": "ea95bcf40fd1fb74823f44df125af16e2618b9520b3b43b2b962cad325700dd2",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_cpachecker/run-tests.sh"
+      }
+    },
+    {
+      "bytes": 3891,
+      "kind": "file",
+      "mode": 493,
+      "path": "run.sh",
+      "sha256": "a7fb2332dd7e34cc55107f55e3f969a20591a16bac321215d5c21d961a9f1396",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_cpachecker/base/run.sh"
+      }
+    },
+    {
+      "bytes": 988,
+      "kind": "file",
+      "mode": 420,
+      "path": "task.yaml",
+      "sha256": "ed51abdf4335b38c8be2b5aa5c9fcf17320202f2e911222fb9c624a9d6007045",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_cpachecker/task.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/cpachecker_v0"
+    },
+    {
+      "bytes": 1836,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/cpachecker_v0/test_outputs.py",
+      "sha256": "82cedc439eda3508bc2fe9ab32649a3d7a9ef3c7e2b163736c9464892a4690cf",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_cpachecker/tests/cpachecker_v0/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/cpachecker_v1"
+    },
+    {
+      "bytes": 1843,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/cpachecker_v1/test_outputs.py",
+      "sha256": "ceef129ec226e6baf88aa7b3b1d8b47a5226f9067fd3c5984c4812b9a91bba31",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_cpachecker/tests/cpachecker_v1/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/cpachecker_v3"
+    },
+    {
+      "bytes": 1830,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/cpachecker_v3/test_outputs.py",
+      "sha256": "e42c35d9af5251e95d70a15ae8685a1e4779f6a70bc1766a9c463260028e603c",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_cpachecker/tests/cpachecker_v3/test_outputs.py"
+      }
+    },
+    {
+      "bytes": 605,
+      "kind": "file",
+      "mode": 420,
+      "path": "unit_dag.json",
+      "sha256": "c2c405363161212177d26a2edf3f79ebd8f3d61f9c61dd4c7dd45695b90e47a4",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_cpachecker/unit_dag.json"
+      }
+    }
+  ],
+  "overlay_sha256": "80abfedcdc800e3396ce62700ba04217a056915c5d7c0f334d5e3c31ab0bf219",
+  "upstream": {
+    "kind": "loopsbench",
+    "revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+    "source_root_key": "loopsbench",
+    "task": "task_cpachecker"
+  },
+  "workspace_tree_sha256": "11d34a4713236972c8c8c039427e8dfed154fa002801c1b3f5ae8a04f01043a0"
+}

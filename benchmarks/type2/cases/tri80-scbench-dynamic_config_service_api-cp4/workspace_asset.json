@@ -1,0 +1,6 @@
+{
+  "recipe": "workspace_recipe.json",
+  "recipe_sha256": "a31822fe497186bcca5c20c3c56c1ac8352898b62e1a0e1cd1c5cfbca335b2ef",
+  "relative_path_under_assets_root": "type2/workspaces/tri80-scbench-dynamic_config_service_api-cp4/workspace.tar.gz",
+  "workspace_tree_sha256": "77b524bfba1508429683a52d44d309cbcec50b991aac2d9f73c7fe9c65dec135"
+}

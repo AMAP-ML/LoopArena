@@ -1,0 +1,31 @@
+{
+  "adapter_config": {
+    "docker_executable": "docker",
+    "expected_test_count": 15,
+    "expected_unit_ids": [
+      "afl",
+      "aflfast",
+      "aflgo",
+      "fairfuzz",
+      "aflpp"
+    ],
+    "result_protocol": "source_run_tests",
+    "runtime_assets_dir": "/opt/looparena/evaluator_assets/evaluator_runtime",
+    "task_dir": "/opt/looparena/evaluator_assets/tasks/task_afl_fuzzing"
+  },
+  "adapter_kind": "loopsbench",
+  "adapter_version": "source-run-tests-v1",
+  "evaluator_revision": "5880b64491e2cac2f83d497153ed173b8a995b8b",
+  "network": "bridge",
+  "pass_policy": "all-source-unit-tests-pass",
+  "runtime_identity": {
+    "image_id": "sha256:b0049afe456ad21c412fc8e808a5fc6831fa5f1b45f0efbd110d9b3b855455d0",
+    "image_reference": "looparena-loopsbench-84ae415/task_afl_fuzzing:frozen",
+    "platform": "linux/amd64",
+    "task_tree_sha256": "755bacc25e48e62249f950868b9b5acea09b0305440a684d3cf8ed678e595239",
+    "workdir": "/workspace"
+  },
+  "solve_network": "bridge",
+  "source_revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+  "timeout_sec": 600
+}

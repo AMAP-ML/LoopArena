@@ -1,0 +1,15 @@
+# Serve Cornice services bound to existing Pyramid routes
+
+## Background
+Cornice `Service` objects can already be defined against an existing Pyramid route name (for example via a `pyramid_route` argument) instead of a `path`, so users can take advantage of advanced Pyramid routing features such as custom pregenerators and route predicates on routes they define explicitly with `config.add_route`.
+
+## Task
+Make a service that is bound to an existing route name actually serve requests through that route:
+
+1. When the application is configured, the service must be served through the existing named route rather than registering a new, duplicate route with Pyramid. The route table must end up with exactly one route for that name.
+2. Cornice's per-request "current service" lookup must work for requests hitting such a route, so that within a view the request can be associated back to the matching service bound to that route name.
+
+## Preserve existing behavior
+- Services can be defined against an existing Pyramid route name instead of a path.
+- A service defined with neither a path nor a route name is rejected.
+- The string representation of such a service shows the route name.

@@ -1,0 +1,20 @@
+{
+  "adapter_kind": "beyondswe_harbor",
+  "checkpoint_context_policy": "single_episode",
+  "checkpoint_failure_policy": "stop_after_task",
+  "official_parent_commit": "3bf0f888ee1847f52b8c5a96e30a1c90ea0f36e9",
+  "official_task_id": "beyondswe:fastapi-users_fastapi-users_pr1249",
+  "official_workdir": "/workspace/fastapi-users",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/task.json",
+      "evaluator_plan_sha256": "143ba33627e45cb326671fda74af8965df9c86ecfe9f8908d2d5cceaeff5a58b",
+      "step_id": "task",
+      "task_ref": "tasks/task.md",
+      "task_sha256": "658b8f3096ebe6474d8cd1cd3d631165ce093ffb1c67d861f3af5126f425bdd4"
+    }
+  ],
+  "target_step": "task",
+  "task_scope": "official_full_task",
+  "workspace_origin": "pinned_source_image_parent_commit"
+}

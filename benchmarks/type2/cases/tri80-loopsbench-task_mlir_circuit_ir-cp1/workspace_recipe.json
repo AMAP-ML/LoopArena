@@ -1,0 +1,360 @@
+{
+  "case_id": "tri80-loopsbench-task_mlir_circuit_ir-cp1",
+  "files": [
+    {
+      "bytes": 237,
+      "kind": "file",
+      "mode": 420,
+      "path": "Makefile",
+      "sha256": "4be7fb3fc9d718c193f6a0b94c82361844443e719af7aa2a7bf5d23e934b55a5",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlir_circuit_ir/base/Makefile"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "inputs"
+    },
+    {
+      "bytes": 635,
+      "kind": "file",
+      "mode": 420,
+      "path": "inputs/alu.mlir",
+      "sha256": "e8fafa7684c43035e5964fe94903af267eb99377e42bb127f10cc669e3eaa2e3",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlir_circuit_ir/base/inputs/alu.mlir"
+      }
+    },
+    {
+      "bytes": 365,
+      "kind": "file",
+      "mode": 420,
+      "path": "inputs/counter.mlir",
+      "sha256": "1564c91039f2229ff30641a49d20418d726a99a224b19c95d71318a387d10fc6",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlir_circuit_ir/base/inputs/counter.mlir"
+      }
+    },
+    {
+      "bytes": 924,
+      "kind": "file",
+      "mode": 420,
+      "path": "inputs/sample_arith.mlir",
+      "sha256": "22ac57148377a17e628bf16194c54a1088f2b4519d661071b1b7459f0ac17675",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlir_circuit_ir/base/inputs/sample_arith.mlir"
+      }
+    },
+    {
+      "bytes": 1227,
+      "kind": "file",
+      "mode": 420,
+      "path": "module_dag.yaml",
+      "sha256": "42c9032c9b0bbf856f2e71b1e273df0d8557641aa570804b57d169e23e130daf",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlir_circuit_ir/module_dag.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "requirements"
+    },
+    {
+      "bytes": 1089,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/circt.yaml",
+      "sha256": "3c7402810d5c0fc39dfc5d9e726f251e51bae438779de7aadbde88b52d8060aa",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlir_circuit_ir/requirements/circt.yaml"
+      }
+    },
+    {
+      "bytes": 1298,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/k_circt.yaml",
+      "sha256": "928495276bdc7d0ae22c14128f7aa7b2988f0158f771d6bae7c83c8a52c20f8b",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlir_circuit_ir/requirements/k_circt.yaml"
+      }
+    },
+    {
+      "bytes": 1319,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/mlir.yaml",
+      "sha256": "e6bb468c6df2ba5459b992b773c6c0e37a315d8eb5b8f6a0ab70eba0c78115d9",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlir_circuit_ir/requirements/mlir.yaml"
+      }
+    },
+    {
+      "bytes": 302,
+      "kind": "file",
+      "mode": 493,
+      "path": "run-tests.sh",
+      "sha256": "db8c4f40a283c81d5df91460410cb5d52452478364b7c1c6ac4e606e792c4ec6",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlir_circuit_ir/run-tests.sh"
+      }
+    },
+    {
+      "bytes": 72,
+      "kind": "file",
+      "mode": 493,
+      "path": "run.sh",
+      "sha256": "85fd233438d7659434e08de4091026f814908fe58337b4211a966a85d5d2d01e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlir_circuit_ir/base/run.sh"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "src"
+    },
+    {
+      "bytes": 177,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/__init__.py",
+      "sha256": "56d7338c85c0db86bfc2f446342c4c9ffe66f992ab56b6dc52a4afe9321f9ef4",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlir_circuit_ir/base/src/__init__.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "src/circt"
+    },
+    {
+      "bytes": 57,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/circt/__init__.py",
+      "sha256": "9709c0f30532481c6452237b70d13e21a67e6f2b329ab9c666a707054f5c4e54",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlir_circuit_ir/base/src/circt/__init__.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "src/k_circt"
+    },
+    {
+      "bytes": 59,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/k_circt/__init__.py",
+      "sha256": "a2b6fb5cd8359d6bab2900eeba3526f2b0cce2a6616ddee756b06c5825eac09e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlir_circuit_ir/base/src/k_circt/__init__.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "src/mlir"
+    },
+    {
+      "bytes": 59,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/mlir/__init__.py",
+      "sha256": "623d2261a165167d9cf2140c5897923d9726fe5080ea26238bb20f78cd26fe26",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlir_circuit_ir/base/src/mlir/__init__.py"
+      }
+    },
+    {
+      "bytes": 1233,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/run_experiments.py",
+      "sha256": "e437e4b56d5e389c4706b9339dd3fadb319cf4dc67da46baf44cbdbf7d91d604",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlir_circuit_ir/base/src/run_experiments.py"
+      }
+    },
+    {
+      "bytes": 1434,
+      "kind": "file",
+      "mode": 420,
+      "path": "task.yaml",
+      "sha256": "40f3d9ec4b40fb495ad7061df1e8eb9445ef7a13d68e03b295dbcd4234715519",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlir_circuit_ir/task.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/circt"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/circt/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlir_circuit_ir/tests/circt/__init__.py"
+      }
+    },
+    {
+      "bytes": 1334,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/circt/test_outputs.py",
+      "sha256": "982105641f0a46a3c20c98556b5faca31717627f1da1e28126bcd835fd34842c",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlir_circuit_ir/tests/circt/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/k_circt"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/k_circt/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlir_circuit_ir/tests/circt/__init__.py"
+      }
+    },
+    {
+      "bytes": 1660,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/k_circt/test_outputs.py",
+      "sha256": "515b50464ca7286bc838f83140885e87cfb938c7790376cd1d018966a465ef3d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlir_circuit_ir/tests/k_circt/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/mlir"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/mlir/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlir_circuit_ir/tests/circt/__init__.py"
+      }
+    },
+    {
+      "bytes": 1280,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/mlir/test_outputs.py",
+      "sha256": "c3b627b51f573c62fc1c5f78bc387f428698854b9d65f3917d6fd04a0a8bdd6c",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlir_circuit_ir/tests/mlir/test_outputs.py"
+      }
+    },
+    {
+      "bytes": 1460,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_circt.py",
+      "sha256": "3b488bda9ab9aa343bfae2be99699d531a203a2549d324ddde9eb6e61305cf04",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlir_circuit_ir/tests/test_circt.py"
+      }
+    },
+    {
+      "bytes": 1735,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_k_circt.py",
+      "sha256": "2be874f467795eea8b9700bdd6d6b1c792f872248473c89fb2835587b72f1898",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlir_circuit_ir/tests/test_k_circt.py"
+      }
+    },
+    {
+      "bytes": 1406,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_mlir.py",
+      "sha256": "b7f41e882fe9fc80eadec2e142e8eb23df487e66610005362399122a3abc7161",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlir_circuit_ir/tests/test_mlir.py"
+      }
+    },
+    {
+      "bytes": 3250,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_outputs.py",
+      "sha256": "3034d8a8dabf285d32aed91510ca08f44b32d3f2f03bbe917c63b8956a179372",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlir_circuit_ir/tests/test_outputs.py"
+      }
+    },
+    {
+      "bytes": 518,
+      "kind": "file",
+      "mode": 420,
+      "path": "unit_dag.json",
+      "sha256": "b005ea1523eda276c515414840c30a07541dcda83e45a070e7378d0503e9c824",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlir_circuit_ir/unit_dag.json"
+      }
+    }
+  ],
+  "overlay_sha256": "272adeccafe73e7009d51f2ec2be9871db5e0eb14239f483ea429be26c3c6402",
+  "upstream": {
+    "kind": "loopsbench",
+    "revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+    "source_root_key": "loopsbench",
+    "task": "task_mlir_circuit_ir"
+  },
+  "workspace_tree_sha256": "f2f6652ff74051b3345408c582acf02c7159374d778da4a8c46ba3e6cd946f41"
+}

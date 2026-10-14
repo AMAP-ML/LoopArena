@@ -1,0 +1,6 @@
+{
+  "recipe": "workspace_recipe.json",
+  "recipe_sha256": "d532a30bb00d82ed86c519e3ac7d37aa653477af3cf1308066962258fa8b1443",
+  "relative_path_under_assets_root": "type2/workspaces/tri80-beyondswe-hackingmaterials_matminer_pr925-cp2/workspace.tar.gz",
+  "workspace_tree_sha256": "63dd693bc4095153f22d62e05625d5c5626b9aac87f02095409166c7fb424655"
+}

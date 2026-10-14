@@ -1,0 +1,6 @@
+{
+  "recipe": "workspace_recipe.json",
+  "recipe_sha256": "5611c9e5f78027330d20009270b7f8ab3fa1b0f39259f9798b86a0c5f28cfaa7",
+  "relative_path_under_assets_root": "type2/workspaces/tri80-scbench-recli-cp3/workspace.tar.gz",
+  "workspace_tree_sha256": "2b6a5df7eac1eda07768879d5c6076ef892d2f45f20cd23b78a7d831e2c47e27"
+}

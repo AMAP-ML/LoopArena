@@ -1,0 +1,46 @@
+{
+  "adapter_kind": "scbench",
+  "aggregate_pass_policy": "all_official_checkpoints_pass",
+  "checkpoint_context_policy": "reset_model_context_preserve_workspace",
+  "checkpoint_coverage_policy": "all_official_checkpoints",
+  "checkpoint_failure_policy": "continue_after_valid_task_failure_stop_on_infrastructure_invalid",
+  "official_checkpoint_count": 4,
+  "official_task_id": "scbench:dynamic_config_service_api",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/checkpoint_1.json",
+      "evaluator_plan_sha256": "dc16cd3ad5368e3f0c7b1bc0183a8982babf1949472b0f9121f9e694102e99b0",
+      "step_id": "checkpoint_1",
+      "task_ref": "tasks/checkpoint_1.md",
+      "task_sha256": "39bf2a10eeaff0f4ae26cb4b2d197e30d2074edb7531dfe80b56335ba59d0fb8",
+      "tests_expected": 47
+    },
+    {
+      "evaluator_plan_ref": "evaluator_plans/checkpoint_2.json",
+      "evaluator_plan_sha256": "4921add8984e63aa67179f554b6fbdd51574473d9ef1cfb563ce6d2cba339bda",
+      "step_id": "checkpoint_2",
+      "task_ref": "tasks/checkpoint_2.md",
+      "task_sha256": "f5c17bade75bf536dc676594ced0f7c7e9f64d4e13e36d93eca7a140bcd3822e",
+      "tests_expected": 93
+    },
+    {
+      "evaluator_plan_ref": "evaluator_plans/checkpoint_3.json",
+      "evaluator_plan_sha256": "34d1c75cfb47e475b22b4039eaed07772cb6ba1d43a40e258196448a521e5ce6",
+      "step_id": "checkpoint_3",
+      "task_ref": "tasks/checkpoint_3.md",
+      "task_sha256": "64852350a4bf3465817d1ba6344efb3f62f77d2e0f179ffb9051e7fa2b326422",
+      "tests_expected": 76
+    },
+    {
+      "evaluator_plan_ref": "evaluator_plans/checkpoint_4.json",
+      "evaluator_plan_sha256": "c0826219853c290d021a1636654c9bc29ab3be34cea946cc422fa7b00e8bcdc5",
+      "step_id": "checkpoint_4",
+      "task_ref": "tasks/checkpoint_4.md",
+      "task_sha256": "cb28f5ac0912c654935422df939052faf0c979f9778685477a95f65b788c0123",
+      "tests_expected": 81
+    }
+  ],
+  "target_step": "checkpoint_4",
+  "task_scope": "official_full_problem",
+  "workspace_origin": "empty_workspace_plus_declared_public_static_assets"
+}

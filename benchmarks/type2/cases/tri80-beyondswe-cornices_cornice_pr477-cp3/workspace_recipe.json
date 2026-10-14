@@ -1,0 +1,675 @@
+{
+  "case_id": "tri80-beyondswe-cornices_cornice_pr477-cp3",
+  "files": [
+    {
+      "bytes": 29,
+      "kind": "file",
+      "mode": 420,
+      "path": ".coveragerc",
+      "sha256": "62435d7a5d9b09d73bd8be5a7e4997e52c5d93386a8990afb802659777864105",
+      "source": {
+        "kind": "upstream",
+        "path": ".coveragerc"
+      }
+    },
+    {
+      "bytes": 162,
+      "kind": "file",
+      "mode": 420,
+      "path": ".gitignore",
+      "sha256": "d6c256ff53ccc945849ae0134375c03e523d2f5017534bd003fcdee65dfd7ab5",
+      "source": {
+        "kind": "upstream",
+        "path": ".gitignore"
+      }
+    },
+    {
+      "bytes": 140,
+      "kind": "file",
+      "mode": 420,
+      "path": ".gitmodules",
+      "sha256": "06f312a7c7a1a93c1f7b67b0a03e446ff158a0c3d2b393966322f14b99b59f50",
+      "source": {
+        "kind": "upstream",
+        "path": ".gitmodules"
+      }
+    },
+    {
+      "bytes": 546,
+      "kind": "file",
+      "mode": 420,
+      "path": ".travis.yml",
+      "sha256": "0bf6b4c0b5069f30cb352264a9ec4655cf6d7bc812b3249907f4475078b87d05",
+      "source": {
+        "kind": "upstream",
+        "path": ".travis.yml"
+      }
+    },
+    {
+      "bytes": 12369,
+      "kind": "file",
+      "mode": 420,
+      "path": "CHANGES.txt",
+      "sha256": "f8d64228585cbdf12c791601170033d68ea1191a507e7c3382f7437f1fe4aa8e",
+      "source": {
+        "kind": "upstream",
+        "path": "CHANGES.txt"
+      }
+    },
+    {
+      "bytes": 3344,
+      "kind": "file",
+      "mode": 420,
+      "path": "CONTRIBUTORS.txt",
+      "sha256": "774582e91d6492c27ce055c7390f5074447c88f61003bbb8193c9790f0e7e890",
+      "source": {
+        "kind": "upstream",
+        "path": "CONTRIBUTORS.txt"
+      }
+    },
+    {
+      "bytes": 194,
+      "kind": "file",
+      "mode": 420,
+      "path": "LICENSE",
+      "sha256": "bd0a0fc0ea8ec9d71d9a2d2895e89ef326f9b65ad3f9f52f4e77334f458783e8",
+      "source": {
+        "kind": "upstream",
+        "path": "LICENSE"
+      }
+    },
+    {
+      "bytes": 44,
+      "kind": "file",
+      "mode": 493,
+      "path": "MANIFEST.in",
+      "sha256": "de1e8289c3d5124b391e9e767b1630546bbb0ed01e8faaf7b665c59fc43d2ae6",
+      "source": {
+        "kind": "upstream",
+        "path": "MANIFEST.in"
+      }
+    },
+    {
+      "bytes": 495,
+      "kind": "file",
+      "mode": 420,
+      "path": "Makefile",
+      "sha256": "875274692098bc8b74a9b591f4ca2df4760715790d095f892599c7505c33f9a0",
+      "source": {
+        "kind": "upstream",
+        "path": "Makefile"
+      }
+    },
+    {
+      "bytes": 813,
+      "kind": "file",
+      "mode": 420,
+      "path": "README.rst",
+      "sha256": "2c29454bd5e9c2a5bca623cf926efc9ab8bdb060f5102bc2e3fa8d1861fd37a1",
+      "source": {
+        "kind": "upstream",
+        "path": "README.rst"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "cornice"
+    },
+    {
+      "bytes": 3748,
+      "kind": "file",
+      "mode": 420,
+      "path": "cornice/__init__.py",
+      "sha256": "3cbc3f01bf3722aea70cf24082b7213302e8849185dc5b745375b64684aafcb9",
+      "source": {
+        "kind": "upstream",
+        "path": "cornice/__init__.py"
+      }
+    },
+    {
+      "bytes": 5013,
+      "kind": "file",
+      "mode": 420,
+      "path": "cornice/cors.py",
+      "sha256": "845bfc9908a2f928b38a92dc4d32545563f2e37eb1b374a282a0d02a0ec05d13",
+      "source": {
+        "kind": "upstream",
+        "path": "cornice/cors.py"
+      }
+    },
+    {
+      "bytes": 1264,
+      "kind": "file",
+      "mode": 420,
+      "path": "cornice/errors.py",
+      "sha256": "bacca27dbe4a8156a3f82575eacae7b61f11ca9e98e201d184f0b64be99e0f8d",
+      "source": {
+        "kind": "upstream",
+        "path": "cornice/errors.py"
+      }
+    },
+    {
+      "bytes": 13578,
+      "kind": "file",
+      "mode": 420,
+      "path": "cornice/pyramidhook.py",
+      "sha256": "2cae1094eba7754f8e5d0d8abc01e87f6dc84bbf4d1f46817cdc7da7cd7fadd2",
+      "source": {
+        "kind": "upstream",
+        "path": "cornice/pyramidhook.py"
+      }
+    },
+    {
+      "bytes": 5407,
+      "kind": "file",
+      "mode": 420,
+      "path": "cornice/resource.py",
+      "sha256": "400542e7a3f87f2ee8e205cd78eefc33c378909e3c1e4d9fb22377445ed5226b",
+      "source": {
+        "kind": "upstream",
+        "path": "cornice/resource.py"
+      }
+    },
+    {
+      "bytes": 20587,
+      "kind": "file",
+      "mode": 420,
+      "path": "cornice/service.py",
+      "sha256": "a0805ff4ae567bae33cc52209ccef3e6a6f4f3e4500c073adf43d2c1381aff9a",
+      "source": {
+        "blob": "a0805ff4ae567bae33cc52209ccef3e6a6f4f3e4500c073adf43d2c1381aff9a",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 6875,
+      "kind": "file",
+      "mode": 420,
+      "path": "cornice/util.py",
+      "sha256": "bbb448b82dd2ff058484a747c263438cd3e4ca14cdc2f91a968935645b6b65dc",
+      "source": {
+        "kind": "upstream",
+        "path": "cornice/util.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "cornice/validators"
+    },
+    {
+      "bytes": 3042,
+      "kind": "file",
+      "mode": 493,
+      "path": "cornice/validators/__init__.py",
+      "sha256": "9fefe6597c62efd98f9dafdf641619bcda61b0c90910d5c49ad9c8e953791c1b",
+      "source": {
+        "kind": "upstream",
+        "path": "cornice/validators/__init__.py"
+      }
+    },
+    {
+      "bytes": 4349,
+      "kind": "file",
+      "mode": 420,
+      "path": "cornice/validators/_colander.py",
+      "sha256": "4e87466a352d1e1a5eff018c2b39f63fb47404c3794ace348c36de272c207fc8",
+      "source": {
+        "kind": "upstream",
+        "path": "cornice/validators/_colander.py"
+      }
+    },
+    {
+      "bytes": 5855,
+      "kind": "file",
+      "mode": 420,
+      "path": "cornice/validators/_marshmallow.py",
+      "sha256": "0d885fd3f5ef4bd8b5f9f4d846013681946760c2ce57eb6685603ffedc10c0c6",
+      "source": {
+        "kind": "upstream",
+        "path": "cornice/validators/_marshmallow.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "docs"
+    },
+    {
+      "bytes": 4598,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/Makefile",
+      "sha256": "781fb75cda46743da9a704e5184cdc6c52ccebd8c68e99f0f8cb94788fe2f3ef",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/Makefile"
+      }
+    },
+    {
+      "bytes": 4517,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/make.bat",
+      "sha256": "6d9b65c81833620e871b991815a3eab79337005f146a76d9ff63ef84ae184e50",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/make.bat"
+      }
+    },
+    {
+      "bytes": 50,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/requirements.txt",
+      "sha256": "04db44a30397e2eeddcbea9c50c0606cfbcfbe709a6fc2c34a3950ee408c9745",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/requirements.txt"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "docs/source"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "docs/source/_themes"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "docs/source/_themes/mozilla"
+    },
+    {
+      "bytes": 1234,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/source/api.rst",
+      "sha256": "d8966d00f1b7ef08654e933eef458cf33e06c912dcb62f47a245e4c8a5dd9cb7",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/source/api.rst"
+      }
+    },
+    {
+      "bytes": 1112,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/source/conf.py",
+      "sha256": "c8e9874cc16a7e4e50bd80e0df25a5afcccdb1af33e741d6d8d29738ef1bbbea",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/source/conf.py"
+      }
+    },
+    {
+      "bytes": 62922,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/source/cornice.png",
+      "sha256": "d64f5948ebd354825f6afc8aa44c69280263747542daefde07a4699a5a5188a5",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/source/cornice.png"
+      }
+    },
+    {
+      "bytes": 2784,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/source/exhaustive_list.rst",
+      "sha256": "4d54e37f4e09b4c88b26412b085d5a52e1da7b679e7de260f659b591cfa49d4a",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/source/exhaustive_list.rst"
+      }
+    },
+    {
+      "bytes": 699,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/source/faq.rst",
+      "sha256": "5ac0af7dc254a62adfe9efc7d07b118f5eb155c036c7812b50289fa5187f72b2",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/source/faq.rst"
+      }
+    },
+    {
+      "bytes": 3115,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/source/index.rst",
+      "sha256": "6a64b9dccb74871491b54a223ddb6fb597e104cf9acad7b1f897923035df32e5",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/source/index.rst"
+      }
+    },
+    {
+      "bytes": 3154,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/source/internals.rst",
+      "sha256": "67ea0b4edd513ef4eec0e5309785cb62c77535481cceb4b654de80d1cad60065",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/source/internals.rst"
+      }
+    },
+    {
+      "bytes": 1961,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/source/quickstart.rst",
+      "sha256": "ad965f84474a26bdb76633f1d9d1863771137ac21414cd4eecf19033af98747b",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/source/quickstart.rst"
+      }
+    },
+    {
+      "bytes": 4120,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/source/resources.rst",
+      "sha256": "8a76284a8c9e6dc3d7ce19b67daa420f4e146d58b98e21f9cc6ef8958fdcd019",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/source/resources.rst"
+      }
+    },
+    {
+      "bytes": 8917,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/source/schema.rst",
+      "sha256": "bafc0eb2891d39a0777a758291cc458e12e7499d9f3e8b8dfdda6cb522aa3962",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/source/schema.rst"
+      }
+    },
+    {
+      "bytes": 2623,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/source/services.rst",
+      "sha256": "46e0b2a41ae23b948d4e4905e222b0ea92cbfc57a60a760311895308302c5cf8",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/source/services.rst"
+      }
+    },
+    {
+      "bytes": 1932,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/source/testing.rst",
+      "sha256": "29e002a11d8d3dfe5cea1bdc2059724d2125215f226589bf1791531ef5f6a1d2",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/source/testing.rst"
+      }
+    },
+    {
+      "bytes": 8648,
+      "kind": "file",
+      "mode": 493,
+      "path": "docs/source/tutorial.rst",
+      "sha256": "22131b4ff8ad8bf5d49fa5bfbd6ab05bada48f13ebcb97868adae939d92cdf6c",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/source/tutorial.rst"
+      }
+    },
+    {
+      "bytes": 9069,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/source/upgrading.rst",
+      "sha256": "c1e882a110dd166be834a35969c8f452d4bd40fb5b4a3fbc6cfd32b7c902c4d4",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/source/upgrading.rst"
+      }
+    },
+    {
+      "bytes": 11460,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/source/validation.rst",
+      "sha256": "f62630ab62a26e66473ea4942b39f9746bb61f0c9f3c09f2ca85e704dee03bb7",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/source/validation.rst"
+      }
+    },
+    {
+      "bytes": 64,
+      "kind": "file",
+      "mode": 420,
+      "path": "setup.cfg",
+      "sha256": "7377cae97ef6e1ac7e50b74b9ae88ce1df0a1e749e94f90b0f6c2906155773e1",
+      "source": {
+        "kind": "upstream",
+        "path": "setup.cfg"
+      }
+    },
+    {
+      "bytes": 1398,
+      "kind": "file",
+      "mode": 493,
+      "path": "setup.py",
+      "sha256": "3235b7e4c06204c748a5a2c73a5ce47733ec8e88e57bd2cdacc559c35361313b",
+      "source": {
+        "kind": "upstream",
+        "path": "setup.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests"
+    },
+    {
+      "bytes": 199,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/__init__.py",
+      "sha256": "f21fb44a9170c0cd4b675fbe17129799b08ff385b4c2d8b395616df47b8a85cb",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/__init__.py"
+      }
+    },
+    {
+      "bytes": 87,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/requirements.txt",
+      "sha256": "b4f78ef36fbe153e6b4d852c93e2a039dcf41a47b43c8b9ce30dd23d8c671198",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/requirements.txt"
+      }
+    },
+    {
+      "bytes": 3420,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/support.py",
+      "sha256": "ccbeb7f7bd6d9ffbb2074d3c577ce67404ae57b4f410d15ee136067030992f59",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/support.py"
+      }
+    },
+    {
+      "bytes": 13727,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_cors.py",
+      "sha256": "36672d9f047b144dd9be7bd929815c3d51b0705f821765a669a77a4b9952e88c",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_cors.py"
+      }
+    },
+    {
+      "bytes": 697,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_errors.py",
+      "sha256": "99bda901bbe99b360b4ed4097acc1074088473f4b0869be72614aba8dab9cdaa",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_errors.py"
+      }
+    },
+    {
+      "bytes": 6884,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_imperative_resource.py",
+      "sha256": "0cde8f30fe064679494f6b72de8541db461bf2b76b11b36b272197893ecbb4db",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_imperative_resource.py"
+      }
+    },
+    {
+      "bytes": 1880,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_init.py",
+      "sha256": "6823c1d5c8fbff0d46ca15b194a9740e730e2818f2f94e66efd5daee3db8a63d",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_init.py"
+      }
+    },
+    {
+      "bytes": 12601,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_pyramidhook.py",
+      "sha256": "22e59106e1cda40da45f7a4873c90f9b2ad63ed161e0cdf2b821105355bd2f52",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_pyramidhook.py"
+      }
+    },
+    {
+      "bytes": 7326,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_resource.py",
+      "sha256": "540dc67b5588dc5267f3bc1bb84aefb2af58f48d0d0cf87c2673260188809bf4",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_resource.py"
+      }
+    },
+    {
+      "bytes": 3113,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_resource_callable.py",
+      "sha256": "99a3a61601a1ae4e4e7e91ed48aaafc7b6010b8cf34cdbb6543d49ae3c5f51c1",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_resource_callable.py"
+      }
+    },
+    {
+      "bytes": 6023,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_resource_custom_predicates.py",
+      "sha256": "e404a57d4977069f7c2075fe43031db6f656bc9d8e1d65982ec7e3e7c0e06ef4",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_resource_custom_predicates.py"
+      }
+    },
+    {
+      "bytes": 22638,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_service.py",
+      "sha256": "cbbbe92eb9583c2db160a6a3172c3e40c0896ec5c5d971ee83fa18dd5ad59b82",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_service.py"
+      }
+    },
+    {
+      "bytes": 2471,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_service_definition.py",
+      "sha256": "88272a62c8c43bf17fd88e25605bbd2bf8e6d6ac803059ceb68471513f6602b4",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_service_definition.py"
+      }
+    },
+    {
+      "bytes": 1223,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_util.py",
+      "sha256": "c0116a207f993438d224f6d4606bd32ce0435d5892f8773062d0f2b9e26f0d51",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_util.py"
+      }
+    },
+    {
+      "bytes": 29715,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_validation.py",
+      "sha256": "4fe1f22b455e686eb50534776409b678443a796ee0fd5b48edfeccf641f580ed",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_validation.py"
+      }
+    },
+    {
+      "bytes": 12422,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/validationapp.py",
+      "sha256": "8753fc11ab5cde4acf15c61007bddf52d9eddb223de7fa230153cfaa9230dc82",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/validationapp.py"
+      }
+    },
+    {
+      "bytes": 587,
+      "kind": "file",
+      "mode": 420,
+      "path": "tox.ini",
+      "sha256": "040c6a177a0b8366237f00e7f623e85568393e479bc3c2a81ed9fb2256f5596d",
+      "source": {
+        "kind": "upstream",
+        "path": "tox.ini"
+      }
+    }
+  ],
+  "overlay_sha256": "d6d0ddd291d3d632c245e8aac0d284dea8923db7e160cbdfc03376a4a5acef1e",
+  "upstream": {
+    "kind": "beyondswe",
+    "repository": "https://github.com/cornices/cornice",
+    "revision": "bd1c9d0a7853b8ea368c091a8d17eb2e2de2bdab",
+    "source_root_key": "tri80-beyondswe-cornices_cornice_pr477-cp3"
+  },
+  "workspace_tree_sha256": "410ca033a4ec13840fec3ccb135cf85a167d5fd424a6d39311e26fdd0203a505"
+}

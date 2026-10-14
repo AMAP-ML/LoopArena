@@ -1,0 +1,16 @@
+# Make Angular Fourier Series site featurization work on modern NumPy
+
+## Background
+This repository is being updated to run successfully with **NumPy 1.24+** and the latest **DScribe**. A previous compatibility issue in the radial-distribution histogram windowing utilities (which crashed with `TypeError: logical_and() got an unexpected keyword argument 'dtype'` under NumPy 1.24+) has already been resolved. That behavior must remain intact.
+
+## Task
+Update the Angular Fourier Series site featurization (the `AngularFourierSeries` site featurizer and any supporting code it relies on) so that it runs correctly under **NumPy 1.24+** together with the latest **DScribe** release. The featurizer should construct successfully, featurize structures without raising errors, and produce feature values consistent with correct behavior on modern dependency versions.
+
+## Requirements
+1. The Angular Fourier Series site featurizer must instantiate and featurize without TypeErrors, deprecation-driven failures, or numerical mismatches when NumPy 1.24+ and the latest DScribe are installed.
+2. Preserve the already-completed behavior: radial-distribution histogram windowing utilities in `matminer.featurizers.utils.grdf` must continue to run correctly on NumPy 1.24+ (no `dtype` keyword errors from `logical_and`).
+3. Do not regress any other existing functionality; the relevant existing tests for these featurizers should pass in the modern environment.
+
+## Notes
+- Keep changes minimal and focused on compatibility with modern NumPy and DScribe; do not change the intended featurization semantics.
+- The repository is at `/workspace/matminer`.

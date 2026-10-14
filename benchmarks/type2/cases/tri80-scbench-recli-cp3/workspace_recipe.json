@@ -1,0 +1,22 @@
+{
+  "case_id": "tri80-scbench-recli-cp3",
+  "files": [
+    {
+      "bytes": 38729,
+      "kind": "file",
+      "mode": 493,
+      "path": "appctl.py",
+      "sha256": "d3e3cb0397ee06608b87e3ecbfd8ccdb672272f50864b05bb873fcff9b462179",
+      "source": {
+        "blob": "d3e3cb0397ee06608b87e3ecbfd8ccdb672272f50864b05bb873fcff9b462179",
+        "kind": "overlay"
+      }
+    }
+  ],
+  "overlay_sha256": "53c4ac61d195c69e002f0e505225090f6103af59d8f8e68d0e58acb6b327b137",
+  "upstream": {
+    "kind": "scbench",
+    "source_root_key": null
+  },
+  "workspace_tree_sha256": "2b6a5df7eac1eda07768879d5c6076ef892d2f45f20cd23b78a7d831e2c47e27"
+}

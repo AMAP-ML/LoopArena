@@ -1,0 +1,605 @@
+{
+  "case_id": "tri80-loopsbench-task_evosuite_test_generation-cp3",
+  "files": [
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "experiments"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "experiments/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_evosuite_test_generation/base/experiments/__init__.py"
+      }
+    },
+    {
+      "bytes": 5446,
+      "kind": "file",
+      "mode": 420,
+      "path": "experiments/run_all.py",
+      "sha256": "b9dad90f64736739237ed1066d0f95aa1c885e1ba241c443b2e86aa5977fdfe6",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_evosuite_test_generation/base/experiments/run_all.py"
+      }
+    },
+    {
+      "bytes": 3569,
+      "kind": "file",
+      "mode": 420,
+      "path": "module_dag.yaml",
+      "sha256": "7db6f4f4ef8f443afbced3191f1cc9d5116517e29e2041d01ab1257590548658",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_evosuite_test_generation/module_dag.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "requirements"
+    },
+    {
+      "bytes": 2884,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/adynamosa.yaml",
+      "sha256": "ed3f4656dcaa5b524b5c4396ec4a26c3f5d39a0b933f6a3377a4547eb314c37e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_evosuite_test_generation/requirements/adynamosa.yaml"
+      }
+    },
+    {
+      "bytes": 3344,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/dynamosa.yaml",
+      "sha256": "748f1861215d00c421036a0ed343002180247e1095facebfffe474f1e52877ca",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_evosuite_test_generation/requirements/dynamosa.yaml"
+      }
+    },
+    {
+      "bytes": 1866,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/evosuite.yaml",
+      "sha256": "b083b559f67d8c5c05d89225336664bb7cd37b6b0db4558538f55c7354745862",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_evosuite_test_generation/requirements/evosuite.yaml"
+      }
+    },
+    {
+      "bytes": 2456,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/modular_evosuite.yaml",
+      "sha256": "1494baa991b490da1fa9fcf83d73b3a104771e33609b067c9b5f52de5c685bc5",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_evosuite_test_generation/requirements/modular_evosuite.yaml"
+      }
+    },
+    {
+      "bytes": 4437,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/mosa.yaml",
+      "sha256": "9b5312885a4a2673ab039780f9f2f7909031a2b6afa005d72ec92a0f2568bbb7",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_evosuite_test_generation/requirements/mosa.yaml"
+      }
+    },
+    {
+      "bytes": 5523,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/whole_suite_archive.yaml",
+      "sha256": "dd675614607a55c8698957615adffc2c77cdd29b7c76e4129424c43e00fde025",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_evosuite_test_generation/requirements/whole_suite_archive.yaml"
+      }
+    },
+    {
+      "bytes": 960,
+      "kind": "file",
+      "mode": 493,
+      "path": "run-tests.sh",
+      "sha256": "2243e846590765ac8d2162dee87843bb339c03ac82bddf73930b703b48026f4f",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_evosuite_test_generation/run-tests.sh"
+      }
+    },
+    {
+      "bytes": 188,
+      "kind": "file",
+      "mode": 493,
+      "path": "run.sh",
+      "sha256": "07c0e9144838a716f08b2557dbd5743f67cbe894b261bae741c65f769006041d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_evosuite_test_generation/base/run.sh"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "src"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_evosuite_test_generation/base/experiments/__init__.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "src/algorithms"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/algorithms/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_evosuite_test_generation/base/experiments/__init__.py"
+      }
+    },
+    {
+      "bytes": 4007,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/algorithms/adynamosa.py",
+      "sha256": "e32ea9b0ba9268e5fcb2336d7a2977a4f32350202a4256b54c591aa36167dcda",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_evosuite_test_generation/base/src/algorithms/adynamosa.py"
+      }
+    },
+    {
+      "bytes": 1547,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/algorithms/archive.py",
+      "sha256": "71aed1e44331ea4ae39fa7608cfbb5a31776afe7ccf144fe6e74835b4155c5d6",
+      "source": {
+        "blob": "71aed1e44331ea4ae39fa7608cfbb5a31776afe7ccf144fe6e74835b4155c5d6",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 9781,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/algorithms/cdg.py",
+      "sha256": "e2c585292b800aa4627bbdc1c40e67e9995741ee233b0ff9bd96620c7717620a",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_evosuite_test_generation/gold_patches/dynamosa.diff",
+        "patch_sha256": "bc470a8bde908807d05b195c63b0f76ea844b2c48a1a88fb3f14c5e5749a55b2",
+        "path": "src/algorithms/cdg.py"
+      }
+    },
+    {
+      "bytes": 15810,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/algorithms/coverage_analysis.py",
+      "sha256": "52108254333837feb760e8bad852f670ddae4617ad1117f9e9f094eebd5dd051",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_evosuite_test_generation/gold_patches/evosuite.diff",
+        "patch_sha256": "3bc09d7000e9f74fdff6d2338a1ca2db7b22cdb76f4bfdaa7538e904955ca8c6",
+        "path": "src/algorithms/coverage_analysis.py"
+      }
+    },
+    {
+      "bytes": 4707,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/algorithms/dynamosa.py",
+      "sha256": "721b973c027333daab163d47f82d1136347daeb7a6f5a81883a034ac93344e37",
+      "source": {
+        "blob": "721b973c027333daab163d47f82d1136347daeb7a6f5a81883a034ac93344e37",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 4267,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/algorithms/emote.py",
+      "sha256": "1bbd59bcbf4ec1ee005bcb8a5144556362c9251dec0b8a50b15f9533372a915d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_evosuite_test_generation/base/src/algorithms/emote.py"
+      }
+    },
+    {
+      "bytes": 23673,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/algorithms/ga_statistics.py",
+      "sha256": "f09144949c2b7332c8cd803e619cf832d840773c2d90255b0943a9407905aa57",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_evosuite_test_generation/gold_patches/evosuite.diff",
+        "patch_sha256": "3bc09d7000e9f74fdff6d2338a1ca2db7b22cdb76f4bfdaa7538e904955ca8c6",
+        "path": "src/algorithms/ga_statistics.py"
+      }
+    },
+    {
+      "bytes": 28104,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/algorithms/minimization.py",
+      "sha256": "f1162061d7cb7bb9c0e705bff6ba5ab91ffc13e714edc9d78a3d79faf051b137",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_evosuite_test_generation/gold_patches/whole_suite_archive.diff",
+        "patch_sha256": "8428cf2710334d08eeae16cfd6bf8be9c16ae3989044b667ce7de0232694ea0a",
+        "path": "src/algorithms/minimization.py"
+      }
+    },
+    {
+      "bytes": 17320,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/algorithms/mosa.py",
+      "sha256": "972bd25414c8e10ddc517846b7ed2ba1db2c0f443fcacb3f9895e98a331cbf1a",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_evosuite_test_generation/gold_patches/mosa.diff",
+        "patch_sha256": "8d02e2a1bae237cf23aba3fae39fe2c63a186c387e236f3d3b9fc4d4027f5d87",
+        "path": "src/algorithms/mosa.py"
+      }
+    },
+    {
+      "bytes": 19091,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/algorithms/mosa_archive.py",
+      "sha256": "8498dddbd3f662ae602b439b1ae0c3c109daf4822c643462342a3cc6f2e429d6",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_evosuite_test_generation/gold_patches/mosa.diff",
+        "patch_sha256": "8d02e2a1bae237cf23aba3fae39fe2c63a186c387e236f3d3b9fc4d4027f5d87",
+        "path": "src/algorithms/mosa_archive.py"
+      }
+    },
+    {
+      "bytes": 13617,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/algorithms/pareto_utils.py",
+      "sha256": "e6e03a938089cd13503abbbcec3c24c348ee0fad3cb0e8eaa4eb5c6b89137fe7",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_evosuite_test_generation/gold_patches/mosa.diff",
+        "patch_sha256": "8d02e2a1bae237cf23aba3fae39fe2c63a186c387e236f3d3b9fc4d4027f5d87",
+        "path": "src/algorithms/pareto_utils.py"
+      }
+    },
+    {
+      "bytes": 3758,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/algorithms/preference_sorting.py",
+      "sha256": "976af5a27990ec75bbc9fbfe034b6c0d94f9f05dc8c9460a2988860162e630c5",
+      "source": {
+        "blob": "976af5a27990ec75bbc9fbfe034b6c0d94f9f05dc8c9460a2988860162e630c5",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 9414,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/algorithms/secondary_objectives.py",
+      "sha256": "3c8dbf98e28f3058f715c68d55230912f0d2148bbdf6fae417cd04c9c88db6c7",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_evosuite_test_generation/gold_patches/whole_suite_archive.diff",
+        "patch_sha256": "8428cf2710334d08eeae16cfd6bf8be9c16ae3989044b667ce7de0232694ea0a",
+        "path": "src/algorithms/secondary_objectives.py"
+      }
+    },
+    {
+      "bytes": 28998,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/algorithms/target_manager.py",
+      "sha256": "e5a23ee8d0885f3d5fcb471e687e3a7a00212bf478cd6a9066251de03dcc323a",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_evosuite_test_generation/gold_patches/dynamosa.diff",
+        "patch_sha256": "bc470a8bde908807d05b195c63b0f76ea844b2c48a1a88fb3f14c5e5749a55b2",
+        "path": "src/algorithms/target_manager.py"
+      }
+    },
+    {
+      "bytes": 12540,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/algorithms/whole_suite.py",
+      "sha256": "b6354ad93778e27a4e0bd4a1345ed3e510892130e39f0d85290f0b4290866095",
+      "source": {
+        "blob": "b6354ad93778e27a4e0bd4a1345ed3e510892130e39f0d85290f0b4290866095",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 12448,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/algorithms/whole_suite_archive.py",
+      "sha256": "357d033669161bfb1de4b799e76237adf1101401b0d49a91acb25a2904db3d1c",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_evosuite_test_generation/gold_patches/whole_suite_archive.diff",
+        "patch_sha256": "8428cf2710334d08eeae16cfd6bf8be9c16ae3989044b667ce7de0232694ea0a",
+        "path": "src/algorithms/whole_suite_archive.py"
+      }
+    },
+    {
+      "bytes": 9665,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/benchmarks.py",
+      "sha256": "f8f1c9d42f47c86a35df80f168477bf091fbe4794c3fcaf82de1cc062d2440d9",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_evosuite_test_generation/base/src/benchmarks.py"
+      }
+    },
+    {
+      "bytes": 360,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/config.py",
+      "sha256": "fc24a5a86567c95c7586f6aa330e7fc8a8584ea8937b6fef2789b3533df35bbd",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_evosuite_test_generation/base/src/config.py"
+      }
+    },
+    {
+      "bytes": 3366,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/execution.py",
+      "sha256": "62b126c96802c57323f4d0dd4c73631d010386396192ff606b8fcab9969dbf69",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_evosuite_test_generation/base/src/execution.py"
+      }
+    },
+    {
+      "bytes": 4056,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/operators.py",
+      "sha256": "b83e1462e6d74a76d8ce93188ac5da03d39a9c9c13b60136a555b7e11093f821",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_evosuite_test_generation/base/src/operators.py"
+      }
+    },
+    {
+      "bytes": 4382,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/program.py",
+      "sha256": "bb42032834d76fdddc8dd13d5946905f07c57735a72b3546338ab649e64318fc",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_evosuite_test_generation/base/src/program.py"
+      }
+    },
+    {
+      "bytes": 2447,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/test_case.py",
+      "sha256": "cb9e16d517e468927be58a050c8f2fcf0863bf73942dd2d3af1a7325c0de84e9",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_evosuite_test_generation/base/src/test_case.py"
+      }
+    },
+    {
+      "bytes": 1498,
+      "kind": "file",
+      "mode": 420,
+      "path": "task.yaml",
+      "sha256": "1a9f6a13d4f2a31c298351ecda50bb6efc1c67f5c9a2b00444dbacb64b750efc",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_evosuite_test_generation/task.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/adynamosa"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/adynamosa/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_evosuite_test_generation/base/experiments/__init__.py"
+      }
+    },
+    {
+      "bytes": 4142,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/adynamosa/test_adynamosa.py",
+      "sha256": "aa03be5a1358508ae0eb3ca81c83fbd6908cb983bffeeb0f8fa0e7470357767d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_evosuite_test_generation/tests/adynamosa/test_adynamosa.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/dynamosa"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/dynamosa/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_evosuite_test_generation/base/experiments/__init__.py"
+      }
+    },
+    {
+      "bytes": 3577,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/dynamosa/test_dynamosa.py",
+      "sha256": "738f9ad6776b2d0cf777b37c7b2994402d1b773d94c5e17ffe2ad7736d21ed92",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_evosuite_test_generation/tests/dynamosa/test_dynamosa.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/evosuite"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/evosuite/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_evosuite_test_generation/base/experiments/__init__.py"
+      }
+    },
+    {
+      "bytes": 2552,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/evosuite/test_whole_suite.py",
+      "sha256": "b9499a9bbff6f2e54bfd6cc02c03bc11f5a96753891757e75cc4dfa357c53337",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_evosuite_test_generation/tests/evosuite/test_whole_suite.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/modular_evosuite"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/modular_evosuite/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_evosuite_test_generation/base/experiments/__init__.py"
+      }
+    },
+    {
+      "bytes": 4010,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/modular_evosuite/test_emote.py",
+      "sha256": "d6ffb4e53eb35865a421ae788fdc6c82d689921ee92af90bb2a3b383c5609234",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_evosuite_test_generation/tests/modular_evosuite/test_emote.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/mosa"
+    },
+    {
+      "bytes": 1527,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/mosa/test_mosa_outputs.py",
+      "sha256": "9cbe86ac9939a08ad5f5c1d22a4a11592bb52cda28900c5ae4cf9f12a5be3d76",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_evosuite_test_generation/tests/mosa/test_mosa_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/whole_suite_archive"
+    },
+    {
+      "bytes": 1601,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/whole_suite_archive/test_whole_suite_archive_outputs.py",
+      "sha256": "c8020abc67cc5965543e61d183e2939e07c4510235f07f30dd5a0ee694f2b8e2",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_evosuite_test_generation/tests/whole_suite_archive/test_whole_suite_archive_outputs.py"
+      }
+    },
+    {
+      "bytes": 1399,
+      "kind": "file",
+      "mode": 420,
+      "path": "unit_dag.json",
+      "sha256": "1455448d588d87bf199188e62e5643cfac65718182fbbec48bdc4e4ee44d104d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_evosuite_test_generation/unit_dag.json"
+      }
+    }
+  ],
+  "overlay_sha256": "d2159d808513a6058303f3ba7160df5fbce95d89af9c25a61e45debf13c3633d",
+  "upstream": {
+    "kind": "loopsbench",
+    "revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+    "source_root_key": "loopsbench",
+    "task": "task_evosuite_test_generation"
+  },
+  "workspace_tree_sha256": "d7a75b2c238995a540dde4a0d0204afcfc3050d664da595912510a9c75c87923"
+}

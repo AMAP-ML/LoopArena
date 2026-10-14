@@ -1,0 +1,6 @@
+{
+  "recipe": "workspace_recipe.json",
+  "recipe_sha256": "c8b806b6fb5e9983e6f3a765ca6822e3769b78354f8f9cd0d6aa0e1870b3306f",
+  "relative_path_under_assets_root": "type2/workspaces/tri80-scbench-pwd_manager-cp2/workspace.tar.gz",
+  "workspace_tree_sha256": "dcc24010b6266cca4f3477b213218761cad984680dc98883c78beb3c700091ed"
+}

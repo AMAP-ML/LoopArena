@@ -1,0 +1,31 @@
+{
+  "adapter_config": {
+    "docker_executable": "docker",
+    "expected_test_count": 21,
+    "expected_unit_ids": [
+      "vfdt",
+      "cvfdt",
+      "adwin",
+      "moa",
+      "sam_knn"
+    ],
+    "result_protocol": "source_run_tests",
+    "runtime_assets_dir": "/opt/looparena/evaluator_assets/evaluator_runtime",
+    "task_dir": "/opt/looparena/evaluator_assets/tasks/task_stream_mining"
+  },
+  "adapter_kind": "loopsbench",
+  "adapter_version": "source-run-tests-v1",
+  "evaluator_revision": "af4a746b31b3e26c2c0eb774007b32f4103309c9",
+  "network": "bridge",
+  "pass_policy": "all-source-unit-tests-pass",
+  "runtime_identity": {
+    "image_id": "sha256:754c5314f89f9d41c9a72511ff8e22b2e61b6af9bbf65e839511f70da4dbb1ac",
+    "image_reference": "looparena-loopsbench-84ae415/task_stream_mining:frozen",
+    "platform": "linux/amd64",
+    "task_tree_sha256": "68d0013de74a2672040c903879b021f66d73eb5037c948dc9cce18d5f7f8d6f5",
+    "workdir": "/workspace"
+  },
+  "solve_network": "bridge",
+  "source_revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+  "timeout_sec": 600
+}

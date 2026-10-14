@@ -1,0 +1,10 @@
+{
+  "adapter_kind": "beyondswe_harbor",
+  "case_id": "tri80-beyondswe-snok_flake8-type-checking_pr179",
+  "episode_origin": "official_problem_start",
+  "harness_start_mode": "bootstrap_contract_start",
+  "official_task_id": "beyondswe:snok_flake8-type-checking_pr179",
+  "task_scope": "official_full_task",
+  "task_sequence_ref": "task_sequence.json",
+  "task_sequence_sha256": "69b5b9783a74ae36e56151d56fc7ccf34c0240c8279b3e6e18b6ad20df3620ff"
+}

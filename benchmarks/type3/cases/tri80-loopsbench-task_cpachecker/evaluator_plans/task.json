@@ -1,0 +1,29 @@
+{
+  "adapter_config": {
+    "docker_executable": "docker",
+    "expected_test_count": 15,
+    "expected_unit_ids": [
+      "cpachecker_v0",
+      "cpachecker_v1",
+      "cpachecker_v3"
+    ],
+    "result_protocol": "source_run_tests",
+    "runtime_assets_dir": "/opt/looparena/evaluator_assets/evaluator_runtime",
+    "task_dir": "/opt/looparena/evaluator_assets/tasks/task_cpachecker"
+  },
+  "adapter_kind": "loopsbench",
+  "adapter_version": "source-run-tests-v1",
+  "evaluator_revision": "5880b64491e2cac2f83d497153ed173b8a995b8b",
+  "network": "bridge",
+  "pass_policy": "all-source-unit-tests-pass",
+  "runtime_identity": {
+    "image_id": "sha256:cd63f1a8c3a7fb0056f906d6ef90ec01f17f5cd4f94044bea19cd8521938844f",
+    "image_reference": "looparena-loopsbench-84ae415/task_cpachecker:frozen",
+    "platform": "linux/amd64",
+    "task_tree_sha256": "772aa1915b535098c20558683eaf28faf4c98b96fb01ededffb988cf59666aa8",
+    "workdir": "/workspace"
+  },
+  "solve_network": "bridge",
+  "source_revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+  "timeout_sec": 900
+}

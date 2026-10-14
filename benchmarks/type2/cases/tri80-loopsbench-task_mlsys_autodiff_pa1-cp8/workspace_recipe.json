@@ -1,0 +1,771 @@
+{
+  "case_id": "tri80-loopsbench-task_mlsys_autodiff_pa1-cp8",
+  "files": [
+    {
+      "bytes": 12448,
+      "kind": "file",
+      "mode": 420,
+      "path": "module_dag.yaml",
+      "sha256": "0e3581de1a771f59a075960e91f71622127ac2945775b693fa386db23c08f7c2",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/module_dag.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "pa1"
+    },
+    {
+      "bytes": 29131,
+      "kind": "file",
+      "mode": 420,
+      "path": "pa1/auto_diff.py",
+      "sha256": "35c194ddba30ebe00ae0718789be94d3aa5a14abfd02ed1606a02ef503228d12",
+      "source": {
+        "blob": "35c194ddba30ebe00ae0718789be94d3aa5a14abfd02ed1606a02ef503228d12",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 4028,
+      "kind": "file",
+      "mode": 420,
+      "path": "pa1/fused_ops.py",
+      "sha256": "d2b5c3bd0536d53ae3c395807d0e07e0db96120c2cb5f846857ea25c7eb934f5",
+      "source": {
+        "blob": "d2b5c3bd0536d53ae3c395807d0e07e0db96120c2cb5f846857ea25c7eb934f5",
+        "kind": "overlay"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "pa1/tests"
+    },
+    {
+      "bytes": 2767,
+      "kind": "file",
+      "mode": 420,
+      "path": "pa1/tests/test_auto_diff_graph_backward.py",
+      "sha256": "0aee6d3e1fa942a627da8a607b5b9f257be4aad12b60e946acbed86c4c6c1f66",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/base/pa1/tests/test_auto_diff_graph_backward.py"
+      }
+    },
+    {
+      "bytes": 4757,
+      "kind": "file",
+      "mode": 420,
+      "path": "pa1/tests/test_auto_diff_graph_forward.py",
+      "sha256": "8ef8223ae2e14b0e6a9882b353b67f1ea4786c1d051746c0e79eb8c4d7edd4df",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/base/pa1/tests/test_auto_diff_graph_forward.py"
+      }
+    },
+    {
+      "bytes": 9284,
+      "kind": "file",
+      "mode": 420,
+      "path": "pa1/tests/test_auto_diff_node_backward.py",
+      "sha256": "40f4bde3af53ab7c5c7947f6d11d715815477b5888cbc39ec6a7378b6349af92",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/base/pa1/tests/test_auto_diff_node_backward.py"
+      }
+    },
+    {
+      "bytes": 5429,
+      "kind": "file",
+      "mode": 420,
+      "path": "pa1/tests/test_auto_diff_node_forward.py",
+      "sha256": "f350a6415048dc4e9e24beab51529844e00cbb87191454cb45e7369550fc20e5",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/base/pa1/tests/test_auto_diff_node_forward.py"
+      }
+    },
+    {
+      "bytes": 5629,
+      "kind": "file",
+      "mode": 420,
+      "path": "pa1/tests/test_fused_ops.py",
+      "sha256": "9484fd173857ebad8e54f1a6ed830bf63b59689d31ac794095f35ec29322e1e2",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/base/pa1/tests/test_fused_ops.py"
+      }
+    },
+    {
+      "bytes": 7023,
+      "kind": "file",
+      "mode": 420,
+      "path": "pa1/tests/test_fused_ops_perf.py",
+      "sha256": "d2926d13fc1794a4b10e2525cbe5654d52c152faf6e11d5e1108e7e18d6b2187",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/base/pa1/tests/test_fused_ops_perf.py"
+      }
+    },
+    {
+      "bytes": 10108,
+      "kind": "file",
+      "mode": 420,
+      "path": "pa1/transformer.py",
+      "sha256": "b038194596254a0ebf44fd98d0bfb4b5b76b2a07aee2b4ae158c06de88ac30c7",
+      "source": {
+        "blob": "b038194596254a0ebf44fd98d0bfb4b5b76b2a07aee2b4ae158c06de88ac30c7",
+        "kind": "overlay"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "requirements"
+    },
+    {
+      "bytes": 446,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/activation_math_ops.yaml",
+      "sha256": "a36dcfcf7934b4008dad6a0d7c8fc3ea223791cd5aab764ede99cd55d29e0349",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/requirements/activation_math_ops.yaml"
+      }
+    },
+    {
+      "bytes": 469,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/broadcast_log_ops.yaml",
+      "sha256": "e04ccfc2f4ccc7997338447099d59f44298fd24970360a62c2c515d56c2ef20c",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/requirements/broadcast_log_ops.yaml"
+      }
+    },
+    {
+      "bytes": 501,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/comparison_division_utils.yaml",
+      "sha256": "574952bfaf3426d1da0b2773b387e4fc314ea4b5f71a621eb3b9529806cb2a44",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/requirements/comparison_division_utils.yaml"
+      }
+    },
+    {
+      "bytes": 524,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/elementwise_arithmetic_ops.yaml",
+      "sha256": "bbac768b4f9ca7604faa38548306600287037900990bd7d5387104057c368cc6",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/requirements/elementwise_arithmetic_ops.yaml"
+      }
+    },
+    {
+      "bytes": 495,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/fused_layernorm_op.yaml",
+      "sha256": "fe958158d5db0331f84295ddd864f78c31481639809a2d2bb1497ea2586227df",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/requirements/fused_layernorm_op.yaml"
+      }
+    },
+    {
+      "bytes": 462,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/fused_node_factories.yaml",
+      "sha256": "58912279b384ff230cb9b938a83732d1092022d142c3208e2240d2bd69736a34",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/requirements/fused_node_factories.yaml"
+      }
+    },
+    {
+      "bytes": 453,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/fused_softmax_op.yaml",
+      "sha256": "87d4e56db8af515405c39b81247273c7022212e3c4065cb8c6bdf0a0450d3b10",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/requirements/fused_softmax_op.yaml"
+      }
+    },
+    {
+      "bytes": 561,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/graph_node_factories.yaml",
+      "sha256": "95ab7e4226ba179288da487d9001ee176490b3be4e876485896ee4065d0aafac",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/requirements/graph_node_factories.yaml"
+      }
+    },
+    {
+      "bytes": 453,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/layernorm_ops.yaml",
+      "sha256": "4b23a762cdeaa7500c04c87aaa73345db1df8c9fe23811f2fcdf3eea1f851600",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/requirements/layernorm_ops.yaml"
+      }
+    },
+    {
+      "bytes": 471,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/linear_algebra_ops.yaml",
+      "sha256": "98642e62096152f81b4378dda78541db30d73765fec127ddc382caf3187c9635",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/requirements/linear_algebra_ops.yaml"
+      }
+    },
+    {
+      "bytes": 456,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/node_dispatch_ops.yaml",
+      "sha256": "e9aac0315f5202174ea1463a8eb81095e3d166f89fdfabda385cb9e0ce839a81",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/requirements/node_dispatch_ops.yaml"
+      }
+    },
+    {
+      "bytes": 485,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/reduction_expand_ops.yaml",
+      "sha256": "46a81c7ab7bf4d6563f8a63b41f2264b9c9d8b2f48362d2e02636bf681203579",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/requirements/reduction_expand_ops.yaml"
+      }
+    },
+    {
+      "bytes": 499,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/reverse_mode_gradients.yaml",
+      "sha256": "040e3b0bf94a32023496de17222ba66e69e25d0a6381848bf38ddc4fd195e584",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/requirements/reverse_mode_gradients.yaml"
+      }
+    },
+    {
+      "bytes": 545,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/sgd_epoch_loop.yaml",
+      "sha256": "9778c2faed04ef393ad9a5169721c7402a51f7dcc19364e97113785a941f110f",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/requirements/sgd_epoch_loop.yaml"
+      }
+    },
+    {
+      "bytes": 424,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/softmax_loss_graph.yaml",
+      "sha256": "a46c624e6a878e3fc76a5918cf24e84469a124e8530d3255344ab896128cb076",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/requirements/softmax_loss_graph.yaml"
+      }
+    },
+    {
+      "bytes": 451,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/softmax_ops.yaml",
+      "sha256": "791c012aaf44ee5d3c937588d9289142724cd82f543ec24487397c9d0dd4aa49",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/requirements/softmax_ops.yaml"
+      }
+    },
+    {
+      "bytes": 478,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/topological_evaluator.yaml",
+      "sha256": "ff1448d2288b202be4da86b2162c18eb200a2cd1dc599adcbf64f5d23a899fe6",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/requirements/topological_evaluator.yaml"
+      }
+    },
+    {
+      "bytes": 531,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/train_model_graph_build.yaml",
+      "sha256": "4260b381ceee9bfd81d83e0657f5dd9fb47f117f8571f42714eec511b3691a57",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/requirements/train_model_graph_build.yaml"
+      }
+    },
+    {
+      "bytes": 539,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/train_model_runtime_bindings.yaml",
+      "sha256": "12cf6a46df80b480b29d0f2017182279c6baa8c966b71fe227897d7ccab08993",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/requirements/train_model_runtime_bindings.yaml"
+      }
+    },
+    {
+      "bytes": 573,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/transformer_forward.yaml",
+      "sha256": "b7d596e50dafee252e41cb122dfc146fe0d3eba319ae0af1eb6875f8bda83271",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/requirements/transformer_forward.yaml"
+      }
+    },
+    {
+      "bytes": 594,
+      "kind": "file",
+      "mode": 420,
+      "path": "run-tests.sh",
+      "sha256": "b8c94cdf171a28edcb345aa127ef10e531027d764478763c22f1dbd55fdc732b",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/run-tests.sh"
+      }
+    },
+    {
+      "bytes": 2419,
+      "kind": "file",
+      "mode": 420,
+      "path": "task.yaml",
+      "sha256": "5d7f911b39277c77857e29560c6159d611bab468372e9314359b1f34d98567c0",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/task.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/activation_math_ops"
+    },
+    {
+      "bytes": 2734,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/activation_math_ops/test_outputs.py",
+      "sha256": "765e1f50b9af7225971e5143aa0242b795fc71ddcae82ee2e1636dca8375879a",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/tests/activation_math_ops/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/broadcast_log_ops"
+    },
+    {
+      "bytes": 1763,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/broadcast_log_ops/test_outputs.py",
+      "sha256": "4c1a21c4530c0e65847646e2cbccb8f5ee9002ca9754f20edba5bc785a133fca",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/tests/broadcast_log_ops/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/comparison_division_utils"
+    },
+    {
+      "bytes": 2652,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/comparison_division_utils/test_outputs.py",
+      "sha256": "41f9294d073c220f03eb4973aefd848b33b53d57fa4fff0382373177c7072270",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/tests/comparison_division_utils/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/elementwise_arithmetic_ops"
+    },
+    {
+      "bytes": 2486,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/elementwise_arithmetic_ops/test_outputs.py",
+      "sha256": "b862e64dd4cfc81afd01b2dcf448e028f0e921c931e937adcc1274ff96997ef1",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/tests/elementwise_arithmetic_ops/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/fused_layernorm_op"
+    },
+    {
+      "bytes": 1643,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/fused_layernorm_op/test_outputs.py",
+      "sha256": "d1b5be7826672ca01039b118a16882604a247f36fadec5fe3b88d6a37c5df83b",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/tests/fused_layernorm_op/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/fused_node_factories"
+    },
+    {
+      "bytes": 551,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/fused_node_factories/test_outputs.py",
+      "sha256": "04d3669574904ba74de3f013f6ff857db2b318d228cf6dc75abef4e5dca4f054",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/tests/fused_node_factories/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/fused_softmax_op"
+    },
+    {
+      "bytes": 1573,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/fused_softmax_op/test_outputs.py",
+      "sha256": "cb71c3c9479c422e3c496c40c367befa5d9845ef9d6d2cbbaa4c19ab4c0a72a9",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/tests/fused_softmax_op/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/graph_node_factories"
+    },
+    {
+      "bytes": 1864,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/graph_node_factories/test_outputs.py",
+      "sha256": "51b18e3c079b6f07884439b3abab46c47f1efa022c797ffa7a21f42fd680dcf3",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/tests/graph_node_factories/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/layernorm_ops"
+    },
+    {
+      "bytes": 1227,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/layernorm_ops/test_outputs.py",
+      "sha256": "947ea0462649aa05ac0cbd2811430f5b062e3bfd9cccb5d22f6bb23a32dd8c29",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/tests/layernorm_ops/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/linear_algebra_ops"
+    },
+    {
+      "bytes": 1885,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/linear_algebra_ops/test_outputs.py",
+      "sha256": "a1cf97128f19e3a43ce08594da148b00eb5eb45298acefcb63a386230df13fa2",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/tests/linear_algebra_ops/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/node_dispatch_ops"
+    },
+    {
+      "bytes": 1177,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/node_dispatch_ops/test_outputs.py",
+      "sha256": "63d8ea5d3fc2179832c788e7f837f0ac8f599ae2a096c18dc4715a9bc35e2919",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/tests/node_dispatch_ops/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/reduction_expand_ops"
+    },
+    {
+      "bytes": 2534,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/reduction_expand_ops/test_outputs.py",
+      "sha256": "a6efe7fd5d8dc8273bf014b1920849303a77e2920d2987753df084ca99fa6550",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/tests/reduction_expand_ops/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/reverse_mode_gradients"
+    },
+    {
+      "bytes": 650,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/reverse_mode_gradients/test_outputs.py",
+      "sha256": "f5d81a555a46f43bc46361fe1fc35ee908d497ac8017b69d75ec3027f3b0a2c2",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/tests/reverse_mode_gradients/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/sgd_epoch_loop"
+    },
+    {
+      "bytes": 2634,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/sgd_epoch_loop/test_outputs.py",
+      "sha256": "4c290c6e3daaa7342714d89b121ab8b8f7659a7d6dec450f9f96318df027c6bc",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/tests/sgd_epoch_loop/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/softmax_loss_graph"
+    },
+    {
+      "bytes": 936,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/softmax_loss_graph/test_outputs.py",
+      "sha256": "e8a2159529430955b7ef52cd2ec5639432d3f14f62fe48ff2d1ac4e7295113c0",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/tests/softmax_loss_graph/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/softmax_ops"
+    },
+    {
+      "bytes": 1075,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/softmax_ops/test_outputs.py",
+      "sha256": "c0d85f4243412d2d55facdd6d8a6cbf6e7635e7d1d304272d745827208074f03",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/tests/softmax_ops/test_outputs.py"
+      }
+    },
+    {
+      "bytes": 31184,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_expanded.py",
+      "sha256": "fece495ed03ae6829779d18ee19932f761028e76d9d536f9aaf82c1e434459df",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/tests/test_expanded.py"
+      }
+    },
+    {
+      "bytes": 1350,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_fake_git_compat.py",
+      "sha256": "8175a5c04aef8ad0d137d2ea22eea9c37bf9b9a24bb41bd079bbcede3726d926",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/tests/test_fake_git_compat.py"
+      }
+    },
+    {
+      "bytes": 23421,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_outputs.py",
+      "sha256": "3c918d20477506ff3e4630ca5e3e4064d71ba903d3b695a32408fe0e121f9d03",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/tests/test_outputs.py"
+      }
+    },
+    {
+      "bytes": 1002,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_task_runner.py",
+      "sha256": "c0625a20fc755eba56a9727e94fedb372c74b19c0f1db89b5e416892580b6dec",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/tests/test_task_runner.py"
+      }
+    },
+    {
+      "bytes": 5725,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_unit_runner.py",
+      "sha256": "2f64a52aaf3e18ba54e4cb87d7624ad586d3101bf2bf52d452a6d2b1adf134e3",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/tests/test_unit_runner.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/topological_evaluator"
+    },
+    {
+      "bytes": 1093,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/topological_evaluator/test_outputs.py",
+      "sha256": "e51620e24895f67da82744d6a80013ae1b8297c21d452ca9b75ec8baef3ec6d7",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/tests/topological_evaluator/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/train_model_graph_build"
+    },
+    {
+      "bytes": 3859,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/train_model_graph_build/test_outputs.py",
+      "sha256": "75abf3405b30335b23c727e9339663c503072109a707db28cf8b43c02e49b208",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/tests/train_model_graph_build/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/train_model_runtime_bindings"
+    },
+    {
+      "bytes": 7126,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/train_model_runtime_bindings/test_outputs.py",
+      "sha256": "f701077d86f24eb7fd99669924019af4518b569abc12eb8ebe3a9306c9db3c03",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/tests/train_model_runtime_bindings/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/transformer_forward"
+    },
+    {
+      "bytes": 2969,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/transformer_forward/test_outputs.py",
+      "sha256": "3d05e1f3350e920c52a7ee3c0d5a43135f08d93744bb82600b39a2775efbd2e2",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/tests/transformer_forward/test_outputs.py"
+      }
+    },
+    {
+      "bytes": 10100,
+      "kind": "file",
+      "mode": 420,
+      "path": "unit_dag.json",
+      "sha256": "79470057ca74ea0ca7a2da38ed6dc1e36f0c35baf39825b42eded8db2dd84705",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_mlsys_autodiff_pa1/unit_dag.json"
+      }
+    }
+  ],
+  "overlay_sha256": "bdc26d4a73b300dc11459124ce47e5f7d09a3bc154d9259a7cc9ffbe0f37c223",
+  "upstream": {
+    "kind": "loopsbench",
+    "revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+    "source_root_key": "loopsbench",
+    "task": "task_mlsys_autodiff_pa1"
+  },
+  "workspace_tree_sha256": "8c803cd9de734af6858fcb765f55dee6d81283dcd15c580b4d7528ff5ce27754"
+}

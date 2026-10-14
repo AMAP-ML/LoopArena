@@ -1,0 +1,10 @@
+# Support mass-per-energy units in greenhouse gas metric conversion
+
+`convert_gwp` currently converts greenhouse gas quantities expressed as plain masses (e.g., `t`) and mass rates (e.g., `Mt / a`), but raises `pint.errors.DimensionalityError` for emissions intensities expressed as mass per unit energy (e.g., `kg / MJ`). Extend the conversion so these mass-per-energy intensities work.
+
+## Requirements
+
+- `convert_gwp` must accept quantities whose units are mass divided by energy (such as `kg / MJ`) for every available greenhouse gas metric, converting the species while preserving the per-energy denominator.
+- The result must carry units equivalent to `<mass>_<target species> / <energy>` scaled by the metric's Global Warming Potential factor. For example, converting `5.0 kg CH4 / MJ` to CO2 with a GWP of 28 must yield `140.0 kg CO2 / MJ`.
+- Implement this by generalizing the intermediate unit used internally so it is built from the quantity's mass exponent, and add the matching context conversions to all emissions metric definitions and to the code that generates them, so every metric behaves consistently.
+- Preserve all existing behavior: conversions that already succeed (standard mass units, mass rates, and other supported dimensionalities) must continue to produce the same results.

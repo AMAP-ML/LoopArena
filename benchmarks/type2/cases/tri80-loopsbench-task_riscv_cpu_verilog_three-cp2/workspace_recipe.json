@@ -1,0 +1,893 @@
+{
+  "case_id": "tri80-loopsbench-task_riscv_cpu_verilog_three-cp2",
+  "files": [
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "Basic_Pipeline"
+    },
+    {
+      "bytes": 500,
+      "kind": "file",
+      "mode": 420,
+      "path": "Basic_Pipeline/ALU.v",
+      "sha256": "33360129cab22e838471c1fda0f49e956495771584a45e7e1204acdac603041b",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Basic_Pipeline/ALU.v"
+      }
+    },
+    {
+      "bytes": 265,
+      "kind": "file",
+      "mode": 420,
+      "path": "Basic_Pipeline/ALUMUX.v",
+      "sha256": "75ff3db2153bece3cd1120eda08cbbfabb7bc83c32eba98f336c779d01d2f8e7",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Basic_Pipeline/ALUMUX.v"
+      }
+    },
+    {
+      "bytes": 514,
+      "kind": "file",
+      "mode": 420,
+      "path": "Basic_Pipeline/AddrMUX.v",
+      "sha256": "8653058a47b2d54ca246b8bfcfdb8ffdc63c80197a555b962afac278f4978791",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Basic_Pipeline/AddrMUX.v"
+      }
+    },
+    {
+      "bytes": 4916,
+      "kind": "file",
+      "mode": 420,
+      "path": "Basic_Pipeline/Computer.v",
+      "sha256": "07b54046885b55336a335c7971e322394d7310d5eb8288f147d4cdc60d9c25b9",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Basic_Pipeline/Computer.v"
+      }
+    },
+    {
+      "bytes": 556,
+      "kind": "file",
+      "mode": 420,
+      "path": "Basic_Pipeline/Controller.v",
+      "sha256": "d00e6a1753bef72fc941e156dc7114ba272cd500ababf279337c417dc168e84a",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Basic_Pipeline/Controller.v"
+      }
+    },
+    {
+      "bytes": 483,
+      "kind": "file",
+      "mode": 420,
+      "path": "Basic_Pipeline/DMem.v",
+      "sha256": "4ce2a2c01e7cd264e91c805eba1b155cf9d0d9800eae7fe0e515019384ef1ceb",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Basic_Pipeline/DMem.v"
+      }
+    },
+    {
+      "bytes": 511,
+      "kind": "file",
+      "mode": 420,
+      "path": "Basic_Pipeline/DataMUX.v",
+      "sha256": "8e5ba7def103565eb903ac46426d8dd41eba860c50e7835a853a723748fae5df",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Basic_Pipeline/DataMUX.v"
+      }
+    },
+    {
+      "bytes": 1334,
+      "kind": "file",
+      "mode": 420,
+      "path": "Basic_Pipeline/EXMEMReg.v",
+      "sha256": "92fc4a04f4a8a9e08b05905456175616178d1225ba2cb7eb75639bb5488c2887",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Basic_Pipeline/EXMEMReg.v"
+      }
+    },
+    {
+      "bytes": 1100,
+      "kind": "file",
+      "mode": 420,
+      "path": "Basic_Pipeline/IDEXReg.v",
+      "sha256": "19b6ffec4098bf7bbb1c99f24612ba7dc961ddaad44bde5c2000d26a81a11713",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Basic_Pipeline/IDEXReg.v"
+      }
+    },
+    {
+      "bytes": 749,
+      "kind": "file",
+      "mode": 420,
+      "path": "Basic_Pipeline/IFIDReg.v",
+      "sha256": "f48da79ee14f95efcdffeffe696a6fe0af9a7208c11cae4aef4474dc6c0bb4d7",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Basic_Pipeline/IFIDReg.v"
+      }
+    },
+    {
+      "bytes": 2844,
+      "kind": "file",
+      "mode": 420,
+      "path": "Basic_Pipeline/IMem.v",
+      "sha256": "7df29b96454b648dca9a40d70e8bd54a2871c8e22d7673d31452b4aa4a541563",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Basic_Pipeline/IMem.v"
+      }
+    },
+    {
+      "bytes": 540,
+      "kind": "file",
+      "mode": 420,
+      "path": "Basic_Pipeline/ImmGen.v",
+      "sha256": "4a5e46a7cf81791845357b6a718ba4fc1a6f52ab4171955efd7caec380612c0e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Basic_Pipeline/ImmGen.v"
+      }
+    },
+    {
+      "bytes": 1124,
+      "kind": "file",
+      "mode": 420,
+      "path": "Basic_Pipeline/MEMWBReg.v",
+      "sha256": "ddcf4bf338787484a97206a5923aa82d1cca6bad81286f8746a73f7fddd1501b",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Basic_Pipeline/MEMWBReg.v"
+      }
+    },
+    {
+      "bytes": 239,
+      "kind": "file",
+      "mode": 420,
+      "path": "Basic_Pipeline/PC.v",
+      "sha256": "284e33bb07a1499900d79bfe4a46e758ed779ed34772e163117322573efae7c9",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Basic_Pipeline/PC.v"
+      }
+    },
+    {
+      "bytes": 209,
+      "kind": "file",
+      "mode": 420,
+      "path": "Basic_Pipeline/PCRelAddrAdder.v",
+      "sha256": "38d8c12e2b0374b0bd7d4daaaa7544c988f827f4b04f1158c5eadf1084a5364f",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Basic_Pipeline/PCRelAddrAdder.v"
+      }
+    },
+    {
+      "bytes": 691,
+      "kind": "file",
+      "mode": 420,
+      "path": "Basic_Pipeline/Reg.v",
+      "sha256": "0dcb60d3837142e7756363fbacd2b3b000715e1a337fe4b71556e65ad4a173e2",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Basic_Pipeline/Reg.v"
+      }
+    },
+    {
+      "bytes": 160,
+      "kind": "file",
+      "mode": 420,
+      "path": "Basic_Pipeline/SeqAddrAdder.v",
+      "sha256": "d400bf55a7213b07a2038428e2bf547d4d93e8b5acff41835d55757cc843f52e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Basic_Pipeline/SeqAddrAdder.v"
+      }
+    },
+    {
+      "bytes": 595,
+      "kind": "file",
+      "mode": 420,
+      "path": "Basic_Pipeline/retAddrAdder.v",
+      "sha256": "6a0fb5722152f900fe90a9f0c070b768d7ee8c760f1492fd2ab186f3f5ab87bc",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Basic_Pipeline/retAddrAdder.v"
+      }
+    },
+    {
+      "bytes": 2248,
+      "kind": "file",
+      "mode": 420,
+      "path": "Basic_Pipeline/seg7x16.v",
+      "sha256": "cefe2f95e4753f60ac66370e87eb9ad611b044ab4b40bcf67eebc6864f1d5553",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Basic_Pipeline/seg7x16.v"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "Final_Pipeline"
+    },
+    {
+      "bytes": 500,
+      "kind": "file",
+      "mode": 420,
+      "path": "Final_Pipeline/ALU.v",
+      "sha256": "33360129cab22e838471c1fda0f49e956495771584a45e7e1204acdac603041b",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Basic_Pipeline/ALU.v"
+      }
+    },
+    {
+      "bytes": 265,
+      "kind": "file",
+      "mode": 420,
+      "path": "Final_Pipeline/ALUMUX.v",
+      "sha256": "75ff3db2153bece3cd1120eda08cbbfabb7bc83c32eba98f336c779d01d2f8e7",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Basic_Pipeline/ALUMUX.v"
+      }
+    },
+    {
+      "bytes": 514,
+      "kind": "file",
+      "mode": 420,
+      "path": "Final_Pipeline/AddrMUX.v",
+      "sha256": "8653058a47b2d54ca246b8bfcfdb8ffdc63c80197a555b962afac278f4978791",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Basic_Pipeline/AddrMUX.v"
+      }
+    },
+    {
+      "bytes": 5786,
+      "kind": "file",
+      "mode": 420,
+      "path": "Final_Pipeline/Computer.v",
+      "sha256": "94bb228ebcb61a59132cb0c7304d04649d07a021851092f460d4e14c5b7a9447",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Final_Pipeline/Computer.v"
+      }
+    },
+    {
+      "bytes": 556,
+      "kind": "file",
+      "mode": 420,
+      "path": "Final_Pipeline/Controller.v",
+      "sha256": "d00e6a1753bef72fc941e156dc7114ba272cd500ababf279337c417dc168e84a",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Basic_Pipeline/Controller.v"
+      }
+    },
+    {
+      "bytes": 483,
+      "kind": "file",
+      "mode": 420,
+      "path": "Final_Pipeline/DMem.v",
+      "sha256": "4ce2a2c01e7cd264e91c805eba1b155cf9d0d9800eae7fe0e515019384ef1ceb",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Basic_Pipeline/DMem.v"
+      }
+    },
+    {
+      "bytes": 511,
+      "kind": "file",
+      "mode": 420,
+      "path": "Final_Pipeline/DataMUX.v",
+      "sha256": "8e5ba7def103565eb903ac46426d8dd41eba860c50e7835a853a723748fae5df",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Basic_Pipeline/DataMUX.v"
+      }
+    },
+    {
+      "bytes": 1357,
+      "kind": "file",
+      "mode": 420,
+      "path": "Final_Pipeline/EXMEMReg.v",
+      "sha256": "6a588274be8d77a7775e9b459db67d12f56f2187f3b462d22369be221c9208e5",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Final_Pipeline/EXMEMReg.v"
+      }
+    },
+    {
+      "bytes": 593,
+      "kind": "file",
+      "mode": 420,
+      "path": "Final_Pipeline/FWD.v",
+      "sha256": "e09f6848fcc9f6c78aa06b2db559872264dc006eb6f814f4816170c32917fe10",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Final_Pipeline/FWD.v"
+      }
+    },
+    {
+      "bytes": 495,
+      "kind": "file",
+      "mode": 420,
+      "path": "Final_Pipeline/FWDMUX.v",
+      "sha256": "808fa1a29158bed6c35fbe296126354b37254627a4c4ec9610d38c47b263052b",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Final_Pipeline/FWDMUX.v"
+      }
+    },
+    {
+      "bytes": 258,
+      "kind": "file",
+      "mode": 420,
+      "path": "Final_Pipeline/Flush.v",
+      "sha256": "78e94f70dd321d2ed531a66fb128a94cedc92591f0efd3af7508e1c82d700b6d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Final_Pipeline/Flush.v"
+      }
+    },
+    {
+      "bytes": 1308,
+      "kind": "file",
+      "mode": 420,
+      "path": "Final_Pipeline/IDEXReg.v",
+      "sha256": "96d64f55dbb9677117d0b030b40b9d91af18bc2ea9e0a9edd967cdf2636fc917",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Final_Pipeline/IDEXReg.v"
+      }
+    },
+    {
+      "bytes": 795,
+      "kind": "file",
+      "mode": 420,
+      "path": "Final_Pipeline/IFIDReg.v",
+      "sha256": "2d416162d50eee763dc668ed1697e69d3742e3d05e260ce23a0bb90df8fe2646",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Final_Pipeline/IFIDReg.v"
+      }
+    },
+    {
+      "bytes": 1323,
+      "kind": "file",
+      "mode": 420,
+      "path": "Final_Pipeline/IMem.v",
+      "sha256": "4839d9e22cafded957d8a935d4fac8355d927f8658463f55c02963abd83e586f",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Final_Pipeline/IMem.v"
+      }
+    },
+    {
+      "bytes": 540,
+      "kind": "file",
+      "mode": 420,
+      "path": "Final_Pipeline/ImmGen.v",
+      "sha256": "4a5e46a7cf81791845357b6a718ba4fc1a6f52ab4171955efd7caec380612c0e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Basic_Pipeline/ImmGen.v"
+      }
+    },
+    {
+      "bytes": 1124,
+      "kind": "file",
+      "mode": 420,
+      "path": "Final_Pipeline/MEMWBReg.v",
+      "sha256": "ddcf4bf338787484a97206a5923aa82d1cca6bad81286f8746a73f7fddd1501b",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Basic_Pipeline/MEMWBReg.v"
+      }
+    },
+    {
+      "bytes": 272,
+      "kind": "file",
+      "mode": 420,
+      "path": "Final_Pipeline/PC.v",
+      "sha256": "865911c6697e0ad3e4256f0009506eb166dc8fbcdeaeaaed24f632a18933efcd",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Final_Pipeline/PC.v"
+      }
+    },
+    {
+      "bytes": 209,
+      "kind": "file",
+      "mode": 420,
+      "path": "Final_Pipeline/PCRelAddrAdder.v",
+      "sha256": "38d8c12e2b0374b0bd7d4daaaa7544c988f827f4b04f1158c5eadf1084a5364f",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Basic_Pipeline/PCRelAddrAdder.v"
+      }
+    },
+    {
+      "bytes": 691,
+      "kind": "file",
+      "mode": 420,
+      "path": "Final_Pipeline/Reg.v",
+      "sha256": "0dcb60d3837142e7756363fbacd2b3b000715e1a337fe4b71556e65ad4a173e2",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Basic_Pipeline/Reg.v"
+      }
+    },
+    {
+      "bytes": 160,
+      "kind": "file",
+      "mode": 420,
+      "path": "Final_Pipeline/SeqAddrAdder.v",
+      "sha256": "d400bf55a7213b07a2038428e2bf547d4d93e8b5acff41835d55757cc843f52e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Basic_Pipeline/SeqAddrAdder.v"
+      }
+    },
+    {
+      "bytes": 349,
+      "kind": "file",
+      "mode": 420,
+      "path": "Final_Pipeline/Stall.v",
+      "sha256": "dbe52131fc2212cdb765af99ff1a144fc7cd5ea6353bc1607cc6ff5b364a1c02",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Final_Pipeline/Stall.v"
+      }
+    },
+    {
+      "bytes": 595,
+      "kind": "file",
+      "mode": 420,
+      "path": "Final_Pipeline/retAddrAdder.v",
+      "sha256": "6a0fb5722152f900fe90a9f0c070b768d7ee8c760f1492fd2ab186f3f5ab87bc",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Basic_Pipeline/retAddrAdder.v"
+      }
+    },
+    {
+      "bytes": 2248,
+      "kind": "file",
+      "mode": 420,
+      "path": "Final_Pipeline/seg7x16.v",
+      "sha256": "cefe2f95e4753f60ac66370e87eb9ad611b044ab4b40bcf67eebc6864f1d5553",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Basic_Pipeline/seg7x16.v"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "Single_Cycle"
+    },
+    {
+      "bytes": 1169,
+      "kind": "file",
+      "mode": 420,
+      "path": "Single_Cycle/ALU.v",
+      "sha256": "79bda51c296141451d8ce1117de4c645c6f1325680174f7d4b69afd3a8b11b6c",
+      "source": {
+        "blob": "79bda51c296141451d8ce1117de4c645c6f1325680174f7d4b69afd3a8b11b6c",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 265,
+      "kind": "file",
+      "mode": 420,
+      "path": "Single_Cycle/ALUMUX.v",
+      "sha256": "75ff3db2153bece3cd1120eda08cbbfabb7bc83c32eba98f336c779d01d2f8e7",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Basic_Pipeline/ALUMUX.v"
+      }
+    },
+    {
+      "bytes": 942,
+      "kind": "file",
+      "mode": 420,
+      "path": "Single_Cycle/AddrMUX.v",
+      "sha256": "cd80af5707dbdcb2d3afd2e5d43d25baf39bb1cad67a1615cb2779e32712f378",
+      "source": {
+        "blob": "cd80af5707dbdcb2d3afd2e5d43d25baf39bb1cad67a1615cb2779e32712f378",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 3144,
+      "kind": "file",
+      "mode": 420,
+      "path": "Single_Cycle/Computer.v",
+      "sha256": "426fd0fa84f06bb8875cb8d83e6172714c6a963e28a3ff1de893b0baf92ba019",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Single_Cycle/Computer.v"
+      }
+    },
+    {
+      "bytes": 1712,
+      "kind": "file",
+      "mode": 420,
+      "path": "Single_Cycle/Controller.v",
+      "sha256": "0bfa8c7e33d13d91a3cd2a4eb21ed2c77aaf875bf30e2b34bee32ba8bd64bfd3",
+      "source": {
+        "blob": "0bfa8c7e33d13d91a3cd2a4eb21ed2c77aaf875bf30e2b34bee32ba8bd64bfd3",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 585,
+      "kind": "file",
+      "mode": 420,
+      "path": "Single_Cycle/DMem.v",
+      "sha256": "06b138a0647c82b61d90f95f960c6b5f75240ede590fa0de01b213753caef483",
+      "source": {
+        "blob": "06b138a0647c82b61d90f95f960c6b5f75240ede590fa0de01b213753caef483",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 575,
+      "kind": "file",
+      "mode": 420,
+      "path": "Single_Cycle/DataMUX.v",
+      "sha256": "1c3f54b930b6842fac1745ec6f0e990604fca8d9efaf34017391c7b7a92790a3",
+      "source": {
+        "blob": "1c3f54b930b6842fac1745ec6f0e990604fca8d9efaf34017391c7b7a92790a3",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 1633,
+      "kind": "file",
+      "mode": 420,
+      "path": "Single_Cycle/IMem.v",
+      "sha256": "b0c0a17cbb064cde14305583978238b39b065a42a7bb4eff846da5ed8f4f73d1",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Single_Cycle/IMem.v"
+      }
+    },
+    {
+      "bytes": 1767,
+      "kind": "file",
+      "mode": 420,
+      "path": "Single_Cycle/ImmGen.v",
+      "sha256": "dc6e60806c5949c54ec5294a046660844a4620f81bbe061cf62fc6120fe95725",
+      "source": {
+        "blob": "dc6e60806c5949c54ec5294a046660844a4620f81bbe061cf62fc6120fe95725",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 238,
+      "kind": "file",
+      "mode": 420,
+      "path": "Single_Cycle/PC.v",
+      "sha256": "6d255190e3076d7a77a753963a5df44c73a597a74678a06f286cef784f74647b",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Single_Cycle/PC.v"
+      }
+    },
+    {
+      "bytes": 209,
+      "kind": "file",
+      "mode": 420,
+      "path": "Single_Cycle/PCRelAddrAdder.v",
+      "sha256": "38d8c12e2b0374b0bd7d4daaaa7544c988f827f4b04f1158c5eadf1084a5364f",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Basic_Pipeline/PCRelAddrAdder.v"
+      }
+    },
+    {
+      "bytes": 818,
+      "kind": "file",
+      "mode": 420,
+      "path": "Single_Cycle/Reg.v",
+      "sha256": "53918b401a7d4a0f0af11968e974ffa3598545a73a0474de22ccaf8148b9a004",
+      "source": {
+        "blob": "53918b401a7d4a0f0af11968e974ffa3598545a73a0474de22ccaf8148b9a004",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 160,
+      "kind": "file",
+      "mode": 420,
+      "path": "Single_Cycle/SeqAddrAdder.v",
+      "sha256": "d400bf55a7213b07a2038428e2bf547d4d93e8b5acff41835d55757cc843f52e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Basic_Pipeline/SeqAddrAdder.v"
+      }
+    },
+    {
+      "bytes": 2248,
+      "kind": "file",
+      "mode": 420,
+      "path": "Single_Cycle/seg7x16.v",
+      "sha256": "cefe2f95e4753f60ac66370e87eb9ad611b044ab4b40bcf67eebc6864f1d5553",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/base/Basic_Pipeline/seg7x16.v"
+      }
+    },
+    {
+      "bytes": 6903,
+      "kind": "file",
+      "mode": 420,
+      "path": "module_dag.yaml",
+      "sha256": "f6d906bb69ebb1c390bcbdd59cd4e6a090ab802bb53f33d41d766559732a846a",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/module_dag.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "requirements"
+    },
+    {
+      "bytes": 1166,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/basic_pipeline_datapath.yaml",
+      "sha256": "59865a2473c206998356f2b0893917f040954b774add544d8c8e2e7daf1ecb9f",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/requirements/basic_pipeline_datapath.yaml"
+      }
+    },
+    {
+      "bytes": 1568,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/basic_pipeline_registers.yaml",
+      "sha256": "4ea5ab03b9702107f94bfbcbd1cbfa3f4288f02d62c795c17cf2314ae1b83b88",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/requirements/basic_pipeline_registers.yaml"
+      }
+    },
+    {
+      "bytes": 1221,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/final_pipeline_datapath.yaml",
+      "sha256": "c2a0996c3bee68ffc2551443595c9b0b5b4937a61272108dfcc4e24c5e0a3c92",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/requirements/final_pipeline_datapath.yaml"
+      }
+    },
+    {
+      "bytes": 1740,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/final_pipeline_hazard.yaml",
+      "sha256": "a6a056d6ba6ef23c4cd9a5b59fdcb5d35836fdc54ef093164bbcc7b02b8f0fd0",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/requirements/final_pipeline_hazard.yaml"
+      }
+    },
+    {
+      "bytes": 1577,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/final_pipeline_pc_and_regs.yaml",
+      "sha256": "3fd2ef026f0c809693c58737c81ec46aa0c8adcc6112b74147c288a04c71992c",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/requirements/final_pipeline_pc_and_regs.yaml"
+      }
+    },
+    {
+      "bytes": 1438,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/single_cycle.yaml",
+      "sha256": "f24b09546e7882017e5e8bdba7b193f8bfaf49343e3656e3bd1f81ebf8927426",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/requirements/single_cycle.yaml"
+      }
+    },
+    {
+      "bytes": 814,
+      "kind": "file",
+      "mode": 420,
+      "path": "run-tests.sh",
+      "sha256": "8f76e85e40e118108d19df8f1bf5d544f01a3a21750277c1daf6edb2076c8fde",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/run-tests.sh"
+      }
+    },
+    {
+      "bytes": 8132,
+      "kind": "file",
+      "mode": 420,
+      "path": "task.yaml",
+      "sha256": "6d03a80aa77f30b1f83f3ee654177fbdcf9dea42567cb81b41e68402723eea9e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/task.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/basic_pipeline_datapath"
+    },
+    {
+      "bytes": 6134,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/basic_pipeline_datapath/test_outputs.py",
+      "sha256": "0f478d7f8dd37a42dbf04f67b0ce3c34147aacba9cd7ff334c99679e256d906b",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/tests/basic_pipeline_datapath/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/basic_pipeline_registers"
+    },
+    {
+      "bytes": 4263,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/basic_pipeline_registers/test_outputs.py",
+      "sha256": "c3291f366de31aa5680bfb9539dacbc4a3e6f430685e935a9affee8d7025e8be",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/tests/basic_pipeline_registers/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/final_pipeline_datapath"
+    },
+    {
+      "bytes": 2621,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/final_pipeline_datapath/test_outputs.py",
+      "sha256": "1f143c325b2b61bfa94da6959010e51c5ba8c28a44ffc4504536d1159cac2154",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/tests/final_pipeline_datapath/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/final_pipeline_hazard"
+    },
+    {
+      "bytes": 7526,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/final_pipeline_hazard/test_outputs.py",
+      "sha256": "c080b0c5aaf788f9bf63e67c0271db05ce735735e35c26b2e9dbae2e8d2b1c13",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/tests/final_pipeline_hazard/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/final_pipeline_pc_and_regs"
+    },
+    {
+      "bytes": 4088,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/final_pipeline_pc_and_regs/test_outputs.py",
+      "sha256": "a719c940ddab56e73863c9b6c7c8ddbd02741d2d3adb34a037b747d783dab5ef",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/tests/final_pipeline_pc_and_regs/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/single_cycle"
+    },
+    {
+      "bytes": 13770,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/single_cycle/test_outputs.py",
+      "sha256": "a67476b8632a958f8a410847f59c090ff739d1fe6fcaf8ecf0e3ce544dafeaef",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/tests/single_cycle/test_outputs.py"
+      }
+    },
+    {
+      "bytes": 32642,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_outputs.py",
+      "sha256": "6c07624c42cff13397c0635260a7a1a3ddfb83e7d78c51b7cb9771272f96e21c",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/tests/test_outputs.py"
+      }
+    },
+    {
+      "bytes": 998,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_task_runner.py",
+      "sha256": "51268492199b03b4bfab5a3981f177be6d4d7c11bcfffb0d475fdaa4fcba5775",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/tests/test_task_runner.py"
+      }
+    },
+    {
+      "bytes": 5725,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_unit_runner.py",
+      "sha256": "70093346175b9f09c077cf1b0a50ad6f20d6d35f92f211334b1090b31607d697",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/tests/test_unit_runner.py"
+      }
+    },
+    {
+      "bytes": 2796,
+      "kind": "file",
+      "mode": 420,
+      "path": "unit_dag.json",
+      "sha256": "887ce1be214a919f008a82b31645f79087b19ab5db771d942c6c98306712e1ce",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_riscv_cpu_verilog_three/unit_dag.json"
+      }
+    }
+  ],
+  "overlay_sha256": "c8bd14306c4be8ab4311642a0a259cb4e7652c01e4d2d9d85a335d8bbe757222",
+  "upstream": {
+    "kind": "loopsbench",
+    "revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+    "source_root_key": "loopsbench",
+    "task": "task_riscv_cpu_verilog_three"
+  },
+  "workspace_tree_sha256": "4cd3c0bb20f0792f433d00d94bb736b016a4eaea2058a976b6a98321b58b2bd4"
+}

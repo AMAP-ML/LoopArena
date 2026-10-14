@@ -1,0 +1,19 @@
+{
+  "adapter_kind": "loopsbench",
+  "checkpoint_context_policy": "single_episode",
+  "checkpoint_failure_policy": "stop_after_task",
+  "official_task_id": "loopsbench:task_sklearn_ml_toolchain",
+  "release_content_hash": "84ae4156df6a132416109e2cf27bb72bcbde1e764dea40f3abab5e4ade942020",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/task.json",
+      "evaluator_plan_sha256": "6b5768d15d45c866e9bf5c642dd1eda658c59baca725b04d4fde2e0d54d74eb1",
+      "step_id": "task",
+      "task_ref": "tasks/task.md",
+      "task_sha256": "ce968472303eb3d99605397b1d62f759e352a530923837a88062ac164e3045e2"
+    }
+  ],
+  "target_step": "task",
+  "task_scope": "official_full_task",
+  "workspace_origin": "pinned_loopsbench_release_source_base"
+}

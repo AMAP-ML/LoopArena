@@ -1,0 +1,20 @@
+{
+  "adapter_kind": "beyondswe_harbor",
+  "checkpoint_context_policy": "single_episode",
+  "checkpoint_failure_policy": "stop_after_task",
+  "official_parent_commit": "5b7252c2ec3d04fa6c9fdaafbc0afba6e05a2573",
+  "official_task_id": "beyondswe:obspy_obspy_pr2949",
+  "official_workdir": "/workspace/obspy",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/task.json",
+      "evaluator_plan_sha256": "4b690404dac92ab12818717e28dfb95563376aed524b12a593f187f382352563",
+      "step_id": "task",
+      "task_ref": "tasks/task.md",
+      "task_sha256": "fea1afc511147d9b9a657b8031ca66b32b9c351aa2fba35fba75238742f81a18"
+    }
+  ],
+  "target_step": "task",
+  "task_scope": "official_full_task",
+  "workspace_origin": "pinned_source_image_parent_commit"
+}

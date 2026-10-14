@@ -1,0 +1,629 @@
+{
+  "case_id": "tri80-loopsbench-task_frama_c-cp3",
+  "files": [
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "analyzer"
+    },
+    {
+      "bytes": 50,
+      "kind": "file",
+      "mode": 420,
+      "path": "analyzer/__init__.py",
+      "sha256": "a24e152bc2ebf1fa196ce5d1b15f5d0cbffd0937309755e81133aa18ec7fab8d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_frama_c/base/analyzer/__init__.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "benchmarks"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "benchmarks/cwe"
+    },
+    {
+      "bytes": 488,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/cwe/cwe119_buffer_overflow.c",
+      "sha256": "9407e5c7f4d445c6ac6deb12fd8eaa18466be87a0062364238c2990b6b50eb5d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_frama_c/base/benchmarks/cwe/cwe119_buffer_overflow.c"
+      }
+    },
+    {
+      "bytes": 636,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/cwe/cwe190_integer_overflow.c",
+      "sha256": "cdb78f296dc841e43db333b12681297f4ef576ee538fdc2a9decda0bd1798aa3",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_frama_c/base/benchmarks/cwe/cwe190_integer_overflow.c"
+      }
+    },
+    {
+      "bytes": 464,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/cwe/cwe416_use_after_free.c",
+      "sha256": "967ad475c0ac4eac193b5878e76bc346f46711b2d6cd9ac46792d1a2e0d207d2",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_frama_c/base/benchmarks/cwe/cwe416_use_after_free.c"
+      }
+    },
+    {
+      "bytes": 462,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/cwe/cwe787_out_of_bounds_write.c",
+      "sha256": "39078dc6e68b24ef57674eeb62b391690ad9af8353a34bd6c787470eb773e875",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_frama_c/base/benchmarks/cwe/cwe787_out_of_bounds_write.c"
+      }
+    },
+    {
+      "bytes": 717,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/cwe/cwe_basic_errors.c",
+      "sha256": "24b0fe8bab2f0001fa8615caddf159278811b2d54f1b2888315da5738f683557",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_frama_c/base/benchmarks/cwe/cwe_basic_errors.c"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "benchmarks/programs"
+    },
+    {
+      "bytes": 908,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/programs/algorithms.c",
+      "sha256": "93327a6c7f1be36b4b9922bd35b3eace5fe21205fc1a9d5aa13e3c7570d9fdb7",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_frama_c/base/benchmarks/programs/algorithms.c"
+      }
+    },
+    {
+      "bytes": 1171,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/programs/linked_list.c",
+      "sha256": "a4a5f2655e7f731fbe8d9e89435dba8d3c88b977d6a468a20d461194f2d2d924",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_frama_c/base/benchmarks/programs/linked_list.c"
+      }
+    },
+    {
+      "bytes": 846,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/programs/loops_and_paths.c",
+      "sha256": "d32a3acad32bee46302fa645e436baabf002a8fcebfc0478b166bd3ad808c9cc",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_frama_c/base/benchmarks/programs/loops_and_paths.c"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "experiments"
+    },
+    {
+      "bytes": 3751,
+      "kind": "file",
+      "mode": 420,
+      "path": "experiments/eva_exp.py",
+      "sha256": "7118ab72c0daf0736a06cfe461469b9cd400ea2c28294d3c23e3f3d5824c4f4f",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_frama_c/gold_patches/eva.diff",
+        "patch_sha256": "176a24e853413dcff6d2c2cc9f2e1370392852ea44f43d78215b08f02b2fa8aa",
+        "path": "experiments/eva_exp.py"
+      }
+    },
+    {
+      "bytes": 5025,
+      "kind": "file",
+      "mode": 420,
+      "path": "experiments/frama_c_exp.py",
+      "sha256": "838557dc9e62d40548efefb1b88a438de468ef40bddf88b520b91aec2712a8d4",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_frama_c/gold_patches/frama_c.diff",
+        "patch_sha256": "66f5dce654f71c6995a96bacb599eb20f37b5aa21e606a5437f58637ab3a61bb",
+        "path": "experiments/frama_c_exp.py"
+      }
+    },
+    {
+      "bytes": 1543,
+      "kind": "file",
+      "mode": 420,
+      "path": "module_dag.yaml",
+      "sha256": "8ccfdffcd9feddbea966c49df73f11be8db5a226a063c7ffb9fbca0c1e974f22",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_frama_c/module_dag.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "requirements"
+    },
+    {
+      "bytes": 16,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements.txt",
+      "sha256": "af45607224c8227c3362574c5979e096f8b15ffa1dceb4e4ab63908569d6c702",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_frama_c/base/requirements.txt"
+      }
+    },
+    {
+      "bytes": 2471,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/eva.yaml",
+      "sha256": "175c923e860a94313bb9a882d19bc312892a0370fff6e557daad8dd83591b3a3",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_frama_c/requirements/eva.yaml"
+      }
+    },
+    {
+      "bytes": 2435,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/frama_c.yaml",
+      "sha256": "a838c6d71a2b6176ed2808bacd7dd7605e5b26fc68ef57bda6d9974b9e34fa2a",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_frama_c/requirements/frama_c.yaml"
+      }
+    },
+    {
+      "bytes": 1950,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/frama_c_sv.yaml",
+      "sha256": "53819f55c96b619529676e94be9740e1193341fd0bd0397aa1dfcdc1aeb49a79",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_frama_c/requirements/frama_c_sv.yaml"
+      }
+    },
+    {
+      "bytes": 594,
+      "kind": "file",
+      "mode": 493,
+      "path": "run-tests.sh",
+      "sha256": "cb5d2102f645551613d27aa663c1dfce1d89d9ea0fa8483fbb8e3d110559119d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_frama_c/run-tests.sh"
+      }
+    },
+    {
+      "bytes": 689,
+      "kind": "file",
+      "mode": 493,
+      "path": "run.sh",
+      "sha256": "98b9ef444b75d1c86bf37f44ced0e79afcbdbf37a68e12ca76f95197fdcb7561",
+      "source": {
+        "blob": "98b9ef444b75d1c86bf37f44ced0e79afcbdbf37a68e12ca76f95197fdcb7561",
+        "kind": "overlay"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "src"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "src/eva"
+    },
+    {
+      "bytes": 272,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/eva/__init__.py",
+      "sha256": "05c0e5dd67d32d8704b82847fef53fc888bf4d84420c564fe3ced3d5cc375952",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_frama_c/gold_patches/eva.diff",
+        "patch_sha256": "176a24e853413dcff6d2c2cc9f2e1370392852ea44f43d78215b08f02b2fa8aa",
+        "path": "src/eva/__init__.py"
+      }
+    },
+    {
+      "bytes": 11191,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/eva/abstract_domain.py",
+      "sha256": "72129484ed51a0d982fb9595216dcc7afd42c37469f340eee253fce31b005747",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_frama_c/gold_patches/eva.diff",
+        "patch_sha256": "176a24e853413dcff6d2c2cc9f2e1370392852ea44f43d78215b08f02b2fa8aa",
+        "path": "src/eva/abstract_domain.py"
+      }
+    },
+    {
+      "bytes": 6704,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/eva/alarm_system.py",
+      "sha256": "501fc32a693afcc68cc2dfba5cd8feeaff94a048306c59c5da9af76744864a86",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_frama_c/gold_patches/eva.diff",
+        "patch_sha256": "176a24e853413dcff6d2c2cc9f2e1370392852ea44f43d78215b08f02b2fa8aa",
+        "path": "src/eva/alarm_system.py"
+      }
+    },
+    {
+      "bytes": 5039,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/eva/builtin_functions.py",
+      "sha256": "9664ed88ad0deb4fcdfaa9f2b6e55f29e998fb8b263958dc5592f978d43015ba",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_frama_c/gold_patches/eva.diff",
+        "patch_sha256": "176a24e853413dcff6d2c2cc9f2e1370392852ea44f43d78215b08f02b2fa8aa",
+        "path": "src/eva/builtin_functions.py"
+      }
+    },
+    {
+      "bytes": 6816,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/eva/memory_model.py",
+      "sha256": "9a3daa1ebe2f94257d7c69ff80d23c2c87aac3f9aa16230f6798f5d922ceb22f",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_frama_c/gold_patches/eva.diff",
+        "patch_sha256": "176a24e853413dcff6d2c2cc9f2e1370392852ea44f43d78215b08f02b2fa8aa",
+        "path": "src/eva/memory_model.py"
+      }
+    },
+    {
+      "bytes": 9452,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/eva/value_analysis.py",
+      "sha256": "081ac8b2ed109140b6471bf79e9e5a85c82adfecdd0adb99db792aab96508b94",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_frama_c/gold_patches/eva.diff",
+        "patch_sha256": "176a24e853413dcff6d2c2cc9f2e1370392852ea44f43d78215b08f02b2fa8aa",
+        "path": "src/eva/value_analysis.py"
+      }
+    },
+    {
+      "bytes": 4507,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/eva/widening.py",
+      "sha256": "41127994f9d6756eb7dc59bacc43498db47b0a30c72e584ea04148fed249f2b4",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_frama_c/gold_patches/eva.diff",
+        "patch_sha256": "176a24e853413dcff6d2c2cc9f2e1370392852ea44f43d78215b08f02b2fa8aa",
+        "path": "src/eva/widening.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "src/frama_c"
+    },
+    {
+      "bytes": 82,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/frama_c/__init__.py",
+      "sha256": "8b2d89a856d4bc28028990f2b566fc2016a0115467ec814fe6c1f6f71e79a21e",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_frama_c/gold_patches/frama_c.diff",
+        "patch_sha256": "66f5dce654f71c6995a96bacb599eb20f37b5aa21e606a5437f58637ab3a61bb",
+        "path": "src/frama_c/__init__.py"
+      }
+    },
+    {
+      "bytes": 10616,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/frama_c/ast.py",
+      "sha256": "f1d9dbbc24113cbd1dd2c3f55e473d6c2dc242217634a6264dab88bdb4151f92",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_frama_c/gold_patches/frama_c.diff",
+        "patch_sha256": "66f5dce654f71c6995a96bacb599eb20f37b5aa21e606a5437f58637ab3a61bb",
+        "path": "src/frama_c/ast.py"
+      }
+    },
+    {
+      "bytes": 26208,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/frama_c/c_parser.py",
+      "sha256": "4dc7c69b1b2df16035571b5c3f99f8934cdab1d2347325f6293b990333014399",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_frama_c/gold_patches/frama_c.diff",
+        "patch_sha256": "66f5dce654f71c6995a96bacb599eb20f37b5aa21e606a5437f58637ab3a61bb",
+        "path": "src/frama_c/c_parser.py"
+      }
+    },
+    {
+      "bytes": 10310,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/frama_c/cfg.py",
+      "sha256": "4fdfc9eb711f25694d8a2f958fcaa51d1bf9a55e53727aa418a06a13b3993852",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_frama_c/gold_patches/frama_c.diff",
+        "patch_sha256": "66f5dce654f71c6995a96bacb599eb20f37b5aa21e606a5437f58637ab3a61bb",
+        "path": "src/frama_c/cfg.py"
+      }
+    },
+    {
+      "bytes": 8276,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/frama_c/kernel.py",
+      "sha256": "c45228e71dc8c811c8d2627e4d67d253e3462dde9fb89235e7042caa9a9021be",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_frama_c/gold_patches/frama_c.diff",
+        "patch_sha256": "66f5dce654f71c6995a96bacb599eb20f37b5aa21e606a5437f58637ab3a61bb",
+        "path": "src/frama_c/kernel.py"
+      }
+    },
+    {
+      "bytes": 9527,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/frama_c/type_system.py",
+      "sha256": "db50637711d4e8ece2428c36161354a49c003eeafafad686ab1054dbf514b7df",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_frama_c/gold_patches/frama_c.diff",
+        "patch_sha256": "66f5dce654f71c6995a96bacb599eb20f37b5aa21e606a5437f58637ab3a61bb",
+        "path": "src/frama_c/type_system.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "sv_comp"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "sv_comp/benchmarks"
+    },
+    {
+      "bytes": 426,
+      "kind": "file",
+      "mode": 420,
+      "path": "sv_comp/benchmarks/loop_sum_safe.c",
+      "sha256": "80f32a17a423c3fe8095dec27a6351236a1294fd6b2882ba20a9211e47a279c4",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_frama_c/base/sv_comp/benchmarks/loop_sum_safe.c"
+      }
+    },
+    {
+      "bytes": 461,
+      "kind": "file",
+      "mode": 420,
+      "path": "sv_comp/benchmarks/safe_addition.c",
+      "sha256": "4235749cfc2f239602f428c5bb600b19b36f060a4eb97859f18fa00dcf4fbbef",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_frama_c/base/sv_comp/benchmarks/safe_addition.c"
+      }
+    },
+    {
+      "bytes": 410,
+      "kind": "file",
+      "mode": 420,
+      "path": "sv_comp/benchmarks/safe_power.c",
+      "sha256": "99ae02aa18420bffb96d95181f45e6c5090a2cb6177deffb62b642989fb154c4",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_frama_c/base/sv_comp/benchmarks/safe_power.c"
+      }
+    },
+    {
+      "bytes": 362,
+      "kind": "file",
+      "mode": 420,
+      "path": "sv_comp/benchmarks/safe_square.c",
+      "sha256": "c6209cd89e81a7f583baf8193eb93457b2423d1391a884a18a7cb63d04c47927",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_frama_c/base/sv_comp/benchmarks/safe_square.c"
+      }
+    },
+    {
+      "bytes": 460,
+      "kind": "file",
+      "mode": 420,
+      "path": "sv_comp/benchmarks/unsafe_addition.c",
+      "sha256": "b03a4e9915b4dcd491e4fd54d8e74356099ff591dd935207f1d8c300e56d0833",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_frama_c/base/sv_comp/benchmarks/unsafe_addition.c"
+      }
+    },
+    {
+      "bytes": 359,
+      "kind": "file",
+      "mode": 420,
+      "path": "sv_comp/benchmarks/unsafe_square.c",
+      "sha256": "303bd104a5cdfa6d706bad2edaa83ffc28f79dee7c081d3adb7145a150375975",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_frama_c/base/sv_comp/benchmarks/unsafe_square.c"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "sv_comp/properties"
+    },
+    {
+      "bytes": 41,
+      "kind": "file",
+      "mode": 420,
+      "path": "sv_comp/properties/no-overflow.prp",
+      "sha256": "23577be5482c86b758e4bd39b0d4e54372b223dc9edfacdd6b20480e1bd243c3",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_frama_c/base/sv_comp/properties/no-overflow.prp"
+      }
+    },
+    {
+      "bytes": 52,
+      "kind": "file",
+      "mode": 420,
+      "path": "sv_comp/properties/unreach-call.prp",
+      "sha256": "a4e1bace4e1e2df46a7cb5c849f93c701acb9a73f2cbb51fea4a00dfb3ce958c",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_frama_c/base/sv_comp/properties/unreach-call.prp"
+      }
+    },
+    {
+      "bytes": 41,
+      "kind": "file",
+      "mode": 420,
+      "path": "sv_comp/properties/valid-memsafety.prp",
+      "sha256": "1a0bcd7b1b4a7a034a9c8320ddeb51edfcaffbe5f138749eeee23f3741b36dac",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_frama_c/base/sv_comp/properties/valid-memsafety.prp"
+      }
+    },
+    {
+      "bytes": 449,
+      "kind": "file",
+      "mode": 420,
+      "path": "sv_comp/tasks.yaml",
+      "sha256": "3e26cc43a6abffbc7bf8be3d13beac1a0eeae075537c681d3d8b9c728312fee6",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_frama_c/base/sv_comp/tasks.yaml"
+      }
+    },
+    {
+      "bytes": 1256,
+      "kind": "file",
+      "mode": 420,
+      "path": "task.yaml",
+      "sha256": "eab2a470e84285e0f89d0f52039826bb279880f19379a2d3c94fcfa1b6e1780b",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_frama_c/task.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/eva"
+    },
+    {
+      "bytes": 1954,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/eva/test_outputs.py",
+      "sha256": "1c87a6e762a25fc50e66c4f9aae24b467d506d8c34694a6067a158c42e921f9f",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_frama_c/tests/eva/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/frama_c"
+    },
+    {
+      "bytes": 2142,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/frama_c/test_outputs.py",
+      "sha256": "432487b7d364cfda553a48612e663b1cbe47c13dab0c2d6556087e16e1d0fd37",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_frama_c/tests/frama_c/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/frama_c_sv"
+    },
+    {
+      "bytes": 1877,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/frama_c_sv/test_outputs.py",
+      "sha256": "f20ba169099ceb853d536eb707a6f490299acc768679f42b4a6a065e6eb8f117",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_frama_c/tests/frama_c_sv/test_outputs.py"
+      }
+    },
+    {
+      "bytes": 507,
+      "kind": "file",
+      "mode": 420,
+      "path": "unit_dag.json",
+      "sha256": "242b93bd902443e238f3d92631237079609e98870c3760b68c800bb14a7b97b2",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_frama_c/unit_dag.json"
+      }
+    }
+  ],
+  "overlay_sha256": "f007fc029c778dd3bb41f375b52803f7d6d81b1f2f4d74870bb178d1648ce3e2",
+  "upstream": {
+    "kind": "loopsbench",
+    "revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+    "source_root_key": "loopsbench",
+    "task": "task_frama_c"
+  },
+  "workspace_tree_sha256": "80d3359454ce58400d7bea7d333013a3bb56095d7650a3cce9ab15b7ecef7db9"
+}

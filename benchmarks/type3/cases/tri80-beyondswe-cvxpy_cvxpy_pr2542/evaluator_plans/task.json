@@ -1,0 +1,19 @@
+{
+  "adapter_config": {
+    "docker_executable": "docker",
+    "task_dir": "/opt/looparena/evaluator_assets/beyondswe_type3/tri80-beyondswe-cvxpy_cvxpy_pr2542/task"
+  },
+  "adapter_kind": "beyondswe_harbor",
+  "adapter_version": "harbor-verifier-v1",
+  "network": "host",
+  "pass_policy": "reward-equals-one",
+  "runtime_identity": {
+    "image_id": "sha256:f764ef8f211e4ad27304dd067132ab6127ca9320ea1f6815878d500c79e62e1e",
+    "image_reference": "aweaiteam/beyondswe:cvxpy_cvxpy_pr2542",
+    "platform": "linux/amd64",
+    "workdir": "/workspace/cvxpy"
+  },
+  "solve_network": "host",
+  "source_revision": "7d2ced21b4c85f646d5ba8786875d7fbbe08ed49",
+  "timeout_sec": 1200
+}

@@ -1,0 +1,29 @@
+{
+  "adapter_config": {
+    "docker_executable": "docker",
+    "expected_test_count": 22,
+    "expected_unit_ids": [
+      "cvc4",
+      "cvc4sy",
+      "cvc5"
+    ],
+    "result_protocol": "source_run_tests",
+    "runtime_assets_dir": "/opt/looparena/evaluator_assets/evaluator_runtime",
+    "task_dir": "/opt/looparena/evaluator_assets/tasks/task_cvc_smt_solver"
+  },
+  "adapter_kind": "loopsbench",
+  "adapter_version": "source-run-tests-v1",
+  "evaluator_revision": "5880b64491e2cac2f83d497153ed173b8a995b8b",
+  "network": "bridge",
+  "pass_policy": "all-source-unit-tests-pass",
+  "runtime_identity": {
+    "image_id": "sha256:dbe5a929bc82b166675506b169ec32a25a65a6c35854f1e39de5ea3bcbacf28a",
+    "image_reference": "looparena-loopsbench-84ae415/task_cvc_smt_solver:frozen",
+    "platform": "linux/amd64",
+    "task_tree_sha256": "369ca5b5726a7f1a78d3e09ca13666a1cf65d024190b42c826bae9368ae80f62",
+    "workdir": "/workspace"
+  },
+  "solve_network": "bridge",
+  "source_revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+  "timeout_sec": 600
+}

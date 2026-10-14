@@ -1,0 +1,20 @@
+{
+  "adapter_kind": "beyondswe_harbor",
+  "checkpoint_context_policy": "single_episode",
+  "checkpoint_failure_policy": "stop_after_task",
+  "official_parent_commit": "315bd3fd5e42add0596f8c0d94a7ad7a41ba05de",
+  "official_task_id": "beyondswe:cvxpy_cvxpy_pr2542",
+  "official_workdir": "/workspace/cvxpy",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/task.json",
+      "evaluator_plan_sha256": "14185057a3a95275943aeac6baf0044b0c07e16c581b05ab8d144bd9885ada71",
+      "step_id": "task",
+      "task_ref": "tasks/task.md",
+      "task_sha256": "8c21abb1c624ab6efc07a7a3862f59ec7fb980c842cb7556c71b7e7017bfd8e0"
+    }
+  ],
+  "target_step": "task",
+  "task_scope": "official_full_task",
+  "workspace_origin": "pinned_source_image_parent_commit"
+}

@@ -1,0 +1,10 @@
+{
+  "adapter_kind": "beyondswe_harbor",
+  "case_id": "tri80-beyondswe-aio-libs_aiohttp_pr7944",
+  "episode_origin": "official_problem_start",
+  "harness_start_mode": "bootstrap_contract_start",
+  "official_task_id": "beyondswe:aio-libs_aiohttp_pr7944",
+  "task_scope": "official_full_task",
+  "task_sequence_ref": "task_sequence.json",
+  "task_sequence_sha256": "cd2957d572cf751e8875c370a179dd905d525ced7b5b0c30f01d29651a49f67d"
+}

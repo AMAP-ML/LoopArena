@@ -1,0 +1,44 @@
+{
+  "case_id": "tri80-scbench-forge-cp5",
+  "files": [
+    {
+      "bytes": 163,
+      "kind": "file",
+      "mode": 420,
+      "path": "forge",
+      "sha256": "382e998ecc0c5de6f9612166e9032c3712064fa44fb89121b018357978b2f356",
+      "source": {
+        "blob": "382e998ecc0c5de6f9612166e9032c3712064fa44fb89121b018357978b2f356",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 27111,
+      "kind": "file",
+      "mode": 420,
+      "path": "forge.py",
+      "sha256": "ec232826b1d9c0a80a4575852b3b1d51e4c51841fc66cb1bbbef7d542cbe3adf",
+      "source": {
+        "blob": "ec232826b1d9c0a80a4575852b3b1d51e4c51841fc66cb1bbbef7d542cbe3adf",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 169,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements.txt",
+      "sha256": "3ffc7c92e4d2ba933e38af94c162510664ef6d7eb3fe2820643071425404b778",
+      "source": {
+        "blob": "3ffc7c92e4d2ba933e38af94c162510664ef6d7eb3fe2820643071425404b778",
+        "kind": "overlay"
+      }
+    }
+  ],
+  "overlay_sha256": "490b1fe496d4d5dd89cda9c73662b99deb0779a95392057e0dc8515e993974c8",
+  "upstream": {
+    "kind": "scbench",
+    "source_root_key": null
+  },
+  "workspace_tree_sha256": "8c6a3e19ee10551d1ee9fede44a8fc6eec2c317ac0a1fb281044e2474338117a"
+}

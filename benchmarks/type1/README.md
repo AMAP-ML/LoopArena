@@ -1,39 +1,22 @@
-# LoopArena Type I
+# Type I
 
-Type I evaluates whether a model can choose the best next control decision from
-four complete alternatives. Each question contains the exact model-facing
-messages and one correct option (`A` through `D`). Scoring is deterministic
-exact match on the final `Answer: X` line.
+160 single-choice questions, each containing four complete control contracts.
+The JSONL files in `questions/` contain `id`, model-facing `input` messages,
+and the reference choice `ideal` (A–D).
+An option that stops the agent needs only the terminal decision; continuing
+options include a Worker assignment.
 
-## Dataset
-
-`questions.jsonl` is the released Type I dataset. It contains 90
-questions with three fields:
-
-- `id`: stable question identifier;
-- `input`: system and user messages sent to the model;
-- `ideal`: correct option, `A` through `D`.
-
-`manifest.json` records the public dataset shape and evaluation condition.
-
-## Run
-
-```bash
-looparena-type1-run \
-  --data benchmarks/type1/questions.jsonl \
-  --model MODEL_ID \
-  --output results/MODEL_ID.jsonl
+```sh
+looparena-type1-run --data benchmarks/type1/questions \
+  --model MODEL_ID --output runs/type1.jsonl
 ```
 
-The runner writes one record per question to the requested JSONL path and an
-aggregate summary to the corresponding `.summary.json` path.
+Each question makes one model request with the stored messages, a requested
+seed of 0, temperature 0 and a 20,480-token output budget. Provider routes that
+do not support seed or temperature omit those parameters. No question is
+retried automatically. The requested answer format is `Answer: X`.
 
-The runner sends the stored system and user messages unchanged, with one
-request per question and no harness retries. Qwen-family calls use
-`temperature=0`. GPT and Claude gateway routes omit temperature because those
-routes do not accept it; they otherwise use the same messages and output
-budget. GPT and Claude prompt caching is handled by the shared gateway client
-and does not change benchmark inputs or scoring.
-
-Invalid model answers count as incorrect. If any gateway request fails, the
-summary marks the run incomplete and leaves formal `accuracy` unavailable.
+The scorer compares the parsed A–D choice with the reference answer. Unparseable
+answers count as incorrect. Request failures leave the panel incomplete and
+its formal accuracy unavailable. Predictions and a summary are written to the
+requested output location.

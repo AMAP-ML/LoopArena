@@ -1,0 +1,19 @@
+{
+  "adapter_kind": "loopsbench",
+  "checkpoint_context_policy": "single_episode",
+  "checkpoint_failure_policy": "stop_after_task",
+  "official_task_id": "loopsbench:task_mininet_network_simulation",
+  "release_content_hash": "84ae4156df6a132416109e2cf27bb72bcbde1e764dea40f3abab5e4ade942020",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/task.json",
+      "evaluator_plan_sha256": "d0292dbd3450bc7d0f61313f2a57cf6d9fd9484232a2753c8e0492fb2b438239",
+      "step_id": "task",
+      "task_ref": "tasks/task.md",
+      "task_sha256": "b8333dd60737a9086e8df855453f42498a17f253216df6f0be8c36971e0faae5"
+    }
+  ],
+  "target_step": "task",
+  "task_scope": "official_full_task",
+  "workspace_origin": "pinned_loopsbench_release_source_base"
+}

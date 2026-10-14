@@ -1,0 +1,801 @@
+{
+  "case_id": "tri80-beyondswe-aklajnert_pytest-subprocess_pr180-cp1",
+  "files": [
+    {
+      "bytes": 546,
+      "kind": "file",
+      "mode": 420,
+      "path": ".coveragerc",
+      "sha256": "b547902739cc253123d1857c83cee95d6c90831543a0e5ab9fb2e9a891490a67",
+      "source": {
+        "kind": "upstream",
+        "path": ".coveragerc"
+      }
+    },
+    {
+      "bytes": 537,
+      "kind": "file",
+      "mode": 420,
+      "path": ".editorconfig",
+      "sha256": "ea6a1701c809ae53b2c1a649ebf5dfe810b8e7fe266fdea2174c4a3b3daf28eb",
+      "source": {
+        "kind": "upstream",
+        "path": ".editorconfig"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": ".github"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": ".github/workflows"
+    },
+    {
+      "bytes": 1648,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/workflows/ci.yml",
+      "sha256": "58ee1e902f7f4d328d3941c0c45b09897e6125c3fed0d58ab0d41bd39ee371a2",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/workflows/ci.yml"
+      }
+    },
+    {
+      "bytes": 930,
+      "kind": "file",
+      "mode": 420,
+      "path": ".gitignore",
+      "sha256": "31af7915bbf524d43b02360327168a1be29b72ca9e2bf6ea52a596130e45ac14",
+      "source": {
+        "kind": "upstream",
+        "path": ".gitignore"
+      }
+    },
+    {
+      "bytes": 436,
+      "kind": "file",
+      "mode": 420,
+      "path": ".pre-commit-config.yaml",
+      "sha256": "3edf043009fa08ac42285a15abcaf53a950d0fe4b4018163acd1e15ab05a92b6",
+      "source": {
+        "kind": "upstream",
+        "path": ".pre-commit-config.yaml"
+      }
+    },
+    {
+      "bytes": 197,
+      "kind": "file",
+      "mode": 420,
+      "path": ".readthedocs.yml",
+      "sha256": "cd263d4557c06d318047a5172bef8ac1757f4f0c3edf739a4f457751881f5a9f",
+      "source": {
+        "kind": "upstream",
+        "path": ".readthedocs.yml"
+      }
+    },
+    {
+      "bytes": 8137,
+      "kind": "file",
+      "mode": 420,
+      "path": "HISTORY.rst",
+      "sha256": "18573ddbd106a927a41038bad383ffeebb3615bf665563901fb64e141df494f9",
+      "source": {
+        "kind": "upstream",
+        "path": "HISTORY.rst"
+      }
+    },
+    {
+      "bytes": 1084,
+      "kind": "file",
+      "mode": 420,
+      "path": "LICENSE",
+      "sha256": "97404acef9bfb31c5fe13d191718c4b7c454e7585998cebe3d6dd1a6b9513c10",
+      "source": {
+        "kind": "upstream",
+        "path": "LICENSE"
+      }
+    },
+    {
+      "bytes": 191,
+      "kind": "file",
+      "mode": 420,
+      "path": "MANIFEST.in",
+      "sha256": "377c33c0417c1e59dad5fa8dee8aa78cbc27810b8587fee99673b3100bfd3183",
+      "source": {
+        "kind": "upstream",
+        "path": "MANIFEST.in"
+      }
+    },
+    {
+      "bytes": 16544,
+      "kind": "file",
+      "mode": 420,
+      "path": "README.rst",
+      "sha256": "061fc3d4e3cb323714e51844d782e3234b6d45e1980aed8391bf3eb1d85aef58",
+      "source": {
+        "kind": "upstream",
+        "path": "README.rst"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "changelog.d"
+    },
+    {
+      "bytes": 150,
+      "kind": "file",
+      "mode": 420,
+      "path": "changelog.d/bug.75e40e8c.entry.yaml",
+      "sha256": "1328a95eb109db163eef7c8d174129af40b10332017733e2489a0ae2c87da90f",
+      "source": {
+        "kind": "upstream",
+        "path": "changelog.d/bug.75e40e8c.entry.yaml"
+      }
+    },
+    {
+      "bytes": 174,
+      "kind": "file",
+      "mode": 420,
+      "path": "changelog.d/bug.c797773a.entry.yaml",
+      "sha256": "0b54768cd727ee182018d56112f76aacb6d6ecbe4f4a10f525b0510bf77ec780",
+      "source": {
+        "kind": "upstream",
+        "path": "changelog.d/bug.c797773a.entry.yaml"
+      }
+    },
+    {
+      "bytes": 536,
+      "kind": "file",
+      "mode": 420,
+      "path": "changelog.d/config.yaml",
+      "sha256": "230ce7126e0d45dbc840cd15f3131c3a9a6781b1717ce3f2d408a4eb0a2c48cc",
+      "source": {
+        "kind": "upstream",
+        "path": "changelog.d/config.yaml"
+      }
+    },
+    {
+      "bytes": 120,
+      "kind": "file",
+      "mode": 420,
+      "path": "changelog.d/feature.8899db6c.entry.yaml",
+      "sha256": "397078e2d0979600461cdc4a680435594eac3c05a6c339cbe258daa200a5765b",
+      "source": {
+        "kind": "upstream",
+        "path": "changelog.d/feature.8899db6c.entry.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "changelog.d/releases"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "changelog.d/releases/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/__init__.py"
+      }
+    },
+    {
+      "bytes": 122,
+      "kind": "file",
+      "mode": 420,
+      "path": "changelog.d/releases/0.0.1.0.yaml",
+      "sha256": "a95ea19df215013b50363808bc25ee4dc34c77a1031f5560901842ebe718acd0",
+      "source": {
+        "kind": "upstream",
+        "path": "changelog.d/releases/0.0.1.0.yaml"
+      }
+    },
+    {
+      "bytes": 223,
+      "kind": "file",
+      "mode": 420,
+      "path": "changelog.d/releases/1.0.1.1.yaml",
+      "sha256": "82608a166f9cca2afabcea5ce5625fb166eb3e4ea971e76bf4dd619db7a5ca1c",
+      "source": {
+        "kind": "upstream",
+        "path": "changelog.d/releases/1.0.1.1.yaml"
+      }
+    },
+    {
+      "bytes": 267,
+      "kind": "file",
+      "mode": 420,
+      "path": "changelog.d/releases/10.1.1.2.yaml",
+      "sha256": "bbea3982f90088ee588ac900a58e7f602a35624fd068465eca4ba04a37badaa3",
+      "source": {
+        "kind": "upstream",
+        "path": "changelog.d/releases/10.1.1.2.yaml"
+      }
+    },
+    {
+      "bytes": 310,
+      "kind": "file",
+      "mode": 420,
+      "path": "changelog.d/releases/11.1.2.0.yaml",
+      "sha256": "6238f11fab24aeaed173b71a8bc001c5a814b2e77fcb662220e5fdfa796067db",
+      "source": {
+        "kind": "upstream",
+        "path": "changelog.d/releases/11.1.2.0.yaml"
+      }
+    },
+    {
+      "bytes": 244,
+      "kind": "file",
+      "mode": 420,
+      "path": "changelog.d/releases/12.1.3.0.yaml",
+      "sha256": "42c006c295bd832f2f6918da2bf2b109cdea84c8a46c28405ff34b92dd52e476",
+      "source": {
+        "kind": "upstream",
+        "path": "changelog.d/releases/12.1.3.0.yaml"
+      }
+    },
+    {
+      "bytes": 213,
+      "kind": "file",
+      "mode": 420,
+      "path": "changelog.d/releases/13.1.3.1.yaml",
+      "sha256": "44a64484772d31484c896b5ef8fdfac231c9faf40cee5872009f9ffd3303091d",
+      "source": {
+        "kind": "upstream",
+        "path": "changelog.d/releases/13.1.3.1.yaml"
+      }
+    },
+    {
+      "bytes": 231,
+      "kind": "file",
+      "mode": 420,
+      "path": "changelog.d/releases/14.1.3.2.yaml",
+      "sha256": "1657e1c39e595bbb0910b947dde2319cb75cbe3d667c93e02c3c5d98a03b6868",
+      "source": {
+        "kind": "upstream",
+        "path": "changelog.d/releases/14.1.3.2.yaml"
+      }
+    },
+    {
+      "bytes": 628,
+      "kind": "file",
+      "mode": 420,
+      "path": "changelog.d/releases/15.1.4.0.yaml",
+      "sha256": "49b2dc57195654eefc29cb8e570f0d4265c1cac04d00a0f2904c05ba771145e6",
+      "source": {
+        "kind": "upstream",
+        "path": "changelog.d/releases/15.1.4.0.yaml"
+      }
+    },
+    {
+      "bytes": 263,
+      "kind": "file",
+      "mode": 420,
+      "path": "changelog.d/releases/16.1.4.1.yaml",
+      "sha256": "c67b0f302f1579e5bdc09d01db0333f97cb07a9089c594ba61a0bb8ef2e475ac",
+      "source": {
+        "kind": "upstream",
+        "path": "changelog.d/releases/16.1.4.1.yaml"
+      }
+    },
+    {
+      "bytes": 901,
+      "kind": "file",
+      "mode": 420,
+      "path": "changelog.d/releases/17.1.4.2.yaml",
+      "sha256": "f2371e46d829d8c3ff5119bdbe592297e68e12fa5a3e6f982288473669f882f4",
+      "source": {
+        "kind": "upstream",
+        "path": "changelog.d/releases/17.1.4.2.yaml"
+      }
+    },
+    {
+      "bytes": 410,
+      "kind": "file",
+      "mode": 420,
+      "path": "changelog.d/releases/18.1.5.0.yaml",
+      "sha256": "763b2cb5dc8fb524329b64f812ac8c9e1c0f9157cb2b567ca74dcd57579b56d9",
+      "source": {
+        "kind": "upstream",
+        "path": "changelog.d/releases/18.1.5.0.yaml"
+      }
+    },
+    {
+      "bytes": 378,
+      "kind": "file",
+      "mode": 420,
+      "path": "changelog.d/releases/19.1.5.1.yaml",
+      "sha256": "7fcf41c94c548915b9349074453d5133fa6a7a1606505e74c4f3463b61176154",
+      "source": {
+        "kind": "upstream",
+        "path": "changelog.d/releases/19.1.5.1.yaml"
+      }
+    },
+    {
+      "bytes": 653,
+      "kind": "file",
+      "mode": 420,
+      "path": "changelog.d/releases/2.0.1.2.yaml",
+      "sha256": "d89ae93226c1bf119be6f4013891f08b574ba5ece0027ff3a82ecd967318777b",
+      "source": {
+        "kind": "upstream",
+        "path": "changelog.d/releases/2.0.1.2.yaml"
+      }
+    },
+    {
+      "bytes": 373,
+      "kind": "file",
+      "mode": 420,
+      "path": "changelog.d/releases/20.1.5.2.yaml",
+      "sha256": "62040dacc7c60afaa44d13efca265f17c0f598ca63016a7f02364557349bc370",
+      "source": {
+        "kind": "upstream",
+        "path": "changelog.d/releases/20.1.5.2.yaml"
+      }
+    },
+    {
+      "bytes": 473,
+      "kind": "file",
+      "mode": 420,
+      "path": "changelog.d/releases/3.0.1.3.yaml",
+      "sha256": "91135f7140cc152d98d7986ce0c160078b1d28e73fd45623c56b842708eba870",
+      "source": {
+        "kind": "upstream",
+        "path": "changelog.d/releases/3.0.1.3.yaml"
+      }
+    },
+    {
+      "bytes": 660,
+      "kind": "file",
+      "mode": 420,
+      "path": "changelog.d/releases/4.0.1.4.yaml",
+      "sha256": "6165f597712e23ca7e487d5caba041f1249fc5635e968db62cda5ea84a61c4f4",
+      "source": {
+        "kind": "upstream",
+        "path": "changelog.d/releases/4.0.1.4.yaml"
+      }
+    },
+    {
+      "bytes": 247,
+      "kind": "file",
+      "mode": 420,
+      "path": "changelog.d/releases/5.0.1.5.yaml",
+      "sha256": "ba053ba74490492a5f3a868b11087ac4877e857604bb75c0a57820cb9af9c50a",
+      "source": {
+        "kind": "upstream",
+        "path": "changelog.d/releases/5.0.1.5.yaml"
+      }
+    },
+    {
+      "bytes": 384,
+      "kind": "file",
+      "mode": 420,
+      "path": "changelog.d/releases/6.1.0.0.yaml",
+      "sha256": "971f52868e858228bb141087da38bf5d74cb1efde0103e6fac1c6a115228e0a0",
+      "source": {
+        "kind": "upstream",
+        "path": "changelog.d/releases/6.1.0.0.yaml"
+      }
+    },
+    {
+      "bytes": 352,
+      "kind": "file",
+      "mode": 420,
+      "path": "changelog.d/releases/7.1.0.1.yaml",
+      "sha256": "99d610fb5028bff2209942235ef86553fa87de7b9d95b45108b95deca8dbda8f",
+      "source": {
+        "kind": "upstream",
+        "path": "changelog.d/releases/7.1.0.1.yaml"
+      }
+    },
+    {
+      "bytes": 553,
+      "kind": "file",
+      "mode": 420,
+      "path": "changelog.d/releases/8.1.1.0.yaml",
+      "sha256": "0c6604ed4859a6b5c541a2595c462e8011cde1f24e5aad6ec9ea2ef3e667f58f",
+      "source": {
+        "kind": "upstream",
+        "path": "changelog.d/releases/8.1.1.0.yaml"
+      }
+    },
+    {
+      "bytes": 364,
+      "kind": "file",
+      "mode": 420,
+      "path": "changelog.d/releases/9.1.1.1.yaml",
+      "sha256": "d5ce427c6ca20ba6908bfecc971c4e41724b795a5de9ab1a14592f791e5b2627",
+      "source": {
+        "kind": "upstream",
+        "path": "changelog.d/releases/9.1.1.1.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "changelog.d/templates"
+    },
+    {
+      "bytes": 181,
+      "kind": "file",
+      "mode": 420,
+      "path": "changelog.d/templates/entry.rst",
+      "sha256": "f838f11f967d57e7bbf825af49105376e090eb24834e1d7e7498dfbb8b4a048a",
+      "source": {
+        "kind": "upstream",
+        "path": "changelog.d/templates/entry.rst"
+      }
+    },
+    {
+      "bytes": 71,
+      "kind": "file",
+      "mode": 420,
+      "path": "changelog.d/templates/main.rst",
+      "sha256": "1c1eb458b3e096a36da50f117c42bb545a0a98322218ca63b6091a627dd6dab2",
+      "source": {
+        "kind": "upstream",
+        "path": "changelog.d/templates/main.rst"
+      }
+    },
+    {
+      "bytes": 334,
+      "kind": "file",
+      "mode": 420,
+      "path": "changelog.d/templates/release.rst",
+      "sha256": "1d98865581761ac708fd9f5e58dd49b93f1debd8db8ba4ad9ac6d33f372ef876",
+      "source": {
+        "kind": "upstream",
+        "path": "changelog.d/templates/release.rst"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "docs"
+    },
+    {
+      "bytes": 634,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/Makefile",
+      "sha256": "8b6587b859607f200f116e2cb043fc358e1c3a26c326b563bf348453cfc68307",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/Makefile"
+      }
+    },
+    {
+      "bytes": 578,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/api.rst",
+      "sha256": "98958c394a378d1010b141c1acd8069dddf9ba827ab0fe752ab16fdcc0c7c233",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/api.rst"
+      }
+    },
+    {
+      "bytes": 2420,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/conf.py",
+      "sha256": "4f0cd4c900a6595fd648f55a960a380c2f2e1ff53899f518ae7fc1a6d958d9e9",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/conf.py"
+      }
+    },
+    {
+      "bytes": 1028,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/index.rst",
+      "sha256": "a974130814378ced65254fa361d710075d911ca77cbd0deeb2b48e141b556d57",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/index.rst"
+      }
+    },
+    {
+      "bytes": 760,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/make.bat",
+      "sha256": "28aa5a45fae5d43d8a0e7e3d656e42a592b30d05a0838521bef6216d450b93b9",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/make.bat"
+      }
+    },
+    {
+      "bytes": 86,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/usage.rst",
+      "sha256": "167010ef446ee8f5761e3ab221c20f4dc0c1ae11f9e75bad7ff0450c84727875",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/usage.rst"
+      }
+    },
+    {
+      "bytes": 1366,
+      "kind": "file",
+      "mode": 420,
+      "path": "noxfile.py",
+      "sha256": "4efe0b25d21a5c4a39c1cc621985fb5591079541d8bff7cb7b7ebb9130e4d699",
+      "source": {
+        "kind": "upstream",
+        "path": "noxfile.py"
+      }
+    },
+    {
+      "bytes": 108,
+      "kind": "file",
+      "mode": 420,
+      "path": "pytest.ini",
+      "sha256": "ff9d6fe9392c6039c54ae3b82e2cc23fee2ac9767d0e0d3d46868172f6a37fb7",
+      "source": {
+        "kind": "upstream",
+        "path": "pytest.ini"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "pytest_subprocess"
+    },
+    {
+      "bytes": 218,
+      "kind": "file",
+      "mode": 420,
+      "path": "pytest_subprocess/__init__.py",
+      "sha256": "d7cb348581c36efdbd17e2110c6b3e950a8007311e43bf8b738dd04c0852f9ff",
+      "source": {
+        "kind": "upstream",
+        "path": "pytest_subprocess/__init__.py"
+      }
+    },
+    {
+      "bytes": 272,
+      "kind": "file",
+      "mode": 420,
+      "path": "pytest_subprocess/asyncio_subprocess.py",
+      "sha256": "961f81eec5f828dc0dc4834fb7391486a315d2d0da0df3efd0adcae07bc245a9",
+      "source": {
+        "kind": "upstream",
+        "path": "pytest_subprocess/asyncio_subprocess.py"
+      }
+    },
+    {
+      "bytes": 429,
+      "kind": "file",
+      "mode": 420,
+      "path": "pytest_subprocess/exceptions.py",
+      "sha256": "1cf44ba585923626fce38e23079ff065e749260ee8bf9061ba5689ed7069a18f",
+      "source": {
+        "kind": "upstream",
+        "path": "pytest_subprocess/exceptions.py"
+      }
+    },
+    {
+      "bytes": 15383,
+      "kind": "file",
+      "mode": 420,
+      "path": "pytest_subprocess/fake_popen.py",
+      "sha256": "241327cfa0bc17800e5f915c9f0b94a390919bee93d6f9f39716023b83b29d8f",
+      "source": {
+        "kind": "upstream",
+        "path": "pytest_subprocess/fake_popen.py"
+      }
+    },
+    {
+      "bytes": 5344,
+      "kind": "file",
+      "mode": 420,
+      "path": "pytest_subprocess/fake_process.py",
+      "sha256": "7c78b406e9c2da14af88155720080fdd44e82ff1ef9cc694b0eb9726ddc2b3e4",
+      "source": {
+        "kind": "upstream",
+        "path": "pytest_subprocess/fake_process.py"
+      }
+    },
+    {
+      "bytes": 247,
+      "kind": "file",
+      "mode": 420,
+      "path": "pytest_subprocess/fixtures.py",
+      "sha256": "66b9b6bc1a493f8c361a20535d4c0fa2a02581305a3858c012b358252b515a79",
+      "source": {
+        "kind": "upstream",
+        "path": "pytest_subprocess/fixtures.py"
+      }
+    },
+    {
+      "bytes": 8808,
+      "kind": "file",
+      "mode": 420,
+      "path": "pytest_subprocess/process_dispatcher.py",
+      "sha256": "12270647e21aba575b00b12b1671a1cbb7a2fbbba4fc8d299508749820d2d9fa",
+      "source": {
+        "kind": "upstream",
+        "path": "pytest_subprocess/process_dispatcher.py"
+      }
+    },
+    {
+      "bytes": 1967,
+      "kind": "file",
+      "mode": 420,
+      "path": "pytest_subprocess/process_recorder.py",
+      "sha256": "7009c957a9a134ac1aa4f195e02a06f70eff060993a37cc76d31c9add63c12b5",
+      "source": {
+        "kind": "upstream",
+        "path": "pytest_subprocess/process_recorder.py"
+      }
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "pytest_subprocess/py.typed",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/__init__.py"
+      }
+    },
+    {
+      "bytes": 468,
+      "kind": "file",
+      "mode": 420,
+      "path": "pytest_subprocess/types.py",
+      "sha256": "f4e4debd22fd538f27b6b2dfda724d508dad561bdb730b68da0a53d0c9b67afc",
+      "source": {
+        "kind": "upstream",
+        "path": "pytest_subprocess/types.py"
+      }
+    },
+    {
+      "bytes": 5236,
+      "kind": "file",
+      "mode": 420,
+      "path": "pytest_subprocess/utils.py",
+      "sha256": "fe480f1f9e0bd613a764edd54a0577f3742d5da2dfe43661c5e06b8eab9b2bb5",
+      "source": {
+        "kind": "upstream",
+        "path": "pytest_subprocess/utils.py"
+      }
+    },
+    {
+      "bytes": 222,
+      "kind": "file",
+      "mode": 420,
+      "path": "setup.cfg",
+      "sha256": "efeca8996d2994bcdf429d177be72aeeeeeb440e831597d40fc539bdd7c98954",
+      "source": {
+        "kind": "upstream",
+        "path": "setup.cfg"
+      }
+    },
+    {
+      "bytes": 2555,
+      "kind": "file",
+      "mode": 420,
+      "path": "setup.py",
+      "sha256": "551cd0e415ca2933dc54fe0fb8f02f230ca144b49c33bb549ac64ff086d356eb",
+      "source": {
+        "kind": "upstream",
+        "path": "setup.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/__init__.py"
+      }
+    },
+    {
+      "bytes": 225,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/conftest.py",
+      "sha256": "90089b2d99e586842895f78d2b0c6f5df7b0be0f8dfd478db6d5bac9afdb5d23",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/conftest.py"
+      }
+    },
+    {
+      "bytes": 377,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/example_script.py",
+      "sha256": "fd0b625cf402428aba3cedbbf2caa0eaed7846978941927c3e7cf5801d1750ff",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/example_script.py"
+      }
+    },
+    {
+      "bytes": 11668,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_asyncio.py",
+      "sha256": "d42a56b4c9601a3c3a810c91a32d07e411cd29ff773e751e6082412ffbdc540c",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_asyncio.py"
+      }
+    },
+    {
+      "bytes": 1651,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_examples.py",
+      "sha256": "3d2c298711bb66cff6bd42c2618ce9c7cc3b56da7e7937e2d07f7039b9c98d7d",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_examples.py"
+      }
+    },
+    {
+      "bytes": 39791,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_subprocess.py",
+      "sha256": "359651a68abc49156cae5a109c0a28f15803835eee138403e7a496281ab2cf61",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_subprocess.py"
+      }
+    },
+    {
+      "bytes": 248,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_typing.py",
+      "sha256": "ab98169c034d8fc39b0162a9ef8ae14742b75f77ec4f7944f2f01a1acac867b5",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_typing.py"
+      }
+    },
+    {
+      "bytes": 6363,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_utils.py",
+      "sha256": "54fc2cf54265195567e1a16de0f5c0b0fceb2754c1bfb65eba428212dbef94e1",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_utils.py"
+      }
+    }
+  ],
+  "overlay_sha256": "272adeccafe73e7009d51f2ec2be9871db5e0eb14239f483ea429be26c3c6402",
+  "upstream": {
+    "kind": "beyondswe",
+    "repository": "https://github.com/aklajnert/pytest-subprocess",
+    "revision": "afa2122a8a30cf06c3c8c4ae3ed613884a223364",
+    "source_root_key": "tri80-beyondswe-aklajnert_pytest-subprocess_pr180-cp1"
+  },
+  "workspace_tree_sha256": "075f6f6117bacf87851dabe6c2d1b32e318a08dbc7cff00b8ea4e9a13f46b2fb"
+}

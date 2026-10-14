@@ -1,0 +1,15 @@
+# Standardize on `numpy.ndarray` and remove legacy matrix support
+
+The `numpy.matrix` class is deprecated in the NumPy ecosystem. Modernize the library so that it uses plain `numpy.ndarray` exclusively, delivered as one inseparable change covering both of the following behaviors.
+
+## Requirements
+
+1. **State-space creation always stores standard NumPy arrays.** Remove support for initializing state-space systems from MATLAB-style strings (e.g. `ct.ss("1. -2; 3. -4", "5.; 7", "6. 8", "9.")`). This legacy string input format must no longer be accepted, and all system matrix data (A, B, C, D) must be stored as standard `numpy.ndarray` objects regardless of how the system is created.
+
+2. **Remove matrix-output configuration.** Remove the configuration option that lets users request `numpy.matrix` outputs (e.g. `ct.use_numpy_matrix(True)`). The library must standardize on `numpy.ndarray` everywhere. Legacy configuration defaults carried over from old releases must emit a warning rather than switching matrix types.
+
+## Expected result
+
+- Passing MATLAB-style strings to state-space constructors raises an error instead of creating a system.
+- No public API remains for enabling `numpy.matrix` output; all matrices returned by the library are `numpy.ndarray`.
+- Old-release legacy defaults produce a warning and have no effect on the matrix type used.

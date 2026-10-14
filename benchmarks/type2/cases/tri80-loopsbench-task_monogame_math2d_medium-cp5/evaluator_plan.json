@@ -1,0 +1,38 @@
+{
+  "adapter_config": {
+    "docker_executable": "docker",
+    "expected_test_count": 1,
+    "expected_unit_ids": [
+      "point_fix",
+      "rectangle_math",
+      "replay_io",
+      "mathhelper",
+      "vector3_math",
+      "matrix_math",
+      "color_math",
+      "vector2_math",
+      "scoring_system",
+      "transform_system",
+      "sim_world",
+      "replay_runner"
+    ],
+    "result_protocol": "task_runner_pytest",
+    "runtime_assets_dir": "/opt/looparena/evaluator_assets/evaluator_runtime",
+    "task_dir": "/opt/looparena/evaluator_assets/tasks/task_monogame_math2d_medium"
+  },
+  "adapter_kind": "loopsbench",
+  "adapter_version": "source-run-tests-v1",
+  "evaluator_revision": "5880b64491e2cac2f83d497153ed173b8a995b8b",
+  "network": "bridge",
+  "pass_policy": "all-source-unit-tests-pass",
+  "runtime_identity": {
+    "image_id": "sha256:40594ef22717a4d1ae5ca92a4743af6b0d64fb97852ae42e0c9ce26b22d8d9d9",
+    "image_reference": "looparena-loopsbench-84ae415/task_monogame_math2d_medium:frozen",
+    "platform": "linux/amd64",
+    "task_tree_sha256": "676bbf285203a4de3c1f2f74999f79b1efeddbe0bec4041fc27da6023e9ac7af",
+    "workdir": "/workspace"
+  },
+  "solve_network": "bridge",
+  "source_revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+  "timeout_sec": 1500
+}

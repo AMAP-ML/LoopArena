@@ -1,0 +1,516 @@
+{
+  "case_id": "tri80-loopsbench-task_stream_mining-cp3",
+  "files": [
+    {
+      "bytes": 13,
+      "kind": "file",
+      "mode": 420,
+      "path": ".gitignore",
+      "sha256": "32dae3052f331ee34d628ef535709b301259a45df7c7522c4d35dcf49873f00b",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_stream_mining/gold_patches/vfdt.diff",
+        "patch_sha256": "232c32785fae5c36dc8a60e97dbfe29cb56be87c57d7bb13ead550b83bc80c18",
+        "path": ".gitignore"
+      }
+    },
+    {
+      "bytes": 4347,
+      "kind": "file",
+      "mode": 420,
+      "path": "attribute_observers.py",
+      "sha256": "d0c492a53de93c6e5f43112aabb991b7fcdc2984dd79021179bc1219bfff001e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_stream_mining/base/attribute_observers.py"
+      }
+    },
+    {
+      "bytes": 2347,
+      "kind": "file",
+      "mode": 420,
+      "path": "classifiers.py",
+      "sha256": "810d6889e4274ba25d087eb4ccb88ae09fb4936c628405eb0d27721888861759",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_stream_mining/base/classifiers.py"
+      }
+    },
+    {
+      "bytes": 2430,
+      "kind": "file",
+      "mode": 420,
+      "path": "evaluation.py",
+      "sha256": "5b283c9031639b3149830d02f13d70bf5b6eb2ff6aad81c4cce03a6451f04c11",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_stream_mining/base/evaluation.py"
+      }
+    },
+    {
+      "bytes": 2962,
+      "kind": "file",
+      "mode": 420,
+      "path": "module_dag.yaml",
+      "sha256": "386a5482eec0be755159a4575c9ac7d7f83a24f2bec638f68f2dd2279430bdba",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_stream_mining/module_dag.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "requirements"
+    },
+    {
+      "bytes": 4970,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/adwin.yaml",
+      "sha256": "cc6b6f976d28ab556646a2d284c6a82d342bb43d0acf21c15a5964297aca4809",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_stream_mining/requirements/adwin.yaml"
+      }
+    },
+    {
+      "bytes": 3103,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/cvfdt.yaml",
+      "sha256": "c4ec118cdc6a2ec27299d1a2fc9a5e551090ebcb2b3592ccf108613171198c2a",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_stream_mining/requirements/cvfdt.yaml"
+      }
+    },
+    {
+      "bytes": 2740,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/moa.yaml",
+      "sha256": "5627befd200829638d5d49ee346727ba7d5aa5f4778513c7b9eb4e6db98471bf",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_stream_mining/requirements/moa.yaml"
+      }
+    },
+    {
+      "bytes": 5440,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/sam_knn.yaml",
+      "sha256": "234037c0f22a6297e4c829b7cfc223420d7b87719561ccd101b9d6ec1a86fed1",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_stream_mining/requirements/sam_knn.yaml"
+      }
+    },
+    {
+      "bytes": 3220,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/vfdt.yaml",
+      "sha256": "36fe6f834c6edfb3d05afefd156f66eaa37200f0904eaed7c6a9ead646dc56de",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_stream_mining/requirements/vfdt.yaml"
+      }
+    },
+    {
+      "bytes": 602,
+      "kind": "file",
+      "mode": 493,
+      "path": "run-tests.sh",
+      "sha256": "8a85d644d0d936834bd03bff98546841e2ac19091b70e63771aa2d6342a392ce",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_stream_mining/run-tests.sh"
+      }
+    },
+    {
+      "bytes": 2212,
+      "kind": "file",
+      "mode": 493,
+      "path": "run.sh",
+      "sha256": "cfb58d22088c1f0999307b48ee639fa771751e99aafb64b9719c737fdc2ee556",
+      "source": {
+        "blob": "cfb58d22088c1f0999307b48ee639fa771751e99aafb64b9719c737fdc2ee556",
+        "kind": "overlay"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "src"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "src/cvfdt"
+    },
+    {
+      "bytes": 317,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/cvfdt/__init__.py",
+      "sha256": "c13695340184cd7690ef9b3f1ce8aba4924ec65ddd5022aaefc2bd1d0ae2d0bf",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_stream_mining/gold_patches/cvfdt.diff",
+        "patch_sha256": "3da1def492e804c7af60f89888989affd79bd8ed2ae9b1b956d2245a74652b95",
+        "path": "src/cvfdt/__init__.py"
+      }
+    },
+    {
+      "bytes": 5513,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/cvfdt/alternate_tree.py",
+      "sha256": "8a5f915dbb95e2a1fa2ae5bc736de0892a7c600002daf7575359f8f288ad017a",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_stream_mining/gold_patches/cvfdt.diff",
+        "patch_sha256": "3da1def492e804c7af60f89888989affd79bd8ed2ae9b1b956d2245a74652b95",
+        "path": "src/cvfdt/alternate_tree.py"
+      }
+    },
+    {
+      "bytes": 19494,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/cvfdt/cvfdt_tree.py",
+      "sha256": "3fcc62f99b6d026314711e860eb624cc41cf07a21e0c1014824decf0206dbffb",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_stream_mining/gold_patches/cvfdt.diff",
+        "patch_sha256": "3da1def492e804c7af60f89888989affd79bd8ed2ae9b1b956d2245a74652b95",
+        "path": "src/cvfdt/cvfdt_tree.py"
+      }
+    },
+    {
+      "bytes": 5207,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/cvfdt/drift_detector.py",
+      "sha256": "a97882bb07cd62667cd7dfe06d8e524866d19abfaeab39926ac3440e60da0f1f",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_stream_mining/gold_patches/cvfdt.diff",
+        "patch_sha256": "3da1def492e804c7af60f89888989affd79bd8ed2ae9b1b956d2245a74652b95",
+        "path": "src/cvfdt/drift_detector.py"
+      }
+    },
+    {
+      "bytes": 4498,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/cvfdt/window_manager.py",
+      "sha256": "4d5261f41d05280d7a26002b4de970ec9490042953a1fe7d248c27af4bbad6f2",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_stream_mining/gold_patches/cvfdt.diff",
+        "patch_sha256": "3da1def492e804c7af60f89888989affd79bd8ed2ae9b1b956d2245a74652b95",
+        "path": "src/cvfdt/window_manager.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "src/vfdt"
+    },
+    {
+      "bytes": 264,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/vfdt/__init__.py",
+      "sha256": "e4eb2c1961e146b8c2a92527895934c4a4052c1829e43ecaf3ae31d41d306239",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_stream_mining/gold_patches/vfdt.diff",
+        "patch_sha256": "232c32785fae5c36dc8a60e97dbfe29cb56be87c57d7bb13ead550b83bc80c18",
+        "path": "src/vfdt/__init__.py"
+      }
+    },
+    {
+      "bytes": 8329,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/vfdt/attribute_observers.py",
+      "sha256": "b38c5e90530166ab56a5e51f979857b5e1774bfc5ad0393ffd0639a358fc9ab5",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_stream_mining/gold_patches/vfdt.diff",
+        "patch_sha256": "232c32785fae5c36dc8a60e97dbfe29cb56be87c57d7bb13ead550b83bc80c18",
+        "path": "src/vfdt/attribute_observers.py"
+      }
+    },
+    {
+      "bytes": 4824,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/vfdt/evaluation.py",
+      "sha256": "cdb470e652f9399e8494794efa023b2b4b26167aeb013923b26cebb231b1d98f",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_stream_mining/gold_patches/vfdt.diff",
+        "patch_sha256": "232c32785fae5c36dc8a60e97dbfe29cb56be87c57d7bb13ead550b83bc80c18",
+        "path": "src/vfdt/evaluation.py"
+      }
+    },
+    {
+      "bytes": 16647,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/vfdt/hoeffding_tree.py",
+      "sha256": "70d2a27102243510319f554880f87bf24578a7c7c71ca51d0792338ce0eb4996",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_stream_mining/gold_patches/vfdt.diff",
+        "patch_sha256": "232c32785fae5c36dc8a60e97dbfe29cb56be87c57d7bb13ead550b83bc80c18",
+        "path": "src/vfdt/hoeffding_tree.py"
+      }
+    },
+    {
+      "bytes": 2322,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/vfdt/instance.py",
+      "sha256": "d9efd9ba5e7cb269e401d1a9de9818c553ccc342e761e53cceb0f7fb6aa56c6f",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_stream_mining/gold_patches/vfdt.diff",
+        "patch_sha256": "232c32785fae5c36dc8a60e97dbfe29cb56be87c57d7bb13ead550b83bc80c18",
+        "path": "src/vfdt/instance.py"
+      }
+    },
+    {
+      "bytes": 4687,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/vfdt/split_criteria.py",
+      "sha256": "bb3f9098bce0e8464b2b8a2fc37f1985be55ddcf6b107a3daa790bf33c6496cf",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_stream_mining/gold_patches/vfdt.diff",
+        "patch_sha256": "232c32785fae5c36dc8a60e97dbfe29cb56be87c57d7bb13ead550b83bc80c18",
+        "path": "src/vfdt/split_criteria.py"
+      }
+    },
+    {
+      "bytes": 6888,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/vfdt/streams.py",
+      "sha256": "fedea9848cdb512e3928647a706939a46c5202e338e9daeb5de0f2c145fc1b91",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_stream_mining/gold_patches/vfdt.diff",
+        "patch_sha256": "232c32785fae5c36dc8a60e97dbfe29cb56be87c57d7bb13ead550b83bc80c18",
+        "path": "src/vfdt/streams.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "stream"
+    },
+    {
+      "bytes": 222,
+      "kind": "file",
+      "mode": 420,
+      "path": "stream/__init__.py",
+      "sha256": "c4e550dddad0b06c430253acc6119a450192a1b98a12b37b334e64e06f4c3cf6",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_stream_mining/gold_patches/adwin.diff",
+        "patch_sha256": "56409bfe6ff7ac9f1419b27e923fd3d528ac22043fed81cbace385422d1e6b56",
+        "path": "stream/__init__.py"
+      }
+    },
+    {
+      "bytes": 17805,
+      "kind": "file",
+      "mode": 420,
+      "path": "stream/adwin.py",
+      "sha256": "6b65651af6b89cc6c90b17afc57bd6c5e2457b4fefb9bf2f9c7308da4d5da25a",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_stream_mining/gold_patches/adwin.diff",
+        "patch_sha256": "56409bfe6ff7ac9f1419b27e923fd3d528ac22043fed81cbace385422d1e6b56",
+        "path": "stream/adwin.py"
+      }
+    },
+    {
+      "bytes": 7275,
+      "kind": "file",
+      "mode": 420,
+      "path": "stream/drift_manager.py",
+      "sha256": "5fddbe5cecf5bd0907bbc85d1fabf3689c844ab865777ce15f923097ed71c5cb",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_stream_mining/gold_patches/adwin.diff",
+        "patch_sha256": "56409bfe6ff7ac9f1419b27e923fd3d528ac22043fed81cbace385422d1e6b56",
+        "path": "stream/drift_manager.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "stream/experiments"
+    },
+    {
+      "bytes": 72,
+      "kind": "file",
+      "mode": 420,
+      "path": "stream/experiments/__init__.py",
+      "sha256": "67e9aa34bd5121968725356bf3824fe61c1f7d61f30899dce9bf171707798294",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_stream_mining/gold_patches/adwin.diff",
+        "patch_sha256": "56409bfe6ff7ac9f1419b27e923fd3d528ac22043fed81cbace385422d1e6b56",
+        "path": "stream/experiments/__init__.py"
+      }
+    },
+    {
+      "bytes": 7633,
+      "kind": "file",
+      "mode": 420,
+      "path": "stream/experiments/adwin_exp.py",
+      "sha256": "83590e708652f919669bb439c5e9e7e5387afbb374dc182716e30f0413df1c1b",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_stream_mining/gold_patches/adwin.diff",
+        "patch_sha256": "56409bfe6ff7ac9f1419b27e923fd3d528ac22043fed81cbace385422d1e6b56",
+        "path": "stream/experiments/adwin_exp.py"
+      }
+    },
+    {
+      "bytes": 6325,
+      "kind": "file",
+      "mode": 420,
+      "path": "streams.py",
+      "sha256": "f9cbc01b9a80a77a2fb0524aabab571ac0e2c2c54f19a44a50d6648373b6ce14",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_stream_mining/base/streams.py"
+      }
+    },
+    {
+      "bytes": 1725,
+      "kind": "file",
+      "mode": 420,
+      "path": "task.yaml",
+      "sha256": "27a38c397bd772332ca0dea01651587ed97a17e6d14ac9a121655f8e5e665a4c",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_stream_mining/task.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/adwin"
+    },
+    {
+      "bytes": 2085,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/adwin/test_outputs.py",
+      "sha256": "3c2ba2ee9cb15d2b0a7846e25cb2de3caa52d3ff50b4cc747a4bd9045726dbed",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_stream_mining/tests/adwin/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/cvfdt"
+    },
+    {
+      "bytes": 1866,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/cvfdt/test_outputs.py",
+      "sha256": "92102bd75db5999fddd0067f0f482717d25fd205c00ffa934d53b6c7688c7b7f",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_stream_mining/tests/cvfdt/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/moa"
+    },
+    {
+      "bytes": 1854,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/moa/test_outputs.py",
+      "sha256": "44ab4ff53b37812ed7d360596c00de8505dc5ca7dde38b678574f3defdbd4734",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_stream_mining/tests/moa/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/sam_knn"
+    },
+    {
+      "bytes": 2048,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/sam_knn/test_outputs.py",
+      "sha256": "e4085bbc2d63366e906516b471edf7f167901b1dce539e3c5ce128c823c888fb",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_stream_mining/tests/sam_knn/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/vfdt"
+    },
+    {
+      "bytes": 1862,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/vfdt/test_outputs.py",
+      "sha256": "c5c536fcb971fa0e7e3466db19fc3ac1c709dfe2eb40794f9c0e9495e6f275d7",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_stream_mining/tests/vfdt/test_outputs.py"
+      }
+    },
+    {
+      "bytes": 1059,
+      "kind": "file",
+      "mode": 420,
+      "path": "unit_dag.json",
+      "sha256": "0a5ec844905917478b2f629868b327ebb50d2eead3d1e5763f84dab7b47b082a",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_stream_mining/unit_dag.json"
+      }
+    }
+  ],
+  "overlay_sha256": "e5be3c5b86dc91dfaa4e4b4f90ef1d02a352adc05108d7faff2f34343340e30d",
+  "upstream": {
+    "kind": "loopsbench",
+    "revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+    "source_root_key": "loopsbench",
+    "task": "task_stream_mining"
+  },
+  "workspace_tree_sha256": "1ce953e4e8dc0a6e115cb892bfbca654ec86ad8724ff0549de4927e26480786e"
+}

@@ -61,12 +61,12 @@ class ControllerChatClient:
     ) -> None:
         self.model = model
         cache_family = _llm.provider_family(model)
-        # Some GPT and Claude endpoints reject explicit sampling parameters.
+        # Some OpenAI and Claude endpoints reject explicit sampling parameters.
         # Using the provider default does not change model-visible prompts.
-        self.temperature = None if cache_family in {"gpt", "claude"} else temperature
+        self.temperature = None if cache_family in {"gpt", "o", "claude"} else temperature
         self.max_retries = max_retries
         self.seed = int(seed)
-        self.seed_supported = cache_family not in {"gpt", "claude"}
+        self.seed_supported = cache_family not in {"gpt", "o", "claude"}
         self.call_index = 0
         self.deadline_monotonic: float | None = None
         self.transport = transport

@@ -1,0 +1,109 @@
+{
+  "case_id": "tri80-scbench-file_backup-cp4",
+  "files": [
+    {
+      "bytes": 8473,
+      "kind": "file",
+      "mode": 420,
+      "path": "backup_scheduler.py",
+      "sha256": "c2f39e5aac7bc4592f3cd86e6d8a41ee8139b38422e5b186c6444a89e1e7bfa4",
+      "source": {
+        "blob": "c2f39e5aac7bc4592f3cd86e6d8a41ee8139b38422e5b186c6444a89e1e7bfa4",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 204,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements.txt",
+      "sha256": "ea0c15cfa4564ae57b8c9fb58078e08205f300ae1506c106b53dd3cd2b2f7cd7",
+      "source": {
+        "blob": "ea0c15cfa4564ae57b8c9fb58078e08205f300ae1506c106b53dd3cd2b2f7cd7",
+        "kind": "overlay"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "scheduler"
+    },
+    {
+      "bytes": 231,
+      "kind": "file",
+      "mode": 420,
+      "path": "scheduler/__init__.py",
+      "sha256": "88000ea87fff7be6ce16ac9f8b7df4f8bfa0bd976a9786a51f9182ec20834b10",
+      "source": {
+        "blob": "88000ea87fff7be6ce16ac9f8b7df4f8bfa0bd976a9786a51f9182ec20834b10",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 443,
+      "kind": "file",
+      "mode": 420,
+      "path": "scheduler/errors.py",
+      "sha256": "9c1c5e5561b75c8428a3603a99869a5a179bd8d535e6bf0131516d522435894e",
+      "source": {
+        "blob": "9c1c5e5561b75c8428a3603a99869a5a179bd8d535e6bf0131516d522435894e",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 15604,
+      "kind": "file",
+      "mode": 420,
+      "path": "scheduler/executor.py",
+      "sha256": "d9b5bc21864c377299693b60776538cf87c665e7724c7d88dca008c4df9b44f3",
+      "source": {
+        "blob": "d9b5bc21864c377299693b60776538cf87c665e7724c7d88dca008c4df9b44f3",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 1014,
+      "kind": "file",
+      "mode": 420,
+      "path": "scheduler/models.py",
+      "sha256": "951cb56b80e4975ec5d6cc13c673ba94841a9133d1bb48938d2ae02549a6c064",
+      "source": {
+        "blob": "951cb56b80e4975ec5d6cc13c673ba94841a9133d1bb48938d2ae02549a6c064",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 11026,
+      "kind": "file",
+      "mode": 420,
+      "path": "scheduler/parser.py",
+      "sha256": "4cb6220e737e26475779d8aeec554ea11edaeed4b7149e1e00ee7befb6e4120e",
+      "source": {
+        "blob": "4cb6220e737e26475779d8aeec554ea11edaeed4b7149e1e00ee7befb6e4120e",
+        "kind": "overlay"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests"
+    },
+    {
+      "bytes": 17676,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_backup_scheduler.py",
+      "sha256": "f28ce1c5d82dbb33105b00a75b26549612ba3e1a9c3266469b7a6271f5daaa58",
+      "source": {
+        "blob": "f28ce1c5d82dbb33105b00a75b26549612ba3e1a9c3266469b7a6271f5daaa58",
+        "kind": "overlay"
+      }
+    }
+  ],
+  "overlay_sha256": "2a2f6c7c4f1136227ad613451f8758bafd426d82996e12f97ebc511ab8631b9b",
+  "upstream": {
+    "kind": "scbench",
+    "source_root_key": null
+  },
+  "workspace_tree_sha256": "4a55e8e19518e30fb780f7d9b1f59df4551257d4d98378e0ddf9d53491bbffab"
+}

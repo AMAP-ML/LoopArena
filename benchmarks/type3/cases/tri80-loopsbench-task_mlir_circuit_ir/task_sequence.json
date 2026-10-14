@@ -1,0 +1,19 @@
+{
+  "adapter_kind": "loopsbench",
+  "checkpoint_context_policy": "single_episode",
+  "checkpoint_failure_policy": "stop_after_task",
+  "official_task_id": "loopsbench:task_mlir_circuit_ir",
+  "release_content_hash": "84ae4156df6a132416109e2cf27bb72bcbde1e764dea40f3abab5e4ade942020",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/task.json",
+      "evaluator_plan_sha256": "1f8ab7e7a1a385cffc46db22336fbfa95a4e0f478564214a32976cabbbca2322",
+      "step_id": "task",
+      "task_ref": "tasks/task.md",
+      "task_sha256": "7c8d06f582d5782300cac995896df8ccf1afa4cc3e27cc8177e3bde1d23b125c"
+    }
+  ],
+  "target_step": "task",
+  "task_scope": "official_full_task",
+  "workspace_origin": "pinned_loopsbench_release_source_base"
+}

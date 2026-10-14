@@ -1,0 +1,54 @@
+{
+  "adapter_kind": "scbench",
+  "aggregate_pass_policy": "all_official_checkpoints_pass",
+  "checkpoint_context_policy": "reset_model_context_preserve_workspace",
+  "checkpoint_coverage_policy": "all_official_checkpoints",
+  "checkpoint_failure_policy": "continue_after_valid_task_failure_stop_on_infrastructure_invalid",
+  "official_checkpoint_count": 5,
+  "official_task_id": "scbench:trajectory_api",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/checkpoint_1.json",
+      "evaluator_plan_sha256": "f5165f12055762f692953a7c9d7fbc9f6d9f3f038ca1eb5b31274e91b168990c",
+      "step_id": "checkpoint_1",
+      "task_ref": "tasks/checkpoint_1.md",
+      "task_sha256": "1235db381cf182eaa6b9b29ec379092810f26c3cbfa8f88fe6555052d5dc6af5",
+      "tests_expected": 64
+    },
+    {
+      "evaluator_plan_ref": "evaluator_plans/checkpoint_2.json",
+      "evaluator_plan_sha256": "73696fdf8a2775aed652c8259c52dc79a752d5330a8cd67219b07bf424507c03",
+      "step_id": "checkpoint_2",
+      "task_ref": "tasks/checkpoint_2.md",
+      "task_sha256": "8239ef8a8c6b08e84f776cd2bba2b612983103329322f14320c26280ac992599",
+      "tests_expected": 146
+    },
+    {
+      "evaluator_plan_ref": "evaluator_plans/checkpoint_3.json",
+      "evaluator_plan_sha256": "79d6690a2537fda159bfda7ba75234de3cca1c8df3bca4b4b7f112d1bf88debd",
+      "step_id": "checkpoint_3",
+      "task_ref": "tasks/checkpoint_3.md",
+      "task_sha256": "791aa07530ac2af5087f69812696d1f2f74f3909e0c541bc39a4f855ac5a5dd5",
+      "tests_expected": 256
+    },
+    {
+      "evaluator_plan_ref": "evaluator_plans/checkpoint_4.json",
+      "evaluator_plan_sha256": "9b48f07c5388526ec076b85adbaa121cd68c9f52ca53f9f060a055c02223e09d",
+      "step_id": "checkpoint_4",
+      "task_ref": "tasks/checkpoint_4.md",
+      "task_sha256": "c51db946a8e09607e05eace87dd506726d6d15e23d971c23ac22fcfde34a8182",
+      "tests_expected": 355
+    },
+    {
+      "evaluator_plan_ref": "evaluator_plans/checkpoint_5.json",
+      "evaluator_plan_sha256": "53bfb9f972db006f74a52f00e704ad3546f0e476da5303f7065fc0671c592e94",
+      "step_id": "checkpoint_5",
+      "task_ref": "tasks/checkpoint_5.md",
+      "task_sha256": "763c5c4d05948c7f493b3d97c6745841058d34be876a1ca8245e57c8f1f86919",
+      "tests_expected": 373
+    }
+  ],
+  "target_step": "checkpoint_5",
+  "task_scope": "official_full_problem",
+  "workspace_origin": "empty_workspace_plus_declared_public_static_assets"
+}

@@ -1,0 +1,5942 @@
+{
+  "case_id": "tri80-beyondswe-hackingmaterials_matminer_pr925-cp2",
+  "files": [
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": ".github"
+    },
+    {
+      "bytes": 396,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/ISSUE_TEMPLATE.md",
+      "sha256": "139ccf5b4eef6b5bd2104dfd08757cb8180ece2ca2989cdec577629f98553747",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/ISSUE_TEMPLATE.md"
+      }
+    },
+    {
+      "bytes": 263,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "sha256": "8343a5a0f6eccc7b29d222362e30db31a800bad992f868e938b1d10a5d526af8",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/PULL_REQUEST_TEMPLATE.md"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": ".github/workflows"
+    },
+    {
+      "bytes": 1851,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/workflows/release.yml",
+      "sha256": "58960fef01564a1f6f34b6e09cab7e5b3a22ae7ea4f7496dbc94b4a6c8120988",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/workflows/release.yml"
+      }
+    },
+    {
+      "bytes": 2897,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/workflows/test.yml",
+      "sha256": "6fb903f178394b8dd5cce3a074c5f9318ed4cb522617aac585f430bedd56eb67",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/workflows/test.yml"
+      }
+    },
+    {
+      "bytes": 3581,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/workflows/upgrade-dependencies.yml",
+      "sha256": "0d622992c41fb4d8aa362a3dc687f9bcc53b0a55b7eabcc998b8444423530c39",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/workflows/upgrade-dependencies.yml"
+      }
+    },
+    {
+      "bytes": 518,
+      "kind": "file",
+      "mode": 420,
+      "path": ".gitignore",
+      "sha256": "7edc8f3895caefb1c1818a1119f288ff0f417d273f97650311e45c4e2771b24f",
+      "source": {
+        "kind": "upstream",
+        "path": ".gitignore"
+      }
+    },
+    {
+      "bytes": 1250,
+      "kind": "file",
+      "mode": 420,
+      "path": ".pre-commit-config.yaml",
+      "sha256": "076ee0c5b1febeb8835ff2248eaed8d03a8b8e097f6e1ac5b8c4b58fe90b74a4",
+      "source": {
+        "kind": "upstream",
+        "path": ".pre-commit-config.yaml"
+      }
+    },
+    {
+      "bytes": 28,
+      "kind": "file",
+      "mode": 420,
+      "path": "CHANGES.txt",
+      "sha256": "2944b7d180bf54a2a9922ff45cdb4772f8ce47144b4f4f9b1579299a114dce0f",
+      "source": {
+        "kind": "upstream",
+        "path": "CHANGES.txt"
+      }
+    },
+    {
+      "bytes": 3109,
+      "kind": "file",
+      "mode": 420,
+      "path": "CONTRIBUTING.md",
+      "sha256": "6825debf131c4e22092a40419bd8f5fce263728387eb5898939cbf16212fcc37",
+      "source": {
+        "kind": "upstream",
+        "path": "CONTRIBUTING.md"
+      }
+    },
+    {
+      "bytes": 111284,
+      "kind": "file",
+      "mode": 420,
+      "path": "Flowchart.png",
+      "sha256": "de2ce2e77f37586dff9dbe78d089fe025d390853e703bb0fbf380654eea46ccd",
+      "source": {
+        "kind": "upstream",
+        "path": "Flowchart.png"
+      }
+    },
+    {
+      "bytes": 2419,
+      "kind": "file",
+      "mode": 420,
+      "path": "LICENSE",
+      "sha256": "e4df766c6937dad4a0f0646e2afbbc1689aacb3a0c30db687acbd86f73083cc4",
+      "source": {
+        "kind": "upstream",
+        "path": "LICENSE"
+      }
+    },
+    {
+      "bytes": 564,
+      "kind": "file",
+      "mode": 420,
+      "path": "MANIFEST.in",
+      "sha256": "8684034f81d5af831031b61355a459d1c03084406fb5ca6861b8e729e14caa14",
+      "source": {
+        "kind": "upstream",
+        "path": "MANIFEST.in"
+      }
+    },
+    {
+      "bytes": 2084,
+      "kind": "file",
+      "mode": 493,
+      "path": "README.md",
+      "sha256": "31976bf96eb71706805f5c75884b01e9fb6dc7c70b32ea8d4a58d4b97e6df0f9",
+      "source": {
+        "kind": "upstream",
+        "path": "README.md"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "dev_scripts"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "dev_scripts/dataset_management"
+    },
+    {
+      "bytes": 10192,
+      "kind": "file",
+      "mode": 420,
+      "path": "dev_scripts/dataset_management/generate_datasets.py",
+      "sha256": "431861ef1947f39d4d3a1f7afc957a7714fde03cd5aab56bf97d2d5ed9c6be27",
+      "source": {
+        "kind": "upstream",
+        "path": "dev_scripts/dataset_management/generate_datasets.py"
+      }
+    },
+    {
+      "bytes": 8463,
+      "kind": "file",
+      "mode": 420,
+      "path": "dev_scripts/dataset_management/modify_dataset_metadata.py",
+      "sha256": "a156febbeeccf2f31a09b5489780d45badbade7fcfec41dcbaf0dc65e3157665",
+      "source": {
+        "kind": "upstream",
+        "path": "dev_scripts/dataset_management/modify_dataset_metadata.py"
+      }
+    },
+    {
+      "bytes": 56843,
+      "kind": "file",
+      "mode": 420,
+      "path": "dev_scripts/dataset_management/prep_dataset_for_figshare.py",
+      "sha256": "00967d6a8d3434007c9f95852179995a0d3c4e48e913ac6751e56affc3948218",
+      "source": {
+        "kind": "upstream",
+        "path": "dev_scripts/dataset_management/prep_dataset_for_figshare.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "docs"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/.nojekyll",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/tests/__init__.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "docs/_images"
+    },
+    {
+      "bytes": 267829,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/Flowchart.png",
+      "sha256": "97c7e78a37e4c19fd1c9b774e6e762252970337016e5a7baac85f17ef15bb06c",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/_static/Flowchart.png"
+      }
+    },
+    {
+      "bytes": 233051,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/example_bulkmod.png",
+      "sha256": "fa35ef936974882bd5a7779ebb0ad0842f015d1c81a86fa13cc845e3b9541ca8",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/_static/example_bulkmod.png"
+      }
+    },
+    {
+      "bytes": 201518,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/example_bulkmod_feats.png",
+      "sha256": "a0771be5657b95172556f69ca6fb4aa3329d61c9d9b5f2b87d455a3c28538cc5",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/_static/example_bulkmod_feats.png"
+      }
+    },
+    {
+      "bytes": 116774,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/example_bulkmod_rf.png",
+      "sha256": "fbd824831aae31a704780e872fc99bd458a316a082a14fc044e58b18f9b5b3d2",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/_static/example_bulkmod_rf.png"
+      }
+    },
+    {
+      "bytes": 453119,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/featurizer_diagram.png",
+      "sha256": "a715c83e2c251746837cfd6210c011497df1d60cbc603a166d8bb9ea3d856f67",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/_static/featurizer_diagram.png"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "docs/_images/math"
+    },
+    {
+      "bytes": 199,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/01caff91ea974c5cc0c133c5b4a560d433ff589b.png",
+      "sha256": "78b839b540da715378bdc6257dbc026bb2f1af30f1c914f687c6c0e9fca4b911",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/01caff91ea974c5cc0c133c5b4a560d433ff589b.png"
+      }
+    },
+    {
+      "bytes": 348,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/0239bb38c93a6213c5ac6ba1dabd3e0a003ed371.png",
+      "sha256": "744c62ed4648ba63535296d79e3534ae0ab17514f6b2b22533530be7bf75ff54",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/18a48ac390a7070c05a265edbfa13f1322d47daf.png"
+      }
+    },
+    {
+      "bytes": 209,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/02d98909b5d6acd6a7ff927d4d42790bdd407d58.png",
+      "sha256": "c60390d849afe924c401ff2a021dc0911969eaf033cca5f8bf8d0f983503dd18",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/02d98909b5d6acd6a7ff927d4d42790bdd407d58.png"
+      }
+    },
+    {
+      "bytes": 263,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/045fae7cfacaf28d29d6bdb81ab5ef61b1b07808.png",
+      "sha256": "414597b5a5fa5d15d89b12615b2b629fa657d5f39ecb703796e3babe3013c49c",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/182c7d0771b253a55441383d191fce92f3d58e02.png"
+      }
+    },
+    {
+      "bytes": 270,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/0467e0003559a763cbcd16dcd0bf3c33f9c65901.png",
+      "sha256": "f9ec177ea7e595e0856e5125a80f43c4e76241b369d76a48af35302d888e10ef",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/fcd0c45a70da7d2399b3fb666759b02c5edd251e.png"
+      }
+    },
+    {
+      "bytes": 1155,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/06dfe124bb57b08106d4043aea4218b309454d8d.png",
+      "sha256": "2e274dd9518521d2c3296ee578288d6500675b213ca23e7c959bbcfb45f207fe",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/cfca9af3a86afde1b9efe235bfc3e48f90890d82.png"
+      }
+    },
+    {
+      "bytes": 347,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/074903764bb5a464b7c346e84f43cba2174f3ab0.png",
+      "sha256": "e71e358b698a2f3f4b9eba8c6d15acb74044e4ab48a5b5f005f5497c7f0137b4",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/3c6c50508e2411873e8aec04b9b0d0b026227dad.png"
+      }
+    },
+    {
+      "bytes": 347,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/079ba1f3373823268ba0e33b400423434ca7c0a6.png",
+      "sha256": "e71e358b698a2f3f4b9eba8c6d15acb74044e4ab48a5b5f005f5497c7f0137b4",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/3c6c50508e2411873e8aec04b9b0d0b026227dad.png"
+      }
+    },
+    {
+      "bytes": 263,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/083b5d48a524b6f7a39570bbe0d51d474cb588e6.png",
+      "sha256": "414597b5a5fa5d15d89b12615b2b629fa657d5f39ecb703796e3babe3013c49c",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/182c7d0771b253a55441383d191fce92f3d58e02.png"
+      }
+    },
+    {
+      "bytes": 267,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/08e21b3be44ad4aac8ed231afc369152e9c8539c.png",
+      "sha256": "56f07f64d80abdad38df8fb5e26cbcdf3d8344d67fade655cbd32045d4dbf277",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/774df2c68904c92b7c0db636d12ca2ca6ee21263.png"
+      }
+    },
+    {
+      "bytes": 820,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/0b21f31621e4f0f2b3b5faa10af80dc999f9ffdf.png",
+      "sha256": "64bba3041ad2e17dc9af0f3b91be768406566ce10894835aee552f671e35dd23",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/0b21f31621e4f0f2b3b5faa10af80dc999f9ffdf.png"
+      }
+    },
+    {
+      "bytes": 230,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/0b7c1e16a3a8a849bb8ffdcdbf86f65fd1f30438.png",
+      "sha256": "35c53b89123a948f5e4b138774a958c18924b4ab7ed63439498f685f7b59179c",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/e9203da50e1059455123460d4e716c9c7f440cc3.png"
+      }
+    },
+    {
+      "bytes": 467,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/0c9c2dac2bd7f86735f42ef4184918c37425d67a.png",
+      "sha256": "adfbe5af2e88a140acff84cbc4861f5ff4708799a12efb7835642e5f20350279",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/a25e560325b732d03aa5e9a69521f2bfa67e5f4e.png"
+      }
+    },
+    {
+      "bytes": 452,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/0ee4480fa3fe2856c28f74b0aa03fde5e83cfb0a.png",
+      "sha256": "e46344c3bdbb472c613101928691dfac822a633f5ca64c2a048f0e987f6cd1a0",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/0ee4480fa3fe2856c28f74b0aa03fde5e83cfb0a.png"
+      }
+    },
+    {
+      "bytes": 267,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/12249dbb3a129598bfef9a4f490147c6a4537213.png",
+      "sha256": "9d9e5546132f1f3b2e91a6cc3ab8050e392ca650ba3f91f43843ddafb3f99485",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/da96c58cf8c1bcc132a2252a23859c4ceaadf9f9.png"
+      }
+    },
+    {
+      "bytes": 263,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/182c7d0771b253a55441383d191fce92f3d58e02.png",
+      "sha256": "414597b5a5fa5d15d89b12615b2b629fa657d5f39ecb703796e3babe3013c49c",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/182c7d0771b253a55441383d191fce92f3d58e02.png"
+      }
+    },
+    {
+      "bytes": 423,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/18711f8217158b267749b882e02ef2f9f17431c0.png",
+      "sha256": "70dfde5d31705a49cb6f2582750bd7ac0e2ccade97952396269f9eea0d44f6fb",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/d0081e53ec3772333006e7b8b488993ff712fe36.png"
+      }
+    },
+    {
+      "bytes": 348,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/18a48ac390a7070c05a265edbfa13f1322d47daf.png",
+      "sha256": "744c62ed4648ba63535296d79e3534ae0ab17514f6b2b22533530be7bf75ff54",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/18a48ac390a7070c05a265edbfa13f1322d47daf.png"
+      }
+    },
+    {
+      "bytes": 384,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/18f11bbc89febc978169289978481f64a403be7e.png",
+      "sha256": "923884a583394716f236d66b214d2d95831ad0144211b09fb2d17374a4333e1d",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/abdaecd41a1558846f03b71ab3d99436de6faf0d.png"
+      }
+    },
+    {
+      "bytes": 293,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/192c5eb5f76c194be10ed549a12e8cae7e9f4e37.png",
+      "sha256": "34c5f8fc9fb4aa6c499c67b1730e829e89b20b2ad59e2fbf70f8be6f75b104b6",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/192c5eb5f76c194be10ed549a12e8cae7e9f4e37.png"
+      }
+    },
+    {
+      "bytes": 206,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/1947a1c371cf018ebfcdf1fee66dacce40b9ab4c.png",
+      "sha256": "a74a52ff6d7b0d89e627b17413512a343f747542f5d6246bad46f5fc96f88274",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/5df994acd5cadc81c38f1a28e4ea3f8281b6c4cb.png"
+      }
+    },
+    {
+      "bytes": 239,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/1b1fd12d69ea533588e033d255888cb6a17cdca6.png",
+      "sha256": "4c31c97037c36a8842f94e1cf2120b1cc0ed15d22915684368212752c329e568",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/8f3c6b529aaa515fdbc6c51b4fc4f73293dbfc09.png"
+      }
+    },
+    {
+      "bytes": 380,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/1c7982e9bed52596de46d839a5334f537de1c35d.png",
+      "sha256": "fed406d3d1528783edefd7f6f559e1b464b33d8fc0297e10f998ea42a32e17ae",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/f0d949c29370cd898ed70f8f32a09349764a1ebb.png"
+      }
+    },
+    {
+      "bytes": 257,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/1ebe654cc7b8f2a0d8100aa5825cf2b9021adbbc.png",
+      "sha256": "af7bbbdfb291a4d718c4b118ed8def44ac44d4c8cc06bcfa4bb10ad2358af883",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/1ebe654cc7b8f2a0d8100aa5825cf2b9021adbbc.png"
+      }
+    },
+    {
+      "bytes": 280,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/1fbee781f84569077719a167b64e12064360fac1.png",
+      "sha256": "3eb61409e90184a1985a8bbd19d2ebef47fa7fad836c8f3e93e59150e3ce7b2e",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/fa34489cf430b7630b30f28b2eb050e2489e3523.png"
+      }
+    },
+    {
+      "bytes": 435,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/20380591afec1e5625f65892e5af51719381bf91.png",
+      "sha256": "351dc455f776e22aba036bada4da530f4fd476a0dc85599101007e3f14f59146",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/e37b8a88ae16543f49591bf090bf9bd2fe5088da.png"
+      }
+    },
+    {
+      "bytes": 302,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/22a57909899e26fbb172500446c43f2ba7ebd563.png",
+      "sha256": "81170bb9cb263cb350cb225e438eb7ca1fcf738d86e5956601abcb32709e26b6",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/eda67b6e5103620f15dda4926fbd244c38024373.png"
+      }
+    },
+    {
+      "bytes": 296,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/240509feeacaad2b6744f49f69502b84f78f1fef.png",
+      "sha256": "80babe0e636655666e388b50741595ecef3c7e7a2f49cbfb0d6027dc8fbe6c89",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/a6c088a730612710750ee31f9cc780d5f94f9989.png"
+      }
+    },
+    {
+      "bytes": 269,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/298204ab1b85022412ad261503dcab8bd14fb321.png",
+      "sha256": "ff03583d75ad5686aa2ecdb90f0abb3bd18fc7ebb8cdbef75eabe363ea324c27",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/8968e4fd6ebe2d668010ed37e2172340daaefa2d.png"
+      }
+    },
+    {
+      "bytes": 269,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/2aa528e29c4df6e3a7e44783f02f45e46012b948.png",
+      "sha256": "ff03583d75ad5686aa2ecdb90f0abb3bd18fc7ebb8cdbef75eabe363ea324c27",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/8968e4fd6ebe2d668010ed37e2172340daaefa2d.png"
+      }
+    },
+    {
+      "bytes": 501,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/2c79776b8b888d73f48a6a996815a078713a2a78.png",
+      "sha256": "5c013a9fccb1c38a11203c3137b5f407fb2b79520e97923064121e4a9646e535",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/66343a54ffb585a31a82fe441ee9fc3cd8eb4368.png"
+      }
+    },
+    {
+      "bytes": 197,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/2ede365ad144ab396916ec60458da03860803078.png",
+      "sha256": "05691113fa3dfa32375c4e06044ad60e1d11c95c504acd8943ba1d7dca94d32a",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/eaa6ad49a7f78fe5a13b486690163bf2dc7e3e60.png"
+      }
+    },
+    {
+      "bytes": 569,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/2fc0510f783f8ce42baa1c4ac6b86d94a6382093.png",
+      "sha256": "251b6da0da3b88f1a32b4492322bf12aa4960f2e6d45d18fa86f9791aac9fa6d",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/d188c978e0d95e667be9c33955b35c80ec4c786f.png"
+      }
+    },
+    {
+      "bytes": 380,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/2fe13d18c90531495ad5a8b7976e2a7bda67ae7e.png",
+      "sha256": "fed406d3d1528783edefd7f6f559e1b464b33d8fc0297e10f998ea42a32e17ae",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/f0d949c29370cd898ed70f8f32a09349764a1ebb.png"
+      }
+    },
+    {
+      "bytes": 383,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/2fe6d1d220a6eb68148f55432fd2234ca529685c.png",
+      "sha256": "b8b0fa5bb7108881ae7d1d3e4166dfaae26f48038a3e0063c8a3f8d521e23b2a",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/ac5b8bd01421ff3a8f1a464013ce05b7a4373141.png"
+      }
+    },
+    {
+      "bytes": 257,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/2ff684758d53878ad22e0ebaa7f34d709cc1b6a4.png",
+      "sha256": "ac8322f7f2879e5b4360df258ddf6a13b95ad8044d7823bdb0f1700e760bba31",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/f7d483a2293790337ad1ba440b6430f82ad420d6.png"
+      }
+    },
+    {
+      "bytes": 226,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/30634b08f5df289a7acab4963cb6a3e6b99aba0f.png",
+      "sha256": "5c36ddbff7e5d5d2329cc55c5359af66a9c9c3529a51fed090e0ccf806783ef9",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/ff90a5f025d9fd305aac19c8dd64fa15f0c789a1.png"
+      }
+    },
+    {
+      "bytes": 896,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/30d9a509980f1622c5d182d9b846afd31019bb05.png",
+      "sha256": "86694eac024151a725c24243725d551e5f9815e78165114abcd784d3825673ba",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/30d9a509980f1622c5d182d9b846afd31019bb05.png"
+      }
+    },
+    {
+      "bytes": 501,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/31880c4812286affe8e1e36fce7bdc56e8e28458.png",
+      "sha256": "5c013a9fccb1c38a11203c3137b5f407fb2b79520e97923064121e4a9646e535",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/66343a54ffb585a31a82fe441ee9fc3cd8eb4368.png"
+      }
+    },
+    {
+      "bytes": 225,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/31fdf41b39df23c95e52c5aef07f59d9adf82f3c.png",
+      "sha256": "5fd631054b8bf6a87129d225257e0273c7f4578c65633d1dcb52930a6f58631f",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/532f3248d6552e7ac6b785bd935f404ad593e6a9.png"
+      }
+    },
+    {
+      "bytes": 574,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/326c6fcc3609b0c2183f6a9e23d4aa1d4b141ea2.png",
+      "sha256": "36ee302fcfaedb27ab10ae3dc19142a002a7383da85c8eabff452b49c7942d3d",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/326c6fcc3609b0c2183f6a9e23d4aa1d4b141ea2.png"
+      }
+    },
+    {
+      "bytes": 267,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/35bab58b40a77a2e24ecb9f58898f1813de64459.png",
+      "sha256": "56f07f64d80abdad38df8fb5e26cbcdf3d8344d67fade655cbd32045d4dbf277",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/774df2c68904c92b7c0db636d12ca2ca6ee21263.png"
+      }
+    },
+    {
+      "bytes": 294,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/3af01b3f850c53aa06a7ef9878392efada5f2e71.png",
+      "sha256": "faa539b7a948facbff0b3356b0e048bbd6be62b65a1b3d9f9f3d15cdec7cce2c",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/c279824074ed8acc9cd963e930735f542462edec.png"
+      }
+    },
+    {
+      "bytes": 347,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/3c6c50508e2411873e8aec04b9b0d0b026227dad.png",
+      "sha256": "e71e358b698a2f3f4b9eba8c6d15acb74044e4ab48a5b5f005f5497c7f0137b4",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/3c6c50508e2411873e8aec04b9b0d0b026227dad.png"
+      }
+    },
+    {
+      "bytes": 264,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/3fd88e5561f4bce2bf17dc50624a4756051bf38a.png",
+      "sha256": "e1785ce5ac812490ba3c5c09de06560ebb5566d9bf21052b53399cf68afc0f67",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/99caa835285abdbc99536106ff1d075a870c2650.png"
+      }
+    },
+    {
+      "bytes": 228,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/413f8a8e40062a9090d9d50b88bc7b551b314c26.png",
+      "sha256": "620b7b6bd314447f608cd0eddbbac38d05caea88cc513fe2c8ca351d2beb951c",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/e11f2701c4a39c7fe543a6c4150b421d50f1c159.png"
+      }
+    },
+    {
+      "bytes": 257,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/44a53fd8bbb2f72416882129ccc4cf64e49fc3df.png",
+      "sha256": "ac8322f7f2879e5b4360df258ddf6a13b95ad8044d7823bdb0f1700e760bba31",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/f7d483a2293790337ad1ba440b6430f82ad420d6.png"
+      }
+    },
+    {
+      "bytes": 481,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/44b79d2c935cf226fc2707938207c023c1351cb0.png",
+      "sha256": "bdabbbb1fd9c32dcdcacc87eea2b8529fdeb7fa0b718c3a26657582668f5d469",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/e030043610306028604a08f8ced75f5cd780b96c.png"
+      }
+    },
+    {
+      "bytes": 226,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/496867ca68c428fa123f26f0f73997632e61e116.png",
+      "sha256": "5c36ddbff7e5d5d2329cc55c5359af66a9c9c3529a51fed090e0ccf806783ef9",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/ff90a5f025d9fd305aac19c8dd64fa15f0c789a1.png"
+      }
+    },
+    {
+      "bytes": 406,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/4fbce1d9d579dd5c678c54ab9967433263dbeaa2.png",
+      "sha256": "db28112b238a4ce05f0d091175d303667b24ac8ba05964a81775c72bcf986318",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/c9c2aeea32459ab854f099f25fd5310801d90ab2.png"
+      }
+    },
+    {
+      "bytes": 275,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/5183ea9096ac86aff6e13dd3d4389ae47617b059.png",
+      "sha256": "3b91aca07f07575320d62a838b5062da5ac7aa56ff5bc9e849c91194c53f2e82",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/5183ea9096ac86aff6e13dd3d4389ae47617b059.png"
+      }
+    },
+    {
+      "bytes": 257,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/5247131b3b1b9cc457d29a9b08a19c2062ed3d16.png",
+      "sha256": "a5f1075ad53174ec075efc2a749cd9c53d5761cc7ab34dcbcfcc187df643600c",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/5247131b3b1b9cc457d29a9b08a19c2062ed3d16.png"
+      }
+    },
+    {
+      "bytes": 225,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/532f3248d6552e7ac6b785bd935f404ad593e6a9.png",
+      "sha256": "5fd631054b8bf6a87129d225257e0273c7f4578c65633d1dcb52930a6f58631f",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/532f3248d6552e7ac6b785bd935f404ad593e6a9.png"
+      }
+    },
+    {
+      "bytes": 236,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/5635a7c34414599c2452d72430811e816b460335.png",
+      "sha256": "fb3a69820b47f9b1c5d9ba2bc3032ed872820841b9e741ca2a719327db67eb4d",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/97db043c7cba573ac389b71add78b048077e8a13.png"
+      }
+    },
+    {
+      "bytes": 406,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/56e23ea8dd42fdbfc2b216f54b730114ec8acfd8.png",
+      "sha256": "db28112b238a4ce05f0d091175d303667b24ac8ba05964a81775c72bcf986318",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/c9c2aeea32459ab854f099f25fd5310801d90ab2.png"
+      }
+    },
+    {
+      "bytes": 267,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/59dc9a44d175aae008c18691b9f662270e36ef5d.png",
+      "sha256": "9d9e5546132f1f3b2e91a6cc3ab8050e392ca650ba3f91f43843ddafb3f99485",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/da96c58cf8c1bcc132a2252a23859c4ceaadf9f9.png"
+      }
+    },
+    {
+      "bytes": 294,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/5a53aff7886e588bf17ff209a8fa05351cda8798.png",
+      "sha256": "08a41415c25217eba4fa00732e70af4da54ad6b0b6465e01208288d26b73ffbb",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/6996f78ce1c5e71c67956260100a4a672b511de5.png"
+      }
+    },
+    {
+      "bytes": 228,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/5a939c5280da7202ca4531f175a7780ad5e1f80a.png",
+      "sha256": "620b7b6bd314447f608cd0eddbbac38d05caea88cc513fe2c8ca351d2beb951c",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/e11f2701c4a39c7fe543a6c4150b421d50f1c159.png"
+      }
+    },
+    {
+      "bytes": 200,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/5aa339d4daf45a810dda332e3c80a0698e526e04.png",
+      "sha256": "4195580d5c218b703d56bf8fc0b7c749f22e13ab6ed32db3f5882093e1b77f50",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/df0deb143e5ac127f00bd248ee8001ecae572adc.png"
+      }
+    },
+    {
+      "bytes": 234,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/5bd39cc00b680a56dad487c2aa31394db3e90140.png",
+      "sha256": "092d70eb5eee07581b51a2cf9ba51e81e64bff568f8c1eeb7523a9ceca46f7b1",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/5bd39cc00b680a56dad487c2aa31394db3e90140.png"
+      }
+    },
+    {
+      "bytes": 283,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/5d5ac3af39ca1a97abbb4a0deccbb8c64a72d831.png",
+      "sha256": "f416b001fece62f270fd04b88170e6f33b7ef3690f7bb7f29f1d1d9d8a444a90",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/5d5ac3af39ca1a97abbb4a0deccbb8c64a72d831.png"
+      }
+    },
+    {
+      "bytes": 206,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/5df994acd5cadc81c38f1a28e4ea3f8281b6c4cb.png",
+      "sha256": "a74a52ff6d7b0d89e627b17413512a343f747542f5d6246bad46f5fc96f88274",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/5df994acd5cadc81c38f1a28e4ea3f8281b6c4cb.png"
+      }
+    },
+    {
+      "bytes": 282,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/5fa6513bef00e529069be708641fcce5a1535803.png",
+      "sha256": "f8fe36c626a9a0c12b83014f3f0221bd39513d7106d98c16944dec1c465add4a",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/f761880e192d4bc7f9a3b7c5b0c495177b219bba.png"
+      }
+    },
+    {
+      "bytes": 296,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/5faf686e0e8426c21ae030d783d5624321d18476.png",
+      "sha256": "80babe0e636655666e388b50741595ecef3c7e7a2f49cbfb0d6027dc8fbe6c89",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/a6c088a730612710750ee31f9cc780d5f94f9989.png"
+      }
+    },
+    {
+      "bytes": 282,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/60b74287bf19e27bc5a3e755457326add30fc669.png",
+      "sha256": "f8fe36c626a9a0c12b83014f3f0221bd39513d7106d98c16944dec1c465add4a",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/f761880e192d4bc7f9a3b7c5b0c495177b219bba.png"
+      }
+    },
+    {
+      "bytes": 293,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/625e23c6d74cc842c0521cce76baa0d254b52926.png",
+      "sha256": "8491cde2cd5952aaf68cbd2e3c8cacf0f594947232787bc3c96b758e51cf74fe",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/625e23c6d74cc842c0521cce76baa0d254b52926.png"
+      }
+    },
+    {
+      "bytes": 501,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/66343a54ffb585a31a82fe441ee9fc3cd8eb4368.png",
+      "sha256": "5c013a9fccb1c38a11203c3137b5f407fb2b79520e97923064121e4a9646e535",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/66343a54ffb585a31a82fe441ee9fc3cd8eb4368.png"
+      }
+    },
+    {
+      "bytes": 264,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/66b30555c6212f4bfbe96c9a9dfceb59d818aef6.png",
+      "sha256": "e1785ce5ac812490ba3c5c09de06560ebb5566d9bf21052b53399cf68afc0f67",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/99caa835285abdbc99536106ff1d075a870c2650.png"
+      }
+    },
+    {
+      "bytes": 294,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/6996f78ce1c5e71c67956260100a4a672b511de5.png",
+      "sha256": "08a41415c25217eba4fa00732e70af4da54ad6b0b6465e01208288d26b73ffbb",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/6996f78ce1c5e71c67956260100a4a672b511de5.png"
+      }
+    },
+    {
+      "bytes": 225,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/6b21e0b0899a0d2879d3b8019087fa630bab4ea2.png",
+      "sha256": "443ae8f09b71931035fa2914a940cdd0ede6776b7917cf8af6b74e8e22a78f4a",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/e3fc28292267f066fee7718c64f4bbfece521f24.png"
+      }
+    },
+    {
+      "bytes": 595,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/6f63a2c6be03f660db3b46fdb09e3e5bbc9c0b83.png",
+      "sha256": "dba35e3a8d390a92a6f182262533c29213d37e150c0ccc2e7747a2b936e6e8c0",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/de47a77e2e05505f7581a4dcf8ae4f7750fe53ad.png"
+      }
+    },
+    {
+      "bytes": 488,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/717a514d7c39628ccc8ab9dc5b3b822017d413fc.png",
+      "sha256": "2f5a7d069e63c33ee9ab4ab5568bbc6531e339d1799e93e00cbbf1e860bc348a",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/f81750957860f8838122955a5d011e73e7962d55.png"
+      }
+    },
+    {
+      "bytes": 802,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/71a383cae1bb3f6d73faeea9e3241486d863dbc9.png",
+      "sha256": "49feeb3e6df7cb9cc65d2b37dbd83d08c83d2e446e0bc9a22f516a0598004f14",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/71a383cae1bb3f6d73faeea9e3241486d863dbc9.png"
+      }
+    },
+    {
+      "bytes": 1003,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/7358fb1b6031c815b8f99086409882bf1980148f.png",
+      "sha256": "e630eefbf1dcb610a8702d8d5bd8a225620900e1c03493c3d05f4ac320f3abf8",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/c833e66a1aa68dba7be89cbcaed7e749967ab5c9.png"
+      }
+    },
+    {
+      "bytes": 267,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/774df2c68904c92b7c0db636d12ca2ca6ee21263.png",
+      "sha256": "56f07f64d80abdad38df8fb5e26cbcdf3d8344d67fade655cbd32045d4dbf277",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/774df2c68904c92b7c0db636d12ca2ca6ee21263.png"
+      }
+    },
+    {
+      "bytes": 423,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/775308689ec82d24ee08490a702181d1ccbe59d8.png",
+      "sha256": "70dfde5d31705a49cb6f2582750bd7ac0e2ccade97952396269f9eea0d44f6fb",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/d0081e53ec3772333006e7b8b488993ff712fe36.png"
+      }
+    },
+    {
+      "bytes": 929,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/78eabc361f3a54daeed501fff0d3353b946504ae.png",
+      "sha256": "496953e9cb8ec978c9e75c6625ee3fcfd704e4706cda571670026894f730cbb7",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/ee97899107420cf7a24b2532c2c7c09a023be431.png"
+      }
+    },
+    {
+      "bytes": 197,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/79a3d439d28652c547386f39b555d90d3aaf102d.png",
+      "sha256": "05691113fa3dfa32375c4e06044ad60e1d11c95c504acd8943ba1d7dca94d32a",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/eaa6ad49a7f78fe5a13b486690163bf2dc7e3e60.png"
+      }
+    },
+    {
+      "bytes": 506,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/7c4a5c45c86c3c6a4b3d73c5a58b549b14d201df.png",
+      "sha256": "4e4a7b5dd29eaba1f7f95224de56d8136a89a5b0391d305131a87134ccefce68",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/b16ff7ad79d632da6d242820aa5676c989057de9.png"
+      }
+    },
+    {
+      "bytes": 239,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/86ec1edb070ffe9216097a80189ee3434c9b5f20.png",
+      "sha256": "4c31c97037c36a8842f94e1cf2120b1cc0ed15d22915684368212752c329e568",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/8f3c6b529aaa515fdbc6c51b4fc4f73293dbfc09.png"
+      }
+    },
+    {
+      "bytes": 467,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/879aee5829f6469733f819b01853c5205ecc88b6.png",
+      "sha256": "adfbe5af2e88a140acff84cbc4861f5ff4708799a12efb7835642e5f20350279",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/a25e560325b732d03aa5e9a69521f2bfa67e5f4e.png"
+      }
+    },
+    {
+      "bytes": 224,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/889fc7f9c8e35e08413407d53c89909849345138.png",
+      "sha256": "5beb0a81f6ad8fa59070e08ef72776071bcd0e501d098242d9e31d10d4988541",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/ee29958a93bd815ef9f3e2508e54fa1871d0d111.png"
+      }
+    },
+    {
+      "bytes": 269,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/8968e4fd6ebe2d668010ed37e2172340daaefa2d.png",
+      "sha256": "ff03583d75ad5686aa2ecdb90f0abb3bd18fc7ebb8cdbef75eabe363ea324c27",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/8968e4fd6ebe2d668010ed37e2172340daaefa2d.png"
+      }
+    },
+    {
+      "bytes": 216,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/89bf47a4edaa04f32146a8079e6564a0146d6c92.png",
+      "sha256": "42421996dd44543e7ec399975ae8d046e214e771a93b4f5ddd894350c43edc1f",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/89bf47a4edaa04f32146a8079e6564a0146d6c92.png"
+      }
+    },
+    {
+      "bytes": 384,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/8ec4bad22a4dd149e5658ab17c4358b3dbc8dc1e.png",
+      "sha256": "923884a583394716f236d66b214d2d95831ad0144211b09fb2d17374a4333e1d",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/abdaecd41a1558846f03b71ab3d99436de6faf0d.png"
+      }
+    },
+    {
+      "bytes": 239,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/8f3c6b529aaa515fdbc6c51b4fc4f73293dbfc09.png",
+      "sha256": "4c31c97037c36a8842f94e1cf2120b1cc0ed15d22915684368212752c329e568",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/8f3c6b529aaa515fdbc6c51b4fc4f73293dbfc09.png"
+      }
+    },
+    {
+      "bytes": 236,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/9172efc523d7488d4c3ed299d0be813de01503b8.png",
+      "sha256": "fb3a69820b47f9b1c5d9ba2bc3032ed872820841b9e741ca2a719327db67eb4d",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/97db043c7cba573ac389b71add78b048077e8a13.png"
+      }
+    },
+    {
+      "bytes": 280,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/953bde2ab2fca30897f66185e5b37b73747b8b46.png",
+      "sha256": "3eb61409e90184a1985a8bbd19d2ebef47fa7fad836c8f3e93e59150e3ce7b2e",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/fa34489cf430b7630b30f28b2eb050e2489e3523.png"
+      }
+    },
+    {
+      "bytes": 294,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/95cd8c0e712982ebb308efa59408cf9962067b3c.png",
+      "sha256": "faa539b7a948facbff0b3356b0e048bbd6be62b65a1b3d9f9f3d15cdec7cce2c",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/c279824074ed8acc9cd963e930735f542462edec.png"
+      }
+    },
+    {
+      "bytes": 230,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/9630132210b904754c9ab272b61cb527d12263ca.png",
+      "sha256": "35c53b89123a948f5e4b138774a958c18924b4ab7ed63439498f685f7b59179c",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/e9203da50e1059455123460d4e716c9c7f440cc3.png"
+      }
+    },
+    {
+      "bytes": 820,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/97c27bd34a0b3f4f9b760f06500e50eb3e4b75f1.png",
+      "sha256": "ff86a1dc0ace05424a74910bbd9f978216cc1ac96e4afe2e0a0e0aaba7a8817e",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/b4111b2fd8976378ce69e158f8d25467da391510.png"
+      }
+    },
+    {
+      "bytes": 236,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/97db043c7cba573ac389b71add78b048077e8a13.png",
+      "sha256": "fb3a69820b47f9b1c5d9ba2bc3032ed872820841b9e741ca2a719327db67eb4d",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/97db043c7cba573ac389b71add78b048077e8a13.png"
+      }
+    },
+    {
+      "bytes": 264,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/99caa835285abdbc99536106ff1d075a870c2650.png",
+      "sha256": "e1785ce5ac812490ba3c5c09de06560ebb5566d9bf21052b53399cf68afc0f67",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/99caa835285abdbc99536106ff1d075a870c2650.png"
+      }
+    },
+    {
+      "bytes": 960,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/9c175e2552d4e2d9c682055a2ce7d1fbb538116d.png",
+      "sha256": "0ecb582c23738f46c49f3ad7669a848dd88fc8a3a86c84c69cfecec1c7c9e761",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/9c175e2552d4e2d9c682055a2ce7d1fbb538116d.png"
+      }
+    },
+    {
+      "bytes": 383,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/9d2e3563d506091cb1a66a8405841ef4728fbd43.png",
+      "sha256": "b8b0fa5bb7108881ae7d1d3e4166dfaae26f48038a3e0063c8a3f8d521e23b2a",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/ac5b8bd01421ff3a8f1a464013ce05b7a4373141.png"
+      }
+    },
+    {
+      "bytes": 467,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/a25e560325b732d03aa5e9a69521f2bfa67e5f4e.png",
+      "sha256": "adfbe5af2e88a140acff84cbc4861f5ff4708799a12efb7835642e5f20350279",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/a25e560325b732d03aa5e9a69521f2bfa67e5f4e.png"
+      }
+    },
+    {
+      "bytes": 200,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/a581f053bbfa5115f42c13094857cdd12a37ec49.png",
+      "sha256": "4195580d5c218b703d56bf8fc0b7c749f22e13ab6ed32db3f5882093e1b77f50",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/df0deb143e5ac127f00bd248ee8001ecae572adc.png"
+      }
+    },
+    {
+      "bytes": 296,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/a6c088a730612710750ee31f9cc780d5f94f9989.png",
+      "sha256": "80babe0e636655666e388b50741595ecef3c7e7a2f49cbfb0d6027dc8fbe6c89",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/a6c088a730612710750ee31f9cc780d5f94f9989.png"
+      }
+    },
+    {
+      "bytes": 302,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/a9bb86de6492860286fd9038b2070f5870e63cb6.png",
+      "sha256": "81170bb9cb263cb350cb225e438eb7ca1fcf738d86e5956601abcb32709e26b6",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/eda67b6e5103620f15dda4926fbd244c38024373.png"
+      }
+    },
+    {
+      "bytes": 384,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/abdaecd41a1558846f03b71ab3d99436de6faf0d.png",
+      "sha256": "923884a583394716f236d66b214d2d95831ad0144211b09fb2d17374a4333e1d",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/abdaecd41a1558846f03b71ab3d99436de6faf0d.png"
+      }
+    },
+    {
+      "bytes": 383,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/ac5b8bd01421ff3a8f1a464013ce05b7a4373141.png",
+      "sha256": "b8b0fa5bb7108881ae7d1d3e4166dfaae26f48038a3e0063c8a3f8d521e23b2a",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/ac5b8bd01421ff3a8f1a464013ce05b7a4373141.png"
+      }
+    },
+    {
+      "bytes": 506,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/b16ff7ad79d632da6d242820aa5676c989057de9.png",
+      "sha256": "4e4a7b5dd29eaba1f7f95224de56d8136a89a5b0391d305131a87134ccefce68",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/b16ff7ad79d632da6d242820aa5676c989057de9.png"
+      }
+    },
+    {
+      "bytes": 278,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/b1eee4055960efed015bee32bb3353501988dadd.png",
+      "sha256": "28d9db80cd6e8d1ce25db9cb157e49acb5c2a7dd64e69486ea46563c5d5a2a15",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/b1eee4055960efed015bee32bb3353501988dadd.png"
+      }
+    },
+    {
+      "bytes": 820,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/b4111b2fd8976378ce69e158f8d25467da391510.png",
+      "sha256": "ff86a1dc0ace05424a74910bbd9f978216cc1ac96e4afe2e0a0e0aaba7a8817e",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/b4111b2fd8976378ce69e158f8d25467da391510.png"
+      }
+    },
+    {
+      "bytes": 1013,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/b7fdf13f2e4d24f9f2d55a77dcebbf52c8ad19c7.png",
+      "sha256": "f31832a6f615c9f1f8d870b2c08613f480fda53d65bd3b6897bd1b69835cb01c",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/b7fdf13f2e4d24f9f2d55a77dcebbf52c8ad19c7.png"
+      }
+    },
+    {
+      "bytes": 557,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/b851d3a5fb872ad82d61f964772ca1cc2520a590.png",
+      "sha256": "4c8b78595c3a54d9b2fa7113ee49d1820b6b6efe466cd5b7e73665709d70006f",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/b851d3a5fb872ad82d61f964772ca1cc2520a590.png"
+      }
+    },
+    {
+      "bytes": 245,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/b988975be41fd13b4d091c10202ba19374643586.png",
+      "sha256": "fa33b9bd25100d4a76a1439d15d5254cf3cf8f176fbb4c7426cbf98d5c419430",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/b988975be41fd13b4d091c10202ba19374643586.png"
+      }
+    },
+    {
+      "bytes": 745,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/ba11027b67a5958f16fb1495fba3b5fb7eadcaee.png",
+      "sha256": "e752172ca08ac6dc72149d521cf338c0065bb5e4aa002db953c001ab555ec781",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/ba11027b67a5958f16fb1495fba3b5fb7eadcaee.png"
+      }
+    },
+    {
+      "bytes": 435,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/ba1dc665bd30a53d02b5a623c6c1b7f3a52a3bff.png",
+      "sha256": "351dc455f776e22aba036bada4da530f4fd476a0dc85599101007e3f14f59146",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/e37b8a88ae16543f49591bf090bf9bd2fe5088da.png"
+      }
+    },
+    {
+      "bytes": 294,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/c279824074ed8acc9cd963e930735f542462edec.png",
+      "sha256": "faa539b7a948facbff0b3356b0e048bbd6be62b65a1b3d9f9f3d15cdec7cce2c",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/c279824074ed8acc9cd963e930735f542462edec.png"
+      }
+    },
+    {
+      "bytes": 1003,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/c833e66a1aa68dba7be89cbcaed7e749967ab5c9.png",
+      "sha256": "e630eefbf1dcb610a8702d8d5bd8a225620900e1c03493c3d05f4ac320f3abf8",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/c833e66a1aa68dba7be89cbcaed7e749967ab5c9.png"
+      }
+    },
+    {
+      "bytes": 406,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/c9c2aeea32459ab854f099f25fd5310801d90ab2.png",
+      "sha256": "db28112b238a4ce05f0d091175d303667b24ac8ba05964a81775c72bcf986318",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/c9c2aeea32459ab854f099f25fd5310801d90ab2.png"
+      }
+    },
+    {
+      "bytes": 226,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/cb5448c62c69431617901ff76ecf95172e07d606.png",
+      "sha256": "5c36ddbff7e5d5d2329cc55c5359af66a9c9c3529a51fed090e0ccf806783ef9",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/ff90a5f025d9fd305aac19c8dd64fa15f0c789a1.png"
+      }
+    },
+    {
+      "bytes": 270,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/cce73c20b14f5d57454e0ad66f02dd004d949e0c.png",
+      "sha256": "f9ec177ea7e595e0856e5125a80f43c4e76241b369d76a48af35302d888e10ef",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/fcd0c45a70da7d2399b3fb666759b02c5edd251e.png"
+      }
+    },
+    {
+      "bytes": 1155,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/cfca9af3a86afde1b9efe235bfc3e48f90890d82.png",
+      "sha256": "2e274dd9518521d2c3296ee578288d6500675b213ca23e7c959bbcfb45f207fe",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/cfca9af3a86afde1b9efe235bfc3e48f90890d82.png"
+      }
+    },
+    {
+      "bytes": 423,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/d0081e53ec3772333006e7b8b488993ff712fe36.png",
+      "sha256": "70dfde5d31705a49cb6f2582750bd7ac0e2ccade97952396269f9eea0d44f6fb",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/d0081e53ec3772333006e7b8b488993ff712fe36.png"
+      }
+    },
+    {
+      "bytes": 569,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/d188c978e0d95e667be9c33955b35c80ec4c786f.png",
+      "sha256": "251b6da0da3b88f1a32b4492322bf12aa4960f2e6d45d18fa86f9791aac9fa6d",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/d188c978e0d95e667be9c33955b35c80ec4c786f.png"
+      }
+    },
+    {
+      "bytes": 225,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/d32c78b759903e3f4bd4fd2ce0b86358f7500c5d.png",
+      "sha256": "443ae8f09b71931035fa2914a940cdd0ede6776b7917cf8af6b74e8e22a78f4a",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/e3fc28292267f066fee7718c64f4bbfece521f24.png"
+      }
+    },
+    {
+      "bytes": 267,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/da96c58cf8c1bcc132a2252a23859c4ceaadf9f9.png",
+      "sha256": "9d9e5546132f1f3b2e91a6cc3ab8050e392ca650ba3f91f43843ddafb3f99485",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/da96c58cf8c1bcc132a2252a23859c4ceaadf9f9.png"
+      }
+    },
+    {
+      "bytes": 224,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/dbc4c429b48dd94e41ee866e1edbf0abededae3a.png",
+      "sha256": "5beb0a81f6ad8fa59070e08ef72776071bcd0e501d098242d9e31d10d4988541",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/ee29958a93bd815ef9f3e2508e54fa1871d0d111.png"
+      }
+    },
+    {
+      "bytes": 595,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/de47a77e2e05505f7581a4dcf8ae4f7750fe53ad.png",
+      "sha256": "dba35e3a8d390a92a6f182262533c29213d37e150c0ccc2e7747a2b936e6e8c0",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/de47a77e2e05505f7581a4dcf8ae4f7750fe53ad.png"
+      }
+    },
+    {
+      "bytes": 284,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/de784b45b336cd590561fbd176b9b0a250440e72.png",
+      "sha256": "6215137b96e2a7f8d7e72f5aa0ebe7bd5512388e143a00ff904ef330ba233327",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/de784b45b336cd590561fbd176b9b0a250440e72.png"
+      }
+    },
+    {
+      "bytes": 200,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/df0deb143e5ac127f00bd248ee8001ecae572adc.png",
+      "sha256": "4195580d5c218b703d56bf8fc0b7c749f22e13ab6ed32db3f5882093e1b77f50",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/df0deb143e5ac127f00bd248ee8001ecae572adc.png"
+      }
+    },
+    {
+      "bytes": 481,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/e030043610306028604a08f8ced75f5cd780b96c.png",
+      "sha256": "bdabbbb1fd9c32dcdcacc87eea2b8529fdeb7fa0b718c3a26657582668f5d469",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/e030043610306028604a08f8ced75f5cd780b96c.png"
+      }
+    },
+    {
+      "bytes": 228,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/e11f2701c4a39c7fe543a6c4150b421d50f1c159.png",
+      "sha256": "620b7b6bd314447f608cd0eddbbac38d05caea88cc513fe2c8ca351d2beb951c",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/e11f2701c4a39c7fe543a6c4150b421d50f1c159.png"
+      }
+    },
+    {
+      "bytes": 265,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/e1aaac0305e1b00c3c08173dd3e8402b6320c110.png",
+      "sha256": "bb3dce6f8bb7b7d33187985e215d382d57555b8777a5e5d82d3226ef96bb0768",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/e1aaac0305e1b00c3c08173dd3e8402b6320c110.png"
+      }
+    },
+    {
+      "bytes": 435,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/e37b8a88ae16543f49591bf090bf9bd2fe5088da.png",
+      "sha256": "351dc455f776e22aba036bada4da530f4fd476a0dc85599101007e3f14f59146",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/e37b8a88ae16543f49591bf090bf9bd2fe5088da.png"
+      }
+    },
+    {
+      "bytes": 225,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/e3fc28292267f066fee7718c64f4bbfece521f24.png",
+      "sha256": "443ae8f09b71931035fa2914a940cdd0ede6776b7917cf8af6b74e8e22a78f4a",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/e3fc28292267f066fee7718c64f4bbfece521f24.png"
+      }
+    },
+    {
+      "bytes": 488,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/e7ab49f222c2489a65240601adcf9cc994535f01.png",
+      "sha256": "2f5a7d069e63c33ee9ab4ab5568bbc6531e339d1799e93e00cbbf1e860bc348a",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/f81750957860f8838122955a5d011e73e7962d55.png"
+      }
+    },
+    {
+      "bytes": 840,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/e8c0d853d9741d1d80356648c449808dd3fdeb3c.png",
+      "sha256": "e6449e9ea6498739f42d72a4de1a1fab0adcb8f4e1ca5c1248a04b851e82fc50",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/ee3eabc3b00202e0691a94570f869fa53a66c04d.png"
+      }
+    },
+    {
+      "bytes": 230,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/e9203da50e1059455123460d4e716c9c7f440cc3.png",
+      "sha256": "35c53b89123a948f5e4b138774a958c18924b4ab7ed63439498f685f7b59179c",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/e9203da50e1059455123460d4e716c9c7f440cc3.png"
+      }
+    },
+    {
+      "bytes": 197,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/eaa6ad49a7f78fe5a13b486690163bf2dc7e3e60.png",
+      "sha256": "05691113fa3dfa32375c4e06044ad60e1d11c95c504acd8943ba1d7dca94d32a",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/eaa6ad49a7f78fe5a13b486690163bf2dc7e3e60.png"
+      }
+    },
+    {
+      "bytes": 302,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/eda67b6e5103620f15dda4926fbd244c38024373.png",
+      "sha256": "81170bb9cb263cb350cb225e438eb7ca1fcf738d86e5956601abcb32709e26b6",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/eda67b6e5103620f15dda4926fbd244c38024373.png"
+      }
+    },
+    {
+      "bytes": 224,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/ee29958a93bd815ef9f3e2508e54fa1871d0d111.png",
+      "sha256": "5beb0a81f6ad8fa59070e08ef72776071bcd0e501d098242d9e31d10d4988541",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/ee29958a93bd815ef9f3e2508e54fa1871d0d111.png"
+      }
+    },
+    {
+      "bytes": 840,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/ee3eabc3b00202e0691a94570f869fa53a66c04d.png",
+      "sha256": "e6449e9ea6498739f42d72a4de1a1fab0adcb8f4e1ca5c1248a04b851e82fc50",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/ee3eabc3b00202e0691a94570f869fa53a66c04d.png"
+      }
+    },
+    {
+      "bytes": 929,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/ee97899107420cf7a24b2532c2c7c09a023be431.png",
+      "sha256": "496953e9cb8ec978c9e75c6625ee3fcfd704e4706cda571670026894f730cbb7",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/ee97899107420cf7a24b2532c2c7c09a023be431.png"
+      }
+    },
+    {
+      "bytes": 574,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/eec83a497511513e0bfa38139255e53b02d0bd21.png",
+      "sha256": "dd03d163fde63da33c5ae33937698162cddadc33ecd7c824679d86ab799338dc",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/eec83a497511513e0bfa38139255e53b02d0bd21.png"
+      }
+    },
+    {
+      "bytes": 276,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/f02d0c0a7c4871d2d796585dcb779de3a8861f9b.png",
+      "sha256": "5d4e00d03e97dd119a3a07c0b2818346cf9ce80a780fa841b8d62a22bc57517c",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/f02d0c0a7c4871d2d796585dcb779de3a8861f9b.png"
+      }
+    },
+    {
+      "bytes": 380,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/f0d949c29370cd898ed70f8f32a09349764a1ebb.png",
+      "sha256": "fed406d3d1528783edefd7f6f559e1b464b33d8fc0297e10f998ea42a32e17ae",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/f0d949c29370cd898ed70f8f32a09349764a1ebb.png"
+      }
+    },
+    {
+      "bytes": 282,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/f761880e192d4bc7f9a3b7c5b0c495177b219bba.png",
+      "sha256": "f8fe36c626a9a0c12b83014f3f0221bd39513d7106d98c16944dec1c465add4a",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/f761880e192d4bc7f9a3b7c5b0c495177b219bba.png"
+      }
+    },
+    {
+      "bytes": 257,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/f7d483a2293790337ad1ba440b6430f82ad420d6.png",
+      "sha256": "ac8322f7f2879e5b4360df258ddf6a13b95ad8044d7823bdb0f1700e760bba31",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/f7d483a2293790337ad1ba440b6430f82ad420d6.png"
+      }
+    },
+    {
+      "bytes": 488,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/f81750957860f8838122955a5d011e73e7962d55.png",
+      "sha256": "2f5a7d069e63c33ee9ab4ab5568bbc6531e339d1799e93e00cbbf1e860bc348a",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/f81750957860f8838122955a5d011e73e7962d55.png"
+      }
+    },
+    {
+      "bytes": 280,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/fa34489cf430b7630b30f28b2eb050e2489e3523.png",
+      "sha256": "3eb61409e90184a1985a8bbd19d2ebef47fa7fad836c8f3e93e59150e3ce7b2e",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/fa34489cf430b7630b30f28b2eb050e2489e3523.png"
+      }
+    },
+    {
+      "bytes": 270,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/fcd0c45a70da7d2399b3fb666759b02c5edd251e.png",
+      "sha256": "f9ec177ea7e595e0856e5125a80f43c4e76241b369d76a48af35302d888e10ef",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/fcd0c45a70da7d2399b3fb666759b02c5edd251e.png"
+      }
+    },
+    {
+      "bytes": 226,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/math/ff90a5f025d9fd305aac19c8dd64fa15f0c789a1.png",
+      "sha256": "5c36ddbff7e5d5d2329cc55c5359af66a9c9c3529a51fed090e0ccf806783ef9",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_images/math/ff90a5f025d9fd305aac19c8dd64fa15f0c789a1.png"
+      }
+    },
+    {
+      "bytes": 36756,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_images/matminer_logo_small.png",
+      "sha256": "33dfcacda973ab6c4971d20bd49f67d30c6235ef9e3c78571b8b03f7d7077805",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/_static/matminer_logo_small.png"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "docs/_sources"
+    },
+    {
+      "bytes": 15182,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_sources/changelog.rst.txt",
+      "sha256": "f58b5b1628ce0cee5c24b2370747ef24cff5c9dd617ed01dcb8b8208030fa8a0",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/changelog.rst"
+      }
+    },
+    {
+      "bytes": 147,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_sources/contributions.rst.txt",
+      "sha256": "d5bea0d0ae42f4dc41a5809a6dba40e09c9fe3ce9c61863659aa8a2ffe6380e4",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_sources/contributions.rst.txt"
+      }
+    },
+    {
+      "bytes": 1601,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_sources/contributors.rst.txt",
+      "sha256": "fd2b20928f99c615b6df6b34a742d3706f86174161a84a2ddb27316a3afd58b2",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/contributors.rst"
+      }
+    },
+    {
+      "bytes": 10986,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_sources/dataset_addition_guide.rst.txt",
+      "sha256": "1f9ee08ccbead0cfafb67dd6da9541c27d2df6cede24eb6e44922c6799aa5522",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/dataset_addition_guide.rst"
+      }
+    },
+    {
+      "bytes": 148796,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_sources/dataset_summary.rst.txt",
+      "sha256": "0ddc1e401d3d2fa0892d20856d8d31f6dbcf21da34f423a9abfb73ba3addfc0d",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/dataset_summary.rst"
+      }
+    },
+    {
+      "bytes": 10162,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_sources/example_bulkmod.rst.txt",
+      "sha256": "ba568626990e1c27c007c2f52c38bb7f6675daf16d333bca6f0876ab2dcf1d06",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/example_bulkmod.rst"
+      }
+    },
+    {
+      "bytes": 15477,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_sources/featurizer_summary.rst.txt",
+      "sha256": "28fdd018f95b574d441f757d6f62cceb939ae246cbc1fcffefef1f856f423e61",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/featurizer_summary.rst"
+      }
+    },
+    {
+      "bytes": 14983,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_sources/index.rst.txt",
+      "sha256": "1614f655944f49b14bd97a4879eb14310cacccc86f1f175be7e7199274eddaa9",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/index.rst"
+      }
+    },
+    {
+      "bytes": 2006,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_sources/installation.rst.txt",
+      "sha256": "416ce94d40cce24ebc0354e8cf2a24a2bf9a76aba6e621431eaf731382465c07",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/installation.rst"
+      }
+    },
+    {
+      "bytes": 1746,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_sources/matminer.data_retrieval.rst.txt",
+      "sha256": "ca0a3a06bbb6d8619d469f372db8289b98d24a392dbf2f752374a13b4ab0552d",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.data_retrieval.rst"
+      }
+    },
+    {
+      "bytes": 1874,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_sources/matminer.data_retrieval.tests.rst.txt",
+      "sha256": "edd2985da9f7221570b8a629d7aa627538f131e56cef3beb5c54fc7d854a4f71",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.data_retrieval.tests.rst"
+      }
+    },
+    {
+      "bytes": 836,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_sources/matminer.datasets.rst.txt",
+      "sha256": "3d2b29ef373ef844a64b9f9109cc6be6e0499cea3c2bffca72fe05953aa382ac",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.datasets.rst"
+      }
+    },
+    {
+      "bytes": 1251,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_sources/matminer.datasets.tests.rst.txt",
+      "sha256": "75bcac0a9ec6aa2c95282e741769dd985010c4d563ed44f1d3a15706803377fa",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.datasets.tests.rst"
+      }
+    },
+    {
+      "bytes": 1788,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_sources/matminer.featurizers.composition.rst.txt",
+      "sha256": "062df9ce60073b2584432ef4b6eb2d5ac07298ff46871b3648947d47b8389666",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.featurizers.composition.rst"
+      }
+    },
+    {
+      "bytes": 2171,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_sources/matminer.featurizers.composition.tests.rst.txt",
+      "sha256": "2ec6eeced4de3fad2d83f367fc69f58f554f993255a2ad1653360a0221e5dabd",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.featurizers.composition.tests.rst"
+      }
+    },
+    {
+      "bytes": 1298,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_sources/matminer.featurizers.rst.txt",
+      "sha256": "c0705d24c841f328bfb4e507c394dd052138c3b9ef4ab83058030cc6b9777e9c",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.featurizers.rst"
+      }
+    },
+    {
+      "bytes": 1437,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_sources/matminer.featurizers.site.rst.txt",
+      "sha256": "64ab0ed56448a7485df611573dd9072e8e7600f9850c69c3622fa5e4f9a4adbf",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.featurizers.site.rst"
+      }
+    },
+    {
+      "bytes": 1771,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_sources/matminer.featurizers.site.tests.rst.txt",
+      "sha256": "686efa165d66fbbc0e68feb5dfb9f83125489d082719328b806008aa540bf417",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.featurizers.site.tests.rst"
+      }
+    },
+    {
+      "bytes": 1929,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_sources/matminer.featurizers.structure.rst.txt",
+      "sha256": "2aa12de453d86b8b8b7e2f3da79403b87a474b0e1bd5b96ddc075c84741eece7",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.featurizers.structure.rst"
+      }
+    },
+    {
+      "bytes": 2343,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_sources/matminer.featurizers.structure.tests.rst.txt",
+      "sha256": "50eb63d4eda19705a53fdba766110f1dfa5eeae8b1ce272e66a19336b38579bd",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.featurizers.structure.tests.rst"
+      }
+    },
+    {
+      "bytes": 1276,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_sources/matminer.featurizers.tests.rst.txt",
+      "sha256": "52f8e1739bfe196048260fb69f9c0827a279c80c59c6c3e43c315326255efe2e",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.featurizers.tests.rst"
+      }
+    },
+    {
+      "bytes": 880,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_sources/matminer.featurizers.utils.rst.txt",
+      "sha256": "bb97a9382d6613d10da2772e952a53bf817fe5bc3b1c4fb09cfc18ce59d35ffc",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.featurizers.utils.rst"
+      }
+    },
+    {
+      "bytes": 911,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_sources/matminer.featurizers.utils.tests.rst.txt",
+      "sha256": "99d099b34bca4a6a5cebe823906d8d72d747f6f15c61713544c08ba49101ad71",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.featurizers.utils.tests.rst"
+      }
+    },
+    {
+      "bytes": 434,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_sources/matminer.figrecipes.rst.txt",
+      "sha256": "332ef46ed78a6a9652512c8e166990850bd317b8eafeca9a824fd173f2bfa262",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.figrecipes.rst"
+      }
+    },
+    {
+      "bytes": 421,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_sources/matminer.figrecipes.tests.rst.txt",
+      "sha256": "0dad17f8e15fafe221ecd17db2d192ef6c90503151b87e064fb53902f23dd6a3",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.figrecipes.tests.rst"
+      }
+    },
+    {
+      "bytes": 293,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_sources/matminer.rst.txt",
+      "sha256": "2a999e6599340fc64ec1dfc9d98a50bd056b6805866a5d086f90158d8f444e77",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.rst"
+      }
+    },
+    {
+      "bytes": 442,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_sources/matminer.utils.data_files.rst.txt",
+      "sha256": "55a628e26f2e2d060d4ee569cc2c9b6fbb702cb3f60043733a5ef85eb5c829ed",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.utils.data_files.rst"
+      }
+    },
+    {
+      "bytes": 1372,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_sources/matminer.utils.rst.txt",
+      "sha256": "48e12a13efe0a168c3046bf07abccd259160016d0151f191a2b8c022ad89a722",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.utils.rst"
+      }
+    },
+    {
+      "bytes": 959,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_sources/matminer.utils.tests.rst.txt",
+      "sha256": "7eb82e766e371dbf2045b5364e465a1fcf68e026e3f9188fef72ed2f50723bc6",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.utils.tests.rst"
+      }
+    },
+    {
+      "bytes": 61,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_sources/modules.rst.txt",
+      "sha256": "f4b5bb1415173daa4326d4454e7cf913eb3cc26dbca20edfb85ad0c0241a0bf0",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/modules.rst"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "docs/_static"
+    },
+    {
+      "bytes": 267829,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/Flowchart.png",
+      "sha256": "97c7e78a37e4c19fd1c9b774e6e762252970337016e5a7baac85f17ef15bb06c",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/_static/Flowchart.png"
+      }
+    },
+    {
+      "bytes": 4418,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/_sphinx_javascript_frameworks_compat.js",
+      "sha256": "2f1e30341b31300bdc3af29ee4a64e0f40ed15492345387bb47542d9b9b4813c",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_static/_sphinx_javascript_frameworks_compat.js"
+      }
+    },
+    {
+      "bytes": 673,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/ajax-loader.gif",
+      "sha256": "5d045fd991ddf2b208dd9bf39a591f50e6ec793416e2867f54e8c6c7e89b68c2",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_static/ajax-loader.gif"
+      }
+    },
+    {
+      "bytes": 14810,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/basic.css",
+      "sha256": "4369d7f54f8ea13f13e34b8a1f50012d9dbfbe3ccdf37acafdaf007043c42009",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_static/basic.css"
+      }
+    },
+    {
+      "bytes": 2486665,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/bulk_shear_moduli.html",
+      "sha256": "1c29d32bb05dd9b6f1b244bf3ada1910cbe9fc11977646a7419e193e71e68485",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/_static/bulk_shear_moduli.html"
+      }
+    },
+    {
+      "bytes": 756,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/comment-bright.png",
+      "sha256": "0737b92f8825f5ed0740482819f3fba7826297908bbd44ff00b64ee95d262d60",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_static/comment-bright.png"
+      }
+    },
+    {
+      "bytes": 829,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/comment-close.png",
+      "sha256": "866319c7cf09c3d5b2926ea9d9f068801c8ee0724dac66604b03ac50b1829577",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_static/comment-close.png"
+      }
+    },
+    {
+      "bytes": 641,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/comment.png",
+      "sha256": "5fb8b0b215a51fc05bc152a12ab32d44cda758721c5df53f2aeab1b1e3490aa5",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_static/comment.png"
+      }
+    },
+    {
+      "bytes": 4472,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/doctools.js",
+      "sha256": "2e887dc9a70efc8bc29783a50d3809c294ea023f1360ef5035f5aea372614d3f",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_static/doctools.js"
+      }
+    },
+    {
+      "bytes": 420,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/documentation_options.js",
+      "sha256": "fc09fc242f5ac5156d8adb494e53bed5010b932e77d51f90f0bc6f46ce1ac8b9",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_static/documentation_options.js"
+      }
+    },
+    {
+      "bytes": 222,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/down-pressed.png",
+      "sha256": "c89ca40639d0bb71502306afdbc8646f6ef362b79c54a8f9211aa290ad8b3635",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_static/down-pressed.png"
+      }
+    },
+    {
+      "bytes": 202,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/down.png",
+      "sha256": "75fc30ab04aa494f8ab239fba636663b950ccff763bd3b95a3c214ee2344ec89",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_static/down.png"
+      }
+    },
+    {
+      "bytes": 233051,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/example_bulkmod.png",
+      "sha256": "fa35ef936974882bd5a7779ebb0ad0842f015d1c81a86fa13cc845e3b9541ca8",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/_static/example_bulkmod.png"
+      }
+    },
+    {
+      "bytes": 201518,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/example_bulkmod_feats.png",
+      "sha256": "a0771be5657b95172556f69ca6fb4aa3329d61c9d9b5f2b87d455a3c28538cc5",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/_static/example_bulkmod_feats.png"
+      }
+    },
+    {
+      "bytes": 116774,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/example_bulkmod_rf.png",
+      "sha256": "fbd824831aae31a704780e872fc99bd458a316a082a14fc044e58b18f9b5b3d2",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/_static/example_bulkmod_rf.png"
+      }
+    },
+    {
+      "bytes": 116774,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/examples_bulkmod_rf.png",
+      "sha256": "fbd824831aae31a704780e872fc99bd458a316a082a14fc044e58b18f9b5b3d2",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/_static/example_bulkmod_rf.png"
+      }
+    },
+    {
+      "bytes": 453119,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/featurizer_diagram.png",
+      "sha256": "a715c83e2c251746837cfd6210c011497df1d60cbc603a166d8bb9ea3d856f67",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/_static/featurizer_diagram.png"
+      }
+    },
+    {
+      "bytes": 286,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/file.png",
+      "sha256": "5c4bc9a16aebf38c4b950f59b8e501ca36495328cb9eb622218bce9064a35e3e",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_static/file.png"
+      }
+    },
+    {
+      "bytes": 263767,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/jquery-3.1.0.js",
+      "sha256": "b25a2092f0752b754e933008f10213c55dd5ce93a791e355b0abed9182cc8df9",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_static/jquery-3.1.0.js"
+      }
+    },
+    {
+      "bytes": 268039,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/jquery-3.2.1.js",
+      "sha256": "0d9027289ffa5d9f6c8b4e0782bb31bbff2cef5ee3708ccbcb7a22df9128bb21",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_static/jquery-3.2.1.js"
+      }
+    },
+    {
+      "bytes": 287630,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/jquery-3.5.1.js",
+      "sha256": "416a3b2c3bf16d64f6b5b6d0f7b079df2267614dd6847fc2f3271b4409233c37",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_static/jquery-3.5.1.js"
+      }
+    },
+    {
+      "bytes": 288580,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/jquery-3.6.0.js",
+      "sha256": "1fe2bb5390a75e5d61e72c107cab528fc3c29a837d69aab7d200e1dbb5dcd239",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_static/jquery-3.6.0.js"
+      }
+    },
+    {
+      "bytes": 89501,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/jquery.js",
+      "sha256": "ff1523fb7389539c84c65aba19260648793bb4f5e29329d2ee8804bc37a3fe6e",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_static/jquery.js"
+      }
+    },
+    {
+      "bytes": 4758,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/language_data.js",
+      "sha256": "d35fde9e52ed4840ec7ed105ddb3302a26eb0f53aa151a9491a2dcce0f5d2534",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_static/language_data.js"
+      }
+    },
+    {
+      "bytes": 36756,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/matminer_logo_small.png",
+      "sha256": "33dfcacda973ab6c4971d20bd49f67d30c6235ef9e3c78571b8b03f7d7077805",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/_static/matminer_logo_small.png"
+      }
+    },
+    {
+      "bytes": 90,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/minus.png",
+      "sha256": "47e7fc50db3699f1ca41ce9a2ffa202c00c5d1d5180c55f62ba859b1bd6cc008",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_static/minus.png"
+      }
+    },
+    {
+      "bytes": 4498,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/nature.css",
+      "sha256": "37635d9654b3cb3237f5cafe44ca3642b3a9a85b2a12daab1831464a83b9296a",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/_static/nature.css"
+      }
+    },
+    {
+      "bytes": 90,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/plus.png",
+      "sha256": "54115199b96a130cba02147c47c0deb43dcc9b9f08b5162bba8642b34980ac63",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_static/plus.png"
+      }
+    },
+    {
+      "bytes": 4846,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/pygments.css",
+      "sha256": "1dae86fdcef1cf8c69a21c8e06d2bfd945a1a314e2ec7c0585913e2a36ae022c",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_static/pygments.css"
+      }
+    },
+    {
+      "bytes": 18215,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/searchtools.js",
+      "sha256": "9207489cedecbf47e2ec29e3595fb5401ce3c3ce31f06883e67fca78184bab48",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_static/searchtools.js"
+      }
+    },
+    {
+      "bytes": 4712,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/sphinx_highlight.js",
+      "sha256": "0a20464b65797522de18421a7db1a0851a26aae6dd06b7109d442236313c27ee",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_static/sphinx_highlight.js"
+      }
+    },
+    {
+      "bytes": 68420,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/underscore-1.13.1.js",
+      "sha256": "cc10f799cd0f6b65f95c4012445497e5ba3cb9f51964a9468940b27bde98b487",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_static/underscore-1.13.1.js"
+      }
+    },
+    {
+      "bytes": 35168,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/underscore-1.3.1.js",
+      "sha256": "f808f0aa32fbe90fb9c9c846917faff3fdd4e236c284b76c02dd33753dc90177",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_static/underscore-1.3.1.js"
+      }
+    },
+    {
+      "bytes": 19530,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/underscore.js",
+      "sha256": "218fb1c1fc72e9af6b866f430be2a67fa376392b4db2f4dbf32772671b6ae55c",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_static/underscore.js"
+      }
+    },
+    {
+      "bytes": 214,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/up-pressed.png",
+      "sha256": "cfe678a4446900f4081ab8d74ef3d1f8b1002edbf8cae3db292fcca0637310ed",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_static/up-pressed.png"
+      }
+    },
+    {
+      "bytes": 203,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/up.png",
+      "sha256": "108f280badfe5ec5168738c4f70a59bc6ea9d1e9243ff2b951386fb668e93502",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_static/up.png"
+      }
+    },
+    {
+      "bytes": 25355,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/_static/websupport.js",
+      "sha256": "3e61ad44de4625bdd7aa3b1ac8ddad355c919de8a23bd16fb36053901ff23cb9",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/_static/websupport.js"
+      }
+    },
+    {
+      "bytes": 24995,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/changelog.html",
+      "sha256": "3901ea4982bcbdcfa73df0cf8f2bad234beb5261516f2a6325919ff865ad92e4",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/changelog.html"
+      }
+    },
+    {
+      "bytes": 6918,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/contributors.html",
+      "sha256": "3d170aa3236b3ef8dcaf6b53ca937511afe1384bc6975f8838484886f862ff04",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/contributors.html"
+      }
+    },
+    {
+      "bytes": 26513,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/dataset_addition_guide.html",
+      "sha256": "4263b7dc09bb73e52035d24003ea654e1ccc2d690a45a0cf129dc0599ce0e1fa",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/dataset_addition_guide.html"
+      }
+    },
+    {
+      "bytes": 229099,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/dataset_summary.html",
+      "sha256": "199e6f884c1511a7c5d9c8b7cc1099372680837270c8d019b6538f23471376b3",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/dataset_summary.html"
+      }
+    },
+    {
+      "bytes": 42193,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/example_bulkmod.html",
+      "sha256": "0844667047012e232958c8e1ada5afab2a8fabef283c39f8577b48c6937d43e6",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/example_bulkmod.html"
+      }
+    },
+    {
+      "bytes": 42827,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/featurizer_summary.html",
+      "sha256": "56bcfe7e70e4005fa97e8ed3ffac8305baa48ee8a5d800dcb3ee553b56137dd9",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/featurizer_summary.html"
+      }
+    },
+    {
+      "bytes": 268889,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/genindex.html",
+      "sha256": "f38e9d5b1c9ee9d48dcbf3d9e8e569742505c35205492b9c6dc4e3b05c758b77",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/genindex.html"
+      }
+    },
+    {
+      "bytes": 29760,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/index.html",
+      "sha256": "3ab54d4c2e4a3d97826a109c440b499c9eefa31b585f7e43458f5a3462f160f6",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/index.html"
+      }
+    },
+    {
+      "bytes": 7890,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/installation.html",
+      "sha256": "27440ec5fc03893565aec5c9fe84be5de97bb28e110a2359bedfd7ae237d6c28",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/installation.html"
+      }
+    },
+    {
+      "bytes": 95405,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/matminer.data_retrieval.html",
+      "sha256": "0c80fc2293eb9c167b14bc8f0109c299231ecf50e5481f26a5460d25942a2538",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/matminer.data_retrieval.html"
+      }
+    },
+    {
+      "bytes": 27745,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/matminer.data_retrieval.tests.html",
+      "sha256": "f16ad65d84557031e0372a116903b51855850c22f99247131ccf12907020ceae",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/matminer.data_retrieval.tests.html"
+      }
+    },
+    {
+      "bytes": 79126,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/matminer.datasets.html",
+      "sha256": "43024849fe377200c0dd6ef3631acb6d366019d909838fc57a5351e9c46b0ca8",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/matminer.datasets.html"
+      }
+    },
+    {
+      "bytes": 52354,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/matminer.datasets.tests.html",
+      "sha256": "358d0d7fb0fdb61b60f5d12becb80846801ab7dbd3a4261f093f346f275f1e29",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/matminer.datasets.tests.html"
+      }
+    },
+    {
+      "bytes": 184854,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/matminer.featurizers.composition.html",
+      "sha256": "2068bb191c63631c921f228ed2b3b57112bcbd1d760d7109010cc56da673fda8",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/matminer.featurizers.composition.html"
+      }
+    },
+    {
+      "bytes": 39470,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/matminer.featurizers.composition.tests.html",
+      "sha256": "91d3606ad0efa2a7b789822a9b92f662c435173ddc8f3ecf99cefa7d4bb80ec6",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/matminer.featurizers.composition.tests.html"
+      }
+    },
+    {
+      "bytes": 397343,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/matminer.featurizers.html",
+      "sha256": "dadd7e07996781957b170573307c2ddec11a610091d77ef3994091f2e8ddff00",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/matminer.featurizers.html"
+      }
+    },
+    {
+      "bytes": 202391,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/matminer.featurizers.site.html",
+      "sha256": "3a95dccdc1e65c6a8b16b04f8634d473c7b5259a4e965aba284fdf2172ddbf98",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/matminer.featurizers.site.html"
+      }
+    },
+    {
+      "bytes": 33386,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/matminer.featurizers.site.tests.html",
+      "sha256": "03af12586e9fccd49928a9f9b7e8bf8716f51cbd8349ec6825c4ae4ca3059d3a",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/matminer.featurizers.site.tests.html"
+      }
+    },
+    {
+      "bytes": 250620,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/matminer.featurizers.structure.html",
+      "sha256": "26685aa5cce1f166925f7a4b7948058ceaa73bee22e317172480ad9c8aeb4a05",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/matminer.featurizers.structure.html"
+      }
+    },
+    {
+      "bytes": 45631,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/matminer.featurizers.structure.tests.html",
+      "sha256": "2e28dca1bd42324989120d6961a6aeffe6ad91ed5ff04ef9ec307e7b0ea0cee4",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/matminer.featurizers.structure.tests.html"
+      }
+    },
+    {
+      "bytes": 86307,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/matminer.featurizers.tests.html",
+      "sha256": "52a8d5a7c85a840e583ca6ea97b0b84c641fe994c1a4750c0c24a32595d08382",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/matminer.featurizers.tests.html"
+      }
+    },
+    {
+      "bytes": 57341,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/matminer.featurizers.utils.html",
+      "sha256": "ce4320ded21641a991e863012996f385face6bb40cd4392a2e0bef4506c471c8",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/matminer.featurizers.utils.html"
+      }
+    },
+    {
+      "bytes": 23048,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/matminer.featurizers.utils.tests.html",
+      "sha256": "bbad9b01d2dc5d88d9d73d78f3113de5129bd73ac35cd6ec84132c292963c6c4",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/matminer.featurizers.utils.tests.html"
+      }
+    },
+    {
+      "bytes": 5635,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/matminer.figrecipes.html",
+      "sha256": "fccfdafb27cf1ce9be1b4435f00a2d0d85abaf4f414908d5d990a82b057c367a",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/matminer.figrecipes.html"
+      }
+    },
+    {
+      "bytes": 4883,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/matminer.figrecipes.tests.html",
+      "sha256": "b65f98a899d0200aecd746d91d5d23229ee55268b4ed9a2d06d9aa04cd72ec16",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/matminer.figrecipes.tests.html"
+      }
+    },
+    {
+      "bytes": 96929,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/matminer.html",
+      "sha256": "59005528a5f4a5e9896c38f504c3efb2aa5cde80435c2773101dc2748d3b7fa0",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/matminer.html"
+      }
+    },
+    {
+      "bytes": 5066,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/matminer.utils.data_files.html",
+      "sha256": "d0a02744fa18eaec0853cb24584c8e6a632b9c2f4feb99aa61480a15a7da13a6",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/matminer.utils.data_files.html"
+      }
+    },
+    {
+      "bytes": 81617,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/matminer.utils.html",
+      "sha256": "998bddff109d91990d9a7646f69eb256631977473c752704bebcde5f661e5857",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/matminer.utils.html"
+      }
+    },
+    {
+      "bytes": 33144,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/matminer.utils.tests.html",
+      "sha256": "743f04da724c3000d77ff01abc6ab5217e62392c81199b92cb8d69fb292ec4d0",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/matminer.utils.tests.html"
+      }
+    },
+    {
+      "bytes": 9827,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/modules.html",
+      "sha256": "fef20fa5c6da1e0b7f3dd12feba11a9aab7ce5a0cfdce6661b71961afec60515",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/modules.html"
+      }
+    },
+    {
+      "bytes": 9143,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/objects.inv",
+      "sha256": "781ffe492ae6e5146b3ba5e290117a97066c7af296be2fedf51a7a9e2e8ad8f5",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/objects.inv"
+      }
+    },
+    {
+      "bytes": 33944,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/py-modindex.html",
+      "sha256": "c1ffce3b47c928476d41429b454d726d6d6d42400c6eb40ab36e7d830bd7a5a7",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/py-modindex.html"
+      }
+    },
+    {
+      "bytes": 3601,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/search.html",
+      "sha256": "e1541d0975e9437f9dff6e4321f27a5b31e20ee94be6b1e23ad56451f553b139",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/search.html"
+      }
+    },
+    {
+      "bytes": 367060,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/searchindex.js",
+      "sha256": "c02954631b29928b8c6a9930b7dbd3a0d900f25e42e44bea3955b360ad8113e7",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/searchindex.js"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "docs_rst"
+    },
+    {
+      "bytes": 5577,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/Makefile",
+      "sha256": "53d8bfe991f16b9de2d0d6990635123efacb98ce012123e48fac29d28e88e156",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/Makefile"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "docs_rst/_static"
+    },
+    {
+      "bytes": 267829,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/_static/Flowchart.png",
+      "sha256": "97c7e78a37e4c19fd1c9b774e6e762252970337016e5a7baac85f17ef15bb06c",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/_static/Flowchart.png"
+      }
+    },
+    {
+      "bytes": 2486665,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/_static/bulk_shear_moduli.html",
+      "sha256": "1c29d32bb05dd9b6f1b244bf3ada1910cbe9fc11977646a7419e193e71e68485",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/_static/bulk_shear_moduli.html"
+      }
+    },
+    {
+      "bytes": 233051,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/_static/example_bulkmod.png",
+      "sha256": "fa35ef936974882bd5a7779ebb0ad0842f015d1c81a86fa13cc845e3b9541ca8",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/_static/example_bulkmod.png"
+      }
+    },
+    {
+      "bytes": 201518,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/_static/example_bulkmod_feats.png",
+      "sha256": "a0771be5657b95172556f69ca6fb4aa3329d61c9d9b5f2b87d455a3c28538cc5",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/_static/example_bulkmod_feats.png"
+      }
+    },
+    {
+      "bytes": 116774,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/_static/example_bulkmod_rf.png",
+      "sha256": "fbd824831aae31a704780e872fc99bd458a316a082a14fc044e58b18f9b5b3d2",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/_static/example_bulkmod_rf.png"
+      }
+    },
+    {
+      "bytes": 453119,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/_static/featurizer_diagram.png",
+      "sha256": "a715c83e2c251746837cfd6210c011497df1d60cbc603a166d8bb9ea3d856f67",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/_static/featurizer_diagram.png"
+      }
+    },
+    {
+      "bytes": 36756,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/_static/matminer_logo_small.png",
+      "sha256": "33dfcacda973ab6c4971d20bd49f67d30c6235ef9e3c78571b8b03f7d7077805",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/_static/matminer_logo_small.png"
+      }
+    },
+    {
+      "bytes": 4498,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/_static/nature.css",
+      "sha256": "37635d9654b3cb3237f5cafe44ca3642b3a9a85b2a12daab1831464a83b9296a",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/_static/nature.css"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "docs_rst/_templates"
+    },
+    {
+      "bytes": 230,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/_templates/layout.html",
+      "sha256": "9ce3555f0fc2764a7d5f42c876b6904b7116a9611f85dec7b51e32187408bd28",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/_templates/layout.html"
+      }
+    },
+    {
+      "bytes": 15182,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/changelog.rst",
+      "sha256": "f58b5b1628ce0cee5c24b2370747ef24cff5c9dd617ed01dcb8b8208030fa8a0",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/changelog.rst"
+      }
+    },
+    {
+      "bytes": 9751,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/conf.py",
+      "sha256": "e070e1b2a02454a75f38d057189f36597aba79d0712958ebd569fde459a8d9b0",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/conf.py"
+      }
+    },
+    {
+      "bytes": 1601,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/contributors.rst",
+      "sha256": "fd2b20928f99c615b6df6b34a742d3706f86174161a84a2ddb27316a3afd58b2",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/contributors.rst"
+      }
+    },
+    {
+      "bytes": 10986,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/dataset_addition_guide.rst",
+      "sha256": "1f9ee08ccbead0cfafb67dd6da9541c27d2df6cede24eb6e44922c6799aa5522",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/dataset_addition_guide.rst"
+      }
+    },
+    {
+      "bytes": 3230,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/dataset_summary.py",
+      "sha256": "357d12e59b54d2e5f0f21814862f8ec6e9b67506eb79ec06e4ead97b222c9f39",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/dataset_summary.py"
+      }
+    },
+    {
+      "bytes": 148796,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/dataset_summary.rst",
+      "sha256": "0ddc1e401d3d2fa0892d20856d8d31f6dbcf21da34f423a9abfb73ba3addfc0d",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/dataset_summary.rst"
+      }
+    },
+    {
+      "bytes": 10162,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/example_bulkmod.rst",
+      "sha256": "ba568626990e1c27c007c2f52c38bb7f6675daf16d333bca6f0876ab2dcf1d06",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/example_bulkmod.rst"
+      }
+    },
+    {
+      "bytes": 5201,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/featurizer_summary.py",
+      "sha256": "ff325dfb96ffefe3fd70e344b9e625e398b7deb373b70a7e9bb9925936058c8c",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/featurizer_summary.py"
+      }
+    },
+    {
+      "bytes": 15477,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/featurizer_summary.rst",
+      "sha256": "28fdd018f95b574d441f757d6f62cceb939ae246cbc1fcffefef1f856f423e61",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/featurizer_summary.rst"
+      }
+    },
+    {
+      "bytes": 14983,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/index.rst",
+      "sha256": "1614f655944f49b14bd97a4879eb14310cacccc86f1f175be7e7199274eddaa9",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/index.rst"
+      }
+    },
+    {
+      "bytes": 2006,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/installation.rst",
+      "sha256": "416ce94d40cce24ebc0354e8cf2a24a2bf9a76aba6e621431eaf731382465c07",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/installation.rst"
+      }
+    },
+    {
+      "bytes": 1746,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/matminer.data_retrieval.rst",
+      "sha256": "ca0a3a06bbb6d8619d469f372db8289b98d24a392dbf2f752374a13b4ab0552d",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.data_retrieval.rst"
+      }
+    },
+    {
+      "bytes": 1874,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/matminer.data_retrieval.tests.rst",
+      "sha256": "edd2985da9f7221570b8a629d7aa627538f131e56cef3beb5c54fc7d854a4f71",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.data_retrieval.tests.rst"
+      }
+    },
+    {
+      "bytes": 836,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/matminer.datasets.rst",
+      "sha256": "3d2b29ef373ef844a64b9f9109cc6be6e0499cea3c2bffca72fe05953aa382ac",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.datasets.rst"
+      }
+    },
+    {
+      "bytes": 1251,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/matminer.datasets.tests.rst",
+      "sha256": "75bcac0a9ec6aa2c95282e741769dd985010c4d563ed44f1d3a15706803377fa",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.datasets.tests.rst"
+      }
+    },
+    {
+      "bytes": 1788,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/matminer.featurizers.composition.rst",
+      "sha256": "062df9ce60073b2584432ef4b6eb2d5ac07298ff46871b3648947d47b8389666",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.featurizers.composition.rst"
+      }
+    },
+    {
+      "bytes": 2171,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/matminer.featurizers.composition.tests.rst",
+      "sha256": "2ec6eeced4de3fad2d83f367fc69f58f554f993255a2ad1653360a0221e5dabd",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.featurizers.composition.tests.rst"
+      }
+    },
+    {
+      "bytes": 1298,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/matminer.featurizers.rst",
+      "sha256": "c0705d24c841f328bfb4e507c394dd052138c3b9ef4ab83058030cc6b9777e9c",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.featurizers.rst"
+      }
+    },
+    {
+      "bytes": 1437,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/matminer.featurizers.site.rst",
+      "sha256": "64ab0ed56448a7485df611573dd9072e8e7600f9850c69c3622fa5e4f9a4adbf",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.featurizers.site.rst"
+      }
+    },
+    {
+      "bytes": 1771,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/matminer.featurizers.site.tests.rst",
+      "sha256": "686efa165d66fbbc0e68feb5dfb9f83125489d082719328b806008aa540bf417",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.featurizers.site.tests.rst"
+      }
+    },
+    {
+      "bytes": 1929,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/matminer.featurizers.structure.rst",
+      "sha256": "2aa12de453d86b8b8b7e2f3da79403b87a474b0e1bd5b96ddc075c84741eece7",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.featurizers.structure.rst"
+      }
+    },
+    {
+      "bytes": 2343,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/matminer.featurizers.structure.tests.rst",
+      "sha256": "50eb63d4eda19705a53fdba766110f1dfa5eeae8b1ce272e66a19336b38579bd",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.featurizers.structure.tests.rst"
+      }
+    },
+    {
+      "bytes": 1276,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/matminer.featurizers.tests.rst",
+      "sha256": "52f8e1739bfe196048260fb69f9c0827a279c80c59c6c3e43c315326255efe2e",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.featurizers.tests.rst"
+      }
+    },
+    {
+      "bytes": 880,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/matminer.featurizers.utils.rst",
+      "sha256": "bb97a9382d6613d10da2772e952a53bf817fe5bc3b1c4fb09cfc18ce59d35ffc",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.featurizers.utils.rst"
+      }
+    },
+    {
+      "bytes": 911,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/matminer.featurizers.utils.tests.rst",
+      "sha256": "99d099b34bca4a6a5cebe823906d8d72d747f6f15c61713544c08ba49101ad71",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.featurizers.utils.tests.rst"
+      }
+    },
+    {
+      "bytes": 434,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/matminer.figrecipes.rst",
+      "sha256": "332ef46ed78a6a9652512c8e166990850bd317b8eafeca9a824fd173f2bfa262",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.figrecipes.rst"
+      }
+    },
+    {
+      "bytes": 421,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/matminer.figrecipes.tests.rst",
+      "sha256": "0dad17f8e15fafe221ecd17db2d192ef6c90503151b87e064fb53902f23dd6a3",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.figrecipes.tests.rst"
+      }
+    },
+    {
+      "bytes": 293,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/matminer.rst",
+      "sha256": "2a999e6599340fc64ec1dfc9d98a50bd056b6805866a5d086f90158d8f444e77",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.rst"
+      }
+    },
+    {
+      "bytes": 442,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/matminer.utils.data_files.rst",
+      "sha256": "55a628e26f2e2d060d4ee569cc2c9b6fbb702cb3f60043733a5ef85eb5c829ed",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.utils.data_files.rst"
+      }
+    },
+    {
+      "bytes": 1372,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/matminer.utils.rst",
+      "sha256": "48e12a13efe0a168c3046bf07abccd259160016d0151f191a2b8c022ad89a722",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.utils.rst"
+      }
+    },
+    {
+      "bytes": 959,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/matminer.utils.tests.rst",
+      "sha256": "7eb82e766e371dbf2045b5364e465a1fcf68e026e3f9188fef72ed2f50723bc6",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/matminer.utils.tests.rst"
+      }
+    },
+    {
+      "bytes": 61,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs_rst/modules.rst",
+      "sha256": "f4b5bb1415173daa4326d4454e7cf913eb3cc26dbca20edfb85ad0c0241a0bf0",
+      "source": {
+        "kind": "upstream",
+        "path": "docs_rst/modules.rst"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "matminer"
+    },
+    {
+      "bytes": 255,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/__init__.py",
+      "sha256": "926b26f1929334311f4afa005166e4442d91894ea3e70b234d3fca650614fd58",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/__init__.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "matminer/data_retrieval"
+    },
+    {
+      "bytes": 44,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/data_retrieval/__init__.py",
+      "sha256": "e5ef634db0592e6c351785b31d897f49881db109ec18bde4eeefd0ebfe9b5809",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/__init__.py"
+      }
+    },
+    {
+      "bytes": 9963,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/data_retrieval/retrieve_AFLOW.py",
+      "sha256": "6beec28b4cd3512430229be17d3b17060c77ef1111982d7823cf9134bd0b192b",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/data_retrieval/retrieve_AFLOW.py"
+      }
+    },
+    {
+      "bytes": 13492,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/data_retrieval/retrieve_Citrine.py",
+      "sha256": "31418d6a8c11b8904cde6da2abc996d888bbc429bdb796168098bc965b2edaaf",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/data_retrieval/retrieve_Citrine.py"
+      }
+    },
+    {
+      "bytes": 6877,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/data_retrieval/retrieve_MDF.py",
+      "sha256": "440c1ce90feaaa07d36cbb641a5fa242210e975707c913fe59b46c06f4dba13f",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/data_retrieval/retrieve_MDF.py"
+      }
+    },
+    {
+      "bytes": 7118,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/data_retrieval/retrieve_MP.py",
+      "sha256": "de30c437db2d2ed74881e9d590342f344b614e28bde4d9518200ea1a13830d4a",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/data_retrieval/retrieve_MP.py"
+      }
+    },
+    {
+      "bytes": 11023,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/data_retrieval/retrieve_MPDS.py",
+      "sha256": "272ed303f746a2b502035a89bf5e1a0093e22a5f61b374ee8a3886a16959cdf7",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/data_retrieval/retrieve_MPDS.py"
+      }
+    },
+    {
+      "bytes": 4038,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/data_retrieval/retrieve_MongoDB.py",
+      "sha256": "b68a9a2c2bdabf409f4213c6904c4b30d9735d1d0f69c81c43372f74d49fa9f7",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/data_retrieval/retrieve_MongoDB.py"
+      }
+    },
+    {
+      "bytes": 3973,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/data_retrieval/retrieve_base.py",
+      "sha256": "52247c4b209b14d3a94a404ce18b28441d48fb9ecbccef39a79737be3c2e8e69",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/data_retrieval/retrieve_base.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "matminer/data_retrieval/tests"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/data_retrieval/tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/tests/__init__.py"
+      }
+    },
+    {
+      "bytes": 62,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/data_retrieval/tests/base.py",
+      "sha256": "378370830b98d70990f399e183c9b99eed294b1ffeb23ef023e6c3e4d3aec360",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/data_retrieval/tests/base.py"
+      }
+    },
+    {
+      "bytes": 1321,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/data_retrieval/tests/test_retrieve_AFLOW.py",
+      "sha256": "2e02fafe2e04b63d76f071bf423b4dadf02e03f31cc5f2cd826b0c852d7daaf9",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/data_retrieval/tests/test_retrieve_AFLOW.py"
+      }
+    },
+    {
+      "bytes": 1382,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/data_retrieval/tests/test_retrieve_Citrine.py",
+      "sha256": "3c13250360c7e5cb528761fc930734fe78b636a0383505e45d282c1b36756b79",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/data_retrieval/tests/test_retrieve_Citrine.py"
+      }
+    },
+    {
+      "bytes": 1964,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/data_retrieval/tests/test_retrieve_MDF.py",
+      "sha256": "f1ac876f08082dff098f76d2b940988b25fe9419824332a16bfe41280e1ab548",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/data_retrieval/tests/test_retrieve_MDF.py"
+      }
+    },
+    {
+      "bytes": 1106,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/data_retrieval/tests/test_retrieve_MP.py",
+      "sha256": "6b6e02bd51c934cfbb34822551a252f2d6dc229d281ffd5fbfcf113b77e3e0ae",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/data_retrieval/tests/test_retrieve_MP.py"
+      }
+    },
+    {
+      "bytes": 1402,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/data_retrieval/tests/test_retrieve_MPDS.py",
+      "sha256": "180918d0f3802511e7f27c8889e61034f37ebe3d0a749081993d9ef29e5e9f45",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/data_retrieval/tests/test_retrieve_MPDS.py"
+      }
+    },
+    {
+      "bytes": 1993,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/data_retrieval/tests/test_retrieve_MongoDB.py",
+      "sha256": "56ab86a97ec5111562a9f2f403f539180258f0fb15f0f2feb8b5df77212c91cd",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/data_retrieval/tests/test_retrieve_MongoDB.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "matminer/datasets"
+    },
+    {
+      "bytes": 307,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/datasets/__init__.py",
+      "sha256": "4b71544120609e5f0804f1f39a308ba8898414db51e4494f7e0a39fabfab0812",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/datasets/__init__.py"
+      }
+    },
+    {
+      "bytes": 17143,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/datasets/convenience_loaders.py",
+      "sha256": "027173faa76cbb8ec0a39a532e605b6f9764763fbb8144b64d1c823bc27d821f",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/datasets/convenience_loaders.py"
+      }
+    },
+    {
+      "bytes": 141785,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/datasets/dataset_metadata.json",
+      "sha256": "a637a1fe146b70f5f663fd480a2475362dc446741893c3048ec992219ba2a0b0",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/datasets/dataset_metadata.json"
+      }
+    },
+    {
+      "bytes": 8164,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/datasets/dataset_retrieval.py",
+      "sha256": "8eca28e58b4c7c217fe9b6148693c0678187dc59a5d7dc3dd567cb6a7a0976d7",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/datasets/dataset_retrieval.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "matminer/datasets/tests"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/datasets/tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/tests/__init__.py"
+      }
+    },
+    {
+      "bytes": 2985,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/datasets/tests/base.py",
+      "sha256": "3fa0ca913e4977880fe646993420e4232242f621bbeba9c722a062719ccf7c39",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/datasets/tests/base.py"
+      }
+    },
+    {
+      "bytes": 8135,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/datasets/tests/test_convenience_loaders.py",
+      "sha256": "07bee07e29c86a712829f638bd1c1c16a94bcc0ba303df9ff6833ea7060a062f",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/datasets/tests/test_convenience_loaders.py"
+      }
+    },
+    {
+      "bytes": 3629,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/datasets/tests/test_dataset_retrieval.py",
+      "sha256": "1594fdd18abc4f638a7fdb0b8d61c46c3addf047224f0a72083cba58314f912e",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/datasets/tests/test_dataset_retrieval.py"
+      }
+    },
+    {
+      "bytes": 21371,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/datasets/tests/test_datasets.py",
+      "sha256": "e845062737f947317a293779070b0b84ff058713181747df66ce576c6c471ce2",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/datasets/tests/test_datasets.py"
+      }
+    },
+    {
+      "bytes": 4273,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/datasets/tests/test_utils.py",
+      "sha256": "6224997001ada2b49b2f865d1181b6c3db40f5f0a90439fe35e249c7887867bc",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/datasets/tests/test_utils.py"
+      }
+    },
+    {
+      "bytes": 6138,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/datasets/utils.py",
+      "sha256": "302ac52c6e74864265e4773d237df30b35ed9a4e9636c774bb7f4f5e01cb0f39",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/datasets/utils.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "matminer/featurizers"
+    },
+    {
+      "bytes": 44,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/__init__.py",
+      "sha256": "e5ef634db0592e6c351785b31d897f49881db109ec18bde4eeefd0ebfe9b5809",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/__init__.py"
+      }
+    },
+    {
+      "bytes": 12036,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/bandstructure.py",
+      "sha256": "b55286640abd0742442ea46c6d51bd477d30b38948990f0a6d868278393fe50b",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/bandstructure.py"
+      }
+    },
+    {
+      "bytes": 30619,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/base.py",
+      "sha256": "7f828451b421c182f43cfa046714ef695a4b7926b591b3223c8a695a599314ea",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/base.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "matminer/featurizers/composition"
+    },
+    {
+      "bytes": 708,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/composition/__init__.py",
+      "sha256": "40f456f2c992794e32f36af781249e4c9e3a8d75a44af5f24e6b9594a348577b",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/composition/__init__.py"
+      }
+    },
+    {
+      "bytes": 36872,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/composition/alloy.py",
+      "sha256": "faf4af804f0e959fff2e716b11684bdd9fe1f90b93cf34e8b560439b10f1c680",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/composition/alloy.py"
+      }
+    },
+    {
+      "bytes": 13074,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/composition/composite.py",
+      "sha256": "c510944e858d949073125eafd624d8624f4be08085a8b7196f89ffeb65c3d181",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/composition/composite.py"
+      }
+    },
+    {
+      "bytes": 7426,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/composition/element.py",
+      "sha256": "edd9c438d567473836fa181bb67a4119c2fbf7dd169f642e4630441f87e2d18a",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/composition/element.py"
+      }
+    },
+    {
+      "bytes": 14825,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/composition/ion.py",
+      "sha256": "a8e5dc90513098543a0531a4ae4dbd197219a57f439a814adb56d50207239ca5",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/composition/ion.py"
+      }
+    },
+    {
+      "bytes": 6726,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/composition/orbital.py",
+      "sha256": "2be68908f4d2ab7d54cf6d63a664341cafbbf5d2f6cf72c893ea068f11430eb2",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/composition/orbital.py"
+      }
+    },
+    {
+      "bytes": 13094,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/composition/packing.py",
+      "sha256": "ee091e31f061bd02e2d4521658b5e9becc5eec6e9b4a76624120e2f83434df5a",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/composition/packing.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "matminer/featurizers/composition/tests"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/composition/tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/tests/__init__.py"
+      }
+    },
+    {
+      "bytes": 525,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/composition/tests/base.py",
+      "sha256": "2dcdbdd3ed96c50d34bc1c1f970c9ebe8b3ab5b9d15f37b3ed550d3743a3414a",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/composition/tests/base.py"
+      }
+    },
+    {
+      "bytes": 9268,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/composition/tests/test_alloy.py",
+      "sha256": "06d45ffb9ba9fa85b9e746e0b56859ab0457a78c52922b721af9b36b8d2f0cb9",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/composition/tests/test_alloy.py"
+      }
+    },
+    {
+      "bytes": 4755,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/composition/tests/test_composite.py",
+      "sha256": "d7ca9873db09f825a3faf48f242cbc4fd261ba8c2a29238de82dc785ac8c8ac1",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/composition/tests/test_composite.py"
+      }
+    },
+    {
+      "bytes": 1830,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/composition/tests/test_element.py",
+      "sha256": "6865ef41349c2154c93705ee29a041393f268a5d0f21bd37ba6e8d1c7ad37980",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/composition/tests/test_element.py"
+      }
+    },
+    {
+      "bytes": 3432,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/composition/tests/test_ion.py",
+      "sha256": "b0067fc230c3f49954e1412efc230a2bed7fc3b87f0b3fdc434b9519dbf0a720",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/composition/tests/test_ion.py"
+      }
+    },
+    {
+      "bytes": 2093,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/composition/tests/test_orbital.py",
+      "sha256": "ab099b479b1fb38cd173a26f51d666aa858bfdc9c0a4c1ffd7be8a61d5b9092a",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/composition/tests/test_orbital.py"
+      }
+    },
+    {
+      "bytes": 3967,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/composition/tests/test_packing.py",
+      "sha256": "0f0492fc63a01403b5db0272e484d14e8c35e5b6d16c553b4cb9dcfdf3adadbf",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/composition/tests/test_packing.py"
+      }
+    },
+    {
+      "bytes": 1430,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/composition/tests/test_thermo.py",
+      "sha256": "3f7ab112975081a3706b3da8c7ad4170d90f31d786269edd4054a9975193e073",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/composition/tests/test_thermo.py"
+      }
+    },
+    {
+      "bytes": 6077,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/composition/thermo.py",
+      "sha256": "66520af0a5aedd93b57b3c3a0934260cda0250155800adc2cd2dc0c925fe8ecf",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/composition/thermo.py"
+      }
+    },
+    {
+      "bytes": 28766,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/conversions.py",
+      "sha256": "ea7a5137203ed9a50d5fba8717cd2bd4a47920694861c0b6269ccd0fbefce9b9",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/conversions.py"
+      }
+    },
+    {
+      "bytes": 27360,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/dos.py",
+      "sha256": "0519696af8f8b26e750cee3e2ee32a29ea26ea11b51e99b43ca5cd65715d42ab",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/dos.py"
+      }
+    },
+    {
+      "bytes": 9833,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/function.py",
+      "sha256": "28a3394c29ec8b3ec9efa4075ffb5e7d116ce410a693267cde626b9c7651f5f3",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/function.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "matminer/featurizers/site"
+    },
+    {
+      "bytes": 724,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/site/__init__.py",
+      "sha256": "e3a9b979e3bce7f73644dd20b7e2e9cc4404f179001b76585fce20ae310b37ef",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/site/__init__.py"
+      }
+    },
+    {
+      "bytes": 11557,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/site/bonding.py",
+      "sha256": "fea661f0fe972dd9a8167644ecd4ff56f14fb9cdbcd76f7e657a70df86a34f13",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/site/bonding.py"
+      }
+    },
+    {
+      "bytes": 21125,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/site/chemical.py",
+      "sha256": "c673e2d069ce24c65a07c65380bfe2bf5bd2f941d67e14de3b0b141c04bedd6f",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/site/chemical.py"
+      }
+    },
+    {
+      "bytes": 702,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/site/cn_target_motif_op.yaml",
+      "sha256": "4d004a7d094e41c2f739b36ea41ba1bc62db4361fe91a80984aa9743149c6261",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/site/cn_target_motif_op.yaml"
+      }
+    },
+    {
+      "bytes": 8772,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/site/external.py",
+      "sha256": "ba412cfbe7120b2004c4f88c17a3a7e859eccaa5c49dfccfd8af4d376c0fbce1",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/site/external.py"
+      }
+    },
+    {
+      "bytes": 35277,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/site/fingerprint.py",
+      "sha256": "965470ac4d72cc7b3dd84fc0f10d58cd585d7fd83b38c29b546156b8f44476bc",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/site/fingerprint.py"
+      }
+    },
+    {
+      "bytes": 17307,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/site/misc.py",
+      "sha256": "e7218e29e2218bbc0075a3acb51155ffe0c1af961e335403de02ddc4f16e3951",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/site/misc.py"
+      }
+    },
+    {
+      "bytes": 20509,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/site/rdf.py",
+      "sha256": "739394a2e0ac8c78b7f8d59da2f8020d05294fd3713f255804f51da2a7adc3bf",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/site/rdf.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "matminer/featurizers/site/tests"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/site/tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/tests/__init__.py"
+      }
+    },
+    {
+      "bytes": 2169,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/site/tests/base.py",
+      "sha256": "3e5766b0e734588a8af5f59242de736b6873ce4a24a558ea30f7efc93aa3afb6",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/site/tests/base.py"
+      }
+    },
+    {
+      "bytes": 3036,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/site/tests/test_bonding.py",
+      "sha256": "dbfcc8fd246f9b7a7294280f2e16e8773c7d703301e9890b3cee706d9d76fb7b",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/site/tests/test_bonding.py"
+      }
+    },
+    {
+      "bytes": 5988,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/site/tests/test_chemical.py",
+      "sha256": "6c6fed361025e95b5d7ed883a27bae3aecad7c67e2d6c92cce4ed032780d7607",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/site/tests/test_chemical.py"
+      }
+    },
+    {
+      "bytes": 1234,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/site/tests/test_external.py",
+      "sha256": "1d6c6f7e59d796a94bf36f6dd16b1425e1692933d3a8870b84aef337917b47cd",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/site/tests/test_external.py"
+      }
+    },
+    {
+      "bytes": 13865,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/site/tests/test_fingerprint.py",
+      "sha256": "c70d9a4d9d14036f51846ac118cfa679f903e845e358f98ee576fec00ab856db",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/site/tests/test_fingerprint.py"
+      }
+    },
+    {
+      "bytes": 7684,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/site/tests/test_misc.py",
+      "sha256": "41210580f904d7c3e006d16ed4edd208006803dd784234866872ca5ee4d475d8",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/site/tests/test_misc.py"
+      }
+    },
+    {
+      "bytes": 6074,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/site/tests/test_rdf.py",
+      "sha256": "b7945754ab1452f7ce5f86990abcac0b8b67d05da838aeba5d4df1a3645eab8d",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/site/tests/test_rdf.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "matminer/featurizers/structure"
+    },
+    {
+      "bytes": 968,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/structure/__init__.py",
+      "sha256": "ccb1d0a837b25d1fb895a7e896e2d635a6d7c9452c0c8cf0bece0f5bb7af1d95",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/structure/__init__.py"
+      }
+    },
+    {
+      "bytes": 50939,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/structure/bonding.py",
+      "sha256": "34e3b2401dca84e4ad3a472ba9d1bee1153e63968b39e139e6c4c1a22d3adf06",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/structure/bonding.py"
+      }
+    },
+    {
+      "bytes": 24059,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/structure/composite.py",
+      "sha256": "d3acb1d287a0d3b91e8608b2e9c83fedc60fdcdf461e345ddceec23ae4ee7837",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/structure/composite.py"
+      }
+    },
+    {
+      "bytes": 18705,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/structure/matrix.py",
+      "sha256": "df895bbb23771684f9a4b55bd54016a52bb98dd81e9b70d036d3ad62e7916c2a",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/structure/matrix.py"
+      }
+    },
+    {
+      "bytes": 5740,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/structure/misc.py",
+      "sha256": "e4cbb0e71c1b8e7db62a1e565e60a44ebcac31f203729ca6941a8155e57ba0e5",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/structure/misc.py"
+      }
+    },
+    {
+      "bytes": 10428,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/structure/order.py",
+      "sha256": "ac0d2dcaa2d74a9ab42d29c09caaa9987aecd2b8204b846cf03d48bd169506c2",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/structure/order.py"
+      }
+    },
+    {
+      "bytes": 13897,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/structure/rdf.py",
+      "sha256": "a410e5605a606e4df6f773b5954fafa3606e7a67a2dc75f21a3f06778512af58",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/structure/rdf.py"
+      }
+    },
+    {
+      "bytes": 13989,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/structure/sites.py",
+      "sha256": "a014192325f28bbe9d32670821593ff2312b6066e2c4f90279fc84c002d2e9bc",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/structure/sites.py"
+      }
+    },
+    {
+      "bytes": 3222,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/structure/symmetry.py",
+      "sha256": "93989b9c3d1bbb2bf45c7ba43e9489e39faee4a5700ae8eafdf9e59ad62288e8",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/structure/symmetry.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "matminer/featurizers/structure/tests"
+    },
+    {
+      "bytes": 1466,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/structure/tests/Cs2CeN5O17_mp-1198000_computed.cif",
+      "sha256": "0ac9c760536a50311e3115624909707860858dc1f51f1f90cbd0f596312618d3",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/structure/tests/Cs2CeN5O17_mp-1198000_computed.cif"
+      }
+    },
+    {
+      "bytes": 1097,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/structure/tests/Dy2HfS5_mp-1198001_computed.cif",
+      "sha256": "07b628e5b23552fb4aedc699f48501556c2764bf35c5cfb3b23f7bff96700f46",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/structure/tests/Dy2HfS5_mp-1198001_computed.cif"
+      }
+    },
+    {
+      "bytes": 2481,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/structure/tests/JarvisCFID_problem_file.json",
+      "sha256": "3d4256bf7407f94d0f01fb02b96e59ae85e28af6a9d30c37b6e5b3959c83e861",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/structure/tests/JarvisCFID_problem_file.json"
+      }
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/structure/tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/tests/__init__.py"
+      }
+    },
+    {
+      "bytes": 2475,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/structure/tests/base.py",
+      "sha256": "39983f349f6a28c85f5b7ed9228b34d809bbbf60acf9d33eca038e9d9f922e75",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/structure/tests/base.py"
+      }
+    },
+    {
+      "bytes": 10651,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/structure/tests/test_bonding.py",
+      "sha256": "98586d7dadf3581418e37522c6c68e42c05f3083cebfe1c5d9dd3b2a06d7953e",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/structure/tests/test_bonding.py"
+      }
+    },
+    {
+      "bytes": 1574,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/structure/tests/test_composite.py",
+      "sha256": "703a473faf02573841f5931b9b67dd19baa46c73d5660233d8806e74e5f8907c",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/structure/tests/test_composite.py"
+      }
+    },
+    {
+      "bytes": 4794,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/structure/tests/test_matrix.py",
+      "sha256": "c3c504680f6b02b76f3e317e6e09e1328ccdf3f12f1ffc0ac0cf96a26373a0d6",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/structure/tests/test_matrix.py"
+      }
+    },
+    {
+      "bytes": 2015,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/structure/tests/test_misc.py",
+      "sha256": "b4233d45b29ea2d7596f49f82edfa2e98365d3cc47e7cb7e38f5ddeabbfbbeac",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/structure/tests/test_misc.py"
+      }
+    },
+    {
+      "bytes": 2853,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/structure/tests/test_order.py",
+      "sha256": "b72d9fec2278e840539a8865797473a066d4da799e3aca964badbde279804034",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/structure/tests/test_order.py"
+      }
+    },
+    {
+      "bytes": 8281,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/structure/tests/test_rdf.py",
+      "sha256": "8bc64d7e8d987c0b2d9794e3cbbd0fd3f9dffb81aefda8d663c25fac76e32c26",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/structure/tests/test_rdf.py"
+      }
+    },
+    {
+      "bytes": 9941,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/structure/tests/test_sites.py",
+      "sha256": "f08c67d88b3d463df7f855ec1a3133d4bfcc7fb55d4d581e57908f66b3bbd1e7",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/structure/tests/test_sites.py"
+      }
+    },
+    {
+      "bytes": 796,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/structure/tests/test_symmetry.py",
+      "sha256": "f75cd22c4e235224cfea5d0bcdbe3145e669214cd5fe9ef5d5ff77c218e4ec39",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/structure/tests/test_symmetry.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "matminer/featurizers/tests"
+    },
+    {
+      "bytes": 80463,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/tests/VBr2_971787_bandstructure.json",
+      "sha256": "b6fdac4b9308c96ce4f94de3446b62e62efab4e9c988bce53afb2c59295caf23",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/tests/VBr2_971787_bandstructure.json"
+      }
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/tests/__init__.py"
+      }
+    },
+    {
+      "bytes": 159300,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/tests/nb3sn_dos.json",
+      "sha256": "fad6e82b281c3b5f84161511c3fd45a841164e9e7535808f625bfc9c63a1a6dc",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/tests/nb3sn_dos.json"
+      }
+    },
+    {
+      "bytes": 28606,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/tests/si_bandstructure_line.json",
+      "sha256": "2f9347ecbf6e5bb98a4b04906e1b2c5382c2326ca54cedd4738d5bc1e9c509c6",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/tests/si_bandstructure_line.json"
+      }
+    },
+    {
+      "bytes": 996961,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/tests/si_bandstructure_uniform.json",
+      "sha256": "1044b649dbf1831ea370bacf57fcbb6cca7593d75133870a1f0aa3615fc5971e",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/tests/si_bandstructure_uniform.json"
+      }
+    },
+    {
+      "bytes": 108979,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/tests/si_dos.json",
+      "sha256": "bf2c358b6850c92d565a4cf9589508f56e7fe72254c60c6b9033bcafbf456bb6",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/tests/si_dos.json"
+      }
+    },
+    {
+      "bytes": 781,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/tests/si_structure.json",
+      "sha256": "2f79b8020b823a47e4d39ba9ddf8ab9320d86bb31302ee9dc052081bafbb5347",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/tests/si_structure.json"
+      }
+    },
+    {
+      "bytes": 6026,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/tests/test_bandstructure.py",
+      "sha256": "c2422d4b61b338d91324c29441249e75ace4bdc323bb36588271774757646188",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/tests/test_bandstructure.py"
+      }
+    },
+    {
+      "bytes": 21259,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/tests/test_base.py",
+      "sha256": "d37ca396b2cdca12015797e551abd30151e1ac71ce0e5ada2d8872067b724612",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/tests/test_base.py"
+      }
+    },
+    {
+      "bytes": 14265,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/tests/test_conversions.py",
+      "sha256": "f02f2e1053577a2cf612502500bf1767dc66738c7822d982824c9e5b4f8b7f41",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/tests/test_conversions.py"
+      }
+    },
+    {
+      "bytes": 5561,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/tests/test_dos.py",
+      "sha256": "891909b441c683a4326acd63a1d4ddc470d2a9764f902499881e6d2ce7000a4c",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/tests/test_dos.py"
+      }
+    },
+    {
+      "bytes": 4826,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/tests/test_function.py",
+      "sha256": "04241cd568c9cb4708a8376c757ce5a54f3db40be13a650b387b014705f2d2ec",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/tests/test_function.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "matminer/featurizers/utils"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/tests/__init__.py"
+      }
+    },
+    {
+      "bytes": 5091,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/utils/grdf.py",
+      "sha256": "15d1bdf0e6ec228ff53ceddc33d3027740da93f4c57f1898337a4d8daa7e09fa",
+      "source": {
+        "blob": "15d1bdf0e6ec228ff53ceddc33d3027740da93f4c57f1898337a4d8daa7e09fa",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 420,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/utils/oxidation.py",
+      "sha256": "5ab13dd9a64faee234cafdc3972c9bc59b00419329c76ad89f62c645a8711396",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/utils/oxidation.py"
+      }
+    },
+    {
+      "bytes": 11395,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/utils/stats.py",
+      "sha256": "1d16b1a539ef32ca4bff980e8f8320aff6895c8ca6866058adb15c57b28222a0",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/utils/stats.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "matminer/featurizers/utils/tests"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/utils/tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/tests/__init__.py"
+      }
+    },
+    {
+      "bytes": 1750,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/utils/tests/test_grdf.py",
+      "sha256": "61f375e04b78aef17bc8bdd083dca3f1ff6440b965bfb6e9fbddd67a1648b1d4",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/utils/tests/test_grdf.py"
+      }
+    },
+    {
+      "bytes": 467,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/utils/tests/test_oxidation.py",
+      "sha256": "c68b6210a6a3ea5e01cefd5fa64a929b020cdc632caa474c0bbcb4762eb8e27a",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/utils/tests/test_oxidation.py"
+      }
+    },
+    {
+      "bytes": 3450,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/featurizers/utils/tests/test_stats.py",
+      "sha256": "63c18fbddd632c94098807e15693e14b4eda932f727935ae5ef7a094f3b898e9",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/featurizers/utils/tests/test_stats.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "matminer/utils"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/tests/__init__.py"
+      }
+    },
+    {
+      "bytes": 1679,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/caching.py",
+      "sha256": "065ea921363c178f6d38887ac374ec62063159ce63841b931ecb1c5b4e0351b1",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/caching.py"
+      }
+    },
+    {
+      "bytes": 20883,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/data.py",
+      "sha256": "fe3d94b02012232315938e3a5dcedf03463f5e0a009e1b1f34f9d6d1e0988cfb",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "matminer/utils/data_files"
+    },
+    {
+      "bytes": 4540,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/data_files/Miedema.csv",
+      "sha256": "ef6e1dccc347628a52725b13752c9c311c522b463a08e46f87febfbd379202a3",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/Miedema.csv"
+      }
+    },
+    {
+      "bytes": 29088,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/data_files/MiedemaLiquidDeltaHf.tsv",
+      "sha256": "5b461ab99d7605fb8b306bda9cfe047b266ffa3e67387cb4b0ffeccaf57a5f48",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/MiedemaLiquidDeltaHf.tsv"
+      }
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/data_files/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/tests/__init__.py"
+      }
+    },
+    {
+      "bytes": 94450,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/data_files/bvparm2016.cif",
+      "sha256": "73b13e36009c89312535e934e2fe9a72b1356201d050d0e7d0b38e77414545cc",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/bvparm2016.cif"
+      }
+    },
+    {
+      "bytes": 96339,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/data_files/bvparm2020.cif",
+      "sha256": "6f921b6fd20b00fdbe4705a38f02e5c45ae91f1c39be55eb6b0620a454875b89",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/bvparm2020.cif"
+      }
+    },
+    {
+      "bytes": 28392,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/data_files/cgcnn_atom_feature.json",
+      "sha256": "cb90bd2257dbf8cfc4e6b2b6d4348d4616e8e9680f1339b1461137032e0f1894",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/cgcnn_atom_feature.json"
+      }
+    },
+    {
+      "bytes": 1242,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/data_files/cohesive_energies.json",
+      "sha256": "ac8cd478c8ac93a1f85d46c434fa4e65b848558f6946987a976afc9f1e521801",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/cohesive_energies.json"
+      }
+    },
+    {
+      "bytes": 41715,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/data_files/deml_elementdata.py",
+      "sha256": "64131b672da2ad9221de0c7fc156663a160a3943f988784245d05b623910ef08",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/deml_elementdata.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "matminer/utils/data_files/jarvis"
+    },
+    {
+      "bytes": 1162701,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/data_files/jarvis/element_charges.json",
+      "sha256": "304de2cc70a79ca762f6fe5578be479ee8c78f7eb6b47796c7ea2bbdfb9b3cae",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/jarvis/element_charges.json"
+      }
+    },
+    {
+      "bytes": 1515058,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/data_files/jarvis/element_chem.json",
+      "sha256": "be5d7323bbbd3e266582c3ef8fc843c3b097cb5b05818dc22ed3af7e4c5cc8b2",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/jarvis/element_chem.json"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata"
+    },
+    {
+      "bytes": 591,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/data_files/magpie_elementdata/AllenElectronegativity.table",
+      "sha256": "0bd8f0d9235f552587b2b799e9afdbf391c392fc15cf759793248c5e3e1a634c",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/AllenElectronegativity.table"
+      }
+    },
+    {
+      "bytes": 481,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/data_files/magpie_elementdata/AtomicRadius.table",
+      "sha256": "6961ea9175391e28bd891fee7e5e5376acc06451daaf104c6fc6c9c02c2d7daf",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/AtomicRadius.table"
+      }
+    },
+    {
+      "bytes": 2054,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/AtomicVolume.table",
+      "sha256": "d44f20f50fa224661a1861c32b7bbdb49cb00b28d7ffca8cd973c28f1cfbcfcf",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/AtomicVolume.table"
+      }
+    },
+    {
+      "bytes": 1132,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/AtomicWeight.table",
+      "sha256": "8ce536156435dbf45f41ae91d96a2bff8139dbec8bbf0f74bfc412db9cfd7049",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/AtomicWeight.table"
+      }
+    },
+    {
+      "bytes": 624,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/BoilingT.table",
+      "sha256": "4e5d510618c84675b93545cf8fc88158d20dcd33e8ba106d4ff15660f301c562",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/BoilingT.table"
+      }
+    },
+    {
+      "bytes": 893,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/BulkModulus.table",
+      "sha256": "e67cea95d5debeb400f93b5695af653412bda499e30b7d351f75a51e562bf5ba",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/BulkModulus.table"
+      }
+    },
+    {
+      "bytes": 603,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/Column.table",
+      "sha256": "8f74e08e661510c6623dda8ea18e191ad82186d6a23559a79555c4e59e06a24e",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/Column.table"
+      }
+    },
+    {
+      "bytes": 807,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/CovalentRadius.table",
+      "sha256": "a291a255ae3a9fef4f73a9cd873fb1aba482066b1e1f373477c5b164c910d8dc",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/CovalentRadius.table"
+      }
+    },
+    {
+      "bytes": 943,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/Density.table",
+      "sha256": "1aac78ba14ab9ddaff81f6fd06b651e0fc4d758a1c0c8fef5ea2d862f4a60ece",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/Density.table"
+      }
+    },
+    {
+      "bytes": 611,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/data_files/magpie_elementdata/DipolePolarizability.table",
+      "sha256": "3dd85b7b015c71be1785fa461a66521a3bc358c8e13159e3dcc26f0487d7673f",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/DipolePolarizability.table"
+      }
+    },
+    {
+      "bytes": 947,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/data_files/magpie_elementdata/ElectronAffinity.table",
+      "sha256": "2055f0bf83c7f5e5c8568929544a9f83bb36267cb6cf1601cea4dcc29391da0c",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/ElectronAffinity.table"
+      }
+    },
+    {
+      "bytes": 870,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/Electronegativity.table",
+      "sha256": "c1801e33c604750c4d7e93765fa008c7f7e501ddbf328a0b180af42cc088f64b",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/Electronegativity.table"
+      }
+    },
+    {
+      "bytes": 851,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/FirstIonizationEnergy.table",
+      "sha256": "3d9db0c74ca5f7b9cbbc41b3b7e7e05a1cf0dda84b0d449ea55264a5180afe30",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/FirstIonizationEnergy.table"
+      }
+    },
+    {
+      "bytes": 654,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/data_files/magpie_elementdata/FusionEnthalpy.table",
+      "sha256": "338fe0f06ba9dcda9a213baed1c69612d2b74ec40d326c102cb15864d8e0df5a",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/FusionEnthalpy.table"
+      }
+    },
+    {
+      "bytes": 636,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/GSbandgap.table",
+      "sha256": "d8036ebdfa12754bafd0ee94063027009ea0020c95ed14d88359edc6af0163d8",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/GSbandgap.table"
+      }
+    },
+    {
+      "bytes": 1696,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/GSenergy_pa.table",
+      "sha256": "173928d55c729af0fe64713b3c909c312cd90c05bb16af9004b06f128da12997",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/GSenergy_pa.table"
+      }
+    },
+    {
+      "bytes": 1337,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/GSestBCClatcnt.table",
+      "sha256": "030633453adba0feeff41bcb193b36931161f179d46612c3b9f1aadc91c66195",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/GSestBCClatcnt.table"
+      }
+    },
+    {
+      "bytes": 1337,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/GSestFCClatcnt.table",
+      "sha256": "10122ff2e8142595c0e4ccdca92c2da8b7c307a1ecd87bd07e2ccf6aa6c0268b",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/GSestFCClatcnt.table"
+      }
+    },
+    {
+      "bytes": 842,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/GSmagmom.table",
+      "sha256": "f7e358df6982f25835706bf766281df3c65858534500a47f18737cacc4a4cf16",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/GSmagmom.table"
+      }
+    },
+    {
+      "bytes": 1133,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/GSvolume_pa.table",
+      "sha256": "3bb7a4d5951ac6a7e55908231bd108fd3531a1b3c04fafe7b4e553c799a3df96",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/GSvolume_pa.table"
+      }
+    },
+    {
+      "bytes": 794,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/HHIp.table",
+      "sha256": "ea1b10fc600c5466a6fc4f65c67ffd596bada7e4c6a1b333ddf7f49e72a23de9",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/HHIp.table"
+      }
+    },
+    {
+      "bytes": 792,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/HHIr.table",
+      "sha256": "638331c59850a883a2e02141e474b6cf2dfd7f5d363c57055fe731d1ee45a2e0",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/HHIr.table"
+      }
+    },
+    {
+      "bytes": 716,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/HeatCapacityMass.table",
+      "sha256": "a2d345d4be2612b65e790f0992171a3a027d0606f0233d8ee5c335ce52b1a759",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/HeatCapacityMass.table"
+      }
+    },
+    {
+      "bytes": 737,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/HeatCapacityMolar.table",
+      "sha256": "57e5c9241d2380da1957e2950919146cbd251b11a8317d128e847532240ce41d",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/HeatCapacityMolar.table"
+      }
+    },
+    {
+      "bytes": 655,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/HeatFusion.table",
+      "sha256": "c3e0c14337f966926bc9f50fef719ff8552ff29bad1052f10c69a55c401385e5",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/HeatFusion.table"
+      }
+    },
+    {
+      "bytes": 973,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/data_files/magpie_elementdata/HeatVaporization.table",
+      "sha256": "dd59e584f25754bcfefa4c3493e8bd97074f594625445abdbd70b148e8e166b4",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/HeatVaporization.table"
+      }
+    },
+    {
+      "bytes": 669,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/ICSDVolume.table",
+      "sha256": "9a5e102fa08d6272f896354cf1eec6206ffeb318a7289e680fcae654742d30e5",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/ICSDVolume.table"
+      }
+    },
+    {
+      "bytes": 3527,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/data_files/magpie_elementdata/IonizationEnergies.table",
+      "sha256": "8acbe7fb952e24198bedd79915067e689ff8e5aa0a2c6c03f86f35404856a480",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/IonizationEnergies.table"
+      }
+    },
+    {
+      "bytes": 560,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/IsAlkali.table",
+      "sha256": "115536a1c194ceb51e09cd97bc1ce53bdcbd25179222fa084c22f87015b984e1",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/IsAlkali.table"
+      }
+    },
+    {
+      "bytes": 560,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/IsDBlock.table",
+      "sha256": "6b3bca675700affec944ce5572543807942c887400e1286303ad289d2d8b8945",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/IsDBlock.table"
+      }
+    },
+    {
+      "bytes": 560,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/IsFBlock.table",
+      "sha256": "409e4b558dfad43c0241ef10a8582d7b520e53d1e171dfed88a8074d535f07f7",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/IsFBlock.table"
+      }
+    },
+    {
+      "bytes": 560,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/IsMetal.table",
+      "sha256": "2aac2f25f66e90f8fdef257647d9239e826ae6d5ee59cff0902aa928f43e3413",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/IsMetal.table"
+      }
+    },
+    {
+      "bytes": 560,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/IsMetalloid.table",
+      "sha256": "1ea06f30777617b1f0ddbd37f8b18c255f1b7d0ce71ee9027f9b300a325be9e2",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/IsMetalloid.table"
+      }
+    },
+    {
+      "bytes": 560,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/IsNonmetal.table",
+      "sha256": "b81e83e3ffc6b4f5e4c2a184c30b8b2c0793d4e4ea79fbbb7aef5619e14c0413",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/IsNonmetal.table"
+      }
+    },
+    {
+      "bytes": 1156,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/data_files/magpie_elementdata/LogThermalConductivity.table",
+      "sha256": "877691f714092c03ca287156ab70dc3e99e05d80b90d959ab649164310785145",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/LogThermalConductivity.table"
+      }
+    },
+    {
+      "bytes": 958,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/MeltingT.table",
+      "sha256": "d5d52d5292dd9788bd326543a1f33219b34c141b863d5594ca212ca63205f02f",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/MeltingT.table"
+      }
+    },
+    {
+      "bytes": 694,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/MendeleevNumber.table",
+      "sha256": "0169c98f87bc2069239122e122cbee13d95097e60debdf281b2202e6b785bf83",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/MendeleevNumber.table"
+      }
+    },
+    {
+      "bytes": 523,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/MiracleRadius.table",
+      "sha256": "cd5bf8fb5dee765f3582b0960cd0b96a8efcf417a4e501e44afb8e3fdad048f7",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/MiracleRadius.table"
+      }
+    },
+    {
+      "bytes": 576,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/data_files/magpie_elementdata/MolarVolume.table",
+      "sha256": "306289ad84031d30d1bf25361a41cc6f85f08f6b94d81fc68c374b1029636020",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/MolarVolume.table"
+      }
+    },
+    {
+      "bytes": 568,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/NUnfilled.table",
+      "sha256": "bbece39935e94c5f8b9636b3d5e6cd5791e8816f883a9c41deecd9b1280169fc",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/NUnfilled.table"
+      }
+    },
+    {
+      "bytes": 618,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/NValence.table",
+      "sha256": "a5dc833fd5f660d233cc752fece5501a81d61ad69120ee3736cd059979047b4b",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/NValence.table"
+      }
+    },
+    {
+      "bytes": 560,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/NdUnfilled.table",
+      "sha256": "63ae6f8c059d282822359092324714908a7438bde7a18f4b50545dc9a5d1cc3b",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/NdUnfilled.table"
+      }
+    },
+    {
+      "bytes": 587,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/NdValence.table",
+      "sha256": "b9a3f4ee220653c1d955aec3e1158a10dc2cd69258a2de5571e4aebd670234f0",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/NdValence.table"
+      }
+    },
+    {
+      "bytes": 566,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/NfUnfilled.table",
+      "sha256": "99439efb794eae0b974838b065fdc31fc1f81242a1086df6a3c38dd22182619d",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/NfUnfilled.table"
+      }
+    },
+    {
+      "bytes": 596,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/NfValence.table",
+      "sha256": "80869e70654b4151c6be142847f56de1966323685071c21a1bbcd16437d2a2e2",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/NfValence.table"
+      }
+    },
+    {
+      "bytes": 560,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/NpUnfilled.table",
+      "sha256": "b810d9973da04e3b840d94d9dbdf8a96f0e49a6610ae1fffeed48a244ee8e8b9",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/NpUnfilled.table"
+      }
+    },
+    {
+      "bytes": 560,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/NpValence.table",
+      "sha256": "f4984b992230957bdd90ee7e1d83232966928840aec0a3e0d917148ceadc5817",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/NpValence.table"
+      }
+    },
+    {
+      "bytes": 560,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/NsUnfilled.table",
+      "sha256": "bbdfa61b8a94af91763255315f3040aa4afa0e3acae56a45e9ade8a8bab03c8f",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/NsUnfilled.table"
+      }
+    },
+    {
+      "bytes": 560,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/NsValence.table",
+      "sha256": "71b75922317cb942599b198fb26155dfb5cadcfe45d08a28361997dec03a663e",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/NsValence.table"
+      }
+    },
+    {
+      "bytes": 676,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/Number.table",
+      "sha256": "8fc501dc139d079d940dfeb1e9e56b2b32a9f935fc11d1eaac409ae2947ba045",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/Number.table"
+      }
+    },
+    {
+      "bytes": 528,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/OxidationStates.table",
+      "sha256": "7592980a54554159c73513c9a5b74cbf5aa227f8f411edc2bac4aeccd7013054",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/OxidationStates.table"
+      }
+    },
+    {
+      "bytes": 617,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/Polarizability.table",
+      "sha256": "5335aff9e2c47935527c4ff1861ec981f7a9b232dfb23f5523c5337f98ee2fc1",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/Polarizability.table"
+      }
+    },
+    {
+      "bytes": 8892,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/README.txt",
+      "sha256": "5f5ed8353ff783e465dd802268b0fe3e8735883cbf4991209735c6067af2af0b",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/README.txt"
+      }
+    },
+    {
+      "bytes": 560,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/Row.table",
+      "sha256": "a6e0f8a4fd85b4cb74dd57a35513d2f348d054b056b6f781c8da6803c86c961c",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/Row.table"
+      }
+    },
+    {
+      "bytes": 737,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/data_files/magpie_elementdata/SecondIonizationEnergy.table",
+      "sha256": "9c990dd457a43420b7e462f8ca3b2e91dc6387625918b62a37f33ce3dfcff2e6",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/SecondIonizationEnergy.table"
+      }
+    },
+    {
+      "bytes": 899,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/ShearModulus.table",
+      "sha256": "6e889e6e5369d9e2981af89b86a13293c236630439945874e9e4171cf271e164",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/ShearModulus.table"
+      }
+    },
+    {
+      "bytes": 858,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/SpaceGroupNumber.table",
+      "sha256": "5bdba4df7fb2c6d86990cc1e500685c21e39d0ed7b771a8810d88c3e97d7092a",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/SpaceGroupNumber.table"
+      }
+    },
+    {
+      "bytes": 556,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/data_files/magpie_elementdata/ThermalConductivity.table",
+      "sha256": "01946932e03549d103dafc6c17f4353b69b8992672e6830a1315d568ba7c4beb",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/ThermalConductivity.table"
+      }
+    },
+    {
+      "bytes": 506,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/data_files/magpie_elementdata/VdWRadius.table",
+      "sha256": "bc7767ffecbd0267f0285bb5fe690f2da1c9919e5e34b2406733de0f3b3cba59",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/VdWRadius.table"
+      }
+    },
+    {
+      "bytes": 585,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/data_files/magpie_elementdata/ZungerPP-r_d.table",
+      "sha256": "926a609ee20b2fc5e7421608d68036c081c48e25756ee72e543922745494fccb",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/ZungerPP-r_d.table"
+      }
+    },
+    {
+      "bytes": 565,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/data_files/magpie_elementdata/ZungerPP-r_p.table",
+      "sha256": "bb71b41e62bd907b6aac9edd59eb2cbe1945800c065c68030f3282a303af695e",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/ZungerPP-r_p.table"
+      }
+    },
+    {
+      "bytes": 568,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/data_files/magpie_elementdata/ZungerPP-r_pi.table",
+      "sha256": "a5430cbbfa3952ded86a1cd9c3ae4dd3a06dcfe20acaae6b3a39cc0b0a582614",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/ZungerPP-r_pi.table"
+      }
+    },
+    {
+      "bytes": 566,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/data_files/magpie_elementdata/ZungerPP-r_s.table",
+      "sha256": "36105772601c6772b53092c74dbceace7891db6d62b93a8411a733f175ac85e8",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/ZungerPP-r_s.table"
+      }
+    },
+    {
+      "bytes": 568,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/data_files/magpie_elementdata/ZungerPP-r_sigma.table",
+      "sha256": "af05fa80b75b33d2c92c5483555ae5489a3107005c95c99d51dcfb0b516a95bd",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/ZungerPP-r_sigma.table"
+      }
+    },
+    {
+      "bytes": 939,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/n_ws^third.table",
+      "sha256": "8e6001dbe257b82442599aa3d9da1532a7e83d862976ef6298b2b5949ab4e90e",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/n_ws^third.table"
+      }
+    },
+    {
+      "bytes": 912,
+      "kind": "file",
+      "mode": 493,
+      "path": "matminer/utils/data_files/magpie_elementdata/phi.table",
+      "sha256": "187949662d67f6b0ec87a56bb14565467bd63eb5fd796ac36f55670ff9072769",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata/phi.table"
+      }
+    },
+    {
+      "bytes": 7459,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/data_files/magpie_elementdata_feature_descriptions.txt",
+      "sha256": "6eaf5f8ff79d8eeffa6b11f5874cfcdd8fa131a0ee397d259516ede44e60e902",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/magpie_elementdata_feature_descriptions.txt"
+      }
+    },
+    {
+      "bytes": 449163,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/data_files/matscholar_els.json",
+      "sha256": "eb8269d7997472727b36fa4a0d31b52fe1af91a95f5c0dc11ca03b113b911382",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/matscholar_els.json"
+      }
+    },
+    {
+      "bytes": 39056,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/data_files/megnet_elemental_embedding.json",
+      "sha256": "e1b2e8f39992bc0565df822ccb67e14a21c0c41fcf09260281d008d53e7a842d",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/data_files/megnet_elemental_embedding.json"
+      }
+    },
+    {
+      "bytes": 1173,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/flatten_dict.py",
+      "sha256": "52aaaafac2e5e6ca94c575c86e3ffb4faaadcd4741280ddd2268ec6544995405",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/flatten_dict.py"
+      }
+    },
+    {
+      "bytes": 5668,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/io.py",
+      "sha256": "e98f00e2390ae3ff34a6f88c74f0a8511a95c23016ad965993caaec9cfeaa210",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/io.py"
+      }
+    },
+    {
+      "bytes": 545,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/kernels.py",
+      "sha256": "8a83d1e6a0e73f063a1a9753df096e64d86c4ffa3ca5ab092ba0b10354a2e6a6",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/kernels.py"
+      }
+    },
+    {
+      "bytes": 1191,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/pipeline.py",
+      "sha256": "4ddd26ce52b01024f9155a42c8c26ef316906c6898d77d442315f851303274f0",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/pipeline.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "matminer/utils/tests"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/tests/__init__.py"
+      }
+    },
+    {
+      "bytes": 802,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/tests/dataframe.json",
+      "sha256": "9c51a023b4fdb7fdcb54368d1827d11997becccbdc0780da9e8ed097b9c40f34",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/tests/dataframe.json"
+      }
+    },
+    {
+      "bytes": 456,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/tests/dataframe.json.bz2",
+      "sha256": "3db4eec5c6361dd4edfb6c8f5901268432bbd6c534bb17933f9e35caa0227113",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/tests/dataframe.json.bz2"
+      }
+    },
+    {
+      "bytes": 444,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/tests/dataframe.json.gz",
+      "sha256": "9fc126bfdcc505f70a8c8ef9411a3b8365b50311362c0e8fd823443e13e41190",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/tests/dataframe.json.gz"
+      }
+    },
+    {
+      "bytes": 2216,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/tests/test_caching.py",
+      "sha256": "8941a0b451884b01946a66f2e022f46eb6efa414f6df06d13866b412ae601fd9",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/tests/test_caching.py"
+      }
+    },
+    {
+      "bytes": 4338,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/tests/test_data.py",
+      "sha256": "0b7142fcd8feac92476269d79ca4de910590f4a5562708c13b227f85fc4c1154",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/tests/test_data.py"
+      }
+    },
+    {
+      "bytes": 881,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/tests/test_flatten_dict.py",
+      "sha256": "4e1ae535a1863bb8a77afe273b226f29ffeeda512b2e47caa6f15b0a22c112d7",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/tests/test_flatten_dict.py"
+      }
+    },
+    {
+      "bytes": 6179,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/tests/test_io.py",
+      "sha256": "b2ad145c372b92369be7c1ce4c916798bd1c083f6005ec9e374e25659597a1c3",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/tests/test_io.py"
+      }
+    },
+    {
+      "bytes": 1432,
+      "kind": "file",
+      "mode": 420,
+      "path": "matminer/utils/utils.py",
+      "sha256": "70b1c73db8a846647303b63513a2b5bc4896425be63a4733bebc967bfc0b8925",
+      "source": {
+        "kind": "upstream",
+        "path": "matminer/utils/utils.py"
+      }
+    },
+    {
+      "bytes": 17980,
+      "kind": "file",
+      "mode": 420,
+      "path": "pylintrc",
+      "sha256": "ec2b928da71f240f122e6f779e6c0480b970ee838aaaf2afa563ce22116f22ae",
+      "source": {
+        "kind": "upstream",
+        "path": "pylintrc"
+      }
+    },
+    {
+      "bytes": 485,
+      "kind": "file",
+      "mode": 420,
+      "path": "pyproject.toml",
+      "sha256": "ee2fef6a9b46c7bb858f5d1c9bba62e7d13b4b9145c396ef5fc9ac6719de139e",
+      "source": {
+        "kind": "upstream",
+        "path": "pyproject.toml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "requirements"
+    },
+    {
+      "bytes": 6532,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/macos-latest_py3.10.txt",
+      "sha256": "31e2b0d616432c9fe9e3b775dcd1b026ce5ab461eac361f945e513d13a229f00",
+      "source": {
+        "kind": "upstream",
+        "path": "requirements/macos-latest_py3.10.txt"
+      }
+    },
+    {
+      "bytes": 6747,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/macos-latest_py3.9.txt",
+      "sha256": "59f30d80d824e0b18b4098cfb1259ad84403f800ed5f9ce0926838db0ee95081",
+      "source": {
+        "kind": "upstream",
+        "path": "requirements/macos-latest_py3.9.txt"
+      }
+    },
+    {
+      "bytes": 6533,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/ubuntu-latest_py3.10.txt",
+      "sha256": "541b618d59ff7f0c35a807c3e62c28fa46aaae1bd96d0ce30debecef78ffb509",
+      "source": {
+        "kind": "upstream",
+        "path": "requirements/ubuntu-latest_py3.11.txt"
+      }
+    },
+    {
+      "bytes": 6533,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/ubuntu-latest_py3.11.txt",
+      "sha256": "541b618d59ff7f0c35a807c3e62c28fa46aaae1bd96d0ce30debecef78ffb509",
+      "source": {
+        "kind": "upstream",
+        "path": "requirements/ubuntu-latest_py3.11.txt"
+      }
+    },
+    {
+      "bytes": 6748,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/ubuntu-latest_py3.9.txt",
+      "sha256": "a16eac009c7ac76f442e2869c16dc0c7dd3c248955ac23ca8fd6994b341fa623",
+      "source": {
+        "kind": "upstream",
+        "path": "requirements/ubuntu-latest_py3.9.txt"
+      }
+    },
+    {
+      "bytes": 1129,
+      "kind": "file",
+      "mode": 420,
+      "path": "setup.cfg",
+      "sha256": "5b45ce4d36d0ccf161ebb8f54a0fa9807f0afadc80b5437cae31d0c558cfee78",
+      "source": {
+        "kind": "upstream",
+        "path": "setup.cfg"
+      }
+    },
+    {
+      "bytes": 2495,
+      "kind": "file",
+      "mode": 420,
+      "path": "setup.py",
+      "sha256": "0f6bf4132f038255365dbe97de2d6acfd69a7a93a4d8dc2ee37bd2666325d64c",
+      "source": {
+        "kind": "upstream",
+        "path": "setup.py"
+      }
+    }
+  ],
+  "overlay_sha256": "47c1d7723d54253305e21317f2e8c53edd2fe3f6bdeaf3bd89fcfb7648353272",
+  "upstream": {
+    "kind": "beyondswe",
+    "repository": "https://github.com/hackingmaterials/matminer",
+    "revision": "36cbe8b61911fcee9c8a3489f2ceda2414dc86db",
+    "source_root_key": "tri80-beyondswe-hackingmaterials_matminer_pr925-cp2"
+  },
+  "workspace_tree_sha256": "63dd693bc4095153f22d62e05625d5c5626b9aac87f02095409166c7fb424655"
+}

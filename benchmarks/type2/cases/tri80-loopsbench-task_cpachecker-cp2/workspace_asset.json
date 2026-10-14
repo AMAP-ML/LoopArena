@@ -1,0 +1,6 @@
+{
+  "recipe": "workspace_recipe.json",
+  "recipe_sha256": "76d40be25f90b8e3c91b228697f63654fbbd3aae72ca0f758f505028e16d3b6b",
+  "relative_path_under_assets_root": "type2/workspaces/tri80-loopsbench-task_cpachecker-cp2/workspace.tar.gz",
+  "workspace_tree_sha256": "11d34a4713236972c8c8c039427e8dfed154fa002801c1b3f5ae8a04f01043a0"
+}

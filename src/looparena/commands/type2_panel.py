@@ -30,6 +30,8 @@ from looparena.paths import repository_root
 from looparena.runtime.llm import default_worker_base_url
 
 ROOT = repository_root()
+WORKER_API_KEY_ENV = "LOOPARENA_WORKER_API_KEY"
+CONTROLLER_API_KEY_ENV = "LOOPARENA_CONTROLLER_API_KEY"
 
 from looparena.commands.type2_run import preflight_type2_case
 from looparena.commands.validate_run import validate_run_dir
@@ -55,10 +57,7 @@ PROVIDER_FAILURES = {
     "reporter_provider_failure",
     "controller_provider_failure",
 }
-RESUMABLE_TERMINAL_INFRASTRUCTURE_FAILURES = PROVIDER_FAILURES | {
-    "main_worker_wall_time_exhausted",
-    "reporter_wall_time_exhausted",
-}
+RESUMABLE_TERMINAL_INFRASTRUCTURE_FAILURES = PROVIDER_FAILURES
 MODEL_PROVIDER_KIND = "model"
 MODEL_TRANSPORT = "http"
 FIXED_TRANSPORT = "local-deterministic"
@@ -296,7 +295,6 @@ class PanelPlan:
     source: Path
     cohort: Path
     case_ids: tuple[str, ...]
-    selection_stage: dict[str, str]
     seeds: tuple[int, ...]
     worker_model: str
     profiles: tuple[GatewayProfile, ...]
@@ -318,7 +316,6 @@ class PanelPlan:
             "source_plan": str(self.source),
             "cohort_dir": str(self.cohort),
             "case_ids": list(self.case_ids),
-            "selection_stage": dict(self.selection_stage),
             "seeds": list(self.seeds),
             "worker": {
                 "model": self.worker_model,
@@ -385,7 +382,6 @@ def load_plan(
     if not isinstance(index_rows, list) or not index_rows:
         raise ValueError("CASE_INDEX.json has no cases")
     indexed: list[str] = []
-    selection_stage: dict[str, str] = {}
     for row in index_rows:
         if not isinstance(row, dict):
             raise ValueError("CASE_INDEX.json contains a non-object case")
@@ -393,7 +389,6 @@ def load_plan(
         if case_id in indexed:
             raise ValueError(f"duplicate case_id: {case_id}")
         indexed.append(case_id)
-        selection_stage[case_id] = str(row.get("selection_stage") or "unstratified")
     cases_value: object = (
         case_override.split(",") if case_override else raw.get("cases", "all")
     )
@@ -667,7 +662,6 @@ def load_plan(
         source=path,
         cohort=cohort,
         case_ids=tuple(case_ids),
-        selection_stage={case_id: selection_stage[case_id] for case_id in case_ids},
         seeds=seeds,
         worker_model=worker_model,
         profiles=tuple(profiles),
@@ -736,12 +730,6 @@ def load_resolved_plan(path: Path) -> PanelPlan:
         source=Path(str(raw.get("source_plan") or path)),
         cohort=Path(str(raw["cohort_dir"])).resolve(),
         case_ids=tuple(str(value) for value in raw["case_ids"]),
-        selection_stage={
-            str(key): str(value)
-            for key, value in (
-                raw.get("selection_stage") or raw.get("difficulty") or {}
-            ).items()
-        },
         seeds=tuple(int(value) for value in raw["seeds"]),
         worker_model=str(raw["worker"]["model"]),
         profiles=tuple(
@@ -821,6 +809,12 @@ def _manifest_identity_matches(
     manifest: dict[str, Any], plan: PanelPlan, job: Job
 ) -> bool:
     condition = plan.condition(job.condition_id)
+    try:
+        case = read_object(plan.cohort / "cases" / job.case_id / "case.json")
+    except (OSError, ValueError):
+        return False
+    if manifest.get("sample_id") != case.get("sample_id"):
+        return False
     if (
         manifest.get("arm") != condition.arm
         or manifest.get("seed") != job.seed
@@ -961,25 +955,19 @@ def _retry_decision(
         if not model_work_started(latest):
             return True, None, "provider_failure_before_model_work"
         return False, None, "provider_failure_without_safe_checkpoint"
-    if other_count >= execution.max_other_infrastructure_attempts:
-        return False, None, "infrastructure_attempt_limit"
     if safe_resume_source(latest, plan, job):
         return True, latest, "safe_interrupted_checkpoint"
+    if other_count >= execution.max_other_infrastructure_attempts:
+        return False, None, "infrastructure_attempt_limit"
     return True, None, "fresh_infrastructure_retry"
 
 
-def _profile_pair(
+def _primary_profile(
     plan: PanelPlan, job: Job, attempt_number: int
-) -> tuple[GatewayProfile, GatewayProfile | None]:
+) -> GatewayProfile:
     initial_slot = sum(job.key.encode("utf-8")) % len(plan.profiles)
     slot = (initial_slot + attempt_number - 1) % len(plan.profiles)
-    primary = plan.profiles[slot]
-    fallback = (
-        plan.profiles[(slot + 1) % len(plan.profiles)]
-        if len(plan.profiles) > 1
-        else None
-    )
-    return primary, fallback
+    return plan.profiles[slot]
 
 
 def _profile_values(profile: GatewayProfile) -> tuple[str, str]:
@@ -1000,12 +988,15 @@ def _profile_values(profile: GatewayProfile) -> tuple[str, str]:
 
 def subprocess_environment(
     primary: GatewayProfile,
-    fallback: GatewayProfile | None,
     controller_profile: GatewayProfile | None = None,
 ) -> tuple[dict[str, str], str, str | None]:
     primary_key, base_url = _profile_values(primary)
+    controller_key, controller_base_url = (
+        _profile_values(controller_profile)
+        if controller_profile is not None
+        else (primary_key, None)
+    )
     environment = os.environ.copy()
-    environment["OPENAI_API_KEY"] = primary_key
     environment["OPENAI_BASE_URL"] = base_url
     environment["LOOPARENA_CREDENTIAL_PROFILE"] = primary.profile_id
     environment["LOOPARENA_CREDENTIAL_PROFILE_ID"] = primary.profile_id
@@ -1016,17 +1007,8 @@ def subprocess_environment(
         "LOOPARENA_GATEWAY_FALLBACK_PROFILE_ID",
     ):
         environment.pop(name, None)
-    if fallback is not None:
-        fallback_key, fallback_base_url = _profile_values(fallback)
-        if fallback_base_url != base_url:
-            raise RuntimeError("gateway fallback profiles must use the same endpoint")
-        environment["LOOPARENA_GATEWAY_FALLBACK_API_KEY"] = fallback_key
-        environment["LOOPARENA_GATEWAY_FALLBACK_PROFILE_ID"] = fallback.profile_id
-    controller_base_url: str | None = None
-    if controller_profile is not None:
-        controller_key, controller_base_url = _profile_values(controller_profile)
-        environment[controller_profile.api_key_env] = controller_key
-        environment[controller_profile.base_url_env] = controller_base_url
+    environment[WORKER_API_KEY_ENV] = primary_key
+    environment[CONTROLLER_API_KEY_ENV] = controller_key
     return environment, base_url, controller_base_url
 
 
@@ -1061,6 +1043,8 @@ def build_case_command(
         plan.worker_model,
         "--base-url",
         base_url,
+        "--api-key-env",
+        WORKER_API_KEY_ENV,
         "--credential-profile-id",
         primary.profile_id,
         "--scbench-runtime-profile",
@@ -1090,13 +1074,12 @@ def build_case_command(
                     credential_profile_id,
                 ]
             )
-            gateway_controller = controller_profile or primary
             command.extend(
                 [
                     "--controller-base-url",
                     controller_base_url or base_url,
                     "--controller-api-key-env",
-                    gateway_controller.api_key_env,
+                    CONTROLLER_API_KEY_ENV,
                 ]
             )
     if resume_source is not None:
@@ -1294,10 +1277,9 @@ class PanelRunner:
                 break
             attempt = next_attempt(root)
             attempt_number = int(attempt.name.removeprefix("attempt-"))
-            primary, fallback = _profile_pair(self.plan, job, attempt_number)
+            primary = _primary_profile(self.plan, job, attempt_number)
             environment, base_url, controller_base_url = subprocess_environment(
                 primary,
-                fallback,
                 self.plan.controller_gateway_profile,
             )
             owner_id = attempt_owner_id(attempt)
@@ -1317,9 +1299,6 @@ class PanelRunner:
                 "job": job.key,
                 "attempt": attempt.name,
                 "credential_profile": primary.profile_id,
-                "fallback_credential_profile": fallback.profile_id
-                if fallback
-                else None,
                 "controller_gateway_credential_profile": (
                     self.plan.controller_gateway_profile.profile_id
                     if self.plan.controller_gateway_profile is not None
@@ -1340,7 +1319,6 @@ class PanelRunner:
                 attempt=str(attempt),
                 attempt_number=attempt_number,
                 credential_profile=primary.profile_id,
-                fallback_credential_profile=fallback.profile_id if fallback else None,
                 resume_from_attempt=str(resume_source) if resume_source else None,
                 log=str(log_path),
             )
@@ -1508,7 +1486,7 @@ def main(argv: list[str] | None = None) -> int:
     profile_endpoints = {base_url for _, base_url in profile_values}
     if len(profile_endpoints) != 1:
         raise SystemExit(
-            "gateway profiles must share one endpoint; do not mix providers as fallback"
+            "gateway profiles must share one endpoint"
         )
     _materialize_plan(panel_root, document)
 

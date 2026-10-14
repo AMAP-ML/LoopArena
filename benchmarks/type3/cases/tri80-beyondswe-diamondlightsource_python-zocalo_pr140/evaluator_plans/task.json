@@ -1,0 +1,19 @@
+{
+  "adapter_config": {
+    "docker_executable": "docker",
+    "task_dir": "/opt/looparena/evaluator_assets/beyondswe_type3/tri80-beyondswe-diamondlightsource_python-zocalo_pr140/task"
+  },
+  "adapter_kind": "beyondswe_harbor",
+  "adapter_version": "harbor-verifier-v1",
+  "network": "host",
+  "pass_policy": "reward-equals-one",
+  "runtime_identity": {
+    "image_id": "sha256:3206d230f3418c2ef3d75ce1616336529250397bf6ec30c8d9693aa6f7bb4e52",
+    "image_reference": "aweaiteam/beyondswe:diamondlightsource_python-zocalo_pr140",
+    "platform": "linux/amd64",
+    "workdir": "/workspace/python-zocalo"
+  },
+  "solve_network": "host",
+  "source_revision": "7d2ced21b4c85f646d5ba8786875d7fbbe08ed49",
+  "timeout_sec": 1200
+}

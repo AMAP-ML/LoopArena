@@ -1,0 +1,6 @@
+{
+  "recipe": "workspace_recipe.json",
+  "recipe_sha256": "23f5d5ad750727eb438d08ea105e2eb07401e330c2389eeab0ebc081c1d5160e",
+  "relative_path_under_assets_root": "type2/workspaces/tri80-loopsbench-task_mininet_network_simulation-cp1/workspace.tar.gz",
+  "workspace_tree_sha256": "3ea485805598b3f8a1966f65103f730fed2d9374a99865cd8edf074b0aeeee98"
+}

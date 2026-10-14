@@ -1,0 +1,29 @@
+{
+  "adapter_config": {
+    "docker_executable": "docker",
+    "expected_test_count": 3,
+    "expected_unit_ids": [
+      "mlir",
+      "circt",
+      "k_circt"
+    ],
+    "result_protocol": "source_run_tests_task_level",
+    "runtime_assets_dir": "/opt/looparena/evaluator_assets/evaluator_runtime",
+    "task_dir": "/opt/looparena/evaluator_assets/tasks/task_mlir_circuit_ir"
+  },
+  "adapter_kind": "loopsbench",
+  "adapter_version": "source-run-tests-v1",
+  "evaluator_revision": "5880b64491e2cac2f83d497153ed173b8a995b8b",
+  "network": "bridge",
+  "pass_policy": "all-source-unit-tests-pass",
+  "runtime_identity": {
+    "image_id": "sha256:f0bff0278d821a3bc556dc743d679506bfb8d0898fc9ee7a6bf8f43eb3e8c2d3",
+    "image_reference": "looparena-loopsbench-84ae415/task_mlir_circuit_ir:frozen",
+    "platform": "linux/amd64",
+    "task_tree_sha256": "a4ee395a74a491f7bd9237d8f9e679ae575dfe044bbdbd3062f5979441ae29e8",
+    "workdir": "/workspace"
+  },
+  "solve_network": "bridge",
+  "source_revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+  "timeout_sec": 600
+}

@@ -1,0 +1,6 @@
+{
+  "recipe": "workspace_recipe.json",
+  "recipe_sha256": "e1d46042b308586cdfbca841b51b47ea48d005d9f816af8601729609c9c27a40",
+  "relative_path_under_assets_root": "type2/workspaces/tri80-scbench-circuit_eval-cp5/workspace.tar.gz",
+  "workspace_tree_sha256": "a9d882bc22cbad4958bc9652d8f5bd908e36787403cd564416a4e701103abeed"
+}

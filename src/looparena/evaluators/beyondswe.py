@@ -24,12 +24,12 @@ from .base import (
     run_argv,
 )
 
+
 _COLLECTED_RE = re.compile(r"\bcollected\s+(\d+)\s+items?\b", re.IGNORECASE)
 _SUMMARY_RE = re.compile(
     r"\b(\d+)\s+(passed|failed|errors?|skipped|xfailed|xpassed)\b",
     re.IGNORECASE,
 )
-
 
 def _pytest_counts(output: str, *, expected: int) -> tuple[int, int]:
     collected_matches = _COLLECTED_RE.findall(output)
@@ -126,7 +126,9 @@ def evaluate_beyondswe_harbor(
         official_verifier_timeout = math.ceil(raw_verifier_timeout)
         raw_verifier_user = official_verifier.get("user")
         official_verifier_user = (
-            str(raw_verifier_user).strip() if raw_verifier_user is not None else None
+            str(raw_verifier_user).strip()
+            if raw_verifier_user is not None
+            else None
         )
         if not official_verifier_user:
             official_verifier_user = None
@@ -161,11 +163,7 @@ def evaluate_beyondswe_harbor(
     workdir = str(
         runtime.get("workdir")
         or config.get("workdir")
-        or (
-            official_instance.get("workdir")
-            if isinstance(official_instance, dict)
-            else ""
-        )
+        or (official_instance.get("workdir") if isinstance(official_instance, dict) else "")
         or ""
     )
     if task_type == "doc2repo":
@@ -176,8 +174,8 @@ def evaluate_beyondswe_harbor(
             else 0
         )
         collection_config_valid = (
-            tests_dir / "test_suite.zip"
-        ).is_file() and expected > 0
+            (tests_dir / "test_suite.zip").is_file() and expected > 0
+        )
     else:
         evaluation_kind = "f2p_p2p_binary"
         try:
@@ -203,7 +201,9 @@ def evaluate_beyondswe_harbor(
         or not workdir.startswith("/")
         or not collection_config_valid
     ):
-        return _failure(plan, status="setup_failed", expected=expected)
+        return _failure(
+            plan, status="setup_failed", expected=expected
+        )
 
     timeout = int(plan.get("timeout_sec") or official_verifier_timeout + 300)
     deadline = time.monotonic() + timeout
@@ -341,7 +341,9 @@ def evaluate_beyondswe_harbor(
             rc, stdout, stderr, elapsed, timed_out = invoke(
                 args,
                 timeout_cap=(
-                    official_verifier_timeout + 20 if args[0] == "exec" else None
+                    official_verifier_timeout + 20
+                    if args[0] == "exec"
+                    else None
                 ),
             )
             elapsed_total += elapsed
@@ -486,7 +488,9 @@ def evaluate_beyondswe_harbor(
             and 0 < executed <= collected
         )
         failed_result_valid = reward == 0.0 and verifier_rc not in (None, 0)
-        result_valid = reward_valid and (passed_result_valid or failed_result_valid)
+        result_valid = reward_valid and (
+            passed_result_valid or failed_result_valid
+        )
     else:
         # Doc2Repo has a fractional non-pytest receipt contract. Preserve the
         # source reward semantics without applying binary collection rules.

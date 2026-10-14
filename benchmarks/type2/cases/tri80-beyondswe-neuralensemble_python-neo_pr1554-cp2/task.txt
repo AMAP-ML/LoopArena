@@ -1,0 +1,6 @@
+# Reject unsupported SpikeTrain construction conversions
+
+Complete the copy-removal migration by rejecting two construction operations
+that can no longer promise the old view semantics: requesting a different
+dtype, and requesting a real unit rescale. Preserve the copy-compatible signal,
+SpikeTrain operation, reader, and lazy-proxy behavior from the predecessor.

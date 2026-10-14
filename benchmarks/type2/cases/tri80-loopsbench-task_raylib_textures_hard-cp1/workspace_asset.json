@@ -1,0 +1,6 @@
+{
+  "recipe": "workspace_recipe.json",
+  "recipe_sha256": "8ec88dcbad224a938837b6f7997e8797d6b7ff2314d1ea76e73fdc84f31a0f98",
+  "relative_path_under_assets_root": "type2/workspaces/tri80-loopsbench-task_raylib_textures_hard-cp1/workspace.tar.gz",
+  "workspace_tree_sha256": "e21eb0bcd76577dce003eaf8297035510a0618b0c5c6773b24304c8b2aec931f"
+}

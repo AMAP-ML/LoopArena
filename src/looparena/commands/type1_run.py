@@ -22,12 +22,29 @@ from looparena.runtime.llm import (
 DEFAULT_MAX_TOKENS = 20480
 
 
+def _data_files(path: Path) -> list[Path]:
+    if path.is_dir():
+        files = sorted(path.glob("*.jsonl"))
+        if not files:
+            raise ValueError(f"no JSONL files in {path}")
+        return files
+    return [path]
+
+
 def _load_jsonl(path: Path) -> list[dict]:
     return [
         json.loads(line)
-        for line in path.read_text(encoding="utf-8").splitlines()
+        for file in _data_files(path)
+        for line in file.read_text(encoding="utf-8").splitlines()
         if line.strip()
     ]
+
+
+def _data_sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    for file in _data_files(path):
+        digest.update(file.read_bytes())
+    return digest.hexdigest()
 
 
 def _validate_questions(questions: list[dict]) -> None:
@@ -53,7 +70,7 @@ def _evaluate_one(client: WorkerClient, max_tokens: int, question: dict) -> dict
         message = client.chat(
             question["input"],
             tools=None,
-            seed=None,
+            seed=0,
             temperature=0,
             max_tokens=max_tokens,
         )
@@ -98,6 +115,8 @@ def main(argv: list[str] | None = None) -> int:
     )
     args = parser.parse_args(argv)
 
+    if not args.model.strip():
+        parser.error("--model must be nonempty")
     if not os.environ.get(args.api_key_env):
         parser.error(f"missing API key in {args.api_key_env}")
     if not args.preflight_only and args.output is None:
@@ -119,7 +138,7 @@ def main(argv: list[str] | None = None) -> int:
                 {
                     "ready": True,
                     "data": str(args.data.expanduser().resolve()),
-                    "data_sha256": hashlib.sha256(args.data.read_bytes()).hexdigest(),
+                    "data_sha256": _data_sha256(args.data),
                     "questions": len(questions),
                     "model": args.model,
                     "base_url": "[REDACTED]",
@@ -134,7 +153,6 @@ def main(argv: list[str] | None = None) -> int:
     client = WorkerClient(
         model=args.model,
         api_key_env=args.api_key_env,
-        allow_api_key_fallback=False,
         base_url=args.base_url,
         timeout_sec=args.timeout,
         gateway_attempt_limit=1,

@@ -1,0 +1,2349 @@
+{
+  "case_id": "tri80-beyondswe-python-control_python-control_pr913-cp2",
+  "files": [
+    {
+      "bytes": 310,
+      "kind": "file",
+      "mode": 420,
+      "path": ".coveragerc",
+      "sha256": "ae6f737d538dbd6acae7e998fafc3a77f9b206f484db7a651c2cca85e5d2b292",
+      "source": {
+        "kind": "upstream",
+        "path": ".coveragerc"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": ".github"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": ".github/conda-env"
+    },
+    {
+      "bytes": 57,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/conda-env/build-env.yml",
+      "sha256": "71ead772650a2e969d40216b84f5e7026456b65f7b71269fae372cf241e00cfa",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/conda-env/build-env.yml"
+      }
+    },
+    {
+      "bytes": 280,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/conda-env/doctest-env.yml",
+      "sha256": "68d83c2ca5068d4136ad7fb703b80863ad21960008475297a5c93a232a67da5f",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/conda-env/doctest-env.yml"
+      }
+    },
+    {
+      "bytes": 195,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/conda-env/test-env.yml",
+      "sha256": "808c4f5cf8f079955504ceba57a2bda807abf785e4c5263165fc5b6e9cc350fc",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/conda-env/test-env.yml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": ".github/scripts"
+    },
+    {
+      "bytes": 988,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/scripts/set-conda-test-matrix.py",
+      "sha256": "21e219259ead8f6ee06316804042fc6c036853da013db7bf0bf6cecf9e263704",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/scripts/set-conda-test-matrix.py"
+      }
+    },
+    {
+      "bytes": 865,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/scripts/set-pip-test-matrix.py",
+      "sha256": "5f01f58cd0be56ed33b4d1c77466a309e9b6a2321d72ff5d77cf03915818b525",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/scripts/set-pip-test-matrix.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": ".github/workflows"
+    },
+    {
+      "bytes": 1139,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/workflows/control-slycot-src.yml",
+      "sha256": "d15352df5702ea3161d6bc2b89b1cd86e7474440726c5092b8bebe9c510b0f69",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/workflows/control-slycot-src.yml"
+      }
+    },
+    {
+      "bytes": 1207,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/workflows/doctest.yml",
+      "sha256": "aa163aa9d02f5510766ee719e910c3e9716968e66dcf5251c71579661c294704",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/workflows/doctest.yml"
+      }
+    },
+    {
+      "bytes": 937,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/workflows/install_examples.yml",
+      "sha256": "56fe5561ded1c7665d90858b8396c627a0a971e36d7e15a4b4bf5aa2f337d106",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/workflows/install_examples.yml"
+      }
+    },
+    {
+      "bytes": 11114,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/workflows/os-blas-test-matrix.yml",
+      "sha256": "c539b5fafd4e06cd4b286f02d6556048e21e531b2e9d36b920e5f8b5d22cbaa5",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/workflows/os-blas-test-matrix.yml"
+      }
+    },
+    {
+      "bytes": 2391,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/workflows/python-package-conda.yml",
+      "sha256": "a7f1f8cff1595f471b78cc3a0c0fceedaa56167e715050de84956be3d1a0961a",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/workflows/python-package-conda.yml"
+      }
+    },
+    {
+      "bytes": 507,
+      "kind": "file",
+      "mode": 420,
+      "path": ".gitignore",
+      "sha256": "225953314e52bf56db8abb72345d98ecdb5a74246fab3d9819c5c20e44555f24",
+      "source": {
+        "kind": "upstream",
+        "path": ".gitignore"
+      }
+    },
+    {
+      "bytes": 495,
+      "kind": "file",
+      "mode": 420,
+      "path": ".readthedocs.yaml",
+      "sha256": "071915ed7524196380913dd7475252d701b1a966e2556d62ed4bc3eb005e195b",
+      "source": {
+        "kind": "upstream",
+        "path": ".readthedocs.yaml"
+      }
+    },
+    {
+      "bytes": 40928,
+      "kind": "file",
+      "mode": 420,
+      "path": "ChangeLog",
+      "sha256": "a76c51c9d2af7eb66ca538efd9f8e355c1adab59a3c5c57f75d1dcb45b0fc171",
+      "source": {
+        "kind": "upstream",
+        "path": "ChangeLog"
+      }
+    },
+    {
+      "bytes": 1536,
+      "kind": "file",
+      "mode": 420,
+      "path": "LICENSE",
+      "sha256": "d2907c4e99622e73317fe1e1120a7b97ab3aa75c3b92d3b6bc532cef0f6384bd",
+      "source": {
+        "kind": "upstream",
+        "path": "LICENSE"
+      }
+    },
+    {
+      "bytes": 91,
+      "kind": "file",
+      "mode": 420,
+      "path": "MANIFEST.in",
+      "sha256": "c4f54cb82040e8c09fea3e65712f484ccbd40e5242d489f4915826a9a9b611ae",
+      "source": {
+        "kind": "upstream",
+        "path": "MANIFEST.in"
+      }
+    },
+    {
+      "bytes": 2725,
+      "kind": "file",
+      "mode": 420,
+      "path": "Pending",
+      "sha256": "cf2f5b6aedca3ad5fae872810dcc65cb9bc124a86dc0535b0772874c39802a80",
+      "source": {
+        "kind": "upstream",
+        "path": "Pending"
+      }
+    },
+    {
+      "bytes": 6188,
+      "kind": "file",
+      "mode": 420,
+      "path": "README.rst",
+      "sha256": "9885eafe52392f6db490e4a00cdc4cce697c398f762b3a3302447cae1154f73a",
+      "source": {
+        "kind": "upstream",
+        "path": "README.rst"
+      }
+    },
+    {
+      "bytes": 6897,
+      "kind": "file",
+      "mode": 420,
+      "path": "asv.conf.json",
+      "sha256": "bbc659f042cc7ed16e059855e657149d093ba5aa33d007ac74b46aad218b222a",
+      "source": {
+        "kind": "upstream",
+        "path": "asv.conf.json"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "benchmarks"
+    },
+    {
+      "bytes": 1420,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/README",
+      "sha256": "7c69ebcc7b99c4e88082c6497e863e8d8eab71f31e01b7e6e02943e8562bb19c",
+      "source": {
+        "kind": "upstream",
+        "path": "benchmarks/README"
+      }
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/__init__.py"
+      }
+    },
+    {
+      "bytes": 5847,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/flatsys_bench.py",
+      "sha256": "59ff224e10469fa43bf2d1305cd57155effcda2b3e25cefcdd06e582189c7dcf",
+      "source": {
+        "kind": "upstream",
+        "path": "benchmarks/flatsys_bench.py"
+      }
+    },
+    {
+      "bytes": 3117,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/optestim_bench.py",
+      "sha256": "4d99c3193a808824900f1261a0aabaf584d0e8649390b8b5a068cc4638f9499a",
+      "source": {
+        "kind": "upstream",
+        "path": "benchmarks/optestim_bench.py"
+      }
+    },
+    {
+      "bytes": 8768,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/optimal_bench.py",
+      "sha256": "03c21079f51e7f1e4f10e98996f5a8ffc3873110916ff2e99153ba810fc3bbca",
+      "source": {
+        "kind": "upstream",
+        "path": "benchmarks/optimal_bench.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "conda-recipe"
+    },
+    {
+      "bytes": 126,
+      "kind": "file",
+      "mode": 420,
+      "path": "conda-recipe/bld.bat",
+      "sha256": "2c0e7ace9b9f7d8e5d82b05df677f39717a4044f6849d8e3b35046e59cbaa3de",
+      "source": {
+        "kind": "upstream",
+        "path": "conda-recipe/bld.bat"
+      }
+    },
+    {
+      "bytes": 632,
+      "kind": "file",
+      "mode": 420,
+      "path": "conda-recipe/meta.yaml",
+      "sha256": "36e6d77e938ac052507aff245aa98992015217597ea58b2c1d10eadb0bd49c39",
+      "source": {
+        "kind": "upstream",
+        "path": "conda-recipe/meta.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "control"
+    },
+    {
+      "bytes": 3635,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/__init__.py",
+      "sha256": "a6633419a3dc25ecd65f817cc2506db4d794578f13dce54774bd9d19f70ee787",
+      "source": {
+        "kind": "upstream",
+        "path": "control/__init__.py"
+      }
+    },
+    {
+      "bytes": 13127,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/bdalg.py",
+      "sha256": "89412dd213488a1e8d1676418008915954a956d05a6f9b8994589e6467a327ec",
+      "source": {
+        "kind": "upstream",
+        "path": "control/bdalg.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "control/bench"
+    },
+    {
+      "bytes": 596,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/bench/time_freqresp.py",
+      "sha256": "0d9adcd8686b75616976dffd18eb9fce36d29058b69287427c30f9acd4f6fc04",
+      "source": {
+        "kind": "upstream",
+        "path": "control/bench/time_freqresp.py"
+      }
+    },
+    {
+      "bytes": 15599,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/canonical.py",
+      "sha256": "a9434e690dad2bb2504658b9c9d679ed843242f8c0ad98ad8559704aba2ed920",
+      "source": {
+        "kind": "upstream",
+        "path": "control/canonical.py"
+      }
+    },
+    {
+      "bytes": 12976,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/config.py",
+      "sha256": "e48e6399e560019525748f673d65f81896c93a2b13bd01564e122dfa85555124",
+      "source": {
+        "kind": "upstream",
+        "path": "control/config.py"
+      }
+    },
+    {
+      "bytes": 4690,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/ctrlutil.py",
+      "sha256": "a7ec8237ba0fbb4dbdf997dde4bc4e1e0a16f4e3be6ec16c268a58700dc48ca6",
+      "source": {
+        "kind": "upstream",
+        "path": "control/ctrlutil.py"
+      }
+    },
+    {
+      "bytes": 4042,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/delay.py",
+      "sha256": "636faf6cbe5b4bdfa0e9aa9bd056ed0ddb5daef014b0466933dee52e0ea9b9cc",
+      "source": {
+        "kind": "upstream",
+        "path": "control/delay.py"
+      }
+    },
+    {
+      "bytes": 19696,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/descfcn.py",
+      "sha256": "6b4f9d9d99c7275a2e8df6aef5395ccda4fe151a85ef5b0f8c8b9babbbc91abe",
+      "source": {
+        "kind": "upstream",
+        "path": "control/descfcn.py"
+      }
+    },
+    {
+      "bytes": 4852,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/dtime.py",
+      "sha256": "a565be8f050a0fa2b0fa4b6614663ad4aaf352e29e15d860fa946d578d79e7d2",
+      "source": {
+        "kind": "upstream",
+        "path": "control/dtime.py"
+      }
+    },
+    {
+      "bytes": 3525,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/exception.py",
+      "sha256": "42729c0154692043378f527b9a0a700a3df992740911846e78544e89be91b958",
+      "source": {
+        "kind": "upstream",
+        "path": "control/exception.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "control/flatsys"
+    },
+    {
+      "bytes": 3157,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/flatsys/__init__.py",
+      "sha256": "9faeb9cc033b4890ef5f7f2c0ee80c6d97064db9e60dc1a1c9302195ae7a40fe",
+      "source": {
+        "kind": "upstream",
+        "path": "control/flatsys/__init__.py"
+      }
+    },
+    {
+      "bytes": 4602,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/flatsys/basis.py",
+      "sha256": "8ce59a6695499363d49380a48e55bdc9730e0c7378b9b95800faa6808b31af74",
+      "source": {
+        "kind": "upstream",
+        "path": "control/flatsys/basis.py"
+      }
+    },
+    {
+      "bytes": 3431,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/flatsys/bezier.py",
+      "sha256": "f8a33c2716f02fb024987dcc67baad0b7eeef0cc4e1acd25f9d456ba3e79fcd7",
+      "source": {
+        "kind": "upstream",
+        "path": "control/flatsys/bezier.py"
+      }
+    },
+    {
+      "bytes": 8452,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/flatsys/bspline.py",
+      "sha256": "ba361a2fbb03f6c3fa27a5dc8ae1a30e91731411712f2aeb7636fd0073862b58",
+      "source": {
+        "kind": "upstream",
+        "path": "control/flatsys/bspline.py"
+      }
+    },
+    {
+      "bytes": 36945,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/flatsys/flatsys.py",
+      "sha256": "bf4ed7ae504bceb9db9268f69d480a8cf8110e9c0b449e96d820b97afff48865",
+      "source": {
+        "kind": "upstream",
+        "path": "control/flatsys/flatsys.py"
+      }
+    },
+    {
+      "bytes": 6339,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/flatsys/linflat.py",
+      "sha256": "af2fd13658b424498c0d7b1e2cd46ca329caba77fb4abed5e5228f8c009ad285",
+      "source": {
+        "kind": "upstream",
+        "path": "control/flatsys/linflat.py"
+      }
+    },
+    {
+      "bytes": 2789,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/flatsys/poly.py",
+      "sha256": "c75e52f9161f4b46a12088cc454b3a418ba405912c0b37bb6b493983a2f8154f",
+      "source": {
+        "kind": "upstream",
+        "path": "control/flatsys/poly.py"
+      }
+    },
+    {
+      "bytes": 7996,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/flatsys/systraj.py",
+      "sha256": "551944748d8d34a89509d0ba7c249936513c1c0b9a5653e1f94596852015bd20",
+      "source": {
+        "kind": "upstream",
+        "path": "control/flatsys/systraj.py"
+      }
+    },
+    {
+      "bytes": 29993,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/frdata.py",
+      "sha256": "4a8d82f7e501f6b71c831bc1fd247311e4344702538235a15c9afc000caa04f3",
+      "source": {
+        "kind": "upstream",
+        "path": "control/frdata.py"
+      }
+    },
+    {
+      "bytes": 72817,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/freqplot.py",
+      "sha256": "a773f2322c66b6acbec0fc584e8d13adfae3ca6365293e2e09a197c6eb254f82",
+      "source": {
+        "kind": "upstream",
+        "path": "control/freqplot.py"
+      }
+    },
+    {
+      "bytes": 7316,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/grid.py",
+      "sha256": "e91dd5852aaa6bf8620c6d190ca41f3b7f3f3fb26ed4581ee7d0ab0940a5149d",
+      "source": {
+        "kind": "upstream",
+        "path": "control/grid.py"
+      }
+    },
+    {
+      "bytes": 136570,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/iosys.py",
+      "sha256": "7613c246edd99e6e91a98d34db9293e2ec95335c69964cc0c3c34af7efa78196",
+      "source": {
+        "kind": "upstream",
+        "path": "control/iosys.py"
+      }
+    },
+    {
+      "bytes": 20415,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/lti.py",
+      "sha256": "678068fb6171d6a524bb362ca398c17ebdb6e462d1ad5b3d1bda1d5793809e77",
+      "source": {
+        "kind": "upstream",
+        "path": "control/lti.py"
+      }
+    },
+    {
+      "bytes": 20161,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/margins.py",
+      "sha256": "fe14f26b00109d7242387abe495f115f97d11b8c7fdf11ca0715b44c621e8454",
+      "source": {
+        "kind": "upstream",
+        "path": "control/margins.py"
+      }
+    },
+    {
+      "bytes": 22814,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/mateqn.py",
+      "sha256": "4cc9976ccec102ca6613553748ed94059482cc3653091463a67788b2c1dbff8f",
+      "source": {
+        "kind": "upstream",
+        "path": "control/mateqn.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "control/matlab"
+    },
+    {
+      "bytes": 18522,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/matlab/__init__.py",
+      "sha256": "c4e1aba00bc1655510b3db8d1cbd7bbcb40587c8c351403c0c14d78e455894cd",
+      "source": {
+        "kind": "upstream",
+        "path": "control/matlab/__init__.py"
+      }
+    },
+    {
+      "bytes": 9197,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/matlab/timeresp.py",
+      "sha256": "bfa2524a92ee120cedf9e5209bbdbe40aa89e47fa59cf47693790aaab6408aa8",
+      "source": {
+        "kind": "upstream",
+        "path": "control/matlab/timeresp.py"
+      }
+    },
+    {
+      "bytes": 7338,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/matlab/wrappers.py",
+      "sha256": "bfa91f092954dd77d0e6a6501d078625406524a544faf5adf7d3869dbd7df4d2",
+      "source": {
+        "kind": "upstream",
+        "path": "control/matlab/wrappers.py"
+      }
+    },
+    {
+      "bytes": 18400,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/modelsimp.py",
+      "sha256": "8df364ca8a297b453fa8d5ce734879b1b4c90e4ce071c1bd4b56d06ffc38ff91",
+      "source": {
+        "kind": "upstream",
+        "path": "control/modelsimp.py"
+      }
+    },
+    {
+      "bytes": 27682,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/namedio.py",
+      "sha256": "e4817b8db629d126ff6c74500f730f4773b91ced3651ee121dcbcdf2bfcf6887",
+      "source": {
+        "kind": "upstream",
+        "path": "control/namedio.py"
+      }
+    },
+    {
+      "bytes": 13196,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/nichols.py",
+      "sha256": "0d55b48d80b7c20db1539c741e87aa152054709d5185e2749786d21bd186dfba",
+      "source": {
+        "kind": "upstream",
+        "path": "control/nichols.py"
+      }
+    },
+    {
+      "bytes": 99586,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/optimal.py",
+      "sha256": "c7dc0be5168d32138d8ca7beb5bb3b3fa0fd4d62136b2a4a6beaf086f0f6727c",
+      "source": {
+        "kind": "upstream",
+        "path": "control/optimal.py"
+      }
+    },
+    {
+      "bytes": 8928,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/passivity.py",
+      "sha256": "3c7d124bf2470f8c0c50dbf72d700baed56cd57238b641b705249f85766ca735",
+      "source": {
+        "kind": "upstream",
+        "path": "control/passivity.py"
+      }
+    },
+    {
+      "bytes": 12026,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/phaseplot.py",
+      "sha256": "2b8d0394438995c6bdddc5e8746e5151d40ef9fe8a3579cf1737fc7f01b535bb",
+      "source": {
+        "kind": "upstream",
+        "path": "control/phaseplot.py"
+      }
+    },
+    {
+      "bytes": 4711,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/pzmap.py",
+      "sha256": "2d38f62eb620e9d8284ab8ec063d1d0a9d3513ab8b67b611fdbfa9b9f9aee07f",
+      "source": {
+        "kind": "upstream",
+        "path": "control/pzmap.py"
+      }
+    },
+    {
+      "bytes": 30307,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/rlocus.py",
+      "sha256": "a43827afb11071f393c40264ac61765a5eeafd7687bdaae2133760642a00f9ac",
+      "source": {
+        "kind": "upstream",
+        "path": "control/rlocus.py"
+      }
+    },
+    {
+      "bytes": 11811,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/robust.py",
+      "sha256": "c5aa2adb94f5e28588b0336f51db03ea917c3db2fd10de88214345c4b5e81f29",
+      "source": {
+        "kind": "upstream",
+        "path": "control/robust.py"
+      }
+    },
+    {
+      "bytes": 16549,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/sisotool.py",
+      "sha256": "310a14ad42c4038fda91340639e676b3664e50d0b78bc7eb270387fa8d5a77b9",
+      "source": {
+        "kind": "upstream",
+        "path": "control/sisotool.py"
+      }
+    },
+    {
+      "bytes": 41124,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/statefbk.py",
+      "sha256": "1a3327502add42aa25ebff304ef792cfeeb0128e580a609742c9bcce9988b81f",
+      "source": {
+        "kind": "upstream",
+        "path": "control/statefbk.py"
+      }
+    },
+    {
+      "bytes": 73509,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/statesp.py",
+      "sha256": "720b37f2a14d8b0aec23a3db00bfb13e6b6a30800877e368960a59f0abb82413",
+      "source": {
+        "kind": "upstream",
+        "path": "control/statesp.py"
+      }
+    },
+    {
+      "bytes": 25918,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/stochsys.py",
+      "sha256": "e4f3864e415719cf5e8666271eb8ebe4096a7de20a27014774b37955ea7354d6",
+      "source": {
+        "kind": "upstream",
+        "path": "control/stochsys.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "control/tests"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/__init__.py"
+      }
+    },
+    {
+      "bytes": 14005,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/bdalg_test.py",
+      "sha256": "056b6b53c5b37ccff6781870e1e63fab7a12fa8ef4604e174046a5be19eec98c",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/bdalg_test.py"
+      }
+    },
+    {
+      "bytes": 8189,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/bspline_test.py",
+      "sha256": "0fe444739795987758f9fc98c63a8a4e4c6c3746249165250fae5a93951712a8",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/bspline_test.py"
+      }
+    },
+    {
+      "bytes": 17447,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/canonical_test.py",
+      "sha256": "438dc7bf7b1b835644daef1b5dea97e2ec96aef80535d5ff16518f109fb75278",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/canonical_test.py"
+      }
+    },
+    {
+      "bytes": 13318,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/config_test.py",
+      "sha256": "f88b4006f74dd7bd73de6a2196c14d0bcc4249cd5a5298889dd4244aad1ca841",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/config_test.py"
+      }
+    },
+    {
+      "bytes": 4428,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/conftest.py",
+      "sha256": "b0a8c30c985cc88dc114893753d6291647c60a6dc7e099adf1eb526108c19a51",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/conftest.py"
+      }
+    },
+    {
+      "bytes": 9718,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/convert_test.py",
+      "sha256": "a755f0a8aebdfc37d7b8c851ded82b581f7baf8cd0019d0196211841ccc5ff8a",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/convert_test.py"
+      }
+    },
+    {
+      "bytes": 2140,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/ctrlutil_test.py",
+      "sha256": "e128674dcabcdd10e89491c5c99570135098bfbb46cfd47e1630ebe76c360966",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/ctrlutil_test.py"
+      }
+    },
+    {
+      "bytes": 3517,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/delay_test.py",
+      "sha256": "307ca5d6c7e76efe5b423154d464004e0aae3d4ccb81230fa2dc2f2fb710c082",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/delay_test.py"
+      }
+    },
+    {
+      "bytes": 7175,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/descfcn_test.py",
+      "sha256": "ba63cfe29a03bece6552a95b4c640072225f6cf922d6cf99ab4836a1f15ad89d",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/descfcn_test.py"
+      }
+    },
+    {
+      "bytes": 23017,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/discrete_test.py",
+      "sha256": "d91d1b25258051946dbc12637b26b31d99cf3a441cb2a11b7add7613e93eff3e",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/discrete_test.py"
+      }
+    },
+    {
+      "bytes": 31943,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/flatsys_test.py",
+      "sha256": "81e57268f763e66d16d52caae5d0390d5ac70485588e1ae02122f39407b778df",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/flatsys_test.py"
+      }
+    },
+    {
+      "bytes": 22574,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/frd_test.py",
+      "sha256": "33496395d0b84cc949b4c62ec39cca636f0cb5caee5fc84ddd80570b79a0cc3b",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/frd_test.py"
+      }
+    },
+    {
+      "bytes": 23475,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/freqresp_test.py",
+      "sha256": "2be8fa3c6ea1cdd81594eb4bacd687428a8a61b2e8d498c5be38e0d5e9e059c1",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/freqresp_test.py"
+      }
+    },
+    {
+      "bytes": 1819,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/input_element_int_test.py",
+      "sha256": "6d73b71b2d2424e3e86d4ff65ae5f7a26f6eccff1427e9c570800cb7bd84fd6e",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/input_element_int_test.py"
+      }
+    },
+    {
+      "bytes": 21317,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/interconnect_test.py",
+      "sha256": "af5abfc63bd0e1b3eb35d11bdd332a02f96802d55f96f7b3f128d966a8d0b62b",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/interconnect_test.py"
+      }
+    },
+    {
+      "bytes": 86597,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/iosys_test.py",
+      "sha256": "32edeecdacfc8f7bfb79defd8bf781052e520bfff3a8f767a78f41bf6d18d39d",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/iosys_test.py"
+      }
+    },
+    {
+      "bytes": 12185,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/kwargs_test.py",
+      "sha256": "2c471a43325be8cac7a2eba223659f295517a75fc1f47c13cbbe9a1831992453",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/kwargs_test.py"
+      }
+    },
+    {
+      "bytes": 14226,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/lti_test.py",
+      "sha256": "29a85e91c789f0959c72147375ff31c5e2774b2ce3518eddffbd44f94cce2a6b",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/lti_test.py"
+      }
+    },
+    {
+      "bytes": 13964,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/margin_test.py",
+      "sha256": "3a199dd2e66f46ba008101f468364b36867611b60be1a62990b564392bbfcdf0",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/margin_test.py"
+      }
+    },
+    {
+      "bytes": 14543,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/mateqn_test.py",
+      "sha256": "c8ca14be5e3ced9533b23771c68483e0c7b843bf6d9f4b095909c75c15d9bc9b",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/mateqn_test.py"
+      }
+    },
+    {
+      "bytes": 15409,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/matlab2_test.py",
+      "sha256": "a0a65df1e2141609675a2d2988a27d91a4eb48b94a7ae6fd4e5589ae043d5730",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/matlab2_test.py"
+      }
+    },
+    {
+      "bytes": 30247,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/matlab_test.py",
+      "sha256": "cc266650232e1dcad838a3e3a3b9c51b42d4e7799f5bcc93b7da4a1241092d0b",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/matlab_test.py"
+      }
+    },
+    {
+      "bytes": 4121,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/minreal_test.py",
+      "sha256": "4287152b05831b1c158dc34a2f9e8044e1d4a89bf6a1ad29d9ea412e88629f21",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/minreal_test.py"
+      }
+    },
+    {
+      "bytes": 10145,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/modelsimp_test.py",
+      "sha256": "cf9b0d77061e4ef94b6a9974c4f17b5aa61640ab5bdbff181dc3c4a627ed5596",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/modelsimp_test.py"
+      }
+    },
+    {
+      "bytes": 12240,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/namedio_test.py",
+      "sha256": "1a07ace0f7535d45d706bf0eddb33cee585056b44b65c9e37f576d8bfb6a3ef8",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/namedio_test.py"
+      }
+    },
+    {
+      "bytes": 2613,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/nichols_test.py",
+      "sha256": "789316afecb63eb7cab2141d8d87a67aedadce9e3c7ac6834c5347eac0e191ba",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/nichols_test.py"
+      }
+    },
+    {
+      "bytes": 15951,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/nyquist_test.py",
+      "sha256": "ece4a8215d0b3b59a323afd2c73c65da93c04824758a06ba4640e3e7b198d126",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/nyquist_test.py"
+      }
+    },
+    {
+      "bytes": 30745,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/optimal_test.py",
+      "sha256": "de3c269856eac9fd644a8f31b2b1be825c9ae9fd43943b55bccfe02a10a8eef7",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/optimal_test.py"
+      }
+    },
+    {
+      "bytes": 3502,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/passivity_test.py",
+      "sha256": "c46946f9ddd5e78776b665093a14eb08fdb53d7aa75f5bbe7f75b37fb9c922de",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/passivity_test.py"
+      }
+    },
+    {
+      "bytes": 2901,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/phaseplot_test.py",
+      "sha256": "1152cf0a29aeb460b27f8b318b42b093f6e6af3cf15824112ff85556fe60a615",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/phaseplot_test.py"
+      }
+    },
+    {
+      "bytes": 3131,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/pzmap_test.py",
+      "sha256": "2eed340df3f710afb564d550742aa4fb832dc4a201ee32312585875d10f033df",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/pzmap_test.py"
+      }
+    },
+    {
+      "bytes": 5920,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/rlocus_test.py",
+      "sha256": "4acd586a9fd5526624b664ce248ebad430fe650f94b3a5bb3bebcd1649d3836a",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/rlocus_test.py"
+      }
+    },
+    {
+      "bytes": 13527,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/robust_test.py",
+      "sha256": "2e387803a0912700b4e9a3fa2313b2f94630f8440b69c10d00d76a67b9ae0665",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/robust_test.py"
+      }
+    },
+    {
+      "bytes": 8683,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/sisotool_test.py",
+      "sha256": "2c3cf013202664b6a0c13fa9885b3d299750068f72623c42605d5091c8121d90",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/sisotool_test.py"
+      }
+    },
+    {
+      "bytes": 9124,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/slycot_convert_test.py",
+      "sha256": "4d9d1b502829201f154709cc0272f2a75eb19bb935b4d03a8c0342e7b9629a24",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/slycot_convert_test.py"
+      }
+    },
+    {
+      "bytes": 42462,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/statefbk_test.py",
+      "sha256": "e2b425235148959de07f3a94586a49efb5cfee45cd225098fb3b1c79787417b8",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/statefbk_test.py"
+      }
+    },
+    {
+      "bytes": 51503,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/statesp_test.py",
+      "sha256": "ddd8a5bf3c9fe227adb8a1924594e6c62f18f8c1bd8d4d2ee2c7cff2bfa7a077",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/statesp_test.py"
+      }
+    },
+    {
+      "bytes": 19173,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/stochsys_test.py",
+      "sha256": "475f878f4fb923020734b54e22bfa6d3131ade5bff1dc5ec08eeac84ede33d95",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/stochsys_test.py"
+      }
+    },
+    {
+      "bytes": 2326,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/timebase_test.py",
+      "sha256": "563d16197eec49441dbb5fbff0d47370cc064a1dcae40f6c7dcf35c820bad480",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/timebase_test.py"
+      }
+    },
+    {
+      "bytes": 50899,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/timeresp_test.py",
+      "sha256": "ba3f1f44565b51b97a9ea790334853c3361f814d55a4d6d60704fdca1f5eb3b7",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/timeresp_test.py"
+      }
+    },
+    {
+      "bytes": 14241,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/trdata_test.py",
+      "sha256": "5c7237724eebd7698c8cdd34d31e09a994f4252ba41881c9c8ebebbf06b33b22",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/trdata_test.py"
+      }
+    },
+    {
+      "bytes": 11145,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/type_conversion_test.py",
+      "sha256": "7030ee62e1c744d201ad8a6b2145a3d6c94f23977c1833faa6742c2b58db50c5",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/type_conversion_test.py"
+      }
+    },
+    {
+      "bytes": 3009,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/xferfcn_input_test.py",
+      "sha256": "1e2bc7851a1a8486e55b1f7f0643454e705a5f511d9f9977740541fe35c5fa05",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/xferfcn_input_test.py"
+      }
+    },
+    {
+      "bytes": 51239,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/tests/xferfcn_test.py",
+      "sha256": "cb6385a67a4248665f2f212b70a70ea3c5d9135c789cb416903aa930dc8f32d2",
+      "source": {
+        "kind": "upstream",
+        "path": "control/tests/xferfcn_test.py"
+      }
+    },
+    {
+      "bytes": 81653,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/timeresp.py",
+      "sha256": "3f708d69dc2112613b89b35f876f5ca05dde9ac236a2eacf32db0dd5240e58c1",
+      "source": {
+        "kind": "upstream",
+        "path": "control/timeresp.py"
+      }
+    },
+    {
+      "bytes": 72373,
+      "kind": "file",
+      "mode": 420,
+      "path": "control/xferfcn.py",
+      "sha256": "0c3bfd54d35123b463cc4ef1e7c612b50e2a8fa12ae3e30d0c51f506f94137ad",
+      "source": {
+        "kind": "upstream",
+        "path": "control/xferfcn.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "doc"
+    },
+    {
+      "bytes": 19,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/.gitignore",
+      "sha256": "84951015f70abd48444a60b536e9e5840997a51c821ffbde1a312fe22323b4e9",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/.gitignore"
+      }
+    },
+    {
+      "bytes": 739,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/Makefile",
+      "sha256": "2d18b01e1e1a6bf5446b4e551a3d090208860683ab5f363ad00a50d0c72bf7cf",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/Makefile"
+      }
+    },
+    {
+      "bytes": 893,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/README",
+      "sha256": "d410361e00d7029b0ec345e088f028ec7e6766ed9c5dd61fdbbdc2cd856da080",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/README"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "doc/_templates"
+    },
+    {
+      "bytes": 466,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/_templates/custom-class-template.rst",
+      "sha256": "5855d88eec134006b8d66548db4489f9187247fbcc13e4c1e5e88e78f0b5f79f",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/_templates/custom-class-template.rst"
+      }
+    },
+    {
+      "bytes": 5846,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/classes.fig",
+      "sha256": "48225eaf02fff256c44ffc575792951aebda122aa32211224360712d02748c1b",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/classes.fig"
+      }
+    },
+    {
+      "bytes": 12798,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/classes.pdf",
+      "sha256": "75d1685c9e8e44669b5362b5a7be8fa0b6724aa6e355d9992dfaaadd27840dc3",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/classes.pdf"
+      }
+    },
+    {
+      "bytes": 9026,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/classes.png",
+      "sha256": "9910519c93241e859c7c96e62200f1ca1fa466748b8a3c541d33276da0ed28fe",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/classes.png"
+      }
+    },
+    {
+      "bytes": 1685,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/classes.rst",
+      "sha256": "1c21eff8ff97663bb382e523e98088d6349a84e7a373fe52b673fa8b1004c088",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/classes.rst"
+      }
+    },
+    {
+      "bytes": 9042,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/conf.py",
+      "sha256": "8889bd987f6c46bb25ed76c9e21b0ee73900dbfcd9f6a324eb71e92eff8e418a",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/conf.py"
+      }
+    },
+    {
+      "bytes": 3279,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/control.rst",
+      "sha256": "ad43fcacb6ed56a8d7acbc38f1920fe2dd9f2d57da8d5a2f93bb87d906944577",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/control.rst"
+      }
+    },
+    {
+      "bytes": 12515,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/conventions.rst",
+      "sha256": "b0e044e5f383947a326081ad8afa8e3dfb7a98a0e6b1e2a5e2ec90902f97a7d4",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/conventions.rst"
+      }
+    },
+    {
+      "kind": "symlink",
+      "mode": 493,
+      "path": "doc/cruise-control.py",
+      "target": "../examples/cruise-control.py"
+    },
+    {
+      "bytes": 324,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/cruise-control.rst",
+      "sha256": "e6cbec98468c1406a4f10f8727e23ea5e398c64908e4b934fd89d4929aa49382",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/cruise-control.rst"
+      }
+    },
+    {
+      "kind": "symlink",
+      "mode": 493,
+      "path": "doc/cruise.ipynb",
+      "target": "../examples/cruise.ipynb"
+    },
+    {
+      "bytes": 2966,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/descfcn.rst",
+      "sha256": "22cff9c9b1ec4b9fe17c258485e7331f60b384eead25f687db3665b18d26d6b8",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/descfcn.rst"
+      }
+    },
+    {
+      "kind": "symlink",
+      "mode": 493,
+      "path": "doc/describing_functions.ipynb",
+      "target": "../examples/describing_functions.ipynb"
+    },
+    {
+      "bytes": 1411,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/examples.rst",
+      "sha256": "211564a56fe49ed1321975bd1f21cb75ad4a505a1798c1f6b8331f1794f1dd27",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/examples.rst"
+      }
+    },
+    {
+      "bytes": 11469,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/flatsys.rst",
+      "sha256": "da5d5d7e828e6af2cae7120c45603922a3fd1518490c68acbae12926b5a5b128",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/flatsys.rst"
+      }
+    },
+    {
+      "bytes": 1951,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/index.rst",
+      "sha256": "17c1d0b1f24d66e6d76865af2b8a3ca61662b4fc29b5c719a6ec1d7b97e80826",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/index.rst"
+      }
+    },
+    {
+      "bytes": 3718,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/intro.rst",
+      "sha256": "7c1c38c958b73e84d58b64c94ca72ae447da5c06dbcb7c2910b6ab38015f7112",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/intro.rst"
+      }
+    },
+    {
+      "bytes": 17390,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/iosys.rst",
+      "sha256": "17e27aa73b88b1b382d15a455fcce4dca3a17da3635e5dfce63b3cb76d017d89",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/iosys.rst"
+      }
+    },
+    {
+      "kind": "symlink",
+      "mode": 493,
+      "path": "doc/kincar-flatsys.py",
+      "target": "../examples/kincar-flatsys.py"
+    },
+    {
+      "bytes": 461,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/kincar-flatsys.rst",
+      "sha256": "c97365a1c3c2c23cf2ed8054e8a3e21d86fd931fcca625a28f651256a41c4350",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/kincar-flatsys.rst"
+      }
+    },
+    {
+      "kind": "symlink",
+      "mode": 493,
+      "path": "doc/kincar-fusion.ipynb",
+      "target": "../examples/kincar-fusion.ipynb"
+    },
+    {
+      "bytes": 2051,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/matlab.rst",
+      "sha256": "583d1945da99838fe475fade2b76a8fa5a7ad53a7a1d55bf1abe7a42f6e2d056",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/matlab.rst"
+      }
+    },
+    {
+      "kind": "symlink",
+      "mode": 493,
+      "path": "doc/mhe-pvtol.ipynb",
+      "target": "../examples/mhe-pvtol.ipynb"
+    },
+    {
+      "bytes": 175846,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/mpc-overview.png",
+      "sha256": "e8e1011b6e77ec714a95e29928880ee4dacdfd620f12d274d80687e95eddb161",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/mpc-overview.png"
+      }
+    },
+    {
+      "kind": "symlink",
+      "mode": 493,
+      "path": "doc/mpc_aircraft.ipynb",
+      "target": "../examples/mpc_aircraft.ipynb"
+    },
+    {
+      "bytes": 19125,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/optimal.rst",
+      "sha256": "17f95a68e75853eb96dcc0ffa3f9f09858d3dc8c2aa60d4ff6adee261e21b5c3",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/optimal.rst"
+      }
+    },
+    {
+      "kind": "symlink",
+      "mode": 493,
+      "path": "doc/phaseplots.py",
+      "target": "../examples/phaseplots.py"
+    },
+    {
+      "bytes": 246,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/phaseplots.rst",
+      "sha256": "990a41b1ed5d256b4afe8fd106074898ab683a4452ddc7c9ee8bb5a40d45578e",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/phaseplots.rst"
+      }
+    },
+    {
+      "kind": "symlink",
+      "mode": 493,
+      "path": "doc/pvtol-lqr-nested.ipynb",
+      "target": "../examples/pvtol-lqr-nested.ipynb"
+    },
+    {
+      "kind": "symlink",
+      "mode": 493,
+      "path": "doc/pvtol-lqr.py",
+      "target": "../examples/pvtol-lqr.py"
+    },
+    {
+      "bytes": 611,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/pvtol-lqr.rst",
+      "sha256": "ee016e525da6a082371c4be6264c32061ce6bdf175aa8280aabc995cffe5c878",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/pvtol-lqr.rst"
+      }
+    },
+    {
+      "kind": "symlink",
+      "mode": 493,
+      "path": "doc/pvtol-nested.py",
+      "target": "../examples/pvtol-nested.py"
+    },
+    {
+      "bytes": 630,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/pvtol-nested.rst",
+      "sha256": "75c1617b19ab399653152ae283872cc47314947c4598aeada948c91fe2656d66",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/pvtol-nested.rst"
+      }
+    },
+    {
+      "kind": "symlink",
+      "mode": 493,
+      "path": "doc/pvtol-outputfbk.ipynb",
+      "target": "../examples/pvtol-outputfbk.ipynb"
+    },
+    {
+      "kind": "symlink",
+      "mode": 493,
+      "path": "doc/pvtol.py",
+      "target": "../examples/pvtol.py"
+    },
+    {
+      "bytes": 157,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/requirements.txt",
+      "sha256": "55debd4f8a79ef5a6625a100b930e929e44b01f4b1cfad1fcf1615ea6231df52",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/requirements.txt"
+      }
+    },
+    {
+      "kind": "symlink",
+      "mode": 493,
+      "path": "doc/robust_mimo.py",
+      "target": "../examples/robust_mimo.py"
+    },
+    {
+      "bytes": 301,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/robust_mimo.rst",
+      "sha256": "850f87b8da3fa5713890cb9a077bfe8691c8c0be96274af3a50f6b9ac7ca0ddb",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/robust_mimo.rst"
+      }
+    },
+    {
+      "kind": "symlink",
+      "mode": 493,
+      "path": "doc/robust_siso.py",
+      "target": "../examples/robust_siso.py"
+    },
+    {
+      "bytes": 301,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/robust_siso.rst",
+      "sha256": "6bbc3711058562e48f44f020d9bf3b4b47a81d90d8bfe81a395ab85379c2697a",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/robust_siso.rst"
+      }
+    },
+    {
+      "kind": "symlink",
+      "mode": 493,
+      "path": "doc/rss-balred.py",
+      "target": "../examples/rss-balred.py"
+    },
+    {
+      "bytes": 273,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/rss-balred.rst",
+      "sha256": "e81bd3ef0acd23cf1efc5d5f15d1975ed32c46fb261d91bd76301751218ccf87",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/rss-balred.rst"
+      }
+    },
+    {
+      "kind": "symlink",
+      "mode": 493,
+      "path": "doc/scherer_etal_ex7_H2_h2syn.py",
+      "target": "../examples/scherer_etal_ex7_H2_h2syn.py"
+    },
+    {
+      "bytes": 326,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/scherer_etal_ex7_H2_h2syn.rst",
+      "sha256": "d1e91a281ca02519868bb29e74ad95e3c94c19dd7bbfbc7a558aa3dcf05e692a",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/scherer_etal_ex7_H2_h2syn.rst"
+      }
+    },
+    {
+      "kind": "symlink",
+      "mode": 493,
+      "path": "doc/scherer_etal_ex7_Hinf_hinfsyn.py",
+      "target": "../examples/scherer_etal_ex7_Hinf_hinfsyn.py"
+    },
+    {
+      "bytes": 334,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/scherer_etal_ex7_Hinf_hinfsyn.rst",
+      "sha256": "40ce96e9b6fb3a0d22215eef3ece35e49ef52a82abd3da934bb9730b954ae69c",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/scherer_etal_ex7_Hinf_hinfsyn.rst"
+      }
+    },
+    {
+      "kind": "symlink",
+      "mode": 493,
+      "path": "doc/secord-matlab.py",
+      "target": "../examples/secord-matlab.py"
+    },
+    {
+      "bytes": 413,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/secord-matlab.rst",
+      "sha256": "a538d0e1cf24ba8884e3525b3a6f97c9d59e489fcfac26a30e26dac920d0bc63",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/secord-matlab.rst"
+      }
+    },
+    {
+      "kind": "symlink",
+      "mode": 493,
+      "path": "doc/steering-gainsched.py",
+      "target": "../examples/steering-gainsched.py"
+    },
+    {
+      "bytes": 245,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/steering-gainsched.rst",
+      "sha256": "995cd7b72152b03da7d58e2cd3f015ee0e17da78e83b6cfde4229c96dd9f6a83",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/steering-gainsched.rst"
+      }
+    },
+    {
+      "bytes": 28691,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/steering-optimal.png",
+      "sha256": "769141bcf32cf919cdcc8218796a68739bbd172b1853355c3b467825f4e89602",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/steering-optimal.png"
+      }
+    },
+    {
+      "kind": "symlink",
+      "mode": 493,
+      "path": "doc/steering-optimal.py",
+      "target": "../examples/steering-optimal.py"
+    },
+    {
+      "bytes": 226,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/steering-optimal.rst",
+      "sha256": "ee5adace242599bd002c2fb3d76fe2759fab96fcfa072a7834e37ba7280c829e",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/steering-optimal.rst"
+      }
+    },
+    {
+      "kind": "symlink",
+      "mode": 493,
+      "path": "doc/steering.ipynb",
+      "target": "../examples/steering.ipynb"
+    },
+    {
+      "kind": "symlink",
+      "mode": 493,
+      "path": "doc/stochresp.ipynb",
+      "target": "../examples/stochresp.ipynb"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "examples"
+    },
+    {
+      "bytes": 220,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/README",
+      "sha256": "d4dc5ded4f02e2c314c9b644910593aaf64c35ab3897e6cef74334f271c1ed50",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/README"
+      }
+    },
+    {
+      "bytes": 381,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/bdalg-matlab.py",
+      "sha256": "8526ea36136f60de910c7ccc8e4ffc811cc1ac27e112f7dbf8012bc36ca2e5e0",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/bdalg-matlab.py"
+      }
+    },
+    {
+      "bytes": 1229504,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/bode-and-nyquist-plots.ipynb",
+      "sha256": "eb93656d3798a90bdf0596ae22cef649a593d997b9ab300f6c7a7c59bf94c96e",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/bode-and-nyquist-plots.ipynb"
+      }
+    },
+    {
+      "bytes": 714,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/check-controllability-and-observability.py",
+      "sha256": "c5c42bbde5501a9ce616e3af6c4bfc895c2db423d51cdd8cc90f6b40ded4516f",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/check-controllability-and-observability.py"
+      }
+    },
+    {
+      "bytes": 17263,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/cruise-control.py",
+      "sha256": "5d6561ef7edfac27dd44572085750ccfd4addbb0465e4fad88beea83cec6edd4",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/cruise-control.py"
+      }
+    },
+    {
+      "bytes": 262738,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/cruise.ipynb",
+      "sha256": "368b73163cc0fa6f88eeaf4967cc2424b454802cbac453e39f8e569dc307434a",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/cruise.ipynb"
+      }
+    },
+    {
+      "bytes": 200784,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/describing_functions.ipynb",
+      "sha256": "80c097d4378b0956358949f018ab33be23b395242482d3ba3e1255cd57df6e26",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/describing_functions.ipynb"
+      }
+    },
+    {
+      "bytes": 2935,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/genswitch.py",
+      "sha256": "f29e8486c5436ff711a5d2a3e72d63831d83a8dd95753d1e8e4fe30602da3a73",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/genswitch.py"
+      }
+    },
+    {
+      "bytes": 143511,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/interconnect_tutorial.ipynb",
+      "sha256": "d11ece639c1a44be94778f510fc001884fe6099aa063f11c598db672a0cc4389",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/interconnect_tutorial.ipynb"
+      }
+    },
+    {
+      "bytes": 6691,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/kincar-flatsys.py",
+      "sha256": "ebda2454019366d5741c018117ed5e6a27f1a28647825dba0a2ee97ebb346620",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/kincar-flatsys.py"
+      }
+    },
+    {
+      "bytes": 152602,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/kincar-fusion.ipynb",
+      "sha256": "e2edd564fd2944a3eb079d9184a91b630db1631011797b6788f18282c1e7a05a",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/kincar-fusion.ipynb"
+      }
+    },
+    {
+      "bytes": 1052666,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/mhe-pvtol.ipynb",
+      "sha256": "01c81cb8dbe16a239b148d813a784b1531acc652e7335585cc0cefb84a22ccbf",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/mhe-pvtol.ipynb"
+      }
+    },
+    {
+      "bytes": 26512,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/mpc_aircraft.ipynb",
+      "sha256": "a2d8fc10ea8272072662a04a539e360e7c8f44d01738707d9d3c57adbe1ec32d",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/mpc_aircraft.ipynb"
+      }
+    },
+    {
+      "bytes": 4481,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/phaseplots.py",
+      "sha256": "6b81b81948c9eb3aee21794d08968fc0268f208c4a4304fdec7d106e7b232d73",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/phaseplots.py"
+      }
+    },
+    {
+      "bytes": 144671,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/pvtol-lqr-nested.ipynb",
+      "sha256": "b0a4626513f746323008bce7956a12a392dcf99f11d000ff6efa90522bba2fb4",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/pvtol-lqr-nested.ipynb"
+      }
+    },
+    {
+      "bytes": 6697,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/pvtol-lqr.py",
+      "sha256": "627895a1cfb9b6601b187eeb63bd47a647029883a7582d2389a910aa66e4ea6e",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/pvtol-lqr.py"
+      }
+    },
+    {
+      "bytes": 4429,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/pvtol-nested-ss.py",
+      "sha256": "ddb6c772b35ab212f3156a3bd5f69b45606e7e9e1024ab5c6c0e7d195bf13cb1",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/pvtol-nested-ss.py"
+      }
+    },
+    {
+      "bytes": 4609,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/pvtol-nested.py",
+      "sha256": "52a93b84c142ca8959c0679414761aaee2062beae7fc99773f0d623802f1050d",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/pvtol-nested.py"
+      }
+    },
+    {
+      "bytes": 151215,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/pvtol-outputfbk.ipynb",
+      "sha256": "e1cf60fcbe97594850b7e5aa67a24832bce8ecf0bb6d251748cc57b5a1ffb090",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/pvtol-outputfbk.ipynb"
+      }
+    },
+    {
+      "bytes": 10910,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/pvtol.py",
+      "sha256": "9a76c196840c60b34a76ab282c80bc678ef01d3c1402c66f18c817b417f589e2",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/pvtol.py"
+      }
+    },
+    {
+      "bytes": 5219,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/robust_mimo.py",
+      "sha256": "59830853889418042c64c5a8ac07d3f527ff9bbfe950ad0924ac413f795b519e",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/robust_mimo.py"
+      }
+    },
+    {
+      "bytes": 2748,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/robust_siso.py",
+      "sha256": "1aa6ba0a77da61f95928a820f9f97afbf95b266b279fe7174c71b527625acfca",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/robust_siso.py"
+      }
+    },
+    {
+      "bytes": 1322,
+      "kind": "file",
+      "mode": 493,
+      "path": "examples/rss-balred.py",
+      "sha256": "933b603ce1df5e38c0a52a841389dc989a1c3184496cc1a3e666fef4695e7920",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/rss-balred.py"
+      }
+    },
+    {
+      "bytes": 847,
+      "kind": "file",
+      "mode": 493,
+      "path": "examples/run_examples.sh",
+      "sha256": "5162f19f695a06b7b3feee86e3494a785e5af36bdff6810f6b10206e5a7634a5",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/run_examples.sh"
+      }
+    },
+    {
+      "bytes": 709,
+      "kind": "file",
+      "mode": 493,
+      "path": "examples/run_notebooks.sh",
+      "sha256": "c10c4c3325cab56e9156880d1aae5a3276d136b079b9816d785247fa5ef89b89",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/run_notebooks.sh"
+      }
+    },
+    {
+      "bytes": 2049,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/scherer_etal_ex7_H2_h2syn.py",
+      "sha256": "0556204ac17ff8ed141b337f95e81406010b29749557bcf157161d86a0237501",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/scherer_etal_ex7_H2_h2syn.py"
+      }
+    },
+    {
+      "bytes": 1274,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/scherer_etal_ex7_Hinf_hinfsyn.py",
+      "sha256": "f3c9482f549b0dbf5ee00f1148fa420e1584251a0446cd3019a1ba8546b96632",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/scherer_etal_ex7_Hinf_hinfsyn.py"
+      }
+    },
+    {
+      "bytes": 863,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/secord-matlab.py",
+      "sha256": "b24ebb66cc870e3b876c399b8d912cf6263c560d55f80bdc8b8f8625c0369d5c",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/secord-matlab.py"
+      }
+    },
+    {
+      "bytes": 534294,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/simulating_discrete_nonlinear.ipynb",
+      "sha256": "ed13b3ce5c1bf20f6105a887b48827a852fd09d79258dbc8b79490d1058fed20",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/simulating_discrete_nonlinear.ipynb"
+      }
+    },
+    {
+      "bytes": 630614,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/singular-values-plot.ipynb",
+      "sha256": "b93ca9ade34182d4fdb0d09f1ecd4d845e75058b50ee75a88f6e9e46bf8d24f6",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/singular-values-plot.ipynb"
+      }
+    },
+    {
+      "bytes": 802,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/sisotool_example.py",
+      "sha256": "291a8377c5b61c1d5387945701d89a1cad953f5f1b84e2d58cf6c907edf3703c",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/sisotool_example.py"
+      }
+    },
+    {
+      "bytes": 1345,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/slycot-import-test.py",
+      "sha256": "a17f4a99ef342e193ed909aa859bd41e07f56f64fc4b104a2e8b014180a6721a",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/slycot-import-test.py"
+      }
+    },
+    {
+      "bytes": 9650,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/steering-gainsched.py",
+      "sha256": "13b766a9dfb377d3b1b92f9f70f260ad2fdfeb2009ada58a4d9d2a0f224a2c66",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/steering-gainsched.py"
+      }
+    },
+    {
+      "bytes": 9963,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/steering-optimal.py",
+      "sha256": "dde226b0523901090346a9cfac47d286e1c57cf5ceec84d53e2b240d87a9d091",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/steering-optimal.py"
+      }
+    },
+    {
+      "bytes": 488326,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/steering.ipynb",
+      "sha256": "7633a8e83621a48454bc5a5f3fd078dbcb2ee8add88b581eafe48e8dfcecfaa1",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/steering.ipynb"
+      }
+    },
+    {
+      "bytes": 94408,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/stochresp.ipynb",
+      "sha256": "0c212f8998d2f709e2bae79f26839a919bf4b343714b4027cb5e94b7af2fd1f6",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/stochresp.ipynb"
+      }
+    },
+    {
+      "bytes": 1043,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/test-response.py",
+      "sha256": "5efcdd7eb71c0d24f5fb540850493cd328a55b27f2fb56400076a7b2942b63c8",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/test-response.py"
+      }
+    },
+    {
+      "bytes": 13308,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/tfvis.py",
+      "sha256": "9c4fc504322382b7a5bd0e5d1e6793b41cfecd6b42112d492a4e236986a41031",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/tfvis.py"
+      }
+    },
+    {
+      "bytes": 1677,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/type2_type3.py",
+      "sha256": "c5515a2bb99e4faf61e7cdd1691a29ae9fb81b3e91b2c3087ea2e38ae02d3c16",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/type2_type3.py"
+      }
+    },
+    {
+      "bytes": 13510,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/vehicle-steering.png",
+      "sha256": "1a19da91f0ba5911674b74c963fad5b6c7a816bffa7417d759c64658a3422be8",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/vehicle-steering.png"
+      }
+    },
+    {
+      "bytes": 3257,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/vehicle.py",
+      "sha256": "6efcd6b8b494d36b6f7bdfdcb2f2611bbcaf1555d9da9f53bee31fbb32667e0a",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/vehicle.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "external"
+    },
+    {
+      "bytes": 49520,
+      "kind": "file",
+      "mode": 420,
+      "path": "external/controls.py",
+      "sha256": "cbaed80a475c5082489587714fe4f67cb3c5d2f76e9b5d9acb449e619880fbdb",
+      "source": {
+        "kind": "upstream",
+        "path": "external/controls.py"
+      }
+    },
+    {
+      "bytes": 15577,
+      "kind": "file",
+      "mode": 420,
+      "path": "external/yottalab.py",
+      "sha256": "284a9d5f42c2f1776383d1f32a09c9ab835949e462ec40d5104115b41277e8ec",
+      "source": {
+        "kind": "upstream",
+        "path": "external/yottalab.py"
+      }
+    },
+    {
+      "bytes": 1572,
+      "kind": "file",
+      "mode": 420,
+      "path": "pyproject.toml",
+      "sha256": "8b39c4ed4f27def2ac2efcc8ef35b506064fe9a5205f1596742314fb84e05098",
+      "source": {
+        "kind": "upstream",
+        "path": "pyproject.toml"
+      }
+    }
+  ],
+  "overlay_sha256": "272adeccafe73e7009d51f2ec2be9871db5e0eb14239f483ea429be26c3c6402",
+  "upstream": {
+    "kind": "beyondswe",
+    "repository": "https://github.com/python-control/python-control",
+    "revision": "71bbce26d65aaf9509410a0ccdff2573e7a705ad",
+    "source_root_key": "tri80-beyondswe-python-control_python-control_pr913-cp2"
+  },
+  "workspace_tree_sha256": "46131f48718551ca54e767f2f0f8359ab56edcba708c651845f96d90c65dfe0b"
+}

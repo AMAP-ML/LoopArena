@@ -1,0 +1,333 @@
+{
+  "case_id": "tri80-loopsbench-task_z3_fixedpoint_verification-cp1",
+  "files": [
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "benchmarks"
+    },
+    {
+      "bytes": 1352,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/bakery_mutex.smt2",
+      "sha256": "d03a8fbedff1df0c6d39997962c160d9031ee51436d1a0812547120e46e58845",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_z3_fixedpoint_verification/base/benchmarks/bakery_mutex.smt2"
+      }
+    },
+    {
+      "bytes": 291,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/counter_safe.smt2",
+      "sha256": "1d633d87c8dfea39550d52a44d667ab91538f7de1708be796d2c1cf79f5a031e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_z3_fixedpoint_verification/base/benchmarks/counter_safe.smt2"
+      }
+    },
+    {
+      "bytes": 290,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/counter_unsafe.smt2",
+      "sha256": "83d6379549e2d482e6971f674fbeeae7f90ec18055e27953c2bb5e60205e5e96",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_z3_fixedpoint_verification/base/benchmarks/counter_unsafe.smt2"
+      }
+    },
+    {
+      "bytes": 421,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/double_counter_unsafe.smt2",
+      "sha256": "fe1578bed8781258f4941b3227ee30f7086693e57fa822f6f0ae94f18037d43c",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_z3_fixedpoint_verification/base/benchmarks/double_counter_unsafe.smt2"
+      }
+    },
+    {
+      "bytes": 376,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/two_var_safe.smt2",
+      "sha256": "a08470420d6e21bbbea59a7753ff8708cd035ffbb98c78b67681deba4e530f5f",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_z3_fixedpoint_verification/base/benchmarks/two_var_safe.smt2"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "framework"
+    },
+    {
+      "bytes": 346,
+      "kind": "file",
+      "mode": 420,
+      "path": "framework/__init__.py",
+      "sha256": "fd81f71e75676edd0ac877eba7fd42f18d1f4140cc01afb4cedf8c65b64151e0",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_z3_fixedpoint_verification/base/framework/__init__.py"
+      }
+    },
+    {
+      "bytes": 1266,
+      "kind": "file",
+      "mode": 420,
+      "path": "framework/graphs.py",
+      "sha256": "b3524b0de17c7d9dc810835d6968b98e33cebbfba98e7b605b2a0ceedfeb09fd",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_z3_fixedpoint_verification/base/framework/graphs.py"
+      }
+    },
+    {
+      "bytes": 496,
+      "kind": "file",
+      "mode": 420,
+      "path": "framework/reporter.py",
+      "sha256": "42602c0a5daf4fd187e4392fd5e9415497b320d7f4c29ae6255171417c08424a",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_z3_fixedpoint_verification/base/framework/reporter.py"
+      }
+    },
+    {
+      "bytes": 524,
+      "kind": "file",
+      "mode": 420,
+      "path": "framework/transition_systems.py",
+      "sha256": "dfd444dedcc73a79d387e0549b8abf722f238b06a3ee80f82aebab4d5b63fb6a",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_z3_fixedpoint_verification/base/framework/transition_systems.py"
+      }
+    },
+    {
+      "bytes": 3307,
+      "kind": "file",
+      "mode": 420,
+      "path": "module_dag.yaml",
+      "sha256": "e219fbd5ae2d64619bdb54674c4173c8caccbfa62ebdf571a0512ca1a60c9070",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_z3_fixedpoint_verification/module_dag.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "requirements"
+    },
+    {
+      "bytes": 18,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements.txt",
+      "sha256": "34a1b6d0683e3de7cb09dc4d78eef703be7ddfeed4585b3806be469e8ce79e7c",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_z3_fixedpoint_verification/base/requirements.txt"
+      }
+    },
+    {
+      "bytes": 5242,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/cex_minimizer.yaml",
+      "sha256": "53b7aeeebff75be6c191451ff4b2fc2655439c1db66e4c882e3564a541f2eb3f",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_z3_fixedpoint_verification/requirements/cex_minimizer.yaml"
+      }
+    },
+    {
+      "bytes": 4523,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/horn_translator.yaml",
+      "sha256": "a969ff1f9e379bff93b937dd3061c9f264a79bc22fa1258f066a83225a03788b",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_z3_fixedpoint_verification/requirements/horn_translator.yaml"
+      }
+    },
+    {
+      "bytes": 3127,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/spacer.yaml",
+      "sha256": "c5944b0bdc82fe90aa5d1af462bed494b0e8df79b3470d3db83f87a7e8c9cb49",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_z3_fixedpoint_verification/requirements/spacer.yaml"
+      }
+    },
+    {
+      "bytes": 3326,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/uz_fixedpoint.yaml",
+      "sha256": "9fd22b968f8cb0319013697353229903b36c70400ed26992baf8b29249dbbb9d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_z3_fixedpoint_verification/requirements/uz_fixedpoint.yaml"
+      }
+    },
+    {
+      "bytes": 2760,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/z3.yaml",
+      "sha256": "75a15dae03b089c7c91399de8dac035bb1ca2f06899bc7593e9ae23fe840e037",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_z3_fixedpoint_verification/requirements/z3.yaml"
+      }
+    },
+    {
+      "bytes": 962,
+      "kind": "file",
+      "mode": 493,
+      "path": "run-tests.sh",
+      "sha256": "8b0ee8c585b58bab4be0089763371d48dedcea700fd6e339fa782f5426ce61e5",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_z3_fixedpoint_verification/run-tests.sh"
+      }
+    },
+    {
+      "bytes": 58,
+      "kind": "file",
+      "mode": 493,
+      "path": "run.sh",
+      "sha256": "d94297e3e0f7272b6b02cbf2ef2d4514ec2afa8f777c262360fa00e2576fdc95",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_z3_fixedpoint_verification/base/run.sh"
+      }
+    },
+    {
+      "bytes": 1568,
+      "kind": "file",
+      "mode": 420,
+      "path": "task.yaml",
+      "sha256": "6220a595a5e67573169bac4f6185e24dff219fc9ac8c197e19cc2d79f084f815",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_z3_fixedpoint_verification/task.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/cex_minimizer"
+    },
+    {
+      "bytes": 2122,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/cex_minimizer/test_outputs.py",
+      "sha256": "686bc1013516d63e527b299fb6cf619259c4c7d9bf583050e0935b16824e9a57",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_z3_fixedpoint_verification/tests/cex_minimizer/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/horn_translator"
+    },
+    {
+      "bytes": 2074,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/horn_translator/test_outputs.py",
+      "sha256": "47d0be33f0fbc1bd45c51960bbf244d7ac989f4408cf54bdde6e80fdf48d3005",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_z3_fixedpoint_verification/tests/horn_translator/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/spacer"
+    },
+    {
+      "bytes": 1914,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/spacer/test_outputs.py",
+      "sha256": "960ddf44d9465852d3075280dbb9ca7188d10dede6f58f2982b6515fad0ac204",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_z3_fixedpoint_verification/tests/spacer/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/uz_fixedpoint"
+    },
+    {
+      "bytes": 2000,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/uz_fixedpoint/test_outputs.py",
+      "sha256": "c03d3070a0e9d76cbc35c656cf6131487e172d3323fda8b828599bb1c8f4e6c4",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_z3_fixedpoint_verification/tests/uz_fixedpoint/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/z3"
+    },
+    {
+      "bytes": 1907,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/z3/test_outputs.py",
+      "sha256": "cd2b094a52161379c50e7201ed4fa6ae2edf940d6426d80f3afdc4b6f21818b7",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_z3_fixedpoint_verification/tests/z3/test_outputs.py"
+      }
+    },
+    {
+      "bytes": 1079,
+      "kind": "file",
+      "mode": 420,
+      "path": "unit_dag.json",
+      "sha256": "50154594eef1a10ae31b518363a7ee930204beb9231082ed8fa4a36453744bc9",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_z3_fixedpoint_verification/unit_dag.json"
+      }
+    }
+  ],
+  "overlay_sha256": "272adeccafe73e7009d51f2ec2be9871db5e0eb14239f483ea429be26c3c6402",
+  "upstream": {
+    "kind": "loopsbench",
+    "revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+    "source_root_key": "loopsbench",
+    "task": "task_z3_fixedpoint_verification"
+  },
+  "workspace_tree_sha256": "6edf856a03998a8ee189d1f7ea31260f69c28f32d02d6fc6e5906dcd03f0a916"
+}

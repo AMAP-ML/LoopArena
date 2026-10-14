@@ -1,0 +1,19 @@
+{
+  "adapter_config": {
+    "docker_executable": "docker",
+    "task_dir": "/opt/looparena/evaluator_assets/beyondswe_type2/tri80-beyondswe-hackingmaterials_matminer_pr925-cp2/task"
+  },
+  "adapter_kind": "beyondswe_harbor",
+  "adapter_version": "harbor-verifier-v1",
+  "network": "host",
+  "pass_policy": "reward-equals-one",
+  "runtime_identity": {
+    "image_id": "sha256:aed352d14ca2566c8ca4677d9f5b8db4621ddec24388febdbdb9339324ad29d8",
+    "image_reference": "aweaiteam/beyondswe:hackingmaterials_matminer_pr925",
+    "platform": "linux/amd64",
+    "workdir": "/workspace/matminer"
+  },
+  "solve_network": "host",
+  "source_revision": "7d2ced21b4c85f646d5ba8786875d7fbbe08ed49",
+  "timeout_sec": 1200
+}

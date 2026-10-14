@@ -1,0 +1,19 @@
+{
+  "adapter_config": {
+    "docker_executable": "docker",
+    "task_dir": "/opt/looparena/evaluator_assets/beyondswe_type3/tri80-beyondswe-aio-libs_aiohttp_pr7954/task"
+  },
+  "adapter_kind": "beyondswe_harbor",
+  "adapter_version": "harbor-verifier-v1",
+  "network": "host",
+  "pass_policy": "reward-equals-one",
+  "runtime_identity": {
+    "image_id": "sha256:63af11c9df8071f1ecf286db4477b6fa937f87cb2168b5a0774fd22551c7344d",
+    "image_reference": "aweaiteam/beyondswe:aio-libs_aiohttp_pr7954",
+    "platform": "linux/amd64",
+    "workdir": "/workspace/aiohttp"
+  },
+  "solve_network": "host",
+  "source_revision": "7d2ced21b4c85f646d5ba8786875d7fbbe08ed49",
+  "timeout_sec": 1200
+}

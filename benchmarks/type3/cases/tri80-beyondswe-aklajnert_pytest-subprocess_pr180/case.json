@@ -1,0 +1,10 @@
+{
+  "adapter_kind": "beyondswe_harbor",
+  "case_id": "tri80-beyondswe-aklajnert_pytest-subprocess_pr180",
+  "episode_origin": "official_problem_start",
+  "harness_start_mode": "bootstrap_contract_start",
+  "official_task_id": "beyondswe:aklajnert_pytest-subprocess_pr180",
+  "task_scope": "official_full_task",
+  "task_sequence_ref": "task_sequence.json",
+  "task_sequence_sha256": "3a8cc8c33617aa172e52fa5377f038acb6301eae6722e59b1028a4876db87c33"
+}

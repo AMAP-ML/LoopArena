@@ -1,0 +1,408 @@
+{
+  "case_id": "tri80-loopsbench-task_soot_taint_analysis-cp2",
+  "files": [
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "benchmarks"
+    },
+    {
+      "bytes": 3403,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/01_simple_flow.json",
+      "sha256": "0378d038f3f49574780a2a63d2d2f626e24090ede9b7f21e5b099a72f61163e7",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_soot_taint_analysis/base/benchmarks/01_simple_flow.json"
+      }
+    },
+    {
+      "bytes": 5033,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/02_field_sensitivity.json",
+      "sha256": "572b27429e6cd8541102c9f1f3bf654ab47fc0c7c9085866b3ba0bbc255db497",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_soot_taint_analysis/base/benchmarks/02_field_sensitivity.json"
+      }
+    },
+    {
+      "bytes": 6304,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/03_interprocedural.json",
+      "sha256": "cfdfeb7c83b6b64ad57eb59be24cab65d4424162c2d5b8e2e817e7abdd3b4d88",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_soot_taint_analysis/base/benchmarks/03_interprocedural.json"
+      }
+    },
+    {
+      "bytes": 4777,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/04_alias_handling.json",
+      "sha256": "a5a4324c8dc8727436f755a79e65d15119f76f6297dfbcbc7c8bc2aa30ce189d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_soot_taint_analysis/base/benchmarks/04_alias_handling.json"
+      }
+    },
+    {
+      "bytes": 5657,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/05_lifecycle.json",
+      "sha256": "637b7bc16c3336a8f06c6d994847b6b7ccae1f82555e454373ce40abe03b3943",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_soot_taint_analysis/base/benchmarks/05_lifecycle.json"
+      }
+    },
+    {
+      "bytes": 10156,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/06_library_summary.json",
+      "sha256": "3cf6979b22ef0f1689950a1509ef9ef6f63c59f489ea24263f5d4c6938258f4a",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_soot_taint_analysis/base/benchmarks/06_library_summary.json"
+      }
+    },
+    {
+      "bytes": 3171,
+      "kind": "file",
+      "mode": 420,
+      "path": "benchmarks/07_no_leak.json",
+      "sha256": "340ef2e6a801226798933adc72e5644b5db53fee043818c222e5d0612ad14455",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_soot_taint_analysis/base/benchmarks/07_no_leak.json"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "experiments"
+    },
+    {
+      "bytes": 3005,
+      "kind": "file",
+      "mode": 420,
+      "path": "experiments/soot_exp.py",
+      "sha256": "de31e2958b0cdbcf123849280eee15c077b4fdf735ea07ce18a151092f036536",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_soot_taint_analysis/gold_patches/soot.diff",
+        "patch_sha256": "2afc4de1e4ba30631c3922a2bdee40a1543b2b84b793ed1a29805410c07e43ea",
+        "path": "experiments/soot_exp.py"
+      }
+    },
+    {
+      "bytes": 1453,
+      "kind": "file",
+      "mode": 420,
+      "path": "module_dag.yaml",
+      "sha256": "d72de631625d4dfd8f2fccb311ca5fc0f252503c342cf15ec9cec3d7c4110c1c",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_soot_taint_analysis/module_dag.yaml"
+      }
+    },
+    {
+      "bytes": 7834,
+      "kind": "file",
+      "mode": 420,
+      "path": "program_model.py",
+      "sha256": "da949e9e120341cdbff1af3cfd36339b7c82734399d52374a81b3b0643df78fa",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_soot_taint_analysis/base/program_model.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "requirements"
+    },
+    {
+      "bytes": 3882,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/flowdroid.yaml",
+      "sha256": "58c0fb25363ddf21e9e5f7654a46b6d4618e7e950a56b4264f4b9bc0e224fe55",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_soot_taint_analysis/requirements/flowdroid.yaml"
+      }
+    },
+    {
+      "bytes": 4392,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/soot.yaml",
+      "sha256": "1217d6d0dc477a6ba15f88dfb4578b1e9d4db5596aeeef0d3594e45cf350339f",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_soot_taint_analysis/requirements/soot.yaml"
+      }
+    },
+    {
+      "bytes": 4110,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/stubdroid.yaml",
+      "sha256": "509be118ff9942229fc1d900dc10dd282dfdcce1a3febf65eea092ed39ac19b2",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_soot_taint_analysis/requirements/stubdroid.yaml"
+      }
+    },
+    {
+      "bytes": 754,
+      "kind": "file",
+      "mode": 493,
+      "path": "run-tests.sh",
+      "sha256": "c37c004c839d4bcf021268d4d33926e0e0d8d1ae86332728748eb4c206037d92",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_soot_taint_analysis/run-tests.sh"
+      }
+    },
+    {
+      "bytes": 127,
+      "kind": "file",
+      "mode": 493,
+      "path": "run.sh",
+      "sha256": "d1e374627eafc669f486aedba96a0cb6f4b054e04f9558fba4bdf43eacd34e33",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_soot_taint_analysis/base/run.sh"
+      }
+    },
+    {
+      "bytes": 172,
+      "kind": "file",
+      "mode": 420,
+      "path": "soot_analysis.py",
+      "sha256": "f2d27efc76e3182cf28e534099d4c9fe17a9ff91b9f6b998ff784bf9f24a5069",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_soot_taint_analysis/gold_patches/soot.diff",
+        "patch_sha256": "2afc4de1e4ba30631c3922a2bdee40a1543b2b84b793ed1a29805410c07e43ea",
+        "path": "soot_analysis.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "src"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "src/soot"
+    },
+    {
+      "bytes": 352,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/soot/__init__.py",
+      "sha256": "6285379e6188fe21fe10b22ebff1d1784cdbcbb18b6164b6daefea8c2ac6237d",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_soot_taint_analysis/gold_patches/soot.diff",
+        "patch_sha256": "2afc4de1e4ba30631c3922a2bdee40a1543b2b84b793ed1a29805410c07e43ea",
+        "path": "src/soot/__init__.py"
+      }
+    },
+    {
+      "bytes": 6676,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/soot/body.py",
+      "sha256": "02a9f03713c7815ca8d44f5c336c157c5bac74666001b28b9c3ac0a45ed77ea4",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_soot_taint_analysis/gold_patches/soot.diff",
+        "patch_sha256": "2afc4de1e4ba30631c3922a2bdee40a1543b2b84b793ed1a29805410c07e43ea",
+        "path": "src/soot/body.py"
+      }
+    },
+    {
+      "bytes": 9099,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/soot/callgraph.py",
+      "sha256": "b96b218bcd34e4de7eb9534482141fabfaab825a94c67553df7f0f4c42b16a0c",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_soot_taint_analysis/gold_patches/soot.diff",
+        "patch_sha256": "2afc4de1e4ba30631c3922a2bdee40a1543b2b84b793ed1a29805410c07e43ea",
+        "path": "src/soot/callgraph.py"
+      }
+    },
+    {
+      "bytes": 7697,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/soot/cfg.py",
+      "sha256": "fd696a16dfd94a8c85a3f2d7efcb5a6fa5dd7e0d5e76e9ab307b1ea138e2655f",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_soot_taint_analysis/gold_patches/soot.diff",
+        "patch_sha256": "2afc4de1e4ba30631c3922a2bdee40a1543b2b84b793ed1a29805410c07e43ea",
+        "path": "src/soot/cfg.py"
+      }
+    },
+    {
+      "bytes": 9114,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/soot/dataflow.py",
+      "sha256": "bf93f20cae3c0d3e37a2a23144d9d9f2e99b2654051760d909681fa60bc7afc5",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_soot_taint_analysis/gold_patches/soot.diff",
+        "patch_sha256": "2afc4de1e4ba30631c3922a2bdee40a1543b2b84b793ed1a29805410c07e43ea",
+        "path": "src/soot/dataflow.py"
+      }
+    },
+    {
+      "bytes": 10486,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/soot/jimple.py",
+      "sha256": "fc43d481c493cde9d51175f9bb07ae4dce88ef173719d597a7e9b82d81375856",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_soot_taint_analysis/gold_patches/soot.diff",
+        "patch_sha256": "2afc4de1e4ba30631c3922a2bdee40a1543b2b84b793ed1a29805410c07e43ea",
+        "path": "src/soot/jimple.py"
+      }
+    },
+    {
+      "bytes": 6300,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/soot/scene.py",
+      "sha256": "f3a97517a3072596b43d7a8cef0468bf007aca3e20453baea15b86d736e3e2e0",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_soot_taint_analysis/gold_patches/soot.diff",
+        "patch_sha256": "2afc4de1e4ba30631c3922a2bdee40a1543b2b84b793ed1a29805410c07e43ea",
+        "path": "src/soot/scene.py"
+      }
+    },
+    {
+      "bytes": 8531,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/soot/transforms.py",
+      "sha256": "c62c7923c569bf40d2f56fe28d2746de7db4631442324e88b87d08547bfc83f9",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_soot_taint_analysis/gold_patches/soot.diff",
+        "patch_sha256": "2afc4de1e4ba30631c3922a2bdee40a1543b2b84b793ed1a29805410c07e43ea",
+        "path": "src/soot/transforms.py"
+      }
+    },
+    {
+      "bytes": 1396,
+      "kind": "file",
+      "mode": 420,
+      "path": "task.yaml",
+      "sha256": "1a45645e80a031c88cf8c90d63d0f5ce63518748ca84179b2de24076b62c4c03",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_soot_taint_analysis/task.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/flowdroid"
+    },
+    {
+      "bytes": 2135,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/flowdroid/test_outputs.py",
+      "sha256": "cead98794f28f322ba3e4fa363226b87222012ccc2442328e26b58915d2e2870",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_soot_taint_analysis/tests/flowdroid/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/soot"
+    },
+    {
+      "bytes": 2092,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/soot/test_outputs.py",
+      "sha256": "87f6de865037dadb65fbb3dc22c4a2c6f81e500e5f278e23a04b4e15cd3fd5e2",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_soot_taint_analysis/tests/soot/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/stubdroid"
+    },
+    {
+      "bytes": 2033,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/stubdroid/test_outputs.py",
+      "sha256": "de29f6e895b67a5520fca63ba0bf1be6d03f14c2c979b1acbbcaa7736ef8c830",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_soot_taint_analysis/tests/stubdroid/test_outputs.py"
+      }
+    },
+    {
+      "bytes": 502,
+      "kind": "file",
+      "mode": 420,
+      "path": "unit_dag.json",
+      "sha256": "d3cf6ceeded0a986d35985f57f63c2915e46672d83b3a92f6762a865c9e2f5b8",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_soot_taint_analysis/unit_dag.json"
+      }
+    },
+    {
+      "bytes": 1701,
+      "kind": "file",
+      "mode": 420,
+      "path": "utils.py",
+      "sha256": "312e61d015d7db57a7f1bbdc41669aeed2c571a8a8a189f212e12803d4a2e014",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_soot_taint_analysis/base/utils.py"
+      }
+    }
+  ],
+  "overlay_sha256": "272adeccafe73e7009d51f2ec2be9871db5e0eb14239f483ea429be26c3c6402",
+  "upstream": {
+    "kind": "loopsbench",
+    "revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+    "source_root_key": "loopsbench",
+    "task": "task_soot_taint_analysis"
+  },
+  "workspace_tree_sha256": "7fd0cc9b413feff3d449b37b725f4fa70202e0defc9bfc25d864a643fe3992d3"
+}

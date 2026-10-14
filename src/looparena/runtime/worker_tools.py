@@ -9,6 +9,7 @@ reporter receives a separate read-only catalog ending in ``round_report``.
 from __future__ import annotations
 
 import copy
+import hashlib
 import inspect
 import json
 import re
@@ -1029,7 +1030,7 @@ def _chat_with_deadline(
     *,
     seed: int,
     deadline: float | None,
-    max_tokens: int,
+    max_tokens: int | None,
 ) -> dict:
     remaining = _remaining_deadline_seconds(deadline)
     if remaining is not None and remaining <= 0:
@@ -1110,6 +1111,7 @@ def _assistant_history_message(message: dict[str, Any]) -> dict[str, Any]:
                 function["arguments"] = json.dumps(
                     {
                         "looparena_rejected_malformed_arguments": True,
+                        "original_arguments_sha256": "sha256:" + hashlib.sha256(raw_text.encode("utf-8", errors="replace")).hexdigest(),
                         "original_arguments_utf8_bytes": len(
                             raw_text.encode("utf-8", errors="replace")
                         ),

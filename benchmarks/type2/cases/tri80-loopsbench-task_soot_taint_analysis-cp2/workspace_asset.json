@@ -1,0 +1,6 @@
+{
+  "recipe": "workspace_recipe.json",
+  "recipe_sha256": "180db200ecbefd61ef65219d30fc817e274054309e396e94c271cc24c6bda552",
+  "relative_path_under_assets_root": "type2/workspaces/tri80-loopsbench-task_soot_taint_analysis-cp2/workspace.tar.gz",
+  "workspace_tree_sha256": "7fd0cc9b413feff3d449b37b725f4fa70202e0defc9bfc25d864a643fe3992d3"
+}

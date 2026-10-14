@@ -1,0 +1,6 @@
+{
+  "recipe": "workspace_recipe.json",
+  "recipe_sha256": "15dec1b68e090b92385d0ee0f0648245256e2105a19c69d26f8974e7625f646b",
+  "relative_path_under_assets_root": "type2/workspaces/tri80-beyondswe-ansys_pyansys-units_pr309-cp2/workspace.tar.gz",
+  "workspace_tree_sha256": "de6211190cad1728b1690461104cbb3329bf0a2c7f2ee3bd5189b93f78ea531c"
+}

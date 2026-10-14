@@ -1,0 +1,20 @@
+{
+  "adapter_config": {
+    "docker_executable": "docker",
+    "task_dir": "/opt/looparena/evaluator_assets/beyondswe_type2/tri80-beyondswe-aiven_aiven-client_pr399-cp1/task"
+  },
+  "adapter_kind": "beyondswe_harbor",
+  "adapter_version": "harbor-verifier-v1",
+  "evaluator_revision": "beyondswe-type2-v1-case023-checkpoint_001",
+  "network": "host",
+  "pass_policy": "reward-equals-one",
+  "runtime_identity": {
+    "image_id": "sha256:298d847b7576c4c7f5a94f823e78ab662b0c8e18526dc755d9895fc08ed8bf51",
+    "image_reference": "aweaiteam/beyondswe:aiven_aiven-client_pr399",
+    "platform": "linux/amd64",
+    "workdir": "/workspace/aiven-client"
+  },
+  "solve_network": "host",
+  "source_revision": "7d2ced21b4c85f646d5ba8786875d7fbbe08ed49",
+  "timeout_sec": 1200
+}

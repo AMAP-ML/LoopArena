@@ -1,0 +1,20 @@
+{
+  "adapter_kind": "beyondswe_harbor",
+  "checkpoint_context_policy": "single_episode",
+  "checkpoint_failure_policy": "stop_after_task",
+  "official_parent_commit": "5f070ee16656dd5eec1de86897d42ee895f8f12a",
+  "official_task_id": "beyondswe:diamondlightsource_python-zocalo_pr140",
+  "official_workdir": "/workspace/python-zocalo",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/task.json",
+      "evaluator_plan_sha256": "6c5e618e31376d919bee611b8359632060374ef2a4aa9b9e0dd84d5b778dd178",
+      "step_id": "task",
+      "task_ref": "tasks/task.md",
+      "task_sha256": "780ed7b96cd07e6dbd3e63b4c8058d16e3d0eccfbeca884f98f5d190593da03a"
+    }
+  ],
+  "target_step": "task",
+  "task_scope": "official_full_task",
+  "workspace_origin": "pinned_source_image_parent_commit"
+}

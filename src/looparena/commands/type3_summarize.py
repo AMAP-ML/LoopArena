@@ -29,7 +29,7 @@ def summarize(panel_root: Path) -> dict[str, Any]:
         for seed in plan.seeds:
             job = Job(case_id, seed)
             path = run_dir(panel_root, job)
-            state = classify(path)
+            state = classify(path, plan=plan, job=job)
             record: dict[str, Any] = {"case_id": case_id, "seed": seed, "state": state}
             if state == "valid":
                 manifest = _read(path / "run_manifest.json")
@@ -86,6 +86,7 @@ def main(argv: list[str] | None = None) -> int:
         parser.error(f"cannot summarize Type III panel: {exc}")
     text = json.dumps(result, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
     if args.out:
+        args.out.parent.mkdir(parents=True, exist_ok=True)
         args.out.write_text(text, encoding="utf-8")
     else:
         print(text, end="")

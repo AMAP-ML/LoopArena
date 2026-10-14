@@ -1,0 +1,20 @@
+{
+  "adapter_kind": "beyondswe_harbor",
+  "checkpoint_context_policy": "single_episode",
+  "checkpoint_failure_policy": "stop_after_task",
+  "official_parent_commit": "bd1c9d0a7853b8ea368c091a8d17eb2e2de2bdab",
+  "official_task_id": "beyondswe:cornices_cornice_pr477",
+  "official_workdir": "/workspace/cornice",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/task.json",
+      "evaluator_plan_sha256": "4c3250bc29034abd40280d110b382bd535e6a39c8b7268a196400c1f6f9acdec",
+      "step_id": "task",
+      "task_ref": "tasks/task.md",
+      "task_sha256": "559ebb002cbdb49d9772400847399903049de3ec6c7695e7be632be42d6e6fe0"
+    }
+  ],
+  "target_step": "task",
+  "task_scope": "official_full_task",
+  "workspace_origin": "pinned_source_image_parent_commit"
+}

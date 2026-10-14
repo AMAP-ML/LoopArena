@@ -1,0 +1,6 @@
+{
+  "recipe": "workspace_recipe.json",
+  "recipe_sha256": "114ef9070d98f03da163684b74586e9ad9c390952b7e1c9d767f4de6b3ff05b4",
+  "relative_path_under_assets_root": "type2/workspaces/tri80-beyondswe-aio-libs_aiohttp_pr7954-cp1/workspace.tar.gz",
+  "workspace_tree_sha256": "90f3e0bf1bbb4147b82933f1aaaccda0a46576488773c44a14c6f3d8ee4409c3"
+}

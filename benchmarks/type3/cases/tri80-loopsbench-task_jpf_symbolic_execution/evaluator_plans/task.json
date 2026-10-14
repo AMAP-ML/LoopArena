@@ -1,0 +1,29 @@
+{
+  "adapter_config": {
+    "docker_executable": "docker",
+    "expected_test_count": 15,
+    "expected_unit_ids": [
+      "jpf_core",
+      "symbolic_pathfinder",
+      "shadow_jpf_plus"
+    ],
+    "result_protocol": "source_run_tests",
+    "runtime_assets_dir": "/opt/looparena/evaluator_assets/evaluator_runtime",
+    "task_dir": "/opt/looparena/evaluator_assets/tasks/task_jpf_symbolic_execution"
+  },
+  "adapter_kind": "loopsbench",
+  "adapter_version": "source-run-tests-v1",
+  "evaluator_revision": "5880b64491e2cac2f83d497153ed173b8a995b8b",
+  "network": "bridge",
+  "pass_policy": "all-source-unit-tests-pass",
+  "runtime_identity": {
+    "image_id": "sha256:d65340306853f59c337290abc00b5a2c50760b32eade0156623ec1ec65b0e7a2",
+    "image_reference": "looparena-loopsbench-84ae415/task_jpf_symbolic_execution:frozen",
+    "platform": "linux/amd64",
+    "task_tree_sha256": "5d50c11cd11a79b5b8f187e4e0e7ecc8f9a0a1f656f098b144f176703b621a4a",
+    "workdir": "/workspace"
+  },
+  "solve_network": "bridge",
+  "source_revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+  "timeout_sec": 900
+}

@@ -1,0 +1,19 @@
+{
+  "adapter_kind": "loopsbench",
+  "checkpoint_context_policy": "single_episode",
+  "checkpoint_failure_policy": "stop_after_task",
+  "official_task_id": "loopsbench:task_ns3_network_simulation",
+  "release_content_hash": "84ae4156df6a132416109e2cf27bb72bcbde1e764dea40f3abab5e4ade942020",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/task.json",
+      "evaluator_plan_sha256": "d20a2a5d9ed5b090062572d5b0296562b30a9d06b6323f69aab3187a99e0f84e",
+      "step_id": "task",
+      "task_ref": "tasks/task.md",
+      "task_sha256": "0f341e4e43b1635281b1f6fedfe2e827b45bfb830f9f31e3a46a86e6c04400cf"
+    }
+  ],
+  "target_step": "task",
+  "task_scope": "official_full_task",
+  "workspace_origin": "pinned_loopsbench_release_source_base"
+}

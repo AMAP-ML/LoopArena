@@ -1,0 +1,16 @@
+# Include version-specific compatibility code in coverage measurement
+
+## Background
+The project's test coverage currently excludes Python-version-specific compatibility branches (such as the `PY3` blocks in `pyramid/compat.py`) via `# pragma: no cover` markers. This makes it impossible to verify whether that compatibility code is actually exercised by the test suite. Now that coverage data is collected from all test environments and combined into a single aggregate report, these exclusions are no longer needed.
+
+## Task
+Update the codebase so version-specific compatibility code is measured by coverage like any other code:
+
+1. Remove the `# pragma: no cover` exclusion markers from version-dependent branches in the compatibility layer (e.g. `pyramid/compat.py`) and any other library modules that exclude Python-version-specific code from coverage, since the aggregate report should now cover them.
+2. Normalize the version-dependent compatibility imports so they are written in a consistent form that the coverage tooling can measure correctly across environments, without changing which objects are imported or their runtime behavior under either Python version.
+3. Ensure per-environment coverage data files produced during test runs are ignored by version control, so combined/aggregate coverage artifacts and per-environment data files do not show up as untracked noise in the repository.
+
+## Requirements
+- All existing tests must continue to pass under both Python 2 and Python 3 environments.
+- Runtime behavior must be unchanged: the compatibility layer must expose exactly the same names and semantics as before; only coverage treatment and import style may change.
+- After the change, running the test suite with coverage must record hits for the previously excluded version-specific branches rather than skipping them.

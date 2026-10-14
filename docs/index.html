@@ -20,7 +20,7 @@
     <meta property="og:url" content="https://amap-ml.github.io/LoopArena/" />
     <meta
       property="og:image"
-      content="https://amap-ml.github.io/LoopArena/assets/looparena-hero.png"
+      content="https://amap-ml.github.io/LoopArena/assets/looparena-hero.jpg"
     />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="canonical" href="https://amap-ml.github.io/LoopArena/" />
@@ -84,6 +84,7 @@
           <span></span><span></span><span></span>
         </button>
         <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+          <a href="#news">News</a>
           <a href="#results">Leaderboard</a>
           <a href="#benchmark">Benchmark</a>
           <a href="#quickstart">Quickstart</a>
@@ -131,7 +132,36 @@
               <span>GitHub</span><span aria-hidden="true">↗</span>
             </a>
             <a class="resource-link" href="https://github.com/AMAP-ML/LoopArena/blob/HEAD/docs/protocol.md">Protocol</a>
-            <a class="resource-link" href="https://github.com/AMAP-ML/LoopArena/tree/HEAD/results/0.1.0">Results</a>
+            <a class="resource-link" href="#results">Results</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="news" class="section section-news" aria-labelledby="news-title">
+        <div class="shell news-layout">
+          <div>
+            <p class="section-kicker">Latest updates</p>
+            <h2 id="news-title">News</h2>
+          </div>
+          <div class="news-list">
+            <article class="news-item">
+              <time datetime="2026-10-14">October 14, 2026</time>
+              <div>
+                <h3>LoopArena grows to 160 Type I questions and 80 paired coding tasks.</h3>
+                <p>We expanded Type I from 90 to 160 questions and the paired Type II/III suite
+                  from 27 to 80 tasks across SCBench, BeyondSWE, and LoopsBench. Explore the
+                  updated <a href="#results">leaderboard</a> and
+                  <a href="https://github.com/AMAP-ML/LoopArena/blob/HEAD/docs/setup.md">setup guide</a>.</p>
+              </div>
+            </article>
+            <article class="news-item">
+              <time datetime="2026-08-28">August 28, 2026</time>
+              <div>
+                <h3>LoopArena paper and code released.</h3>
+                <p>Read the <a href="https://arxiv.org/abs/2608.28281">paper</a> or explore the
+                  <a href="https://github.com/AMAP-ML/LoopArena">open-source benchmark</a>.</p>
+              </div>
+            </article>
           </div>
         </div>
       </section>
@@ -140,7 +170,7 @@
         <div class="shell">
           <div class="results-heading">
             <h2 id="results-title">Leaderboard</h2>
-            <p>All models are evaluated as Controllers with the same Worker and execution setup.</p>
+            <p>Type I scores contract choices; Type II/III compare Controllers with a shared Worker and Reporter.</p>
           </div>
 
           <div class="leaderboard-panel">
@@ -150,7 +180,7 @@
                 <button type="button" aria-pressed="false" data-setting="type2">Type II</button>
                 <button type="button" aria-pressed="true" data-setting="type3">Type III</button>
               </div>
-              <span class="release-version">v0.1.0</span>
+              <span class="release-version">160 / 80 / 80</span>
               <noscript><span class="noscript-note">Type III is shown below; download the data for all settings.</span></noscript>
             </div>
             <div class="table-scroll" role="region" tabindex="0" aria-label="Scrollable leaderboard table">
@@ -165,43 +195,21 @@
                   </tr>
                 </thead>
                 <tbody data-leaderboard-body>
-                  <tr>
-                    <td>1</td>
-                    <td class="method-cell">GPT-5.5</td>
-                    <td class="score-cell"><strong>24.69%</strong></td>
-                    <td>$18.84</td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td class="method-cell">Qwen3.7-Plus</td>
-                    <td class="score-cell"><strong>23.46%</strong></td>
-                    <td>$6.89</td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td class="method-cell">Claude Opus 4.8</td>
-                    <td class="score-cell"><strong>20.99%</strong></td>
-                    <td>$16.82</td>
-                  </tr>
-                  <tr>
-                    <td>4</td>
-                    <td class="method-cell">DeepSeek-V4-Flash-0731</td>
-                    <td class="score-cell"><strong>19.75%</strong></td>
-                    <td>$10.24</td>
-                  </tr>
-                  <tr>
-                    <td>5</td>
-                    <td class="method-cell">GLM 5.2</td>
-                    <td class="score-cell"><strong>16.05%</strong></td>
-                    <td>$4.86</td>
-                  </tr>
+                  <tr><td>1</td><td class="method-cell">GPT-5.5</td><td class="score-cell"><strong>36.25%</strong></td><td>$34.68</td></tr>
+                  <tr><td>2</td><td class="method-cell">Qwen3.7-Plus</td><td class="score-cell"><strong>34.17%</strong></td><td>$12.69</td></tr>
+                  <tr><td>3</td><td class="method-cell">Qwen3.6-35B-A3B</td><td class="score-cell"><strong>33.75%</strong></td><td>$11.58</td></tr>
+                  <tr><td>3</td><td class="method-cell">Claude Opus 4.8</td><td class="score-cell"><strong>33.75%</strong></td><td>$20.63</td></tr>
+                  <tr><td>5</td><td class="method-cell">DeepSeek-V4-Flash-0731</td><td class="score-cell"><strong>28.33%</strong></td><td>$32.66</td></tr>
+                  <tr><td>6</td><td class="method-cell">GLM 5.2</td><td class="score-cell"><strong>24.17%</strong></td><td>$11.97</td></tr>
+                  <tr><td>—</td><td class="method-cell">No control</td><td class="score-cell"><strong>27.50%</strong></td><td>$2.61</td></tr>
+                  <tr><td>—</td><td class="method-cell">Fixed control</td><td class="score-cell"><strong>31.25%</strong></td><td>$9.47</td></tr>
                 </tbody>
               </table>
             </div>
             <p class="sr-only" role="status" aria-live="polite" data-leaderboard-status></p>
             <div class="leaderboard-note">
               <p data-results-note>Higher scores and lower costs are better. Reference policies are not ranked.</p>
-              <a href="data/results.json" download>Download table data (.json)</a>
+              <a href="data/results.json" download>Download aggregate leaderboard (.json)</a>
             </div>
           </div>
 
@@ -294,7 +302,7 @@
               </p>
               <dl>
                 <div><dt>Scope</dt><dd>one decision</dd></div>
-                <div><dt>Size</dt><dd>90 questions</dd></div>
+                <div><dt>Size</dt><dd>160 questions</dd></div>
                 <div><dt>Metric</dt><dd>Contract Accuracy</dd></div>
               </dl>
             </article>
@@ -308,7 +316,7 @@
               </p>
               <dl>
                 <div><dt>Scope</dt><dd>task slice</dd></div>
-                <div><dt>Size</dt><dd>27 tasks × 3</dd></div>
+                <div><dt>Size</dt><dd>80 tasks × 3</dd></div>
                 <div><dt>Metric</dt><dd>Strict Success Rate</dd></div>
               </dl>
             </article>
@@ -321,7 +329,7 @@
               </p>
               <dl>
                 <div><dt>Scope</dt><dd>complete task</dd></div>
-                <div><dt>Size</dt><dd>27 tasks × 3</dd></div>
+                <div><dt>Size</dt><dd>80 tasks × 3</dd></div>
                 <div><dt>Metric</dt><dd>Strict Success Rate</dd></div>
               </dl>
             </article>
@@ -341,11 +349,11 @@
             <ol class="step-list">
               <li><span>1</span><div><strong>Install</strong><small>Python 3.10+ and the gateway extra</small></div></li>
               <li><span>2</span><div><strong>Check without calling a model</strong><small>Run the zero-call preflight</small></div></li>
-              <li><span>3</span><div><strong>Run one Type I question</strong><small>Write one auditable JSONL result</small></div></li>
+              <li><span>3</span><div><strong>Run one Type I question</strong><small>Save the model's answer as JSONL</small></div></li>
             </ol>
             <div class="quickstart-links">
-              <a class="text-link" href="https://github.com/AMAP-ML/LoopArena#5-run-a-complete-task">Next: run one Type III full task →</a>
-              <a class="text-link text-link-muted" href="https://github.com/AMAP-ML/LoopArena#quick-start">Complete guide</a>
+              <a class="text-link" href="https://github.com/AMAP-ML/LoopArena/blob/HEAD/docs/setup.md#run-and-score">Next: run one Type III full task →</a>
+              <a class="text-link text-link-muted" href="https://github.com/AMAP-ML/LoopArena/blob/HEAD/docs/setup.md">Complete guide</a>
             </div>
           </div>
           <div class="terminal-card" aria-label="Type I quickstart commands">
@@ -360,15 +368,15 @@
 
 <span class="comment"># Validate configuration with zero model calls.</span>
 <span class="prompt">$</span> looparena-type1-run \
-    --data benchmarks/type1/questions.jsonl \
+    --data benchmarks/type1/questions \
     --model <span class="variable">MODEL_ID</span> \
     --preflight-only
 
 <span class="comment"># Run one execution-validated control question.</span>
 <span class="prompt">$</span> looparena-type1-run \
-    --data benchmarks/type1/questions.jsonl \
+    --data benchmarks/type1/questions \
     --model <span class="variable">MODEL_ID</span> \
-    --output results/type1-smoke.jsonl \
+    --output runs/type1-smoke.jsonl \
     --limit 1 --concurrency 1</code></pre>
             <button class="copy-button" type="button" data-copy-quickstart aria-live="polite">Copy commands</button>
           </div>

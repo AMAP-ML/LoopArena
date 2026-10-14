@@ -1,0 +1,19 @@
+{
+  "adapter_config": {
+    "docker_executable": "docker",
+    "task_dir": "/opt/looparena/evaluator_assets/beyondswe_type2/tri80-beyondswe-encode_django-rest-framework_pr9514-cp3/task"
+  },
+  "adapter_kind": "beyondswe_harbor",
+  "adapter_version": "harbor-verifier-v1",
+  "network": "host",
+  "pass_policy": "reward-equals-one",
+  "runtime_identity": {
+    "image_id": "sha256:c6eaaaae00d8a52414e47932d756419bc4475caa96e5f98b8e15ed718e3eda1b",
+    "image_reference": "aweaiteam/beyondswe:encode_django-rest-framework_pr9514",
+    "platform": "linux/amd64",
+    "workdir": "/workspace/django-rest-framework"
+  },
+  "solve_network": "host",
+  "source_revision": "7d2ced21b4c85f646d5ba8786875d7fbbe08ed49",
+  "timeout_sec": 1200
+}

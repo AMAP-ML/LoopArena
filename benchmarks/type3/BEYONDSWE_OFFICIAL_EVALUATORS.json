@@ -1,91 +1,139 @@
 {
   "cases": {
-    "case019": {
-      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe/tasks/aboutcode-org_commoncode_pr44/task",
-      "official_task_id": "beyondswe:aboutcode-org_commoncode_pr44",
-      "source_tree_oid": "06b65b6b6754380e606b2a044310f94b15b273ed"
+    "tri80-beyondswe-aiven_aiven-client_pr399": {
+      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe_type3/tri80-beyondswe-aiven_aiven-client_pr399/task",
+      "official_task_id": "beyondswe:aiven_aiven-client_pr399"
     },
-    "case023": {
-      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe/tasks/aiven_aiven-client_pr399/task",
-      "official_task_id": "beyondswe:aiven_aiven-client_pr399",
-      "source_tree_oid": "ca27a66ad4a849095e9f932416472b7277c18a10"
+    "tri80-beyondswe-pylons_colander_pr305": {
+      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe_type3/tri80-beyondswe-pylons_colander_pr305/task",
+      "official_task_id": "beyondswe:pylons_colander_pr305"
     },
-    "case025": {
-      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe/tasks/pylons_colander_pr305/task",
-      "official_task_id": "beyondswe:pylons_colander_pr305",
-      "source_tree_oid": "49b4182ff654c65b71a2baf7ccbd32217fc45888"
+    "tri80-beyondswe-diamondlightsource_python-zocalo_pr140": {
+      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe_type3/tri80-beyondswe-diamondlightsource_python-zocalo_pr140/task",
+      "official_task_id": "beyondswe:diamondlightsource_python-zocalo_pr140"
     },
-    "case027": {
-      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe/tasks/diamondlightsource_python-zocalo_pr140/task",
-      "official_task_id": "beyondswe:diamondlightsource_python-zocalo_pr140",
-      "source_tree_oid": "0ffea5cd313fe1c43325760856a8b8d3e0706897"
+    "tri80-beyondswe-pylons_pyramid_pr2964": {
+      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe_type3/tri80-beyondswe-pylons_pyramid_pr2964/task",
+      "official_task_id": "beyondswe:pylons_pyramid_pr2964"
     },
-    "case028": {
-      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe/tasks/pylons_pyramid_pr2964/task",
-      "official_task_id": "beyondswe:pylons_pyramid_pr2964",
-      "source_tree_oid": "4b7cae30b4f185e096643d2a8486dd960f603c6e"
+    "tri80-beyondswe-cvxpy_cvxpy_pr2542": {
+      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe_type3/tri80-beyondswe-cvxpy_cvxpy_pr2542/task",
+      "official_task_id": "beyondswe:cvxpy_cvxpy_pr2542"
     },
-    "case029": {
-      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe/tasks/cvxpy_cvxpy_pr2542/task",
-      "official_task_id": "beyondswe:cvxpy_cvxpy_pr2542",
-      "source_tree_oid": "7f7ab7fc607d04cb7124b46c7a9a5624b48a86e5"
+    "tri80-beyondswe-pylons_pyramid_pr3019": {
+      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe_type3/tri80-beyondswe-pylons_pyramid_pr3019/task",
+      "official_task_id": "beyondswe:pylons_pyramid_pr3019"
     },
-    "case033": {
-      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe/tasks/pylons_pyramid_pr3019/task",
-      "official_task_id": "beyondswe:pylons_pyramid_pr3019",
-      "source_tree_oid": "1c86822b333ac50b2c2b84d7a3aade1c1e09ffa2"
+    "tri80-beyondswe-snok_flake8-type-checking_pr179": {
+      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe_type3/tri80-beyondswe-snok_flake8-type-checking_pr179/task",
+      "official_task_id": "beyondswe:snok_flake8-type-checking_pr179"
     },
-    "case035": {
-      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe/tasks/plasmapy_plasmapy_pr2068/task",
-      "official_task_id": "beyondswe:plasmapy_plasmapy_pr2068",
-      "source_tree_oid": "979f451af465eb4c58363c3433e9a5fe84eb2cde"
+    "tri80-beyondswe-aio-libs_aiohttp_pr7944": {
+      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe_type3/tri80-beyondswe-aio-libs_aiohttp_pr7944/task",
+      "official_task_id": "beyondswe:aio-libs_aiohttp_pr7944"
     },
-    "case037": {
-      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe/tasks/snok_flake8-type-checking_pr179/task",
-      "official_task_id": "beyondswe:snok_flake8-type-checking_pr179",
-      "source_tree_oid": "f751bf8ec766e86afba13daad449ece02ebea203"
+    "tri80-beyondswe-pylons_pyramid_pr3328": {
+      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe_type3/tri80-beyondswe-pylons_pyramid_pr3328/task",
+      "official_task_id": "beyondswe:pylons_pyramid_pr3328"
     },
-    "case039": {
-      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe/tasks/aio-libs_aiohttp_pr7944/task",
-      "official_task_id": "beyondswe:aio-libs_aiohttp_pr7944",
-      "source_tree_oid": "3fe234cb6e77c279726684622409e63bd77bb933"
+    "tri80-beyondswe-aklajnert_pytest-subprocess_pr180": {
+      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe_type3/tri80-beyondswe-aklajnert_pytest-subprocess_pr180/task",
+      "official_task_id": "beyondswe:aklajnert_pytest-subprocess_pr180"
     },
-    "case061": {
-      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe/tasks/openedx_edx-drf-extensions_pr230/task",
-      "official_task_id": "beyondswe:openedx_edx-drf-extensions_pr230",
-      "source_tree_oid": "5ed3f992ff1c3c5b8143c7eb11d829f69cc4d746"
+    "tri80-beyondswe-aio-libs_aiohttp_pr7954": {
+      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe_type3/tri80-beyondswe-aio-libs_aiohttp_pr7954/task",
+      "official_task_id": "beyondswe:aio-libs_aiohttp_pr7954"
     },
-    "case066": {
-      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe/tasks/sinaptik-ai_pandas-ai_pr761/task",
-      "official_task_id": "beyondswe:sinaptik-ai_pandas-ai_pr761",
-      "source_tree_oid": "4da124f974163be455498797359d6b346978363f"
+    "tri80-beyondswe-ansys_pyansys-units_pr309": {
+      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe_type3/tri80-beyondswe-ansys_pyansys-units_pr309/task",
+      "official_task_id": "beyondswe:ansys_pyansys-units_pr309"
     },
-    "case080": {
-      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe/tasks/pylons_pyramid_pr3328/task",
-      "official_task_id": "beyondswe:pylons_pyramid_pr3328",
-      "source_tree_oid": "f707de64db85a324e64ffb6a1f5ee90e676d61c4"
+    "tri80-beyondswe-cornices_cornice_pr477": {
+      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe_type3/tri80-beyondswe-cornices_cornice_pr477/task",
+      "official_task_id": "beyondswe:cornices_cornice_pr477"
     },
-    "case089": {
-      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe/tasks/aklajnert_pytest-subprocess_pr180/task",
-      "official_task_id": "beyondswe:aklajnert_pytest-subprocess_pr180",
-      "source_tree_oid": "f6d4e5c080f2e24ebe27edcdd9e636de8a84967e"
+    "tri80-beyondswe-cvxpy_cvxpy_pr2411": {
+      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe_type3/tri80-beyondswe-cvxpy_cvxpy_pr2411/task",
+      "official_task_id": "beyondswe:cvxpy_cvxpy_pr2411"
     },
-    "case102": {
-      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe/tasks/cvxpy_cvxpy_pr2508/task",
-      "official_task_id": "beyondswe:cvxpy_cvxpy_pr2508",
-      "source_tree_oid": "fa523e5ae601f5121233ba724b52966d10b5e84e"
+    "tri80-beyondswe-encode_django-rest-framework_pr9514": {
+      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe_type3/tri80-beyondswe-encode_django-rest-framework_pr9514/task",
+      "official_task_id": "beyondswe:encode_django-rest-framework_pr9514"
     },
-    "case208": {
-      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe/tasks/adamtheturtle_sybil-extras_pr219/task",
-      "official_task_id": "beyondswe:adamtheturtle_sybil-extras_pr219",
-      "source_tree_oid": "3f64e9719e0c506bd22c3942591a203d848f4692"
+    "tri80-beyondswe-fastapi-users_fastapi-users_pr1249": {
+      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe_type3/tri80-beyondswe-fastapi-users_fastapi-users_pr1249/task",
+      "official_task_id": "beyondswe:fastapi-users_fastapi-users_pr1249"
+    },
+    "tri80-beyondswe-hackingmaterials_matminer_pr925": {
+      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe_type3/tri80-beyondswe-hackingmaterials_matminer_pr925/task",
+      "official_task_id": "beyondswe:hackingmaterials_matminer_pr925"
+    },
+    "tri80-beyondswe-iamconsortium_units_pr45": {
+      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe_type3/tri80-beyondswe-iamconsortium_units_pr45/task",
+      "official_task_id": "beyondswe:iamconsortium_units_pr45"
+    },
+    "tri80-beyondswe-matthieudartiailh_bytecode_pr56": {
+      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe_type3/tri80-beyondswe-matthieudartiailh_bytecode_pr56/task",
+      "official_task_id": "beyondswe:matthieudartiailh_bytecode_pr56"
+    },
+    "tri80-beyondswe-neuralensemble_python-neo_pr1554": {
+      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe_type3/tri80-beyondswe-neuralensemble_python-neo_pr1554/task",
+      "official_task_id": "beyondswe:neuralensemble_python-neo_pr1554"
+    },
+    "tri80-beyondswe-obspy_obspy_pr2949": {
+      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe_type3/tri80-beyondswe-obspy_obspy_pr2949/task",
+      "official_task_id": "beyondswe:obspy_obspy_pr2949"
+    },
+    "tri80-beyondswe-obspy_obspy_pr2962": {
+      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe_type3/tri80-beyondswe-obspy_obspy_pr2962/task",
+      "file_count": 11,
+      "full_task_tree_sha256": "37283ce2eca4d787758556c0d073b554cc188f08ad2e957346898cf679561772",
+      "official_final_tree_oid": "2053d2afa45c664462926183082202ec6f769cc1",
+      "official_task_id": "beyondswe:obspy_obspy_pr2962"
+    },
+    "tri80-beyondswe-pylons_pyramid_pr1471": {
+      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe_type3/tri80-beyondswe-pylons_pyramid_pr1471/task",
+      "file_count": 11,
+      "full_task_tree_sha256": "a21dce808b1b967e3d505a059770ede647d31f20da2ae781ebb0464030c365bc",
+      "official_final_tree_oid": "3be6e2cae14d7fd3b9951111a9c98c6bb7bfb4de",
+      "official_task_id": "beyondswe:pylons_pyramid_pr1471"
+    },
+    "tri80-beyondswe-pylons_pyramid_pr2413": {
+      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe_type3/tri80-beyondswe-pylons_pyramid_pr2413/task",
+      "official_task_id": "beyondswe:pylons_pyramid_pr2413"
+    },
+    "tri80-beyondswe-pylons_pyramid_pr2500": {
+      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe_type3/tri80-beyondswe-pylons_pyramid_pr2500/task",
+      "official_task_id": "beyondswe:pylons_pyramid_pr2500"
+    },
+    "tri80-beyondswe-pylons_pyramid_pr2985": {
+      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe_type3/tri80-beyondswe-pylons_pyramid_pr2985/task",
+      "file_count": 11,
+      "full_task_tree_sha256": "a5b38b3a41211f1709510f41639c2b7c679cadcbd213549a80f772b20cef96b9",
+      "official_final_tree_oid": "e5c26bf68ff50158818e769df7eef2d33462f7ab",
+      "official_task_id": "beyondswe:pylons_pyramid_pr2985"
+    },
+    "tri80-beyondswe-pylons_pyramid_pr3319": {
+      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe_type3/tri80-beyondswe-pylons_pyramid_pr3319/task",
+      "official_task_id": "beyondswe:pylons_pyramid_pr3319"
+    },
+    "tri80-beyondswe-python-control_python-control_pr913": {
+      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe_type3/tri80-beyondswe-python-control_python-control_pr913/task",
+      "official_task_id": "beyondswe:python-control_python-control_pr913"
+    },
+    "tri80-beyondswe-shapely_shapely_pr1174": {
+      "asset_task_dir": "/opt/looparena/evaluator_assets/beyondswe_type3/tri80-beyondswe-shapely_shapely_pr1174/task",
+      "official_task_id": "beyondswe:shapely_shapely_pr1174"
     }
   },
   "formal_evaluator_policy": "source-native-only",
-  "schema_version": "looparena.type3_beyondswe_official_evaluators.v1",
   "source": {
     "repository": "https://huggingface.co/datasets/AweAI-Team/BeyondSWE-harbor",
     "revision": "7d2ced21b4c85f646d5ba8786875d7fbbe08ed49",
     "tree_identity": "git-tree-oid"
+  },
+  "task_byte_preservation": {
+    "file_count": 190,
+    "relative_path_sha256_manifest_digest": "fe03c98d481f6af5bf7ca76c890020c6e4e1cfa66dc94a591624659d1b19dbc2"
   }
 }

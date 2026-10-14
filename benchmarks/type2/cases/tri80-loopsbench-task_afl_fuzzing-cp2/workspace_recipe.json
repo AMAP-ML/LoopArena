@@ -1,0 +1,419 @@
+{
+  "case_id": "tri80-loopsbench-task_afl_fuzzing-cp2",
+  "files": [
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "fuzzsim"
+    },
+    {
+      "bytes": 100,
+      "kind": "file",
+      "mode": 420,
+      "path": "fuzzsim/__init__.py",
+      "sha256": "2b9968fbdae48df4cfdf13bb6a11934db763432ed0a30f820d9bef3db96efb0d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_afl_fuzzing/base/fuzzsim/__init__.py"
+      }
+    },
+    {
+      "bytes": 46692,
+      "kind": "file",
+      "mode": 420,
+      "path": "fuzzsim/afl_fuzzer.py",
+      "sha256": "0eefda0a91481a96f620fbd36096d373064456c5ef6ea30cf9910ead15aa2a2b",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_afl_fuzzing/gold_patches/afl.diff",
+        "patch_sha256": "cdc79a81f73443f3a8bb4a1d448b86416ce53625f701cf8c22aaf324e4c90fec",
+        "path": "fuzzsim/afl_fuzzer.py"
+      }
+    },
+    {
+      "bytes": 1681,
+      "kind": "file",
+      "mode": 420,
+      "path": "fuzzsim/bitmap.py",
+      "sha256": "a2103e1ef7c39cb3e44e179ab7193c6654ce32f44994b867d8f87405b25645ae",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_afl_fuzzing/base/fuzzsim/bitmap.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "fuzzsim/experiments"
+    },
+    {
+      "bytes": 34,
+      "kind": "file",
+      "mode": 420,
+      "path": "fuzzsim/experiments/__init__.py",
+      "sha256": "157812f46151acd1299066e28327ab5c60467af1e2f135f8ff0d308799897f9f",
+      "source": {
+        "blob": "157812f46151acd1299066e28327ab5c60467af1e2f135f8ff0d308799897f9f",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 1007,
+      "kind": "file",
+      "mode": 420,
+      "path": "fuzzsim/experiments/afl_experiment.py",
+      "sha256": "49611d001244353e56fe8201fe58db376c01cf00677deb49f7175c734bc65a56",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_afl_fuzzing/gold_patches/afl.diff",
+        "patch_sha256": "cdc79a81f73443f3a8bb4a1d448b86416ce53625f701cf8c22aaf324e4c90fec",
+        "path": "fuzzsim/experiments/afl_experiment.py"
+      }
+    },
+    {
+      "bytes": 5189,
+      "kind": "file",
+      "mode": 420,
+      "path": "fuzzsim/mutation.py",
+      "sha256": "5d2fc938615fc3a3396555c368cdc2835c53ba3ac459fdc4b434a16d56ae3a48",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_afl_fuzzing/base/fuzzsim/mutation.py"
+      }
+    },
+    {
+      "bytes": 4465,
+      "kind": "file",
+      "mode": 420,
+      "path": "fuzzsim/program_model.py",
+      "sha256": "893e294361748a7959e2120d7daf6311cb2e8990a5e42ef2947d0f12ae99c710",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_afl_fuzzing/base/fuzzsim/program_model.py"
+      }
+    },
+    {
+      "bytes": 1508,
+      "kind": "file",
+      "mode": 420,
+      "path": "fuzzsim/seed.py",
+      "sha256": "61610b4692fc44086e790a3b0530eb2a41a34b56120db51d6116349b8c31acba",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_afl_fuzzing/base/fuzzsim/seed.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "fuzzsim/targets"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "fuzzsim/targets/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_afl_fuzzing/base/fuzzsim/experiments/__init__.py"
+      }
+    },
+    {
+      "bytes": 6732,
+      "kind": "file",
+      "mode": 420,
+      "path": "fuzzsim/targets/binutils_sim.py",
+      "sha256": "49180d33ea756994fa58229df53afb479af64c5d3408da777e731665ebdb012a",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_afl_fuzzing/base/fuzzsim/targets/binutils_sim.py"
+      }
+    },
+    {
+      "bytes": 8347,
+      "kind": "file",
+      "mode": 420,
+      "path": "fuzzsim/targets/crashme.py",
+      "sha256": "e29752e5a458421a4bda98a651eda0adafc5e3e946f47e3ba4ef106456f232f4",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_afl_fuzzing/base/fuzzsim/targets/crashme.py"
+      }
+    },
+    {
+      "bytes": 4126,
+      "kind": "file",
+      "mode": 420,
+      "path": "module_dag.yaml",
+      "sha256": "7ec4cfc3e0f8c4ba83217ab7b0ea5ae4f7e877834cf67afd2fc92afe757ccbad",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_afl_fuzzing/module_dag.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "requirements"
+    },
+    {
+      "bytes": 6,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements.txt",
+      "sha256": "e09f656c130b9c08b2c5ab7187c891295e449ed77febea2a6ceee9cc98ccb0fc",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_afl_fuzzing/base/requirements.txt"
+      }
+    },
+    {
+      "bytes": 2002,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/afl.yaml",
+      "sha256": "0c17820a5458b20a8ecad50aaf3a58e2e61a19f88654e5ef3466b1591108ffe8",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_afl_fuzzing/requirements/afl.yaml"
+      }
+    },
+    {
+      "bytes": 2017,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/aflfast.yaml",
+      "sha256": "9e6276f1b21b4bdf6fab07d3c6003ed5a2afe56a8778a5bfae0aa029a9066687",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_afl_fuzzing/requirements/aflfast.yaml"
+      }
+    },
+    {
+      "bytes": 2027,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/aflgo.yaml",
+      "sha256": "65f7cecc1b6decab7a2de7ac4bcb2b61cb7653ad451bbba0ef4995021e1bd6a1",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_afl_fuzzing/requirements/aflgo.yaml"
+      }
+    },
+    {
+      "bytes": 2350,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/aflpp.yaml",
+      "sha256": "11826f40765309370b673d20e9bcf596591cbfd693736736eaa6d93e9496e459",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_afl_fuzzing/requirements/aflpp.yaml"
+      }
+    },
+    {
+      "bytes": 2175,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/fairfuzz.yaml",
+      "sha256": "d3188ae1a33fdeed8d773831c2691a70f09bc10984c296090d079d518db8e805",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_afl_fuzzing/requirements/fairfuzz.yaml"
+      }
+    },
+    {
+      "bytes": 891,
+      "kind": "file",
+      "mode": 493,
+      "path": "run-tests.sh",
+      "sha256": "8fbbf3ed1f5af4ca8e9364d4b6e94198ed3222440a1cba7ca470e69d8c84d1e9",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_afl_fuzzing/run-tests.sh"
+      }
+    },
+    {
+      "bytes": 208,
+      "kind": "file",
+      "mode": 493,
+      "path": "run.sh",
+      "sha256": "3d2d651415545f70caa512e4268df32bbe0d278952f12169b438c38c348964ed",
+      "source": {
+        "blob": "3d2d651415545f70caa512e4268df32bbe0d278952f12169b438c38c348964ed",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 1927,
+      "kind": "file",
+      "mode": 420,
+      "path": "task.yaml",
+      "sha256": "9d649e4dc5f0b3a93c21a9476b1fab73decbb6e3fcba1494a581d839d0f7a0a7",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_afl_fuzzing/task.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/afl"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/afl/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_afl_fuzzing/base/fuzzsim/experiments/__init__.py"
+      }
+    },
+    {
+      "bytes": 2579,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/afl/test_outputs.py",
+      "sha256": "38fcc5165ece9fe4eab1254e4ff56b9e0a08dd9a0d12516daf43400151e28737",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_afl_fuzzing/tests/afl/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/aflfast"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/aflfast/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_afl_fuzzing/base/fuzzsim/experiments/__init__.py"
+      }
+    },
+    {
+      "bytes": 2713,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/aflfast/test_outputs.py",
+      "sha256": "76e767bf539d08081a72838c82f8fdd0848bb089bef1d8f38dea339bed2cc305",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_afl_fuzzing/tests/aflfast/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/aflgo"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/aflgo/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_afl_fuzzing/base/fuzzsim/experiments/__init__.py"
+      }
+    },
+    {
+      "bytes": 2675,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/aflgo/test_outputs.py",
+      "sha256": "e11c2b4b034f9baab74372cda03025be62ba6abbc626d107a81129e4795bee74",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_afl_fuzzing/tests/aflgo/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/aflpp"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/aflpp/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_afl_fuzzing/base/fuzzsim/experiments/__init__.py"
+      }
+    },
+    {
+      "bytes": 2739,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/aflpp/test_outputs.py",
+      "sha256": "36af46a176cb2e8b8d6a7b209429667119ea406933bb592c69f700e64f07437c",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_afl_fuzzing/tests/aflpp/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/fairfuzz"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/fairfuzz/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_afl_fuzzing/base/fuzzsim/experiments/__init__.py"
+      }
+    },
+    {
+      "bytes": 2881,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/fairfuzz/test_outputs.py",
+      "sha256": "f56a31909839c61ab3547a74c10a8cf888e0898bda8e50e600c90449a4d4b1be",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_afl_fuzzing/tests/fairfuzz/test_outputs.py"
+      }
+    },
+    {
+      "bytes": 850,
+      "kind": "file",
+      "mode": 420,
+      "path": "unit_dag.json",
+      "sha256": "38c5dc47ae36303fcfbbe6eafcaca8d4c09db272fe4afbe41b7bc7668c509fe5",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_afl_fuzzing/unit_dag.json"
+      }
+    }
+  ],
+  "overlay_sha256": "d716ff1f11361e6c5510244246c236f90517c7144790b778ff71e197b4af82be",
+  "upstream": {
+    "kind": "loopsbench",
+    "revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+    "source_root_key": "loopsbench",
+    "task": "task_afl_fuzzing"
+  },
+  "workspace_tree_sha256": "6eadc7d321282c181b4280ff3c88fce131df273acc576d4475f6a22f451f8fe4"
+}

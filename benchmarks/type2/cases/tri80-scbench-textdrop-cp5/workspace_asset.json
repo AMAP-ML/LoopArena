@@ -1,0 +1,6 @@
+{
+  "recipe": "workspace_recipe.json",
+  "recipe_sha256": "884d9091a92adf177a493dc9ed110280e40ce2e4ec62b522d372f594e5415eaf",
+  "relative_path_under_assets_root": "type2/workspaces/tri80-scbench-textdrop-cp5/workspace.tar.gz",
+  "workspace_tree_sha256": "f524ae7dbcbb9cd3a0ae45327c04bbfd9d94716f1f2c0d68dd91f4e75a4e8d68"
+}

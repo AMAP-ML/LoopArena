@@ -1,0 +1,37 @@
+{
+  "adapter_config": {
+    "docker_executable": "docker",
+    "expected_test_count": 5,
+    "expected_unit_ids": [
+      "engine_probe_runner",
+      "rcore_bugfixes",
+      "image_generation",
+      "color_utilities",
+      "image_format_conversion",
+      "image_io",
+      "image_transforms_color_ops",
+      "image_pixel_access",
+      "image_cpu_drawing",
+      "texture_gpu_objects",
+      "replay_runner"
+    ],
+    "result_protocol": "source_run_tests_task_level",
+    "runtime_assets_dir": "/opt/looparena/evaluator_assets/evaluator_runtime",
+    "task_dir": "/opt/looparena/evaluator_assets/tasks/task_raylib_textures_hard"
+  },
+  "adapter_kind": "loopsbench",
+  "adapter_version": "source-run-tests-v1",
+  "evaluator_revision": "5880b64491e2cac2f83d497153ed173b8a995b8b",
+  "network": "bridge",
+  "pass_policy": "all-source-unit-tests-pass",
+  "runtime_identity": {
+    "image_id": "sha256:e9d5c3ae73ca4674d1c0f10c390ee02f7232e55816846a003e6b7d8c3478e88c",
+    "image_reference": "looparena-loopsbench-84ae415/task_raylib_textures_hard:frozen",
+    "platform": "linux/amd64",
+    "task_tree_sha256": "51dbc4f328e5930ab1ecfd7c9e726a2d6573e8cbae71ee80dab2f5a7fe4189d7",
+    "workdir": "/workspace"
+  },
+  "solve_network": "bridge",
+  "source_revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+  "timeout_sec": 1500
+}

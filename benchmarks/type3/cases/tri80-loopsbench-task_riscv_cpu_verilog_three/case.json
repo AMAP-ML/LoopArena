@@ -1,0 +1,10 @@
+{
+  "adapter_kind": "loopsbench",
+  "case_id": "tri80-loopsbench-task_riscv_cpu_verilog_three",
+  "episode_origin": "official_problem_start",
+  "harness_start_mode": "bootstrap_contract_start",
+  "official_task_id": "loopsbench:task_riscv_cpu_verilog_three",
+  "task_scope": "official_full_task",
+  "task_sequence_ref": "task_sequence.json",
+  "task_sequence_sha256": "b5b3de887d3bb260a7df51a3a4a9ef04dd5cf9c7c7c4a3099a91a364826c1401"
+}

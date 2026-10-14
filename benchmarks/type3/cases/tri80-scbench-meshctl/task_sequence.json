@@ -1,0 +1,78 @@
+{
+  "adapter_kind": "scbench",
+  "aggregate_pass_policy": "all_official_checkpoints_pass",
+  "checkpoint_context_policy": "reset_model_context_preserve_workspace",
+  "checkpoint_coverage_policy": "all_official_checkpoints",
+  "checkpoint_failure_policy": "continue_after_valid_task_failure_stop_on_infrastructure_invalid",
+  "official_checkpoint_count": 8,
+  "official_task_id": "scbench:meshctl",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/checkpoint_1.json",
+      "evaluator_plan_sha256": "0b1872eb82bba194f6a9a66c26da74db25e80a127f5f565dba799619f566b219",
+      "step_id": "checkpoint_1",
+      "task_ref": "tasks/checkpoint_1.md",
+      "task_sha256": "bfdbe7148f0119b88d086b7f8a15dac2ec3720ff5b957a996cdcf8e35863e389",
+      "tests_expected": 83
+    },
+    {
+      "evaluator_plan_ref": "evaluator_plans/checkpoint_2.json",
+      "evaluator_plan_sha256": "447fed4b65a7110bf9bd0f39d1e9b80ac351db35e019670a79ef91091a8dd5c5",
+      "step_id": "checkpoint_2",
+      "task_ref": "tasks/checkpoint_2.md",
+      "task_sha256": "8c7d59d72835484b9adcd4603faad4b9e772b7223b78752f9b98ff9b82a5f5dd",
+      "tests_expected": 116
+    },
+    {
+      "evaluator_plan_ref": "evaluator_plans/checkpoint_3.json",
+      "evaluator_plan_sha256": "e886c67df887aadf31194e5228d25c1774cfdabb702c5c8c6b59e0aa743dd5cd",
+      "step_id": "checkpoint_3",
+      "task_ref": "tasks/checkpoint_3.md",
+      "task_sha256": "d5eb292e92a41e2c898d9464373948096f2dd8d144b9e706bf1ded94ff98667f",
+      "tests_expected": 150
+    },
+    {
+      "evaluator_plan_ref": "evaluator_plans/checkpoint_4.json",
+      "evaluator_plan_sha256": "a4ffc5601868fe938154f92012da8a56dbc4d3b2814b20343cd0d84301cf912a",
+      "step_id": "checkpoint_4",
+      "task_ref": "tasks/checkpoint_4.md",
+      "task_sha256": "b17cd41c444985ad930ce582263b59a8af16707f41af3e7cf1a17b291d5993c5",
+      "tests_expected": 194
+    },
+    {
+      "evaluator_plan_ref": "evaluator_plans/checkpoint_5.json",
+      "evaluator_plan_sha256": "5eeacc9989f627eab5e3e63c8091f5e5585fc36550eafc3711ae49f7cc7ab7fe",
+      "step_id": "checkpoint_5",
+      "task_ref": "tasks/checkpoint_5.md",
+      "task_sha256": "d46d1804c5e22b7c072167e042f484c0513a85a4530af1b2986f732d458eec4d",
+      "tests_expected": 267
+    },
+    {
+      "evaluator_plan_ref": "evaluator_plans/checkpoint_6.json",
+      "evaluator_plan_sha256": "fbe45d3860d6d9e51117a2523aad5e8c7165eeb34b618e503de0d8efd2f87614",
+      "step_id": "checkpoint_6",
+      "task_ref": "tasks/checkpoint_6.md",
+      "task_sha256": "84859de6a40b3c79a66c84ed2680cb985aa02884845d50d2249cb9e823b1d710",
+      "tests_expected": 40
+    },
+    {
+      "evaluator_plan_ref": "evaluator_plans/checkpoint_7.json",
+      "evaluator_plan_sha256": "598eff6339ae42a6cb158b3121aba37d19f0c23c185b97d744dfc60509ca0958",
+      "step_id": "checkpoint_7",
+      "task_ref": "tasks/checkpoint_7.md",
+      "task_sha256": "ab547cc0c26a2e39e155afc1737a42ccdfcc3574df9bd12772a10190c2a06fea",
+      "tests_expected": 42
+    },
+    {
+      "evaluator_plan_ref": "evaluator_plans/checkpoint_8.json",
+      "evaluator_plan_sha256": "9b45dc35e5d3f9631ea783c076603b3db8efe2687769b2ae17019c67c4066197",
+      "step_id": "checkpoint_8",
+      "task_ref": "tasks/checkpoint_8.md",
+      "task_sha256": "956d492d7d8c093ba336578a545200bdee5877572bf35b6df744db54675ebe41",
+      "tests_expected": 78
+    }
+  ],
+  "target_step": "checkpoint_8",
+  "task_scope": "official_full_problem",
+  "workspace_origin": "empty_workspace_plus_declared_public_static_assets"
+}

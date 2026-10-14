@@ -5,6 +5,7 @@ from __future__ import annotations
 import copy
 import json
 import os
+import shutil
 import subprocess
 import time
 from pathlib import Path
@@ -19,6 +20,7 @@ from .base import (
     run_argv,
     scbench_evaluator_network,
 )
+
 
 _OFFICIAL_EVALUATOR_DEPENDENCIES = (
     "pytest",
@@ -40,22 +42,37 @@ def _runtime_environment_config(
 
     runtime_environment = copy.deepcopy(environment)
     if not evaluation_image_reference.startswith("slop-code:"):
-        raise ValueError("SCBench image reference must use the runner's tag prefix")
-    runtime_environment["name"] = evaluation_image_reference.removeprefix("slop-code:")
+        raise ValueError(
+            "SCBench image reference must use the runner's tag prefix"
+        )
+    runtime_environment["name"] = evaluation_image_reference.removeprefix(
+        "slop-code:"
+    )
     docker = runtime_environment.get("docker")
     environment_settings = runtime_environment.get("environment")
     if not isinstance(docker, dict) or not isinstance(environment_settings, dict):
-        raise ValueError(
-            "SCBench environment is missing Docker or environment settings"
-        )
+        raise ValueError("SCBench environment is missing Docker or environment settings")
+    # The pinned runner defaults containers to UID/GID 1000, which cannot
+    # traverse bind-mounted temporary directories owned by cluster accounts.
+    # Map only the filesystem identity to the invoking user; the image,
+    # evaluator command, dependencies, and network remain unchanged.
+    host_user = f"{os.geteuid()}:{os.getegid()}"
+    docker["user"] = host_user
     mounts = docker.setdefault("extra_mounts", {})
     env = environment_settings.setdefault("env", {})
     if not isinstance(mounts, dict) or not isinstance(env, dict):
         raise ValueError("SCBench environment mounts and variables must be objects")
+    evaluator_home = output_dir / ".scbench_container_home"
+    evaluator_home.mkdir(mode=0o700)
+    mounts[str(evaluator_home)] = {"bind": "/tmp/agent_home", "mode": "rw"}
 
     details: dict[str, Any] = {
         "persistent_uv_cache": False,
         "dependency_install": "source_network_with_persistent_cache",
+        "bind_mount_user": host_user,
+        "bind_mount_user_policy": "invoking-host-euid-egid",
+        "container_home": "/tmp/agent_home",
+        "container_home_policy": "ephemeral-host-owned-bind-mount",
     }
     cache_value = os.environ.get("LOOPARENA_SCBENCH_UV_CACHE_DIR", "").strip()
     if cache_value:
@@ -69,9 +86,12 @@ def _runtime_environment_config(
     if not isinstance(commands, list):
         raise ValueError("SCBench environment has no evaluator setup commands")
     if not any(
-        str(command).strip() == "uv add -r requirements.txt" for command in commands
+        str(command).strip() == "uv add -r requirements.txt"
+        for command in commands
     ):
-        raise ValueError("SCBench evaluator dependency command is not the pinned form")
+        raise ValueError(
+            "SCBench evaluator dependency command is not the pinned form"
+        )
 
     runtime_path = output_dir / "runtime_environment.yaml"
     runtime_path.write_text(
@@ -101,11 +121,14 @@ def _evaluator_dependencies_available(
         if problem_dependencies is None:
             problem_dependencies = []
         if not isinstance(problem_dependencies, list) or not all(
-            isinstance(value, str) and value.strip() for value in problem_dependencies
+            isinstance(value, str) and value.strip()
+            for value in problem_dependencies
         ):
             raise ValueError("SCBench test_dependencies must be strings")
         dependencies = list(
-            dict.fromkeys([*_OFFICIAL_EVALUATOR_DEPENDENCIES, *problem_dependencies])
+            dict.fromkeys(
+                [*_OFFICIAL_EVALUATOR_DEPENDENCIES, *problem_dependencies]
+            )
         )
         network = scbench_evaluator_network(environment)
     except (OSError, TypeError, ValueError, yaml.YAMLError) as exc:
@@ -167,10 +190,14 @@ def _evaluation_image_identity(
     runtime = plan.get("runtime_identity") or {}
     reference = runtime.get("evaluation_image_reference")
     expected_id = runtime.get("evaluation_image_id")
-    expected_platform = runtime.get("evaluation_image_platform") or runtime.get(
-        "platform"
+    expected_platform = (
+        runtime.get("evaluation_image_platform")
+        or runtime.get("platform")
     )
-    if not all(isinstance(value, str) and value for value in (reference, expected_id)):
+    if not all(
+        isinstance(value, str) and value
+        for value in (reference, expected_id)
+    ):
         return None
     if not reference.startswith("slop-code:"):
         return None
@@ -228,7 +255,9 @@ def _result_test_ids(value: object) -> list[str]:
         occurrences: dict[str, int] = {}
         for raw_id in raw_ids:
             occurrences[raw_id] = occurrences.get(raw_id, 0) + 1
-            suffix = f"#{occurrences[raw_id]}" if totals[raw_id] > 1 else ""
+            suffix = (
+                f"#{occurrences[raw_id]}" if totals[raw_id] > 1 else ""
+            )
             found.append(f"{group}::{raw_id}{suffix}")
     return found
 
@@ -273,25 +302,11 @@ def _group_count(mapping: object, name: str) -> int:
     return 0
 
 
-def _passes_policy(report: dict[str, Any], policy: str) -> bool:
+def _passes_core(report: dict[str, Any]) -> bool:
     totals = report.get("total_counts")
     passed = report.get("pass_counts")
-    if policy == "core-cases":
-        total = _group_count(totals, "core")
-        return total > 0 and _group_count(passed, "core") == total
-    if policy in {"all-non-error-cases", "all-cases"}:
-        scored_total = 0
-        groups = ["core", "functionality", "regression"]
-        if policy == "all-cases":
-            groups.append("error")
-        for group in groups:
-            total = _group_count(totals, group)
-            scored_total += total
-            if total:
-                if _group_count(passed, group) != total:
-                    return False
-        return scored_total > 0
-    raise ValueError(f"unsupported SCBench pass policy: {policy}")
+    total = _group_count(totals, "core")
+    return total > 0 and _group_count(passed, "core") == total
 
 
 def evaluate_scbench(
@@ -360,7 +375,9 @@ def evaluate_scbench(
             environment,
             output_dir,
             evaluation_image_reference=str(
-                (plan.get("runtime_identity") or {})["evaluation_image_reference"]
+                (plan.get("runtime_identity") or {})[
+                    "evaluation_image_reference"
+                ]
             ),
         )
     except (OSError, TypeError, ValueError, yaml.YAMLError) as exc:
@@ -399,12 +416,16 @@ def evaluate_scbench(
             task_passed=None,
             tests_expected=expected,
         )
-    rc, stdout, stderr, elapsed, timed_out = run_argv(
-        argv,
-        cwd=runner_root,
-        timeout_sec=evaluation_timeout,
-        env={"SCBENCH_PROBLEMS_PATH": str(problems_root)},
-    )
+    try:
+        rc, stdout, stderr, elapsed, timed_out = run_argv(
+            argv,
+            cwd=runner_root,
+            timeout_sec=evaluation_timeout,
+            env={"SCBENCH_PROBLEMS_PATH": str(problems_root)},
+            child_umask=0o022,
+        )
+    finally:
+        shutil.rmtree(output_dir / ".scbench_container_home", ignore_errors=True)
     elapsed_total = elapsed
     (output_dir / "adapter_stdout.txt").write_text(stdout, encoding="utf-8")
     (output_dir / "adapter_stderr.txt").write_text(stderr, encoding="utf-8")
@@ -441,9 +462,11 @@ def evaluate_scbench(
             _official_result_count_evidence(report, expected=expected)
         )
         upstream_infrastructure_failure = bool(report.get("infrastructure_failure"))
-        report_matches_target = report.get("problem_name") == problem_name and str(
-            report.get("checkpoint_name") or ""
-        ) in (checkpoint, f"checkpoint_{checkpoint}")
+        report_matches_target = (
+            report.get("problem_name") == problem_name
+            and str(report.get("checkpoint_name") or "")
+            in (checkpoint, f"checkpoint_{checkpoint}")
+        )
         pytest_exit = report.get("pytest_exit_code")
         if not report_matches_target:
             return base_receipt(
@@ -460,14 +483,30 @@ def evaluate_scbench(
                 stderr=stderr,
             )
 
-        # Once the official evaluator has produced a structurally valid report
-        # for the requested candidate workspace, syntax, import, collection,
-        # no-tests, setup, and ordinary assertion failures are candidate
-        # outcomes.  SCBench's upstream ``infrastructure_failure`` flag also
-        # covers those candidate-controllable failures, so trusting it here
-        # would let broken submissions leave the benchmark denominator.
-        # Host-side setup failures, timeouts, and missing/invalid reports are
-        # already handled above as infrastructure failures.
+        # Shell exit codes 126/127 mean the evaluator command could not start.
+        # A separate dependency probe cannot establish that this launch worked.
+        if pytest_exit in (126, 127):
+            return base_receipt(
+                plan,
+                status="setup_failed",
+                infrastructure_failure=True,
+                task_passed=None,
+                tests_expected=expected,
+                tests_collected=listed_test_occurrences,
+                tests_executed=categorized_total,
+                wall_time_sec=elapsed_total,
+                return_code=rc,
+                stdout=stdout,
+                stderr=stderr,
+                details={
+                    "official_pytest_exit_code": pytest_exit,
+                    "official_infrastructure_failure": upstream_infrastructure_failure,
+                },
+            )
+
+        # Candidate syntax, import, collection and assertion failures remain
+        # scored failures when the evaluator dependencies are available.
+        # The upstream infrastructure flag also covers these candidate errors.
         status = "completed"
         infrastructure_failure = False
         if not result_counts_complete or pytest_exit not in (0, 1):
@@ -486,7 +525,9 @@ def evaluate_scbench(
                         timeout_sec=probe_timeout,
                     )
                 )
-                elapsed_total += float(dependency_probe.get("wall_time_sec") or 0.0)
+                elapsed_total += float(
+                    dependency_probe.get("wall_time_sec") or 0.0
+                )
                 if not dependencies_available:
                     return base_receipt(
                         plan,
@@ -504,16 +545,8 @@ def evaluate_scbench(
                     )
             task_passed = False
         else:
-            # The frozen denominator is defined by executed official result
-            # entries and official category totals.  A skipped or omitted
-            # result therefore cannot satisfy the all-cases policy.
-            policy = str(
-                plan.get("pass_policy") or config.get("pass_policy") or "all-cases"
-            )
-            task_passed = (
-                result_counts_complete
-                and (policy != "all-cases" or categorized_total == expected)
-            ) and _passes_policy(report, policy)
+            # Run the full official suite; only Core determines task success.
+            task_passed = _passes_core(report)
     except (OSError, TypeError, ValueError, json.JSONDecodeError):
         return base_receipt(
             plan,

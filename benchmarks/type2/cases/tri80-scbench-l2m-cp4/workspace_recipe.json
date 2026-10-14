@@ -1,0 +1,22 @@
+{
+  "case_id": "tri80-scbench-l2m-cp4",
+  "files": [
+    {
+      "bytes": 15775,
+      "kind": "file",
+      "mode": 493,
+      "path": "l2m.py",
+      "sha256": "86e26dee018babd7f15017482f0d6c368ec9633e021f7a8845eb899fcece660f",
+      "source": {
+        "blob": "86e26dee018babd7f15017482f0d6c368ec9633e021f7a8845eb899fcece660f",
+        "kind": "overlay"
+      }
+    }
+  ],
+  "overlay_sha256": "85c66b927b55565ab4081bf6010a842101755255928d7fc6afe0a273c539e7bc",
+  "upstream": {
+    "kind": "scbench",
+    "source_root_key": null
+  },
+  "workspace_tree_sha256": "4082b69e3ede3176df7164fb89aac14dcb0e3d0eb0e7191c59ebfd40185946a7"
+}

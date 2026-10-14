@@ -1,0 +1,962 @@
+{
+  "case_id": "tri80-beyondswe-pylons_colander_pr305-cp1",
+  "files": [
+    {
+      "bytes": 217,
+      "kind": "file",
+      "mode": 420,
+      "path": ".gitignore",
+      "sha256": "2086cd63f097845b1ec31e0e75be56b6ca517095e696306ccc6119a9bb8febf6",
+      "source": {
+        "kind": "upstream",
+        "path": ".gitignore"
+      }
+    },
+    {
+      "bytes": 51,
+      "kind": "file",
+      "mode": 420,
+      "path": ".hgignore",
+      "sha256": "fdeb380388e9a8e45089200542530d6c27aff95a1a9d8cbb99a8f37d7f2a0f6b",
+      "source": {
+        "kind": "upstream",
+        "path": ".hgignore"
+      }
+    },
+    {
+      "bytes": 759,
+      "kind": "file",
+      "mode": 420,
+      "path": ".travis.yml",
+      "sha256": "468523a1dfc1c4880bb8fa90c7040103f92a1bb02a41a31f43033d3713d6e51e",
+      "source": {
+        "kind": "upstream",
+        "path": ".travis.yml"
+      }
+    },
+    {
+      "bytes": 39946,
+      "kind": "file",
+      "mode": 420,
+      "path": "CHANGES.rst",
+      "sha256": "818656764d0071b55544bcfa5e0ed04c5e0fd60236b94297c446ac079ee25b17",
+      "source": {
+        "kind": "upstream",
+        "path": "CHANGES.rst"
+      }
+    },
+    {
+      "bytes": 5660,
+      "kind": "file",
+      "mode": 420,
+      "path": "CONTRIBUTORS.txt",
+      "sha256": "84b4814046bed9052dc97e58eea7ee9733011097cb1fa4e97afb300c56a43749",
+      "source": {
+        "kind": "upstream",
+        "path": "CONTRIBUTORS.txt"
+      }
+    },
+    {
+      "bytes": 109,
+      "kind": "file",
+      "mode": 420,
+      "path": "COPYRIGHT.txt",
+      "sha256": "d7bc5ee57baee9ee59ed4a4470d546cf21ab162483e0041908f0ff18eaebd708",
+      "source": {
+        "kind": "upstream",
+        "path": "COPYRIGHT.txt"
+      }
+    },
+    {
+      "bytes": 1791,
+      "kind": "file",
+      "mode": 420,
+      "path": "LICENSE.txt",
+      "sha256": "414e3ccd8a758696c3a4708a31e36507f1c47757fdd35a1d569be43085148338",
+      "source": {
+        "kind": "upstream",
+        "path": "LICENSE.txt"
+      }
+    },
+    {
+      "bytes": 785,
+      "kind": "file",
+      "mode": 420,
+      "path": "README.rst",
+      "sha256": "d88b671cb058e291e22a3204e36f2dc9918aa25473d046fd7b789d73f86dd3a2",
+      "source": {
+        "kind": "upstream",
+        "path": "README.rst"
+      }
+    },
+    {
+      "bytes": 2897,
+      "kind": "file",
+      "mode": 420,
+      "path": "RELEASING.txt",
+      "sha256": "a86d898be61549f4b54c0e44837eb5540911f58f7743f0341b710cc87d130deb",
+      "source": {
+        "kind": "upstream",
+        "path": "RELEASING.txt"
+      }
+    },
+    {
+      "bytes": 137,
+      "kind": "file",
+      "mode": 420,
+      "path": "TODO.txt",
+      "sha256": "d75fb5827fe5996faee376a4750e662510d530898cd95fd69f197edb526c6fff",
+      "source": {
+        "kind": "upstream",
+        "path": "TODO.txt"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander"
+    },
+    {
+      "bytes": 87574,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/__init__.py",
+      "sha256": "f0764ac72fedd158a8d46a5ecf7a4e8a7bcd24ad8d749b55572ccf6aa0e0e740",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/__init__.py"
+      }
+    },
+    {
+      "bytes": 879,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/compat.py",
+      "sha256": "c181b34e6d5fb1fb348de1487f9aa7b2c8fbb77144edff61cf881eaf4437de70",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/compat.py"
+      }
+    },
+    {
+      "bytes": 1984,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/interfaces.py",
+      "sha256": "ce0ee59bbe8435059f904fb3dff5a84dcad9421dd71a38cc58160748cbb8fa1c",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/interfaces.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander/locale"
+    },
+    {
+      "bytes": 3605,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/locale/colander.pot",
+      "sha256": "5c61ac2953700c6aa9f2a3d15ad18b0d93303c62249bbbc0431b73d4b4d36e7f",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/locale/colander.pot"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander/locale/cs"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander/locale/cs/LC_MESSAGES"
+    },
+    {
+      "bytes": 2948,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/locale/cs/LC_MESSAGES/colander.mo",
+      "sha256": "79e96da72d7de96919390a9f86cce434e348a11403bcb35eb693073527cd835d",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/locale/cs/LC_MESSAGES/colander.mo"
+      }
+    },
+    {
+      "bytes": 4356,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/locale/cs/LC_MESSAGES/colander.po",
+      "sha256": "79ae36edb1a18a1739676720546f4996fb701e590ac035e31a9215d25b9ecf68",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/locale/cs/LC_MESSAGES/colander.po"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander/locale/de"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander/locale/de/LC_MESSAGES"
+    },
+    {
+      "bytes": 3666,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/locale/de/LC_MESSAGES/colander.mo",
+      "sha256": "91ab851fde77e4b3e4ae14acdc970bc3562e4462ca85a70a6140b82905dd8409",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/locale/de/LC_MESSAGES/colander.mo"
+      }
+    },
+    {
+      "bytes": 5317,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/locale/de/LC_MESSAGES/colander.po",
+      "sha256": "31980e8f02dd0d8ba31a3512963d9088707939715dfe455b3cf02255357235a6",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/locale/de/LC_MESSAGES/colander.po"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander/locale/el"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander/locale/el/LC_MESSAGES"
+    },
+    {
+      "bytes": 3689,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/locale/el/LC_MESSAGES/colander.mo",
+      "sha256": "cf3d34a378fb93a1debee6b8fc809c91870889d2c1e280164d33324a79fe3dd6",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/locale/el/LC_MESSAGES/colander.mo"
+      }
+    },
+    {
+      "bytes": 5092,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/locale/el/LC_MESSAGES/colander.po",
+      "sha256": "92d8cbe2fe1e15c6223f25555590914fcfd4d31b72990eab0b786d80d418c64a",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/locale/el/LC_MESSAGES/colander.po"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander/locale/es"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander/locale/es/LC_MESSAGES"
+    },
+    {
+      "bytes": 2926,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/locale/es/LC_MESSAGES/colander.mo",
+      "sha256": "eeb7b196091c041b31c1589363247e3f5e4bac2e9dbde14d4eaec66573787c37",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/locale/es/LC_MESSAGES/colander.mo"
+      }
+    },
+    {
+      "bytes": 4561,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/locale/es/LC_MESSAGES/colander.po",
+      "sha256": "29f9a879bd13d9ee74af5c0a8cdc6df878590e2ab7664ff61209072996bd8ffe",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/locale/es/LC_MESSAGES/colander.po"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander/locale/fi"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander/locale/fi/LC_MESSAGES"
+    },
+    {
+      "bytes": 3266,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/locale/fi/LC_MESSAGES/colander.mo",
+      "sha256": "ca5be13cd9e6f694acd181e38c3c95fa4e2738e4caa2c78101af6071bb5d0976",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/locale/fi/LC_MESSAGES/colander.mo"
+      }
+    },
+    {
+      "bytes": 4826,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/locale/fi/LC_MESSAGES/colander.po",
+      "sha256": "058289f67dc04451733ae49941e01e19a2ae09b277620250975fd5d6dfff3242",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/locale/fi/LC_MESSAGES/colander.po"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander/locale/fr"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander/locale/fr/LC_MESSAGES"
+    },
+    {
+      "bytes": 3294,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/locale/fr/LC_MESSAGES/colander.mo",
+      "sha256": "2ce605ada895df479e1f457b409668484443c9a29ad7272a2fd6c239688773f4",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/locale/fr/LC_MESSAGES/colander.mo"
+      }
+    },
+    {
+      "bytes": 4730,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/locale/fr/LC_MESSAGES/colander.po",
+      "sha256": "5e298165823e1797da5011a45a4fbad35d81152c27fb624d17c455516c8d8dfc",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/locale/fr/LC_MESSAGES/colander.po"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander/locale/it"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander/locale/it/LC_MESSAGES"
+    },
+    {
+      "bytes": 3090,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/locale/it/LC_MESSAGES/colander.mo",
+      "sha256": "74621adfddf6a5f57e8bad89515a12091ae6fa90479bfa17f4d3478e5df0ec8b",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/locale/it/LC_MESSAGES/colander.mo"
+      }
+    },
+    {
+      "bytes": 4413,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/locale/it/LC_MESSAGES/colander.po",
+      "sha256": "eaab58b477139ea306f5559d3a6332c4cf95c2c4adeb1e56a9bc0d4b81b28e36",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/locale/it/LC_MESSAGES/colander.po"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander/locale/ja"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander/locale/ja/LC_MESSAGES"
+    },
+    {
+      "bytes": 3679,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/locale/ja/LC_MESSAGES/colander.mo",
+      "sha256": "2e12c62a98ef788162d1a7f6c8b4d752cae09eb15bb68c7c43940ee7e94316aa",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/locale/ja/LC_MESSAGES/colander.mo"
+      }
+    },
+    {
+      "bytes": 5190,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/locale/ja/LC_MESSAGES/colander.po",
+      "sha256": "65dc8331d8dea7ef35b3f2695fa4be3de28323cef55729f4408a94a77ba08c21",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/locale/ja/LC_MESSAGES/colander.po"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander/locale/nl"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander/locale/nl/LC_MESSAGES"
+    },
+    {
+      "bytes": 2928,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/locale/nl/LC_MESSAGES/colander.mo",
+      "sha256": "96c1c55f5ace6b6433a9a4548b4e9b7ecb6902ffd4926a220fd92aabcd3550a9",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/locale/nl/LC_MESSAGES/colander.mo"
+      }
+    },
+    {
+      "bytes": 4806,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/locale/nl/LC_MESSAGES/colander.po",
+      "sha256": "99ebc887af3f28046dd82771c4a383921776b1ad22f71cbe78f7fa70f9930178",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/locale/nl/LC_MESSAGES/colander.po"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander/locale/pl"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander/locale/pl/LC_MESSAGES"
+    },
+    {
+      "bytes": 2949,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/locale/pl/LC_MESSAGES/colander.mo",
+      "sha256": "9807b82d309aa57708fbdc3df77ea39e9cc55949f0454d06221ab2d540206acb",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/locale/pl/LC_MESSAGES/colander.mo"
+      }
+    },
+    {
+      "bytes": 4246,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/locale/pl/LC_MESSAGES/colander.po",
+      "sha256": "f68944fb89797066e1a4b45383a6a25c7738fc6d9f74f44a4ff6252bdae4b541",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/locale/pl/LC_MESSAGES/colander.po"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander/locale/pt"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander/locale/pt/LC_MESSAGES"
+    },
+    {
+      "bytes": 3047,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/locale/pt/LC_MESSAGES/colander.mo",
+      "sha256": "91816e287d35dbfda8cbf026e34e59e316c3ead9eeb2a7189804bc41a63db5dc",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/locale/pt/LC_MESSAGES/colander.mo"
+      }
+    },
+    {
+      "bytes": 4235,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/locale/pt/LC_MESSAGES/colander.po",
+      "sha256": "db10e0d8df9f0aa62514cbc8c3dc5979c6e5843f77f4fa22ee9eb7eaf5d77314",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/locale/pt/LC_MESSAGES/colander.po"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander/locale/pt_BR"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander/locale/pt_BR/LC_MESSAGES"
+    },
+    {
+      "bytes": 3065,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/locale/pt_BR/LC_MESSAGES/colander.mo",
+      "sha256": "0094ed1d506f31d86a9a51cd7d399df402c24104d423664aa11748c02768a210",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/locale/pt_BR/LC_MESSAGES/colander.mo"
+      }
+    },
+    {
+      "bytes": 4561,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/locale/pt_BR/LC_MESSAGES/colander.po",
+      "sha256": "22c031f080ac959f3bc5423c415f6b116babe96af20fc548a1705637ca54e014",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/locale/pt_BR/LC_MESSAGES/colander.po"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander/locale/ro"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander/locale/ro/LC_MESSAGES"
+    },
+    {
+      "bytes": 3324,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/locale/ro/LC_MESSAGES/colander.mo",
+      "sha256": "ece6e3ea49c10067e7fe2705c6addf65f5b7be9f1545345860755a31f6ce3f8c",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/locale/ro/LC_MESSAGES/colander.mo"
+      }
+    },
+    {
+      "bytes": 4853,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/locale/ro/LC_MESSAGES/colander.po",
+      "sha256": "12d6ec4b0403739a01a46e538e87be26f8209c8af94a53463fbb9a293a55de5a",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/locale/ro/LC_MESSAGES/colander.po"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander/locale/ru"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander/locale/ru/LC_MESSAGES"
+    },
+    {
+      "bytes": 3352,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/locale/ru/LC_MESSAGES/colander.mo",
+      "sha256": "9cad0330044e7095f75c4e8ecea1d77da70bd90d71d2bf6332a17a8eff64d864",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/locale/ru/LC_MESSAGES/colander.mo"
+      }
+    },
+    {
+      "bytes": 5150,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/locale/ru/LC_MESSAGES/colander.po",
+      "sha256": "f7a601f073ec21d2f6a3b8f585edbffd47503d6fcabbfb0abbb12e8f7e92304c",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/locale/ru/LC_MESSAGES/colander.po"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander/locale/sv"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander/locale/sv/LC_MESSAGES"
+    },
+    {
+      "bytes": 2829,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/locale/sv/LC_MESSAGES/colander.mo",
+      "sha256": "665a14a65ba2e3da23c916568b165b066a17c1018c35d0a57afbccea1708b950",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/locale/sv/LC_MESSAGES/colander.mo"
+      }
+    },
+    {
+      "bytes": 4246,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/locale/sv/LC_MESSAGES/colander.po",
+      "sha256": "a3859ad4c86dac042e0fdba0f71db83660320217219317f46a1038e9cce78f27",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/locale/sv/LC_MESSAGES/colander.po"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander/locale/zh_Hans"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander/locale/zh_Hans/LC_MESSAGES"
+    },
+    {
+      "bytes": 2714,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/locale/zh_Hans/LC_MESSAGES/colander.mo",
+      "sha256": "79c6840ee3739201bacfefa7047cba78ba25b543d8d1575a5c9a68cf2bafb47c",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/locale/zh_Hans/LC_MESSAGES/colander.mo"
+      }
+    },
+    {
+      "bytes": 4058,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/locale/zh_Hans/LC_MESSAGES/colander.po",
+      "sha256": "b8111745a4e221bf2fb739798240db54204957a3f7549b4ab64ffd2f09d610a3",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/locale/zh_Hans/LC_MESSAGES/colander.po"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander/locale/zh_Hant"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander/locale/zh_Hant/LC_MESSAGES"
+    },
+    {
+      "bytes": 2545,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/locale/zh_Hant/LC_MESSAGES/colander.mo",
+      "sha256": "084def7f4f669cac6a0cc9b0e8b815126b14648530a4ae4b64e79475bf251529",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/locale/zh_Hant/LC_MESSAGES/colander.mo"
+      }
+    },
+    {
+      "bytes": 4690,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/locale/zh_Hant/LC_MESSAGES/colander.po",
+      "sha256": "7b62b23125489b34223d9e5a2234ccf938a8917567319b60a693c96e43b51e50",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/locale/zh_Hant/LC_MESSAGES/colander.po"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "colander/tests"
+    },
+    {
+      "bytes": 22,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/tests/__init__.py",
+      "sha256": "d762e6c639736f96c3e46223c1ea1fcb540cf1a9c489e12d274e7f83812aaba7",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/tests/__init__.py"
+      }
+    },
+    {
+      "bytes": 142790,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/tests/test_colander.py",
+      "sha256": "10ffa331dba767cbfebc850157289d25bfc5df2f42b60768a8f43e51e7bef9a8",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/tests/test_colander.py"
+      }
+    },
+    {
+      "bytes": 59,
+      "kind": "file",
+      "mode": 420,
+      "path": "colander/tests/test_interfaces.py",
+      "sha256": "8fa80c02fb4ebff5c791f0256c330b39f17a654f5b5c0b0ffbaa5a7e51e0bb48",
+      "source": {
+        "kind": "upstream",
+        "path": "colander/tests/test_interfaces.py"
+      }
+    },
+    {
+      "bytes": 4041,
+      "kind": "file",
+      "mode": 420,
+      "path": "contributing.md",
+      "sha256": "d493877b94de719b399d1c848408e6deaabfc7009b79310d887422ff94f5d7de",
+      "source": {
+        "kind": "upstream",
+        "path": "contributing.md"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "docs"
+    },
+    {
+      "bytes": 17,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/.gitignore",
+      "sha256": "fd3ba6851e0a262df09d815b1b02eeeccf28e5e91efb91c96e067c18e2673a85",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/.gitignore"
+      }
+    },
+    {
+      "bytes": 2701,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/Makefile",
+      "sha256": "64215a1d9b8449a975e886f03eed86d31c41246634558c29174fdeb200fef6e8",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/Makefile"
+      }
+    },
+    {
+      "bytes": 3486,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/api.rst",
+      "sha256": "d4982196a2e1f8277e807747ad3f0a53f58827c49992fb8d8486dbba5c0bff95",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/api.rst"
+      }
+    },
+    {
+      "bytes": 40858,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/basics.rst",
+      "sha256": "7c8fcf21a7963d14f9db008ed1ba4fe6169caeca4c033c0db0713186640d4319",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/basics.rst"
+      }
+    },
+    {
+      "bytes": 10289,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/binding.rst",
+      "sha256": "2bf12dd30de88e5481232ac637467ed360f709e46ecb0b0b26c3b91a97fb016b",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/binding.rst"
+      }
+    },
+    {
+      "bytes": 74,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/changes.rst",
+      "sha256": "0055fdcd8fc15da7c51f27dbdd6197da879912dd3040b11d4de2b787be38cec1",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/changes.rst"
+      }
+    },
+    {
+      "bytes": 5901,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/conf.py",
+      "sha256": "98a5031a46e68f5f49bc6b67bf8111f4f7a79c9a9b3210c58443f8a61255678e",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/conf.py"
+      }
+    },
+    {
+      "bytes": 7022,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/extending.rst",
+      "sha256": "db7b8bfc0372b995869474712e22bbbc98c6e076e09f05b766c5b0269a8a9c76",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/extending.rst"
+      }
+    },
+    {
+      "bytes": 1824,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/glossary.rst",
+      "sha256": "c1dfa9a92b66bd0f7c259922b16f7bc77f64de54630b107b7a0c250c66d5623e",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/glossary.rst"
+      }
+    },
+    {
+      "bytes": 1689,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/index.rst",
+      "sha256": "74bf2fff71ff41bc52153dc53865c98da3f375aa7f8525ede834d6dcd9c073e8",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/index.rst"
+      }
+    },
+    {
+      "bytes": 159,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/interfaces.rst",
+      "sha256": "21b8a41ab92c457049c342b95d09c3875986809a70d993af81eec2e3c24d62b4",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/interfaces.rst"
+      }
+    },
+    {
+      "bytes": 3454,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/manipulation.rst",
+      "sha256": "2a429506d697b51a9a105b5005a3e5a477e70ca0e485f55a89679af63a814c71",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/manipulation.rst"
+      }
+    },
+    {
+      "bytes": 14666,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/null_and_drop.rst",
+      "sha256": "4521a4a66364014220861dd98691546502273c8b9fd05eed6aec9ca9391074e9",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/null_and_drop.rst"
+      }
+    },
+    {
+      "bytes": 11,
+      "kind": "file",
+      "mode": 420,
+      "path": "rtd.txt",
+      "sha256": "a77981f521aeffa6e0f203ca1dacc36b45304c261ed0ea1cc207db3d04f35537",
+      "source": {
+        "kind": "upstream",
+        "path": "rtd.txt"
+      }
+    },
+    {
+      "bytes": 660,
+      "kind": "file",
+      "mode": 420,
+      "path": "setup.cfg",
+      "sha256": "d14cb1ed62002b8e6f07e426634e579d53bfcc5f51f4c1e4d3794e48b818d55a",
+      "source": {
+        "kind": "upstream",
+        "path": "setup.cfg"
+      }
+    },
+    {
+      "bytes": 2512,
+      "kind": "file",
+      "mode": 420,
+      "path": "setup.py",
+      "sha256": "5a792c6da7d7660627ab04574da0d945a4619b714ad183dcfb043c7ac2ea0df4",
+      "source": {
+        "kind": "upstream",
+        "path": "setup.py"
+      }
+    },
+    {
+      "bytes": 1461,
+      "kind": "file",
+      "mode": 420,
+      "path": "tox.ini",
+      "sha256": "f78f3e43d20c61dc639f38cafa280425ab2e3561e66ef83606de912f80705004",
+      "source": {
+        "kind": "upstream",
+        "path": "tox.ini"
+      }
+    }
+  ],
+  "overlay_sha256": "272adeccafe73e7009d51f2ec2be9871db5e0eb14239f483ea429be26c3c6402",
+  "upstream": {
+    "kind": "beyondswe",
+    "repository": "https://github.com/pylons/colander",
+    "revision": "4ce765912c3caccfe749d9cb45dbd8e3f1fe3f02",
+    "source_root_key": "tri80-beyondswe-pylons_colander_pr305-cp1"
+  },
+  "workspace_tree_sha256": "c9f7239ffbc4a96e41036de38a85533cf3560f4009f128e4f925747ae4f80a5c"
+}

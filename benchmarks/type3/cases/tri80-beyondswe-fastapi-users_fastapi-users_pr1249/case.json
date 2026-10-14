@@ -1,0 +1,10 @@
+{
+  "adapter_kind": "beyondswe_harbor",
+  "case_id": "tri80-beyondswe-fastapi-users_fastapi-users_pr1249",
+  "episode_origin": "official_problem_start",
+  "harness_start_mode": "bootstrap_contract_start",
+  "official_task_id": "beyondswe:fastapi-users_fastapi-users_pr1249",
+  "task_scope": "official_full_task",
+  "task_sequence_ref": "task_sequence.json",
+  "task_sequence_sha256": "26c3495b3a0301e6ddae8610868c71d23ebcbdd0650c385cf1b4c25ca4c2f1f9"
+}

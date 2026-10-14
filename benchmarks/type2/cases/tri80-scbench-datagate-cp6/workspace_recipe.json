@@ -1,0 +1,33 @@
+{
+  "case_id": "tri80-scbench-datagate-cp6",
+  "files": [
+    {
+      "bytes": 34270,
+      "kind": "file",
+      "mode": 420,
+      "path": "datagate.py",
+      "sha256": "5b1d95b3634903cf43745c7c0e311e2e096766fa8648405a3172f1c744808620",
+      "source": {
+        "blob": "5b1d95b3634903cf43745c7c0e311e2e096766fa8648405a3172f1c744808620",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 264,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements.txt",
+      "sha256": "a2dfb9b967dae7cbf335f1b99fd2c55102be35088537c8468269f036ab26ab36",
+      "source": {
+        "blob": "a2dfb9b967dae7cbf335f1b99fd2c55102be35088537c8468269f036ab26ab36",
+        "kind": "overlay"
+      }
+    }
+  ],
+  "overlay_sha256": "af8c0d6852ffc0d3e4db49a599d759c03582ae41eb2a7454e9bc2adc58990d13",
+  "upstream": {
+    "kind": "scbench",
+    "source_root_key": null
+  },
+  "workspace_tree_sha256": "c63a6b28d75eb87fbec83a989a2bb39b3848b2d236ad82bad4b1836b7c2c0ce9"
+}

@@ -1,0 +1,6 @@
+{
+  "recipe": "workspace_recipe.json",
+  "recipe_sha256": "0727290f44399e44f5a039a21d205f7fd86d537b0b5837500e4953234bf16620",
+  "relative_path_under_assets_root": "type2/workspaces/tri80-scbench-sheeteval-cp7/workspace.tar.gz",
+  "workspace_tree_sha256": "d7c308412d2bd45b230fc9ad2a08c054450a8989afe23af36359e4a2136d0284"
+}

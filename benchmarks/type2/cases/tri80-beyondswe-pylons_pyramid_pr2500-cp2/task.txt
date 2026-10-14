@@ -1,0 +1,12 @@
+## Task: Restrict CSRF token acceptance to secure sources
+
+The framework's CSRF protection currently accepts tokens from overly permissive sources. Tokens supplied via URL query string parameters can leak through server logs, browser history, and the `Referer` header, which poses a security risk.
+
+Update the CSRF token retrieval logic used by views protected with `require_csrf=True` so that tokens are accepted **only** from secure sources:
+
+- A request header (e.g., `X-CSRF-Token`), or
+- The request body (form parameters).
+
+A token supplied via the URL query string must **never** be accepted, even if it matches the expected session token. A request whose only matching token arrives via the query string must be rejected with `BadCSRFToken`.
+
+Behavior for tokens supplied via headers or the request body must remain unchanged: a valid token from either of those sources must continue to pass validation, and a missing or mismatched token from those sources must continue to raise `BadCSRFToken`.

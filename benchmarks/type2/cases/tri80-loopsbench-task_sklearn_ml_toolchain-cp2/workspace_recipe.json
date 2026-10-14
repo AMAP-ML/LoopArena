@@ -1,0 +1,386 @@
+{
+  "case_id": "tri80-loopsbench-task_sklearn_ml_toolchain-cp2",
+  "files": [
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "experiments"
+    },
+    {
+      "bytes": 3506,
+      "kind": "file",
+      "mode": 420,
+      "path": "experiments/sklearn_exp.py",
+      "sha256": "56761588485dbe061ee6bfa20e80fc71cdfe3a3340cd94010b5df90ddcd73543",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_sklearn_ml_toolchain/gold_patches/sklearn.diff",
+        "patch_sha256": "91ab3da6af634649047c1a5756830b66252bcfe5baeda5212d44f946f526465a",
+        "path": "experiments/sklearn_exp.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "minilearn"
+    },
+    {
+      "bytes": 36,
+      "kind": "file",
+      "mode": 420,
+      "path": "minilearn/__init__.py",
+      "sha256": "8eba71a7514d704b8cbac17cf6353cd784763a8093455cea1df420193bdce932",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_sklearn_ml_toolchain/base/minilearn/__init__.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "minilearn/experiments"
+    },
+    {
+      "bytes": 261,
+      "kind": "file",
+      "mode": 420,
+      "path": "minilearn/experiments/sklearn_experiment.py",
+      "sha256": "c45ada5a9b6cd0af71cd5229fb5c61d28b89c8216474e8f86849f0ae376b174e",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_sklearn_ml_toolchain/gold_patches/sklearn.diff",
+        "patch_sha256": "91ab3da6af634649047c1a5756830b66252bcfe5baeda5212d44f946f526465a",
+        "path": "minilearn/experiments/sklearn_experiment.py"
+      }
+    },
+    {
+      "bytes": 1027,
+      "kind": "file",
+      "mode": 420,
+      "path": "minilearn/utils.py",
+      "sha256": "ee692b4a43af3f62924bee8ed75263e89e20c200be884a4f2bed2f3a07ded075",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_sklearn_ml_toolchain/base/minilearn/utils.py"
+      }
+    },
+    {
+      "bytes": 3070,
+      "kind": "file",
+      "mode": 420,
+      "path": "module_dag.yaml",
+      "sha256": "e3da77221d057291344fea940d09556e26ecb217e4e89ae0b25881a0bc90c1d0",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_sklearn_ml_toolchain/module_dag.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "requirements"
+    },
+    {
+      "bytes": 24,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements.txt",
+      "sha256": "6bd31e587c06276bf231cec25395b5d4a0b1e38c4d2b00813b2dd96aad14f17a",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_sklearn_ml_toolchain/base/requirements.txt"
+      }
+    },
+    {
+      "bytes": 2678,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/auto_sklearn.yaml",
+      "sha256": "a66d6750c67e4a8f29372373f0fb5de0ac4bb96df0630e32da7d1a530a322286",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_sklearn_ml_toolchain/requirements/auto_sklearn.yaml"
+      }
+    },
+    {
+      "bytes": 1431,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/imbalanced_learn.yaml",
+      "sha256": "295fd3385418ea6a7469aea3bb9fa15336299c5e0da068e78a81a8b9f4389b48",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_sklearn_ml_toolchain/requirements/imbalanced_learn.yaml"
+      }
+    },
+    {
+      "bytes": 1641,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/sklearn.yaml",
+      "sha256": "09eaa629c2dac092c97f9ceb847337459c339f05bef62a153ef7dd6b4ba71445",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_sklearn_ml_toolchain/requirements/sklearn.yaml"
+      }
+    },
+    {
+      "bytes": 605,
+      "kind": "file",
+      "mode": 493,
+      "path": "run-tests.sh",
+      "sha256": "b526e284106f3bb62165e89708addf5145796f9420171b57415a5868f7c3f1d4",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_sklearn_ml_toolchain/run-tests.sh"
+      }
+    },
+    {
+      "bytes": 79,
+      "kind": "file",
+      "mode": 493,
+      "path": "run.sh",
+      "sha256": "5ab9a5605a20709018d3d0a22c6021344157a510880b35577ea58d8b684eacf1",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_sklearn_ml_toolchain/base/run.sh"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "src"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "src/sklearn"
+    },
+    {
+      "bytes": 429,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/sklearn/__init__.py",
+      "sha256": "70d05ec794807e9a25bcdf2d6e79acf43f94bdc49316033a49a62ecfd9bea535",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_sklearn_ml_toolchain/gold_patches/sklearn.diff",
+        "patch_sha256": "91ab3da6af634649047c1a5756830b66252bcfe5baeda5212d44f946f526465a",
+        "path": "src/sklearn/__init__.py"
+      }
+    },
+    {
+      "bytes": 3913,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/sklearn/base.py",
+      "sha256": "b5c4d007d78504acc9b1bbd896457e53bed418f442419873b8d9ec124d8ebb34",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_sklearn_ml_toolchain/gold_patches/sklearn.diff",
+        "patch_sha256": "91ab3da6af634649047c1a5756830b66252bcfe5baeda5212d44f946f526465a",
+        "path": "src/sklearn/base.py"
+      }
+    },
+    {
+      "bytes": 4952,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/sklearn/decomposition.py",
+      "sha256": "11554d5e1d9163410bbf4cff12206c68ef33eef13b7cc4bde7e3d87d382f6d74",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_sklearn_ml_toolchain/gold_patches/sklearn.diff",
+        "patch_sha256": "91ab3da6af634649047c1a5756830b66252bcfe5baeda5212d44f946f526465a",
+        "path": "src/sklearn/decomposition.py"
+      }
+    },
+    {
+      "bytes": 8717,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/sklearn/ensemble.py",
+      "sha256": "9b4f04231e44be1781560acddc191712a375deb8c5de2d756fa1c8cd1a412b9a",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_sklearn_ml_toolchain/gold_patches/sklearn.diff",
+        "patch_sha256": "91ab3da6af634649047c1a5756830b66252bcfe5baeda5212d44f946f526465a",
+        "path": "src/sklearn/ensemble.py"
+      }
+    },
+    {
+      "bytes": 7836,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/sklearn/linear_model.py",
+      "sha256": "bf76fc0c49f11282e8a040aae4dc10d744a28bf8319081ce4756fd9157a1f888",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_sklearn_ml_toolchain/gold_patches/sklearn.diff",
+        "patch_sha256": "91ab3da6af634649047c1a5756830b66252bcfe5baeda5212d44f946f526465a",
+        "path": "src/sklearn/linear_model.py"
+      }
+    },
+    {
+      "bytes": 4842,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/sklearn/metrics.py",
+      "sha256": "1fe8658dcb6e4d6d19f2c86fce2d8436748988ae0c6b1fbeeb3952833797ff0d",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_sklearn_ml_toolchain/gold_patches/sklearn.diff",
+        "patch_sha256": "91ab3da6af634649047c1a5756830b66252bcfe5baeda5212d44f946f526465a",
+        "path": "src/sklearn/metrics.py"
+      }
+    },
+    {
+      "bytes": 5411,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/sklearn/model_selection.py",
+      "sha256": "f0ad358ab92b635cb191ad395018076d002f63696f381cf5b3e17028f79fcf99",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_sklearn_ml_toolchain/gold_patches/sklearn.diff",
+        "patch_sha256": "91ab3da6af634649047c1a5756830b66252bcfe5baeda5212d44f946f526465a",
+        "path": "src/sklearn/model_selection.py"
+      }
+    },
+    {
+      "bytes": 4060,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/sklearn/pipeline.py",
+      "sha256": "1eaca40944407a135c539aaaf8c67388b005719287838bb55ff4068ac78bc46c",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_sklearn_ml_toolchain/gold_patches/sklearn.diff",
+        "patch_sha256": "91ab3da6af634649047c1a5756830b66252bcfe5baeda5212d44f946f526465a",
+        "path": "src/sklearn/pipeline.py"
+      }
+    },
+    {
+      "bytes": 7488,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/sklearn/preprocessing.py",
+      "sha256": "8e4736e79a55e0b9a5b7bd279a029e7fa1899abd10078c60dba988f3f4d167f9",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_sklearn_ml_toolchain/gold_patches/sklearn.diff",
+        "patch_sha256": "91ab3da6af634649047c1a5756830b66252bcfe5baeda5212d44f946f526465a",
+        "path": "src/sklearn/preprocessing.py"
+      }
+    },
+    {
+      "bytes": 5442,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/sklearn/svm.py",
+      "sha256": "a3c43edeabd85ea1cf98d301d52a08f23b6b4e6bfbaa671f0137523d3a73d5fc",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_sklearn_ml_toolchain/gold_patches/sklearn.diff",
+        "patch_sha256": "91ab3da6af634649047c1a5756830b66252bcfe5baeda5212d44f946f526465a",
+        "path": "src/sklearn/svm.py"
+      }
+    },
+    {
+      "bytes": 7474,
+      "kind": "file",
+      "mode": 420,
+      "path": "src/sklearn/tree.py",
+      "sha256": "a6657b75342230af8bcd5be66de49788042d7cb3f29eb7a8695ff2b048215d72",
+      "source": {
+        "kind": "patch-added-file",
+        "patch": "tasks/task_sklearn_ml_toolchain/gold_patches/sklearn.diff",
+        "patch_sha256": "91ab3da6af634649047c1a5756830b66252bcfe5baeda5212d44f946f526465a",
+        "path": "src/sklearn/tree.py"
+      }
+    },
+    {
+      "bytes": 1437,
+      "kind": "file",
+      "mode": 420,
+      "path": "task.yaml",
+      "sha256": "6a54f153ad941eed77ce355355962df3110d2eab5d5c3ac1efa595cc7a344c9d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_sklearn_ml_toolchain/task.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/auto_sklearn"
+    },
+    {
+      "bytes": 1836,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/auto_sklearn/test_outputs.py",
+      "sha256": "fe70acfbba7eed1a0a803e746c857268b4c424244a649027ed7a959327b10e92",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_sklearn_ml_toolchain/tests/auto_sklearn/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/imbalanced_learn"
+    },
+    {
+      "bytes": 3338,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/imbalanced_learn/test_outputs.py",
+      "sha256": "ab158620f7e282181af26f650e476b683dac21adf3d35d3cedec711404c8c570",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_sklearn_ml_toolchain/tests/imbalanced_learn/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/sklearn"
+    },
+    {
+      "bytes": 3751,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/sklearn/test_outputs.py",
+      "sha256": "6d5c4aaea6d621721f3c574518c3a4b4ac940b773b93e519ff59e5409d7099b1",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_sklearn_ml_toolchain/tests/sklearn/test_outputs.py"
+      }
+    },
+    {
+      "bytes": 758,
+      "kind": "file",
+      "mode": 420,
+      "path": "unit_dag.json",
+      "sha256": "1671e1866095134656ae806b7d11e3372d429c4d1bb87a69f23bdaad5ebddb08",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_sklearn_ml_toolchain/unit_dag.json"
+      }
+    }
+  ],
+  "overlay_sha256": "272adeccafe73e7009d51f2ec2be9871db5e0eb14239f483ea429be26c3c6402",
+  "upstream": {
+    "kind": "loopsbench",
+    "revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+    "source_root_key": "loopsbench",
+    "task": "task_sklearn_ml_toolchain"
+  },
+  "workspace_tree_sha256": "a748813cdeeaf1f2427d7ac3adc01d53792633308a290476a713fcd0d83746b0"
+}

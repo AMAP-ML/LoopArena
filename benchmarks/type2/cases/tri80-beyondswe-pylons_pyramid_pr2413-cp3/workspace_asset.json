@@ -1,0 +1,6 @@
+{
+  "recipe": "workspace_recipe.json",
+  "recipe_sha256": "2f46df56d1ce16ee0a64362bfd105952a5ca305142c679fa8c09fa230c44f6a0",
+  "relative_path_under_assets_root": "type2/workspaces/tri80-beyondswe-pylons_pyramid_pr2413-cp3/workspace.tar.gz",
+  "workspace_tree_sha256": "44f53c973f2a88eccbc18e52a21929e08499804292a205edbc2572824c70cf55"
+}

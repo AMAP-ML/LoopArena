@@ -1,0 +1,20 @@
+## Task
+
+When reducing a sparse matrix constant with a product over its entries, the library must compute the result correctly and without relying on any deprecated SciPy sparse-matrix APIs.
+
+### Background
+
+SciPy has deprecated the `.A` attribute on sparse matrices (scheduled for removal in SciPy 1.14.0). Code paths that touch sparse matrix constants must avoid this attribute so that users see no `DeprecationWarning` today and no `AttributeError` once the attribute is removed. The library should handle sparse matrices without triggering deprecation warnings to ensure compatibility with future SciPy versions.
+
+### Requirements
+
+- Computing the product over the entries of a sparse matrix constant must produce correct results:
+  - Entries that are implicitly zero in the sparse representation must be treated as zeros in the product (i.e., implicit-zero semantics must be respected).
+  - Reducing over a selected axis (row-wise or column-wise) must yield the correct per-row or per-column products.
+  - When `keepdims` is requested, the reduced expression must retain the reduced dimension with size 1; otherwise that dimension is dropped.
+- The implementation must not access the deprecated sparse-matrix `.A` attribute anywhere in this code path.
+- Running the existing reduction functionality over sparse inputs must not emit a `DeprecationWarning` related to sparse matrix attribute access.
+
+### Acceptance
+
+Products over sparse matrix constants (full reduction, axis-selected reduction, and with `keepdims` both enabled and disabled) return values matching the equivalent dense computation, and no deprecation warnings are raised in the process.

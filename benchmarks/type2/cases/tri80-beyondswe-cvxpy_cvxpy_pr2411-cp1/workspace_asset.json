@@ -1,0 +1,6 @@
+{
+  "recipe": "workspace_recipe.json",
+  "recipe_sha256": "1a4a08f97d36cbc0d8da5f838b0b67348c93470085c2c6e5c9fea4ee622d318c",
+  "relative_path_under_assets_root": "type2/workspaces/tri80-beyondswe-cvxpy_cvxpy_pr2411-cp1/workspace.tar.gz",
+  "workspace_tree_sha256": "14f0ed4298ea96e47eb2cf8da5a827314a77af788e469889253483d638913c93"
+}

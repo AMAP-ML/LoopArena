@@ -1,0 +1,44 @@
+{
+  "case_id": "tri80-scbench-migrate_configs-cp2",
+  "files": [
+    {
+      "bytes": 180,
+      "kind": "file",
+      "mode": 420,
+      "path": "README.md",
+      "sha256": "b8b98df872e8b41af56fc6dec389c2a0a43c30a110657daf0d160abd2c43532f",
+      "source": {
+        "blob": "b8b98df872e8b41af56fc6dec389c2a0a43c30a110657daf0d160abd2c43532f",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 11488,
+      "kind": "file",
+      "mode": 420,
+      "path": "migrate.py",
+      "sha256": "148ea7486ef03c6af0740bfa9a75e1930d927ed034299abfdfb8f7291936bcc4",
+      "source": {
+        "blob": "148ea7486ef03c6af0740bfa9a75e1930d927ed034299abfdfb8f7291936bcc4",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 182,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements.txt",
+      "sha256": "612e74c692b239a612b6030e80e6ab53de2e63d671d2df0905df36dae8e09c99",
+      "source": {
+        "blob": "612e74c692b239a612b6030e80e6ab53de2e63d671d2df0905df36dae8e09c99",
+        "kind": "overlay"
+      }
+    }
+  ],
+  "overlay_sha256": "f06ee261b31f6d845f3c6bddff6aee902ff6d79ec4bbd5c4cd5b8e6ddd67e5e5",
+  "upstream": {
+    "kind": "scbench",
+    "source_root_key": null
+  },
+  "workspace_tree_sha256": "c5177205d6b127eb7f09f2a1bfe4d89f4c19f648a0684e8f7f0f104cdb7c017f"
+}

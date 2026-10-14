@@ -1,0 +1,10 @@
+{
+  "adapter_kind": "beyondswe_harbor",
+  "case_id": "tri80-beyondswe-encode_django-rest-framework_pr9514",
+  "episode_origin": "official_problem_start",
+  "harness_start_mode": "bootstrap_contract_start",
+  "official_task_id": "beyondswe:encode_django-rest-framework_pr9514",
+  "task_scope": "official_full_task",
+  "task_sequence_ref": "task_sequence.json",
+  "task_sequence_sha256": "d85225ddb015d7b1c17aea82fee23ac72322f3f82ad73b9b0463ca281b43c12f"
+}

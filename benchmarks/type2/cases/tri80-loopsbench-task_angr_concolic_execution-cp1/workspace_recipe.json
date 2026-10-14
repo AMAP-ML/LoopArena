@@ -1,0 +1,381 @@
+{
+  "case_id": "tri80-loopsbench-task_angr_concolic_execution-cp1",
+  "files": [
+    {
+      "bytes": 306,
+      "kind": "file",
+      "mode": 420,
+      "path": "Makefile",
+      "sha256": "f2fe57b6a392310f4f437d17c13553ef2938065b3678a6e65c11f6393a7cce20",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_angr_concolic_execution/base/Makefile"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "angr_analysis"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "angr_analysis/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_angr_concolic_execution/base/angr_analysis/__init__.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "cozy_lite"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "cozy_lite/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_angr_concolic_execution/base/angr_analysis/__init__.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "driller_lite"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "driller_lite/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_angr_concolic_execution/base/angr_analysis/__init__.py"
+      }
+    },
+    {
+      "bytes": 3818,
+      "kind": "file",
+      "mode": 420,
+      "path": "module_dag.yaml",
+      "sha256": "bc000500f494a1301494545fcdd6eb44a827422113299b8246d135fcca263d17",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_angr_concolic_execution/module_dag.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "requirements"
+    },
+    {
+      "bytes": 45,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements.txt",
+      "sha256": "a5b2266cb36485b0ad6eda0d28f87ba65cc7cc548e5b72daf6fb314b5bc8c482",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_angr_concolic_execution/base/requirements.txt"
+      }
+    },
+    {
+      "bytes": 2762,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/angr.yaml",
+      "sha256": "f85b87fdf6d4b4894621f667da4897c0c72b61eb30f4a4e34ed6039bc5b9e0ad",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_angr_concolic_execution/requirements/angr.yaml"
+      }
+    },
+    {
+      "bytes": 4461,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/cozy.yaml",
+      "sha256": "b4cf0463a344a39a088d1dfa186b9aae52471c9ac2b57261263bd527affeea78",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_angr_concolic_execution/requirements/cozy.yaml"
+      }
+    },
+    {
+      "bytes": 3860,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/driller.yaml",
+      "sha256": "28eba296b8858cff99ef894feda49e46a002f79b88dd0d142223ba8f1d09b437",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_angr_concolic_execution/requirements/driller.yaml"
+      }
+    },
+    {
+      "bytes": 5728,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/taint_analysis.yaml",
+      "sha256": "4c47e41edbe33da7344c6a6829483935dd61ff8f27606000b5cefeb529e06146",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_angr_concolic_execution/requirements/taint_analysis.yaml"
+      }
+    },
+    {
+      "bytes": 6584,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/vuln_detector.yaml",
+      "sha256": "0b1fa74cd7f1ea51756d596db9f648180600535eec4e3a05e12934da47df2582",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_angr_concolic_execution/requirements/vuln_detector.yaml"
+      }
+    },
+    {
+      "bytes": 948,
+      "kind": "file",
+      "mode": 493,
+      "path": "run-tests.sh",
+      "sha256": "8a95db929e0349c87923d869394b782c5f3b7c51e40483d0b0290cbd5c3df827",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_angr_concolic_execution/run-tests.sh"
+      }
+    },
+    {
+      "bytes": 69,
+      "kind": "file",
+      "mode": 493,
+      "path": "run.sh",
+      "sha256": "af9b6625e217d536d722dfc582f707293fa5a07c121cfbbd5db5c034380b8348",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_angr_concolic_execution/base/run.sh"
+      }
+    },
+    {
+      "bytes": 2010,
+      "kind": "file",
+      "mode": 420,
+      "path": "task.yaml",
+      "sha256": "d5e0d9e802feb1db4e0a57de2bf21473cb502410d55183b43120ef74dc78557a",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_angr_concolic_execution/task.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "test_binaries"
+    },
+    {
+      "bytes": 18248,
+      "kind": "file",
+      "mode": 493,
+      "path": "test_binaries/cozy_original",
+      "sha256": "bca6376444f8412d05b08d5b3cead9220762f542f399b08583a69e7dd097b4cf",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_angr_concolic_execution/base/test_binaries/cozy_original"
+      }
+    },
+    {
+      "bytes": 18272,
+      "kind": "file",
+      "mode": 493,
+      "path": "test_binaries/cozy_patched",
+      "sha256": "4415d58bdb317528acb4dd3441de145f6b206bf32b732d3689a4333536d6d1b2",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_angr_concolic_execution/base/test_binaries/cozy_patched"
+      }
+    },
+    {
+      "bytes": 18048,
+      "kind": "file",
+      "mode": 493,
+      "path": "test_binaries/driller_target",
+      "sha256": "9bd330db2081442daf3bed5d2ece323a81e473a51526e6bca40847954710b641",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_angr_concolic_execution/base/test_binaries/driller_target"
+      }
+    },
+    {
+      "bytes": 18576,
+      "kind": "file",
+      "mode": 493,
+      "path": "test_binaries/simple_analysis",
+      "sha256": "d75503ba5b8f99e1300754f70e16b1f51e619701d9723c3a46ad6e1a537fc261",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_angr_concolic_execution/base/test_binaries/simple_analysis"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "test_binaries/src"
+    },
+    {
+      "bytes": 948,
+      "kind": "file",
+      "mode": 420,
+      "path": "test_binaries/src/cozy_original.c",
+      "sha256": "8aab5b66767408291c0c9c99852865474030cce1227e49f319d145082aba5336",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_angr_concolic_execution/base/test_binaries/src/cozy_original.c"
+      }
+    },
+    {
+      "bytes": 1224,
+      "kind": "file",
+      "mode": 420,
+      "path": "test_binaries/src/cozy_patched.c",
+      "sha256": "a196f90996632fd3bf7b120fb50138f37a86efbfe6c7f64022c8e11ea09ac0b4",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_angr_concolic_execution/base/test_binaries/src/cozy_patched.c"
+      }
+    },
+    {
+      "bytes": 1589,
+      "kind": "file",
+      "mode": 420,
+      "path": "test_binaries/src/driller_target.c",
+      "sha256": "5ff41b4998a4457daaba3c8494f1699c83a29acfd02174cc6e3e83fa7566d60e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_angr_concolic_execution/base/test_binaries/src/driller_target.c"
+      }
+    },
+    {
+      "bytes": 1245,
+      "kind": "file",
+      "mode": 420,
+      "path": "test_binaries/src/simple_analysis.c",
+      "sha256": "132029932bb82186ebd13cdba57195c22d63ef012519f87bcae70f0b0b7b221b",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_angr_concolic_execution/base/test_binaries/src/simple_analysis.c"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/angr"
+    },
+    {
+      "bytes": 1905,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/angr/test_outputs.py",
+      "sha256": "721d17377a6cbf2ab911429178be16b2cd817c87ad5bf43acaba3806c8e05390",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_angr_concolic_execution/tests/angr/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/cozy"
+    },
+    {
+      "bytes": 2337,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/cozy/test_outputs.py",
+      "sha256": "3651ac90451c8dddb6bf304bbae48efa89af76f108840b0deeeaf4b96d080f00",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_angr_concolic_execution/tests/cozy/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/driller"
+    },
+    {
+      "bytes": 2099,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/driller/test_outputs.py",
+      "sha256": "381f515beca39dbf2703081037242a94ba753c07d90ccdb9c21a1ac7acac1f26",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_angr_concolic_execution/tests/driller/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/taint_analysis"
+    },
+    {
+      "bytes": 2006,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/taint_analysis/test_outputs.py",
+      "sha256": "95c8c42ec876e2bd1aed227a38d315e6b7d58b2fb118d533b48a1cf55ab27931",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_angr_concolic_execution/tests/taint_analysis/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/vuln_detector"
+    },
+    {
+      "bytes": 2008,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/vuln_detector/test_outputs.py",
+      "sha256": "565ef6ed8b21cb33ced74bed0d75ca123a4ba21f5d1835818d25f27c322ea52f",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_angr_concolic_execution/tests/vuln_detector/test_outputs.py"
+      }
+    },
+    {
+      "bytes": 1126,
+      "kind": "file",
+      "mode": 420,
+      "path": "unit_dag.json",
+      "sha256": "78ba85ccffa81854786a84150cd14608a38dcbcd184789c290434d7504687d9e",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_angr_concolic_execution/unit_dag.json"
+      }
+    }
+  ],
+  "overlay_sha256": "272adeccafe73e7009d51f2ec2be9871db5e0eb14239f483ea429be26c3c6402",
+  "upstream": {
+    "kind": "loopsbench",
+    "revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+    "source_root_key": "loopsbench",
+    "task": "task_angr_concolic_execution"
+  },
+  "workspace_tree_sha256": "c1c90a84dafaa1ffa0578266d55967e5be910135c683f382535cf7651b8c9b92"
+}

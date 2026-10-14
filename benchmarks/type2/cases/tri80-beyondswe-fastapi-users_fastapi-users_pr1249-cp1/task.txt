@@ -1,0 +1,21 @@
+# Make user schemas round-trip correctly under Pydantic V2
+
+## Context
+This library is being updated to work when `pydantic>=2.0` is installed. Right now, code that relies on Pydantic V1 APIs crashes at runtime in the newer environment.
+
+## Task
+Focus on the user schema layer. Make the following work correctly when `pydantic>=2.0` is installed:
+
+* **Parsing from stored objects:** Instantiating a user schema from an existing stored user object (for example, a database/ORM record returned by the user database adapter) must succeed instead of raising errors such as `AttributeError`.
+* **Serialization:** Exporting a populated user schema to a plain dictionary/JSON-compatible form must succeed and produce the expected field values.
+
+The same user data must round-trip: a schema built from a stored user object and then exported must faithfully represent that user's fields.
+
+## Constraints
+* Do not drop or degrade any existing behavior of the library; the change must keep the public API of the user schemas intact.
+* Keep the solution consistent with the library's goal of functioning correctly under `pydantic>=2.0`.
+
+## Acceptance
+* Building each user schema variant from a stored user object works without errors under `pydantic>=2.0`.
+* Exporting those schema instances works and yields the correct field values under `pydantic>=2.0`.
+* The existing test suite continues to pass in the Pydantic V2 environment.

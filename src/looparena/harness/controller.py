@@ -16,6 +16,8 @@ Message = dict[str, str]
 
 # Controller response budget.
 CONTROLLER_MAX_OUTPUT_TOKENS = 20_480
+CONTROLLER_OUTPUT_LIMIT_EXHAUSTED = "controller_output_limit_exhausted"
+_OUTPUT_LIMIT_REASONS = {"length", "max_tokens", "max_output_tokens"}
 
 
 class ChatClient(Protocol):
@@ -75,105 +77,131 @@ class ControllerResult:
     context_compaction_audit: dict = field(default_factory=dict)
 
 
-_CONTROLLER_FIELDS = {
-    "action",
-    "rationale",
-    "worker_instruction",
-    "protected_invariants",
-    "verification_acceptance_condition",
-}
-_WORKER_INSTRUCTION_FIELDS = {
-    "goal",
-    "context",
-    "required_outcomes",
-    "prohibited_actions",
-    "completion_condition",
-}
 
 
 def extract_json_object(text: str) -> dict:
     """Extract the first JSON object from model output."""
 
-    # Tolerate a harmless prose or Markdown envelope from the provider; the
-    # JSON object itself still receives the normal strict contract validation.
-    cleaned = re.sub(r"```(?:json)?", "", text or "")
-    start = cleaned.find("{")
-    if start < 0:
-        raise ValueError("model response contains no JSON object")
-    value, _end = json.JSONDecoder().raw_decode(cleaned, start)
-    if not isinstance(value, dict):
-        raise ValueError("controller response must be a JSON object")
-    return value
+    contract, _ = extract_json_object_with_repairs(text)
+    return contract
 
 
 def normalize_controller_contract(contract: dict, packet: dict | None = None) -> dict:
-    """Map the model-facing Controller response onto the worker contract."""
+    """Map model-facing supervisor JSON onto the internal contract schema."""
     if not isinstance(contract, dict):
         raise ValueError("controller response must be a JSON object")
 
-    if set(contract) != _CONTROLLER_FIELDS:
-        raise ValueError("controller response has unexpected fields")
+    contract, _ = repair_model_visible_controller_contract(contract)
 
-    action = contract.get("action")
-    rationale = contract.get("rationale")
-    instruction = contract.get("worker_instruction")
-    protected = contract.get("protected_invariants")
-    acceptance = contract.get("verification_acceptance_condition")
-    if action not in P.CONTROL_DECISIONS:
-        raise ValueError("controller action is invalid")
-    if not isinstance(rationale, str):
-        raise ValueError("controller rationale must be a string")
-    if not isinstance(protected, list) or any(
-        not isinstance(item, str) for item in protected
-    ):
-        raise ValueError("protected_invariants must be a list of strings")
-    if not isinstance(acceptance, str):
-        raise ValueError("verification_acceptance_condition must be a string")
-
-    if action == "stop":
-        if instruction is not None or protected or acceptance:
-            raise ValueError("stop requires null/empty auxiliary fields")
+    top_level_action = contract.get("action")
+    nested_decision = contract.get("control_decision")
+    nested_action = (
+        nested_decision.get("action")
+        if isinstance(nested_decision, dict)
+        else None
+    )
+    submitted_action = top_level_action if "action" in contract else nested_action
+    # Stop is action-only at runtime.  The prompt asks for a rationale so runs
+    # remain interpretable, but missing or malformed auxiliary fields must
+    # never restart work or turn an explicit stop into an invalid contract.
+    if isinstance(submitted_action, str) and submitted_action.strip() == "stop":
+        rationale = contract.get("rationale")
+        if not isinstance(rationale, str) and isinstance(nested_decision, dict):
+            rationale = nested_decision.get("rationale")
         return {
+
             "sample_id": (packet or {}).get("sample_id", ""),
-            "control_decision": {"action": "stop", "rationale": rationale},
+            "control_decision": {
+                "action": "stop",
+                "rationale": rationale if isinstance(rationale, str) else "",
+            },
         }
 
-    if not isinstance(instruction, dict):
-        raise ValueError("worker_instruction must be an object")
-    if set(instruction) != _WORKER_INSTRUCTION_FIELDS:
-        raise ValueError("worker_instruction has unexpected fields")
-    goal = instruction.get("goal")
-    context = instruction.get("context")
-    required_outcomes = instruction.get("required_outcomes")
-    prohibited_actions = instruction.get("prohibited_actions")
-    completion = instruction.get("completion_condition")
-    if not isinstance(goal, str) or not goal.strip():
-        raise ValueError("worker_instruction.goal must be non-empty")
-    if not isinstance(context, str):
-        raise ValueError("worker_instruction.context must be a string")
-    if not isinstance(required_outcomes, list) or any(
-        not isinstance(item, str) for item in required_outcomes
+    if "action" in contract and "control_decision" not in contract:
+        action = contract.get("action")
+        rationale = contract.get("rationale", "")
+        instruction = contract.get("worker_instruction")
+        protected = contract.get("protected_invariants", [])
+        acceptance = contract.get("verification_acceptance_condition", "")
+        if action not in P.CONTROL_DECISIONS:
+            raise ValueError("simplified controller action is invalid")
+        if not isinstance(rationale, str):
+            rationale = str(rationale or "")
+        if not isinstance(instruction, dict):
+            raise ValueError("simplified worker_instruction must be an object")
+        goal = instruction.get("goal")
+        completion = instruction.get("completion_condition")
+        if not isinstance(goal, str) or not goal.strip():
+            raise ValueError("simplified worker_instruction.goal must be non-empty")
+        if not isinstance(completion, str) or not completion.strip():
+            raise ValueError(
+                "simplified worker_instruction.completion_condition must be non-empty"
+            )
+        required_outcomes = instruction.get("required_outcomes")
+        prohibited_actions = instruction.get("prohibited_actions")
+        if not isinstance(required_outcomes, list):
+            required_outcomes = []
+        if not isinstance(prohibited_actions, list):
+            prohibited_actions = []
+        if not isinstance(protected, list):
+            protected = []
+        if not isinstance(acceptance, str):
+            acceptance = ""
+        context = str(instruction.get("context") or "").strip()
+        return {
+
+            "sample_id": (packet or {}).get("sample_id", ""),
+            "control_decision": {
+                "action": action,
+                "rationale": rationale,
+            },
+            "state_update": {
+                "open_requirements": [],
+                "verified_requirements": [],
+                "stale_or_unsupported_claims": [],
+                "failed_or_incomplete_attempts": [],
+                "blockers": [],
+            },
+            "suspected_failure_mode": "",
+            "control_instruction": {
+                "goal": goal,
+                "target_scope_refs": [],
+                "required_actions": [str(item) for item in required_outcomes],
+                "disallowed_actions": [str(item) for item in prohibited_actions],
+                "notes_for_worker": [context] if context else [],
+                "completion_condition": completion,
+            },
+            "protected_invariants": [str(item) for item in protected],
+            "verification_plan": {
+                "acceptance_condition": acceptance.strip() or completion
+            },
+            "budget_hint": "",
+            "evidence_refs": {"claim_to_evidence": []},
+        }
+    out = dict(contract)
+    if packet is not None and not out.get("sample_id"):
+        out["sample_id"] = packet.get("sample_id", "")
+    # This field is prose shown to the worker.  OpenAI-compatible models
+    # commonly emit one string even though the canonical contract stores a
+    # list.  Preserve the prose instead of failing an otherwise valid control
+    # decision on this non-semantic container difference.
+    instruction = out.get("control_instruction")
+    if isinstance(instruction, dict) and isinstance(
+        instruction.get("notes_for_worker"), str
     ):
-        raise ValueError("required_outcomes must be a list of strings")
-    if not isinstance(prohibited_actions, list) or any(
-        not isinstance(item, str) for item in prohibited_actions
-    ):
-        raise ValueError("prohibited_actions must be a list of strings")
-    if not isinstance(completion, str) or not completion.strip():
-        raise ValueError("worker_instruction.completion_condition must be non-empty")
-    return {
-        "sample_id": (packet or {}).get("sample_id", ""),
-        "control_decision": {"action": action, "rationale": rationale},
-        "control_instruction": {
-            "goal": goal,
-            "required_actions": required_outcomes,
-            "disallowed_actions": prohibited_actions,
-            "notes_for_worker": [context] if context.strip() else [],
-            "completion_condition": completion,
-        },
-        "protected_invariants": protected,
-        "verification_plan": {"acceptance_condition": acceptance.strip() or completion},
-    }
+        normalized_instruction = dict(instruction)
+        note = instruction["notes_for_worker"].strip()
+        normalized_instruction["notes_for_worker"] = [note] if note else []
+        out["control_instruction"] = normalized_instruction
+    # The validator already permits an empty evidence mapping, so omission and
+    # an explicitly empty mapping carry the same meaning.  Canonicalize the
+    # omission instead of terminating the episode on JSON boilerplate alone.
+    evidence_refs = out.get("evidence_refs")
+    if isinstance(evidence_refs, list):
+        out["evidence_refs"] = {"claim_to_evidence": evidence_refs}
+    elif "evidence_refs" not in out:
+        out["evidence_refs"] = {"claim_to_evidence": []}
+    return out
 
 
 _EVIDENCE_SECTION_START = (
@@ -371,96 +399,225 @@ def prepare_controller_messages(
     return messages, audit
 
 
-def controller_messages(
-    packet: dict,
-    previous_messages: list[Message] | None = None,
-) -> list[Message]:
-    messages, audit = prepare_controller_messages(packet, previous_messages)
-    if audit["preflight_exhausted"]:
-        raise RuntimeError(
-            "controller_context_preflight_exhausted:"
-            f"visible_characters={audit['visible_input_characters']}:"
-            f"limit_characters={V.CONTROLLER_INPUT_MAX_CHARACTERS}"
-        )
-    return messages
-
-
-def run_controller(
-    packet: dict,
-    controller: ChatClient,
-    *,
-    max_tokens: int = CONTROLLER_MAX_OUTPUT_TOKENS,
-    previous_messages: list[Message] | None = None,
-) -> ControllerResult:
-    messages, context_compaction_audit = prepare_controller_messages(
-        packet,
-        previous_messages,
-    )
+def run_controller(packet: dict, controller: ChatClient, *, max_tokens: int=CONTROLLER_MAX_OUTPUT_TOKENS, previous_messages: list[Message] | None=None) -> ControllerResult:
+    (messages, context_compaction_audit) = prepare_controller_messages(packet, previous_messages)
     model_call_audits: list[dict] = []
     contract: dict = {}
-    raw = ""
+    raw = ''
     errors: list[str] = []
-    failure_kind = ""
+    failure_kind = ''
     failure_diagnostics: dict[str, Any] = {}
     request_messages = copy.deepcopy(messages)
-    if context_compaction_audit["preflight_exhausted"]:
-        errors = ["controller_context_preflight_exhausted"]
-        failure_kind = "controller_context_preflight_exhausted"
-        return ControllerResult(
-            contract={},
-            messages=messages,
-            raw_response="",
-            validation_errors=errors,
-            failure_kind=failure_kind,
-            context_compaction_audit=context_compaction_audit,
-        )
+    if context_compaction_audit['preflight_exhausted']:
+        errors = ['controller_context_preflight_exhausted']
+        failure_kind = 'controller_context_preflight_exhausted'
+        return ControllerResult(contract={}, messages=messages, raw_response='', validation_errors=errors, failure_kind=failure_kind, context_compaction_audit=context_compaction_audit)
     try:
-        before_audits = len(getattr(controller, "call_audits", []))
+        before_audits = len(getattr(controller, 'call_audits', []))
         raw = controller(request_messages, max_tokens=max_tokens)
-        call_audits = getattr(controller, "call_audits", [])
+        call_audits = getattr(controller, 'call_audits', [])
         if isinstance(call_audits, list):
             model_call_audits.extend(copy.deepcopy(call_audits[before_audits:]))
     except Exception as exc:
-        call_audits = getattr(controller, "call_audits", [])
+        call_audits = getattr(controller, 'call_audits', [])
         if isinstance(call_audits, list):
             model_call_audits.extend(copy.deepcopy(call_audits[before_audits:]))
-        raw = ""
+        raw = ''
         contract = {}
-        failure_kind = str(getattr(exc, "failure_kind", "infrastructure_transport"))
-        error_code = str(getattr(exc, "error_code", type(exc).__name__))
-        failure_diagnostics = {
-            "error_type": type(exc).__name__,
-            "error_code": error_code,
-            "failure_kind": failure_kind,
-        }
-        safe_message = getattr(exc, "safe_message", "")
+        failure_kind = str(getattr(exc, 'failure_kind', 'infrastructure_transport'))
+        error_code = str(getattr(exc, 'error_code', type(exc).__name__))
+        failure_diagnostics = {'error_type': type(exc).__name__, 'error_code': error_code, 'failure_kind': failure_kind}
+        safe_message = getattr(exc, 'safe_message', '')
         if isinstance(safe_message, str) and safe_message:
-            failure_diagnostics["redacted_error"] = safe_message[:500]
-        error_prefix = (
-            "controller_submission_error"
-            if failure_kind == "invalid_contract"
-            else "controller_transport_error"
-        )
-        errors = [f"{error_prefix}:{error_code}"]
+            failure_diagnostics['redacted_error'] = safe_message[:500]
+        error_prefix = 'controller_submission_error' if failure_kind == 'invalid_contract' else 'controller_transport_error'
+        errors = [f'{error_prefix}:{error_code}']
     else:
-        try:
-            visible_contract = extract_json_object(raw)
-            contract = normalize_controller_contract(visible_contract, packet)
-        except (TypeError, ValueError, json.JSONDecodeError) as exc:
-            contract = {}
-            errors = [f"controller_response_invalid_json:{type(exc).__name__}"]
-            failure_kind = "invalid_contract"
+        if controller_output_limit_exhausted(model_call_audits):
+            errors = [CONTROLLER_OUTPUT_LIMIT_EXHAUSTED]
+            failure_kind = CONTROLLER_OUTPUT_LIMIT_EXHAUSTED
         else:
-            errors = V.validate_contract(contract, packet)
-            if errors:
-                failure_kind = "invalid_contract"
-    return ControllerResult(
-        contract=contract,
-        messages=messages,
-        raw_response=raw,
-        validation_errors=errors,
-        failure_kind=failure_kind,
-        failure_diagnostics=failure_diagnostics,
-        model_call_audits=model_call_audits,
-        context_compaction_audit=context_compaction_audit,
-    )
+            try:
+                visible_contract = extract_json_object(raw)
+                contract = normalize_controller_contract(visible_contract, packet)
+            except (TypeError, ValueError, json.JSONDecodeError) as exc:
+                contract = {}
+                errors = [f'controller_response_invalid_json:{type(exc).__name__}']
+                failure_kind = 'invalid_contract'
+            else:
+                errors = V.validate_contract(contract, packet)
+                if errors:
+                    failure_kind = 'invalid_contract'
+    return ControllerResult(contract=contract, messages=messages, raw_response=raw, validation_errors=errors, failure_kind=failure_kind, failure_diagnostics=failure_diagnostics, model_call_audits=model_call_audits, context_compaction_audit=context_compaction_audit)
+
+
+def controller_output_limit_exhausted(model_call_audits: list[dict]) -> bool:
+    """Return whether the completed Controller response hit its output limit."""
+
+    for call in reversed(model_call_audits):
+        response = call.get("response_audit") if isinstance(call, dict) else None
+        if not isinstance(response, dict):
+            continue
+        finish_reason = str(response.get("finish_reason") or "").lower()
+        status = str(response.get("status") or "").lower()
+        details = response.get("incomplete_details")
+        incomplete_reason = (
+            str(details.get("reason") or "").lower()
+            if isinstance(details, dict)
+            else ""
+        )
+        return finish_reason in _OUTPUT_LIMIT_REASONS or (
+            status == "incomplete" and incomplete_reason in _OUTPUT_LIMIT_REASONS
+        )
+    return False
+
+
+def _remove_json_trailing_commas(text: str) -> tuple[str, bool]:
+    """Remove commas immediately before ``}``/``]`` outside JSON strings."""
+
+    out: list[str] = []
+    in_string = False
+    escape = False
+    changed = False
+    index = 0
+    while index < len(text):
+        ch = text[index]
+        if in_string:
+            out.append(ch)
+            if escape:
+                escape = False
+            elif ch == "\\":
+                escape = True
+            elif ch == '"':
+                in_string = False
+            index += 1
+            continue
+        if ch == '"':
+            in_string = True
+            out.append(ch)
+            index += 1
+            continue
+        if ch == ",":
+            lookahead = index + 1
+            while lookahead < len(text) and text[lookahead].isspace():
+                lookahead += 1
+            if lookahead < len(text) and text[lookahead] in "}]":
+                changed = True
+                index += 1
+                continue
+        out.append(ch)
+        index += 1
+    return "".join(out), changed
+
+
+def _extract_json_object_without_repairs(cleaned: str) -> dict:
+    start = cleaned.find("{")
+    if start < 0:
+        raise ValueError("model response contains no JSON object")
+    depth = 0
+    in_string = False
+    escape = False
+    for index in range(start, len(cleaned)):
+        ch = cleaned[index]
+        if in_string:
+            if escape:
+                escape = False
+            elif ch == "\\":
+                escape = True
+            elif ch == '"':
+                in_string = False
+            continue
+        if ch == '"':
+            in_string = True
+        elif ch == "{":
+            depth += 1
+        elif ch == "}":
+            depth -= 1
+            if depth == 0:
+                return json.loads(cleaned[start : index + 1])
+    raise ValueError("model JSON object is not closed")
+
+
+def extract_json_object_with_repairs(text: str) -> tuple[dict, list[str]]:
+    """Parse JSON with deterministic handling of commas and object boundaries."""
+
+    cleaned = re.sub(r"```(?:json)?", "", text or "")
+    original_error: ValueError | json.JSONDecodeError
+    try:
+        return _extract_json_object_without_repairs(cleaned), []
+    except (ValueError, json.JSONDecodeError) as exc:
+        original_error = exc
+
+    candidates: list[tuple[str, list[str]]] = []
+    without_trailing_commas, removed = _remove_json_trailing_commas(cleaned)
+    if removed:
+        candidates.append(
+            (without_trailing_commas, ["removed_json_trailing_comma"])
+        )
+
+    worker_marker = cleaned.find('"worker_instruction"')
+    protected_match = re.search(r',\s*"protected_invariants"\s*:', cleaned)
+    if (
+        worker_marker >= 0
+        and protected_match is not None
+        and protected_match.start() > worker_marker
+    ):
+        inserted = (
+            cleaned[: protected_match.start()]
+            + "}"
+            + cleaned[protected_match.start() :]
+        )
+        candidates.append(
+            (
+                inserted,
+                ["closed_worker_instruction_before_protected_invariants"],
+            )
+        )
+        inserted_without_trailing, inserted_removed = _remove_json_trailing_commas(
+            inserted
+        )
+        if inserted_removed:
+            candidates.append(
+                (
+                    inserted_without_trailing,
+                    [
+                        "closed_worker_instruction_before_protected_invariants",
+                        "removed_json_trailing_comma",
+                    ],
+                )
+            )
+
+    for candidate, repairs in candidates:
+        try:
+            parsed = _extract_json_object_without_repairs(candidate)
+        except (ValueError, json.JSONDecodeError):
+            continue
+        if (
+            parsed.get("action") in {"advance", "verify"}
+            and isinstance(parsed.get("worker_instruction"), dict)
+            and "protected_invariants" in parsed
+        ) or repairs == ["removed_json_trailing_comma"]:
+            return parsed, repairs
+    raise original_error
+
+
+def repair_model_visible_controller_contract(contract: dict) -> tuple[dict, list[str]]:
+    """Promote known sibling fields misplaced inside ``worker_instruction``."""
+
+    if not isinstance(contract, dict):
+        raise ValueError("controller response must be a JSON object")
+    repaired = copy.deepcopy(contract)
+    repairs: list[str] = []
+    if repaired.get("action") not in {"advance", "verify"}:
+        return repaired, repairs
+    instruction = repaired.get("worker_instruction")
+    if not isinstance(instruction, dict):
+        return repaired, repairs
+    for field_name in (
+        "protected_invariants",
+        "verification_acceptance_condition",
+    ):
+        if field_name not in repaired and field_name in instruction:
+            repaired[field_name] = copy.deepcopy(instruction[field_name])
+            repairs.append(f"promoted_worker_instruction.{field_name}")
+    return repaired, repairs

@@ -1,0 +1,33 @@
+{
+  "case_id": "tri80-scbench-sith-cp2",
+  "files": [
+    {
+      "bytes": 31879,
+      "kind": "file",
+      "mode": 493,
+      "path": "sith",
+      "sha256": "3c688afeeaae5282008dad0160f0b8fd3001cdaa0dc0f7cc67485f48fbad442d",
+      "source": {
+        "blob": "3c688afeeaae5282008dad0160f0b8fd3001cdaa0dc0f7cc67485f48fbad442d",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 32955,
+      "kind": "file",
+      "mode": 493,
+      "path": "sith.py",
+      "sha256": "a649bccad274ba5012e2cc2f4af5a0f49e1703fbbb92dd3e3d3aa46eef74d45f",
+      "source": {
+        "blob": "a649bccad274ba5012e2cc2f4af5a0f49e1703fbbb92dd3e3d3aa46eef74d45f",
+        "kind": "overlay"
+      }
+    }
+  ],
+  "overlay_sha256": "4a0133a1d0fa871889a9b1f84db1f59dc4f82c8cfc8be128c24fe6f3aa974f91",
+  "upstream": {
+    "kind": "scbench",
+    "source_root_key": null
+  },
+  "workspace_tree_sha256": "dd4ca7ae4b6b76a6f21052fefb3cfd79dcd451b655bcefed856d4751984866db"
+}

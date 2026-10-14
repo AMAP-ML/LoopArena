@@ -1,0 +1,25 @@
+# Expose the `samesite` option on `AuthTktAuthenticationPolicy`
+
+## Background
+Pyramid's authentication-ticket cookie machinery already honors a configurable `SameSite` attribute: it defaults to `Lax`, can be disabled entirely by passing `None`, and applies the setting to every remember/forget `Set-Cookie` header. That existing behavior must be preserved unchanged.
+
+## Problem
+Although the underlying cookie machinery supports `SameSite`, the public-facing `AuthTktAuthenticationPolicy` does not expose it. Constructing the policy with the option currently fails:
+
+```python
+from pyramid.authentication import AuthTktAuthenticationPolicy
+
+# Currently raises TypeError: unexpected keyword argument 'samesite'
+policy = AuthTktAuthenticationPolicy('secret', samesite='Lax')
+```
+
+This prevents applications from enforcing stricter cookie policies through the authentication policy's public API (see the feature request referenced from the project tracker, Issue #2733).
+
+## Task
+Make `AuthTktAuthenticationPolicy` accept a `samesite` constructor argument and relay it to its underlying cookie handling, so that `Set-Cookie` headers emitted when remembering or forgetting a user carry the configured `SameSite` attribute (e.g. `SameSite=Lax` or `SameSite=Strict`). Update the accompanying documentation so the new option is discoverable by users.
+
+## Requirements
+- `AuthTktAuthenticationPolicy` accepts the `samesite` keyword argument without raising `TypeError` and forwards it to its cookie handling.
+- Remember and forget responses include a `SameSite` attribute on their `Set-Cookie` headers that matches the configured value.
+- When `samesite` is not supplied, behavior is unchanged from before: the default remains `Lax`, and passing `None` continues to omit the attribute.
+- The public documentation is updated to describe the new option.

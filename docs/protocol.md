@@ -1,7 +1,7 @@
 # LoopArena protocol
 
 LoopArena evaluates models in the Controller role as they guide a separate,
-fixed coding Worker through long-horizon tasks. Controller models use the same
+fixed coding Worker through long-horizon tasks. In Type II/III, Controller models use the same
 Worker, task, starting workspace, public conversation, coding tools, budget,
 runtime, and terminal evaluator. Type II and Type III also report shared
 no-control and fixed-control reference policies; these provide context for the
@@ -84,18 +84,12 @@ The terminal evaluator determines task success. A valid evaluator failure is
 a model result. Provider, runner, container, or evaluator infrastructure
 failures are recorded separately and are not converted into task failures.
 
-Type II restores its frozen starting workspace and runs one declared task
-increment. Type III starts from the official problem origin; SCBench executes
-every native checkpoint in order, while BeyondSWE executes its complete task.
+Type II restores its declared starting workspace and runs a condensed task.
+Type III starts from the official problem origin; SCBench executes every native
+checkpoint in order, while BeyondSWE and LoopsBench execute complete tasks.
+The benchmark includes 80 paired Type II/III tasks: 21 SCBench, 29 BeyondSWE,
+and 30 LoopsBench. Each coding-task panel has three repeats per task.
 
-## Run artifacts
-
-Each run records the observable Worker transcript, per-slice activity,
-Reporter outputs, Controller inputs and outputs, token usage, runtime identity,
-and terminal evaluator receipt. `solve_manifest.json` seals the state produced
-by the models; `run_manifest.json` adds the terminal evaluation result.
-
-Provider-interrupted runs may resume only from the last durable model boundary.
-Completed model work is not replayed. The resume record binds the task,
-workspace, execution policy, seed, model configuration, and previous progress
-needed to continue the same experiment.
+SCBench's primary success criterion requires its Core checks. Every source additionally
+requires valid protocol and budget. Type I contains 160 four-option contract
+selection questions scored by exact choice accuracy.

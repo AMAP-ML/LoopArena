@@ -1,0 +1,6 @@
+{
+  "recipe": "workspace_recipe.json",
+  "recipe_sha256": "a0142fcf3447569881d2bc74f9d41a448e4d3aae4a27a53c245eb6842fa006fc",
+  "relative_path_under_assets_root": "type2/workspaces/tri80-beyondswe-aiven_aiven-client_pr399-cp1/workspace.tar.gz",
+  "workspace_tree_sha256": "b6915ec132a9df004c6e4d97aefec865177ae94e007a572b4099eb1701abf694"
+}

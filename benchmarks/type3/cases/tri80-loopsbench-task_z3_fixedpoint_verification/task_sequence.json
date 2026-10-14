@@ -1,0 +1,19 @@
+{
+  "adapter_kind": "loopsbench",
+  "checkpoint_context_policy": "single_episode",
+  "checkpoint_failure_policy": "stop_after_task",
+  "official_task_id": "loopsbench:task_z3_fixedpoint_verification",
+  "release_content_hash": "84ae4156df6a132416109e2cf27bb72bcbde1e764dea40f3abab5e4ade942020",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/task.json",
+      "evaluator_plan_sha256": "ab3c445fef42895f3ec0887c825d5a5ebe12cb46ec1590891969232a4e78dfb6",
+      "step_id": "task",
+      "task_ref": "tasks/task.md",
+      "task_sha256": "25332f6dc8aaa9ea2c0ff180388b24b2571149c7eb377a7a2f43790123ff4039"
+    }
+  ],
+  "target_step": "task",
+  "task_scope": "official_full_task",
+  "workspace_origin": "pinned_loopsbench_release_source_base"
+}

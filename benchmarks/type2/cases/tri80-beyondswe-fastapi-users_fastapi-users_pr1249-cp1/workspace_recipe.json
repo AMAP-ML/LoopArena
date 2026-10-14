@@ -1,0 +1,1812 @@
+{
+  "case_id": "tri80-beyondswe-fastapi-users_fastapi-users_pr1249-cp1",
+  "files": [
+    {
+      "bytes": 18426,
+      "kind": "file",
+      "mode": 420,
+      "path": ".all-contributorsrc",
+      "sha256": "bd8db10c0fb2f79ddd2fba77253afd97f25b7c46a3fd88543d4b842866a76547",
+      "source": {
+        "kind": "upstream",
+        "path": ".all-contributorsrc"
+      }
+    },
+    {
+      "bytes": 230,
+      "kind": "file",
+      "mode": 420,
+      "path": ".editorconfig",
+      "sha256": "7567101ddbde5cbb12cf42e05ee5a9f65e9564eeaf445a8c5f8db2db1fe51e4e",
+      "source": {
+        "kind": "upstream",
+        "path": ".editorconfig"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": ".github"
+    },
+    {
+      "bytes": 19,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/FUNDING.yml",
+      "sha256": "6ec5ad6e6f7a0b382f9a64b819246d4d547e10eae44a1835f558ba7c635228c0",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/FUNDING.yml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": ".github/ISSUE_TEMPLATE"
+    },
+    {
+      "bytes": 647,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "sha256": "f147aa8dc3a2fbe72515d82571637a11241170dd2e4f8709ba7488956fabfe53",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/ISSUE_TEMPLATE/bug_report.md"
+      }
+    },
+    {
+      "bytes": 243,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "sha256": "2157416c9b94282be5cc98c961ee07b1e4bfe74eb7038f549bdf861e8c43195e",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/ISSUE_TEMPLATE/config.yml"
+      }
+    },
+    {
+      "bytes": 171,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/dependabot.yml",
+      "sha256": "1766110ed4c4dd0cc7575e7624e7141c7ef5f41a3d906d6740018e1f69121b7b",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/dependabot.yml"
+      }
+    },
+    {
+      "bytes": 724,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/stale.yml",
+      "sha256": "26198d415b5661e2bd2c82507a9db45b8f8e4060276ae3336a8cab31d81bed8c",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/stale.yml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": ".github/workflows"
+    },
+    {
+      "bytes": 1747,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/workflows/build.yml",
+      "sha256": "89e3b7ea09bbd19841770a0cebad43cc083b4fd2bb7ea6e5271108b3d56cc3dd",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/workflows/build.yml"
+      }
+    },
+    {
+      "bytes": 2711,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/workflows/codeql-analysis.yml",
+      "sha256": "d2133d39b9fcd4387b417d92768f5be573adefa7af3435a14868d85f495fad77",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/workflows/codeql-analysis.yml"
+      }
+    },
+    {
+      "bytes": 1064,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/workflows/documentation.yml",
+      "sha256": "fab60864a72c36027bb96deb61346cbcbd44c224e44b86c68dbf45eea131201f",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/workflows/documentation.yml"
+      }
+    },
+    {
+      "bytes": 1257,
+      "kind": "file",
+      "mode": 420,
+      "path": ".gitignore",
+      "sha256": "3d9a3a7ea8170833e522208ef70acefa0ef1f865e192d3e6875c91ec2efdbab2",
+      "source": {
+        "kind": "upstream",
+        "path": ".gitignore"
+      }
+    },
+    {
+      "bytes": 1072,
+      "kind": "file",
+      "mode": 420,
+      "path": "LICENSE",
+      "sha256": "150aadb23082ee7a8f4b7c0663f3cd73739549ae9c2c9dcfa32d6b44229a7d21",
+      "source": {
+        "kind": "upstream",
+        "path": "LICENSE"
+      }
+    },
+    {
+      "bytes": 32321,
+      "kind": "file",
+      "mode": 420,
+      "path": "README.md",
+      "sha256": "a28a60bd616c3e18932a66abc27cc9a42cb773ad51d4df27b9aebaacadf31748",
+      "source": {
+        "kind": "upstream",
+        "path": "README.md"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "docs"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "docs-overrides"
+    },
+    {
+      "bytes": 196,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs-overrides/main.html",
+      "sha256": "bc34e7a3fa5db5628f692b65424e582333908ff7b2d5987429900ab1db327c51",
+      "source": {
+        "kind": "upstream",
+        "path": "docs-overrides/main.html"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "docs/configuration"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "docs/configuration/authentication"
+    },
+    {
+      "bytes": 1176,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/configuration/authentication/backend.md",
+      "sha256": "cdd0033125bd1c6c5d7451b365c289cc611ac270fd7d5ce0d94fd23da7744a62",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/configuration/authentication/backend.md"
+      }
+    },
+    {
+      "bytes": 2838,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/configuration/authentication/index.md",
+      "sha256": "4e20a8073c7c45851599429349c2575bfc469d46ae964f336e11285df55c25e5",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/configuration/authentication/index.md"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "docs/configuration/authentication/strategies"
+    },
+    {
+      "bytes": 4434,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/configuration/authentication/strategies/database.md",
+      "sha256": "dc411910a20d4b52a1ed1bedc5374b31d79ca3174dac94e13c0d38038506074a",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/configuration/authentication/strategies/database.md"
+      }
+    },
+    {
+      "bytes": 2379,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/configuration/authentication/strategies/jwt.md",
+      "sha256": "bf1e62b66330fc4b35597890992b4d52f92ab9e0d59cbad098944db790550ee5",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/configuration/authentication/strategies/jwt.md"
+      }
+    },
+    {
+      "bytes": 1471,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/configuration/authentication/strategies/redis.md",
+      "sha256": "1f7bbf578cef1256e127a9b9ceda7ee9fb66b1482c692f3ef3af08545b9d5dd3",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/configuration/authentication/strategies/redis.md"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "docs/configuration/authentication/transports"
+    },
+    {
+      "bytes": 1788,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/configuration/authentication/transports/bearer.md",
+      "sha256": "5a7342e69c0a4ead89398dfe2f85129ecbef252b681a5305a3d10e18dfb07552",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/configuration/authentication/transports/bearer.md"
+      }
+    },
+    {
+      "bytes": 1518,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/configuration/authentication/transports/cookie.md",
+      "sha256": "ad194b724317f70670e6df13b3113d0d8fd1f87f12eace76bb778f530cb68b2a",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/configuration/authentication/transports/cookie.md"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "docs/configuration/databases"
+    },
+    {
+      "bytes": 2331,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/configuration/databases/beanie.md",
+      "sha256": "a653084de00e72780d634af34992677d64aa2742fb5f5bddefa0e2aa672fa3bf",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/configuration/databases/beanie.md"
+      }
+    },
+    {
+      "bytes": 2936,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/configuration/databases/sqlalchemy.md",
+      "sha256": "e1345f4790256119ef7de6e75c15725008b011a09270e7c8e1c9c88d096b2614",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/configuration/databases/sqlalchemy.md"
+      }
+    },
+    {
+      "bytes": 1612,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/configuration/full-example.md",
+      "sha256": "3b5c230e51232fe9fca96a5afdfa1c82a4652cfd2a98f0c8ae36c76abef714af",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/configuration/full-example.md"
+      }
+    },
+    {
+      "bytes": 7019,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/configuration/oauth.md",
+      "sha256": "0839dd0b1b3dda701a303ce1ba5efb1d529aafb6677149c003d08a324c9406d8",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/configuration/oauth.md"
+      }
+    },
+    {
+      "bytes": 3577,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/configuration/overview.md",
+      "sha256": "48f48c87f05689e5fed227d6ceff4f252a2ce31e321bdb01886b28b74a38d89f",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/configuration/overview.md"
+      }
+    },
+    {
+      "bytes": 2485,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/configuration/password-hash.md",
+      "sha256": "2695243d3339c98b0932142880e11865ae3887a7477225c847751ac41d47851d",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/configuration/password-hash.md"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "docs/configuration/routers"
+    },
+    {
+      "bytes": 953,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/configuration/routers/auth.md",
+      "sha256": "26747791a7bc4081d40d25d4f938849ec9da4d87a931aeabfb7af2798c524758",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/configuration/routers/auth.md"
+      }
+    },
+    {
+      "bytes": 2151,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/configuration/routers/index.md",
+      "sha256": "8aa64b4ec9dde82a62b837db8221c10cef50936c9842320826086af30a215ced",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/configuration/routers/index.md"
+      }
+    },
+    {
+      "bytes": 585,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/configuration/routers/register.md",
+      "sha256": "6c7878280612a61712e98049a560e8919e2f6325d37617ce71bfbce8ef0a6af9",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/configuration/routers/register.md"
+      }
+    },
+    {
+      "bytes": 627,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/configuration/routers/reset.md",
+      "sha256": "679fd4f902564dba81b2738f0f41c35784f35c593fafef25254f96ebb16d0dac",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/configuration/routers/reset.md"
+      }
+    },
+    {
+      "bytes": 936,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/configuration/routers/users.md",
+      "sha256": "63723a361b96d6b21b4b54ff8764c20e2f45ded0ed78311215af6023d4d38105",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/configuration/routers/users.md"
+      }
+    },
+    {
+      "bytes": 701,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/configuration/routers/verify.md",
+      "sha256": "a3a74c156e78fbfe8cc0e842831fbd3247bb69c2f0e79ca2c59c8e4370c3522b",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/configuration/routers/verify.md"
+      }
+    },
+    {
+      "bytes": 3072,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/configuration/schemas.md",
+      "sha256": "6be44f287b803ca5bdb98aaa8337f3486064ad68c5a24d28a91fcba10ff9ecc7",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/configuration/schemas.md"
+      }
+    },
+    {
+      "bytes": 11315,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/configuration/user-manager.md",
+      "sha256": "45ded202b2b04e7821bad31b71188c21608baf05cd256d94497f1f1707b9750e",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/configuration/user-manager.md"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "docs/cookbook"
+    },
+    {
+      "bytes": 2578,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/cookbook/create-user-programmatically.md",
+      "sha256": "eab24dac481e428d7088dd1170040260a218d71670fd71322d2a9ea95153ad96",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/cookbook/create-user-programmatically.md"
+      }
+    },
+    {
+      "bytes": 1648,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/favicon.png",
+      "sha256": "355c85fdc9569a3073c95f01e4ec30b0be713a84b8093b7c5d4cb41549de2d63",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/favicon.png"
+      }
+    },
+    {
+      "bytes": 19,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/index.md",
+      "sha256": "db2cc5490d8b5dfe1694595fe0faa2776c2e0e96b0c06a997ca857ab68f9201c",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/index.md"
+      }
+    },
+    {
+      "bytes": 724,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/installation.md",
+      "sha256": "142e3b751c1748cfc500659fd9f3fcfb406ceb5e2045bf4a86f28c4c265aeffc",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/installation.md"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "docs/migration"
+    },
+    {
+      "bytes": 5701,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/migration/08_to_1x.md",
+      "sha256": "12196c20c0f5593552fc7b816650b95360525713171045a799c5005ef526b59a",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/migration/08_to_1x.md"
+      }
+    },
+    {
+      "bytes": 810,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/migration/1x_to_2x.md",
+      "sha256": "48deae61caf7cfbef199c03fd7862b018480fc60cfc780ad64f8688c467af481",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/migration/1x_to_2x.md"
+      }
+    },
+    {
+      "bytes": 853,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/migration/2x_to_3x.md",
+      "sha256": "c5b3be2c1d24a56400540211e67b022156281412a39e67daac407865887bd0d0",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/migration/2x_to_3x.md"
+      }
+    },
+    {
+      "bytes": 371,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/migration/3x_to_4x.md",
+      "sha256": "3de7c0b9c114450b405e55950b3821fe6bb5b7d45978c493acad20eda9d85c00",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/migration/3x_to_4x.md"
+      }
+    },
+    {
+      "bytes": 377,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/migration/4x_to_5x.md",
+      "sha256": "22478781af9110b6cc445d731633ba7940207ee69160fe1171269ec24d48a1ac",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/migration/4x_to_5x.md"
+      }
+    },
+    {
+      "bytes": 961,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/migration/6x_to_7x.md",
+      "sha256": "3367ad3cbf0fc7d4b60c06e80a8b462c0a02376bb9174d94836db9fa5a1f23de",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/migration/6x_to_7x.md"
+      }
+    },
+    {
+      "bytes": 2970,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/migration/7x_to_8x.md",
+      "sha256": "196b88b66bac8bc0eb3c424ad2fde68be74322d0befb9647682e400683d0e935",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/migration/7x_to_8x.md"
+      }
+    },
+    {
+      "bytes": 3585,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/migration/8x_to_9x.md",
+      "sha256": "5e81da32e9474095b6d6d8d4a0b497a991ac4d95e27d893dcc3b3b2b66e0e26f",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/migration/8x_to_9x.md"
+      }
+    },
+    {
+      "bytes": 10344,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/migration/9x_to_10x.md",
+      "sha256": "711a904d121733f8b5e04fc4cbfce3e592fb95603aaca4a78151c261d7db23b2",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/migration/9x_to_10x.md"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "docs/src"
+    },
+    {
+      "bytes": 1059,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/src/cookbook_create_user_programmatically.py",
+      "sha256": "0860dad56aa6f08d13694f64a1162983ec2abf4c54d5680bbf6c9d5445cb0fbd",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/src/cookbook_create_user_programmatically.py"
+      }
+    },
+    {
+      "bytes": 402,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/src/db_beanie.py",
+      "sha256": "04b2e1fdbcc2cc6b4589d60434bd7fcba367b8a791dc4191ecba6ee164d649df",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/beanie/app/db.py"
+      }
+    },
+    {
+      "bytes": 676,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/src/db_beanie_access_tokens.py",
+      "sha256": "cc31cfb1bf7f85b5c0b9196006560d3721b6a7c4c262259b887769c27bd6e0c4",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/src/db_beanie_access_tokens.py"
+      }
+    },
+    {
+      "bytes": 595,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/src/db_beanie_oauth.py",
+      "sha256": "2d53d245dc46abaef6b578a5c8f642ef6181b714310b5ed26339a24d7c36e738",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/beanie-oauth/app/db.py"
+      }
+    },
+    {
+      "bytes": 936,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/src/db_sqlalchemy.py",
+      "sha256": "36d30e08c5b99cd3b139e00971174be0f3002e3582cb340ab992d4a34cd4ba61",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/sqlalchemy/app/db.py"
+      }
+    },
+    {
+      "bytes": 1310,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/src/db_sqlalchemy_access_tokens.py",
+      "sha256": "086bc8c73c7e21080bd6d02805c8cacb94e438b4df11d8ded409713332d09b5b",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/src/db_sqlalchemy_access_tokens.py"
+      }
+    },
+    {
+      "bytes": 1204,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/src/db_sqlalchemy_oauth.py",
+      "sha256": "0da2c5a19f1314fda395fe3f476d51096e476bce797b6ae49b2599ad9b681450",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/sqlalchemy-oauth/app/db.py"
+      }
+    },
+    {
+      "bytes": 971,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/src/user_manager.py",
+      "sha256": "43de2524d6a0954ace34f713429873838d48d3a7ffc12671da1a8faca8783f10",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/src/user_manager.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "docs/usage"
+    },
+    {
+      "bytes": 4848,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/usage/current-user.md",
+      "sha256": "45bf78536c1a40c77ba3f542d0a9901515ba60760c15788665703e521a8e60ee",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/usage/current-user.md"
+      }
+    },
+    {
+      "bytes": 10893,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/usage/flow.md",
+      "sha256": "c9380522030f93fbf5f672c485b588de93d67b681178744a74d62bddeb70c905",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/usage/flow.md"
+      }
+    },
+    {
+      "bytes": 12726,
+      "kind": "file",
+      "mode": 420,
+      "path": "docs/usage/routes.md",
+      "sha256": "bc2550d57f500ec156ded93f5a520e18b172ea7bba65fa155f7fe8c433d1045b",
+      "source": {
+        "kind": "upstream",
+        "path": "docs/usage/routes.md"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "examples"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "examples/beanie"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "examples/beanie-oauth"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "examples/beanie-oauth/app"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/beanie-oauth/app/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/__init__.py"
+      }
+    },
+    {
+      "bytes": 1320,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/beanie-oauth/app/app.py",
+      "sha256": "478cef3f0b0fc8228c1a0c7b69eb3bb42d08fc82f459083e0d3db77495e26c9d",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/beanie-oauth/app/app.py"
+      }
+    },
+    {
+      "bytes": 595,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/beanie-oauth/app/db.py",
+      "sha256": "2d53d245dc46abaef6b578a5c8f642ef6181b714310b5ed26339a24d7c36e738",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/beanie-oauth/app/db.py"
+      }
+    },
+    {
+      "bytes": 239,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/beanie-oauth/app/schemas.py",
+      "sha256": "b297ebe5166e1b9880619638ef4b9307a76acd8c7396629fc43def00478dea78",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/beanie/app/schemas.py"
+      }
+    },
+    {
+      "bytes": 1844,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/beanie-oauth/app/users.py",
+      "sha256": "a70dfb86c9ad6b6fda3db8a1364d543cfdac159bbfd54b5904decf82c274ffb6",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/beanie-oauth/app/users.py"
+      }
+    },
+    {
+      "bytes": 108,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/beanie-oauth/main.py",
+      "sha256": "4de0fc277be05e7306f5bf887ed33616b418ab122157d46d2a019fe240fbd00c",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/sqlalchemy/main.py"
+      }
+    },
+    {
+      "bytes": 48,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/beanie-oauth/requirements.txt",
+      "sha256": "5e7024632a76f94913ae1776da7ef265811f7f86c086e30201c1ab1714f83c33",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/beanie/requirements.txt"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "examples/beanie/app"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/beanie/app/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/__init__.py"
+      }
+    },
+    {
+      "bytes": 1119,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/beanie/app/app.py",
+      "sha256": "c0212478f3ba1cfce23c95a235ccc39600231bac09272541fe860a09cd79f3f3",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/beanie/app/app.py"
+      }
+    },
+    {
+      "bytes": 402,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/beanie/app/db.py",
+      "sha256": "04b2e1fdbcc2cc6b4589d60434bd7fcba367b8a791dc4191ecba6ee164d649df",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/beanie/app/db.py"
+      }
+    },
+    {
+      "bytes": 239,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/beanie/app/schemas.py",
+      "sha256": "b297ebe5166e1b9880619638ef4b9307a76acd8c7396629fc43def00478dea78",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/beanie/app/schemas.py"
+      }
+    },
+    {
+      "bytes": 1649,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/beanie/app/users.py",
+      "sha256": "d60544de8740db8b579d6cb59018093957cbaf9efab3fe5991fa35d317543743",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/beanie/app/users.py"
+      }
+    },
+    {
+      "bytes": 108,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/beanie/main.py",
+      "sha256": "4de0fc277be05e7306f5bf887ed33616b418ab122157d46d2a019fe240fbd00c",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/sqlalchemy/main.py"
+      }
+    },
+    {
+      "bytes": 48,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/beanie/requirements.txt",
+      "sha256": "5e7024632a76f94913ae1776da7ef265811f7f86c086e30201c1ab1714f83c33",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/beanie/requirements.txt"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "examples/sqlalchemy"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "examples/sqlalchemy-oauth"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "examples/sqlalchemy-oauth/app"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/sqlalchemy-oauth/app/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/__init__.py"
+      }
+    },
+    {
+      "bytes": 1297,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/sqlalchemy-oauth/app/app.py",
+      "sha256": "ea908c68e79e742907beece9357c8b539804b4c1a81baf0c0578887203c07fac",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/sqlalchemy-oauth/app/app.py"
+      }
+    },
+    {
+      "bytes": 1204,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/sqlalchemy-oauth/app/db.py",
+      "sha256": "0da2c5a19f1314fda395fe3f476d51096e476bce797b6ae49b2599ad9b681450",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/sqlalchemy-oauth/app/db.py"
+      }
+    },
+    {
+      "bytes": 209,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/sqlalchemy-oauth/app/schemas.py",
+      "sha256": "958384ed7a73980be92397d143ec42e88510bb006dd9b6c70fb48543f7b64ea6",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/sqlalchemy/app/schemas.py"
+      }
+    },
+    {
+      "bytes": 1806,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/sqlalchemy-oauth/app/users.py",
+      "sha256": "c1f729f53802a911f26c6ef582975845d5cff4fab28b8cde154728c97b01a7f2",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/sqlalchemy-oauth/app/users.py"
+      }
+    },
+    {
+      "bytes": 108,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/sqlalchemy-oauth/main.py",
+      "sha256": "4de0fc277be05e7306f5bf887ed33616b418ab122157d46d2a019fe240fbd00c",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/sqlalchemy/main.py"
+      }
+    },
+    {
+      "bytes": 62,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/sqlalchemy-oauth/requirements.txt",
+      "sha256": "c1b5f2867dde56bc68b765e2fbbbe9174ea4201652afb853c52ad9d5d808a06e",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/sqlalchemy/requirements.txt"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "examples/sqlalchemy/app"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/sqlalchemy/app/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/__init__.py"
+      }
+    },
+    {
+      "bytes": 1096,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/sqlalchemy/app/app.py",
+      "sha256": "a4208cf54bd47eb2696cee46061de8a8358fe6bca6fbbed271985a5e5dbceb60",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/sqlalchemy/app/app.py"
+      }
+    },
+    {
+      "bytes": 936,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/sqlalchemy/app/db.py",
+      "sha256": "36d30e08c5b99cd3b139e00971174be0f3002e3582cb340ab992d4a34cd4ba61",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/sqlalchemy/app/db.py"
+      }
+    },
+    {
+      "bytes": 209,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/sqlalchemy/app/schemas.py",
+      "sha256": "958384ed7a73980be92397d143ec42e88510bb006dd9b6c70fb48543f7b64ea6",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/sqlalchemy/app/schemas.py"
+      }
+    },
+    {
+      "bytes": 1611,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/sqlalchemy/app/users.py",
+      "sha256": "1d55a03931fc7850180e40cdcbbf4a75e24607d4669a2bd3b66a7d7238145ac3",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/sqlalchemy/app/users.py"
+      }
+    },
+    {
+      "bytes": 108,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/sqlalchemy/main.py",
+      "sha256": "4de0fc277be05e7306f5bf887ed33616b418ab122157d46d2a019fe240fbd00c",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/sqlalchemy/main.py"
+      }
+    },
+    {
+      "bytes": 62,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/sqlalchemy/requirements.txt",
+      "sha256": "c1b5f2867dde56bc68b765e2fbbbe9174ea4201652afb853c52ad9d5d808a06e",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/sqlalchemy/requirements.txt"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "fastapi_users"
+    },
+    {
+      "bytes": 574,
+      "kind": "file",
+      "mode": 420,
+      "path": "fastapi_users/__init__.py",
+      "sha256": "3561e80dc8e5bb05f651d36e978fd61f853fdc972f77a35622db3b18a2b44c32",
+      "source": {
+        "kind": "upstream",
+        "path": "fastapi_users/__init__.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "fastapi_users/authentication"
+    },
+    {
+      "bytes": 632,
+      "kind": "file",
+      "mode": 420,
+      "path": "fastapi_users/authentication/__init__.py",
+      "sha256": "e0cf07c8642356beb01f3e353e3e5f1c8126365781e37b1d63afe5352fb33ec0",
+      "source": {
+        "kind": "upstream",
+        "path": "fastapi_users/authentication/__init__.py"
+      }
+    },
+    {
+      "bytes": 9172,
+      "kind": "file",
+      "mode": 420,
+      "path": "fastapi_users/authentication/authenticator.py",
+      "sha256": "49cdee653853ffdb42f927f9323f862520744fe4d58ae7a87ad5eef6512f1450",
+      "source": {
+        "kind": "upstream",
+        "path": "fastapi_users/authentication/authenticator.py"
+      }
+    },
+    {
+      "bytes": 1772,
+      "kind": "file",
+      "mode": 420,
+      "path": "fastapi_users/authentication/backend.py",
+      "sha256": "ec5540fb1904aa70d8ddeaf33388a34f8d481e8e041b74b43d2d1ffd3d9d8639",
+      "source": {
+        "kind": "upstream",
+        "path": "fastapi_users/authentication/backend.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "fastapi_users/authentication/strategy"
+    },
+    {
+      "bytes": 642,
+      "kind": "file",
+      "mode": 420,
+      "path": "fastapi_users/authentication/strategy/__init__.py",
+      "sha256": "69fc0e64f0953ed491bc8a784018f5eda31a544f7c4f8b0312bf026a21c3e4e4",
+      "source": {
+        "kind": "upstream",
+        "path": "fastapi_users/authentication/strategy/__init__.py"
+      }
+    },
+    {
+      "bytes": 623,
+      "kind": "file",
+      "mode": 420,
+      "path": "fastapi_users/authentication/strategy/base.py",
+      "sha256": "aba2f7b61aed784fa0d1d2086a2b94eab0eb0e5e6b4e52d50dcdeb82949129c7",
+      "source": {
+        "kind": "upstream",
+        "path": "fastapi_users/authentication/strategy/base.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "fastapi_users/authentication/strategy/db"
+    },
+    {
+      "bytes": 328,
+      "kind": "file",
+      "mode": 420,
+      "path": "fastapi_users/authentication/strategy/db/__init__.py",
+      "sha256": "70a6b6c6993d60e700dbbf601b1405277c437adbe9238fa7b654510e03eab6e9",
+      "source": {
+        "kind": "upstream",
+        "path": "fastapi_users/authentication/strategy/db/__init__.py"
+      }
+    },
+    {
+      "bytes": 898,
+      "kind": "file",
+      "mode": 420,
+      "path": "fastapi_users/authentication/strategy/db/adapter.py",
+      "sha256": "6e0e79e02ca0513eded2c3be41b32b912677cac2f62286fec05595cd0a73074b",
+      "source": {
+        "kind": "upstream",
+        "path": "fastapi_users/authentication/strategy/db/adapter.py"
+      }
+    },
+    {
+      "bytes": 407,
+      "kind": "file",
+      "mode": 420,
+      "path": "fastapi_users/authentication/strategy/db/models.py",
+      "sha256": "ae349d3d47c694213a2ab1279a2710e1bd996d3bccbc21bba072762be1074d74",
+      "source": {
+        "kind": "upstream",
+        "path": "fastapi_users/authentication/strategy/db/models.py"
+      }
+    },
+    {
+      "bytes": 2062,
+      "kind": "file",
+      "mode": 420,
+      "path": "fastapi_users/authentication/strategy/db/strategy.py",
+      "sha256": "2b71b9940babe994bd0a4fb6b4b12060f459a28ffa295fba5cc43f78b76bcdb2",
+      "source": {
+        "kind": "upstream",
+        "path": "fastapi_users/authentication/strategy/db/strategy.py"
+      }
+    },
+    {
+      "bytes": 2196,
+      "kind": "file",
+      "mode": 420,
+      "path": "fastapi_users/authentication/strategy/jwt.py",
+      "sha256": "e5dcc09cdf346f70121a92dec938a1c31eb211e7b5c2f338766b1e32c6e8958c",
+      "source": {
+        "kind": "upstream",
+        "path": "fastapi_users/authentication/strategy/jwt.py"
+      }
+    },
+    {
+      "bytes": 1517,
+      "kind": "file",
+      "mode": 420,
+      "path": "fastapi_users/authentication/strategy/redis.py",
+      "sha256": "ce727cdc179b8edf884fd59b4e25965f7bc5a195ed91402a6341f92039792e40",
+      "source": {
+        "kind": "upstream",
+        "path": "fastapi_users/authentication/strategy/redis.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "fastapi_users/authentication/transport"
+    },
+    {
+      "bytes": 379,
+      "kind": "file",
+      "mode": 420,
+      "path": "fastapi_users/authentication/transport/__init__.py",
+      "sha256": "84f375b84b6397c8d0c08cb5ec093931ac642865ef805ae12bf8f6fcb034f796",
+      "source": {
+        "kind": "upstream",
+        "path": "fastapi_users/authentication/transport/__init__.py"
+      }
+    },
+    {
+      "bytes": 870,
+      "kind": "file",
+      "mode": 420,
+      "path": "fastapi_users/authentication/transport/base.py",
+      "sha256": "9de5ab0436d27cb8d6cdd44e2437c016fb5d9515149021471f0628981fd6e8f1",
+      "source": {
+        "kind": "upstream",
+        "path": "fastapi_users/authentication/transport/base.py"
+      }
+    },
+    {
+      "bytes": 1808,
+      "kind": "file",
+      "mode": 420,
+      "path": "fastapi_users/authentication/transport/bearer.py",
+      "sha256": "1a96d6bbd9aefbbf84c8b95fd2bb432b076f4cbe21ce16f3b23bb2327f6b929f",
+      "source": {
+        "kind": "upstream",
+        "path": "fastapi_users/authentication/transport/bearer.py"
+      }
+    },
+    {
+      "bytes": 2517,
+      "kind": "file",
+      "mode": 420,
+      "path": "fastapi_users/authentication/transport/cookie.py",
+      "sha256": "5e169e2b8265694eb39e5dbf830fae148c91dfd7e34ea55956aeb70f8711cec3",
+      "source": {
+        "kind": "upstream",
+        "path": "fastapi_users/authentication/transport/cookie.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "fastapi_users/db"
+    },
+    {
+      "bytes": 1113,
+      "kind": "file",
+      "mode": 420,
+      "path": "fastapi_users/db/__init__.py",
+      "sha256": "f96917df1959d948507c79d2d78c8f220067e42fa9628a19aa1a1dbc66e60349",
+      "source": {
+        "kind": "upstream",
+        "path": "fastapi_users/db/__init__.py"
+      }
+    },
+    {
+      "bytes": 1670,
+      "kind": "file",
+      "mode": 420,
+      "path": "fastapi_users/db/base.py",
+      "sha256": "9134a81afea99114657a3e6a3fc9a85a6dd5b16dd42677fc8f67d8ff8bdc9cfd",
+      "source": {
+        "kind": "upstream",
+        "path": "fastapi_users/db/base.py"
+      }
+    },
+    {
+      "bytes": 612,
+      "kind": "file",
+      "mode": 420,
+      "path": "fastapi_users/exceptions.py",
+      "sha256": "05aba82172554e3981c6fc72b4ec3c5e4433880a76089841b892d55b868cc060",
+      "source": {
+        "kind": "upstream",
+        "path": "fastapi_users/exceptions.py"
+      }
+    },
+    {
+      "bytes": 6238,
+      "kind": "file",
+      "mode": 420,
+      "path": "fastapi_users/fastapi_users.py",
+      "sha256": "41d562086e65621769912ad70f21a6237273dab7bd68e1fc32cb92b6e134258f",
+      "source": {
+        "kind": "upstream",
+        "path": "fastapi_users/fastapi_users.py"
+      }
+    },
+    {
+      "bytes": 1028,
+      "kind": "file",
+      "mode": 420,
+      "path": "fastapi_users/jwt.py",
+      "sha256": "93aaf61c397bbb1bfc05f576a87cbc26a1ab187570824456de6df5e1725e0678",
+      "source": {
+        "kind": "upstream",
+        "path": "fastapi_users/jwt.py"
+      }
+    },
+    {
+      "bytes": 24648,
+      "kind": "file",
+      "mode": 420,
+      "path": "fastapi_users/manager.py",
+      "sha256": "a6e23741e692fd6e0d76ee926bc4e1a82b0aa01858a5dd8c53f32ec196f6a01c",
+      "source": {
+        "kind": "upstream",
+        "path": "fastapi_users/manager.py"
+      }
+    },
+    {
+      "bytes": 1014,
+      "kind": "file",
+      "mode": 420,
+      "path": "fastapi_users/models.py",
+      "sha256": "6237d0596cf3d3162478566334538c14b1069ecfba6c036296a8570f0b39937c",
+      "source": {
+        "kind": "upstream",
+        "path": "fastapi_users/models.py"
+      }
+    },
+    {
+      "bytes": 97,
+      "kind": "file",
+      "mode": 420,
+      "path": "fastapi_users/openapi.py",
+      "sha256": "46bc5609ca9fc4f649d633d9cd8d785eafd095ce1c136fe0cbded4608879ec91",
+      "source": {
+        "kind": "upstream",
+        "path": "fastapi_users/openapi.py"
+      }
+    },
+    {
+      "bytes": 1067,
+      "kind": "file",
+      "mode": 420,
+      "path": "fastapi_users/password.py",
+      "sha256": "21800043de75aae9c4e07551c15422dc5f152594882d84473e2fc9d4502b7355",
+      "source": {
+        "kind": "upstream",
+        "path": "fastapi_users/password.py"
+      }
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "fastapi_users/py.typed",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/__init__.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "fastapi_users/router"
+    },
+    {
+      "bytes": 706,
+      "kind": "file",
+      "mode": 420,
+      "path": "fastapi_users/router/__init__.py",
+      "sha256": "ad1b8939e30f6738694df404b11177ab7a520d769d1db09b6adc98e4d71f6286",
+      "source": {
+        "kind": "upstream",
+        "path": "fastapi_users/router/__init__.py"
+      }
+    },
+    {
+      "bytes": 3469,
+      "kind": "file",
+      "mode": 420,
+      "path": "fastapi_users/router/auth.py",
+      "sha256": "3f4f6e2730ce9cd9844e0ff58f8d500ace9fd6e696c196b2eb3c3a742e74b21f",
+      "source": {
+        "kind": "upstream",
+        "path": "fastapi_users/router/auth.py"
+      }
+    },
+    {
+      "bytes": 998,
+      "kind": "file",
+      "mode": 420,
+      "path": "fastapi_users/router/common.py",
+      "sha256": "8dfc4aec7d47c035fbe6851d5993124e6b46433dcd57c410bffcae516c2c2c46",
+      "source": {
+        "kind": "upstream",
+        "path": "fastapi_users/router/common.py"
+      }
+    },
+    {
+      "bytes": 9308,
+      "kind": "file",
+      "mode": 420,
+      "path": "fastapi_users/router/oauth.py",
+      "sha256": "6db54f38c9d38323b5d90535fd5d4bf77b3bfe47d03f54a5a2cea1e5ef134ded",
+      "source": {
+        "kind": "upstream",
+        "path": "fastapi_users/router/oauth.py"
+      }
+    },
+    {
+      "bytes": 2851,
+      "kind": "file",
+      "mode": 420,
+      "path": "fastapi_users/router/register.py",
+      "sha256": "675035f1c3588f686fa6d0bffa416167bce75ffc34f0ef109df1e5f5edee2833",
+      "source": {
+        "kind": "upstream",
+        "path": "fastapi_users/router/register.py"
+      }
+    },
+    {
+      "bytes": 3189,
+      "kind": "file",
+      "mode": 420,
+      "path": "fastapi_users/router/reset.py",
+      "sha256": "24b6aeff3c456452c9fa3f326aaadaf0d5357c8563d823e18903c9c7ec94da02",
+      "source": {
+        "kind": "upstream",
+        "path": "fastapi_users/router/reset.py"
+      }
+    },
+    {
+      "bytes": 8387,
+      "kind": "file",
+      "mode": 420,
+      "path": "fastapi_users/router/users.py",
+      "sha256": "eb57f7c1e3654a0c568ad1467af5ba0eeb8069535b4cc14dd715710f1ffeb6b5",
+      "source": {
+        "kind": "upstream",
+        "path": "fastapi_users/router/users.py"
+      }
+    },
+    {
+      "bytes": 3002,
+      "kind": "file",
+      "mode": 420,
+      "path": "fastapi_users/router/verify.py",
+      "sha256": "3964352059278e5820dde8a9e7507e4b7b9053eabcb089037ef3cc3e11f5b163",
+      "source": {
+        "kind": "upstream",
+        "path": "fastapi_users/router/verify.py"
+      }
+    },
+    {
+      "bytes": 1801,
+      "kind": "file",
+      "mode": 420,
+      "path": "fastapi_users/schemas.py",
+      "sha256": "aeb6d97f44f7cce59fb3dfb9896c84fee4d0e56c8bf824ff7b85043cb45b863b",
+      "source": {
+        "kind": "upstream",
+        "path": "fastapi_users/schemas.py"
+      }
+    },
+    {
+      "bytes": 417,
+      "kind": "file",
+      "mode": 420,
+      "path": "fastapi_users/types.py",
+      "sha256": "af3f6aa265362cbd9201e76c9ce8e2e56c899a05d687d92e406ba0b264745694",
+      "source": {
+        "kind": "upstream",
+        "path": "fastapi_users/types.py"
+      }
+    },
+    {
+      "bytes": 8777,
+      "kind": "file",
+      "mode": 420,
+      "path": "logo.svg",
+      "sha256": "8be6bb48c74d13d12c641c65fa66b0d0978ae7b9cbf599d6d21c5c96b2417a46",
+      "source": {
+        "kind": "upstream",
+        "path": "logo.svg"
+      }
+    },
+    {
+      "bytes": 20084,
+      "kind": "file",
+      "mode": 420,
+      "path": "logo_github.png",
+      "sha256": "838fca1626bf5cbdfaba3d9ecdcb752c282a846002cf0a805a827455e8e99be7",
+      "source": {
+        "kind": "upstream",
+        "path": "logo_github.png"
+      }
+    },
+    {
+      "bytes": 3044,
+      "kind": "file",
+      "mode": 420,
+      "path": "mkdocs.yml",
+      "sha256": "d454921171aa5a5a1e8a08bf3e68a923f80bc609c1cc27583bac98c2940cc12c",
+      "source": {
+        "kind": "upstream",
+        "path": "mkdocs.yml"
+      }
+    },
+    {
+      "bytes": 3351,
+      "kind": "file",
+      "mode": 420,
+      "path": "pyproject.toml",
+      "sha256": "11ab3ae93d48ae153bd1b90460a995d7c55e0a868578b595244ed5b6d26ffacb",
+      "source": {
+        "kind": "upstream",
+        "path": "pyproject.toml"
+      }
+    },
+    {
+      "bytes": 286,
+      "kind": "file",
+      "mode": 420,
+      "path": "setup.cfg",
+      "sha256": "0cc2966b67796b94d274b43326f8e0e5f0a1b87135a7357d2d230664d16f46b5",
+      "source": {
+        "kind": "upstream",
+        "path": "setup.cfg"
+      }
+    },
+    {
+      "bytes": 112,
+      "kind": "file",
+      "mode": 420,
+      "path": "test_build.py",
+      "sha256": "d5457ac165093b35a51caa2dd9a3634451718887d866a3177ca62b647d55a1aa",
+      "source": {
+        "kind": "upstream",
+        "path": "test_build.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/__init__.py"
+      }
+    },
+    {
+      "bytes": 17171,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/conftest.py",
+      "sha256": "3033c3bfe5947536f0ce27eaa8da6a8ded0aeb849a4d91354ac48fd8ad4a60c1",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/conftest.py"
+      }
+    },
+    {
+      "bytes": 5033,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_authentication_authenticator.py",
+      "sha256": "5da596bf8ab6b5e26574a901f15bec63c8f7166e951f0e3f7cc9048b1d49fcb6",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_authentication_authenticator.py"
+      }
+    },
+    {
+      "bytes": 1951,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_authentication_backend.py",
+      "sha256": "01e751c6b18dca898fd24e97d46ae5cb997a70ae0c041deef0b242e749c04ab5",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_authentication_backend.py"
+      }
+    },
+    {
+      "bytes": 4723,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_authentication_strategy_db.py",
+      "sha256": "afde38598bbaaa5bdef1387b217e048dde1c7d8a089112883af5d6f5ef0fd1e2",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_authentication_strategy_db.py"
+      }
+    },
+    {
+      "bytes": 6529,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_authentication_strategy_jwt.py",
+      "sha256": "efc79bdfcb7c04e8c6f6dfe2c75a74644fa67e49d6dfc25ca309aa1dd564bb84",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_authentication_strategy_jwt.py"
+      }
+    },
+    {
+      "bytes": 3676,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_authentication_strategy_redis.py",
+      "sha256": "548007d297633510c597f1de96f8dbc5615fe0f9772547635d5763c695d30bd2",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_authentication_strategy_redis.py"
+      }
+    },
+    {
+      "bytes": 1461,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_authentication_transport_bearer.py",
+      "sha256": "f6e7f807285f59406bf87c5339c05a673a424109aa895c0972ddbbac10d49b73",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_authentication_transport_bearer.py"
+      }
+    },
+    {
+      "bytes": 3025,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_authentication_transport_cookie.py",
+      "sha256": "9e1531b2a5437705bb6212683d83cf748c95804a130468550fd1af7b2e893a37",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_authentication_transport_cookie.py"
+      }
+    },
+    {
+      "bytes": 1132,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_db_base.py",
+      "sha256": "92335edb65f799a9264b8aeaf339c66dfd6ad3a9c08030187d7f500d53b41b54",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_db_base.py"
+      }
+    },
+    {
+      "bytes": 18957,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_fastapi_users.py",
+      "sha256": "e059474561bda076cd18520d37c4ce859f86b7f10e4f2cbd4fc4ecaa331bd522",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_fastapi_users.py"
+      }
+    },
+    {
+      "bytes": 393,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_jwt.py",
+      "sha256": "e2358c4fcd37f328bf3f8cfb41f6ec076560fb87a06865e605d4b625370b69ff",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_jwt.py"
+      }
+    },
+    {
+      "bytes": 25065,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_manager.py",
+      "sha256": "4c6757d85d78696e05b1fbeefe3080ce6b2aa9e3d3002d5bdf7e7c739762e9d0",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_manager.py"
+      }
+    },
+    {
+      "bytes": 3950,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_openapi.py",
+      "sha256": "f39dd54c3365bcedb2c3662308fafcf92e7a1784b405756d7e745cce351e97ed",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_openapi.py"
+      }
+    },
+    {
+      "bytes": 8336,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_router_auth.py",
+      "sha256": "d4e9ee13db3af3057138d59171022d319ab3c16fb3621209011af372ce80e340",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_router_auth.py"
+      }
+    },
+    {
+      "bytes": 19248,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_router_oauth.py",
+      "sha256": "1f4633144fa556f1a4219ad53394c2ce1b60661ad8aba44edf48c4a1d2f0e738",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_router_oauth.py"
+      }
+    },
+    {
+      "bytes": 4480,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_router_register.py",
+      "sha256": "2e02207d5338f674f0a558fefe4d39fbfc31fbacc02701cbe04b25b293de007e",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_router_register.py"
+      }
+    },
+    {
+      "bytes": 6236,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_router_reset.py",
+      "sha256": "7131ff84f2bedfd26fb2e59bbaf44c1db87a77ac8876a5d94c5aa0588e80bf7a",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_router_reset.py"
+      }
+    },
+    {
+      "bytes": 33104,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_router_users.py",
+      "sha256": "7263d797a60ce5ed2e4de5287ec7aa05a489d6dd866e302aa27b6c1b96e1fcaa",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_router_users.py"
+      }
+    },
+    {
+      "bytes": 6642,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_router_verify.py",
+      "sha256": "e5ec86df123864ec6455036989db1cb691efb9ff9075da348db17cda12b93360",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_router_verify.py"
+      }
+    }
+  ],
+  "overlay_sha256": "272adeccafe73e7009d51f2ec2be9871db5e0eb14239f483ea429be26c3c6402",
+  "upstream": {
+    "kind": "beyondswe",
+    "repository": "https://github.com/fastapi-users/fastapi-users",
+    "revision": "3bf0f888ee1847f52b8c5a96e30a1c90ea0f36e9",
+    "source_root_key": "tri80-beyondswe-fastapi-users_fastapi-users_pr1249-cp1"
+  },
+  "workspace_tree_sha256": "730a1628e39828d987963db8bd433b491ae62c5bc8f026054e137c912a549dad"
+}

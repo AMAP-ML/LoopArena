@@ -1,0 +1,19 @@
+{
+  "adapter_config": {
+    "docker_executable": "docker",
+    "task_dir": "/opt/looparena/evaluator_assets/beyondswe_type2/tri80-beyondswe-neuralensemble_python-neo_pr1554-cp2/task"
+  },
+  "adapter_kind": "beyondswe_harbor",
+  "adapter_version": "harbor-verifier-v1",
+  "network": "host",
+  "pass_policy": "reward-equals-one",
+  "runtime_identity": {
+    "image_id": "sha256:447a4e37ae6b3e425efc0162026edcb0701683f0714a6c24efb4abe3222c2c42",
+    "image_reference": "aweaiteam/beyondswe:neuralensemble_python-neo_pr1554",
+    "platform": "linux/amd64",
+    "workdir": "/workspace/python-neo"
+  },
+  "solve_network": "host",
+  "source_revision": "7d2ced21b4c85f646d5ba8786875d7fbbe08ed49",
+  "timeout_sec": 1200
+}

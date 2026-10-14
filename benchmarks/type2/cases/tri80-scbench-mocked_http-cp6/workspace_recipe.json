@@ -1,0 +1,33 @@
+{
+  "case_id": "tri80-scbench-mocked_http-cp6",
+  "files": [
+    {
+      "bytes": 132067,
+      "kind": "file",
+      "mode": 420,
+      "path": "hmock.py",
+      "sha256": "1f3cfda91f0d52425893bed5027aaa17aa50575f4bca2d0882566fad643bbce4",
+      "source": {
+        "blob": "1f3cfda91f0d52425893bed5027aaa17aa50575f4bca2d0882566fad643bbce4",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 206,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements.txt",
+      "sha256": "2434fb8c7ffaf54e0087ff8849dac8d420d1adca38e540f48adb0b543b517260",
+      "source": {
+        "blob": "2434fb8c7ffaf54e0087ff8849dac8d420d1adca38e540f48adb0b543b517260",
+        "kind": "overlay"
+      }
+    }
+  ],
+  "overlay_sha256": "d7e1b8c289400deb8cba2f4cbe26316ad8eda95a43c574d2c8138fe556bdd3ce",
+  "upstream": {
+    "kind": "scbench",
+    "source_root_key": null
+  },
+  "workspace_tree_sha256": "1125b230ba2759134174327de1ba56a7ae6756cec02a195a355676518bb17f1a"
+}

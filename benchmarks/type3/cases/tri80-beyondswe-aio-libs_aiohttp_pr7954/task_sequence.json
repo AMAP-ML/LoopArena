@@ -1,0 +1,20 @@
+{
+  "adapter_kind": "beyondswe_harbor",
+  "checkpoint_context_policy": "single_episode",
+  "checkpoint_failure_policy": "stop_after_task",
+  "official_parent_commit": "23931465361cc366b97c1ef1b6419ea8dd2642a4",
+  "official_task_id": "beyondswe:aio-libs_aiohttp_pr7954",
+  "official_workdir": "/workspace/aiohttp",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/task.json",
+      "evaluator_plan_sha256": "8bc9981753e06df67a8d68f013a321201bd5a17a447d5e0e5c152f8226ac272e",
+      "step_id": "task",
+      "task_ref": "tasks/task.md",
+      "task_sha256": "2fadd5a9d16fcb2676b4da2009c5cde0594228c3dadeb2def0cb529f1af55e36"
+    }
+  ],
+  "target_step": "task",
+  "task_scope": "official_full_task",
+  "workspace_origin": "pinned_source_image_parent_commit"
+}

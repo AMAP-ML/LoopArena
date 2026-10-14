@@ -1,0 +1,20 @@
+{
+  "adapter_kind": "beyondswe_harbor",
+  "checkpoint_context_policy": "single_episode",
+  "checkpoint_failure_policy": "stop_after_task",
+  "official_parent_commit": "36cbe8b61911fcee9c8a3489f2ceda2414dc86db",
+  "official_task_id": "beyondswe:hackingmaterials_matminer_pr925",
+  "official_workdir": "/workspace/matminer",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/task.json",
+      "evaluator_plan_sha256": "3393edcbe75aadd609931d38fc3f49cc1981473eeb27081031b360ce2c07725c",
+      "step_id": "task",
+      "task_ref": "tasks/task.md",
+      "task_sha256": "05643bbbabea55ca06229867a3d30bb757be72c4dce6d6c939200585fdec82cd"
+    }
+  ],
+  "target_step": "task",
+  "task_scope": "official_full_task",
+  "workspace_origin": "pinned_source_image_parent_commit"
+}

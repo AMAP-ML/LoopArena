@@ -1,0 +1,20 @@
+{
+  "adapter_kind": "beyondswe_harbor",
+  "checkpoint_context_policy": "single_episode",
+  "checkpoint_failure_policy": "stop_after_task",
+  "official_parent_commit": "71bbce26d65aaf9509410a0ccdff2573e7a705ad",
+  "official_task_id": "beyondswe:python-control_python-control_pr913",
+  "official_workdir": "/workspace/python-control",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/task.json",
+      "evaluator_plan_sha256": "5662e1f84854a07698c8fece860291074dce97bd96a5492d170376f05d90383e",
+      "step_id": "task",
+      "task_ref": "tasks/task.md",
+      "task_sha256": "1d3383cb3fd7d34c2c09c22ff49f318d2d2108fa5accb30d8d1bbccd39f808d9"
+    }
+  ],
+  "target_step": "task",
+  "task_scope": "official_full_task",
+  "workspace_origin": "pinned_source_image_parent_commit"
+}

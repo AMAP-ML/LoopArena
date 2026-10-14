@@ -1,0 +1,10 @@
+{
+  "adapter_kind": "loopsbench",
+  "case_id": "tri80-loopsbench-task_raylib_shapes2d_medium",
+  "episode_origin": "official_problem_start",
+  "harness_start_mode": "bootstrap_contract_start",
+  "official_task_id": "loopsbench:task_raylib_shapes2d_medium",
+  "task_scope": "official_full_task",
+  "task_sequence_ref": "task_sequence.json",
+  "task_sequence_sha256": "c592e6f7f8b4ac5ebf74dfe97da1ac440acf41cf90b0099314b8d758cb047a1a"
+}

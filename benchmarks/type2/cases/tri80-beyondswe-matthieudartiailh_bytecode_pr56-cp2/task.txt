@@ -1,0 +1,28 @@
+# Fix flag inference for bytecode mixing yield and await instructions
+
+## Background
+`infer_flags` (and therefore `update_flags`) currently crashes with a `ValueError` when bytecode contains both yield-related and await-related instructions (e.g., `YIELD_VALUE` together with `GET_AWAITABLE`), because it produces an invalid combination of generator/coroutine flags that fails internal validation.
+
+For example, this currently raises:
+
+```python
+from bytecode import ConcreteBytecode, ConcreteInstr
+
+code = ConcreteBytecode()
+code.append(ConcreteInstr('YIELD_VALUE'))
+code.append(ConcreteInstr('GET_AWAITABLE'))
+code.update_flags()  # ValueError: more than one of generator/coroutine/async-generator flags set
+```
+
+## Requirements
+1. **Correct inference without crashing.** Flag inference must handle bytecode that mixes yield and await instructions and produce a single, consistent flag (e.g., `ASYNC_GENERATOR` when both kinds of instructions are present) instead of conflicting flags. All other existing inference behavior for plain synchronous, generator, and coroutine code must keep working unchanged.
+2. **Honor existing flags.** When the code object already carries one of the generator/coroutine/async-generator flags, inference must respect that flag rather than adding a conflicting one.
+3. **Explicit caller control via a tri-state option.** Extend the public `infer_flags` and `update_flags` APIs with an option supporting three modes:
+   - **Default (pure inference):** infer the appropriate flag from the instructions, as described above.
+   - **Force async:** explicitly mark the code as asynchronous (inferring the appropriate async flag, such as coroutine or async generator, based on the instructions).
+   - **Validate sync:** require the code to be synchronous; raise a clear error if any async-related (or generator) instructions are present.
+
+The option must have a sensible default so that existing callers who do not pass it continue to work without modification.
+
+## Out of scope
+Do not change any other public APIs or the behavior of flag inference for bytecode that does not mix yield and await instructions, beyond what is described above.

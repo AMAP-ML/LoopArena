@@ -1,0 +1,20 @@
+{
+  "adapter_kind": "beyondswe_harbor",
+  "checkpoint_context_policy": "single_episode",
+  "checkpoint_failure_policy": "stop_after_task",
+  "official_parent_commit": "6780b642bb16442584968215ead84eda13e1fc20",
+  "official_task_id": "beyondswe:ansys_pyansys-units_pr309",
+  "official_workdir": "/workspace/pyansys-units",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/task.json",
+      "evaluator_plan_sha256": "77bf9ed0575950318de718c2d69a75d2f45c8301a0058c8c55793e05f8fe52b6",
+      "step_id": "task",
+      "task_ref": "tasks/task.md",
+      "task_sha256": "9db27a2857e375cb3c4123fc4b6bd7a7ddbbe7f52999e4af12e2b6905913c192"
+    }
+  ],
+  "target_step": "task",
+  "task_scope": "official_full_task",
+  "workspace_origin": "pinned_source_image_parent_commit"
+}

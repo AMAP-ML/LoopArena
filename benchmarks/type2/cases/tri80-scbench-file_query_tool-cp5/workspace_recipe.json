@@ -1,0 +1,142 @@
+{
+  "case_id": "tri80-scbench-file_query_tool-cp5",
+  "files": [
+    {
+      "bytes": 298,
+      "kind": "file",
+      "mode": 493,
+      "path": "query_files.py",
+      "sha256": "e36a38b4889cc2ea542624d110b173dedbb2294c7259e75e92676f1a9f42a2c9",
+      "source": {
+        "blob": "e36a38b4889cc2ea542624d110b173dedbb2294c7259e75e92676f1a9f42a2c9",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 340,
+      "kind": "file",
+      "mode": 493,
+      "path": "requirements.txt",
+      "sha256": "f337672a42c2184e268288d95a24067e24e059e086e7f5670e4531d9b167eacc",
+      "source": {
+        "blob": "f337672a42c2184e268288d95a24067e24e059e086e7f5670e4531d9b167eacc",
+        "kind": "overlay"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "sql_cli"
+    },
+    {
+      "bytes": 172,
+      "kind": "file",
+      "mode": 493,
+      "path": "sql_cli/__init__.py",
+      "sha256": "5f89314006843d398757ed47c44ca428210b9b62c58e9f9feb82ab99c43a33d6",
+      "source": {
+        "blob": "5f89314006843d398757ed47c44ca428210b9b62c58e9f9feb82ab99c43a33d6",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 3421,
+      "kind": "file",
+      "mode": 493,
+      "path": "sql_cli/cli.py",
+      "sha256": "5fdbf2365b1519589b6339e68db51a432f867fc2e3863ae976debc0f46231db1",
+      "source": {
+        "blob": "5fdbf2365b1519589b6339e68db51a432f867fc2e3863ae976debc0f46231db1",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 1491,
+      "kind": "file",
+      "mode": 493,
+      "path": "sql_cli/errors.py",
+      "sha256": "f16a6b1e563a4794943fcb7659729b8430dcefffa4f4a2ebb5bb31eb2d653359",
+      "source": {
+        "blob": "f16a6b1e563a4794943fcb7659729b8430dcefffa4f4a2ebb5bb31eb2d653359",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 3562,
+      "kind": "file",
+      "mode": 493,
+      "path": "sql_cli/executor.py",
+      "sha256": "738da145d704a11d5ea9d61b94a401aea781d82d6327d33268821fcbc2b48578",
+      "source": {
+        "blob": "738da145d704a11d5ea9d61b94a401aea781d82d6327d33268821fcbc2b48578",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 1427,
+      "kind": "file",
+      "mode": 493,
+      "path": "sql_cli/output.py",
+      "sha256": "731e70c80e7d68753327fc71e1588596b6e7e3230f77de531ba03b2195f7197f",
+      "source": {
+        "blob": "731e70c80e7d68753327fc71e1588596b6e7e3230f77de531ba03b2195f7197f",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 34112,
+      "kind": "file",
+      "mode": 493,
+      "path": "sql_cli/sql_parser.py",
+      "sha256": "93d0b22616417e2b73e50aa209d64b0073d5aa7ca9b79206008b11977734bbf1",
+      "source": {
+        "blob": "93d0b22616417e2b73e50aa209d64b0073d5aa7ca9b79206008b11977734bbf1",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 30374,
+      "kind": "file",
+      "mode": 493,
+      "path": "sql_cli/table_registry.py",
+      "sha256": "a8cfc9b8066db10c6814457597fa46f7f361af75aa98bf12f6efeec39675b18a",
+      "source": {
+        "blob": "a8cfc9b8066db10c6814457597fa46f7f361af75aa98bf12f6efeec39675b18a",
+        "kind": "overlay"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests"
+    },
+    {
+      "bytes": 2366,
+      "kind": "file",
+      "mode": 493,
+      "path": "tests/conftest.py",
+      "sha256": "1143a98bf322495ec35a9b0283b778a9bf96dc6d5aa5ed7479f1e95d6fdfc521",
+      "source": {
+        "blob": "1143a98bf322495ec35a9b0283b778a9bf96dc6d5aa5ed7479f1e95d6fdfc521",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 36276,
+      "kind": "file",
+      "mode": 493,
+      "path": "tests/test_cli.py",
+      "sha256": "a69e9c99755be27d0ec60edb2478268afc2834d242dcd96e10c478e82dbe8ca9",
+      "source": {
+        "blob": "a69e9c99755be27d0ec60edb2478268afc2834d242dcd96e10c478e82dbe8ca9",
+        "kind": "overlay"
+      }
+    }
+  ],
+  "overlay_sha256": "d4006236e85e1d176738adcb6254dbf368af06535d5d0cec5ef87572b416cade",
+  "upstream": {
+    "kind": "scbench",
+    "source_root_key": null
+  },
+  "workspace_tree_sha256": "14e5c4d6d411620b3f48dfac75a9acd0b6df6cbde94e924e031ec8de0ae53f85"
+}

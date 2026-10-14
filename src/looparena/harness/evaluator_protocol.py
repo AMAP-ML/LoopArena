@@ -1,15 +1,16 @@
-"""Schemas and deterministic classification for terminal benchmark evaluation."""
+"""Deterministic classification for terminal benchmark evaluation."""
 
 from __future__ import annotations
 
+import math
 from typing import Any
 
-EVALUATOR_PLAN_SCHEMA = "looparena.terminal_evaluator_plan.v1"
 
-OFFICIAL_ADAPTERS = {"scbench", "beyondswe_harbor"}
+OFFICIAL_ADAPTERS = {"scbench", "beyondswe_harbor", "loopsbench"}
 OFFICIAL_ADAPTER_VERSIONS = {
     "scbench": "official-eval-snapshot-v1",
     "beyondswe_harbor": "harbor-verifier-v1",
+    "loopsbench": "source-run-tests-v1",
 }
 _COUNTABLE_TERMINAL_STATUSES = {
     "completed",
@@ -17,6 +18,7 @@ _COUNTABLE_TERMINAL_STATUSES = {
     "runtime_exceeded",
     "protocol_violation",
     "invalid_contract",
+    "controller_output_limit_exhausted",
     "control_channel_budget_exhausted",
     "reporter_budget_exhausted",
     "reporter_protocol_failure",
@@ -32,11 +34,15 @@ _INFRASTRUCTURE_INVALID_REASONS = {
     "reporter_gateway_timeout",
     "reporter_provider_failure",
     "reporter_sandbox_failure",
-    "reporter_wall_time_exhausted",
 }
-_PROTOCOL_INVALID_STATUSES = {"protocol_violation", "invalid_contract"}
+_PROTOCOL_INVALID_STATUSES = {
+    "protocol_violation",
+    "invalid_contract",
+    "controller_output_limit_exhausted",
+}
 _PROTOCOL_INVALID_REASONS = {
     "invalid_contract",
+    "controller_output_limit_exhausted",
     "empty_assistant_response_limit_reached",
     "multiple_tool_calls_not_supported",
 }
@@ -55,7 +61,9 @@ def classify_infrastructure_validity(
     Worker or reporter budget exhaustion, reporter protocol failure, worker
     protocol violations, and invalid controller contracts are countable
     benchmark outcomes under a frozen policy. Provider, context-capacity, and
-    harness infrastructure failures and wall-time exhaustion are not.
+    harness infrastructure failures are not. The manifest-aware classifier
+    promotes only the first configured Main Worker wall-time boundary to a
+    countable budget terminal.
     """
 
     status_text = str(status or "")
@@ -73,6 +81,55 @@ def classify_infrastructure_validity(
     return {
         "valid": valid,
         "classification": classification,
+    }
+
+
+def is_initial_main_worker_wall_time_boundary(manifest: object) -> bool:
+    """Return whether the first configured Worker boundary is countable."""
+
+    if not isinstance(manifest, dict):
+        return False
+    elapsed = manifest.get("main_worker_wall_time_elapsed_sec")
+    current = manifest.get("main_worker_wall_time_current_window_sec")
+    limit = (manifest.get("timeout_policy") or {}).get(
+        "main_worker_wall_time_sec"
+    )
+    return (
+        manifest.get("status") == "runtime_exceeded"
+        and manifest.get("termination_reason")
+        == "main_worker_wall_time_exhausted"
+        and isinstance(limit, (int, float))
+        and not isinstance(limit, bool)
+        and math.isfinite(limit)
+        and limit > 0
+        and isinstance(elapsed, (int, float))
+        and not isinstance(elapsed, bool)
+        and math.isfinite(elapsed)
+        and elapsed >= limit
+        and isinstance(current, (int, float))
+        and not isinstance(current, bool)
+        and math.isfinite(current)
+        and current >= limit
+        and abs(elapsed - current) <= 1e-6 + 1e-12
+        and manifest.get("main_worker_wall_time_window_index") == 1
+    )
+
+
+def classify_manifest_infrastructure_validity(
+    manifest: object,
+) -> dict[str, Any]:
+    """Classify one solve manifest, including the initial Worker wall boundary."""
+
+    if not isinstance(manifest, dict):
+        return classify_infrastructure_validity(None, None)
+    validity = classify_infrastructure_validity(
+        manifest.get("status"), manifest.get("termination_reason")
+    )
+    if not is_initial_main_worker_wall_time_boundary(manifest):
+        return validity
+    return {
+        "valid": True,
+        "classification": "valid_attempt",
     }
 
 
@@ -113,11 +170,7 @@ def derive_protocol_status(manifest: dict[str, Any]) -> dict[str, bool]:
     arm = manifest.get("arm")
     submit_protocol_satisfied = (
         (status == "completed" and arm == "controlled" and reason == "controller_stop")
-        or (
-            status == "completed"
-            and arm == "no-control"
-            and reason == "natural_completion"
-        )
+        or (status == "completed" and arm == "no-control" and reason == "natural_completion")
         or (status == "budget_exhausted" and reason in _BUDGET_TERMINATIONS)
     )
     return {
@@ -135,7 +188,7 @@ def evaluator_identity(plan: dict[str, Any]) -> dict[str, Any]:
         else (
             plan.get("pass_policy")
             or (plan.get("adapter_config") or {}).get("pass_policy")
-            or "all-cases"
+            or ("core-cases" if plan.get("adapter_kind") == "scbench" else "all-cases")
         )
     )
     identity = {
@@ -179,6 +232,11 @@ def validate_evaluator_plan(plan: object) -> list[str]:
         errors.append("evaluator_timeout_invalid")
     if not isinstance(plan.get("adapter_config"), dict):
         errors.append("evaluator_adapter_config_invalid")
+    elif (
+        plan.get("adapter_kind") == "scbench"
+        and evaluator_identity(plan)["pass_policy"] != "core-cases"
+    ):
+        errors.append("scbench_pass_policy_must_be_core")
     return errors
 
 
@@ -215,9 +273,9 @@ def validate_evaluation_receipt(
         sandbox_stopped is False
         and receipt.get("model_access_ended_before_evaluator") is not True
     ):
-        # Old receipts without the newer field remain valid only for the old
-        # post-teardown evaluator boundary. A shared live verifier must state
-        # explicitly that every model-facing call ended before test injection.
+        # A receipt without this field is valid only if the solve sandbox was
+        # stopped. A live verifier must state that model access ended before
+        # test injection.
         errors.append("evaluation_receipt_live_model_boundary_missing")
     status = receipt.get("execution_status")
     if not isinstance(status, str) or not status.strip():
@@ -242,9 +300,7 @@ def combine_final_infrastructure_validity(
     solve_validity: object,
     receipt: object,
 ) -> dict[str, Any]:
-    solve_valid = (
-        isinstance(solve_validity, dict) and solve_validity.get("valid") is True
-    )
+    solve_valid = isinstance(solve_validity, dict) and solve_validity.get("valid") is True
     evaluator_valid = (
         isinstance(receipt, dict)
         and receipt.get("execution_status") == "completed"
@@ -295,9 +351,7 @@ def derive_final_task_outcome(
     )
     return {
         "evaluator_attached": isinstance(receipt, dict),
-        "terminal_evaluator_passed": task_passed
-        if isinstance(task_passed, bool)
-        else None,
+        "terminal_evaluator_passed": task_passed if isinstance(task_passed, bool) else None,
         "within_main_worker_turn_budget": within_budget,
         **protocol,
         "success_at_budget": success,
@@ -305,15 +359,16 @@ def derive_final_task_outcome(
 
 
 __all__ = [
-    "EVALUATOR_PLAN_SCHEMA",
     "OFFICIAL_ADAPTERS",
     "OFFICIAL_ADAPTER_VERSIONS",
     "classify_infrastructure_validity",
+    "classify_manifest_infrastructure_validity",
     "combine_final_infrastructure_validity",
     "derive_final_task_outcome",
     "derive_protocol_status",
     "derive_task_outcome",
     "evaluator_identity",
+    "is_initial_main_worker_wall_time_boundary",
     "validate_evaluation_receipt",
     "validate_evaluator_plan",
 ]

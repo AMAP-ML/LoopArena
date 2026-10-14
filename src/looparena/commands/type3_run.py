@@ -17,25 +17,27 @@ import subprocess
 import sys
 import tempfile
 from datetime import datetime, timezone
+from looparena.runtime.llm import default_worker_base_url
 from pathlib import Path
 from typing import Any
+
 
 from looparena.paths import repository_root
 
 ROOT = repository_root()
 
-from looparena.benchmarks.type3 import (
-    BEYONDSWE_EVALUATOR_SCHEMA,
-    CASE_SCHEMA,
-    SEQUENCE_SCHEMA,
+from looparena.benchmarks.type3 import (  # noqa: E402
     read_object,
     safe_relative,
     sha256_file,
 )
-from looparena.benchmarks.type3_runtime import (
+from looparena.harness.recovery import atomic_write_json, read_checkpoint  # noqa: E402
+from looparena.benchmarks.type3_runtime import (  # noqa: E402
     _ensure_harbor_image,
+    _ensure_loopsbench_image,
     _ensure_scbench_image,
     _harbor_image_profile,
+    _loopsbench_image_profile,
     _materialize_scbench_public_static_assets,
     _require_evaluator_assets,
     _scbench_runtime_profile,
@@ -43,18 +45,18 @@ from looparena.benchmarks.type3_runtime import (
     _source_solve_limits,
     localize_evaluator_plan,
 )
-from looparena.harness.recovery import atomic_write_json, read_checkpoint
-from looparena.runtime.llm import DEFAULT_API_KEY_ENV, default_worker_base_url
-from looparena.runtime.non_adaptive_fixed_controller import (
+from looparena.runtime.sandbox import sanitize_workspace_git_history  # noqa: E402
+from looparena.runtime.non_adaptive_fixed_controller import (  # noqa: E402
     POLICY_ID as FIXED_GOAL_POLICY_ID,
 )
-from looparena.runtime.sandbox import sanitize_workspace_git_history
+
 
 PROVIDER_FAILURE_REASONS = {
     "main_worker_provider_failure",
     "reporter_provider_failure",
     "controller_provider_failure",
 }
+RESUMABLE_INTERRUPTION_REASONS = set(PROVIDER_FAILURE_REASONS)
 
 
 def now() -> str:
@@ -90,6 +92,13 @@ def _reported_token_total(usage: Any) -> int | None:
 def model_token_total_from_manifest(manifest: dict[str, Any]) -> int | None:
     """Sum complete Worker, Reporter, and Controller model-token usage."""
 
+    recorded_total = manifest.get("total_tokens")
+    if (
+        isinstance(recorded_total, int)
+        and not isinstance(recorded_total, bool)
+        and recorded_total >= 0
+    ):
+        return recorded_total
     accounting = manifest.get("compute_accounting")
     if not isinstance(accounting, dict):
         return None
@@ -122,8 +131,6 @@ def aggregate_model_token_total(steps: list[dict[str, Any]]) -> int | None:
 
 def load_case(case_dir: Path) -> tuple[dict[str, Any], dict[str, Any]]:
     manifest = read_object(case_dir / "case.json")
-    if manifest.get("schema_version") != CASE_SCHEMA:
-        raise ValueError("unsupported_type3_case_schema")
     if manifest.get("case_id") != case_dir.name:
         raise ValueError("type3_case_id_directory_mismatch")
     if manifest.get("episode_origin") != "official_problem_start":
@@ -135,9 +142,9 @@ def load_case(case_dir: Path) -> tuple[dict[str, Any], dict[str, Any]]:
     sequence_path = safe_relative(
         case_dir, manifest.get("task_sequence_ref"), "task_sequence_ref"
     )
+    if sha256_file(sequence_path) != manifest.get("task_sequence_sha256"):
+        raise ValueError("type3_task_sequence_hash_mismatch")
     sequence = read_object(sequence_path)
-    if sequence.get("schema_version") != SEQUENCE_SCHEMA:
-        raise ValueError("unsupported_type3_task_sequence_schema")
     if sequence.get("adapter_kind") != manifest.get("adapter_kind"):
         raise ValueError("type3_adapter_kind_mismatch")
     if sequence.get("official_task_id") != manifest.get("official_task_id"):
@@ -149,12 +156,12 @@ def load_case(case_dir: Path) -> tuple[dict[str, Any], dict[str, Any]]:
         raise ValueError("type3_task_sequence_is_empty")
     official_beyondswe: dict[str, Any] | None = None
     official_beyondswe_revision: str | None = None
+    official_beyondswe_evaluator_revision: str | None = None
+    official_loops: dict[str, Any] | None = None
     if manifest.get("adapter_kind") == "beyondswe_harbor":
         registry = read_object(
             case_dir.parents[1] / "BEYONDSWE_OFFICIAL_EVALUATORS.json"
         )
-        if registry.get("schema_version") != BEYONDSWE_EVALUATOR_SCHEMA:
-            raise ValueError("unsupported_beyondswe_official_evaluator_registry")
         if registry.get("formal_evaluator_policy") != "source-native-only":
             raise ValueError("beyondswe_evaluator_policy_is_not_source_native")
         official_beyondswe = (registry.get("cases") or {}).get(manifest["case_id"])
@@ -163,6 +170,33 @@ def load_case(case_dir: Path) -> tuple[dict[str, Any], dict[str, Any]]:
         official_beyondswe_revision = str(
             (registry.get("source") or {}).get("revision") or ""
         )
+        registered_tree = official_beyondswe.get("full_task_tree_sha256")
+        tree_is_registered = "full_task_tree_sha256" in official_beyondswe
+        if tree_is_registered and not (
+            isinstance(registered_tree, str)
+            and len(registered_tree) == 64
+            and all(character in "0123456789abcdef" for character in registered_tree)
+        ):
+            raise ValueError("beyondswe_evaluator_tree_identity_invalid")
+        if tree_is_registered:
+            official_beyondswe_evaluator_revision = f"sha256:{registered_tree}"
+    elif manifest.get("adapter_kind") == "loopsbench":
+        cohort = case_dir.parents[1]
+        index = read_object(cohort / "CASE_INDEX.json")
+        rows = [
+            row
+            for row in index.get("cases") or []
+            if isinstance(row, dict) and row.get("case_id") == manifest["case_id"]
+        ]
+        if len(rows) != 1 or any(
+            rows[0].get(field) != manifest.get(field)
+            for field in ("adapter_kind", "official_task_id")
+        ):
+            raise ValueError("loopsbench_official_task_binding_mismatch")
+        images = read_object(cohort / "LOOPSBENCH_IMAGE_ASSETS.json")
+        official_loops = (images.get("cases") or {}).get(manifest["case_id"])
+        if not isinstance(official_loops, dict):
+            raise ValueError("loopsbench_official_image_binding_missing")
     for step in steps:
         if not isinstance(step, dict):
             raise ValueError("type3_task_step_is_not_object")
@@ -170,20 +204,50 @@ def load_case(case_dir: Path) -> tuple[dict[str, Any], dict[str, Any]]:
         plan_path = safe_relative(
             case_dir, step.get("evaluator_plan_ref"), "evaluator_plan_ref"
         )
-        # The checked-in task path is the package authority. The runtime hash
-        # is derived here only to bind resumable attempts to these exact bytes;
-        # it is not another release-manifest layer.
-        step["task_sha256"] = sha256_file(task_path)
+        if sha256_file(task_path) != step.get("task_sha256"):
+            raise ValueError("type3_task_hash_mismatch")
+        if sha256_file(plan_path) != step.get("evaluator_plan_sha256"):
+            raise ValueError("type3_evaluator_plan_hash_mismatch")
         if official_beyondswe is not None:
             plan = read_object(plan_path)
-            if plan.get("evaluator_revision") is not None:
-                raise ValueError("looparena_evaluator_revision_is_not_formal_type3")
+            if plan.get("evaluator_revision") != (
+                official_beyondswe_evaluator_revision
+            ):
+                raise ValueError("beyondswe_evaluator_revision_mismatch")
             if plan.get("source_revision") != official_beyondswe_revision:
                 raise ValueError("beyondswe_evaluator_source_revision_mismatch")
             if (plan.get("adapter_config") or {}).get(
                 "task_dir"
             ) != official_beyondswe.get("asset_task_dir"):
                 raise ValueError("beyondswe_evaluator_tree_binding_mismatch")
+        if official_loops is not None:
+            plan = read_object(plan_path)
+            runtime = plan.get("runtime_identity") or {}
+            config = plan.get("adapter_config") or {}
+            task_id = str(official_loops.get("task_id") or "")
+            expected_task_dir = f"/opt/looparena/evaluator_assets/tasks/{task_id}"
+            if (
+                not task_id
+                or task_id
+                != str(manifest["official_task_id"]).removeprefix("loopsbench:")
+                or plan.get("adapter_kind") != "loopsbench"
+                or plan.get("adapter_version") != "source-run-tests-v1"
+                or not str(plan.get("source_revision") or "")
+                or not str(plan.get("evaluator_revision") or "")
+                or config.get("task_dir") != expected_task_dir
+                or config.get("runtime_assets_dir")
+                != "/opt/looparena/evaluator_assets/evaluator_runtime"
+                or any(
+                    runtime.get(field) != official_loops.get(field)
+                    for field in (
+                        "image_id",
+                        "image_reference",
+                        "platform",
+                        "task_tree_sha256",
+                    )
+                )
+            ):
+                raise ValueError("loopsbench_official_evaluator_binding_mismatch")
     if manifest.get("adapter_kind") == "scbench":
         names = [str(step.get("step_id") or "") for step in steps]
         expected = [f"checkpoint_{index}" for index in range(1, len(steps) + 1)]
@@ -199,8 +263,11 @@ def load_case(case_dir: Path) -> tuple[dict[str, Any], dict[str, Any]]:
             raise ValueError("type3_checkpoint_failure_policy_mismatch")
         if sequence.get("aggregate_pass_policy") != ("all_official_checkpoints_pass"):
             raise ValueError("type3_aggregate_pass_policy_mismatch")
-    elif len(steps) != 1 or steps[0].get("step_id") != "task":
-        raise ValueError("type3_beyondswe_must_be_one_complete_task")
+    elif manifest.get("adapter_kind") in {"beyondswe_harbor", "loopsbench"}:
+        if len(steps) != 1 or steps[0].get("step_id") != "task":
+            raise ValueError("type3_complete_task_adapter_must_have_one_step")
+    else:
+        raise ValueError("unsupported_type3_adapter")
     return manifest, sequence
 
 
@@ -222,13 +289,21 @@ def prepare_plan(
             raise ValueError("--scbench-runtime-profile applies only to SCBench cases")
         profile = _harbor_image_profile(stored_plan, case_dir)
         resolved_image_id = _ensure_harbor_image(stored_plan, assets_root, profile)
+    elif adapter == "loopsbench":
+        if scbench_runtime_profile != "canonical-amd64":
+            raise ValueError("--scbench-runtime-profile applies only to SCBench cases")
+        profile = _loopsbench_image_profile(stored_plan, case_dir)
+        resolved_image_id = _ensure_loopsbench_image(stored_plan, assets_root, profile)
     else:
         raise ValueError(f"unsupported evaluator adapter: {adapter}")
     localized = localize_evaluator_plan(stored_plan, assets_root=assets_root)
     runtime = localized["runtime_identity"]
     if adapter == "scbench":
         runtime["evaluation_image_id"] = resolved_image_id
+    else:
+        runtime["image_id"] = resolved_image_id
     _require_evaluator_assets(localized)
+    _solve_runtime(localized)
     return localized, resolved_image_id
 
 
@@ -383,6 +458,87 @@ def materialize_beyondswe_origin(
     }
 
 
+def _require_confined_relative_symlinks(source: Path) -> None:
+    if source.is_symlink():
+        raise ValueError(f"LoopsBench top-level public asset is a symlink: {source}")
+    if not source.is_dir():
+        return
+    root = source.resolve()
+    for path in root.rglob("*"):
+        if not path.is_symlink():
+            continue
+        target = Path(os.readlink(path))
+        if target.is_absolute():
+            raise ValueError(f"LoopsBench public symlink is absolute: {path}")
+        relative_target = os.path.normpath(
+            (path.parent.relative_to(root) / target).as_posix()
+        )
+        if relative_target == ".." or relative_target.startswith("../"):
+            raise ValueError(
+                f"LoopsBench public symlink escapes its copied tree: {path}"
+            )
+
+
+def materialize_loopsbench_origin(
+    *,
+    plan: dict[str, Any],
+    workspace: Path,
+) -> dict[str, Any]:
+    """Materialize only the LoopsBench worker-visible release files."""
+
+    config = plan.get("adapter_config") or {}
+    task_dir = Path(str(config.get("task_dir") or "")).resolve()
+    public_names = (
+        "base",
+        "requirements",
+        "tests",
+        "run-tests.sh",
+        "unit_dag.json",
+        "module_dag.yaml",
+        "task.yaml",
+    )
+    base = task_dir / "base"
+    if base.is_symlink() or not base.is_dir():
+        raise FileNotFoundError(f"LoopsBench base is missing: {base}")
+    sources = [base, *(task_dir / name for name in public_names[1:])]
+    for source in sources:
+        try:
+            source.lstat()
+        except FileNotFoundError as exc:
+            raise FileNotFoundError(
+                f"LoopsBench public asset is missing: {source}"
+            ) from exc
+        _require_confined_relative_symlinks(source)
+    if workspace.exists():
+        raise FileExistsError(f"LoopsBench workspace already exists: {workspace}")
+    workspace.mkdir(parents=True)
+    shutil.copytree(base, workspace, symlinks=True, dirs_exist_ok=True)
+    for name in public_names[1:]:
+        source = task_dir / name
+        destination = workspace / name
+        if source.is_dir():
+            shutil.copytree(source, destination, symlinks=True, dirs_exist_ok=True)
+        else:
+            shutil.copy2(source, destination)
+    leaked = [
+        name
+        for name in ("gold_patches", "solution.sh", "slug_diff_map.json")
+        if (workspace / name).exists()
+    ]
+    if leaked:
+        raise RuntimeError(
+            "LoopsBench hidden construction assets leaked: " + ",".join(leaked)
+        )
+    sanitize_workspace_git_history(workspace)
+    return {
+        "workspace_origin": "pinned_loopsbench_release_source_base",
+        "task_id": task_dir.name,
+        "public_assets": list(public_names),
+        "gold_patches_exposed_to_model": False,
+        "evaluator_outcomes_exposed_to_model": False,
+    }
+
+
 def materialize_official_origin(
     *,
     manifest: dict[str, Any],
@@ -399,14 +555,33 @@ def materialize_official_origin(
             "problem_name": config.get("problem_name"),
             "private_bundle_path_exposed_to_model": False,
         }
-    return materialize_beyondswe_origin(
-        plan=first_plan,
-        sequence=sequence,
-        workspace=workspace,
-    )
+    if manifest["adapter_kind"] == "beyondswe_harbor":
+        return materialize_beyondswe_origin(
+            plan=first_plan,
+            sequence=sequence,
+            workspace=workspace,
+        )
+    if manifest["adapter_kind"] == "loopsbench":
+        return materialize_loopsbench_origin(
+            plan=first_plan,
+            workspace=workspace,
+        )
+    raise ValueError("unsupported_type3_adapter")
 
 
-def final_step_state(manifest: dict[str, Any]) -> tuple[str, bool | None]:
+def final_step_state(
+    manifest: dict[str, Any], *, run_dir: Path | None = None
+) -> tuple[str, bool | None]:
+    if run_dir is not None:
+        from looparena.commands.validate_run import validate_run_dir
+
+        audited = validate_run_dir(run_dir, require_terminal_evaluator=True)
+        if not audited["ok"] or not audited["infrastructure_valid"]:
+            return "infrastructure_invalid", None
+        passed = audited["task_success_at_budget"]
+        if type(passed) is not bool:
+            return "infrastructure_invalid", None
+        return ("passed" if passed else "failed"), passed
     validity = manifest.get("infrastructure_validity") or {}
     if (
         validity.get("valid") is not True
@@ -434,6 +609,25 @@ def continue_after_step(sequence: dict[str, Any], step_state: str) -> bool:
     return step_state == "passed"
 
 
+def require_child_identity(
+    child, *, arm, seed, worker_model, controller_provider, controller_model
+):
+    if child.get("arm") != arm or child.get("seed") != seed:
+        raise ValueError("child_arm_or_seed_mismatch")
+    worker = child.get("worker") or {}
+    controller = child.get("controller") or {}
+    if worker.get("model") != worker_model:
+        raise ValueError("child_worker_model_mismatch")
+    if arm == "controlled":
+        if (
+            controller.get("provider_kind") != controller_provider
+            or controller.get("model") != controller_model
+        ):
+            raise ValueError("child_controller_identity_mismatch")
+    elif controller:
+        raise ValueError("no_control_child_has_controller")
+
+
 def audited_completed_steps(
     *,
     out_dir: Path,
@@ -442,6 +636,9 @@ def audited_completed_steps(
     sequence: dict[str, Any],
     arm: str,
     seed: int,
+    worker_model: str | None = None,
+    controller_provider: str = "model",
+    controller_model: str | None = None,
 ) -> list[dict[str, Any]]:
     """Validate completed checkpoints before continuing a Type III task.
 
@@ -474,7 +671,16 @@ def audited_completed_steps(
         if not child_path.is_file():
             raise ValueError(f"resume_child_manifest_missing:{step_id}")
         child = read_object(child_path)
-        state, task_passed = final_step_state(child)
+        if worker_model is not None:
+            require_child_identity(
+                child,
+                arm=arm,
+                seed=seed,
+                worker_model=worker_model,
+                controller_provider=controller_provider,
+                controller_model=controller_model,
+            )
+        state, task_passed = final_step_state(child, run_dir=child_path.parent)
         if state not in {"passed", "failed"}:
             raise ValueError(f"resume_child_is_infrastructure_invalid:{step_id}")
         if record.get("status") != state or record.get("task_passed") != task_passed:
@@ -499,7 +705,7 @@ def audited_provider_interrupted_step(
     controller_provider: str,
     controller_model: str | None,
 ) -> tuple[list[dict[str, Any]], str] | None:
-    """Audit a trailing provider-interrupted checkpoint for durable resume."""
+    """Audit a trailing provider failure for resume."""
 
     existing = aggregate.get("steps")
     if not isinstance(existing, list) or not existing:
@@ -512,7 +718,8 @@ def audited_provider_interrupted_step(
     if not child_path.is_file() or not checkpoint_path.is_file():
         return None
     child = read_object(child_path)
-    if child.get("termination_reason") not in PROVIDER_FAILURE_REASONS:
+    interruption_reason = str(child.get("termination_reason") or "")
+    if interruption_reason not in RESUMABLE_INTERRUPTION_REASONS:
         return None
     validity = child.get("infrastructure_validity") or {}
     if validity.get("valid") is not False:
@@ -547,6 +754,9 @@ def audited_provider_interrupted_step(
             sequence=sequence,
             arm=arm,
             seed=seed,
+            worker_model=worker_model,
+            controller_provider=controller_provider,
+            controller_model=controller_model,
         )
 
     official_step = official_steps[len(completed)]
@@ -580,15 +790,28 @@ def prepare_provider_interrupted_step_resume(
     *,
     out_dir: Path,
     step_id: str,
+    interruption_reason: str = "main_worker_provider_failure",
 ) -> Path:
-    """Archive an immutable failed attempt and stage its safe checkpoint."""
+    """Archive an immutable interrupted attempt and stage its safe checkpoint."""
+
+    if interruption_reason not in RESUMABLE_INTERRUPTION_REASONS:
+        raise ValueError("resume_interruption_is_not_infrastructure_failure")
 
     step_out = out_dir / "checkpoints" / step_id
     checkpoint = read_checkpoint(step_out / "recovery_checkpoint.json")
+    boundary = checkpoint.get("journal_sequence")
+    journal_lines = None
+    if "journal_sequence" in checkpoint:
+        journal_path = step_out / "in_progress_journal.jsonl"
+        journal_lines = journal_path.read_text(encoding="utf-8").splitlines()
+        if type(boundary) is not int or not 0 <= boundary <= len(journal_lines):
+            raise ValueError("resume_checkpoint_journal_boundary_is_invalid")
+
     attempt_index = 1
+    attempt_kind = "provider-failure"
     while True:
         archived = step_out.with_name(
-            f"{step_id}.provider-failure-attempt-{attempt_index}"
+            f"{step_id}.{attempt_kind}-attempt-{attempt_index}"
         )
         if not archived.exists():
             break
@@ -599,10 +822,17 @@ def prepare_provider_interrupted_step_resume(
         archived / "recovery_checkpoint.json",
         step_out / "recovery_checkpoint.json",
     )
+    if journal_lines is not None:
+        (step_out / "in_progress_journal.jsonl").write_text(
+            "".join(f"{line}\n" for line in journal_lines[:boundary]),
+            encoding="utf-8",
+        )
     atomic_write_json(
         step_out / "resumed_from.json",
         {
+
             "source_attempt": archived.name,
+            "interruption_reason": interruption_reason,
             "source_worker_turns": int(checkpoint.get("main_worker_turns") or 0),
             "source_cycle_index": int(checkpoint.get("cycle_index") or 0),
             "resume_boundary": str(checkpoint.get("phase") or "call_worker"),
@@ -629,12 +859,13 @@ def build_parser() -> argparse.ArgumentParser:
         help=(
             "Continue an incomplete official checkpoint sequence in the existing "
             "--out-dir workspace; completed checkpoints are audited and never rerun, "
-            "and a provider-interrupted checkpoint resumes from its safe boundary."
+            "and a provider-interrupted checkpoint resumes from its safe boundary. "
+            "Signal-interrupted active checkpoints require manual recovery and are not resumed."
         ),
     )
     parser.add_argument("--seed", type=int, default=0)
-    parser.add_argument("--worker-model", default="qwen3.7-plus")
-    parser.add_argument("--controller-model", default="qwen3.7-plus")
+    parser.add_argument("--worker-model", help="Model ID accepted by the configured endpoint.")
+    parser.add_argument("--controller-model", help="Model ID accepted by the configured endpoint.")
     parser.add_argument(
         "--controller-provider",
         choices=("model", "non-adaptive-fixed"),
@@ -648,7 +879,6 @@ def build_parser() -> argparse.ArgumentParser:
         "--scbench-runtime-profile",
         choices=("canonical-amd64",),
         default="canonical-amd64",
-        help="Official SCBench linux/amd64 runtime.",
     )
     parser.add_argument("--base-url", default=default_worker_base_url())
     parser.add_argument(
@@ -657,17 +887,24 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument("--credential-profile-id", default="default-gateway")
     parser.add_argument("--controller-credential-profile-id")
-    parser.add_argument("--controller-api-key-env", default=DEFAULT_API_KEY_ENV)
+    parser.add_argument("--api-key-env", default="OPENAI_API_KEY")
+    parser.add_argument("--controller-api-key-env", default="OPENAI_API_KEY")
     parser.add_argument("--worker-wall-time-sec", type=int, default=7200)
     parser.add_argument("--reporter-wall-time-sec", type=int, default=900)
     parser.add_argument("--gateway-timeout-sec", type=int, default=900)
     parser.add_argument("--tool-timeout-sec", type=int, default=120)
-    parser.add_argument("harness_args", nargs=argparse.REMAINDER)
     return parser
 
 
 def main(argv: list[str] | None = None) -> int:
-    args = build_parser().parse_args(argv)
+    parser = build_parser()
+    args = parser.parse_args(argv)
+    if not args.preflight_only and not args.materialize_origin_only:
+        if not args.worker_model or not args.worker_model.strip():
+            parser.error("--worker-model is required for model execution")
+        if args.arm == "controlled" and args.controller_provider == "model":
+            if not args.controller_model or not args.controller_model.strip():
+                parser.error("--controller-model is required for a model Controller")
     if args.controller_provider != "model" and args.arm != "controlled":
         raise SystemExit("non-model controller providers are controlled-only")
     case_dir = args.case_dir.expanduser().resolve()
@@ -720,11 +957,31 @@ def main(argv: list[str] | None = None) -> int:
     if args.out_dir is None:
         raise SystemExit("--out-dir is required unless --preflight-only is used")
     out_dir = args.out_dir.expanduser().resolve()
+    configuration = {
+        "worker_model": args.worker_model,
+        "controller_provider": args.controller_provider
+        if args.arm == "controlled"
+        else None,
+        "controller_model": (
+            FIXED_GOAL_POLICY_ID
+            if args.controller_provider == "non-adaptive-fixed"
+            else args.controller_model
+        )
+        if args.arm == "controlled"
+        else None,
+        "worker_wall_time_sec": args.worker_wall_time_sec,
+        "reporter_wall_time_sec": args.reporter_wall_time_sec,
+        "tool_timeout_sec": args.tool_timeout_sec,
+        "gateway_timeout_sec": args.gateway_timeout_sec,
+        "scbench_runtime_profile": args.scbench_runtime_profile,
+    }
     if args.resume_existing:
         if not out_dir.is_dir():
             raise SystemExit(f"resume out dir does not exist: {out_dir}")
         aggregate = read_object(out_dir / "run_manifest.json")
-        provider_interrupted = audited_provider_interrupted_step(
+        if aggregate.get("configuration") != configuration:
+            raise ValueError("resume configuration differs from the original run")
+        resumable_interrupted = audited_provider_interrupted_step(
             out_dir=out_dir,
             aggregate=aggregate,
             manifest=manifest,
@@ -743,7 +1000,7 @@ def main(argv: list[str] | None = None) -> int:
                 else None
             ),
         )
-        if provider_interrupted is None:
+        if resumable_interrupted is None:
             existing_steps = audited_completed_steps(
                 out_dir=out_dir,
                 aggregate=aggregate,
@@ -751,18 +1008,62 @@ def main(argv: list[str] | None = None) -> int:
                 sequence=sequence,
                 arm=args.arm,
                 seed=args.seed,
+                worker_model=args.worker_model,
+                controller_provider=args.controller_provider,
+                controller_model=(
+                    FIXED_GOAL_POLICY_ID
+                    if args.controller_provider == "non-adaptive-fixed"
+                    else args.controller_model
+                )
+                if args.arm == "controlled"
+                else None,
             )
             interrupted_step_id = None
+            interruption_reason = None
+            archived_attempt = None
         else:
-            existing_steps, interrupted_step_id = provider_interrupted
-            prepare_provider_interrupted_step_resume(
+            existing_steps, interrupted_step_id = resumable_interrupted
+            interrupted_manifest = read_object(
+                out_dir / "checkpoints" / interrupted_step_id / "run_manifest.json"
+            )
+            interruption_reason = str(
+                interrupted_manifest.get("termination_reason") or ""
+            )
+            archived_attempt = prepare_provider_interrupted_step_resume(
                 out_dir=out_dir,
                 step_id=interrupted_step_id,
+                interruption_reason=interruption_reason,
             )
         aggregate["steps"] = list(existing_steps)
         workspace = out_dir / "workspace"
+        resume_audit = {
+            "resumed_at": now(),
+
+            "previous_target_step": aggregate.get("target_step"),
+            "previous_checkpoint_failure_policy": aggregate.get(
+                "checkpoint_failure_policy"
+            ),
+            "reused_completed_checkpoints": [
+                step["step_id"] for step in existing_steps
+            ],
+            "resumed_provider_interrupted_checkpoint": interrupted_step_id,
+            "resumed_interruption_reason": interruption_reason,
+            "archived_provider_interrupted_attempt": (
+                archived_attempt.relative_to(out_dir).as_posix()
+                if archived_attempt is not None
+                else None
+            ),
+            "new_target_step": sequence["target_step"],
+            "resume_reason": (
+                "provider_interruption_recovery"
+                if interruption_reason is not None
+                else "official_full_checkpoint_series_correction"
+            ),
+        }
+        atomic_write_json(out_dir / "type3_full_series_resume_audit.json", resume_audit)
         aggregate.update(
             {
+
                 "official_task_id": manifest["official_task_id"],
                 "task_scope": manifest["task_scope"],
                 "checkpoint_context_policy": sequence["checkpoint_context_policy"],
@@ -784,6 +1085,7 @@ def main(argv: list[str] | None = None) -> int:
                     int(step.get("main_worker_turns") or 0) for step in existing_steps
                 ),
                 "total_tokens": aggregate_model_token_total(existing_steps),
+                "resume_audit": "type3_full_series_resume_audit.json",
             }
         )
         start_index = len(existing_steps)
@@ -804,6 +1106,7 @@ def main(argv: list[str] | None = None) -> int:
         atomic_write_json(
             out_dir / "run_manifest.json",
             {
+
                 "case_id": manifest["case_id"],
                 "episode_origin": "official_problem_start",
                 "status": "origin_materialized",
@@ -824,6 +1127,8 @@ def main(argv: list[str] | None = None) -> int:
         return 0
     if not args.resume_existing:
         aggregate = {
+            "configuration": configuration,
+
             "case_id": manifest["case_id"],
             "official_task_id": manifest["official_task_id"],
             "task_scope": manifest["task_scope"],
@@ -877,8 +1182,6 @@ def main(argv: list[str] | None = None) -> int:
                 str(args.seed),
                 "--worker-model",
                 args.worker_model,
-                "--controller-model",
-                args.controller_model,
                 "--credential-profile-id",
                 args.credential_profile_id,
                 "--controller-api-key-env",
@@ -909,6 +1212,11 @@ def main(argv: list[str] | None = None) -> int:
                     command.extend(["--solve-setup-timeout-sec", "310"])
                 for setup_command in solve_setup_commands:
                     command.extend(["--solve-setup-command", setup_command])
+            if evaluator_plan.get("adapter_kind") == "loopsbench":
+                command.append("--normalize-solve-workspace-permissions-after-stop")
+            command.extend(["--api-key-env", args.api_key_env])
+            if args.arm == "controlled" and args.controller_provider == "model":
+                command.extend(["--controller-model", args.controller_model])
             if args.base_url:
                 command.extend(["--base-url", args.base_url])
             if args.controller_base_url:
@@ -924,7 +1232,6 @@ def main(argv: list[str] | None = None) -> int:
                 command.extend(["--controller-provider", args.controller_provider])
             if args.resume_existing and step_id == interrupted_step_id:
                 command.append("--resume-run")
-            command.extend(item for item in args.harness_args if item != "--")
             environment = os.environ.copy()
             if evaluator_plan.get("adapter_kind") == "scbench":
                 platform_name = str(
@@ -950,7 +1257,7 @@ def main(argv: list[str] | None = None) -> int:
             step_manifest = {}
         else:
             step_manifest = read_object(step_manifest_path)
-            step_state, task_passed = final_step_state(step_manifest)
+            step_state, task_passed = final_step_state(step_manifest, run_dir=step_out)
         aggregate["steps"].append(
             {
                 "step_id": step_id,

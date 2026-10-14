@@ -1,0 +1,221 @@
+{
+  "recipes": [
+    {
+      "changed": [],
+      "prepared_tree_sha256": "755bacc25e48e62249f950868b9b5acea09b0305440a684d3cf8ed678e595239",
+      "removed": [],
+      "task": "task_afl_fuzzing",
+      "upstream_tree_sha256": "755bacc25e48e62249f950868b9b5acea09b0305440a684d3cf8ed678e595239"
+    },
+    {
+      "changed": [],
+      "prepared_tree_sha256": "daa04a0dc26fd9f67e5bc5a130ce6dd10effc8d510274af0b6541670e513c38b",
+      "removed": [],
+      "task": "task_alloy_formal_modeling",
+      "upstream_tree_sha256": "daa04a0dc26fd9f67e5bc5a130ce6dd10effc8d510274af0b6541670e513c38b"
+    },
+    {
+      "changed": [],
+      "prepared_tree_sha256": "9f76ed10a91c24fa15b2c6d7f1ace0ed8c1988e822b46f2fce670ab0888a6295",
+      "removed": [],
+      "task": "task_angr_concolic_execution",
+      "upstream_tree_sha256": "9f76ed10a91c24fa15b2c6d7f1ace0ed8c1988e822b46f2fce670ab0888a6295"
+    },
+    {
+      "changed": [],
+      "prepared_tree_sha256": "27258f1dddcbf2c1aacc45e0ed598e6d87756f60ea969af5c4116f3bf744dbd0",
+      "removed": [],
+      "task": "task_boogie_dafny",
+      "upstream_tree_sha256": "27258f1dddcbf2c1aacc45e0ed598e6d87756f60ea969af5c4116f3bf744dbd0"
+    },
+    {
+      "changed": [],
+      "prepared_tree_sha256": "772aa1915b535098c20558683eaf28faf4c98b96fb01ededffb988cf59666aa8",
+      "removed": [],
+      "task": "task_cpachecker",
+      "upstream_tree_sha256": "772aa1915b535098c20558683eaf28faf4c98b96fb01ededffb988cf59666aa8"
+    },
+    {
+      "changed": [],
+      "prepared_tree_sha256": "369ca5b5726a7f1a78d3e09ca13666a1cf65d024190b42c826bae9368ae80f62",
+      "removed": [],
+      "task": "task_cvc_smt_solver",
+      "upstream_tree_sha256": "369ca5b5726a7f1a78d3e09ca13666a1cf65d024190b42c826bae9368ae80f62"
+    },
+    {
+      "changed": [],
+      "prepared_tree_sha256": "352514af7943fafe2919439ca664ba236d3b8d07ec4ff98847d1e4e391d42466",
+      "removed": [],
+      "task": "task_doop_souffle_static_analysis",
+      "upstream_tree_sha256": "352514af7943fafe2919439ca664ba236d3b8d07ec4ff98847d1e4e391d42466"
+    },
+    {
+      "changed": [],
+      "prepared_tree_sha256": "c4e060d8df0bbaea9cca30b24411398986f8eb1d2287b575ef316e216055c6a4",
+      "removed": [],
+      "task": "task_evosuite_test_generation",
+      "upstream_tree_sha256": "c4e060d8df0bbaea9cca30b24411398986f8eb1d2287b575ef316e216055c6a4"
+    },
+    {
+      "changed": [],
+      "prepared_tree_sha256": "9a76a2ac9c971ab0bba93a297b15e03bb277467368021145509a2a430f883e9e",
+      "removed": [],
+      "task": "task_frama_c",
+      "upstream_tree_sha256": "9a76a2ac9c971ab0bba93a297b15e03bb277467368021145509a2a430f883e9e"
+    },
+    {
+      "changed": [],
+      "prepared_tree_sha256": "882356d172433be926043e980e90884e3f606bd33c27490e89ae6caef984022c",
+      "removed": [],
+      "task": "task_gem5_architecture_simulation",
+      "upstream_tree_sha256": "882356d172433be926043e980e90884e3f606bd33c27490e89ae6caef984022c"
+    },
+    {
+      "changed": [],
+      "prepared_tree_sha256": "fdc57ae6c3bdd5f24b7594b75a9f798e20beb306d7e4fb3681eb2a68cf42fc7b",
+      "removed": [],
+      "task": "task_graph_processing",
+      "upstream_tree_sha256": "fdc57ae6c3bdd5f24b7594b75a9f798e20beb306d7e4fb3681eb2a68cf42fc7b"
+    },
+    {
+      "changed": [],
+      "prepared_tree_sha256": "5d50c11cd11a79b5b8f187e4e0e7ecc8f9a0a1f656f098b144f176703b621a4a",
+      "removed": [],
+      "task": "task_jpf_symbolic_execution",
+      "upstream_tree_sha256": "5d50c11cd11a79b5b8f187e4e0e7ecc8f9a0a1f656f098b144f176703b621a4a"
+    },
+    {
+      "changed": [],
+      "prepared_tree_sha256": "4cdb5119b04559b7ab2269ff8d4f11f01420ad54b93e43f95c1cd9d44e8901b6",
+      "removed": [],
+      "task": "task_mininet_network_simulation",
+      "upstream_tree_sha256": "4cdb5119b04559b7ab2269ff8d4f11f01420ad54b93e43f95c1cd9d44e8901b6"
+    },
+    {
+      "changed": [],
+      "prepared_tree_sha256": "a4ee395a74a491f7bd9237d8f9e679ae575dfe044bbdbd3062f5979441ae29e8",
+      "removed": [],
+      "task": "task_mlir_circuit_ir",
+      "upstream_tree_sha256": "a4ee395a74a491f7bd9237d8f9e679ae575dfe044bbdbd3062f5979441ae29e8"
+    },
+    {
+      "changed": [],
+      "prepared_tree_sha256": "8ffd6bdd11dd0496f7aa8e9fa8e74cf218d5e3d6393d84866ab823b2b61af70b",
+      "removed": [],
+      "task": "task_mlp_numpy_coursework",
+      "upstream_tree_sha256": "8ffd6bdd11dd0496f7aa8e9fa8e74cf218d5e3d6393d84866ab823b2b61af70b"
+    },
+    {
+      "changed": [],
+      "prepared_tree_sha256": "07af38dc785eb55530d5262d61b1913532cc0809cf6f49ef31179d55151167aa",
+      "removed": [],
+      "task": "task_mlsys_autodiff_pa1",
+      "upstream_tree_sha256": "07af38dc785eb55530d5262d61b1913532cc0809cf6f49ef31179d55151167aa"
+    },
+    {
+      "changed": [],
+      "prepared_tree_sha256": "676bbf285203a4de3c1f2f74999f79b1efeddbe0bec4041fc27da6023e9ac7af",
+      "removed": [],
+      "task": "task_monogame_math2d_medium",
+      "upstream_tree_sha256": "676bbf285203a4de3c1f2f74999f79b1efeddbe0bec4041fc27da6023e9ac7af"
+    },
+    {
+      "changed": [],
+      "prepared_tree_sha256": "4445e8eddc5318137362fd341d6e6adb61f8d7957db56ca4230fcb0404f5b423",
+      "removed": [],
+      "task": "task_monogame_transform3d_medium",
+      "upstream_tree_sha256": "4445e8eddc5318137362fd341d6e6adb61f8d7957db56ca4230fcb0404f5b423"
+    },
+    {
+      "changed": [],
+      "prepared_tree_sha256": "5f82175ecf89fcb4862048e1e99d31f8f599a14eb396adb7c6ac5dc00ece994b",
+      "removed": [],
+      "task": "task_nandteris",
+      "upstream_tree_sha256": "5f82175ecf89fcb4862048e1e99d31f8f599a14eb396adb7c6ac5dc00ece994b"
+    },
+    {
+      "changed": [],
+      "prepared_tree_sha256": "a82a364e858143e18c2519e741dd485d8e534021ac2242cff80146a7bda43db9",
+      "removed": [],
+      "task": "task_ns3_network_simulation",
+      "upstream_tree_sha256": "a82a364e858143e18c2519e741dd485d8e534021ac2242cff80146a7bda43db9"
+    },
+    {
+      "changed": [],
+      "prepared_tree_sha256": "907ceb30d80efc45da9474bbf3b6dc1ffe8da6d65a6ba4cfabcecd291a1df9cd",
+      "removed": [],
+      "task": "task_perses_program_reduction",
+      "upstream_tree_sha256": "907ceb30d80efc45da9474bbf3b6dc1ffe8da6d65a6ba4cfabcecd291a1df9cd"
+    },
+    {
+      "changed": [],
+      "prepared_tree_sha256": "c9a52e2182a974887d78576a4149bf72a5bdffd0cafbe2aa3c513d8345e70e05",
+      "removed": [],
+      "task": "task_raylib_shapes2d_medium",
+      "upstream_tree_sha256": "c9a52e2182a974887d78576a4149bf72a5bdffd0cafbe2aa3c513d8345e70e05"
+    },
+    {
+      "changed": [],
+      "prepared_tree_sha256": "51dbc4f328e5930ab1ecfd7c9e726a2d6573e8cbae71ee80dab2f5a7fe4189d7",
+      "removed": [],
+      "task": "task_raylib_textures_hard",
+      "upstream_tree_sha256": "51dbc4f328e5930ab1ecfd7c9e726a2d6573e8cbae71ee80dab2f5a7fe4189d7"
+    },
+    {
+      "changed": [],
+      "prepared_tree_sha256": "469b0201ce0ee2d53714d27a8fab758e700f5e5174ea5911c78cc3658e0e2e12",
+      "removed": [],
+      "task": "task_riscv_cpu_six_labs",
+      "upstream_tree_sha256": "469b0201ce0ee2d53714d27a8fab758e700f5e5174ea5911c78cc3658e0e2e12"
+    },
+    {
+      "changed": [],
+      "prepared_tree_sha256": "f5c2eeb279a614776909ffb1487ab0c9d6a304e68a680961ebd8667775eba485",
+      "removed": [],
+      "task": "task_riscv_cpu_verilog_three",
+      "upstream_tree_sha256": "f5c2eeb279a614776909ffb1487ab0c9d6a304e68a680961ebd8667775eba485"
+    },
+    {
+      "changed": [],
+      "prepared_tree_sha256": "efaeeb3f08b01620d44e067c177bc247cbd4070e77ca89d5182532b6e103f28b",
+      "removed": [],
+      "task": "task_sklearn_ml_toolchain",
+      "upstream_tree_sha256": "efaeeb3f08b01620d44e067c177bc247cbd4070e77ca89d5182532b6e103f28b"
+    },
+    {
+      "changed": [],
+      "prepared_tree_sha256": "bebc7719198b6ec0ac83d5e7907451a42c4978d165ae5553530e5c5edada5f48",
+      "removed": [],
+      "task": "task_soot_taint_analysis",
+      "upstream_tree_sha256": "bebc7719198b6ec0ac83d5e7907451a42c4978d165ae5553530e5c5edada5f48"
+    },
+    {
+      "changed": [],
+      "prepared_tree_sha256": "7c2cd3d04501cf53a2755ea5b26e731c2daab6ab8bc8f1b4eeced08c8d9798e6",
+      "removed": [],
+      "task": "task_sql_engine_myjql",
+      "upstream_tree_sha256": "7c2cd3d04501cf53a2755ea5b26e731c2daab6ab8bc8f1b4eeced08c8d9798e6"
+    },
+    {
+      "changed": [
+        {
+          "file": "task_stream_mining-run-tests.sh",
+          "mode": 511,
+          "path": "run-tests.sh",
+          "sha256": "899c11592ac16609abbf2a1d0bfca2daee70a81fcf1a575e3966d9dc4c2941ce"
+        }
+      ],
+      "prepared_tree_sha256": "68d0013de74a2672040c903879b021f66d73eb5037c948dc9cce18d5f7f8d6f5",
+      "removed": [],
+      "task": "task_stream_mining",
+      "upstream_tree_sha256": "cc23ad769262db5c760b4c15f0d3f846c6170416009f8d1db8f23fd6982bbc06"
+    },
+    {
+      "changed": [],
+      "prepared_tree_sha256": "aac3499e88d88aa43b71238609a7146eac9b9a034bcc55a1bdd440c284843859",
+      "removed": [],
+      "task": "task_z3_fixedpoint_verification",
+      "upstream_tree_sha256": "aac3499e88d88aa43b71238609a7146eac9b9a034bcc55a1bdd440c284843859"
+    }
+  ]
+}

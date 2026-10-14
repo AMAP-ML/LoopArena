@@ -1,0 +1,4164 @@
+{
+  "case_id": "tri80-beyondswe-neuralensemble_python-neo_pr1554-cp2",
+  "files": [
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": ".github"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": ".github/ISSUE_TEMPLATE"
+    },
+    {
+      "bytes": 938,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "sha256": "1699839f49cd8dc12fbed4a017349d778a9dab221ae3b8a5dd76d70a52e5721b",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/ISSUE_TEMPLATE/bug_report.md"
+      }
+    },
+    {
+      "bytes": 639,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/ISSUE_TEMPLATE/confusing-documentation.md",
+      "sha256": "16ceb51e5e63023165e4c83238b4cf80fd335348f96d60cde16637f9c550846f",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/ISSUE_TEMPLATE/confusing-documentation.md"
+      }
+    },
+    {
+      "bytes": 602,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+      "sha256": "60b630e201fd3d9c2fb1bae2cbf2f7498bfe94bd6f6a31e0c9a7dbd92bc42abe",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/ISSUE_TEMPLATE/feature_request.md"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": ".github/workflows"
+    },
+    {
+      "bytes": 937,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/workflows/black-formatting.yml",
+      "sha256": "fc8508ecb4f8c12ad6ea811455d96eebcc38f44de73898a22fee176f3817f6f7",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/workflows/black-formatting.yml"
+      }
+    },
+    {
+      "bytes": 4027,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/workflows/caches_cron_job.yml",
+      "sha256": "33a9845e68b82dc702efe4e8c3aeb7fb42c233b059548c1dc8f62b57ff88835f",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/workflows/caches_cron_job.yml"
+      }
+    },
+    {
+      "bytes": 1770,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/workflows/core-test.yml",
+      "sha256": "b8f3a62105e27963d568441cd39f5db7c1f988f34238d737c391c9f3329ad2f1",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/workflows/core-test.yml"
+      }
+    },
+    {
+      "bytes": 1152,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/workflows/ebrains.yml",
+      "sha256": "b4dbcbc3519779c92e7159948525c13f85435b4f5d133515410970f53c92f1bf",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/workflows/ebrains.yml"
+      }
+    },
+    {
+      "bytes": 4319,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/workflows/io-test.yml",
+      "sha256": "17b75197fc2b8290a6e1ddabd2cb5f085d290d14bcc44b23bbebb1cb94a68ed8",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/workflows/io-test.yml"
+      }
+    },
+    {
+      "bytes": 390,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/workflows/io-test_dispatch.yml",
+      "sha256": "b9266f3769ab220aab2996efab55f661591c20b5b9930f86bd524523d02b229e",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/workflows/io-test_dispatch.yml"
+      }
+    },
+    {
+      "bytes": 333,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/workflows/io-test_trigger.yml",
+      "sha256": "3a2b312d685c0739b35ec0dbf85c3851464f776839bc80510fac85592b0aaca0",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/workflows/io-test_trigger.yml"
+      }
+    },
+    {
+      "bytes": 1624,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/workflows/publish-to-pypi-test.yml",
+      "sha256": "55b2e83b9eabb35eb3fe05cbe76e32dedd565eef20eacf9f12398c5d176d2f52",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/workflows/publish-to-pypi-test.yml"
+      }
+    },
+    {
+      "bytes": 689,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/workflows/publish-to-pypi.yml",
+      "sha256": "a88b2cf0e85b97b5ae7e68e21db46d0508b7d8e2265c08710c07fb2d40f6c152",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/workflows/publish-to-pypi.yml"
+      }
+    },
+    {
+      "bytes": 981,
+      "kind": "file",
+      "mode": 420,
+      "path": ".gitignore",
+      "sha256": "8ac4c10676a8248d0fd8e8d9d0178e39a16e2b5be25bed58e4723d5aeb094b3c",
+      "source": {
+        "kind": "upstream",
+        "path": ".gitignore"
+      }
+    },
+    {
+      "bytes": 164,
+      "kind": "file",
+      "mode": 420,
+      "path": ".pep8speaks.yml",
+      "sha256": "fee5f46d3fc899be54a2f4e4233cf66ec30f14aa718b49a0cd35851db83fc3bd",
+      "source": {
+        "kind": "upstream",
+        "path": ".pep8speaks.yml"
+      }
+    },
+    {
+      "bytes": 205,
+      "kind": "file",
+      "mode": 420,
+      "path": ".readthedocs.yaml",
+      "sha256": "61f9702a6efc36a3ca3591934553bcc94396e6874aca6f4a0be8cd68c7afa4d2",
+      "source": {
+        "kind": "upstream",
+        "path": ".readthedocs.yaml"
+      }
+    },
+    {
+      "bytes": 27,
+      "kind": "file",
+      "mode": 420,
+      "path": "AUTHORS",
+      "sha256": "14a8899bdd1b9fa12d0146d9049ad8a3f954e367b45133628bbce13e7d2048e3",
+      "source": {
+        "kind": "upstream",
+        "path": "AUTHORS"
+      }
+    },
+    {
+      "bytes": 994,
+      "kind": "file",
+      "mode": 420,
+      "path": "CITATION.txt",
+      "sha256": "1b34ffc42fa50ae860836d012c4673d64e708b9ef484ae84f0257d30e285ca1d",
+      "source": {
+        "kind": "upstream",
+        "path": "CITATION.txt"
+      }
+    },
+    {
+      "bytes": 3227,
+      "kind": "file",
+      "mode": 420,
+      "path": "CODE_OF_CONDUCT.md",
+      "sha256": "fe9e3b161d60282d607ef4eba72f16a911a1b3f6ef5679d20038e76611cd7803",
+      "source": {
+        "kind": "upstream",
+        "path": "CODE_OF_CONDUCT.md"
+      }
+    },
+    {
+      "bytes": 59,
+      "kind": "file",
+      "mode": 420,
+      "path": "CONTRIBUTING.md",
+      "sha256": "1c8d236222688358498c78e569353665ad7b13dfc9d7bdc461bd21d4eb5f9a1d",
+      "source": {
+        "kind": "upstream",
+        "path": "CONTRIBUTING.md"
+      }
+    },
+    {
+      "bytes": 1501,
+      "kind": "file",
+      "mode": 420,
+      "path": "LICENSE.txt",
+      "sha256": "947626487237d9b9e6d2794120d6f323cefbbf2f9ef89d76bb7efbb193fb247e",
+      "source": {
+        "kind": "upstream",
+        "path": "LICENSE.txt"
+      }
+    },
+    {
+      "bytes": 199,
+      "kind": "file",
+      "mode": 420,
+      "path": "MANIFEST.in",
+      "sha256": "a0e526b0fd467c1b33269b3cb486d45295fb8003791c76c882ef51a09eddefa8",
+      "source": {
+        "kind": "upstream",
+        "path": "MANIFEST.in"
+      }
+    },
+    {
+      "bytes": 4059,
+      "kind": "file",
+      "mode": 420,
+      "path": "README.rst",
+      "sha256": "418c4d9b5777d98ba2061b6099dfaf0c95b586335330aa046b7f82d80f766792",
+      "source": {
+        "kind": "upstream",
+        "path": "README.rst"
+      }
+    },
+    {
+      "bytes": 8836,
+      "kind": "file",
+      "mode": 420,
+      "path": "codemeta.json",
+      "sha256": "6487415bd4a4eef98e7c98c84be6a664376efd02e122eb7a883422f866c936f1",
+      "source": {
+        "kind": "upstream",
+        "path": "codemeta.json"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "doc"
+    },
+    {
+      "bytes": 3149,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/Makefile",
+      "sha256": "92c320671e69242d5e261febf067ae57c3db893fd64f43034a83a06402ff75e2",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/Makefile"
+      }
+    },
+    {
+      "bytes": 480048,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/example_data.txt",
+      "sha256": "7f8c0ab5c438224f3b5e91175203e8db48f5ece4d79d19db534b6bca9cace99d",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/example_data.txt"
+      }
+    },
+    {
+      "bytes": 269,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/example_data_about.json",
+      "sha256": "a4eb049ea4ade6199dcdb306a3c04977c860ae0e0b27c9070617fb495597a117",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/example_data_about.json"
+      }
+    },
+    {
+      "bytes": 3069,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/make.bat",
+      "sha256": "62ff143fa6b554bb2ddbc320d1e77e7a56fc30d59dd56fbaf43ef11a65d759f6",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/make.bat"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "doc/old_stuffs"
+    },
+    {
+      "bytes": 11614,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/old_stuffs/core.rst",
+      "sha256": "472ec895bf5c39d724b89607d432482d71795629b5a312c10b04786ee4add20f",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/old_stuffs/core.rst"
+      }
+    },
+    {
+      "bytes": 9059,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/old_stuffs/developers_guide.rst",
+      "sha256": "5378478a3ab4a5b3cf3494675ec851e0276f306f63e54d73c91beab65657d1f2",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/old_stuffs/developers_guide.rst"
+      }
+    },
+    {
+      "bytes": 354,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/old_stuffs/examples.rst",
+      "sha256": "0a9c23e349ed77779aacc23069cad67c900500177a2bec68de5b74013c50b26b",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/old_stuffs/examples.rst"
+      }
+    },
+    {
+      "bytes": 4018,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/old_stuffs/gif2011workshop.rst",
+      "sha256": "325301441b296a5581771fe46229f73ed6af6aeb37da95d499462553fffd21d4",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/old_stuffs/gif2011workshop.rst"
+      }
+    },
+    {
+      "bytes": 5689,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/old_stuffs/grouping.rst",
+      "sha256": "5bbacb184735cf202589a98440571e85b46ca66c3ab4a07094eb7cee1a3fa20e",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/old_stuffs/grouping.rst"
+      }
+    },
+    {
+      "bytes": 3201,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/old_stuffs/index.rst",
+      "sha256": "31cdad3a8f34d889660bcb707bdbbad09aa55686336d0979d8360000914eedc3",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/old_stuffs/index.rst"
+      }
+    },
+    {
+      "bytes": 1834,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/old_stuffs/install.rst",
+      "sha256": "aac2ee0c8d35f9f7d248c3dd82d56cb81d30ff773130193f70e7001aed0d8032",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/old_stuffs/install.rst"
+      }
+    },
+    {
+      "bytes": 12879,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/old_stuffs/io.rst",
+      "sha256": "a72e87d035c56fb9fd7a5e2083cdf034c5d657b40aa3b755a850ef925b5b8022",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/old_stuffs/io.rst"
+      }
+    },
+    {
+      "bytes": 5892,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/old_stuffs/io_developers_guide.rst",
+      "sha256": "f19492afc1c48fceac4ae7adf37db0dba05595a5021b277b2a823acbb644fef0",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/old_stuffs/io_developers_guide.rst"
+      }
+    },
+    {
+      "bytes": 8657,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/old_stuffs/rawio.rst",
+      "sha256": "73bbd038323fe700091c663a8a3bc099fbb5bb48612aea9daf214e45b212eb55",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/old_stuffs/rawio.rst"
+      }
+    },
+    {
+      "bytes": 910,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/old_stuffs/specific_annotations.rst",
+      "sha256": "9405ee4275779ae7527539dbf97c68905818b9e73fb2c8af80fb4e81e06d1635",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/old_stuffs/specific_annotations.rst"
+      }
+    },
+    {
+      "bytes": 7836,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/old_stuffs/usecases.rst",
+      "sha256": "c910b1faa987548a64674fbb3849ba3454427f3ab5decbb0798e8e8f5494a8c4",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/old_stuffs/usecases.rst"
+      }
+    },
+    {
+      "bytes": 112,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/requirements_docs.txt",
+      "sha256": "761f5a9e1cb59acfde977f56106c50c94aed225b60ad9a7552e3941416a1f676",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/requirements_docs.txt"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "doc/source"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "doc/source/_static"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "doc/source/_static/css"
+    },
+    {
+      "bytes": 214,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/_static/css/custom.css",
+      "sha256": "2d0d0839415c1f41ab2ccba197dc9a3bfe224ce2852b37751ec7ef38cc0dd65d",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/_static/css/custom.css"
+      }
+    },
+    {
+      "bytes": 6572,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/add_file_format.rst",
+      "sha256": "ce9cffdf674220089cb287f478769c97fcca6729d18554f6542e06d47aae8677",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/add_file_format.rst"
+      }
+    },
+    {
+      "bytes": 662,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/api_reference.rst",
+      "sha256": "9a86870dca74bb0ec84e47701444cbaf6d1c594ab2a2b9ffc44e182429a65142",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/api_reference.rst"
+      }
+    },
+    {
+      "bytes": 5262,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/authors.rst",
+      "sha256": "d8fda053de023cd416881bdfd3da348747c89fea5089cf648d78c6287f545c70",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/authors.rst"
+      }
+    },
+    {
+      "bytes": 1236,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/bug_reports.rst",
+      "sha256": "00f8cafc822b69ba55f33527727534ecc78b4125fbff01139229dabaa55aabb2",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/bug_reports.rst"
+      }
+    },
+    {
+      "bytes": 8238,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/conf.py",
+      "sha256": "7ee9b8bfea83eb3d133b1a0cf3a8e28a4ddd6522484ee698357c0b89c4fd0801",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/conf.py"
+      }
+    },
+    {
+      "bytes": 20659,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/contributing.rst",
+      "sha256": "4b11e7feaec4f4abf2929fc1f88e13ecbb47fe92bffcc4eaf2c0ae053f239830",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/contributing.rst"
+      }
+    },
+    {
+      "bytes": 480048,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/example_data.txt",
+      "sha256": "7f8c0ab5c438224f3b5e91175203e8db48f5ece4d79d19db534b6bca9cace99d",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/example_data.txt"
+      }
+    },
+    {
+      "bytes": 269,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/example_data_about.json",
+      "sha256": "a4eb049ea4ade6199dcdb306a3c04977c860ae0e0b27c9070617fb495597a117",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/example_data_about.json"
+      }
+    },
+    {
+      "bytes": 58710,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/example_plot.png",
+      "sha256": "c32a3ddbc9cb117415cefb2cb9e97abacbf7b3f45e14fb93ed18275374b78994",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/example_plot.png"
+      }
+    },
+    {
+      "bytes": 2151,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/governance.rst",
+      "sha256": "f806dbf3e20b6605f07c0314b7b25653b2a7af638575b417d0d48255ab7a8a0c",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/governance.rst"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "doc/source/images"
+    },
+    {
+      "bytes": 26821,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/images/IODiagram.eps",
+      "sha256": "18d085380a46f41ee26ab8a42dde8057c94edb31bd471d81a76241e511eb25ee",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/images/IODiagram.eps"
+      }
+    },
+    {
+      "bytes": 453219,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/images/IODiagram.png",
+      "sha256": "fd27f83d17bb7c1d1336b513e303f9d77442c3a14b9c2d8e163e938f9ed70e01",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/images/IODiagram.png"
+      }
+    },
+    {
+      "bytes": 30357,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/images/IODiagram.svg",
+      "sha256": "ecdee146cde12eedc2dc6db4c7ef3ba86067ce62aee3cd00a491db5c5aca3a68",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/images/IODiagram.svg"
+      }
+    },
+    {
+      "bytes": 96058,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/images/base_schematic.png",
+      "sha256": "03b6c5641e7e9d5399b3bd9234e1abbfebec5fbeb0a38bcc6de3389dbeb10e3c",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/images/base_schematic.png"
+      }
+    },
+    {
+      "bytes": 212348,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/images/base_schematic.svg",
+      "sha256": "e42565fa3b4a5f469beafa9fd645b7da8598b9de740ece35342e1535ac85d13d",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/images/base_schematic.svg"
+      }
+    },
+    {
+      "bytes": 9768,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/images/generate_diagram.py",
+      "sha256": "e0251ea627b3d239f10e3fdea9093961bc692de1fcce33a94e94ac45ccc8f32b",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/images/generate_diagram.py"
+      }
+    },
+    {
+      "bytes": 3158,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/images/generate_io_overview.py",
+      "sha256": "0bbd26715416a956be3c0f95d320884871b70bf6df69dd07a3bcdd25ae84c3b1",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/images/generate_io_overview.py"
+      }
+    },
+    {
+      "bytes": 82711,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/images/incf_endorsed_with_spacing.png",
+      "sha256": "e0f6fc2d4424cfedfe4f7341c06d3f9a114ba6ec251e5c01389582613305d6f6",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/images/incf_endorsed_with_spacing.png"
+      }
+    },
+    {
+      "bytes": 147943,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/images/multi_segment_diagram.png",
+      "sha256": "0dcb2992ff1e171e5f1a7cadca88c9a5c8eb78a45d9f58a94b900dd145e08ad4",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/images/multi_segment_diagram.png"
+      }
+    },
+    {
+      "bytes": 149048,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/images/multi_segment_diagram.svg",
+      "sha256": "b4dc49d580d4d18b5fe5cbf91559195640df68cc70c079b2b8e32620a77b6b89",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/images/multi_segment_diagram.svg"
+      }
+    },
+    {
+      "bytes": 63701,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/images/multi_segment_diagram_spiketrain.png",
+      "sha256": "a0b69fea7cddfae7f6a46de1012e929523ceb41e1b7a3e9daeef06a9fbcc246b",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/images/multi_segment_diagram_spiketrain.png"
+      }
+    },
+    {
+      "bytes": 73338,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/images/multi_segment_diagram_spiketrain.svg",
+      "sha256": "1d74cf6842e1bfc500845ad76d3b101bddcb447abf2b4eb603a5e87d1c50e391",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/images/multi_segment_diagram_spiketrain.svg"
+      }
+    },
+    {
+      "bytes": 3074850,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/images/neo_ecosystem.drawio",
+      "sha256": "ba2f611d5b6e2df6fc9e5da277980c6c2ec81927c63286e7257b8d4078201692",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/images/neo_ecosystem.drawio"
+      }
+    },
+    {
+      "bytes": 5646687,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/images/neo_ecosystem.svg",
+      "sha256": "c333eb7fdd6493833f1246470c6328e2cae8a69abe1ce292cb617843829c1162",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/images/neo_ecosystem.svg"
+      }
+    },
+    {
+      "bytes": 461814,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/images/neologo.png",
+      "sha256": "aa6342a654709a5481bc3431827fe83fe419b77a6f0e987285313ca2d18b5f8f",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/images/neologo.png"
+      }
+    },
+    {
+      "bytes": 2171224,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/images/neologo.svg",
+      "sha256": "fdcbf3000d9cd2f15696f0d699ba1a48954060b6274ca774d113b982ca0402ef",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/images/neologo.svg"
+      }
+    },
+    {
+      "bytes": 465954,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/images/neologo_darkmode.png",
+      "sha256": "9440d12bd2973cd4c324984d2be9bc8ce8fd6bc30b8bdca9bd327f154fad5f99",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/images/neologo_darkmode.png"
+      }
+    },
+    {
+      "bytes": 1089,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/images/neologo_favicon.png",
+      "sha256": "12d821c972edc48efd37ae69174a202eebbe33887efc0a5c4119cf35e081f493",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/images/neologo_favicon.png"
+      }
+    },
+    {
+      "bytes": 6703,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/images/neologo_light.png",
+      "sha256": "f9379eb6db5fa2f422b1d2561bf108c24bd326b233dae5822286356654be55bf",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/images/neologo_light.png"
+      }
+    },
+    {
+      "bytes": 5370,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/images/neologo_small.png",
+      "sha256": "de8491257b546fad8eef1c0546780f9110c658b45cbd194bed102f5373fe16c8",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/images/neologo_small.png"
+      }
+    },
+    {
+      "bytes": 18704,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/images/neologo_small_darkmode.png",
+      "sha256": "43c6daf914a7a7f46d2ed25651fe45ce44ffbbdd4447d8c9e545aa1c72d73fd7",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/images/neologo_small_darkmode.png"
+      }
+    },
+    {
+      "bytes": 462138,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/images/simple_generated_diagram.png",
+      "sha256": "29b4682b71fbb875e88b8383c6b4434b68ac49aee5196b9d044e6f5b329cc585",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/images/simple_generated_diagram.png"
+      }
+    },
+    {
+      "bytes": 158696,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/images/simple_generated_diagram.svg",
+      "sha256": "bc80333ea044ca78f72f518177f4ee84e7d255943fcdb27bdf2a532149a4b66a",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/images/simple_generated_diagram.svg"
+      }
+    },
+    {
+      "bytes": 3438,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/index.rst",
+      "sha256": "60a9a43c1f1767d754b10d6980e963cdeb04a14339864706f0554dfd3615c640",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/index.rst"
+      }
+    },
+    {
+      "bytes": 2485,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/install.rst",
+      "sha256": "30abb770847f8d1493fe65325c9734b9136b0e5f6a818bbc96c73e3b4b4161d8",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/install.rst"
+      }
+    },
+    {
+      "bytes": 86,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/iolist.rst",
+      "sha256": "60c899f4db63f29b185fd60c3bbe474f73b10c09e3caf80a037342efd27ca0ea",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/iolist.rst"
+      }
+    },
+    {
+      "bytes": 1464,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/neo_users.rst",
+      "sha256": "c951be006ab89227b5637b5d925e315220f9829bbd32eefaad35ae9ade9566cb",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/neo_users.rst"
+      }
+    },
+    {
+      "bytes": 10218,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/rawio.rst",
+      "sha256": "4ace6f5a9878b1d2891f738ee4b4a332bbbaa731b3daa4262ac169c9f2ed9e7c",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/rawio.rst"
+      }
+    },
+    {
+      "bytes": 95,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/rawiolist.rst",
+      "sha256": "51f0286ca21754741d443ec35c3c6a7b7c129f207cf798661cb1dfbd42a4bec5",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/rawiolist.rst"
+      }
+    },
+    {
+      "bytes": 19062,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/read_and_analyze.rst",
+      "sha256": "169acd1ba129023f8a43ff7063f9da055c517c980c91311e535caead749880dc",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/read_and_analyze.rst"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "doc/source/releases"
+    },
+    {
+      "bytes": 2762,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/releases.rst",
+      "sha256": "2751765cae178742d434d6487adf05d3970a340b8ccdb15e36c12db2f2c92bca",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/releases.rst"
+      }
+    },
+    {
+      "bytes": 2962,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/releases/0.10.0.rst",
+      "sha256": "4d4dbac901dfa3923c642d72f79a3337377a48187de21b97d7629b0abb85d4ce",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/releases/0.10.0.rst"
+      }
+    },
+    {
+      "bytes": 1870,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/releases/0.10.1.rst",
+      "sha256": "7239b30ce303491adc31a129370762cabc7aba93a5b73ff994a7740434f8e08d",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/releases/0.10.1.rst"
+      }
+    },
+    {
+      "bytes": 378,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/releases/0.10.2.rst",
+      "sha256": "d08a643932648ae3f74d66d6e0337ae5103300d76ec6ea587d18beb762231f8a",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/releases/0.10.2.rst"
+      }
+    },
+    {
+      "bytes": 1594,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/releases/0.11.0.rst",
+      "sha256": "0458c4f2da00c0f6847b5332921208fd1a7a89caf5ebf240169da5b7c24281ba",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/releases/0.11.0.rst"
+      }
+    },
+    {
+      "bytes": 1434,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/releases/0.11.1.rst",
+      "sha256": "c0a5b09cfe63177bef7e32ab9535bf9a4bf6af4f4061115543ebb0554dd0c4cb",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/releases/0.11.1.rst"
+      }
+    },
+    {
+      "bytes": 2148,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/releases/0.12.0.rst",
+      "sha256": "fab7615d08aae4f8d0d7709b03579dd41c394ed25aa70434fb1fcd138475e8e4",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/releases/0.12.0.rst"
+      }
+    },
+    {
+      "bytes": 6686,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/releases/0.13.0.rst",
+      "sha256": "d54b813f0cec624058bf49b1f0203c76d04e11cd5e1a5886f2427cb6b72f1d16",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/releases/0.13.0.rst"
+      }
+    },
+    {
+      "bytes": 1989,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/releases/0.13.1.rst",
+      "sha256": "71169faadd8cc3862ac849bcd3de0c600b18eff76e3ef6390cbe65740a6b5ef6",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/releases/0.13.1.rst"
+      }
+    },
+    {
+      "bytes": 1524,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/releases/0.13.2.rst",
+      "sha256": "0d1467ca85d5f605bd2b139d3340623590d21fd28faf2c3a46c064d117468ee7",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/releases/0.13.2.rst"
+      }
+    },
+    {
+      "bytes": 1016,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/releases/0.13.3.rst",
+      "sha256": "7bcc60255006baa9acc825a32aac80e39fd10fd4c6a672da6d5b23b5d6fddd10",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/releases/0.13.3.rst"
+      }
+    },
+    {
+      "bytes": 6023,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/releases/0.5.0.rst",
+      "sha256": "e2ca0eaa63311f92ac5e751f7cb34205c4c8b2dcdd371387408ec1cbf128efe6",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/releases/0.5.0.rst"
+      }
+    },
+    {
+      "bytes": 1197,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/releases/0.5.1.rst",
+      "sha256": "1cf0be10d8ec9ead74535d0c4e1622d66466a114037983e1ca650d0a3c44c0c8",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/releases/0.5.1.rst"
+      }
+    },
+    {
+      "bytes": 843,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/releases/0.5.2.rst",
+      "sha256": "e8a48aab5e20990cceccdd5166f467e3ae9767a03cc928d33b15a1d5cf5c515e",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/releases/0.5.2.rst"
+      }
+    },
+    {
+      "bytes": 1973,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/releases/0.6.0.rst",
+      "sha256": "8a92d7b38363ad7b2563db1517590d6374db14990a730642a5ccd0cb2ee24eb9",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/releases/0.6.0.rst"
+      }
+    },
+    {
+      "bytes": 1050,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/releases/0.7.0.rst",
+      "sha256": "6e7e2910a53759e71f4f5bc18a2de7fadcb02174bb57c67e51bec805716fd61e",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/releases/0.7.0.rst"
+      }
+    },
+    {
+      "bytes": 411,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/releases/0.7.1.rst",
+      "sha256": "edab53d6c27a2ecfdecd87a60c1c00d423cc9fea1969a332119989a3be5f9bee",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/releases/0.7.1.rst"
+      }
+    },
+    {
+      "bytes": 273,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/releases/0.7.2.rst",
+      "sha256": "2b0ad780ef272ee45869b0978d8e3e4dd6928c093364d9e7da63ced6ba905734",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/releases/0.7.2.rst"
+      }
+    },
+    {
+      "bytes": 4621,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/releases/0.8.0.rst",
+      "sha256": "46b20baed8370a598f92176211fdea9c89a70537f936989e43f3e104c6281c79",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/releases/0.8.0.rst"
+      }
+    },
+    {
+      "bytes": 10105,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/releases/0.9.0.rst",
+      "sha256": "a5904e48d873efb03387d60f415a4c4df402780414df3b7b964740bd12cd1d25",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/releases/0.9.0.rst"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "doc/source/scripts"
+    },
+    {
+      "bytes": 3375,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/scripts/multi_tetrode_example.py",
+      "sha256": "2be2b46a7d7540b5cd569768077f0d486a986cfd64c451d3ddc73ee80b7578e9",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/scripts/multi_tetrode_example.py"
+      }
+    },
+    {
+      "bytes": 1267,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/scripts/spike_sorting_example.py",
+      "sha256": "15e524c89006aac36ae3d4c13ee7771c624ac90f296e6d506212dd8bf2c47bc7",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/scripts/spike_sorting_example.py"
+      }
+    },
+    {
+      "bytes": 8929,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/share_data.rst",
+      "sha256": "5014ef7fc542d86b4f74593e46b2c18442c86b1fcf755748492a93bb09db411f",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/share_data.rst"
+      }
+    },
+    {
+      "bytes": 3596,
+      "kind": "file",
+      "mode": 420,
+      "path": "doc/source/use_neo_as_dependency.rst",
+      "sha256": "7e49b15ca46f836844fae059f5b79b7e09b691c6181c1b2b8a274edf59c35522",
+      "source": {
+        "kind": "upstream",
+        "path": "doc/source/use_neo_as_dependency.rst"
+      }
+    },
+    {
+      "bytes": 79,
+      "kind": "file",
+      "mode": 420,
+      "path": "environment_testing.yml",
+      "sha256": "4dce21eba80cd367ae0bbc9233d9a3ed71582ef02c533c21b647f184c940c6a0",
+      "source": {
+        "kind": "upstream",
+        "path": "environment_testing.yml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "examples"
+    },
+    {
+      "bytes": 107,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/README.rst",
+      "sha256": "39a691450d24c81de4cce22623fcd3ba7b27f27bd2a338d3f589b0a1788bba48",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/README.rst"
+      }
+    },
+    {
+      "bytes": 1699,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/convert_to_nwb.py",
+      "sha256": "29f4a2665435f2695e56e79661bdf995ad605f294348375fa71cb9de696b44cb",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/convert_to_nwb.py"
+      }
+    },
+    {
+      "bytes": 1282,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/plot_igorio.py",
+      "sha256": "4e9ef63162e51397aade1e15d86c52214ac5cbf9ebbec3d29113cc0168b16d33",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/plot_igorio.py"
+      }
+    },
+    {
+      "bytes": 1526,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/plot_imageseq.py",
+      "sha256": "3226f01f466f1cc793ae6d07f6af85d49306d5f4c814043d1e4227d3750756e1",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/plot_imageseq.py"
+      }
+    },
+    {
+      "bytes": 5454,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/plot_multi_tetrode_example.py",
+      "sha256": "d7dbe17504da7f4eba5e783901f484fc2b8a354bb1fb7d72a2f0804afe1c79c7",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/plot_multi_tetrode_example.py"
+      }
+    },
+    {
+      "bytes": 1904,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/plot_read_files_neo_io.py",
+      "sha256": "21583a4408381a851563a6eb8470839db5facae6ed6462656ddfacbc17c15879",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/plot_read_files_neo_io.py"
+      }
+    },
+    {
+      "bytes": 6645,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/plot_read_files_neo_rawio.py",
+      "sha256": "63816ff8728a64f9481d4e19da80879ce3729c2b1f9ac7e2d967a463c2a00bd5",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/plot_read_files_neo_rawio.py"
+      }
+    },
+    {
+      "bytes": 4162,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/plot_read_proxy_with_lazy_load.py",
+      "sha256": "1e84525814a4a000fc74ff38f6ec370ab60a3f57dd49323e05b7645004340077",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/plot_read_proxy_with_lazy_load.py"
+      }
+    },
+    {
+      "bytes": 2513,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/plot_roi_demo.py",
+      "sha256": "493002cc11d7322ff2614453333ce132aa8ed7192de8b43594a4a6a81075a28a",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/plot_roi_demo.py"
+      }
+    },
+    {
+      "bytes": 1174,
+      "kind": "file",
+      "mode": 420,
+      "path": "examples/plot_with_matplotlib.py",
+      "sha256": "d97d87e4e64e41cbdfbc1e6d34032dd371b6c5c58f69e74988362197b95c8233",
+      "source": {
+        "kind": "upstream",
+        "path": "examples/plot_with_matplotlib.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "neo"
+    },
+    {
+      "bytes": 415,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/__init__.py",
+      "sha256": "98d7c700b27a12d851d7d86e2ae582da0adad575c0a3b2551e473fd7d10eabad",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/__init__.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "neo/core"
+    },
+    {
+      "bytes": 1902,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/core/__init__.py",
+      "sha256": "a35b88cb3c5020556ed64d93ec3ee7f544d2005a3596d1372abd175c9fc9e900",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/core/__init__.py"
+      }
+    },
+    {
+      "bytes": 31428,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/core/analogsignal.py",
+      "sha256": "6f66efdbcf4fa37bed2ec51a777e2bf57526fb13490cfd8d67921374a60111a0",
+      "source": {
+        "blob": "6f66efdbcf4fa37bed2ec51a777e2bf57526fb13490cfd8d67921374a60111a0",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 14865,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/core/baseneo.py",
+      "sha256": "aa6b161deaf759c4984f48129af1883fbea9ae8c36cf15d9db7427d7ae4127a3",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/core/baseneo.py"
+      }
+    },
+    {
+      "bytes": 11624,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/core/basesignal.py",
+      "sha256": "99e7a4b6de6d5a62e6264431d7f7c21c837b4bd0f25dd528ae04d96483c77843",
+      "source": {
+        "blob": "99e7a4b6de6d5a62e6264431d7f7c21c837b4bd0f25dd528ae04d96483c77843",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 4761,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/core/block.py",
+      "sha256": "d9aea42ccbe1c3db10f908e36b98421430722fb4f32f95274fdf4289ad335849",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/core/block.py"
+      }
+    },
+    {
+      "bytes": 23721,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/core/container.py",
+      "sha256": "5d056b4fea4edc25e42c16d3b624a478dbf961451b0a78e14bb0a39ea0d4b4e4",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/core/container.py"
+      }
+    },
+    {
+      "bytes": 18198,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/core/dataobject.py",
+      "sha256": "dd1ca7109e02be23cddc6039a015d499244f0320fc8e30a90259f93fb18c6a7a",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/core/dataobject.py"
+      }
+    },
+    {
+      "bytes": 15102,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/core/epoch.py",
+      "sha256": "50c247f819587564beb186ee244bf985dd74b4e05d84189bbd96e6db1f232cee",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/core/epoch.py"
+      }
+    },
+    {
+      "bytes": 15393,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/core/event.py",
+      "sha256": "5824d8759112f3b0ce4deaeee7e63fe34b5fc154bdbdf0e61051588751655501",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/core/event.py"
+      }
+    },
+    {
+      "bytes": 6284,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/core/filters.py",
+      "sha256": "d4be300384629dae9fdc2bc6162026d7f088ddf3f65132b7a3b039d003539fc9",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/core/filters.py"
+      }
+    },
+    {
+      "bytes": 6593,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/core/group.py",
+      "sha256": "27866fa67d809baa204a55a93e24e40e148096a24ae47771d5c4a9f40ccebdc4",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/core/group.py"
+      }
+    },
+    {
+      "bytes": 10232,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/core/imagesequence.py",
+      "sha256": "d4059b446517e0d988b47ab355cb94245318021987dc58c08f93cffbde95712a",
+      "source": {
+        "blob": "d4059b446517e0d988b47ab355cb94245318021987dc58c08f93cffbde95712a",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 24448,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/core/irregularlysampledsignal.py",
+      "sha256": "6367bb824aee70e9259c934d98c430cd9a754cf612a4f6ee515461861451a717",
+      "source": {
+        "blob": "6367bb824aee70e9259c934d98c430cd9a754cf612a4f6ee515461861451a717",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 4112,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/core/objectlist.py",
+      "sha256": "6ca0734717e4e5ca68a36ba8ef4a2192fdb454690fdd9a91120971f169fc6cb6",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/core/objectlist.py"
+      }
+    },
+    {
+      "bytes": 7747,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/core/regionofinterest.py",
+      "sha256": "47910d6a08e2718afe1a2532c6c6cad4dc71df30803668f0b945508602b42027",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/core/regionofinterest.py"
+      }
+    },
+    {
+      "bytes": 11166,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/core/segment.py",
+      "sha256": "e488b045cc80a7b0f121004d213c5c5eecbb8bcb3728b9725517a00ca1bffca4",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/core/segment.py"
+      }
+    },
+    {
+      "bytes": 38331,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/core/spiketrain.py",
+      "sha256": "4c225629a1337bc86e9f136d3ac0c4455a8cd56989e41a0439e5ff74c0b41502",
+      "source": {
+        "blob": "4c225629a1337bc86e9f136d3ac0c4455a8cd56989e41a0439e5ff74c0b41502",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 18387,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/core/spiketrainlist.py",
+      "sha256": "3896c0d3b7536d6ed15c63e882b4cb3259e50204f3b5ad95735f862d26e4eb7e",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/core/spiketrainlist.py"
+      }
+    },
+    {
+      "bytes": 3518,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/core/view.py",
+      "sha256": "e41a6ad8d2ee6d60a52f216ac0f5154c3fd654bb5df6bd5d76c16a30c3f45a7a",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/core/view.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "neo/io"
+    },
+    {
+      "bytes": 12734,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/__init__.py",
+      "sha256": "e1045c1d9a9b9567c616de8856656b718a272de1b7ee64afde0051da8b4723a9",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/__init__.py"
+      }
+    },
+    {
+      "bytes": 533,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/alphaomegaio.py",
+      "sha256": "32507bfee797687ee650ec1506ad01ec480f85930752a4934b1ab717f7cc8827",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/alphaomegaio.py"
+      }
+    },
+    {
+      "bytes": 3021,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/asciiimageio.py",
+      "sha256": "0e16abf0850123c7374072aedeb6f5ed882679ca30fa513267f08c7d7bf3cbbc",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/asciiimageio.py"
+      }
+    },
+    {
+      "bytes": 17029,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/asciisignalio.py",
+      "sha256": "a6899260a47ec460a71204ec4a2ac6b984c03949200db4eba78ff0922e8c8218",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/asciisignalio.py"
+      }
+    },
+    {
+      "bytes": 3703,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/asciispiketrainio.py",
+      "sha256": "68bbd79184312ae76c426aa5bacd4bf8381334189e45113b238e66274de094a4",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/asciispiketrainio.py"
+      }
+    },
+    {
+      "bytes": 1769,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/axographio.py",
+      "sha256": "f25e1a0a701adbf57e1b5103b19f7dc04e313229efeaf639fba1c1451c0ae91b",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/axographio.py"
+      }
+    },
+    {
+      "bytes": 353,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/axonaio.py",
+      "sha256": "ad6ce2addf289af541d795c906c1c787baecb9d2bcd765a43c94c7fb85593efe",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/axonaio.py"
+      }
+    },
+    {
+      "bytes": 3980,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/axonio.py",
+      "sha256": "98569d4ed40ab643cd9a2903814374d898663d8d51106569cde0a7bf64cf752a",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/axonio.py"
+      }
+    },
+    {
+      "bytes": 14482,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/basefromrawio.py",
+      "sha256": "96c0211bfedc0344bf40d8f9094574fbc0f4fae067b3894d48ade747a4427b63",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/basefromrawio.py"
+      }
+    },
+    {
+      "bytes": 10421,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/baseio.py",
+      "sha256": "c3f366c541a351ce140e64c38d8f88c11777a721725967f3d73cf9ebf492f8cf",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/baseio.py"
+      }
+    },
+    {
+      "bytes": 416,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/bci2000io.py",
+      "sha256": "88783b0ecea9d9cc69c3f4300c3e55c28562c38834b088b13831d4be82c34d25",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/bci2000io.py"
+      }
+    },
+    {
+      "bytes": 321,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/biocamio.py",
+      "sha256": "5b6a0a99d1a964450eb6aed4ac0be6daccc0335ade5ecae59f18b4cf0b40c63c",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/biocamio.py"
+      }
+    },
+    {
+      "bytes": 643,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/blackrockio.py",
+      "sha256": "729047a4e8f54c698ac5865217324067fd7d655f81cdbc7fff4ddf83d468148f",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/blackrockio.py"
+      }
+    },
+    {
+      "bytes": 13370,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/blkio.py",
+      "sha256": "500c8390005ac248d36cbde91ac74925ed7b4dd8abfbefbb2289fd32f3f2630b",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/blkio.py"
+      }
+    },
+    {
+      "bytes": 414,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/brainvisionio.py",
+      "sha256": "535be7e6392758b067e365eaa8a470d24873ae0f78a1d0625d17de8e8c96bcbd",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/brainvisionio.py"
+      }
+    },
+    {
+      "bytes": 7884,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/brainwaredamio.py",
+      "sha256": "0433f0b9f593f02cd1567d19a50b34d721b100a7408ffab1aa047b52aac36a8e",
+      "source": {
+        "blob": "0433f0b9f593f02cd1567d19a50b34d721b100a7408ffab1aa047b52aac36a8e",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 9206,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/brainwaref32io.py",
+      "sha256": "8901f4addecedab30276a79a1ef893cef77c1891251907a6165e78264000d427",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/brainwaref32io.py"
+      }
+    },
+    {
+      "bytes": 54712,
+      "kind": "file",
+      "mode": 493,
+      "path": "neo/io/brainwaresrcio.py",
+      "sha256": "fb5244b4e4eade0b37685f6848bc46b3ffdfe509c48b2e417b2d9a7a9e1e6865",
+      "source": {
+        "blob": "fb5244b4e4eade0b37685f6848bc46b3ffdfe509c48b2e417b2d9a7a9e1e6865",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 313,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/cedio.py",
+      "sha256": "71b3946b014b1ee672b4dbbea94ad72c2c42897a4c91a6562351d52cc1c48af1",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/cedio.py"
+      }
+    },
+    {
+      "bytes": 658,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/edfio.py",
+      "sha256": "29a123838245e5ee54f84eb4242ca3150da5f61e43f551d32a9b8a5770328380",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/edfio.py"
+      }
+    },
+    {
+      "bytes": 1072,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/elanio.py",
+      "sha256": "b3b7bfbdb9c6e3565cea8ab62f896d4bf4ee6272d7aebaeb41217d8fc1b683d0",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/elanio.py"
+      }
+    },
+    {
+      "bytes": 155657,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/elphyio.py",
+      "sha256": "c2ce2887e8529e36ecab07271c4f2e929c397e945bd5f20263f954c2a29cac0f",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/elphyio.py"
+      }
+    },
+    {
+      "bytes": 908,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/exampleio.py",
+      "sha256": "5b3e9759da5eeed317d64336c980e88c3439dca68a86ae986d39f60b5afc5786",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/exampleio.py"
+      }
+    },
+    {
+      "bytes": 7380,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/igorproio.py",
+      "sha256": "2596cc2f185bc1a5251612270ec848c5010ad80d70cbf3dc58dee443ae46f843",
+      "source": {
+        "blob": "2596cc2f185bc1a5251612270ec848c5010ad80d70cbf3dc58dee443ae46f843",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 353,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/intanio.py",
+      "sha256": "491a9ab5d50f7610beeb494a67a835d2427c7548916bd30a1911f920b4a23839",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/intanio.py"
+      }
+    },
+    {
+      "bytes": 16911,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/klustakwikio.py",
+      "sha256": "7c8e7bc8e745eae833e97085dcf1dd1fd0dc6cb11aa2339116bdfef85bfe62f0",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/klustakwikio.py"
+      }
+    },
+    {
+      "bytes": 5959,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/kwikio.py",
+      "sha256": "c41f9df507206b3d8985a9932a68c60f3df383c0ae72d5e767a625b0418cbcc3",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/kwikio.py"
+      }
+    },
+    {
+      "bytes": 292,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/maxwellio.py",
+      "sha256": "ab87e9645ee44fad394285d56aa57130f9860fd15ba170fb50851b9ec794fe71",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/maxwellio.py"
+      }
+    },
+    {
+      "bytes": 462,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/mearecio.py",
+      "sha256": "26b6da7117977f2795198177a16de46400a4f7dc1ad3cde11a1a0f3cffd23b6c",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/mearecio.py"
+      }
+    },
+    {
+      "bytes": 1445,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/medio.py",
+      "sha256": "9a6e5965db2083e7342fd8c6db68c3dc7a57d7b8ab40b55abf91b99a588f75ab",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/medio.py"
+      }
+    },
+    {
+      "bytes": 462,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/micromedio.py",
+      "sha256": "a49ee429f851eb3d2158757ce837c4f0b4706929beea2bd49fbcac07e6cb5561",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/micromedio.py"
+      }
+    },
+    {
+      "bytes": 21163,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/neomatlabio.py",
+      "sha256": "3db57ebec83f9ff3a3345b6848d2a3f1e7575facbbf7bde91124b3c8efd0db3c",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/neomatlabio.py"
+      }
+    },
+    {
+      "bytes": 29660,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/nestio.py",
+      "sha256": "1487c2fe5924e09d5cdd58ec26c2631a0753f36839211de10ec40b17a99967fd",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/nestio.py"
+      }
+    },
+    {
+      "bytes": 3182,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/neuralynxio.py",
+      "sha256": "f2ad5fe2c3bfc5bc39996fa9062435d54856466c88f4f88a494074fe032b6a35",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/neuralynxio.py"
+      }
+    },
+    {
+      "bytes": 420,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/neuroexplorerio.py",
+      "sha256": "3bdb7e7d233ae51c6f494936bb27038d7f5cec826a510fb9bcb0f0a6bede10ec",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/neuroexplorerio.py"
+      }
+    },
+    {
+      "bytes": 383,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/neuronexusio.py",
+      "sha256": "5265b107c3410dcbada8fa2fc1a14645f749a470fd8a595ff7699670bb86a031",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/neuronexusio.py"
+      }
+    },
+    {
+      "bytes": 449,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/neuroscopeio.py",
+      "sha256": "00de8f4a1343a9f55bd10ae3acb04d3569016ae895197ca5abca57e2efac5c1e",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/neuroscopeio.py"
+      }
+    },
+    {
+      "bytes": 19577,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/neuroshareapiio.py",
+      "sha256": "88d8560f2543dab5ed943bdf6ef062a2bac7d3c4ce2d8615cef111ebdb8b17a7",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/neuroshareapiio.py"
+      }
+    },
+    {
+      "bytes": 17033,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/neurosharectypesio.py",
+      "sha256": "571d3df8e9e3a57046344b965266c03471369be8316ed6255c641920bb7fb432",
+      "source": {
+        "blob": "571d3df8e9e3a57046344b965266c03471369be8316ed6255c641920bb7fb432",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 57269,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/nixio.py",
+      "sha256": "30e3389dff40edef3e2c8ed9b96cbf544f2334789cb30c41f0430ab770230493",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/nixio.py"
+      }
+    },
+    {
+      "bytes": 580,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/nixio_fr.py",
+      "sha256": "195422070e2e1e5b5e1b2b6c2df384d1ce0e09df79939854b8fc25b78cd20e6f",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/nixio_fr.py"
+      }
+    },
+    {
+      "bytes": 37261,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/nwbio.py",
+      "sha256": "4fc63ce86221c492a6c694c91546cd69d322da2e7c3750be8a2740466838176a",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/nwbio.py"
+      }
+    },
+    {
+      "bytes": 383,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/openephysbinaryio.py",
+      "sha256": "0217179373190b71979529253c8c8361dd42bee26593c01e4f91f4657f71e673",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/openephysbinaryio.py"
+      }
+    },
+    {
+      "bytes": 353,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/openephysio.py",
+      "sha256": "ed56de3a36c8abff143a906458c68be3c4ba2f5905ee9ba94ad4bffb6ae2f785",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/openephysio.py"
+      }
+    },
+    {
+      "bytes": 405,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/phyio.py",
+      "sha256": "5b279f68d39ea7433d8ccc1cf625cd79707710aa526d5463af48ec36ceb4b4f7",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/phyio.py"
+      }
+    },
+    {
+      "bytes": 1400,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/pickleio.py",
+      "sha256": "43d8cf27eb765ad20993d614afa299b38e7457b28790adf4d907346cb02c3ebf",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/pickleio.py"
+      }
+    },
+    {
+      "bytes": 462,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/plexon2io.py",
+      "sha256": "1a70a8b42b2001958572c7dff0998a82e1f67530d8f5c881ec931c9558b0207d",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/plexon2io.py"
+      }
+    },
+    {
+      "bytes": 586,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/plexonio.py",
+      "sha256": "ca6e8286b7a7c8c685821423360786b4d86206228819fe66173a843e262b289b",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/plexonio.py"
+      }
+    },
+    {
+      "bytes": 26991,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/proxyobjects.py",
+      "sha256": "9487b2614888f408f6d796c430fa6447800c076bfe765880927556184f915556",
+      "source": {
+        "blob": "9487b2614888f408f6d796c430fa6447800c076bfe765880927556184f915556",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 3800,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/rawbinarysignalio.py",
+      "sha256": "5c5226eca6176a45336d2c7fa749e022c1b88544ddb866823241ba7c9efbd60e",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/rawbinarysignalio.py"
+      }
+    },
+    {
+      "bytes": 325,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/rawmcsio.py",
+      "sha256": "8233147b5506e9604017d6141d66f5648282b5c93d2ccde1288c9c3e681f77a8",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/rawmcsio.py"
+      }
+    },
+    {
+      "bytes": 343,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/spike2io.py",
+      "sha256": "4cf6c6598a23efdae5c237a537917a060e6d45bd5d2a4d1db8cb8b6b3b757b6e",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/spike2io.py"
+      }
+    },
+    {
+      "bytes": 339,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/spikegadgetsio.py",
+      "sha256": "8622f312096661444425a4b21d8326f498d313f1202ad1424415fe3f609204e0",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/spikegadgetsio.py"
+      }
+    },
+    {
+      "bytes": 486,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/spikeglxio.py",
+      "sha256": "d7899c8d274c74ed3d09ad4743569432d7f2979979f694b0e9569304b7de6be8",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/spikeglxio.py"
+      }
+    },
+    {
+      "bytes": 5036,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/stimfitio.py",
+      "sha256": "fea4bf9d81eab0da1dcca416e5922bb901610b239e4b029a60ded026ff15636a",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/stimfitio.py"
+      }
+    },
+    {
+      "bytes": 603,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/tdtio.py",
+      "sha256": "42bffd32c802a4ef3d9363d8f063531d69efbc740f27312158de5e67a413c626",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/tdtio.py"
+      }
+    },
+    {
+      "bytes": 4143,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/tiffio.py",
+      "sha256": "56644f32921af2deb84c58c182aa9d555307174958bd41e7227d9a96514b308d",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/tiffio.py"
+      }
+    },
+    {
+      "bytes": 2324,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/tools.py",
+      "sha256": "a68e3ade0cc6493f47f6b9c446279384fc63e6a71b0deaf261b7f94c14ca68d9",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/tools.py"
+      }
+    },
+    {
+      "bytes": 507,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/winedrio.py",
+      "sha256": "fcb5bccd8bdacae79af53e26ad6d6ac472ca153164544408a39e674b4865fb2b",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/winedrio.py"
+      }
+    },
+    {
+      "bytes": 507,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/io/winwcpio.py",
+      "sha256": "7fff30de1c2d0ff25075b91a3da5d3b418c6eb17c1667dbd910f5cfc4c704cdb",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/io/winwcpio.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "neo/rawio"
+    },
+    {
+      "bytes": 8027,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/__init__.py",
+      "sha256": "053f71e4b7239051563edd65f0481d95665a7019f41a8a467fc6680d111f9265",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/__init__.py"
+      }
+    },
+    {
+      "bytes": 55272,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/alphaomegarawio.py",
+      "sha256": "3e45043e181062140b5190960fdac4edcb3ad9774a4cef52351a8db175a78766",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/alphaomegarawio.py"
+      }
+    },
+    {
+      "bytes": 61701,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/axographrawio.py",
+      "sha256": "7df9ff564574b8acb6b367bd32c29a9c519d9d4e3f9439b61f745fcc3694851b",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/axographrawio.py"
+      }
+    },
+    {
+      "bytes": 23374,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/axonarawio.py",
+      "sha256": "0b096d11749970c2a65b13bd53731f5c87218ccae561e12c1a2ed828210de5d4",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/axonarawio.py"
+      }
+    },
+    {
+      "bytes": 34469,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/axonrawio.py",
+      "sha256": "e5c0c2c1568012d5a4104943d47128dec0766e3721eadf95dcc61cc9b8c22044",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/axonrawio.py"
+      }
+    },
+    {
+      "bytes": 54386,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/baserawio.py",
+      "sha256": "32688a9774063061f38e16ea6761d855a543924b8d88f56cd41cc60d84499589",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/baserawio.py"
+      }
+    },
+    {
+      "bytes": 18287,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/bci2000rawio.py",
+      "sha256": "8a02fe3a20d6403d9e53e3aeb8cbe83245b2b5de0ac3443463e3c5c0bfeb4ff8",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/bci2000rawio.py"
+      }
+    },
+    {
+      "bytes": 11447,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/biocamrawio.py",
+      "sha256": "5fb06967560612e111d870ce0a062c9dd2fe1f71045c950d1f4e387a2640126a",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/biocamrawio.py"
+      }
+    },
+    {
+      "bytes": 91739,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/blackrockrawio.py",
+      "sha256": "3c95d71eb535778526158836b3534b4b27714b93f540a5fb7263c547b2afbc6f",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/blackrockrawio.py"
+      }
+    },
+    {
+      "bytes": 8673,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/brainvisionrawio.py",
+      "sha256": "bc1bffea14c12d1615e7b06695c618adb18590a34580272c6b3cfbcfdf14f360",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/brainvisionrawio.py"
+      }
+    },
+    {
+      "bytes": 9275,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/cedrawio.py",
+      "sha256": "3d42b7440fe953787888aba041204a904344eb2c8733a86ea27bb113f68e9fab",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/cedrawio.py"
+      }
+    },
+    {
+      "bytes": 11349,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/edfrawio.py",
+      "sha256": "55f23e175516fa45f6e1d63bc936b6fd7f155743ea91970bcfd27e4e7535f10a",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/edfrawio.py"
+      }
+    },
+    {
+      "bytes": 10597,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/elanrawio.py",
+      "sha256": "247cba8147a04bdd920406c73aeef1cf43e70dbfe8a22443a10103b5e6d0fd5f",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/elanrawio.py"
+      }
+    },
+    {
+      "bytes": 19676,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/examplerawio.py",
+      "sha256": "b6f8f77461d52c606307c797603d178de22972a5f437d12868eb8e13c72beb67",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/examplerawio.py"
+      }
+    },
+    {
+      "bytes": 53123,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/intanrawio.py",
+      "sha256": "1a38d4bb932b8440a1e5da47b7be14daade48cd8b955d9360bc6c570d1a12e05",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/intanrawio.py"
+      }
+    },
+    {
+      "bytes": 11867,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/maxwellrawio.py",
+      "sha256": "d95754054f8ab2123e163a421a30c78a1462d73b13670fa8cda037e4113428ad",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/maxwellrawio.py"
+      }
+    },
+    {
+      "bytes": 8206,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/mearecrawio.py",
+      "sha256": "debb64d360870eb38662982f3464d78125fa6a8ba7d0811bea7ea558c3389b5e",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/mearecrawio.py"
+      }
+    },
+    {
+      "bytes": 16350,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/medrawio.py",
+      "sha256": "213086346b6ec362d22c1e30343e63494a1687b4081f51d5b78955fb1778e00b",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/medrawio.py"
+      }
+    },
+    {
+      "bytes": 9884,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/micromedrawio.py",
+      "sha256": "2406ee3156b400e9222bdeddb3093b4a2af46c749a54a6a44d6605b19721fec1",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/micromedrawio.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "neo/rawio/neuralynxrawio"
+    },
+    {
+      "bytes": 345,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/neuralynxrawio/__init__.py",
+      "sha256": "f34342d813d8f2936b60b8d265bdd6a2c626610162996e8969d9d2bb7d3d7db8",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/neuralynxrawio/__init__.py"
+      }
+    },
+    {
+      "bytes": 14823,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/neuralynxrawio/ncssections.py",
+      "sha256": "029a20a6aeeaf0e4d484f0570e9adb1ad7b12a30ae0026a048f6d8942d56c1a0",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/neuralynxrawio/ncssections.py"
+      }
+    },
+    {
+      "bytes": 41113,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/neuralynxrawio/neuralynxrawio.py",
+      "sha256": "1734dc4cca32714751f1f5c8d45426536842616a81ce3d68b727b776bac06d07",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/neuralynxrawio/neuralynxrawio.py"
+      }
+    },
+    {
+      "bytes": 15544,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/neuralynxrawio/nlxheader.py",
+      "sha256": "957dd2751563692d359613629ae6b921e58caa167146e60e451030ed22f27332",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/neuralynxrawio/nlxheader.py"
+      }
+    },
+    {
+      "bytes": 12353,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/neuroexplorerrawio.py",
+      "sha256": "36fec566eb738bb7a2f551ad3235766d7c52cc511930bbdf886e47284ce0d8c0",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/neuroexplorerrawio.py"
+      }
+    },
+    {
+      "bytes": 11569,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/neuronexusrawio.py",
+      "sha256": "b9f258c5d4108a7a277ad94ed39a543b3f742792e145e5145e121e87e7430033",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/neuronexusrawio.py"
+      }
+    },
+    {
+      "bytes": 8140,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/neuroscoperawio.py",
+      "sha256": "2b346b66e44daed7a40b4299c487a6cd7f4fdd04a21e145aae24239925e48bec",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/neuroscoperawio.py"
+      }
+    },
+    {
+      "bytes": 19902,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/nixrawio.py",
+      "sha256": "6c42725bea41efc7f9fccab77efdabcdc2515fd0d1ced2067f91ae03cf0141f6",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/nixrawio.py"
+      }
+    },
+    {
+      "bytes": 32598,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/openephysbinaryrawio.py",
+      "sha256": "54e207495ee5c78dc3d7d7b1d53b82bf92dd1ece14a28dbd25de842fd2c571fe",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/openephysbinaryrawio.py"
+      }
+    },
+    {
+      "bytes": 30450,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/openephysrawio.py",
+      "sha256": "bd5d4bbcc973863b8fa03cfe7d7d2f6f7985fa96fc822c8765d3f2994afbc806",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/openephysrawio.py"
+      }
+    },
+    {
+      "bytes": 11791,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/phyrawio.py",
+      "sha256": "384c4e562c46628f0e74df71a742ccf6198e2ebdfea121c6524821009020bd41",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/phyrawio.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "neo/rawio/plexon2rawio"
+    },
+    {
+      "bytes": 61,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/plexon2rawio/__init__.py",
+      "sha256": "cc66d902e28dd370d2e9af1e506b03b7626911406b5c5f00a44e0cea71537cb6",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/plexon2rawio/__init__.py"
+      }
+    },
+    {
+      "bytes": 28322,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/plexon2rawio/plexon2rawio.py",
+      "sha256": "0f04b45f14fa2d525b7cb70ab9a5c28480ee567d043a1bcb7ae5371cab94327b",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/plexon2rawio/plexon2rawio.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "neo/rawio/plexon2rawio/pypl2"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/plexon2rawio/pypl2/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/__init__.py"
+      }
+    },
+    {
+      "bytes": 41568,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/plexon2rawio/pypl2/pypl2lib.py",
+      "sha256": "3389804c70205fb8d3f7d3e35e3a826838d19cc9e62546a811bc1775c5892165",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/plexon2rawio/pypl2/pypl2lib.py"
+      }
+    },
+    {
+      "bytes": 24936,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/plexonrawio.py",
+      "sha256": "76dd8d09c3b564444ee3fd06cdfc334a7afd0528818cdc127e8f67ca1f5c38a6",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/plexonrawio.py"
+      }
+    },
+    {
+      "bytes": 5458,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/rawbinarysignalrawio.py",
+      "sha256": "76e4c10540e080055ba7742bac3b8630866fb06f621fa5391056daa303905e93",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/rawbinarysignalrawio.py"
+      }
+    },
+    {
+      "bytes": 6224,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/rawmcsrawio.py",
+      "sha256": "bd1bc4bdb849e40807925ef4ffeb2d4bbcb9e62201704073ba66f33a31cae09b",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/rawmcsrawio.py"
+      }
+    },
+    {
+      "bytes": 30802,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/spike2rawio.py",
+      "sha256": "ee4a6164c35656d8ef090dd9a0e5f5fef6aebecbbee0e4c5aa37748d4cbb8f05",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/spike2rawio.py"
+      }
+    },
+    {
+      "bytes": 15039,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/spikegadgetsrawio.py",
+      "sha256": "e81565e6a9c7d0cba34a4a05c728f031d88f7b793f09120363c5055c08393835",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/spikegadgetsrawio.py"
+      }
+    },
+    {
+      "bytes": 25709,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/spikeglxrawio.py",
+      "sha256": "46b5c1174d205def6fc481e4d40a89692cf6890d1d3e0316c7e85f685d43fb79",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/spikeglxrawio.py"
+      }
+    },
+    {
+      "bytes": 27158,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/tdtrawio.py",
+      "sha256": "a2e3cd56be517b0467c40b8d5fd49df19b43a3c60ec3aa315c8fa77e9d4998eb",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/tdtrawio.py"
+      }
+    },
+    {
+      "bytes": 5243,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/winedrrawio.py",
+      "sha256": "3adbf46a8146960914364dc2300bbdb5ebb35c0068e30ca02e1a7ec619ffb4ae",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/winedrrawio.py"
+      }
+    },
+    {
+      "bytes": 6816,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/rawio/winwcprawio.py",
+      "sha256": "b1d735c8307698ec878c872a20a95360eb925352f2edffb18bf4b8a6fbd79a51",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/rawio/winwcprawio.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "neo/test"
+    },
+    {
+      "bytes": 238,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/README.txt",
+      "sha256": "0df2d4102017ec0b0e28dadf0d279d0db83533efb6ca0d88bdaece9908cccb00",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/README.txt"
+      }
+    },
+    {
+      "bytes": 113,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/__init__.py",
+      "sha256": "e50c58dd77fd5af5f6da69b410d476aaa82793bceb31f0a598491e2ab5d199cf",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/__init__.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "neo/test/coretest"
+    },
+    {
+      "bytes": 36,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/coretest/__init__.py",
+      "sha256": "261210349ed5755fd12bd88d166df203c11c96259078c373a4b8fe222f1e4535",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/coretest/__init__.py"
+      }
+    },
+    {
+      "bytes": 83957,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/coretest/test_analogsignal.py",
+      "sha256": "04bf591a94ef0582ab446bff6770072384105c41397dbfcd8e90e5ec71015319",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/coretest/test_analogsignal.py"
+      }
+    },
+    {
+      "bytes": 50619,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/coretest/test_base.py",
+      "sha256": "bc964e81939b38ab4ef2ccce8818fb171d29d31ea378029fdd17e4c3352db08f",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/coretest/test_base.py"
+      }
+    },
+    {
+      "bytes": 17094,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/coretest/test_block.py",
+      "sha256": "83bb151cac664594b33e2d1198e4289a90024e773243b01d502980fa49a0987b",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/coretest/test_block.py"
+      }
+    },
+    {
+      "bytes": 11486,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/coretest/test_container.py",
+      "sha256": "f305e518aa35226f3652235358cc78d1e8948c0b45435d1156950552730797ad",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/coretest/test_container.py"
+      }
+    },
+    {
+      "bytes": 8270,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/coretest/test_dataobject.py",
+      "sha256": "a9ec49014e6f21c5047bac083c54b5ad41ccf001ae41da4c10a18e0a93dfabf5",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/coretest/test_dataobject.py"
+      }
+    },
+    {
+      "bytes": 35618,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/coretest/test_epoch.py",
+      "sha256": "07d7ae9d4b05ae8c185535c2734ebb998439db77759e99f1a57c4241e3b91cc8",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/coretest/test_epoch.py"
+      }
+    },
+    {
+      "bytes": 31424,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/coretest/test_event.py",
+      "sha256": "d8b9198eb7346deb4f7f01b5b4298123aead76a29644404eda0f95e3bc915f31",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/coretest/test_event.py"
+      }
+    },
+    {
+      "bytes": 10152,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/coretest/test_generate_datasets.py",
+      "sha256": "d5b8c30d42d02d3db1bc5799f84cc31fe0a4b53512866048ee3545662ea5e287",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/coretest/test_generate_datasets.py"
+      }
+    },
+    {
+      "bytes": 4370,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/coretest/test_group.py",
+      "sha256": "6f2b257f043e99c1017867e7c31b5cc039b27e2ae2f96e0b4297a66fc10fcfd8",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/coretest/test_group.py"
+      }
+    },
+    {
+      "bytes": 4151,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/coretest/test_imagesequence.py",
+      "sha256": "6c25f0af98edaf89f42c063096ab4aaa68aa393773e18044004262d32cf9605e",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/coretest/test_imagesequence.py"
+      }
+    },
+    {
+      "bytes": 46370,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/coretest/test_irregularysampledsignal.py",
+      "sha256": "31135504529f5d9efaeb3be7cd9726f1c856440352c7986b7cd84e3cdab04071",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/coretest/test_irregularysampledsignal.py"
+      }
+    },
+    {
+      "bytes": 1405,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/coretest/test_regionofinterest.py",
+      "sha256": "de3d741e58a6cd2b2d90df08faa7b388f240ef3696fe07f3777dc61cf9ee3c64",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/coretest/test_regionofinterest.py"
+      }
+    },
+    {
+      "bytes": 24462,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/coretest/test_segment.py",
+      "sha256": "ebdb7b982f17637943efd5301c6ef2f392232ff3341173ee708285368e2ecc93",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/coretest/test_segment.py"
+      }
+    },
+    {
+      "bytes": 100507,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/coretest/test_spiketrain.py",
+      "sha256": "79d419d01e20c5c67310c5c1c3cbee42f2de7d48d42cf611ac7f960b2ca5c7d3",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/coretest/test_spiketrain.py"
+      }
+    },
+    {
+      "bytes": 13062,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/coretest/test_spiketrainlist.py",
+      "sha256": "f278d6c73ab0b0cdba6e5fdbbac0931590ec1d98fcfa7c31cf26725c6d29fd0d",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/coretest/test_spiketrainlist.py"
+      }
+    },
+    {
+      "bytes": 2541,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/coretest/test_view.py",
+      "sha256": "71e309ee824ffcc0111b2120f98c5f5cf1026115594c26d18df92a5d69dbd760",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/coretest/test_view.py"
+      }
+    },
+    {
+      "bytes": 14169,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/generate_datasets.py",
+      "sha256": "fa2ff1ff2fa60860c5db37b1607626db396d32d936c465e4165f68ab360f6792",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/generate_datasets.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "neo/test/iotest"
+    },
+    {
+      "bytes": 34,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/__init__.py",
+      "sha256": "41f13481491e1f838ef5edf22cf0708645c5a4f277f8b08018088a9f5631f70f",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/__init__.py"
+      }
+    },
+    {
+      "bytes": 18622,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/common_io_test.py",
+      "sha256": "c2219bf6f979edb638e4b6ea7613708da5add90eaf5bc07da0bdc72dee275196",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/common_io_test.py"
+      }
+    },
+    {
+      "bytes": 386,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_alphaomegaio.py",
+      "sha256": "0be58c876f6a3e484eac2e043a611586407f9084629384c1caaeb690fd849214",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_alphaomegaio.py"
+      }
+    },
+    {
+      "bytes": 1393,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_asciiimageio.py",
+      "sha256": "28e5d1185cdf0dabb7eb622f2a37fdb7ef35b3dd48a6415696c30851025d9ac8",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_asciiimageio.py"
+      }
+    },
+    {
+      "bytes": 22697,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_asciisignalio.py",
+      "sha256": "4a4a5c7e19844b74a58090bc3bca6bc2aaee4800824eaa20bb66afaa17dc2a3b",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_asciisignalio.py"
+      }
+    },
+    {
+      "bytes": 438,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_asciispiketrainio.py",
+      "sha256": "2cf4760e6026be8236c63b8fe089ef56713d7ac467ee3d3427cfb72c6d359821",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_asciispiketrainio.py"
+      }
+    },
+    {
+      "bytes": 11426,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_axographio.py",
+      "sha256": "f6072cb7421a79598b388dae9d231001c886c6a3bf5d8bbb4bc2752e6404f5e5",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_axographio.py"
+      }
+    },
+    {
+      "bytes": 428,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_axonaio.py",
+      "sha256": "8ba5e7afa6b1a77c57a7b424c69a201c6fe4e3d72d9850dd30f1aa617e81dbc9",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_axonaio.py"
+      }
+    },
+    {
+      "bytes": 959,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_axonio.py",
+      "sha256": "4dd4393bdee38d571b96709346f3ff4b2cd73a7580466a813e994b903f2a0052",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_axonio.py"
+      }
+    },
+    {
+      "bytes": 787,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_baseio.py",
+      "sha256": "64943a85dc03ab1b1d5cfab65ee29550b38e00562d6ebabee75dcac38583585d",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_baseio.py"
+      }
+    },
+    {
+      "bytes": 433,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_bci2000io.py",
+      "sha256": "a998ab901e61d9deff5a8a458f635cfa1a1293ecd6c2c21dc6e400124b34b030",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_bci2000io.py"
+      }
+    },
+    {
+      "bytes": 429,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_biocamio.py",
+      "sha256": "1aa5f8333cb4d6a759b8cdf69a10136d25721bef4b7d2c91b876cd50700afc13",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_biocamio.py"
+      }
+    },
+    {
+      "bytes": 19823,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_blackrockio.py",
+      "sha256": "d0d03eaa8d188c0ac505a23fd6e56cb05cce1f8ab7a8fa5e64d3366586ac4076",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_blackrockio.py"
+      }
+    },
+    {
+      "bytes": 619,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_brainvisionio.py",
+      "sha256": "8f3b333d22c840d8467b66455e50fe24e73dc0a3f4785602828da996cec6f398",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_brainvisionio.py"
+      }
+    },
+    {
+      "bytes": 5006,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_brainwaredamio.py",
+      "sha256": "009d025fd147c34d2c6e08d88d5f23c564b38faa138ea1236e77d75cc20c79b2",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_brainwaredamio.py"
+      }
+    },
+    {
+      "bytes": 5030,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_brainwaref32io.py",
+      "sha256": "c2d8994fefe9fccc7b1b100dc034235d6a9ef756b1e539deb8d50d975b85cb73",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_brainwaref32io.py"
+      }
+    },
+    {
+      "bytes": 12264,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_brainwaresrcio.py",
+      "sha256": "de0504262dd0a10f0c397974dab6218fd95e4c538d13ac3cef318ea0a7995039",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_brainwaresrcio.py"
+      }
+    },
+    {
+      "bytes": 846,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_cedio.py",
+      "sha256": "f72a3cc57db223dbb5db3de37f629bc9ad9ead1287021b524648718abe615826",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_cedio.py"
+      }
+    },
+    {
+      "bytes": 3435,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_edfio.py",
+      "sha256": "8fb597e95abb0cc94b2740fa42a611b919bc26846d31f9019b24cb5475a54ac8",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_edfio.py"
+      }
+    },
+    {
+      "bytes": 360,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_elanio.py",
+      "sha256": "9a1e368df241dedec51f3cfb455a85d14cd69f491d0fa955dee9d0f324d74258",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_elanio.py"
+      }
+    },
+    {
+      "bytes": 867,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_elphyio.py",
+      "sha256": "89cb95ea76db70a562008bf537e730504cff569eb664a1a384fc686f0d50c2c0",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_elphyio.py"
+      }
+    },
+    {
+      "bytes": 3862,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_exampleio.py",
+      "sha256": "83953925fe3733df2580abd56a799ea82fcfc8416cce25a575a51400e26a452e",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_exampleio.py"
+      }
+    },
+    {
+      "bytes": 1550,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_get_io.py",
+      "sha256": "51ec2f709daac9a5371926fb2c127150f0fd324d876167de7cb5caa7b866db79",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_get_io.py"
+      }
+    },
+    {
+      "bytes": 508,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_igorio.py",
+      "sha256": "3127648ccddd8853ae4d1b4191d99c7ab73ae05c5f09234ddd4cf19ccbbf1710",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_igorio.py"
+      }
+    },
+    {
+      "bytes": 1048,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_intanio.py",
+      "sha256": "9e1261dd165422188fe2cce6bbf15b15baed4e45de0fb0d95b913940d1524664",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_intanio.py"
+      }
+    },
+    {
+      "bytes": 10748,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_klustakwikio.py",
+      "sha256": "135c80418c0726fe0a02efe8adf5858aef029225b7d309d1846f45b52ad908a2",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_klustakwikio.py"
+      }
+    },
+    {
+      "bytes": 483,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_kwikio.py",
+      "sha256": "366b4217fd681567ffffce30932c9ccfe02fd949f0947086f30e8f60315ac4f8",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_kwikio.py"
+      }
+    },
+    {
+      "bytes": 658,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_maxwellio.py",
+      "sha256": "1e330151919c80690b97a23b1205937b94f7fd99faf8f64653d0b143ff9bee82",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_maxwellio.py"
+      }
+    },
+    {
+      "bytes": 509,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_mearecio.py",
+      "sha256": "38b0ac1471b6e1c8ae28df7d4aa939a03cb6df9cad10b936536e060536723b36",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_mearecio.py"
+      }
+    },
+    {
+      "bytes": 4111,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_medio.py",
+      "sha256": "6144a97f1f3bad3efeef07fea7fcf4cf35a941011d24deefe22816e54680fddf",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_medio.py"
+      }
+    },
+    {
+      "bytes": 374,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_micromedio.py",
+      "sha256": "0dc71d2bcf99110649a6450d62e0380431a00f5c3d59586eb32e0789aeebeed9",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_micromedio.py"
+      }
+    },
+    {
+      "bytes": 3898,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_neomatlabio.py",
+      "sha256": "522eab0736b3b54d7697b59c5dad13c97e0ba5e2c607fb383b18fac24e384eb1",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_neomatlabio.py"
+      }
+    },
+    {
+      "bytes": 28702,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_nestio.py",
+      "sha256": "c56a2dc8dc437c5dac2e033abfca14ed6b592ed4d2da9c829daa936a729bcfc6",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_nestio.py"
+      }
+    },
+    {
+      "bytes": 19358,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_neuralynxio.py",
+      "sha256": "e533da47d8cfb3360eb93d883c2d7652bce625b9bdab7cd1762e017b02cb11a9",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_neuralynxio.py"
+      }
+    },
+    {
+      "bytes": 1255,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_neuroexplorerio.py",
+      "sha256": "3e359ee9f949fc083f100be87a3ba409316db345c003f00962c74f9a8079b878",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_neuroexplorerio.py"
+      }
+    },
+    {
+      "bytes": 411,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_neuronexusio.py",
+      "sha256": "b16aff7bc5777ff3a46b83f354ca3c8d5d21668465bff4a5cee2d73c2c65df0e",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_neuronexusio.py"
+      }
+    },
+    {
+      "bytes": 381,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_neuroscopeio.py",
+      "sha256": "db164eb21c4db5404b9c31203561006b691cd41d157413c965258f1b3125b026",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_neuroscopeio.py"
+      }
+    },
+    {
+      "bytes": 4097,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_neuroshareio.py",
+      "sha256": "4510ad8644e100560c826ce092fae309a8714a69985539b84790520009b4bff4",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_neuroshareio.py"
+      }
+    },
+    {
+      "bytes": 69927,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_nixio.py",
+      "sha256": "8cf47e8556923863e62a2a62160f0a09e889ce26a2640ada55b1826425909752",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_nixio.py"
+      }
+    },
+    {
+      "bytes": 6048,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_nixio_fr.py",
+      "sha256": "770614f39c7c48a71741e3f21e64bbd28ed3698681754a96225ad47b7a71b92a",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_nixio_fr.py"
+      }
+    },
+    {
+      "bytes": 12979,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_nwbio.py",
+      "sha256": "0f4d48e6f942faf4b17fbcb29a5df585b8db17e47c12aef692dfb4ca9fdc3064",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_nwbio.py"
+      }
+    },
+    {
+      "bytes": 506,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_openephysbinaryio.py",
+      "sha256": "433fb3fb6dc880c042c0b0c88a081d4f4f18f642f6d0f5af1e52bf18eb4fd5ac",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_openephysbinaryio.py"
+      }
+    },
+    {
+      "bytes": 475,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_openephysio.py",
+      "sha256": "968fcd68364e36fe778eaab6402984b5b694a8ecce595c169865fbd3c3c1de8e",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_openephysio.py"
+      }
+    },
+    {
+      "bytes": 2523,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_phyio.py",
+      "sha256": "9c1bdf7ab9b65c7183cd2fd8666849ad6520e146506ce7580ecb0027dab2a5c7",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_phyio.py"
+      }
+    },
+    {
+      "bytes": 2999,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_pickleio.py",
+      "sha256": "c2c630db5e76036777a31b312c4458b9929b03a37f661975065542e343e1810a",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_pickleio.py"
+      }
+    },
+    {
+      "bytes": 677,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_plexon2io.py",
+      "sha256": "62f110ce316f6c3b49de7dea09ce88073916806f7a5dbbe2e8e1b1ac0f4235d1",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_plexon2io.py"
+      }
+    },
+    {
+      "bytes": 479,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_plexonio.py",
+      "sha256": "804102f35b123f87644a2576f1913d225e3137865f231a532fe4a16b92eea135",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_plexonio.py"
+      }
+    },
+    {
+      "bytes": 10059,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_proxyobjects.py",
+      "sha256": "3fa1fd4ab685d9b365d81541b919d013578e55282404f33c55c25b8493bbf528",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_proxyobjects.py"
+      }
+    },
+    {
+      "bytes": 684,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_rawbinarysignalio.py",
+      "sha256": "18bb4a696b0bf50dac157dd1987cc7885cc5f87d309b1c3179e96cec01e652fa",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_rawbinarysignalio.py"
+      }
+    },
+    {
+      "bytes": 333,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_rawmcsio.py",
+      "sha256": "0121bc406c1791b6dc820407c8ac3ae25fe32fbba0eadd18ad9b3f5b4b5202fd",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_rawmcsio.py"
+      }
+    },
+    {
+      "bytes": 2727,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_spike2io.py",
+      "sha256": "c62bd7535baa3ada4e75fece4114602e08028ec25de842690291f3affa8a1b2e",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_spike2io.py"
+      }
+    },
+    {
+      "bytes": 411,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_spikegadgetsio.py",
+      "sha256": "00ebc08b327cc38cc4bf7c8981f7870ae35cae208d27d729edebc2f05937b704",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_spikegadgetsio.py"
+      }
+    },
+    {
+      "bytes": 458,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_spikeglxio.py",
+      "sha256": "747073f3bed2edc0478df45ae05182bf36fa247126f3a3a2c9a24496a1df9f41",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_spikeglxio.py"
+      }
+    },
+    {
+      "bytes": 799,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_stimfitio.py",
+      "sha256": "50a74130473e0c1b89c7d77dd8f0bab0275b0952b509d45dce0047ede817e3c5",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_stimfitio.py"
+      }
+    },
+    {
+      "bytes": 1218,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_tdtio.py",
+      "sha256": "79e4ccec0f992f8506a1b4d056ac6b737e5aa6f95b9c3164b5635e46cc4c9b40",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_tdtio.py"
+      }
+    },
+    {
+      "bytes": 1434,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_tiffio.py",
+      "sha256": "7c93289642733a56eb08f2cbb2daab96734336bfd51974a87e2ebd6d5edfb978",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_tiffio.py"
+      }
+    },
+    {
+      "bytes": 447,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_winedrio.py",
+      "sha256": "6b0e358b02e083ff0ba15df631ba161f903da6eaf451883c3f07ab1f37264e3f",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_winedrio.py"
+      }
+    },
+    {
+      "bytes": 368,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/test_winwcpio.py",
+      "sha256": "1eaceac30f8c011c051e7bdb3376ab25d063f3494ea0674906e086639d3b56e9",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/test_winwcpio.py"
+      }
+    },
+    {
+      "bytes": 12240,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/iotest/tools.py",
+      "sha256": "89a2c158b1e33ce61f8db9e100b6ac21577639e5755add01d46e10ff327e8e6a",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/iotest/tools.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "neo/test/rawiotest"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/__init__.py"
+      }
+    },
+    {
+      "bytes": 3901,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/common_rawio_test.py",
+      "sha256": "cf05f955a5b6cc2d2de97e116abf8fa00462cda0ac6181afef1b4bb9f78792fc",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/common_rawio_test.py"
+      }
+    },
+    {
+      "bytes": 17570,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/rawio_compliance.py",
+      "sha256": "663d5ce169ab6725111eaf705b75a600f0b8c353754a71d5d47efeccd05ac125",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/rawio_compliance.py"
+      }
+    },
+    {
+      "bytes": 11654,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/test_alphaomegarawio.py",
+      "sha256": "e60bc21fca09ec159799b60c86ee023a019a590e8de6045fa656ae7ee3072de5",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/test_alphaomegarawio.py"
+      }
+    },
+    {
+      "bytes": 947,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/test_axographrawio.py",
+      "sha256": "e0a376c96ca9708b1b2171b302066453020c22de8dce74208ccc9e4d4b47a0e1",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/test_axographrawio.py"
+      }
+    },
+    {
+      "bytes": 537,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/test_axonarawio.py",
+      "sha256": "fdf06cb2924efc9cf7ba9981b3a0c16c07031cbb7cf2f22e914d36c5a8722f17",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/test_axonarawio.py"
+      }
+    },
+    {
+      "bytes": 842,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/test_axonrawio.py",
+      "sha256": "7fc7829b0a2b05c65a1b2dbcc8dd2c70386ddd2103b6105c3320c2601158c3b8",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/test_axonrawio.py"
+      }
+    },
+    {
+      "bytes": 469,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/test_bci2000rawio.py",
+      "sha256": "57379ef64ee27d18fc3d6712f77ec53560483b45883cbb98bb850476ebb4c239",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/test_bci2000rawio.py"
+      }
+    },
+    {
+      "bytes": 490,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/test_biocamrawio.py",
+      "sha256": "1c21c5014b7249af3faea5334114aa15513115f4e5758a76d2cb2e7f8ad1f3cb",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/test_biocamrawio.py"
+      }
+    },
+    {
+      "bytes": 9605,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/test_blackrockrawio.py",
+      "sha256": "44212b1c484bc1d4b7430d4305997586c2df7d41f701a5c880c81e533ed45222",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/test_blackrockrawio.py"
+      }
+    },
+    {
+      "bytes": 690,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/test_brainvisionrawio.py",
+      "sha256": "2a3fbaf18b7fc97a07a5f11c1bb29cedaba1ad29bca92caef7ae79b931531d7a",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/test_brainvisionrawio.py"
+      }
+    },
+    {
+      "bytes": 648,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/test_cedrawio.py",
+      "sha256": "733a55a513c7c1a127946071f05ed925c7c1028d2570152741ed6954d41c7907",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/test_cedrawio.py"
+      }
+    },
+    {
+      "bytes": 1032,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/test_edfrawio.py",
+      "sha256": "c2bce40c6eb8f05d0c86c204b18b3ced05fdaa9b35d13ec4adf5283221dd04db",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/test_edfrawio.py"
+      }
+    },
+    {
+      "bytes": 366,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/test_elanrawio.py",
+      "sha256": "2e9b6635ff6879f4bde74e6c1db5a30252a8e45bf94081e8c779bef3dc791414",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/test_elanrawio.py"
+      }
+    },
+    {
+      "bytes": 1188,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/test_examplerawio.py",
+      "sha256": "8b2e92ab2813f95eb766ca47d371250c1f72016fbdab07e42e0bdbaea074fe8b",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/test_examplerawio.py"
+      }
+    },
+    {
+      "bytes": 702,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/test_get_rawio.py",
+      "sha256": "2bfd5f871b74fd9cce6027e9489cf881b0736815282d74e2a19f50d18c2acc82",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/test_get_rawio.py"
+      }
+    },
+    {
+      "bytes": 3055,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/test_intanrawio.py",
+      "sha256": "ab70eed6ded18d04799fbb810fb989a10b7a0d4d0c1065057c0a43498c5c2d5b",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/test_intanrawio.py"
+      }
+    },
+    {
+      "bytes": 623,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/test_maxwellrawio.py",
+      "sha256": "118e277a113b97d27eae5daa33e7ea467af8274c68f784e11efca35191abbbab",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/test_maxwellrawio.py"
+      }
+    },
+    {
+      "bytes": 1807,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/test_mearecrawio.py",
+      "sha256": "0e64ca4ede273d75099ad54dcc84d04cd06f81444c8903c6cd41d27c0b8b9aa2",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/test_mearecrawio.py"
+      }
+    },
+    {
+      "bytes": 9777,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/test_medrawio.py",
+      "sha256": "e736d22ceb6664b63c47a8ca40faac67a1a160f866ebeba569fa59213e191c68",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/test_medrawio.py"
+      }
+    },
+    {
+      "bytes": 389,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/test_micromedrawio.py",
+      "sha256": "05e8f6e9a2ec3dcfc28ca84b2c3a05bdbaf97f06dfe4b49fe19e5c83017f0da0",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/test_micromedrawio.py"
+      }
+    },
+    {
+      "bytes": 18167,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/test_neuralynxrawio.py",
+      "sha256": "8aadeac5917a85ce60a6b302c5d4dd0862904264e8fc519f28883ae130f42a71",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/test_neuralynxrawio.py"
+      }
+    },
+    {
+      "bytes": 480,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/test_neuroexplorerrawio.py",
+      "sha256": "bb843d548dc989c846545b45726b179e6301ad43987c44b2e2f938b8ff6ce7d4",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/test_neuroexplorerrawio.py"
+      }
+    },
+    {
+      "bytes": 435,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/test_neuronexusrawio.py",
+      "sha256": "86462b1cbff62add3fe9dc2daf9249f8b7bdebdcc74cb244cc9e3ef32a7c2f71",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/test_neuronexusrawio.py"
+      }
+    },
+    {
+      "bytes": 2320,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/test_neuroscoperawio.py",
+      "sha256": "5cec98d73d01308af10e2dfe307fbf1c202f914f647e5ebbabc102741fa887c3",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/test_neuroscoperawio.py"
+      }
+    },
+    {
+      "bytes": 367,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/test_nixrawio.py",
+      "sha256": "53f4af2a85eabafefbf5d8ffe21b53922fda51e36ad023d8d677b7b2b0401521",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/test_nixrawio.py"
+      }
+    },
+    {
+      "bytes": 2119,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/test_openephysbinaryrawio.py",
+      "sha256": "97a08672a9fad5f7d8ce37c4963ca2ebdd69521d1893439ab357bc089a810288",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/test_openephysbinaryrawio.py"
+      }
+    },
+    {
+      "bytes": 1289,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/test_openephysrawio.py",
+      "sha256": "d7cd8bcb01ba6150057e1aa7df9f5b9e12a894d1bab0bcea208f0f10dcf60f74",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/test_openephysrawio.py"
+      }
+    },
+    {
+      "bytes": 3711,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/test_phyrawio.py",
+      "sha256": "22de1012352e74045dd3446c0352b6136a266711cc1534dc16535c45e55b3871",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/test_phyrawio.py"
+      }
+    },
+    {
+      "bytes": 2675,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/test_plexon2rawio.py",
+      "sha256": "84cb3cf9181afb8db7b274059eb04bb7d6c333f3270d23667c893906770a0ea8",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/test_plexon2rawio.py"
+      }
+    },
+    {
+      "bytes": 485,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/test_plexonrawio.py",
+      "sha256": "d8c6b43784346bbfac5ff214bc122255235e99043731be7a2428af63fb1d7824",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/test_plexonrawio.py"
+      }
+    },
+    {
+      "bytes": 441,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/test_rawbinarysignalrawio.py",
+      "sha256": "0b0596e52d6326bf1cbb7af634822b385846f593beec3e04cd0f6940a43ec5cb",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/test_rawbinarysignalrawio.py"
+      }
+    },
+    {
+      "bytes": 372,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/test_rawmcsrawio.py",
+      "sha256": "ebdbd2f501581c343e8216f44f712dfaaab8168d0a8f9ee7283f972df996205e",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/test_rawmcsrawio.py"
+      }
+    },
+    {
+      "bytes": 629,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/test_spike2rawio.py",
+      "sha256": "debffc6149407df45c361c2449cf0534078f794b681ab9c11fcbd05c08492104",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/test_spike2rawio.py"
+      }
+    },
+    {
+      "bytes": 556,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/test_spikegadgetsrawio.py",
+      "sha256": "26045cc2b1b04676797d1c2f1d9180d5360e65f8523f327cd3a931be83735223",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/test_spikegadgetsrawio.py"
+      }
+    },
+    {
+      "bytes": 5048,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/test_spikeglxrawio.py",
+      "sha256": "5ce2926e5b5f2bd788cf786f1bda9c36f92bfb69c07362ec153fdcdc0690d269",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/test_spikeglxrawio.py"
+      }
+    },
+    {
+      "bytes": 2356,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/test_tdtrawio.py",
+      "sha256": "1913f60fe0b2e9a04f0b0cdedb8103554dc674b8e4961768f69c1fdc501298ba",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/test_tdtrawio.py"
+      }
+    },
+    {
+      "bytes": 451,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/test_winedrrawio.py",
+      "sha256": "0896fc5dbe640d3894486a13430ca39b4193731dcd2c9c4b96e3e8420cc3ad0b",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/test_winedrrawio.py"
+      }
+    },
+    {
+      "bytes": 364,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/test_winwcprawio.py",
+      "sha256": "2124fba275291287ad4a398ef560efaa8d23a6681c5c58212199ac39a57fa175",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/test_winwcprawio.py"
+      }
+    },
+    {
+      "bytes": 453,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/rawiotest/tools.py",
+      "sha256": "9e0a9dcb057ad1a6265ede5b033cd60a5cffcc6e7ad9374e8075dddb37e440cf",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/rawiotest/tools.py"
+      }
+    },
+    {
+      "bytes": 19680,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/tools.py",
+      "sha256": "74dc6c889e10ba5f9b44e98b0d3dd92bb1d864a7f5bc49c0106d972756e72642",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/tools.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "neo/test/utils"
+    },
+    {
+      "bytes": 518,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/utils/test_datasets.py",
+      "sha256": "2933596de997297b9503349f69b385f6d45fa1ba5c7dedf71f73e3b529637477",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/utils/test_datasets.py"
+      }
+    },
+    {
+      "bytes": 28521,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/test/utils/test_misc.py",
+      "sha256": "aeb06fd2f05814342ab0ef76dd78740f9cf7f2b55e60ca7f6406f95c4ae863a4",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/test/utils/test_misc.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "neo/utils"
+    },
+    {
+      "bytes": 262,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/utils/__init__.py",
+      "sha256": "445c735bf0d4eb68caa317f7b7fa8791341d2e67081d2cf4f997ab54e78cb475",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/utils/__init__.py"
+      }
+    },
+    {
+      "bytes": 2369,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/utils/datasets.py",
+      "sha256": "26ae4a699f828cfcb817cc2f4b1ed5c98477e08967817d7328223483b39a6752",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/utils/datasets.py"
+      }
+    },
+    {
+      "bytes": 22890,
+      "kind": "file",
+      "mode": 420,
+      "path": "neo/utils/misc.py",
+      "sha256": "d6ceda93967beb0af7b6acdc4504ae2de285d9f5fab8a65ad62e397981766458",
+      "source": {
+        "kind": "upstream",
+        "path": "neo/utils/misc.py"
+      }
+    },
+    {
+      "bytes": 3066,
+      "kind": "file",
+      "mode": 420,
+      "path": "pyproject.toml",
+      "sha256": "64362115995a2c01cdd2a91d49874c67b7b431d810c9768a2bed7718ccfd8eb0",
+      "source": {
+        "kind": "upstream",
+        "path": "pyproject.toml"
+      }
+    },
+    {
+      "bytes": 69,
+      "kind": "file",
+      "mode": 420,
+      "path": "setup.py",
+      "sha256": "105090a181d2b5356ef8712a44c2a949ab34ce8fbd67e01b5aafb6fb1911a15f",
+      "source": {
+        "kind": "upstream",
+        "path": "setup.py"
+      }
+    }
+  ],
+  "overlay_sha256": "8a1c2404f6ec19f904ef182c318b6ecd60b7ec32d6d87a2a564476a53098fb63",
+  "upstream": {
+    "kind": "beyondswe",
+    "repository": "https://github.com/neuralensemble/python-neo",
+    "revision": "de6b3b5be4e565ba8884aebd4be17a02f03c2079",
+    "source_root_key": "tri80-beyondswe-neuralensemble_python-neo_pr1554-cp2"
+  },
+  "workspace_tree_sha256": "8b4ed526cbd75efa36a5724d4c1ee9bd6b66e555ba432c784647cf31dc64ad52"
+}

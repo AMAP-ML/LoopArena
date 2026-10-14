@@ -1,0 +1,6 @@
+{
+  "recipe": "workspace_recipe.json",
+  "recipe_sha256": "ba27e57f78929564b8813f9ad2c1ef4c3c5b0053c42931a6eb90f16fc74c0d67",
+  "relative_path_under_assets_root": "type2/workspaces/tri80-beyondswe-encode_django-rest-framework_pr9514-cp3/workspace.tar.gz",
+  "workspace_tree_sha256": "65c98a773d130cb64f78f439b697e73034f5606aa39cdf2ea0577efc5f55b901"
+}

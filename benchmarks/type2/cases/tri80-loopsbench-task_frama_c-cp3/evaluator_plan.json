@@ -1,0 +1,29 @@
+{
+  "adapter_config": {
+    "docker_executable": "docker",
+    "expected_test_count": 17,
+    "expected_unit_ids": [
+      "frama_c",
+      "eva",
+      "frama_c_sv"
+    ],
+    "result_protocol": "source_run_tests",
+    "runtime_assets_dir": "/opt/looparena/evaluator_assets/evaluator_runtime",
+    "task_dir": "/opt/looparena/evaluator_assets/tasks/task_frama_c"
+  },
+  "adapter_kind": "loopsbench",
+  "adapter_version": "source-run-tests-v1",
+  "evaluator_revision": "5880b64491e2cac2f83d497153ed173b8a995b8b",
+  "network": "bridge",
+  "pass_policy": "all-source-unit-tests-pass",
+  "runtime_identity": {
+    "image_id": "sha256:93dc4be2a0fa3ebbbc4b241fd3304a4aa3758d58f7c5904fdfa7bb7b2114ff00",
+    "image_reference": "looparena-loopsbench-84ae415/task_frama_c:frozen",
+    "platform": "linux/amd64",
+    "task_tree_sha256": "9a76a2ac9c971ab0bba93a297b15e03bb277467368021145509a2a430f883e9e",
+    "workdir": "/workspace"
+  },
+  "solve_network": "bridge",
+  "source_revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+  "timeout_sec": 600
+}

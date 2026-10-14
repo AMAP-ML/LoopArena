@@ -1,0 +1,19 @@
+{
+  "adapter_kind": "loopsbench",
+  "checkpoint_context_policy": "single_episode",
+  "checkpoint_failure_policy": "stop_after_task",
+  "official_task_id": "loopsbench:task_riscv_cpu_verilog_three",
+  "release_content_hash": "84ae4156df6a132416109e2cf27bb72bcbde1e764dea40f3abab5e4ade942020",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/task.json",
+      "evaluator_plan_sha256": "a6fa51b5613c16c0305907b7861c579b41b3717370ef03190faf90c6a0e7e2af",
+      "step_id": "task",
+      "task_ref": "tasks/task.md",
+      "task_sha256": "9540fcaf4d0fd82ffafed413282c087e21d8f3a9fadd5b00e9f29eed3751eb32"
+    }
+  ],
+  "target_step": "task",
+  "task_scope": "official_full_task",
+  "workspace_origin": "pinned_loopsbench_release_source_base"
+}

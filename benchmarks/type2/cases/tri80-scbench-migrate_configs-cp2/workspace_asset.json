@@ -1,0 +1,6 @@
+{
+  "recipe": "workspace_recipe.json",
+  "recipe_sha256": "039ea4dca06f79edc5b0e53ae6122e0b09557a10d080609583044caad0387d6c",
+  "relative_path_under_assets_root": "type2/workspaces/tri80-scbench-migrate_configs-cp2/workspace.tar.gz",
+  "workspace_tree_sha256": "c5177205d6b127eb7f09f2a1bfe4d89f4c19f648a0684e8f7f0f104cdb7c017f"
+}

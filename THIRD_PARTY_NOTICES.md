@@ -1,35 +1,34 @@
-# Third-party benchmark material
+# Third-party material
 
-LoopArena includes benchmark task material derived from the pinned SCBench and
-BeyondSWE releases listed in `benchmarks/upstreams.toml`. This includes task
-specifications in Type II and Type III and source-task excerpts transformed
-into Type I questions.
+Task descriptions and selected adaptation files derive from SCBench, BeyondSWE, and LoopsBench. Exact source revisions and download locations are recorded in [benchmarks/upstreams.toml](benchmarks/upstreams.toml). Original licenses and copyright notices remain applicable; this repository's Apache-2.0 license covers its own code only.
 
-- SCBench problem material is distributed under Apache-2.0 by the pinned
-  [`scb-problems`](https://github.com/gabeorlanski/scb-problems) project.
-- The pinned SCBench runner is distributed under the MIT License by the
-  [`SprocketLab/slop-code-bench`](https://github.com/SprocketLab/slop-code-bench)
-  project. LoopArena does not redistribute that runner; users obtain it from
-  the upstream repository.
-- BeyondSWE benchmark material is distributed under
-  [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) by the
-  [`AweAI-Team/BeyondSWE-harbor`](https://huggingface.co/datasets/AweAI-Team/BeyondSWE-harbor)
-  project. LoopArena selects and reformats portions of that material into its
-  three benchmark views; its dataset card contains the project citation and
-  attribution information.
+- [SCBench problems](https://github.com/gabeorlanski/scb-problems): Apache-2.0. Its separate [runner](https://github.com/SprocketLab/slop-code-bench) is MIT-licensed and downloaded by the user.
+- [BeyondSWE-harbor](https://huggingface.co/datasets/AweAI-Team/BeyondSWE-harbor): CC BY 4.0 benchmark material. Selected tasks are reformatted into the three benchmark views. Source code from individual target projects retains each project's own license and notices.
+- [LoopsBench](https://github.com/microsoft/Loopsbench) and its [task dataset](https://huggingface.co/datasets/LoopsBench/LoopsBench): the upstream benchmark repository is MIT-licensed. Individual bundled task projects retain their respective licenses. The included small evaluator adaptations are documented by the per-task recipes.
 
-LoopArena also includes frozen source workspaces under
-`benchmarks/type2/cases/*/workspace.tar.gz`. These snapshots are benchmark
-inputs, not works relicensed by LoopArena. Their original copyright notices
-and licenses continue to apply.
+Type II reconstruction recipes and small overlays replace complete workspace archives. They preserve the required source contents and notices without bundling full upstream repositories. Complete evaluator bundles, container images, and third-party datasets are downloaded separately. Users must retain upstream attribution and comply with the terms of each source project when using or redistributing reconstructed material.
 
-- The SCBench workspaces were derived from the pinned `scb-problems` release.
-- The BeyondSWE workspaces contain source from their respective upstream
-  projects. The license or notice distributed by each project is retained in
-  its workspace archive.
+The LoopsBench MIT license notice is reproduced below for material derived from
+its benchmark repository:
 
-Complete evaluator bundles, container images, and upstream repositories are
-not redistributed here. The Type II evaluator recipes contain selected test
-identifiers and two small fixture patches from the pinned BeyondSWE release.
-Users obtain the complete upstream material directly from the URLs pinned in
-`benchmarks/upstreams.toml` under the terms published by those projects.
+MIT License
+
+Copyright (c) Microsoft Corporation.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

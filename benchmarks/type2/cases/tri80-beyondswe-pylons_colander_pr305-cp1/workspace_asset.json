@@ -1,0 +1,6 @@
+{
+  "recipe": "workspace_recipe.json",
+  "recipe_sha256": "7e826556582bea9e7db6bbf91ce14d2470fc86d9b5c9accd781bce91e00f771f",
+  "relative_path_under_assets_root": "type2/workspaces/tri80-beyondswe-pylons_colander_pr305-cp1/workspace.tar.gz",
+  "workspace_tree_sha256": "c9f7239ffbc4a96e41036de38a85533cf3560f4009f128e4f925747ae4f80a5c"
+}

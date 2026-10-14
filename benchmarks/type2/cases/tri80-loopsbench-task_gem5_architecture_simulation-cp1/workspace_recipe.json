@@ -1,0 +1,219 @@
+{
+  "case_id": "tri80-loopsbench-task_gem5_architecture_simulation-cp1",
+  "files": [
+    {
+      "bytes": 539,
+      "kind": "file",
+      "mode": 420,
+      "path": "README.md",
+      "sha256": "bd50bf5992b149f4a962d31df18df5867dd648e407e47260b7d147f1abca3de9",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_gem5_architecture_simulation/base/README.md"
+      }
+    },
+    {
+      "bytes": 3408,
+      "kind": "file",
+      "mode": 420,
+      "path": "module_dag.yaml",
+      "sha256": "4b7fca39aea7e3fdcd4f038637e8577e7ac9aa4c214fae564740ede43e3a3c4b",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_gem5_architecture_simulation/module_dag.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "requirements"
+    },
+    {
+      "bytes": 3499,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/gem5.yaml",
+      "sha256": "821216f47b9a2110c22cfa2bd3992bbf9626cf542a39dc678615306c4c8f2111",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_gem5_architecture_simulation/requirements/gem5.yaml"
+      }
+    },
+    {
+      "bytes": 4872,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/gem5_aladdin.yaml",
+      "sha256": "11adb6f5eb4247a0b5c8d5e95d196860acf27d20527d38da41118e0ce1282039",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_gem5_architecture_simulation/requirements/gem5_aladdin.yaml"
+      }
+    },
+    {
+      "bytes": 4838,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/gem5_salam.yaml",
+      "sha256": "4d07c257c6ae342e127e80d882aaa051739a03bdb1508073e754283e2796ec4d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_gem5_architecture_simulation/requirements/gem5_salam.yaml"
+      }
+    },
+    {
+      "bytes": 3569,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements/gem5_v20.yaml",
+      "sha256": "3421eef5aa624102902c23d574ebfabc554db343848aa7298e080937f6f38479",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_gem5_architecture_simulation/requirements/gem5_v20.yaml"
+      }
+    },
+    {
+      "bytes": 722,
+      "kind": "file",
+      "mode": 493,
+      "path": "run-tests.sh",
+      "sha256": "6c44343b7232985fed46e2be8645c6258daca30788bd60ed400b5b65dc384386",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_gem5_architecture_simulation/run-tests.sh"
+      }
+    },
+    {
+      "bytes": 143,
+      "kind": "file",
+      "mode": 493,
+      "path": "run.sh",
+      "sha256": "2011946e428bcaf1366459dc1cb467f80a672614e9f75762d1d94006e797a4c4",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_gem5_architecture_simulation/base/run.sh"
+      }
+    },
+    {
+      "bytes": 4339,
+      "kind": "file",
+      "mode": 420,
+      "path": "sim_engine.py",
+      "sha256": "83d9afeb9c621624b8826bc933f8cc5eea3bf44cae667177f59a86ac9c6a443c",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_gem5_architecture_simulation/base/sim_engine.py"
+      }
+    },
+    {
+      "bytes": 1791,
+      "kind": "file",
+      "mode": 420,
+      "path": "task.yaml",
+      "sha256": "2e279c71f8c1057efd01a0be9fab325ea6ad64fe26f7245d56d2db4499fc6a5d",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_gem5_architecture_simulation/task.yaml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests"
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/gem5"
+    },
+    {
+      "bytes": 1943,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/gem5/test_outputs.py",
+      "sha256": "fcd6d72b0794368d6ecbc3a8791a641665517299e9721db501c72abbaa12db6f",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_gem5_architecture_simulation/tests/gem5/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/gem5_aladdin"
+    },
+    {
+      "bytes": 2092,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/gem5_aladdin/test_outputs.py",
+      "sha256": "17c0ec02e012606bbc34a012182842d55943e0712d50e4d54c73d681823f026b",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_gem5_architecture_simulation/tests/gem5_aladdin/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/gem5_salam"
+    },
+    {
+      "bytes": 2095,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/gem5_salam/test_outputs.py",
+      "sha256": "4f3a7d87dcf3dfcd2a47b8424ef16dbb7d30d1fd1a091a65146d9cfcb7ed7b96",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_gem5_architecture_simulation/tests/gem5_salam/test_outputs.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests/gem5_v20"
+    },
+    {
+      "bytes": 2018,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/gem5_v20/test_outputs.py",
+      "sha256": "9b5a04529bb47c39501f614aded9de5c1fbfc7c2a715f4067db8cfbe0fcfa2d0",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_gem5_architecture_simulation/tests/gem5_v20/test_outputs.py"
+      }
+    },
+    {
+      "bytes": 731,
+      "kind": "file",
+      "mode": 420,
+      "path": "unit_dag.json",
+      "sha256": "1c690e9543ca286f2785ed088c25d2f6c8373794016b390f80d22ea76fa82191",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_gem5_architecture_simulation/unit_dag.json"
+      }
+    },
+    {
+      "bytes": 10639,
+      "kind": "file",
+      "mode": 420,
+      "path": "workloads.py",
+      "sha256": "ca507e6d70ae235b17d8f11b07281284b59a492224d29d2f34d70b5987dacba0",
+      "source": {
+        "kind": "upstream",
+        "path": "tasks/task_gem5_architecture_simulation/base/workloads.py"
+      }
+    }
+  ],
+  "overlay_sha256": "272adeccafe73e7009d51f2ec2be9871db5e0eb14239f483ea429be26c3c6402",
+  "upstream": {
+    "kind": "loopsbench",
+    "revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+    "source_root_key": "loopsbench",
+    "task": "task_gem5_architecture_simulation"
+  },
+  "workspace_tree_sha256": "ce39c9f3967069ce178dbfab09b80642d05fb62adbb314d287ca0bba69e80ac6"
+}

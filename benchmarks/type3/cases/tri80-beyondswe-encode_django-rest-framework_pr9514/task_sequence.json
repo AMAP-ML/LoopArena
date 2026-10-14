@@ -1,0 +1,20 @@
+{
+  "adapter_kind": "beyondswe_harbor",
+  "checkpoint_context_policy": "single_episode",
+  "checkpoint_failure_policy": "stop_after_task",
+  "official_parent_commit": "125ad42eb3922cd5ce1f4b332c91baf6d6162fb3",
+  "official_task_id": "beyondswe:encode_django-rest-framework_pr9514",
+  "official_workdir": "/workspace/django-rest-framework",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/task.json",
+      "evaluator_plan_sha256": "8d2ebc251ea69290140a70736da66a533332c7609c53e936c4019d618bf9ba40",
+      "step_id": "task",
+      "task_ref": "tasks/task.md",
+      "task_sha256": "14e7f6cfc4ffd633a926e4a4b5242eeee3f6db447f855c4a9625f56b46d84aa9"
+    }
+  ],
+  "target_step": "task",
+  "task_scope": "official_full_task",
+  "workspace_origin": "pinned_source_image_parent_commit"
+}

@@ -1,0 +1,20 @@
+{
+  "adapter_kind": "beyondswe_harbor",
+  "checkpoint_context_policy": "single_episode",
+  "checkpoint_failure_policy": "stop_after_task",
+  "official_parent_commit": "9a761739aea19823fcead4391ef043edafa74db6",
+  "official_task_id": "beyondswe:shapely_shapely_pr1174",
+  "official_workdir": "/workspace/shapely",
+  "steps": [
+    {
+      "evaluator_plan_ref": "evaluator_plans/task.json",
+      "evaluator_plan_sha256": "83f93c468b2cff7d710011ee170c4a7b7e6241a0cc12ea39abe27c8ad253d926",
+      "step_id": "task",
+      "task_ref": "tasks/task.md",
+      "task_sha256": "0c072f06b7b73ba23697e148d2c04eec184b47052d4d09ec581eecd0f73c7379"
+    }
+  ],
+  "target_step": "task",
+  "task_scope": "official_full_task",
+  "workspace_origin": "pinned_source_image_parent_commit"
+}

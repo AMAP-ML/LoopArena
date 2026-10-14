@@ -10,7 +10,7 @@ from typing import Any
 
 from looparena.harness import validation as V
 from looparena.harness.evaluator_protocol import (
-    classify_infrastructure_validity,
+    classify_manifest_infrastructure_validity,
     combine_final_infrastructure_validity,
     derive_final_task_outcome,
     derive_task_outcome,
@@ -230,9 +230,7 @@ def validate_run_dir(
 
     warnings.extend(_accounting_warnings(manifest))
 
-    solve_validity = classify_infrastructure_validity(
-        manifest.get("status"), manifest.get("termination_reason")
-    )
+    solve_validity = classify_manifest_infrastructure_validity(manifest)
     evaluator = manifest.get("terminal_external_evaluator")
     if evaluator is None:
         if require_terminal_evaluator:

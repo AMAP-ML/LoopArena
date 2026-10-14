@@ -1,0 +1,29 @@
+{
+  "adapter_config": {
+    "docker_executable": "docker",
+    "expected_test_count": 15,
+    "expected_unit_ids": [
+      "sklearn",
+      "imbalanced_learn",
+      "auto_sklearn"
+    ],
+    "result_protocol": "source_run_tests",
+    "runtime_assets_dir": "/opt/looparena/evaluator_assets/evaluator_runtime",
+    "task_dir": "/opt/looparena/evaluator_assets/tasks/task_sklearn_ml_toolchain"
+  },
+  "adapter_kind": "loopsbench",
+  "adapter_version": "source-run-tests-v1",
+  "evaluator_revision": "af4a746b31b3e26c2c0eb774007b32f4103309c9",
+  "network": "bridge",
+  "pass_policy": "all-source-unit-tests-pass",
+  "runtime_identity": {
+    "image_id": "sha256:27f59e24ca2a4a2ade5b066a22431c4a8dbd1b3f4567f5ce25611672238d55ab",
+    "image_reference": "looparena-loopsbench-84ae415/task_sklearn_ml_toolchain:frozen",
+    "platform": "linux/amd64",
+    "task_tree_sha256": "14c483d74fe8fd7dfb4b061c03a36a334952a43005a52d6c3d7284435ac1e249",
+    "workdir": "/workspace"
+  },
+  "solve_network": "bridge",
+  "source_revision": "4104e5d5163617f5625e5bf0c23e607dd2019ccb",
+  "timeout_sec": 600
+}

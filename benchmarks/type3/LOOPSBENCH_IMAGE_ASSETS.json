@@ -1,0 +1,244 @@
+{
+  "cases": {
+    "tri80-loopsbench-task_afl_fuzzing": {
+      "dockerfile_sha256": "cc0199f758873de5bcf294463a7a67e6db3e58db33aaada621567938d928541f",
+      "image_id": "sha256:b0049afe456ad21c412fc8e808a5fc6831fa5f1b45f0efbd110d9b3b855455d0",
+      "image_reference": "looparena-loopsbench-84ae415/task_afl_fuzzing:frozen",
+      "platform": "linux/amd64",
+      "task_id": "task_afl_fuzzing",
+      "task_tree_sha256": "755bacc25e48e62249f950868b9b5acea09b0305440a684d3cf8ed678e595239"
+    },
+    "tri80-loopsbench-task_alloy_formal_modeling": {
+      "dockerfile_sha256": "1f4c687e10d051f4f868168e1fe5fa8e000eea2de9efc460db34769527ef94d3",
+      "image_id": "sha256:0591fc77b03fb7e7cb6ffc8947fa37ca8cbea89970d7e58401ac7983fe1e18ca",
+      "image_reference": "looparena-loopsbench-84ae415/task_alloy_formal_modeling:frozen",
+      "platform": "linux/amd64",
+      "task_id": "task_alloy_formal_modeling",
+      "task_tree_sha256": "daa04a0dc26fd9f67e5bc5a130ce6dd10effc8d510274af0b6541670e513c38b"
+    },
+    "tri80-loopsbench-task_angr_concolic_execution": {
+      "dockerfile_sha256": "83b5198571a87054277af70de3e2b383f54a65f92e815dd7ee541b8af3208676",
+      "image_id": "sha256:05be995ed1fe7b7a25fc2edaf25c73a1d8e9c4a7e3bbb38c0aa686b09069957b",
+      "image_reference": "looparena-loopsbench-84ae415/task_angr_concolic_execution:frozen",
+      "platform": "linux/amd64",
+      "task_id": "task_angr_concolic_execution",
+      "task_tree_sha256": "9f76ed10a91c24fa15b2c6d7f1ace0ed8c1988e822b46f2fce670ab0888a6295"
+    },
+    "tri80-loopsbench-task_boogie_dafny": {
+      "dockerfile_sha256": "fa8f19a489b0aed418717963fdfdcdf751bd2652ea0a908975a5f3dfbb2b8e34",
+      "image_id": "sha256:5679d7abcdf1a74461e60623751d89d2da5f1ba8aec46425411d97cc4b89b55c",
+      "image_reference": "looparena-loopsbench-84ae415/task_boogie_dafny:frozen",
+      "platform": "linux/amd64",
+      "task_id": "task_boogie_dafny",
+      "task_tree_sha256": "27258f1dddcbf2c1aacc45e0ed598e6d87756f60ea969af5c4116f3bf744dbd0"
+    },
+    "tri80-loopsbench-task_cpachecker": {
+      "dockerfile_sha256": "b81b197c972f1c81d8b2147155c4af96fff085ed6e9be5379ddb3e31f0e0d6e6",
+      "image_id": "sha256:cd63f1a8c3a7fb0056f906d6ef90ec01f17f5cd4f94044bea19cd8521938844f",
+      "image_reference": "looparena-loopsbench-84ae415/task_cpachecker:frozen",
+      "platform": "linux/amd64",
+      "task_id": "task_cpachecker",
+      "task_tree_sha256": "772aa1915b535098c20558683eaf28faf4c98b96fb01ededffb988cf59666aa8"
+    },
+    "tri80-loopsbench-task_cvc_smt_solver": {
+      "dockerfile_sha256": "0cb686a851f258a9126b14f8c84f99ce2296d7f68e5fb68602f651004331003d",
+      "image_id": "sha256:dbe5a929bc82b166675506b169ec32a25a65a6c35854f1e39de5ea3bcbacf28a",
+      "image_reference": "looparena-loopsbench-84ae415/task_cvc_smt_solver:frozen",
+      "platform": "linux/amd64",
+      "task_id": "task_cvc_smt_solver",
+      "task_tree_sha256": "369ca5b5726a7f1a78d3e09ca13666a1cf65d024190b42c826bae9368ae80f62"
+    },
+    "tri80-loopsbench-task_doop_souffle_static_analysis": {
+      "dockerfile_sha256": "b960f4efe58c13011e00b3c05c34e4ce8ede40cca0bb23364e4760e1ff2e5dbd",
+      "image_id": "sha256:e6b4a8ac731bf1d95bd40d3d8a37654984f53ab4a5bff0bcc9baea2aec57d9a6",
+      "image_reference": "looparena-loopsbench-84ae415/task_doop_souffle_static_analysis:frozen",
+      "platform": "linux/amd64",
+      "task_id": "task_doop_souffle_static_analysis",
+      "task_tree_sha256": "352514af7943fafe2919439ca664ba236d3b8d07ec4ff98847d1e4e391d42466"
+    },
+    "tri80-loopsbench-task_evosuite_test_generation": {
+      "dockerfile_sha256": "07591c336f722788c5fa980d1c3bd060df2a5f2a18e300def95bbb067ea9b636",
+      "image_id": "sha256:252f604739da5fb083e0cea82985f6f44431bbc3c28db3fc0eefa667aa2448cb",
+      "image_reference": "looparena-loopsbench-84ae415/task_evosuite_test_generation:frozen",
+      "platform": "linux/amd64",
+      "task_id": "task_evosuite_test_generation",
+      "task_tree_sha256": "c4e060d8df0bbaea9cca30b24411398986f8eb1d2287b575ef316e216055c6a4"
+    },
+    "tri80-loopsbench-task_frama_c": {
+      "dockerfile_sha256": "d27382369007e850fc07ecf623de2dc237b5c2278eed43f623c8a3698c0f703f",
+      "image_id": "sha256:93dc4be2a0fa3ebbbc4b241fd3304a4aa3758d58f7c5904fdfa7bb7b2114ff00",
+      "image_reference": "looparena-loopsbench-84ae415/task_frama_c:frozen",
+      "platform": "linux/amd64",
+      "task_id": "task_frama_c",
+      "task_tree_sha256": "9a76a2ac9c971ab0bba93a297b15e03bb277467368021145509a2a430f883e9e"
+    },
+    "tri80-loopsbench-task_gem5_architecture_simulation": {
+      "dockerfile_sha256": "5db26bba57aa72899fde5645b0bd4080389553b19a48673c39d4d10a3e11ba77",
+      "image_id": "sha256:eb987077eb8fa1ae1d1afeac016ce90ca339ec364efe24a9595d2682e06a935e",
+      "image_reference": "looparena-loopsbench-84ae415/task_gem5_architecture_simulation:frozen",
+      "platform": "linux/amd64",
+      "task_id": "task_gem5_architecture_simulation",
+      "task_tree_sha256": "882356d172433be926043e980e90884e3f606bd33c27490e89ae6caef984022c"
+    },
+    "tri80-loopsbench-task_graph_processing": {
+      "dockerfile_sha256": "7d600d2a94c564d704d94259b7ebea8c0bdfc350fee25ba91434ebaaaf56b14a",
+      "image_id": "sha256:7af1523157c0e7c63dc4aa27b7c5db9e029946428b65af4b1ab09fc858badaee",
+      "image_reference": "looparena-loopsbench-84ae415/task_graph_processing:frozen",
+      "platform": "linux/amd64",
+      "task_id": "task_graph_processing",
+      "task_tree_sha256": "fdc57ae6c3bdd5f24b7594b75a9f798e20beb306d7e4fb3681eb2a68cf42fc7b"
+    },
+    "tri80-loopsbench-task_jpf_symbolic_execution": {
+      "dockerfile_sha256": "beb98b0a5033a4e00d9ec4f8a1604f05111ab37350d6117fef4c8de319c07674",
+      "image_id": "sha256:d65340306853f59c337290abc00b5a2c50760b32eade0156623ec1ec65b0e7a2",
+      "image_reference": "looparena-loopsbench-84ae415/task_jpf_symbolic_execution:frozen",
+      "platform": "linux/amd64",
+      "task_id": "task_jpf_symbolic_execution",
+      "task_tree_sha256": "5d50c11cd11a79b5b8f187e4e0e7ecc8f9a0a1f656f098b144f176703b621a4a"
+    },
+    "tri80-loopsbench-task_mininet_network_simulation": {
+      "dockerfile_sha256": "116fe0e6948062df691ff903551878687c6abc3625cf735387afc02dd345a5d1",
+      "image_id": "sha256:f33513dc116c5e72724564fae4de5cbfb0483d669a76fcff4436d0ed36c642f9",
+      "image_reference": "looparena-loopsbench-84ae415/task_mininet_network_simulation:frozen",
+      "platform": "linux/amd64",
+      "task_id": "task_mininet_network_simulation",
+      "task_tree_sha256": "4cdb5119b04559b7ab2269ff8d4f11f01420ad54b93e43f95c1cd9d44e8901b6"
+    },
+    "tri80-loopsbench-task_mlir_circuit_ir": {
+      "dockerfile_sha256": "5a808809aff74260a6662d1734210032aedb20985093de24e9de0b0c4d4f1130",
+      "image_id": "sha256:f0bff0278d821a3bc556dc743d679506bfb8d0898fc9ee7a6bf8f43eb3e8c2d3",
+      "image_reference": "looparena-loopsbench-84ae415/task_mlir_circuit_ir:frozen",
+      "platform": "linux/amd64",
+      "task_id": "task_mlir_circuit_ir",
+      "task_tree_sha256": "a4ee395a74a491f7bd9237d8f9e679ae575dfe044bbdbd3062f5979441ae29e8"
+    },
+    "tri80-loopsbench-task_mlp_numpy_coursework": {
+      "dockerfile_sha256": "ef6eb46c933b7e95b24710f4158adb8feb3e133bce63e39e5d9b24760f4af942",
+      "image_id": "sha256:29d0df4fa126c7014914c60d79a69746100b669767d60596d69202fb6b2cc341",
+      "image_reference": "looparena-loopsbench-84ae415/task_mlp_numpy_coursework:frozen",
+      "platform": "linux/amd64",
+      "task_id": "task_mlp_numpy_coursework",
+      "task_tree_sha256": "8ffd6bdd11dd0496f7aa8e9fa8e74cf218d5e3d6393d84866ab823b2b61af70b"
+    },
+    "tri80-loopsbench-task_mlsys_autodiff_pa1": {
+      "dockerfile_sha256": "a38ff5b043ea590f7771bf1c8299c8035502140532d39c12e4b5249f7197a357",
+      "image_id": "sha256:8a49e44886969c5710005a5f506e9e73d77e5a2b8701d1c87a236a6ba1020c66",
+      "image_reference": "looparena-loopsbench-84ae415/task_mlsys_autodiff_pa1:frozen",
+      "platform": "linux/amd64",
+      "task_id": "task_mlsys_autodiff_pa1",
+      "task_tree_sha256": "07af38dc785eb55530d5262d61b1913532cc0809cf6f49ef31179d55151167aa"
+    },
+    "tri80-loopsbench-task_monogame_math2d_medium": {
+      "dockerfile_sha256": "ebed5c3b3ea8706534c82fe4215ee482e67a810d44da53d1cc7fe552a72bd6ab",
+      "image_id": "sha256:40594ef22717a4d1ae5ca92a4743af6b0d64fb97852ae42e0c9ce26b22d8d9d9",
+      "image_reference": "looparena-loopsbench-84ae415/task_monogame_math2d_medium:frozen",
+      "platform": "linux/amd64",
+      "task_id": "task_monogame_math2d_medium",
+      "task_tree_sha256": "676bbf285203a4de3c1f2f74999f79b1efeddbe0bec4041fc27da6023e9ac7af"
+    },
+    "tri80-loopsbench-task_monogame_transform3d_medium": {
+      "dockerfile_sha256": "ebed5c3b3ea8706534c82fe4215ee482e67a810d44da53d1cc7fe552a72bd6ab",
+      "image_id": "sha256:56d388b4cbcc07bf836c35ec88a83eb0b6be85f79ee2db9cd4d157726300fb92",
+      "image_reference": "looparena-loopsbench-84ae415/task_monogame_transform3d_medium:frozen",
+      "platform": "linux/amd64",
+      "task_id": "task_monogame_transform3d_medium",
+      "task_tree_sha256": "4445e8eddc5318137362fd341d6e6adb61f8d7957db56ca4230fcb0404f5b423"
+    },
+    "tri80-loopsbench-task_nandteris": {
+      "dockerfile_sha256": "aa37e7a0719ce9c632e2ee736b6ccf81d13a917709c82e861b2808c8dbd4bfb2",
+      "image_id": "sha256:07166cf6255db0bc78b8a65ec6f84070c6c3aba74817befaf5c437b4f5645a75",
+      "image_reference": "looparena-loopsbench-84ae415/task_nandteris:frozen",
+      "platform": "linux/amd64",
+      "task_id": "task_nandteris",
+      "task_tree_sha256": "5f82175ecf89fcb4862048e1e99d31f8f599a14eb396adb7c6ac5dc00ece994b"
+    },
+    "tri80-loopsbench-task_ns3_network_simulation": {
+      "dockerfile_sha256": "8d52ec54ee6568ff8837c409535c049b44390c0c101527703f88b3f4f552b4e1",
+      "image_id": "sha256:74d8ef2c004202181962012eb74bb751ef070154f705e3d89feeb96e29620821",
+      "image_reference": "looparena-loopsbench-84ae415/task_ns3_network_simulation:frozen",
+      "platform": "linux/amd64",
+      "task_id": "task_ns3_network_simulation",
+      "task_tree_sha256": "a82a364e858143e18c2519e741dd485d8e534021ac2242cff80146a7bda43db9"
+    },
+    "tri80-loopsbench-task_perses_program_reduction": {
+      "dockerfile_sha256": "81f0a02a17c3a4b9dcb304af0f6effd4e12d968062d1b2ad15f3ddd107667816",
+      "image_id": "sha256:c4215362b7ae8a5df0b82aa4f974fee3819e65b569d3cc0e0c14ff45ad014a52",
+      "image_reference": "looparena-loopsbench-84ae415/task_perses_program_reduction:frozen",
+      "platform": "linux/amd64",
+      "task_id": "task_perses_program_reduction",
+      "task_tree_sha256": "907ceb30d80efc45da9474bbf3b6dc1ffe8da6d65a6ba4cfabcecd291a1df9cd"
+    },
+    "tri80-loopsbench-task_raylib_shapes2d_medium": {
+      "dockerfile_sha256": "b779dfe334e66eab6108c8f359cbba99d74fef3864a9be1fa4d1b6fea96ea757",
+      "image_id": "sha256:3e8d59960a4ef2aa727cc2d93ffb6f31eb48928b7f3ad309bd650b3001ad93cf",
+      "image_reference": "looparena-loopsbench-84ae415/task_raylib_shapes2d_medium:frozen",
+      "platform": "linux/amd64",
+      "task_id": "task_raylib_shapes2d_medium",
+      "task_tree_sha256": "c9a52e2182a974887d78576a4149bf72a5bdffd0cafbe2aa3c513d8345e70e05"
+    },
+    "tri80-loopsbench-task_raylib_textures_hard": {
+      "dockerfile_sha256": "c220f0d55034ff3c7a109c53dc101b3eb470a68687dbc708e3fc68edde32d61b",
+      "image_id": "sha256:e9d5c3ae73ca4674d1c0f10c390ee02f7232e55816846a003e6b7d8c3478e88c",
+      "image_reference": "looparena-loopsbench-84ae415/task_raylib_textures_hard:frozen",
+      "platform": "linux/amd64",
+      "task_id": "task_raylib_textures_hard",
+      "task_tree_sha256": "51dbc4f328e5930ab1ecfd7c9e726a2d6573e8cbae71ee80dab2f5a7fe4189d7"
+    },
+    "tri80-loopsbench-task_riscv_cpu_six_labs": {
+      "dockerfile_sha256": "3da75085abf8989e0a1520e61d995779d87b1cc053809f662ed0186925b53a1c",
+      "image_id": "sha256:209c2508b55f04de8292354413fd77b0bb8678bc102b9eaa24dd4f6d72590525",
+      "image_reference": "looparena-loopsbench-84ae415/task_riscv_cpu_six_labs:frozen",
+      "platform": "linux/amd64",
+      "task_id": "task_riscv_cpu_six_labs",
+      "task_tree_sha256": "469b0201ce0ee2d53714d27a8fab758e700f5e5174ea5911c78cc3658e0e2e12"
+    },
+    "tri80-loopsbench-task_riscv_cpu_verilog_three": {
+      "dockerfile_sha256": "9ad25d5ce38163ed548d8320dc5f798f98f4e5b32fe2bfd9cdd6c9b5fd7c82d4",
+      "image_id": "sha256:f1f0844dc9dc0e82819450311e38e709f3a4a0e96828edd827053e3195442829",
+      "image_reference": "looparena-loopsbench-84ae415/task_riscv_cpu_verilog_three:frozen",
+      "platform": "linux/amd64",
+      "task_id": "task_riscv_cpu_verilog_three",
+      "task_tree_sha256": "f5c2eeb279a614776909ffb1487ab0c9d6a304e68a680961ebd8667775eba485"
+    },
+    "tri80-loopsbench-task_sklearn_ml_toolchain": {
+      "dockerfile_sha256": "6ed6ab01e2c61b84ac5f0e4b07ea1c12a5ca2dfefc98f6a5dd639d779c94fd2d",
+      "image_id": "sha256:27f59e24ca2a4a2ade5b066a22431c4a8dbd1b3f4567f5ce25611672238d55ab",
+      "image_reference": "looparena-loopsbench-84ae415/task_sklearn_ml_toolchain:frozen",
+      "platform": "linux/amd64",
+      "task_id": "task_sklearn_ml_toolchain",
+      "task_tree_sha256": "14c483d74fe8fd7dfb4b061c03a36a334952a43005a52d6c3d7284435ac1e249"
+    },
+    "tri80-loopsbench-task_soot_taint_analysis": {
+      "dockerfile_sha256": "f3ad1fd606468cd7332531cef41ec3cb8c9c2c99389e94d235b955e5624bd793",
+      "image_id": "sha256:e839d1520902ccc406a655ceeb24770ac582def7fcc4e85b460d346e2a5a7f16",
+      "image_reference": "looparena-loopsbench-84ae415/task_soot_taint_analysis:frozen",
+      "platform": "linux/amd64",
+      "task_id": "task_soot_taint_analysis",
+      "task_tree_sha256": "bebc7719198b6ec0ac83d5e7907451a42c4978d165ae5553530e5c5edada5f48"
+    },
+    "tri80-loopsbench-task_sql_engine_myjql": {
+      "dockerfile_sha256": "c694a99761a0a63db8d5814186f78f4321a7230b089881dafa70f47807b3a6e7",
+      "image_id": "sha256:09ed4264673be40a9e21d1af8bb3af1f7bd16675dc92ff2b90d939e50f22e93e",
+      "image_reference": "looparena-loopsbench-84ae415/task_sql_engine_myjql:frozen",
+      "platform": "linux/amd64",
+      "task_id": "task_sql_engine_myjql",
+      "task_tree_sha256": "7c2cd3d04501cf53a2755ea5b26e731c2daab6ab8bc8f1b4eeced08c8d9798e6"
+    },
+    "tri80-loopsbench-task_stream_mining": {
+      "dockerfile_sha256": "7d600d2a94c564d704d94259b7ebea8c0bdfc350fee25ba91434ebaaaf56b14a",
+      "image_id": "sha256:754c5314f89f9d41c9a72511ff8e22b2e61b6af9bbf65e839511f70da4dbb1ac",
+      "image_reference": "looparena-loopsbench-84ae415/task_stream_mining:frozen",
+      "platform": "linux/amd64",
+      "task_id": "task_stream_mining",
+      "task_tree_sha256": "68d0013de74a2672040c903879b021f66d73eb5037c948dc9cce18d5f7f8d6f5"
+    },
+    "tri80-loopsbench-task_z3_fixedpoint_verification": {
+      "dockerfile_sha256": "04fc561590c8fc19a6ce74589e81bcdb7b19fd224c6f32ad0682cec739d985d0",
+      "image_id": "sha256:541f8c1cd15c3976683f766ce1c6d78e5bfe42e7d46491a9463cbd178aa1f1e5",
+      "image_reference": "looparena-loopsbench-84ae415/task_z3_fixedpoint_verification:frozen",
+      "platform": "linux/amd64",
+      "task_id": "task_z3_fixedpoint_verification",
+      "task_tree_sha256": "aac3499e88d88aa43b71238609a7146eac9b9a034bcc55a1bdd440c284843859"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "tri80-scbench-sheeteval-cp7",
+  "files": [
+    {
+      "bytes": 185,
+      "kind": "file",
+      "mode": 420,
+      "path": "requirements.txt",
+      "sha256": "a96645499e351ebf34c326009e44ccb00c380e8a8c08a7313e6abae074d5e647",
+      "source": {
+        "blob": "a96645499e351ebf34c326009e44ccb00c380e8a8c08a7313e6abae074d5e647",
+        "kind": "overlay"
+      }
+    },
+    {
+      "bytes": 76220,
+      "kind": "file",
+      "mode": 420,
+      "path": "sheeteval.py",
+      "sha256": "aff75bf709a81b3a4a9c3f6ce29e326d52db84bf159157a72a690770a1a811d1",
+      "source": {
+        "blob": "aff75bf709a81b3a4a9c3f6ce29e326d52db84bf159157a72a690770a1a811d1",
+        "kind": "overlay"
+      }
+    }
+  ],
+  "overlay_sha256": "bde94ac4b1e59b8626e89b857d8268d562689a2039efda4e8eb146e0effec09b",
+  "upstream": {
+    "kind": "scbench",
+    "source_root_key": null
+  },
+  "workspace_tree_sha256": "d7c308412d2bd45b230fc9ad2a08c054450a8989afe23af36359e4a2136d0284"
+}

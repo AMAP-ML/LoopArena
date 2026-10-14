@@ -1,0 +1,19 @@
+{
+  "adapter_config": {
+    "docker_executable": "docker",
+    "task_dir": "/opt/looparena/evaluator_assets/beyondswe_type3/tri80-beyondswe-ansys_pyansys-units_pr309/task"
+  },
+  "adapter_kind": "beyondswe_harbor",
+  "adapter_version": "harbor-verifier-v1",
+  "network": "host",
+  "pass_policy": "reward-equals-one",
+  "runtime_identity": {
+    "image_id": "sha256:0b1be909eadf42f87bc51b4bb1edc35f14228735f0d6f34fe6dc4bbd2faec17d",
+    "image_reference": "aweaiteam/beyondswe:ansys_pyansys-units_pr309",
+    "platform": "linux/amd64",
+    "workdir": "/workspace/pyansys-units"
+  },
+  "solve_network": "host",
+  "source_revision": "7d2ced21b4c85f646d5ba8786875d7fbbe08ed49",
+  "timeout_sec": 1200
+}

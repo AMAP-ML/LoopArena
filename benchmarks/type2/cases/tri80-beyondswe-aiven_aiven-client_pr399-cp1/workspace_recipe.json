@@ -1,0 +1,647 @@
+{
+  "case_id": "tri80-beyondswe-aiven_aiven-client_pr399-cp1",
+  "files": [
+    {
+      "bytes": 214,
+      "kind": "file",
+      "mode": 420,
+      "path": ".flake8",
+      "sha256": "adc6db0f6672996a7baa9be22144a0ad79670ae5065dfccb392ae509bd18afb7",
+      "source": {
+        "kind": "upstream",
+        "path": ".flake8"
+      }
+    },
+    {
+      "bytes": 494,
+      "kind": "file",
+      "mode": 420,
+      "path": ".git-blame-ignore-revs",
+      "sha256": "fd8cc7781347ef52ab99e1202b7097e283870821177b3240667a328246ecda30",
+      "source": {
+        "kind": "upstream",
+        "path": ".git-blame-ignore-revs"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": ".github"
+    },
+    {
+      "bytes": 94,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/CODEOWNERS",
+      "sha256": "a6d8b5ba37693959fca9615e492748afce4a5b15096d50b11ce50df621799fdb",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/CODEOWNERS"
+      }
+    },
+    {
+      "bytes": 844,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/CONTRIBUTING.md",
+      "sha256": "1d7b60e22bf5424f0b30a7075ccae6583a043b5b47b73ec124dd20d7edb867b8",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/CONTRIBUTING.md"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": ".github/ISSUE_TEMPLATE"
+    },
+    {
+      "bytes": 180,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/ISSUE_TEMPLATE/01_question.md",
+      "sha256": "057e0575547246c8a495c40a3484e105c37033b091c2f4548fc33b3d4be372bf",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/ISSUE_TEMPLATE/01_question.md"
+      }
+    },
+    {
+      "bytes": 240,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/ISSUE_TEMPLATE/02_bug.md",
+      "sha256": "af97302185f0cc749d1171652aa4c6ba610c4bd335aa4f0dd0dab95ba7a7bba2",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/ISSUE_TEMPLATE/02_bug.md"
+      }
+    },
+    {
+      "bytes": 245,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/ISSUE_TEMPLATE/03_feature.md",
+      "sha256": "744161f89b1c2c056d556a3ff7ea715e13612d97bb5cccbea056625afcf3f3c0",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/ISSUE_TEMPLATE/03_feature.md"
+      }
+    },
+    {
+      "bytes": 27,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "sha256": "13064e7bea658e01e718b414fbb7b3b244f36411fe25ee2055c151f7b534547a",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/ISSUE_TEMPLATE/config.yml"
+      }
+    },
+    {
+      "bytes": 124,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "sha256": "e4b8bc992a2b1a859265f82fccccb7300e980eed8350628df2ee0c446157d2ee",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/PULL_REQUEST_TEMPLATE.md"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": ".github/workflows"
+    },
+    {
+      "bytes": 2264,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/workflows/build.yaml",
+      "sha256": "39fed0a10187c8ab5aa2128bac1bf8a69077cf0af1eb49162d26560915b43d18",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/workflows/build.yaml"
+      }
+    },
+    {
+      "bytes": 2357,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/workflows/codeql-analysis.yml",
+      "sha256": "ece8bfb0344efb97f8865f62672c267700be1cbcf8f1ab5143939d1968fcef7d",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/workflows/codeql-analysis.yml"
+      }
+    },
+    {
+      "bytes": 1174,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/workflows/publish-pypi.yaml",
+      "sha256": "9a001f58623babda8b878da93a8c5da71c9509a10dec759e0d9c8af1eff39af6",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/workflows/publish-pypi.yaml"
+      }
+    },
+    {
+      "bytes": 364,
+      "kind": "file",
+      "mode": 420,
+      "path": ".github/workflows/sync-main-and-master.yml",
+      "sha256": "13bd7173f67d9f97892aa3345916850a30d1cebe6b1a7a0a4187ae608850e0e1",
+      "source": {
+        "kind": "upstream",
+        "path": ".github/workflows/sync-main-and-master.yml"
+      }
+    },
+    {
+      "bytes": 179,
+      "kind": "file",
+      "mode": 420,
+      "path": ".gitignore",
+      "sha256": "6461aad43150e61cfbd7568e6902666b54253128571c2248252396086ac08814",
+      "source": {
+        "kind": "upstream",
+        "path": ".gitignore"
+      }
+    },
+    {
+      "bytes": 5488,
+      "kind": "file",
+      "mode": 420,
+      "path": "CODE_OF_CONDUCT.md",
+      "sha256": "f2b65f6468e31d78c752bb1d8baff5780031419975ba2a802db3188ed53e4c81",
+      "source": {
+        "kind": "upstream",
+        "path": "CODE_OF_CONDUCT.md"
+      }
+    },
+    {
+      "bytes": 260,
+      "kind": "file",
+      "mode": 420,
+      "path": "DEVELOPMENT.rst",
+      "sha256": "96a1bcc073258f229dbda657d029eeb6924eb771546f04a37f78d3042765efdd",
+      "source": {
+        "kind": "upstream",
+        "path": "DEVELOPMENT.rst"
+      }
+    },
+    {
+      "bytes": 11358,
+      "kind": "file",
+      "mode": 420,
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "source": {
+        "kind": "upstream",
+        "path": "LICENSE"
+      }
+    },
+    {
+      "bytes": 230,
+      "kind": "file",
+      "mode": 420,
+      "path": "MANIFEST.in",
+      "sha256": "b382a7d5d34981fea47dcf7bbfd68aedde0e3d6f8549614bda400acb9a3126e8",
+      "source": {
+        "kind": "upstream",
+        "path": "MANIFEST.in"
+      }
+    },
+    {
+      "bytes": 1869,
+      "kind": "file",
+      "mode": 420,
+      "path": "Makefile",
+      "sha256": "bbd99e4bd73692038903630646e112fac3a244f797f3e0b5b95d015c61d28ffd",
+      "source": {
+        "kind": "upstream",
+        "path": "Makefile"
+      }
+    },
+    {
+      "bytes": 15415,
+      "kind": "file",
+      "mode": 420,
+      "path": "README.rst",
+      "sha256": "80f2db02760ffcfe8f462d62550a8b3d183513225cf339b8c321a2073fe0f408",
+      "source": {
+        "kind": "upstream",
+        "path": "README.rst"
+      }
+    },
+    {
+      "bytes": 1449,
+      "kind": "file",
+      "mode": 420,
+      "path": "SECURITY.md",
+      "sha256": "a733a116536e71ca661f14e9ac43424db960ed29c9946c1c2c9d5572d1db72ce",
+      "source": {
+        "kind": "upstream",
+        "path": "SECURITY.md"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "aiven"
+    },
+    {
+      "bytes": 1549,
+      "kind": "file",
+      "mode": 420,
+      "path": "aiven-client.spec",
+      "sha256": "bf80ac3787ae4f2fc24c789d6debadaf549ba438bf26077030110aad02f3c253",
+      "source": {
+        "kind": "upstream",
+        "path": "aiven-client.spec"
+      }
+    },
+    {
+      "bytes": 112,
+      "kind": "file",
+      "mode": 420,
+      "path": "aiven/__init__.py",
+      "sha256": "04800fbf70fb0bac64e51caae79e7689567b0e2972843d5ff8bbb7b2696400ff",
+      "source": {
+        "kind": "upstream",
+        "path": "aiven/__init__.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "aiven/client"
+    },
+    {
+      "bytes": 198,
+      "kind": "file",
+      "mode": 420,
+      "path": "aiven/client/__init__.py",
+      "sha256": "7184bc6d5f3961cb3491b736a83e4acb78d78abd1efc92604f0babe9fe72b743",
+      "source": {
+        "kind": "upstream",
+        "path": "aiven/client/__init__.py"
+      }
+    },
+    {
+      "bytes": 142,
+      "kind": "file",
+      "mode": 420,
+      "path": "aiven/client/__main__.py",
+      "sha256": "9386695ce7b1b95040e269c272b2d1fe98a039ac1e5ff46bb3637cfb6852213b",
+      "source": {
+        "kind": "upstream",
+        "path": "aiven/client/__main__.py"
+      }
+    },
+    {
+      "bytes": 279,
+      "kind": "file",
+      "mode": 420,
+      "path": "aiven/client/_typing.py",
+      "sha256": "ef668d69dc1a4b318cc9320894f8a3d7224f42e24301e75368c446f7a45d2f4f",
+      "source": {
+        "kind": "upstream",
+        "path": "aiven/client/_typing.py"
+      }
+    },
+    {
+      "bytes": 14456,
+      "kind": "file",
+      "mode": 420,
+      "path": "aiven/client/argx.py",
+      "sha256": "288c6c1183b229ec00b5df6a92afc5bbe85680b4ed661c943975dde9f53ff260",
+      "source": {
+        "kind": "upstream",
+        "path": "aiven/client/argx.py"
+      }
+    },
+    {
+      "bytes": 254590,
+      "kind": "file",
+      "mode": 420,
+      "path": "aiven/client/cli.py",
+      "sha256": "d6a125ca7173c3ae9ace1551e9592828f6801d25a331cc3f9ee00bbcccd1fb88",
+      "source": {
+        "kind": "upstream",
+        "path": "aiven/client/cli.py"
+      }
+    },
+    {
+      "bytes": 10195,
+      "kind": "file",
+      "mode": 420,
+      "path": "aiven/client/cliarg.py",
+      "sha256": "4835894b46cb3c46b24c45f31c5dde58233e7d49e22f8d6ac2fe79a1a693037b",
+      "source": {
+        "kind": "upstream",
+        "path": "aiven/client/cliarg.py"
+      }
+    },
+    {
+      "bytes": 111781,
+      "kind": "file",
+      "mode": 420,
+      "path": "aiven/client/client.py",
+      "sha256": "d0dab862691d9803f481f2f7d83dc7ec57fc7853495c4cbbc35b19cef1f6e1a6",
+      "source": {
+        "kind": "upstream",
+        "path": "aiven/client/client.py"
+      }
+    },
+    {
+      "bytes": 86,
+      "kind": "file",
+      "mode": 420,
+      "path": "aiven/client/common.py",
+      "sha256": "9ba9e58564ab8aa11605ad72021b303b99adbe8c9a7a9de681cff36daadfe5ea",
+      "source": {
+        "kind": "upstream",
+        "path": "aiven/client/common.py"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "aiven/client/connection_info"
+    },
+    {
+      "bytes": 65,
+      "kind": "file",
+      "mode": 420,
+      "path": "aiven/client/connection_info/__init__.py",
+      "sha256": "c96a6bdf10ed2feaf04c2922ada2d504834981c6421b7d2ffe2f5e1680f35d87",
+      "source": {
+        "kind": "upstream",
+        "path": "aiven/client/connection_info/__init__.py"
+      }
+    },
+    {
+      "bytes": 2490,
+      "kind": "file",
+      "mode": 420,
+      "path": "aiven/client/connection_info/_utils.py",
+      "sha256": "2423fa85eabd659e3d58feebabc8e54c3e1b04bbd02a2c27fe17917fc00e0842",
+      "source": {
+        "kind": "upstream",
+        "path": "aiven/client/connection_info/_utils.py"
+      }
+    },
+    {
+      "bytes": 952,
+      "kind": "file",
+      "mode": 420,
+      "path": "aiven/client/connection_info/common.py",
+      "sha256": "8758281afc71a137814b086ff4a9bcfc8e800203bd108855a8f991e3822ba83f",
+      "source": {
+        "kind": "upstream",
+        "path": "aiven/client/connection_info/common.py"
+      }
+    },
+    {
+      "bytes": 4931,
+      "kind": "file",
+      "mode": 420,
+      "path": "aiven/client/connection_info/kafka.py",
+      "sha256": "9ab29cf65ad29ae88ec3b97e1fdf195e09bb21b270ef5d537c4f6df7254e82a7",
+      "source": {
+        "kind": "upstream",
+        "path": "aiven/client/connection_info/kafka.py"
+      }
+    },
+    {
+      "bytes": 2205,
+      "kind": "file",
+      "mode": 420,
+      "path": "aiven/client/connection_info/pg.py",
+      "sha256": "bd0c49add304e8abf68729733b42a4dc1ffa7e1e5fbdd47e50f851ff93e5d227",
+      "source": {
+        "kind": "upstream",
+        "path": "aiven/client/connection_info/pg.py"
+      }
+    },
+    {
+      "bytes": 1999,
+      "kind": "file",
+      "mode": 420,
+      "path": "aiven/client/connection_info/redis.py",
+      "sha256": "d5d556ef5a5c058be7a4ba0d485a3ec908bbd3988be26d019a4bfca57dd2f671",
+      "source": {
+        "kind": "upstream",
+        "path": "aiven/client/connection_info/redis.py"
+      }
+    },
+    {
+      "bytes": 803,
+      "kind": "file",
+      "mode": 420,
+      "path": "aiven/client/envdefault.py",
+      "sha256": "31f50fb8702b74719866e7eaa23b239c14f8753cabf85580b44ff1bb63f7817a",
+      "source": {
+        "kind": "upstream",
+        "path": "aiven/client/envdefault.py"
+      }
+    },
+    {
+      "bytes": 8106,
+      "kind": "file",
+      "mode": 420,
+      "path": "aiven/client/pretty.py",
+      "sha256": "e103a3286b70f93a9bf7e97e553400940bac4d5d8f00e8799dc690f02e510a8c",
+      "source": {
+        "kind": "upstream",
+        "path": "aiven/client/pretty.py"
+      }
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "aiven/client/py.typed",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/__init__.py"
+      }
+    },
+    {
+      "bytes": 1233,
+      "kind": "file",
+      "mode": 420,
+      "path": "aiven/client/session.py",
+      "sha256": "701d2498b9f48047ab9d1b9e4d28ee96dae00498970d823cd9e6828433c7f9f7",
+      "source": {
+        "kind": "upstream",
+        "path": "aiven/client/session.py"
+      }
+    },
+    {
+      "bytes": 1747,
+      "kind": "file",
+      "mode": 420,
+      "path": "aiven/client/speller.py",
+      "sha256": "1b3d4c699e0e4245cba2cecfc0e40db49051a044de10a9979712b79e780dd3af",
+      "source": {
+        "kind": "upstream",
+        "path": "aiven/client/speller.py"
+      }
+    },
+    {
+      "bytes": 244,
+      "kind": "file",
+      "mode": 420,
+      "path": "aiven/client/units.py",
+      "sha256": "363eb68c098d0a6cecdb184bae74e43a6a5f4d43c20d14964eaf1a21644adfe7",
+      "source": {
+        "kind": "upstream",
+        "path": "aiven/client/units.py"
+      }
+    },
+    {
+      "bytes": 939,
+      "kind": "file",
+      "mode": 420,
+      "path": "mypy.ini",
+      "sha256": "1acc843087c182ee5aeda14f561248dc47f581c16b708719f8ffb0a3977af173",
+      "source": {
+        "kind": "upstream",
+        "path": "mypy.ini"
+      }
+    },
+    {
+      "bytes": 2868,
+      "kind": "file",
+      "mode": 420,
+      "path": "pyproject.toml",
+      "sha256": "daf5b3cace3838b5c11401d4b8e9437e1e3c5bc94f8044b470b10665e67fed55",
+      "source": {
+        "kind": "upstream",
+        "path": "pyproject.toml"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "scripts"
+    },
+    {
+      "bytes": 105,
+      "kind": "file",
+      "mode": 493,
+      "path": "scripts/avn",
+      "sha256": "fce3f44eae14d0a222a372987de24a09b9f5d14553921c933c9f3675c0b2597e",
+      "source": {
+        "kind": "upstream",
+        "path": "scripts/avn"
+      }
+    },
+    {
+      "kind": "directory",
+      "mode": 493,
+      "path": "tests"
+    },
+    {
+      "bytes": 0,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/__init__.py"
+      }
+    },
+    {
+      "bytes": 2413,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_argx.py",
+      "sha256": "df6776450c13b4ad9c3d4987b7e9a1f81894219b17dab6bf4de5d2970897db1b",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_argx.py"
+      }
+    },
+    {
+      "bytes": 67793,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_cli.py",
+      "sha256": "502fd05a036c3cb21cd4f9c4ca2273d20f6c0ba19edd3165e2288695534b94d5",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_cli.py"
+      }
+    },
+    {
+      "bytes": 2656,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_cliarg.py",
+      "sha256": "039507ff6564203839ba481a1e2a5a1b53b997adcebec894532f7e382971a977",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_cliarg.py"
+      }
+    },
+    {
+      "bytes": 12791,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_client.py",
+      "sha256": "033c24e58e89ee136b4ca2f74bf14fa48372b65a052ffd76ee0c7d1ca71622ba",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_client.py"
+      }
+    },
+    {
+      "bytes": 8539,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_pretty.py",
+      "sha256": "7eaa9b667be2a48b862fcf10c3b2fb1c609e1f497956468c7d40bae180ed5e1b",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_pretty.py"
+      }
+    },
+    {
+      "bytes": 1176,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_session.py",
+      "sha256": "6315488701fad2fbde80fbb206f8f60d8288f186fd42f1cd9e9cfd07837ec358",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_session.py"
+      }
+    },
+    {
+      "bytes": 1125,
+      "kind": "file",
+      "mode": 420,
+      "path": "tests/test_speller.py",
+      "sha256": "fc53146ce5deca81dec3b29f3f6d78e103899d020c1082baae33fe4c43905ed3",
+      "source": {
+        "kind": "upstream",
+        "path": "tests/test_speller.py"
+      }
+    }
+  ],
+  "overlay_sha256": "272adeccafe73e7009d51f2ec2be9871db5e0eb14239f483ea429be26c3c6402",
+  "upstream": {
+    "kind": "beyondswe",
+    "repository": "https://github.com/aiven/aiven-client",
+    "revision": "af58051f40dc41b3ad228cbdd4e8c1c71c3a51b6",
+    "source_root_key": "tri80-beyondswe-aiven_aiven-client_pr399-cp1"
+  },
+  "workspace_tree_sha256": "b6915ec132a9df004c6e4d97aefec865177ae94e007a572b4099eb1701abf694"
+}
